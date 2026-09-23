@@ -26,3 +26,7 @@ desktop.ini
 # Script temp-write artifacts (rename-on-write leftovers, should not normally exist)
 *.tmp-2*
 *.ppj-sync-tmp
+
+# Marker dropped by scripts/Sync-VaultGit.ps1 when a merge conflict blocks syncing
+# (per-device, resolved locally - see .git/vault-sync.log)
+SYNC-CONFLICT-README.md
