@@ -29,7 +29,7 @@ param(
     [switch]$Quiet
 )
 
-Set-StrictMode -Version 2.0
+Set-StrictMode -Version 1.0
 $ErrorActionPreference = 'Stop'
 
 if (-not $VaultPath) {
@@ -96,10 +96,10 @@ function Invoke-Git {
     $ErrorActionPreference = 'Continue'
     try {
         $out = & $Git -C $VaultPath @Arguments 2>&1
+        $code = $LASTEXITCODE
     } finally {
         $ErrorActionPreference = $previous
     }
-    $code = $LASTEXITCODE
     $text = ($out | ForEach-Object { $_.ToString() }) -join "`n"
     return [pscustomobject]@{ Code = $code; Text = $text }
 }
@@ -159,7 +159,7 @@ try {
     # --- 1. commit local work -----------------------------------------------
     $status = (Invoke-Git @('status', '--porcelain')).Text
     if ($status.Trim()) {
-        $count = ($status -split "`n" | Where-Object { $_.Trim() }).Count
+        $count = @($status -split "`n" | Where-Object { $_.Trim() }).Count
         $add = Invoke-Git @('add', '-A')
         if ($add.Code -ne 0) {
             Write-Log 'ERROR' "git add failed: $($add.Text)"
