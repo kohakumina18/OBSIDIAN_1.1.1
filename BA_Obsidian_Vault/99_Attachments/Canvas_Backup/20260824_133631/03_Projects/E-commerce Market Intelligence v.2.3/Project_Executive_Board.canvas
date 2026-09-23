@@ -1,0 +1,113 @@
+{
+  "nodes": [
+    {
+      "id": "lane-0",
+      "type": "group",
+      "x": 0,
+      "y": 500,
+      "width": 540,
+      "height": 1130,
+      "label": "BACKLOG"
+    },
+    {
+      "id": "lane-1",
+      "type": "group",
+      "x": 600,
+      "y": 500,
+      "width": 540,
+      "height": 1130,
+      "label": "THIS WEEK"
+    },
+    {
+      "id": "lane-2",
+      "type": "group",
+      "x": 1200,
+      "y": 500,
+      "width": 540,
+      "height": 1130,
+      "label": "IN PROGRESS"
+    },
+    {
+      "id": "lane-3",
+      "type": "group",
+      "x": 1800,
+      "y": 500,
+      "width": 540,
+      "height": 1130,
+      "label": "BLOCKED / WAITING"
+    },
+    {
+      "id": "lane-4",
+      "type": "group",
+      "x": 2400,
+      "y": 500,
+      "width": 540,
+      "height": 1130,
+      "label": "REVIEW / UAT"
+    },
+    {
+      "id": "lane-5",
+      "type": "group",
+      "x": 3000,
+      "y": 500,
+      "width": 540,
+      "height": 1130,
+      "label": "DONE"
+    },
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "MER.MARKET.INTELLIGENCE.v1.1\n\nDomain: Merchandising\nLifecycle: Active Intelligence\nProgress: TBD\nGate: Commercial intelligence delivery\nOutcome: Create commercial intelligence from external market data and PPJ internal capability.\nTop Blocker: External signal interpretation\nNext Milestone: Continue validated product/fabric opportunity analysis\nPriority: Medium\nLast Verified: 2026-08-24",
+      "x": 0,
+      "y": 0,
+      "width": 1140,
+      "height": 420
+    },
+    {
+      "id": "task-0",
+      "type": "file",
+      "file": "03_Projects/E-commerce Market Intelligence v.2.3/Tasks/MER.MARKET.INTELLIGENCE.v1.1-20260824-TASK-001_Continue-validated-product-fabric-opportunity-analysis.md",
+      "x": 30,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-1",
+      "type": "file",
+      "file": "03_Projects/E-commerce Market Intelligence v.2.3/Tasks/MER.MARKET.INTELLIGENCE.v1.1-20260824-TASK-002_Keep-review-rating-signals-distinct-from-sales-evidence.md",
+      "x": 30,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-2",
+      "type": "file",
+      "file": "03_Projects/E-commerce Market Intelligence v.2.3/Tasks/MER.MARKET.INTELLIGENCE.v1.1-TASK-001_Review-repaired-block-with-project-owner.md",
+      "x": 3030,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-3",
+      "type": "file",
+      "file": "03_Projects/E-commerce Market Intelligence v.2.3/Tasks/MER.MARKET.INTELLIGENCE.v1.1-TASK-002_Confirm-missing-data-fields-and-workflow.md",
+      "x": 3030,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-4",
+      "type": "file",
+      "file": "03_Projects/E-commerce Market Intelligence v.2.3/Tasks/MER.MARKET.INTELLIGENCE.v1.1-TASK-003_Update-related-BRD-SOP-user-manual-after-confirmation.md",
+      "x": 3030,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    }
+  ],
+  "edges": []
+}

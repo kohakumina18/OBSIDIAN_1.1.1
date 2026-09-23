@@ -1,0 +1,61 @@
+﻿# PPJ Project Alias Map
+
+Generated:
+2026-06-27 22:00
+
+## Executive Summary
+
+This alias map reconciles folder aliases, suspected duplicates, and resource-map names. It does not modify project notes.
+
+| Alias Filename                                    | Canonical Filename                       | Reason                                                                                                 | Confidence | Recommended Action                                  | Link Update Needed                   | Canvas Update Needed                 |
+| ------------------------------------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------- | --------------------------------------------------- | ------------------------------------ | ------------------------------------ |
+| Web Tổng Hợp Tool.md                              | PPJ.AI.Hub.v2.1.md                       | Vietnamese duplicate/placeholder promoted into PPJ.AI.Hub.v2.1 alias history.                          | High       | Convert to alias/history after content preservation | Yes                                  | Yes if Canvas file-node refs exist   |
+| Web Tong Hop Tool.md                              | PPJ.AI.Hub.v2.1.md                       | Old web tool name promoted into central AI tools, bots, chatbot, and automation hub.                   | High       | Convert to alias/history after content preservation | Yes                                  | Yes if Canvas file-node refs exist   |
+| EX-IM Expense Invoice Bot.md                      | EXIM.ExpenseInvoices.Automation.v1.1     | EXIM-specific invoice automation is tracked as separate canonical memory; project note TBD.            | High       | Register or link project note only after approval   | No global replacement in this script | No                                   |
+| SCP.Sourcing-Chatbot.ver2.md                      | SCP.SOURCING.CHATBOT.v2.3.md             | Resource-map alias for consolidated sourcing project.                                                  | Medium     | Resource-map alias only; update links only if found | Yes if links exist                   | Check Canvas after registry approval |
+| Sourcing Chatbot v2.3.md                          | SCP.SOURCING.CHATBOT.v2.3.md             | Old non-coded sourcing chatbot name.                                                                   | High       | Candidate for alias conversion after approval       | Yes if links exist                   | Check Canvas after registry approval |
+| Sourcing VER2.md                                  | SCP.SOURCING.CHATBOT.v2.3.md             | Old sourcing version alias.                                                                            | High       | Candidate for alias conversion after approval       | Yes if links exist                   | Check Canvas after registry approval |
+| Adhoc Indent miền Nam.md                          | Adhoc Indent mien Nam.md                 | Vietnamese accent duplicate.                                                                           | High       | Candidate for alias conversion after approval       | Yes if links exist                   | Check Canvas after registry approval |
+| Adhoc Indent.md                                   | Adhoc Indent mien Nam.md                 | Short old Adhoc Indent alias.                                                                          | Medium     | Candidate for alias conversion after approval       | Yes if links exist                   | Check Canvas after registry approval |
+| Chuyền Treo IoT Dashboard.md                      | PROD.IOT.CHuyenTreo_1.md                 | Factory IoT dashboard alias for canonical PROD.IOT.CHuyenTreo.v1.0.                                    | Medium     | Candidate for alias conversion after approval       | Yes if links exist                   | Check Canvas after registry approval |
+| Chuyền treo ver1.md                               | PROD.IOT.CHuyenTreo_1.md                 | Old Chuyen treo project name for canonical PROD.IOT.CHuyenTreo.v1.0.                                   | Medium     | Candidate for alias conversion after approval       | Yes if links exist                   | Check Canvas after registry approval |
+| COWASH ver2.md                                    | PROD.COWASH.md                           | Version alias for canonical PROD.COWASH.v2.0.                                                          | Medium     | Candidate for alias conversion after approval       | Yes if links exist                   | Check Canvas after registry approval |
+| Cowash VER2.md                                    | PROD.COWASH.md                           | Version duplicate for canonical PROD.COWASH.v2.0.                                                      | High       | Candidate for alias conversion after approval       | Yes if links exist                   | Check Canvas after registry approval |
+| PUR.GDI.Automation.md                             | PUR.GDI Automation.md                    | Punctuation variant.                                                                                   | Medium     | Resource-map alias only; update links only if found | Yes if links exist                   | Check Canvas after registry approval |
+| GDI Automation.md                                 | PUR.GDI Automation.md                    | Non-coded Purchasing GDI name.                                                                         | High       | Candidate for alias conversion after approval       | Yes if links exist                   | Check Canvas after registry approval |
+| SYS.Invoices.Download & Merging.md                | PPJ.Invoice Downloader.v1.2.md           | Resource-map system name for canonical PPJ.InvoiceDownloader.v1.2.                                     | High       | Resource-map alias only; update links only if found | Yes if links exist                   | Check Canvas after registry approval |
+| EXIM.Expense-Invoices Automation.md               | EXIM.ExpenseInvoices.Automation.v1.1     | EXIM-specific invoice automation is separate from PPJ expense platform unless explicitly consolidated. | High       | Register or link project note only after approval   | No global replacement in this script | No                                   |
+| Import Export Automation.md                       | EXIM.ExpenseInvoices.Automation.v1.1     | Old import/export automation alias maps to EXIM-specific canonical memory.                             | High       | Register or link project note only after approval   | No global replacement in this script | No                                   |
+| MER.PO Commit.md                                  | MER.PO-Commit.md                         | Resource-map coded MER PO Commit name for canonical MER.PO.Commit.v1.1.                                | Medium     | Resource-map alias only; update links only if found | Yes if links exist                   | Check Canvas after registry approval |
+| PPJ x NUNOX.md                                    | PPJxNUNOX.md                             | Vendor naming variant for canonical PPJxNUNOX.ScanTrial.                                               | High       | Candidate for alias conversion after approval       | Yes if links exist                   | Check Canvas after registry approval |
+| PPJ x Nunox.md                                    | PPJxNUNOX.md                             | Vendor naming duplicate for canonical PPJxNUNOX.ScanTrial.                                             | High       | Candidate for alias conversion after approval       | Yes if links exist                   | Check Canvas after registry approval |
+| PPJ x Stratova AI.md                              | PPJxStratova AI.md                       | Vendor naming duplicate for canonical PPJxStratova.AI.                                                 | High       | Candidate for alias conversion after approval       | Yes if links exist                   | Check Canvas after registry approval |
+| Tech.Knowledge.Platform.v2.1.md                   | TD.TechnicalPlatform_v2.1.md             | Resource-map technical knowledge platform name overlaps technical platform note.                       | Medium     | Resource-map alias only; update links only if found | Yes if links exist                   | Check Canvas after registry approval |
+| RND.Wash.Sampling.Management.Portal.v1.1.md       | WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1.md  | Resource-map RND Wash coded name; existing note uses WASH prefix.                                      | Medium     | Resource-map alias only; update links only if found | Yes if links exist                   | Check Canvas after registry approval |
+| MER.Chico's.Costing-Invoice.Recheck-Audit.v1.1.md | MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1.md | Canonical correction: Chico's audit/recheck is MER-led unless evidence proves otherwise.               | High       | Resource-map alias only; update links only if found | Yes if links exist                   | Check Canvas after registry approval |
+
+## 2026-06-28 Canonical Code Overlay
+
+| Spoken / Old Name                                    | Canonical Code                          | Current Note / Memory                                                           |
+| ---------------------------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------- |
+| AI Hub / Web Tong Hop Tool                           | `PPJ.AI.Hub.v2.1`                       | [[PPJ.AI.Hub.v2.1]]                                                             |
+| PERRI Chatbot                                        | `PPJ.PERRI.Chatbot.v3.2`                | [[PPJ.PERRI.Chatbot]] / [[PPJ.PERRI.Chatbot.v3.2.memory]]                       |
+| GLPI Helpdesk AI                                     | `PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0`     | [[PPJ.GLPI-Helpdesk-AI Chatbot]] / [[PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0.memory]] |
+| Costing Intelligence / MER Costing / Costing Chatbot | `COSTING.AGENTIC.PLATFORM.v1.1`         | [[PPJ.COSTING.AGENT.PLATFORM.v1.1]] / [[COSTING.AGENTIC.PLATFORM.v1.1.memory]]  |
+| FD hanger / QR hanger                                | `FD.Datamart.v2.2`                      | [[FD.Datamart.v2.2]] / [[FD.Datamart.v2.2.memory]]                              |
+| CPD datamart / 3D sample library                     | `CPD.Datamart.v1.1`                     | [[CPD.Datamart.v1.1]] / [[CPD.Datamart.v1.1.memory]]                            |
+| Chico's audit / recheck                              | `MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1` | [[MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1]]                                       |
+| GRN Supplier Invoice Bot                             | `ACC.GRN-SupplierInvoiceBot.v2.3`       | [[ACC.GRN-SupplierInvoiceBot.v2.3]]                                             |
+| EXIM Expense Invoice Bot                             | `EXIM.ExpenseInvoices.Automation.v1.1`  | [[EXIM.ExpenseInvoices.Automation.v1.1.memory]]; project note TBD               |
+| QSee.ai                                              | `PPJxQSee.AI`                           | [[PPJxQSee.ai]] / [[PPJxQSee.AI.memory]]                                        |
+| Primo1D RFID Thread                                  | `QC.Primo1D.RFID.Thread.v1.0`           | [[PPJ XPrimo1D RFID Thread]] / [[QC.Primo1D.RFID.Thread.v1.0.memory]]           |
+
+## Important Rules
+
+- Preserve old names as aliases.
+- Do not delete any files.
+- Do not merge non-empty notes automatically.
+- Do not update Canvas until registry is clean.
+- [[SCP.SOURCING.CHATBOT.v2.3]] is the consolidated sourcing project.
+- [[FD.Datamart.v2.2]] and [[CPD.Datamart.v1.1]] are separate projects.
+- [[MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1]] is MER-led unless evidence proves otherwise.

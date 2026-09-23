@@ -1,0 +1,317 @@
+{
+  "main": {
+    "id": "b94de414d52a689c",
+    "type": "split",
+    "children": [
+      {
+        "id": "6b06a32520889543",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "965c27265f9df892",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "01_Daily_Notes/DOCS/ADMIN.WORK-TRAVEL.canvas",
+                "viewState": {
+                  "x": -448.0609650029371,
+                  "y": 430.67705172190284,
+                  "zoom": -0.20000000000000007
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "ADMIN.WORK-TRAVEL"
+            }
+          },
+          {
+            "id": "eb5d6283766943a0",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "03_Projects/PUR.Material.Allocation.v1.2/ALLOC.canvas",
+                "viewState": {
+                  "x": 528.5887779066807,
+                  "y": 1248.5384109173951,
+                  "zoom": -1.1102230246251565e-16
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "ALLOC"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f775e11a5decc30e",
+    "type": "split",
+    "children": [
+      {
+        "id": "27cba8e520bee3b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b6dac0ecc1c8d4e2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c2f45f4254578b47",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "aa2a1e27919db134",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 250.94140625
+  },
+  "right": {
+    "id": "100925a1dba5e390",
+    "type": "split",
+    "children": [
+      {
+        "id": "cbf209601c420216",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "63ccef404e2e39fb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "01_Daily_Notes/NOTES-JULU.canvas",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "c9db77f95c2bfe7b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "01_Daily_Notes/NOTES-JULU.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "dace61b07bd7ba0a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "cb298faa5f1882bb",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "311478c6b727e826",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01_Daily_Notes/NOTES-JULU.canvas",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "8e703aaf475bc47e",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "6d166da25c9070ae",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "2e9b300561c37cd8",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
+          },
+          {
+            "id": "df8a53ce0ea09ac6",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "01_Daily_Notes/NOTES-JULU.canvas"
+              },
+              "icon": "lucide-info",
+              "title": "File properties"
+            }
+          }
+        ],
+        "currentTab": 8
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-kanban:Create new board": false,
+      "templater-obsidian:Templater": false,
+      "githobs:Manage a github issue": false,
+      "audio-recorder:Start/stop recording": false,
+      "copilot:Open Copilot Chat": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "eb5d6283766943a0",
+  "lastOpenFiles": [
+    "01_Daily_Notes/DOCS/ADMIN.WORK-TRAVEL.canvas",
+    "03_Projects/PUR.Material.Allocation.v1.2/ALLOC.canvas",
+    "03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/01_Management/FIN AI.canvas",
+    "01_Daily_Notes/DOCS/Drawing 2026-08-19 10.11.23.excalidraw.md",
+    "01_Daily_Notes/DOCS/NOTES-JULU.canvas",
+    "Pasted image 20260819095113.png",
+    "01_Daily_Notes/DOCS/Untitled.md",
+    "01_Daily_Notes/DOCS/PUR.ALLOC.V2.1/Untitled.md",
+    "Pasted image 20260814113327.png",
+    "Pasted image 20260814113111.png",
+    "Pasted image 20260814113003.png",
+    "01_Daily_Notes/EXTERNAL/TECHCOMBANK - 11.8.2026.canvas",
+    "03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/Project_Executive_Board.canvas",
+    "03_Projects/PUR.GDI Automation/Project_Executive_Board.canvas",
+    "Pasted image 20260811124609.png",
+    "Pasted image 20260811124546.png",
+    "Pasted image 20260811124457.png",
+    "Pasted image 20260811124204.png",
+    "Pasted image 20260811120017.png",
+    "Pasted image 20260811115956.png",
+    "QUY TRÌNH KIỂM TRA HIỆU QUẢ ĐƠN HÀNG TRÊN WFX.pdf",
+    "01_Daily_Notes/DOCS/PUR.ALLOC.V2.1/SAD.v1.1.md",
+    "01_Daily_Notes/EXTERNAL/Untitled.md",
+    "01_Daily_Notes/EXTERNAL",
+    "scripts/__pycache__/sync_ppj_project_boards.cpython-314.pyc",
+    "03_Projects/PUR.GDI Automation/01_Management/GDIIII.canvas",
+    "scripts/__pycache__/new_ppj_project_task.cpython-314.pyc",
+    "scripts/__pycache__/register_ppj_project.cpython-314.pyc",
+    "scripts/__pycache__/upgrade_ppj_project_workspaces.cpython-314.pyc",
+    "scripts/__pycache__",
+    "PPJ_Finance_Analysis_Platform_WS2_WS3_Application_Spec_v1.0_UML_Rendered (1).docx",
+    "scripts/Compact-PPJAgentAndProjectMemory.ps1",
+    "scripts/register_ppj_project.py",
+    "03_Projects/Canvas/PPJ_Executive_Board.canvas",
+    "03_Projects/Canvas/PPJ_EndToEnd_Process_Automation_Coverage.canvas",
+    "03_Projects/Canvas/PPJ_Roadmap_2026.canvas",
+    "03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3.md",
+    "10_Reports/PROJECT_WORKSPACE_UPGRADE_PLAN_20260807.md",
+    "copilot/copilot-conversations/hi_who_are_you@20260807_084539.md",
+    "03_Projects/CPD.Datamart.v1.1.md",
+    "99_Attachments/Audit/Project_Knowledge_Repair_Backup/20260628_110353/03_Projects/PPJ. Expense-Invoices.v1.1.md",
+    "99_Attachments/Project_Registry_Sync_Backup/20260627_2221/03_Projects/E-commerce Market Intelligence.md",
+    "11_PROJECT_MANAGEMENT/AI_PROJECTS/WEEKLY PORTFOLIO UPDATE.md",
+    "11_PROJECT_MANAGEMENT/AI_PROJECTS/SUMMARIZE - 4.5.2026.md",
+    "Excalidraw/Drawing 2026-08-05 10.05.07.excalidraw.md",
+    "03_Projects/PUR.Material.Allocation.v1.2.md",
+    "03_Projects/ACC.Inventory.Report.v1.0.md",
+    "10_Reports/ACC_INVENTORY_REPORT_REGISTRATION_AND_CANVAS_UPDATE_REPORT_20260802.md",
+    "99_Attachments/Audit/ACC_Inventory_Report_Registration_Backup/20260802_001721/07_Decision_Log/Decision_Log.md",
+    "99_Attachments/Audit/ACC_Inventory_Report_Registration_Backup/20260802_001721/07_Decision_Log/DEC-WEEKLY-20260801-ACC-INV.md",
+    "99_Attachments/Audit/ACC_Inventory_Report_Registration_Backup/20260802_001721/03_Projects/PROJECT_COMMAND_CENTER.md",
+    "99_Attachments/Audit/ACC_Inventory_Report_Registration_Backup/20260802_001721/03_Projects/_Registry/Project_Update_Proposals/ACCOUNTING_INVENTORY_REPORT_PROPOSAL_20260801.md",
+    "99_Attachments/Audit/ACC_Inventory_Report_Registration_Backup/20260802_001721/03_Projects/_Registry/PPJ_PROJECT_UPDATE_LEDGER.md",
+    "99_Attachments/Audit/ACC_Inventory_Report_Registration_Backup/20260802_001721/03_Projects/_Registry/PPJ_PROJECT_RESOURCE_MATRIX.md",
+    "99_Attachments/Audit/ACC_Inventory_Report_Registration_Backup/20260802_001721/03_Projects/_Registry/PPJ_PROJECT_REGISTRY.md",
+    "99_Attachments/Audit/ACC_Inventory_Report_Registration_Backup/20260802_001721/03_Projects/_Registry/PPJ_PROJECT_MODULE_INDEX.md"
+  ]
+}

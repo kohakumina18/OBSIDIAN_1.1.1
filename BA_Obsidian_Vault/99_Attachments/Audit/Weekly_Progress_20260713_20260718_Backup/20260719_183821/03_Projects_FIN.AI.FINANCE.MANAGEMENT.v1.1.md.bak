@@ -1,0 +1,181 @@
+﻿---
+type: "project"
+project_name: "FIN.AI.FINANCE.MANAGEMENT.v1.1"
+phase: "Discovery / BRD / Strategic Program"
+cluster: "Finance / Management Insight / AI Analytics"
+owner: "Finance / Management"
+project_code: "FIN.AI.FINANCE.MANAGEMENT.v1.1"
+status: "Discovery / BRD / Strategic Program"
+priority: "P1 / Top Focus"
+phase_canvas_group: "ANALYSIS"
+last_updated: "2026-07-06 08:53:49"
+last_weekly_update: "2026-06-29 to 2026-07-05"
+weekly_rank: "1"
+---
+
+# AI-assisted Finance Management
+
+Tên tiếng Việt: Dự án AI hỗ trợ quản trị tài chính
+
+<!-- PPJ_PROJECT_KNOWLEDGE_START -->
+
+# Project Knowledge Detail
+
+## Executive Summary
+
+`FIN.AI.FINANCE.MANAGEMENT.v1.1` is an early idea-stage project to explore how AI can support Finance and Management with cash-flow analysis, reporting, trend forecasting, executive summaries, and management insights.
+
+This project should not go directly into development. The current phase should focus on discovery: business problem, current finance reporting process, data sources, desired output, security constraints, and feasibility.
+
+## Business Context
+
+Finance / Management may need support to analyze cash flow, summarize reports, explain number movements, identify risks, and prepare insight for decision-making. Before AI or forecasting work starts, the team must understand source systems, file ownership, reporting frequency, chart of accounts, cost center/department mapping, permissions, and review responsibility.
+
+## Objectives
+
+- Clarify Finance / Management needs.
+- Understand current cash-flow reporting and analysis process.
+- Identify relevant finance data sources.
+- Identify stakeholders and required coordination.
+- Define expected output at a high level.
+- Propose a feasible next-quarter implementation direction.
+
+## Potential Scope
+
+### Cash Flow Analysis
+
+- Summarize cash inflow/outflow.
+- Analyze movement by period.
+- Highlight unusual movement or cash-flow risk.
+
+### Finance Reporting Assistant
+
+- Summarize recurring reports.
+- Generate executive summaries.
+- Explain movement in financial numbers.
+
+### Trend Forecasting
+
+- Forecast cash flow, cost, revenue, receivables, or payables only if historical data is clean and long enough.
+
+### Management Insight
+
+- Highlight KPIs or figures requiring management attention.
+- Suggest questions for deeper analysis.
+
+### AI Assistant for Finance
+
+- Chatbot/agent for finance report Q&A and drill-down by time, department, customer, or cost category if the data model allows.
+
+## Kick-off Questions
+
+- What is the biggest current Finance / Management pain point?
+- Which system, file, and owner currently prepare cash-flow reports?
+- Where is the data: ERP, Excel, accounting system, bank statement, DWH, or internal file?
+- Are chart of accounts, cost center, and department mapping standardized?
+- Is the desired output dashboard, report, chatbot, forecast, or insight memo?
+- What is the reporting frequency: daily, weekly, monthly, or ad hoc?
+- Who reviews and decides based on the output?
+- Which data can be used for AI?
+- Are there special security or permission requirements?
+
+## Current Status
+
+Idea / Kick-off Preparation.
+
+Proposed kick-off: Saturday, 04/07/2026, 09:00–11:00.
+
+## Expected Output After Kick-off
+
+- Initial problem statement.
+- Current process map.
+- Data source list.
+- Stakeholder list.
+- Expected output.
+- Initial scope.
+- Risk/dependency list.
+- Next-step action plan.
+- Decision whether to continue as dashboard, report automation, AI assistant, or forecasting project.
+
+## Next Actions
+
+- Send meeting invitation to relevant stakeholders.
+- Confirm participant list.
+- Prepare kick-off agenda.
+- Prepare discovery question checklist.
+- Summarize meeting minutes after kick-off.
+- Propose v1.1 scope after discovery.
+- Move to Analysis / Design only if data and owner are clear.
+
+## Risks and Dependencies
+
+- Finance data is sensitive and requires clear permission control.
+- Data may be fragmented across systems and files.
+- Data mapping is required before AI work if source structure is inconsistent.
+- Forecasting should not be promised before historical data quality is assessed.
+- Finance owner must confirm output and business rules.
+
+## Do Not Drift Rules
+
+- Do not promise AI forecasting accuracy before data quality review.
+- Do not move directly to development before discovery.
+- Do not expose finance data without permission and access control.
+- Do not decide final output type before kick-off.
+
+## Related Concepts
+
+[[Finance Analytics]]
+[[Management Insight]]
+[[Data Governance]]
+[[AI Governance]]
+
+## Methods
+
+[[Requirement Elicitation]]
+[[Process Mapping]]
+[[Data Mapping]]
+[[Risk Assessment]]
+
+## Projects
+
+[[FIN.AI.FINANCE.MANAGEMENT.v1.1]]
+
+## Deliverables
+
+[[Decision_Driven_BRD]]
+[[Meeting Minutes]]
+[[Data_Dictionary]]
+[[Dashboard Design]]
+
+<!-- PPJ_PROJECT_KNOWLEDGE_END -->
+
+<!-- PPJ_WEEKLY_UPDATE_20260629_20260705_START -->
+## Weekly Update - 2026-06-29 to 2026-07-05
+
+- Project code: $(@{Code=FIN.AI.FINANCE.MANAGEMENT.v1.1; Note=03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1.md; Phase=Discovery / BRD / Strategic Program; Lane=ANALYSIS; Priority=P1 / Top Focus; Rank=1; CreateIfMissing=False; Summary=Official kick-off completed on 2026-07-04. Scope corrected: this is not a generic AI Finance or Cash Flow Analytics MVP. Current program has three workstreams: Financial Reporting Automation as MVP P1, Costing Analysis, and Order / Sales Efficiency Analysis. MVP principle is One Company + One Period + One Approved Financial Report. Automated output must reconcile with the manual approved Finance report, or differences must be explainable. Data first, AI second. Finance owns finance logic.}.Code)
+- Phase: Discovery / BRD / Strategic Program
+- Executive Canvas lane: ANALYSIS
+- Priority: P1 / Top Focus
+- Weekly priority rank: 1
+
+Official kick-off completed on 2026-07-04. Scope corrected: this is not a generic AI Finance or Cash Flow Analytics MVP. Current program has three workstreams: Financial Reporting Automation as MVP P1, Costing Analysis, and Order / Sales Efficiency Analysis. MVP principle is One Company + One Period + One Approved Financial Report. Automated output must reconcile with the manual approved Finance report, or differences must be explainable. Data first, AI second. Finance owns finance logic.
+
+Related Concepts
+[[Outcome Driven Thinking]]
+[[System Thinking]]
+[[Data Governance]]
+[[Traceability]]
+
+Methods
+[[Impact Analysis]]
+[[Requirement Elicitation]]
+[[Data Mapping]]
+
+Deliverables
+[[Decision_Driven_BRD]]
+[[ERD_Template]]
+[[User_Manual_Template]]
+
+<!-- PPJ_WEEKLY_UPDATE_20260629_20260705_END -->
+
+

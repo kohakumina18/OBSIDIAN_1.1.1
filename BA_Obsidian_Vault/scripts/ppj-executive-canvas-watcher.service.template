@@ -1,0 +1,13 @@
+[Unit]
+Description=PPJ Executive Canvas guarded state watcher
+After=graphical-session.target
+
+[Service]
+Type=simple
+WorkingDirectory=@@VAULT_ROOT@@
+ExecStart=@@PYTHON@@ @@VAULT_ROOT@@/scripts/watch_ppj_executive_canvas.py --apply --poll 0.75 --debounce 1.0
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

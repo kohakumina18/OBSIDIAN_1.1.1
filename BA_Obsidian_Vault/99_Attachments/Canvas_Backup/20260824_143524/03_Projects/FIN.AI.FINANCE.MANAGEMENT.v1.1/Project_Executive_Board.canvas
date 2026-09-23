@@ -1,0 +1,167 @@
+{
+  "nodes": [
+    {
+      "id": "lane-0",
+      "type": "group",
+      "x": 0,
+      "y": 500,
+      "width": 540,
+      "height": 2270,
+      "label": "BACKLOG"
+    },
+    {
+      "id": "lane-1",
+      "type": "group",
+      "x": 600,
+      "y": 500,
+      "width": 540,
+      "height": 2270,
+      "label": "THIS WEEK"
+    },
+    {
+      "id": "lane-2",
+      "type": "group",
+      "x": 1200,
+      "y": 500,
+      "width": 540,
+      "height": 2270,
+      "label": "IN PROGRESS"
+    },
+    {
+      "id": "lane-3",
+      "type": "group",
+      "x": 1800,
+      "y": 500,
+      "width": 540,
+      "height": 2270,
+      "label": "BLOCKED / WAITING"
+    },
+    {
+      "id": "lane-4",
+      "type": "group",
+      "x": 2400,
+      "y": 500,
+      "width": 540,
+      "height": 2270,
+      "label": "REVIEW / UAT"
+    },
+    {
+      "id": "lane-5",
+      "type": "group",
+      "x": 3000,
+      "y": 500,
+      "width": 540,
+      "height": 2270,
+      "label": "DONE"
+    },
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "FIN.AI.FINANCE.MANAGEMENT.v1.2\n\nDomain: Finance / Accounting\nDelivery Stage: ANALYSIS\nLifecycle: Strategic Active\nStatus: Active\nProgress: TBD\nGate: WS2 Rule Catalogue and Databricks access; then WS3 source discovery\nOutcome: Centralized Finance Control Platform for completeness, correct OC/period, actual versus plan, missing cost, profitability, drill-down and exception ownership.\nTop Blocker: Databricks access\nNext Milestone: Finalize the WS2 Rule Catalogue and thresholds\nPriority: P1\nLast Verified: 2026-08-24",
+      "x": 0,
+      "y": 0,
+      "width": 1140,
+      "height": 420
+    },
+    {
+      "id": "task-0",
+      "type": "file",
+      "file": "03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-20260824-TASK-001_Finalize-the-WS2-Rule-Catalogue-and-thresholds.md",
+      "x": 630,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-1",
+      "type": "file",
+      "file": "03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-20260824-TASK-002_Obtain-read-only-Databricks-access-and-confirm-catalog-schema-table-li.md",
+      "x": 630,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-2",
+      "type": "file",
+      "file": "03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-20260824-TASK-003_Select-a-Golden-OC-and-run-the-rules.md",
+      "x": 630,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-3",
+      "type": "file",
+      "file": "03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-20260824-TASK-004_Reconcile-results-with-Accounting-and-finalize-exception-severity.md",
+      "x": 630,
+      "y": 1110,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-4",
+      "type": "file",
+      "file": "03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-20260824-TASK-005_Begin-WS3-factory-performance-source-discovery.md",
+      "x": 630,
+      "y": 1290,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-5",
+      "type": "file",
+      "file": "03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-TASK-001_Finance-OC-Control-Dataset-and-Exception-Catalogue.md",
+      "x": 3030,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-6",
+      "type": "file",
+      "file": "03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-TASK-002_Finance-Databricks-Access-and-Rule-Engine-Finalization.md",
+      "x": 3030,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-7",
+      "type": "file",
+      "file": "03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-TASK-003_Follow-up-Databricks-account-approval-and-confirm-account-ro.md",
+      "x": 3030,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-8",
+      "type": "file",
+      "file": "03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-TASK-004_Complete-Workstream-2-Source-Inventory-and-profile-each-sour.md",
+      "x": 3030,
+      "y": 1110,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-9",
+      "type": "file",
+      "file": "03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-TASK-005_Confirm-OC-linking-keys-and-finalize-the-Rule-Engine-Catalog.md",
+      "x": 3030,
+      "y": 1290,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-10",
+      "type": "file",
+      "file": "03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-TASK-006_Select-20-30-sample-OCs-and-compare-Rule-Engine-results-with.md",
+      "x": 3030,
+      "y": 1470,
+      "width": 480,
+      "height": 140
+    }
+  ],
+  "edges": []
+}

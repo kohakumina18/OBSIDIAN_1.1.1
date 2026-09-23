@@ -1,0 +1,148 @@
+{
+  "nodes": [
+    {
+      "id": "ppj-board-metadata",
+      "type": "text",
+      "text": "PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0 — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1",
+      "x": 0,
+      "y": -220,
+      "width": 760,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "ppj-exec-summary",
+      "type": "text",
+      "text": "PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0\n\nDomain:\nInternal Chatbot & AI Platforms\n\nLifecycle:\nMaintenance\n\nProgress:\nTBD\n\nGate:\nMaintenance and Support\n\nOutcome:\nReduce repeated helpdesk questions and help users find answers before or during ticket handling.\n\nTop Blocker:\nNeeds Confirmation\n\nNext Milestone:\nInventory current GLPI FAQ/ticket categories.\n\nLast Verified:\n2026-07-13",
+      "x": 0,
+      "y": -90,
+      "width": 760,
+      "height": 560,
+      "color": "4"
+    },
+    {
+      "id": "ppj-management-attention",
+      "type": "text",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Knowledge freshness, accuracy of system operation guidance, and separating self-service vs ticket-needed cases.\n\nDecisions Needed\n- Confirm GLPI knowledge source.\n- Confirm FAQ and ticket categories.\n- Confirm whether chatbot can create or classify tickets.\n\nExternal Dependencies\n- Needs Confirmation",
+      "x": 810,
+      "y": -90,
+      "width": 500,
+      "height": 560,
+      "color": "1"
+    },
+    {
+      "id": "ppj-lane-f3e573404df4",
+      "type": "group",
+      "x": 0,
+      "y": 560,
+      "width": 300,
+      "height": 1050,
+      "label": "BACKLOG",
+      "color": "1"
+    },
+    {
+      "id": "ppj-task-c466125be93e",
+      "type": "text",
+      "text": "[[Tasks/PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0-TASK-004_Confirm-ticket-creation-scope]]\n\nConfirm ticket creation scope\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-a4b2cdbe40f6",
+      "type": "text",
+      "text": "[[Tasks/PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0-TASK-002_Confirm-top-repeated-IT-questions]]\n\nConfirm top repeated IT questions\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-a3e2842acfcb",
+      "type": "text",
+      "text": "[[Tasks/PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0-TASK-003_Define-escalation-and-fallback-rules]]\n\nDefine escalation and fallback rules\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 1010,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-408dc7a054f1",
+      "type": "text",
+      "text": "[[Tasks/PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0-TASK-001_Inventory-current-GLPI-FAQ-ticket-categories]]\n\nInventory current GLPI FAQ/ticket categories\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 1200,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-c424eb4cd993",
+      "type": "text",
+      "text": "[[Tasks/PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0-TASK-005_Prepare-UAT-with-IT-helpdesk-users]]\n\nPrepare UAT with IT/helpdesk users\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 1390,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-8d767178b3a7",
+      "type": "group",
+      "x": 350,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "THIS WEEK",
+      "color": "2"
+    },
+    {
+      "id": "ppj-lane-bf81443bfcae",
+      "type": "group",
+      "x": 700,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "IN PROGRESS",
+      "color": "3"
+    },
+    {
+      "id": "ppj-lane-276d6ca3922f",
+      "type": "group",
+      "x": 1050,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BLOCKED / WAITING",
+      "color": "4"
+    },
+    {
+      "id": "ppj-lane-a82db70f445e",
+      "type": "group",
+      "x": 1400,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "REVIEW / UAT",
+      "color": "5"
+    },
+    {
+      "id": "ppj-lane-e782e7728e49",
+      "type": "group",
+      "x": 1750,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "DONE",
+      "color": "6"
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {
+      "project": "PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0",
+      "board_type": "project_executive_kanban",
+      "last_verified": "2026-07-13"
+    }
+  }
+}

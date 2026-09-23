@@ -1,0 +1,32 @@
+{
+	"nodes":[
+		{"id":"b2bcbc15c48b","type":"text","text":"WFX\nSource system","x":0,"y":0,"width":300,"height":100,"color":"1"},
+		{"id":"4c1c7d3935cb","type":"text","text":"Data Warehouse\nCentral data brain","x":420,"y":0,"width":340,"height":110,"color":"6"},
+		{"id":"ac40a070496c","type":"text","text":"Decision Layer\nManagement / User Action","x":1700,"y":0,"width":400,"height":120,"color":"5"},
+		{"id":"007394448cdc","type":"file","file":"03_Projects/Sourcing VER2.md","x":880,"y":"-220","width":300,"height":90},
+		{"id":"973748050476","type":"file","file":"03_Projects/CPD Datamart.md","x":880,"y":"-90","width":300,"height":90},
+		{"id":"adc7b96abb9d","type":"file","file":"03_Projects/MER Costing Intelligence.md","x":880,"y":40,"width":300,"height":90},
+		{"id":"841d6f8f76d7","type":"file","file":"03_Projects/Purchasing Inventory Report.md","x":880,"y":170,"width":300,"height":90},
+		{"id":"16eac66f1ad8","type":"file","file":"03_Projects/PERRI Chatbot.md","x":1300,"y":"-160","width":300,"height":90},
+		{"id":"6b7408fb9fbd","type":"file","file":"03_Projects/E-commerce Market Intelligence.md","x":1300,"y":0,"width":300,"height":90},
+		{"id":"a56b8ae15980","type":"file","file":"03_Projects/Sourcing Chatbot v2.3.md","x":1300,"y":160,"width":300,"height":90},
+		{"id":"9c064654b928","type":"file","file":"03_Projects/Chuyền treo ver1.md","x":420,"y":320,"width":300,"height":90},
+		{"id":"441f35d22250","type":"file","file":"03_Projects/FD QR Hanger.md","x":880,"y":420,"width":300,"height":90}
+	],
+	"edges":[
+		{"id":"ebb4b2655f29","fromNode":"b2bcbc15c48b","fromSide":"right","toNode":"4c1c7d3935cb","toSide":"left","label":"feeds"},
+		{"id":"8fc191789757","fromNode":"4c1c7d3935cb","fromSide":"right","toNode":"007394448cdc","toSide":"left","label":"sourcing data"},
+		{"id":"601b08db95bf","fromNode":"4c1c7d3935cb","fromSide":"right","toNode":"973748050476","toSide":"left","label":"fabric data"},
+		{"id":"0dd647ab17b5","fromNode":"4c1c7d3935cb","fromSide":"right","toNode":"adc7b96abb9d","toSide":"left","label":"costing history"},
+		{"id":"00a617d2e85b","fromNode":"4c1c7d3935cb","fromSide":"right","toNode":"841d6f8f76d7","toSide":"left","label":"inventory data"},
+		{"id":"e346813f6780","fromNode":"007394448cdc","fromSide":"right","toNode":"16eac66f1ad8","toSide":"left","label":"knowledge"},
+		{"id":"c635e1800006","fromNode":"007394448cdc","fromSide":"right","toNode":"a56b8ae15980","toSide":"left","label":"search"},
+		{"id":"a09056d7dfdc","fromNode":"841d6f8f76d7","fromSide":"right","toNode":"6b7408fb9fbd","toSide":"left","label":"stock signal"},
+		{"id":"65f6b1797fc2","fromNode":"adc7b96abb9d","fromSide":"right","toNode":"6b7408fb9fbd","toSide":"left","label":"cost signal"},
+		{"id":"30603be8b820","fromNode":"16eac66f1ad8","fromSide":"right","toNode":"ac40a070496c","toSide":"left","label":"answer / action"},
+		{"id":"0f7715007465","fromNode":"6b7408fb9fbd","fromSide":"right","toNode":"ac40a070496c","toSide":"left","label":"insight"},
+		{"id":"156599f94f4d","fromNode":"a56b8ae15980","fromSide":"right","toNode":"ac40a070496c","toSide":"left","label":"sourcing decision"},
+		{"id":"888d730f321d","fromNode":"9c064654b928","fromSide":"right","toNode":"ac40a070496c","toSide":"left","label":"factory KPI"},
+		{"id":"6b261f208c0d","fromNode":"441f35d22250","fromSide":"right","toNode":"973748050476","toSide":"left","label":"fabric profile"}
+	]
+}

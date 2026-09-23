@@ -1,0 +1,839 @@
+# ==PPJ Obsidian BA / AI Automation Command System README==
+
+This README explains my current Obsidian system, project portfolio structure, Canvas management logic, PowerShell automation scripts, and how ChatGPT should help me generate future PowerShell commands safely.
+
+This system is used by me as an AI Business Analyst / AI Automation Lead at PPJ Group to manage AI, automation, data, chatbot, dashboard, and workflow improvement initiatives.
+
+---
+
+# 1. My Working Context
+
+I work at PPJ Group in textile / garment manufacturing.
+
+My work sits between:
+
+- Business users
+- Management
+- IT / Dev team
+- Data team
+- AI / Automation team
+- ERP / WFX process owners
+- Accounting, Purchasing, Sourcing, EXIM, R&D Wash, CPD, Factory teams
+
+My main deliverables are:
+
+- BRD
+- Decision-driven BRD
+- ERD / Data Spec
+- User Manual / SOP
+- Meeting notes
+- Process documentation
+- Automation flow
+- Canvas portfolio views
+- Weekly project report
+- Project tasks and decision logs
+
+The main goal of this Obsidian system is:
+
+```text
+Meeting / request / issue
+→ structured note
+→ linked project
+→ canvas task
+→ phase tracking
+→ weekly report
+→ traceability
+```
+
+---
+
+# 2. Obsidian Vault Path
+
+Current vault root is:
+
+```powershell
+C:\Users\nvakt\Documents\obsidian\BA_Obsidian_Vault
+```
+
+All PowerShell scripts should be run from the vault root unless stated otherwise.
+
+---
+
+# 3. Core Folder Structure
+
+Current important folders:
+
+```text
+00_Inbox/
+01_Daily_Notes/
+02_BA_Knowledge/
+03_Projects/
+04_Data_Dictionary/
+05_Process_Library/
+06_AI_Automation/
+07_Decision_Log/
+08_Meeting_Notes/
+09_Stakeholders/
+10_Deliverables/
+11_Templates/
+99_Attachments/
+scripts/
+```
+
+Recommended usage:
+
+```text
+02_BA_Knowledge
+→ reusable concepts and methods
+
+03_Projects
+→ project notes, canvas, tasks, kanban
+
+04_Data_Dictionary
+→ entities, fields, relationships, mappings
+
+05_Process_Library
+→ L1 / L2 / L3 process documentation
+
+06_AI_Automation
+→ n8n flows, OCR, chatbot, AI design
+
+07_Decision_Log
+→ decisions, rationale, alternatives
+
+08_Meeting_Notes
+→ meeting transcript summaries and action items
+
+10_Deliverables
+→ BRD, ERD, user manuals, reports
+
+11_Templates
+→ reusable templates
+
+99_Attachments
+→ backups, audits, raw files, attachments
+
+scripts
+→ PowerShell automation scripts
+```
+
+---
+
+# 4. Key Obsidian Canvas Files
+
+Canvas files are stored here:
+
+```text
+03_Projects/Canvas/
+```
+
+Important Canvas files:
+
+```text
+PPJ_Portfolio.canvas
+PPJ_Executive_Board.canvas
+PPJ_Data_Flow.canvas
+PPJ_Roadmap_2026.canvas
+```
+
+Purpose:
+
+```text
+PPJ_Portfolio.canvas
+→ system-level portfolio overview by cluster
+
+PPJ_Executive_Board.canvas
+→ weekly execution board / phase tracking / task command board
+
+PPJ_Data_Flow.canvas
+→ WFX / DWH / Data / AI / decision dependency map
+
+PPJ_Roadmap_2026.canvas
+→ quarterly roadmap view
+```
+
+The most important daily board is:
+
+```text
+03_Projects/Canvas/PPJ_Executive_Board.canvas
+```
+
+---
+
+# 5. Executive Canvas Phase Model
+
+The Executive Canvas should use separated lifecycle lanes, not grouped phases.
+
+Correct phase lanes:
+
+```text
+PENDING
+ANALYSIS
+DESIGN
+DEVELOPMENT
+STABILIZE / UAT
+PRODUCTION / SUPPORT
+EXTERNAL / THIRD PARTIES
+BLOCKED / DEPENDENCY
+TASKS / DOCS TO UPDATE
+CLOSED / CANCELLED
+```
+
+Meaning:
+
+```text
+PENDING
+→ not prioritized yet, waiting for rescope or business readiness
+
+ANALYSIS
+→ business problem, scope, process, data, stakeholders still being clarified
+
+DESIGN
+→ solution flow, data fields, UI, permission, logic, and integration are being designed
+
+DEVELOPMENT
+→ app, automation, chatbot, dashboard, or workflow logic is being built
+
+STABILIZE / UAT
+→ usable build exists, user testing / training / bug fixing / refinement is ongoing
+
+PRODUCTION / SUPPORT
+→ system is live and needs support, monitoring, and improvement
+
+EXTERNAL / THIRD PARTIES
+→ vendor / partner / external collaboration items
+
+BLOCKED / DEPENDENCY
+→ blocked by WFX, data, API, business owner, decision, or dependency
+
+TASKS / DOCS TO UPDATE
+→ document updates, BRD updates, decision tasks, canvas-linked work items
+
+CLOSED / CANCELLED
+→ completed, cancelled, stopped, or no longer active
+```
+
+Current preferred Canvas layout:
+
+```text
+PENDING | ANALYSIS | DESIGN | DEVELOPMENT | STABILIZE/UAT | PRODUCTION/SUPPORT | EXTERNAL | BLOCKED | TASKS | CLOSED
+```
+
+All phase groups should be spread horizontally end-to-end, not compacted into a grid.
+
+---
+
+# 6. Important Encoding Rule
+
+Do NOT use emoji in PowerShell-generated Canvas group labels.
+
+Reason:
+
+```text
+Windows PowerShell 5.1 can create mojibake / corrupted Unicode labels in .canvas files.
+```
+
+Good Canvas labels:
+
+```text
+ANALYSIS
+DESIGN
+DEVELOPMENT
+STABILIZE / UAT
+PRODUCTION / SUPPORT
+BLOCKED / DEPENDENCY
+TASKS / DOCS TO UPDATE
+EXTERNAL / THIRD PARTIES
+CLOSED / CANCELLED
+```
+
+Avoid in Canvas labels generated by PowerShell:
+
+```text
+emoji
+smart quotes
+special unicode arrows
+fancy symbols
+```
+
+Before running scripts, use:
+
+```powershell
+chcp 65001
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+$OutputEncoding = [System.Text.Encoding]::UTF8
+```
+
+Still, safest rule: use ASCII labels for Canvas.
+
+---
+
+# 7. Current Project Portfolio
+
+Known active / tracked projects include:
+
+```text
+ACC.CHICOS.INVOICE.RECHECK-AUDIT.v1.1
+RND.WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1
+Accounting Expense Invoices
+MER Costing Intelligence
+E-commerce Market Intelligence
+Workshop Analysis
+CPD Fabric Database
+HR Project
+SCP.SOURCING.CHATBOT.v2.3
+Chuyen treo ver1
+FD QR Hanger
+PERRI Chatbot
+GLPI Helpdesk AI Chatbot
+Invoice Downloader
+PO Commit
+Accounting Automation
+Accounting GRN Supplier Invoice Bot
+EXIM Expense Invoice Bot
+Adhoc Indent mien Nam
+CPD Datamart
+Purchasing Inventory Report
+PPJ.AI.Hub
+Material Allocation
+PUR.GDI Automation
+QSee.ai
+Primo1D RFID Thread
+NUNOX
+VITAS Sharing
+COWASH
+H&M Label-O Processing
+Stratova AI
+AI Automation Workshop
+```
+
+Important naming update:
+
+```text
+SCP.SOURCING.CHATBOT.v2.3
+```
+
+This project includes:
+
+```text
+Sourcing chatbot
+External sample data repository
+Search / lookup over sourcing-related data
+Supplier / material / sample data management
+```
+
+Important new projects:
+
+```text
+ACC.CHICOS.INVOICE.RECHECK-AUDIT.v1.1
+→ invoice recheck / audit pilot for CHICO'S
+→ foundation for reusable invoice checking across Accounting, Import, Export
+
+RND.WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1
+→ port R&D Wash sampling management into PPJ Group Portal
+→ make sampling workflow usable by wider PPJ group
+
+PPJ.AI.Hub
+→ central AI tools, bots, chatbot, automation, and internal application hub for the PPJ AI team
+→ Web Tong Hop Tool and Web Tổng Hợp Tool are old names / aliases for this platform project
+→ individual bot and automation projects remain separate source-of-truth project notes and should be linked as modules, not merged into this note
+```
+
+---
+
+# 8. Current Scripts
+
+Scripts are stored here:
+
+```text
+scripts/
+```
+
+Existing / recommended scripts:
+
+```text
+Add-PPJCanvasTask.ps1
+Rebuild-PPJExecutiveBoard-SplitPhases.ps1
+Expand-PPJExecutiveBoard-Horizontal.ps1
+New-PPJProject.ps1
+Move-PPJProjectPhase.ps1
+Add-PPJMeetingNote.ps1
+Build-PPJWeeklyReport.ps1
+Audit-ObsidianLinks.ps1
+Backup-ObsidianVault.ps1
+Promote-WebTongHopToPPJAIHub.ps1
+```
+
+Purpose:
+
+```text
+Add-PPJCanvasTask.ps1
+→ create task note, link to project, add task node to Executive Canvas
+
+Rebuild-PPJExecutiveBoard-SplitPhases.ps1
+→ rebuild Executive Canvas using separated lifecycle phases
+
+Expand-PPJExecutiveBoard-Horizontal.ps1
+→ expand Executive Canvas into horizontal end-to-end lifecycle view
+
+New-PPJProject.ps1
+→ create a new project note with frontmatter and standard BA sections
+
+Move-PPJProjectPhase.ps1
+→ move project note to new phase and reposition it on Executive Canvas
+
+Add-PPJMeetingNote.ps1
+→ create linked meeting note and append update to project note
+
+Build-PPJWeeklyReport.ps1
+→ generate weekly project report from project notes
+
+Audit-ObsidianLinks.ps1
+→ scan broken Obsidian wiki links
+
+Backup-ObsidianVault.ps1
+→ zip backup of vault excluding .obsidian and .git
+
+Promote-WebTongHopToPPJAIHub.ps1
+→ promote old Web Tong Hop Tool notes into canonical PPJ.AI.Hub with backup, alias/history conversion, link update plan, Canvas file-node update plan, registry update, and report/log generation
+```
+
+---
+
+# 9. Safe Script Rules for ChatGPT
+
+When generating PowerShell for this system, always follow these rules:
+
+```text
+1. Assume the script is run from vault root.
+2. Backup .canvas files before modifying them.
+3. Use UTF-8 for reading and writing files.
+4. Avoid emoji in Canvas labels.
+5. Keep scripts idempotent where possible.
+6. Do not delete existing notes unless explicitly asked.
+7. Do not overwrite project notes without backup or append-only logic.
+8. For Canvas edits, preserve existing nodes unless rebuilding is explicitly requested.
+9. Use safe filenames by replacing invalid Windows characters.
+10. Use Obsidian wiki links [[...]] in generated markdown.
+```
+
+Recommended PowerShell read/write style:
+
+```powershell
+Get-Content -Raw -Encoding UTF8 $path
+Set-Content -Encoding UTF8 $path
+Add-Content -Encoding UTF8 $path
+```
+
+Canvas backup pattern:
+
+```powershell
+$stamp = Get-Date -Format "yyyyMMdd_HHmmss"
+Copy-Item $canvasPath "$backupRoot\PPJ_Executive_Board.canvas.$stamp.bak"
+```
+
+---
+
+# 10. Common Commands
+
+Create new project:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File "scripts\New-PPJProject.ps1" `
+-Project "PROJECT_NAME" `
+-Phase "ANALYSIS" `
+-Cluster "Automation" `
+-Outcome "Business outcome here" `
+-Owner "Khoa" `
+-Related "Decision_Driven_BRD","Impact Analysis","Data Mapping"
+```
+
+Move project phase:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File "scripts\Move-PPJProjectPhase.ps1" `
+-Project "PROJECT_NAME" `
+-Phase "DESIGN" `
+-Reason "Business flow confirmed" `
+-NextAction "Design data fields, screen flow, and permission model"
+```
+
+Add canvas task:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File "scripts\Add-PPJCanvasTask.ps1" `
+-Project "PROJECT_NAME" `
+-Title "Task title here" `
+-Lane Task `
+-Related "Decision_Driven_BRD","Data Mapping","Impact Analysis" `
+-Outcome "Expected outcome here" `
+-NextAction "Next action here"
+```
+
+Add meeting note:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File "scripts\Add-PPJMeetingNote.ps1" `
+-Project "PROJECT_NAME" `
+-Title "Meeting title here" `
+-Stakeholders "Stakeholder names / teams" `
+-Decision "Decision made or TBD" `
+-NextAction "Next action here"
+```
+
+Generate weekly report:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File "scripts\Build-PPJWeeklyReport.ps1"
+```
+
+Audit broken links:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File "scripts\Audit-ObsidianLinks.ps1"
+```
+
+Backup vault:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File "scripts\Backup-ObsidianVault.ps1"
+```
+
+Rebuild Executive Canvas with separated phases:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File "scripts\Rebuild-PPJExecutiveBoard-SplitPhases.ps1"
+```
+
+Expand Executive Canvas horizontally:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File "scripts\Expand-PPJExecutiveBoard-Horizontal.ps1"
+```
+
+---
+
+# 11. Standard Project Note Structure
+
+Every project note should ideally contain:
+
+```text
+YAML frontmatter
+Project title
+Phase
+Cluster
+Owner
+Canvas links
+Business outcome
+Current context
+Problem / pain point
+Scope
+Process
+Data
+AI / Automation scope
+Human check
+Fallback
+KPI
+Risks
+Next actions
+Related concepts
+Methods
+Deliverables
+```
+
+Example frontmatter:
+
+```yaml
+---
+type: project
+project_name: "SCP.SOURCING.CHATBOT.v2.3"
+phase: "DEVELOPMENT"
+cluster: "AI / Data"
+owner: "Khoa"
+---
+```
+
+---
+
+# 12. Standard Task Note Structure
+
+Tasks are stored in:
+
+```text
+03_Projects/_Tasks/
+```
+
+Each task note should include:
+
+```text
+type: task
+created date
+project
+lane
+status
+title
+project link
+outcome
+next action
+related documents
+source/context
+validation condition
+related concepts
+methods
+projects
+deliverables
+```
+
+Task notes should be linked into:
+
+```text
+PPJ_Executive_Board.canvas
+Project note
+Related deliverables
+Related methods
+```
+
+---
+
+# 13. Standard Meeting Note Structure
+
+Meeting notes are stored in:
+
+```text
+08_Meeting_Notes/
+```
+
+Each meeting note should include:
+
+```text
+type: meeting
+date
+time
+project
+meeting title
+project link
+stakeholders
+context
+current process
+pain points
+requirements
+data / source of truth
+systems
+decisions
+risks / gaps
+action items
+open questions
+next steps
+related concepts
+methods
+projects
+deliverables
+```
+
+Meeting notes should append a short update into the related project note.
+
+---
+
+# 14. Standard Deliverables
+
+Deliverables are stored in:
+
+```text
+10_Deliverables/
+```
+
+Important deliverable templates:
+
+```text
+Decision_Driven_BRD
+ERD_Template
+User_Manual_Template
+Automation Flow
+Dashboard Design
+Process Documentation
+Data_Dictionary
+```
+
+Decision-driven BRD should focus on:
+
+```text
+Problem
+Root cause
+Decision needed
+Options
+Recommended option
+Expected outcome
+Process impact
+User behavior impact
+Data requirement
+AI / automation design
+Validation criteria
+Fallback
+KPI
+Risk
+Next action
+```
+
+---
+
+# 15. Linking Philosophy
+
+Every generated note should include Obsidian links.
+
+Use clean linking sections without markdown H2 headings if the note is meant to paste directly:
+
+```text
+Related Concepts
+[[Outcome Driven Thinking]]
+[[System Thinking]]
+[[Decision Making]]
+[[Stakeholder Management]]
+[[Data Governance]]
+
+Methods
+[[Impact Analysis]]
+[[Decision Matrix]]
+[[Requirement Elicitation]]
+[[Data Mapping]]
+
+Projects
+[[PROJECT_NAME]]
+
+Deliverables
+[[Decision_Driven_BRD]]
+[[ERD_Template]]
+[[User_Manual_Template]]
+```
+
+Do not over-link generic words. Link only reusable concepts, methods, projects, and deliverables.
+
+---
+
+# 16. PowerShell Request Pattern I Use
+
+When I ask ChatGPT for a PowerShell script, generate:
+
+```text
+1. What the script does
+2. Copy-run PowerShell code
+3. How to run it
+4. What files it modifies
+5. Safety notes
+```
+
+Script should be practical and immediately usable.
+
+Preferred style:
+
+```text
+- Give full script
+- Avoid pseudo-code
+- Avoid vague explanation
+- Use copy-paste commands
+- Use comments inside script
+- Preserve my existing vault structure
+```
+
+---
+
+# 17. Common Tasks I Need ChatGPT to Generate Scripts For
+
+Generate PowerShell scripts for tasks like:
+
+```text
+Create new project note
+Move project to another phase
+Add task to Executive Canvas
+Add decision to Decision Log
+Create meeting note
+Append meeting update to project
+Generate weekly portfolio report
+Audit broken links
+Backup vault
+Normalize Canvas labels
+Re-layout Canvas
+Extract all project phases from frontmatter
+Create missing notes from broken links
+Generate project index
+Generate dashboard note
+Generate BRD from project note
+Generate ERD skeleton from data section
+Generate user manual skeleton from project note
+Archive closed projects
+Create monthly report
+Create phase summary
+Create owner workload summary
+Create blocked dependency report
+```
+
+---
+
+# 18. Important Current Needs
+
+The Executive Canvas must stay readable.
+
+Avoid compact layout.
+
+Preferred Canvas layout:
+
+```text
+End-to-end horizontal lifecycle
+Large lanes
+Expanded spacing
+Cards arranged with enough gap
+Readable labels
+ASCII group titles
+```
+
+Whenever updating Canvas layout, preserve:
+
+```text
+existing project nodes
+existing task nodes
+existing edges if possible
+existing notes
+existing backups
+```
+
+---
+
+# 19. Recommended ChatGPT Behavior
+
+When helping me, ChatGPT should think like:
+
+```text
+AI BA + Obsidian system architect + PowerShell automation helper
+```
+
+Always consider:
+
+```text
+Business problem
+Project phase
+Data source
+System dependency
+User impact
+Decision needed
+Deliverable affected
+Canvas placement
+Traceability link
+Backup safety
+```
+
+When uncertain, choose the safer script:
+
+```text
+append instead of overwrite
+backup before modify
+create missing folder automatically
+avoid deleting
+avoid emoji in Canvas
+```
+
+---
+
+# 20. One-Line System Summary
+
+```text
+This Obsidian vault is a PPJ AI/Automation Portfolio Command System that connects projects, phases, tasks, meetings, decisions, BRD/ERD/manual deliverables, and Canvas visualization through PowerShell automation.
+```

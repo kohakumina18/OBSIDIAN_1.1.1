@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "VITAS.Sharing.202606\n\nDomain: External Collaboration\nLifecycle: Closed\nGate: Closed event\nOutcome: Preserve the June 2026 VITAS sharing record.\nLast Verified: 2026-08-24",
+      "x": 0,
+      "y": 0,
+      "width": 720,
+      "height": 360
+    }
+  ],
+  "edges": []
+}

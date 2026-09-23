@@ -1,0 +1,140 @@
+{
+  "nodes": [
+    {
+      "id": "lane-0",
+      "type": "group",
+      "x": 0,
+      "y": 500,
+      "width": 540,
+      "height": 1700,
+      "label": "BACKLOG"
+    },
+    {
+      "id": "lane-1",
+      "type": "group",
+      "x": 600,
+      "y": 500,
+      "width": 540,
+      "height": 1700,
+      "label": "THIS WEEK"
+    },
+    {
+      "id": "lane-2",
+      "type": "group",
+      "x": 1200,
+      "y": 500,
+      "width": 540,
+      "height": 1700,
+      "label": "IN PROGRESS"
+    },
+    {
+      "id": "lane-3",
+      "type": "group",
+      "x": 1800,
+      "y": 500,
+      "width": 540,
+      "height": 1700,
+      "label": "BLOCKED / WAITING"
+    },
+    {
+      "id": "lane-4",
+      "type": "group",
+      "x": 2400,
+      "y": 500,
+      "width": 540,
+      "height": 1700,
+      "label": "REVIEW / UAT"
+    },
+    {
+      "id": "lane-5",
+      "type": "group",
+      "x": 3000,
+      "y": 500,
+      "width": 540,
+      "height": 1700,
+      "label": "DONE"
+    },
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "PPJxQSee.AI\n\nDomain: QC / TQM\nDelivery Stage: ANALYSIS\nLifecycle: On Hold\nStatus: On Hold\nProgress: TBD\nGate: Reactivation decision\nOutcome: Preserve the QC AI inspection opportunity until ownership, resources, data, metrics and budget exist.\nTop Blocker: No owner/resources\nNext Milestone: Confirm QC and TQM owners\nPriority: Hold\nLast Verified: 2026-08-24",
+      "x": 0,
+      "y": 0,
+      "width": 1140,
+      "height": 420
+    },
+    {
+      "id": "task-0",
+      "type": "file",
+      "file": "03_Projects/PPJxQSee.ai/Tasks/PPJxQSee.AI-20260824-TASK-001_Confirm-QC-and-TQM-owners.md",
+      "x": 1830,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-1",
+      "type": "file",
+      "file": "03_Projects/PPJxQSee.ai/Tasks/PPJxQSee.AI-20260824-TASK-002_Define-dataset-labeling-capability-pilot-product-and-success-metrics.md",
+      "x": 1830,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-2",
+      "type": "file",
+      "file": "03_Projects/PPJxQSee.ai/Tasks/PPJxQSee.AI-20260824-TASK-003_Confirm-budget-resources-before-reactivation.md",
+      "x": 1830,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-3",
+      "type": "file",
+      "file": "03_Projects/PPJxQSee.ai/Tasks/PPJxQSee.AI-TASK-001_QSee-Proposal-Evaluation-and-Recommendation.md",
+      "x": 3030,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-4",
+      "type": "file",
+      "file": "03_Projects/PPJxQSee.ai/Tasks/PPJxQSee.AI-TASK-002_QSee-Formal-Hold-and-Reactivation-Criteria.md",
+      "x": 3030,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-5",
+      "type": "file",
+      "file": "03_Projects/PPJxQSee.ai/Tasks/PPJxQSee.AI-TASK-003_Confirm-formal-hold-status.md",
+      "x": 3030,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-6",
+      "type": "file",
+      "file": "03_Projects/PPJxQSee.ai/Tasks/PPJxQSee.AI-TASK-004_Define-reactivation-criteria-covering-owners-dataset-labelin.md",
+      "x": 3030,
+      "y": 1110,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-7",
+      "type": "file",
+      "file": "03_Projects/PPJxQSee.ai/Tasks/PPJxQSee.AI-TASK-005_Preserve-NDA-and-proposal-documents.md",
+      "x": 3030,
+      "y": 1290,
+      "width": 480,
+      "height": 140
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,149 @@
+{
+  "nodes": [
+    {
+      "id": "lane-0",
+      "type": "group",
+      "x": 0,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "BACKLOG"
+    },
+    {
+      "id": "lane-1",
+      "type": "group",
+      "x": 600,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "THIS WEEK"
+    },
+    {
+      "id": "lane-2",
+      "type": "group",
+      "x": 1200,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "IN PROGRESS"
+    },
+    {
+      "id": "lane-3",
+      "type": "group",
+      "x": 1800,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "BLOCKED / WAITING"
+    },
+    {
+      "id": "lane-4",
+      "type": "group",
+      "x": 2400,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "REVIEW / UAT"
+    },
+    {
+      "id": "lane-5",
+      "type": "group",
+      "x": 3000,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "DONE"
+    },
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "SCP.SOURCING.CHATBOT.v2.3\n\nDomain: Sourcing / Purchasing\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: GO-LIVE / PRODUCTION / SUPPORT\nLifecycle: Production\nStatus: Active\nProgress: TBD\nGate: Production data quality and stress testing\nOutcome: Provide production supplier, material, fabric, trim, price/history, MOQ/MCQ and payment-term search and Sourcing assistance.\nTop Blocker: Manual external-data input\nNext Milestone: Clean missing fields, mixed types, duplicates and naming\nPriority: P9\nLast Verified: 2026-08-24",
+      "x": 0,
+      "y": 0,
+      "width": 1140,
+      "height": 420
+    },
+    {
+      "id": "task-0",
+      "type": "file",
+      "file": "03_Projects/SCP.SOURCING.CHATBOT.v2.3/Tasks/SCP.SOURCING.CHATBOT.v2.3-20260824-TASK-001_Clean-missing-fields-mixed-types-duplicates-and-naming.md",
+      "x": 30,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-1",
+      "type": "file",
+      "file": "03_Projects/SCP.SOURCING.CHATBOT.v2.3/Tasks/SCP.SOURCING.CHATBOT.v2.3-20260824-TASK-002_Stress-test-retrieval-with-real-Sourcing-questions.md",
+      "x": 30,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-2",
+      "type": "file",
+      "file": "03_Projects/SCP.SOURCING.CHATBOT.v2.3/Tasks/SCP.SOURCING.CHATBOT.v2.3-20260824-TASK-003_Monitor-adoption-and-production-quality.md",
+      "x": 30,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-3",
+      "type": "file",
+      "file": "03_Projects/SCP.SOURCING.CHATBOT.v2.3/Tasks/SCP.SOURCING.CHATBOT.v2.3-TASK-001_Sourcing-Post-training-Usage-Assessment.md",
+      "x": 3030,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-4",
+      "type": "file",
+      "file": "03_Projects/SCP.SOURCING.CHATBOT.v2.3/Tasks/SCP.SOURCING.CHATBOT.v2.3-TASK-002_Sourcing-Closeout-and-External-Data-Standardization-Backlog.md",
+      "x": 3030,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-5",
+      "type": "file",
+      "file": "03_Projects/SCP.SOURCING.CHATBOT.v2.3/Tasks/SCP.SOURCING.CHATBOT.v2.3-TASK-003_Finalize-output-format-and-confirm-UAT-acceptance.md",
+      "x": 3030,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-6",
+      "type": "file",
+      "file": "03_Projects/SCP.SOURCING.CHATBOT.v2.3/Tasks/SCP.SOURCING.CHATBOT.v2.3-TASK-004_Complete-User-Manual-and-support-handover.md",
+      "x": 3030,
+      "y": 1110,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-7",
+      "type": "file",
+      "file": "03_Projects/SCP.SOURCING.CHATBOT.v2.3/Tasks/SCP.SOURCING.CHATBOT.v2.3-TASK-005_Separate-defects-from-enhancements-and-transfer-remaining-is.md",
+      "x": 3030,
+      "y": 1290,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-8",
+      "type": "file",
+      "file": "03_Projects/SCP.SOURCING.CHATBOT.v2.3/Tasks/SCP.SOURCING.CHATBOT.v2.3-TASK-006_Create-update-the-Sourcing-External-Data-Standardization-Bac.md",
+      "x": 3030,
+      "y": 1470,
+      "width": 480,
+      "height": 140
+    }
+  ],
+  "edges": []
+}

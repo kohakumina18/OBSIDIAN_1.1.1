@@ -1,0 +1,148 @@
+{
+  "nodes": [
+    {
+      "id": "ppj-board-metadata",
+      "type": "text",
+      "text": "PPJxNUNOX.ScanTrial — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1",
+      "x": 0,
+      "y": -220,
+      "width": 760,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "ppj-exec-summary",
+      "type": "text",
+      "text": "PPJxNUNOX.ScanTrial\n\nDomain:\nFabric / Textiles Technique\n\nLifecycle:\nHardware Trial / Feasibility Assessment\n\nProgress:\nTBD\n\nGate:\nVendor Visit Proposed / Pending Leadership Approval\n\nOutcome:\nEvaluate NUNOX scanning and a Digital Library opportunity linking fabric, hanger, garment sample, visual and Technical metadata.\n\nTop Blocker:\nLeadership direction, schedule, objective, sample dataset and sponsor are not confirmed.\n\nNext Milestone:\nObtain leadership direction and confirm the 17-18 August schedule.\n\nLast Verified:\n2026-08-01",
+      "x": 0,
+      "y": -90,
+      "width": 760,
+      "height": 560,
+      "color": "4"
+    },
+    {
+      "id": "ppj-management-attention",
+      "type": "text",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Scanner workflow, storage, access, integration and commercial value are not validated.\n- Scope may overlap FD, CPD and Technical platforms if boundaries are not explicit.\n\nDecisions Needed\n- Approve or decline the vendor visit and Digital Library assessment.\n- Confirm leadership sponsor and business-case scope.\n\nExternal Dependencies\n- NUNOX Scan Trial -> Fabric Image Capture -> FD / CPD / Technical Integration Assessment -> Digital Library Business Case",
+      "x": 810,
+      "y": -90,
+      "width": 500,
+      "height": 560,
+      "color": "1"
+    },
+    {
+      "id": "ppj-lane-f3e573404df4",
+      "type": "group",
+      "x": 0,
+      "y": 560,
+      "width": 300,
+      "height": 860,
+      "label": "BACKLOG",
+      "color": "1"
+    },
+    {
+      "id": "ppj-task-80b114624da8",
+      "type": "text",
+      "text": "[[Tasks/PPJxNUNOX.ScanTrial-TASK-005_Assess-integration-boundaries-with-FD-CPD-and-Technical-Plat]]\n\nAssess integration boundaries with FD, CPD and Technical Platform\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-9cd1a7aa42e3",
+      "type": "text",
+      "text": "[[Tasks/PPJxNUNOX.ScanTrial-TASK-003_Define-session-objective-sample-dataset-and-user-groups]]\n\nDefine session objective, sample dataset and user groups\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-2d2bb26d3c18",
+      "type": "text",
+      "text": "[[Tasks/PPJxNUNOX.ScanTrial-TASK-004_Evaluate-scanner-workflow-storage-and-access]]\n\nEvaluate scanner workflow, storage and access\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 1010,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-bd3941b85336",
+      "type": "text",
+      "text": "[[Tasks/PPJxNUNOX.ScanTrial-TASK-002_Obtain-leadership-direction-and-confirm-the-17-18-August-sch]]\n\nObtain leadership direction and confirm the 17-18 August schedule\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 1200,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-8d767178b3a7",
+      "type": "group",
+      "x": 350,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "THIS WEEK",
+      "color": "2"
+    },
+    {
+      "id": "ppj-task-6366a843635f",
+      "type": "text",
+      "text": "[[Tasks/PPJxNUNOX.ScanTrial-TASK-001_NUNOX-Visit-Preparation-and-Digital-Library-Business-Case]]\n\nNUNOX Visit Preparation and Digital Library Business Case\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 370,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-bf81443bfcae",
+      "type": "group",
+      "x": 700,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "IN PROGRESS",
+      "color": "3"
+    },
+    {
+      "id": "ppj-lane-276d6ca3922f",
+      "type": "group",
+      "x": 1050,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BLOCKED / WAITING",
+      "color": "4"
+    },
+    {
+      "id": "ppj-lane-a82db70f445e",
+      "type": "group",
+      "x": 1400,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "REVIEW / UAT",
+      "color": "5"
+    },
+    {
+      "id": "ppj-lane-e782e7728e49",
+      "type": "group",
+      "x": 1750,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "DONE",
+      "color": "6"
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {
+      "project": "PPJxNUNOX.ScanTrial",
+      "board_type": "project_executive_kanban",
+      "last_verified": "2026-08-01"
+    }
+  }
+}

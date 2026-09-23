@@ -1,0 +1,14 @@
+﻿# Decision Log
+
+| Decision ID | Decision | Date | Owner | Impact | Link |
+|---|---|---|---|---|---|
+| DEC-001 |  |  |  |  | [[]] |
+| DEC-WEEKLY-20260718-FIN-V12 | Finance v1.2 canonical migration and control scope | 2026-07-18 | Accounting / Portfolio Governance | FIN.AI.FINANCE.MANAGEMENT.v1.1 | [[DEC-WEEKLY-20260718-FIN-V12]] |
+| DEC-WEEKLY-20260718-EXP-GOLIVE | Expense Invoice go-live approval | 2026-07-18 | Accounting | PPJ.ExpenseInvoices.v1.1 | [[DEC-WEEKLY-20260718-EXP-GOLIVE]] |
+| DEC-WEEKLY-20260718-MAT-ROLLBACK | Material Allocation rollback and audit model | 2026-07-18 | Purchasing / WFX Owner | PUR.Material.Allocation.v1.1 | [[DEC-WEEKLY-20260718-MAT-ROLLBACK]] |
+| DEC-WEEKLY-20260718-HR-HANDOVER | HR handover ownership and acceptance | 2026-07-18 | HR / Software Team | HR.SSPFD.Workflow.v1.1 | [[DEC-WEEKLY-20260718-HR-HANDOVER]] |
+| DEC-WEEKLY-20260718-QSEE | QSee collaboration recommendation | 2026-07-18 | QC / chá»‹ TiÃªn | PPJxQSee.AI | [[DEC-WEEKLY-20260718-QSEE]] |
+| DEC-WEEKLY-20260718-WASH-MVP | Costing Wash MVP and expert-approval boundary | 2026-07-18 | MER / Wash Owner | COSTING.AGENTIC.PLATFORM.v1.1 | [[DEC-WEEKLY-20260718-WASH-MVP]] |
+
+
+

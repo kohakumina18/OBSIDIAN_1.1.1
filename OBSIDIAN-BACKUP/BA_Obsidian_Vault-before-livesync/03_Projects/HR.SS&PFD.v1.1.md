@@ -1,0 +1,315 @@
+---
+type: project
+project_name: "HR Project"
+cluster: "Governance"
+status: "Production Rollout / Stabilization"
+priority: "P5"
+project_code: "HR.SSPFD.Workflow.v1.1"
+department: "HR"
+object: "Inferred from filename"
+project_characteristic: "HR workflow"
+version: "v1.1"
+phase: "Production Rollout / Stabilization"
+owner: "TBD"
+business_owner: "TBD"
+technical_owner: "TBD"
+members: []
+stakeholders: []
+systems: []
+data_sources: []
+progress: "TBD"
+blocked: "TBD"
+decision_needed: "TBD"
+next_action: "TBD"
+last_updated: "2026-06-28"
+confidence: "Strong"
+source_files: []
+canonical_code: "HR.SSPFD.Workflow.v1.1"
+current_file: "HR.SS&PFD.v1.1.md"
+primary_domain: "HR"
+lifecycle: "Production Rollout / Stabilization"
+current_gate: "UAT Completed / Initial Deployment / Group Rollout"
+last_verified: "2026-08-01"
+source_event: "PPJ-WEEKLY-20260727-20260801"
+dependencies: ["Employee source data -> Matching Rules -> Trusted Employee Master -> Group Rollout", "Applicant Input -> Extraction -> Mandatory-field Validation -> Prefill -> Review -> Structured Submission"]
+---
+
+<!-- PPJ_PROJECT_KNOWLEDGE_START -->
+
+# Project Knowledge Detail
+
+## Executive Summary
+
+`HR.SSPFD.Workflow.v1.1` is an HR/BHXH data workflow project focused on extracting and standardizing the latest 3 months of WISER factory data for HR review, reconciliation, and BHXH-related preparation. The project should be treated as a data/workflow initiative, not a generic HR chatbot or broad HR automation.
+
+Confirmed direction: WISER is the source factory context, the required period is the latest 3 months, and the next work is to confirm fields, output format, validation rules, and reviewer ownership.
+
+Key scope includes WISER data extraction, HR/BHXH field mapping, missing/duplicate/invalid data checks, standardized output for HR, and clear permission handling because HR/BHXH data is sensitive.
+
+## Business Context
+
+This project belongs to the PPJ AI/Automation portfolio. The repaired managed block records business meaning, ownership gaps, data/source-of-truth needs, risks, decisions, and next actions without changing the filename or user-written content outside the managed block.
+
+## Problem Statement
+
+The existing generated block used generic wording and may not contain enough project-specific business detail. This repair makes the block more conservative, clearer, and easier to validate.
+
+## Objectives
+
+- Clarify project-specific business meaning.
+- Identify missing owner, data, and workflow details.
+- Prepare the note for business confirmation and deliverable creation.
+
+## Scope
+
+### In Scope
+
+- Business context and scope clarification
+- Stakeholder and source-of-truth confirmation
+- Risk, decision, and next-action tracking
+
+### Out of Scope
+
+- Renaming files
+- Moving or archiving files
+- Canvas layout changes
+- Merging this project into another note
+
+## Stakeholders
+
+| Role            | Name / Team | Responsibility                             | Confirmation       |
+| --------------- | ----------- | ------------------------------------------ | ------------------ |
+| Business Owner  | TBD         | Confirm process, scope, and acceptance     | Needs Confirmation |
+| Technical Owner | TBD         | Confirm system, data, and support approach | Needs Confirmation |
+| Users           | TBD         | Validate workflow and outputs              | Needs Confirmation |
+
+## Current Process
+
+Current process is partially documented and needs confirmation from the business owner and users.
+
+## Target Process
+
+Target process should be confirmed through requirements walkthrough, source-of-truth review, and UAT planning.
+
+## Data and Source of Truth
+
+| Data Object          | Source System | Owner | Quality Risk                       | Confirmation       |
+| -------------------- | ------------- | ----- | ---------------------------------- | ------------------ |
+| Primary project data | TBD           | TBD   | Missing source-of-truth definition | Needs Confirmation |
+
+## System / Automation Design
+
+System / automation design is TBD unless already confirmed in the source project note, registry, or resource matrix. The project should define input, output, user flow, exceptions, support owner, and monitoring before implementation or rollout decisions.
+
+## Business Rules
+
+- Do not rename or merge this project without approval.
+- Source of truth must be confirmed before automation expansion.
+- Owner and support path must be confirmed before production use.
+
+## KPI / Success Metrics
+
+| KPI             | Target | Current | Notes                            |
+| --------------- | ------ | ------- | -------------------------------- |
+| Time saved      | TBD    | TBD     | Define after process baseline    |
+| Error reduction | TBD    | TBD     | Define after data/process review |
+| Adoption        | TBD    | TBD     | Confirm user group               |
+
+## Risks and Blockers
+
+- Unclear ownership
+- Missing source-of-truth definition
+- Incomplete data fields or process rules
+- Support and escalation path not confirmed
+
+## Decisions Needed
+
+- Confirm business owner.
+- Confirm technical owner.
+- Confirm source of truth.
+- Confirm phase, scope, and next action.
+
+## Next Actions
+
+- Review repaired block with project owner.
+- Confirm missing data fields and workflow.
+- Update related BRD/SOP/user manual after confirmation.
+
+## Evidence and Confidence
+
+| Field   | Value                                                                            | Evidence Source                                        | Confidence |
+| ------- | -------------------------------------------------------------------------------- | ------------------------------------------------------ | ---------- |
+| Project | HR.SS&PFD.v1.1                                                                   | Current filename                                       | Strong     |
+| Scope   | HR/BHXH data workflow using latest 3-month WISER data; not a generic HR chatbot. | User-provided project detail / memory layer / registry | Strong     |
+
+Evidence sources:
+03_Projects_Registry\PPJ_PROJECT_REGISTRY.md: | HR.SS&PFD.v1.1 | HR.SS&PFD.v1.1.md | [[DESIGN]] | Other / To Be Classified | Khoa | TBD | HR | Design / P3 | TBD | TBD | TBD | Next Actions | TBD | TBD | HR.SS&PFD.v1.1.md | 60 | Needs HR stakeholder engagement |
+03_Projects_Registry\PPJ_PROJECT_RESOURCE_MATRIX.md: | [[HR.SS&PFD.v1.1]] | HR Project | [[DESIGN]] / TBD | Khoa | TBD | HR | Other / To Be Classified | High - missing HR owner input | P3 | TBD | TBD | Next Actions | HR.SS&PFD.v1.1.md | 60 |
+03_Projects_Registry\PPJ_PROJECT_RESOURCE_MATRIX.md: - [[HR.SS&PFD.v1.1]] - Risk: High - missing HR owner input; Blocker: TBD
+03_Projects_Registry\PPJ_PROJECT_RESOURCE_MATRIX.md: - [[HR.SS&PFD.v1.1]] - Department: HR
+09_Stakeholders\PPJ_TEAM_WORKLOAD_MAP.md: - [[HR.SS&PFD.v1.1]] - Other / To Be Classified - P3
+09_Stakeholders\PPJ_TEAM_WORKLOAD_MAP.md: - [[HR.SS&PFD.v1.1]] - P3 - HR
+03_Projects\Canvas\PPJ_Executive_Board.canvas: Canvas reference
+03_Projects\Canvas\PPJ_Portfolio.canvas: Canvas reference
+
+## Related Concepts
+
+[[Project Governance]]
+[[Traceability]]
+[[Business Process Design]]
+[[Data Governance]]
+
+## Methods
+
+[[Requirement Elicitation]]
+[[Impact Analysis]]
+[[Data Mapping]]
+[[User Journey Mapping]]
+[[Acceptance Criteria]]
+
+## Projects
+
+[[HR.SS&PFD.v1.1]]
+
+## Deliverables
+
+[[Decision_Driven_BRD]]
+[[Data_Dictionary_Template]]
+[[ERD_Template]]
+[[User_Manual_Template]]
+[[UAT_Checklist_Template]]
+
+
+## Weekly Synchronization Event: PPJ-WEEKLY-20260713-20260718
+
+### Executive Summary
+
+Stakeholders agreed the solution is more appropriate for transfer to the Software Team because it behaves as a business application, workflow management, data-processing software, rule-based validation and user-facing system rather than an AI-led initiative. The project is pending handover and is not completed or closed.
+
+### Current Outcome
+
+Analyze and audit HR, payroll and BHXH workflows, with the original MVP focused on GREA BHXH data.
+
+Primary output: Complete Software Team handover package with scope, data, rules, workflow, roles and security requirements
+
+### Current Status
+
+- Canonical Code: HR.SSPFD.Workflow.v1.1
+- Current File: 03_Projects/HR.SS&PFD.v1.1.md
+- Primary Domain: HR
+- Lifecycle: On Hold / Pending Decision
+- Progress: TBD
+- Current Gate: Transfer Preparation / Pending Handover
+- Priority for 2026-07-20 to 2026-07-25: P6
+
+### Latest Update
+
+Stakeholders agreed the solution is more appropriate for transfer to the Software Team because it behaves as a business application, workflow management, data-processing software, rule-based validation and user-facing system rather than an AI-led initiative. The project is pending handover and is not completed or closed.
+
+### Current Risks / Blockers
+
+- Software Team owner and remaining AI Team responsibility are not confirmed.
+- HR data is highly sensitive.
+- Verbal-only handover and missing formal acceptance are insufficient.
+
+### Decisions Needed
+
+- Assign Software Team owner.
+- Confirm AI Team support boundary.
+- Approve handover package and acceptance criteria.
+
+### Next Actions
+
+- Prepare business context, problem, MVP scope, data sources and field inventory.
+- Document audit rules, current process, target workflow and user roles.
+- Document security requirements, open questions, samples and meeting notes.
+- Secure formal owner assignment and handover acceptance.
+
+Required next-period output: Software Team handover package.
+
+### Evidence and Confidence
+
+- Date: 2026-07-18
+- Source Event: PPJ-WEEKLY-20260713-20260718
+- Source: User-approved Weekly Portfolio Report
+- Evidence: User-approved weekly portfolio report 2026-07-13 to 2026-07-18
+- Confidence: Strong
+
+
+## Weekly Synchronization Event: PPJ-WEEKLY-20260727-20260801
+
+### Stable Project Understanding
+
+Group employee master-data standardization and applicant-data extraction/application-form prefill workflows.
+
+### Current Weekly Delta
+
+Demo, UAT, initial testing and User Manual were completed. Deployment started, including group-wide employee-data standardization rollout. The project now contains employee master-data standardization and applicant data extraction/prefill workflows.
+
+### Current State
+
+- Canonical Code: HR.SSPFD.Workflow.v1.1
+- Current Physical File: 03_Projects/HR.SS&PFD.v1.1.md
+- Primary Domain: HR
+- Lifecycle: Production Rollout / Stabilization
+- Progress: TBD
+- Current Gate: UAT Completed / Initial Deployment / Group Rollout
+- Priority for 2026-08-03 to 2026-08-08: P5
+
+### Current Outcome
+
+Group employee master-data standardization and applicant-data extraction/application-form prefill workflows.
+
+Required output: Rollout monitoring and confirmed production ownership.
+
+### Systems / Data and Dependencies
+
+- Employee source data -> Matching Rules -> Trusted Employee Master -> Group Rollout
+- Applicant Input -> Extraction -> Mandatory-field Validation -> Prefill -> Review -> Structured Submission
+
+### Current Blockers
+
+- Production-support ownership across HR, Software Team, AI Team and HR IT is not confirmed.
+- Conflicting-record correction authority is unclear.
+
+### Current Risks
+
+- Sensitive HR and applicant data require strict permissions.
+- Incorrect matching may merge unrelated employee records.
+- Applicant consent and privacy controls require confirmation.
+
+### Current Decisions
+
+- Assign production owner and correction authority.
+- Approve applicant consent and privacy controls.
+- Confirm post-rollout support boundary.
+
+### Next Actions
+
+- Monitor rollout by company and factory.
+- Finalize employee matching and conflict-handling rules.
+- Monitor rollout issues, fix and retest.
+- Build rollout-status dashboard and complete Workflow 2 user guidance.
+- Confirm production-support handover.
+
+### Evidence and Confidence
+
+- Date: 2026-08-01
+- Source Event: PPJ-WEEKLY-20260727-20260801
+- Source: User-approved Weekly Portfolio Update
+- Evidence: User-approved Weekly Portfolio Update for 2026-07-27 to 2026-08-01
+- Confidence: Strong
+
+## Project Workspace
+
+Workspace:
+[[HR.SS&PFD.v1.1/00_Project_Home]]
+
+Executive Board:
+[[HR.SS&PFD.v1.1/Project_Executive_Board]]
+
+Tasks:
+[[HR.SS&PFD.v1.1/Tasks]]
+
+Governance:
+[[HR.SS&PFD.v1.1/10_Governance/Decision_Log]]<!-- PPJ_PROJECT_KNOWLEDGE_END -->

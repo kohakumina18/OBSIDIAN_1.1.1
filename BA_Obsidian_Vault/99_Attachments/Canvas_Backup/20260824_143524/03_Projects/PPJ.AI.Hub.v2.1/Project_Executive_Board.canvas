@@ -1,0 +1,131 @@
+{
+  "nodes": [
+    {
+      "id": "lane-0",
+      "type": "group",
+      "x": 0,
+      "y": 500,
+      "width": 540,
+      "height": 1510,
+      "label": "BACKLOG"
+    },
+    {
+      "id": "lane-1",
+      "type": "group",
+      "x": 600,
+      "y": 500,
+      "width": 540,
+      "height": 1510,
+      "label": "THIS WEEK"
+    },
+    {
+      "id": "lane-2",
+      "type": "group",
+      "x": 1200,
+      "y": 500,
+      "width": 540,
+      "height": 1510,
+      "label": "IN PROGRESS"
+    },
+    {
+      "id": "lane-3",
+      "type": "group",
+      "x": 1800,
+      "y": 500,
+      "width": 540,
+      "height": 1510,
+      "label": "BLOCKED / WAITING"
+    },
+    {
+      "id": "lane-4",
+      "type": "group",
+      "x": 2400,
+      "y": 500,
+      "width": 540,
+      "height": 1510,
+      "label": "REVIEW / UAT"
+    },
+    {
+      "id": "lane-5",
+      "type": "group",
+      "x": 3000,
+      "y": 500,
+      "width": 540,
+      "height": 1510,
+      "label": "DONE"
+    },
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "PPJ.AI.Hub.v2.1\n\nDomain: Internal Chatbot & AI Platforms\nDelivery Stage: GO-LIVE / PRODUCTION / SUPPORT\nLifecycle: Internal Production Platform\nStatus: Active\nProgress: TBD\nGate: Platform operations\nOutcome: Provide an internal application catalogue, AI tool access and department-app discovery.\nTop Blocker: None recorded\nNext Milestone: Maintain application catalogue and access\nPriority: Support\nLast Verified: 2026-08-24",
+      "x": 0,
+      "y": 0,
+      "width": 1140,
+      "height": 420
+    },
+    {
+      "id": "task-0",
+      "type": "file",
+      "file": "03_Projects/PPJ.AI.Hub.v2.1/Tasks/PPJ.AI.Hub.v2.1-20260824-TASK-001_Maintain-application-catalogue-and-access.md",
+      "x": 30,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-1",
+      "type": "file",
+      "file": "03_Projects/PPJ.AI.Hub.v2.1/Tasks/PPJ.AI.Hub.v2.1-20260824-TASK-002_Keep-project-registry-ownership-outside-AI-Hub.md",
+      "x": 30,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-2",
+      "type": "file",
+      "file": "03_Projects/PPJ.AI.Hub.v2.1/Tasks/PPJ.AI.Hub.v2.1-TASK-001_Define-module-registry-fields.md",
+      "x": 3030,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-3",
+      "type": "file",
+      "file": "03_Projects/PPJ.AI.Hub.v2.1/Tasks/PPJ.AI.Hub.v2.1-TASK-002_Confirm-initial-modules.md",
+      "x": 3030,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-4",
+      "type": "file",
+      "file": "03_Projects/PPJ.AI.Hub.v2.1/Tasks/PPJ.AI.Hub.v2.1-TASK-003_Confirm-owner-and-support-process.md",
+      "x": 3030,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-5",
+      "type": "file",
+      "file": "03_Projects/PPJ.AI.Hub.v2.1/Tasks/PPJ.AI.Hub.v2.1-TASK-004_Create-AI-Hub-user-journey.md",
+      "x": 3030,
+      "y": 1110,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-6",
+      "type": "file",
+      "file": "03_Projects/PPJ.AI.Hub.v2.1/Tasks/PPJ.AI.Hub.v2.1-TASK-005_Create-first-release-roadmap.md",
+      "x": 3030,
+      "y": 1290,
+      "width": 480,
+      "height": 140
+    }
+  ],
+  "edges": []
+}

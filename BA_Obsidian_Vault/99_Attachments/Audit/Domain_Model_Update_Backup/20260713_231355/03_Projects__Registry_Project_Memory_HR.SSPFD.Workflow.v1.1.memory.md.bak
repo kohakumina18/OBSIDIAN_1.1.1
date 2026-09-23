@@ -1,0 +1,83 @@
+﻿---
+type: project_memory
+project_name: "HR.SSPFD.Workflow.v1.1"
+project_file: "HR.SS&PFD.v1.1.md"
+project_code: "HR.SSPFD.Workflow.v1.1"
+department: "HR"
+cluster: "HR / Internal Process"
+phase: "Analysis / Data Confirmation"
+last_verified: "2026-07-13"
+confidence: "Strong"
+canonical_code: "HR.SSPFD.Workflow.v1.1"
+current_file: "HR.SS&PFD.v1.1.md"
+primary_domain: "HR"
+primary_capability: "Employee, payroll, BHXH and HR-sensitive workflows"
+secondary_domains: "WISER, BHXH, Sensitive HR Data"
+lifecycle: "Analysis"
+progress: "TBD"
+current_gate: "Data Confirmation"
+---
+
+# Project Memory: HR.SSPFD.Workflow.v1.1
+
+## One-Line Understanding
+
+HR/BHXH workflow requiring latest 3-month WISER data and field-level mapping.
+
+## Current Outcome
+
+Prepare structured HR process/reporting support after data and meaning are confirmed.
+
+## Latest Update Summary
+
+Canonical naming populated and tied to HR/BHXH WISER data context.
+
+## What This Project Is
+
+HR internal process/data project for SS&PFD/BHXH-related workflow.
+
+## What This Project Is Not
+
+Not fully defined beyond WISER data need unless HR confirms scope.
+
+## Key Users
+
+HR users.
+
+## Systems / Data
+
+WISER data, HR/BHXH fields, latest three months data.
+
+## Known Risks / Blockers
+
+Acronym meaning and exact process scope need confirmation.
+
+## Next Actions
+
+Collect latest 3-month WISER dataset and confirm field meaning.
+
+## Do Not Drift Rules
+
+- Do not expand SS&PFD meaning beyond evidence.
+- Keep HR/BHXH data confirmation as blocker.
+
+## Source Links
+
+- [[HR.SS&PFD.v1.1]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]
+
+<!-- PPJ_DOMAIN_GOVERNANCE_START -->
+## Domain Governance
+
+- Canonical Code: HR.SSPFD.Workflow.v1.1
+- Current File: [[HR.SS&PFD.v1.1]]
+- Primary Domain: HR
+- Secondary Domains: WISER, BHXH, Sensitive HR Data
+- Lifecycle: Analysis
+- Progress: TBD
+- Current Gate: Data Confirmation
+
+## Domain Do Not Drift Rules
+- Do not expand SS&PFD without evidence; HR data is sensitive.
+<!-- PPJ_DOMAIN_GOVERNANCE_END -->
+

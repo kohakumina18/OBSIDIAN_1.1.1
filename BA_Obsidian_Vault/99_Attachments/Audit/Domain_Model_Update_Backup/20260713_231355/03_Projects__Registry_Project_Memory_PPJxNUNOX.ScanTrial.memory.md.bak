@@ -1,0 +1,83 @@
+﻿---
+type: project_memory
+project_name: "PPJxNUNOX.ScanTrial"
+project_file: "PPJxNUNOX.md"
+project_code: "PPJxNUNOX.ScanTrial"
+department: "Sourcing / Fabric"
+cluster: "Hardware Trial"
+phase: "Trials / Free of Charge"
+last_verified: "2026-07-13"
+confidence: "Strong"
+canonical_code: "PPJxNUNOX.ScanTrial"
+current_file: "PPJxNUNOX.md"
+primary_domain: "Fabric / Textiles Technique"
+primary_capability: "Fabric, pattern, BOM, technical knowledge, 3D and scanning"
+secondary_domains: "Hardware Trial, Sourcing, Factory"
+lifecycle: "Hardware Trial / Feasibility Assessment"
+progress: "TBD"
+current_gate: "Hardware Trial / Feasibility Assessment"
+---
+
+# Project Memory: PPJxNUNOX.ScanTrial
+
+## One-Line Understanding
+
+NUNOX high-quality fabric sample scan trial for image quality and fabric/sample data foundation.
+
+## Current Outcome
+
+Evaluate whether scan output can support Sourcing, FD, CPD, or fabric visual data workflows.
+
+## Latest Update Summary
+
+Free trial/scan evaluation captured in canonical portfolio.
+
+## What This Project Is
+
+External hardware/tool feasibility trial for fabric/sample scanning.
+
+## What This Project Is Not
+
+Not confirmed production hardware rollout.
+
+## Key Users
+
+Sourcing, fabric, sample, data/AI stakeholders.
+
+## Systems / Data
+
+Fabric samples, scanned images, metadata, possible visual search/use-case datasets.
+
+## Known Risks / Blockers
+
+Exact hardware scope, scan quality, cost, data integration, user workflow.
+
+## Next Actions
+
+Evaluate trial output quality and define business fit.
+
+## Do Not Drift Rules
+
+- Confirm exact hardware scope.
+- Do not mark as implementation unless rollout is approved.
+
+## Source Links
+
+- [[PPJxNUNOX]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]
+
+<!-- PPJ_DOMAIN_GOVERNANCE_START -->
+## Domain Governance
+
+- Canonical Code: PPJxNUNOX.ScanTrial
+- Current File: [[PPJxNUNOX]]
+- Primary Domain: Fabric / Textiles Technique
+- Secondary Domains: Hardware Trial, Sourcing, Factory
+- Lifecycle: Hardware Trial / Feasibility Assessment
+- Progress: TBD
+- Current Gate: Hardware Trial / Feasibility Assessment
+
+## Domain Do Not Drift Rules
+- Not canceled unless formal stop decision exists.
+<!-- PPJ_DOMAIN_GOVERNANCE_END -->
+

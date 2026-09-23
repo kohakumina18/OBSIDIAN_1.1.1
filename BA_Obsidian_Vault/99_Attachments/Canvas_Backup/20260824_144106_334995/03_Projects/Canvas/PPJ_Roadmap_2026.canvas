@@ -1,0 +1,149 @@
+{
+  "nodes": [
+    {
+      "id": "road-0",
+      "type": "text",
+      "text": "## INTERNAL DEVELOPMENT / BACKLOG\n\n- No current registered project",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 420
+    },
+    {
+      "id": "road-1",
+      "type": "text",
+      "text": "## INTERNAL DEVELOPMENT / KICK-OFF\n\n- No current registered project",
+      "x": 660,
+      "y": 0,
+      "width": 600,
+      "height": 420
+    },
+    {
+      "id": "road-2",
+      "type": "text",
+      "text": "## INTERNAL DEVELOPMENT / ANALYSIS\n\n- Admin Expense Management.v1.1 | Workflow Demo Completed / Requirement Refinement | Active | Expand demonstrated travel request into end-to-end expense and settlement requirements\n- MER.MARKET.INTELLIGENCE.v1.1 | Active Intelligence | Active | Commercial intelligence delivery\n- PUR.HM.LabelO.Processing.Automation.v1.0 | On Hold | On Hold | Scalability decision",
+      "x": 1320,
+      "y": 0,
+      "width": 600,
+      "height": 420
+    },
+    {
+      "id": "road-3",
+      "type": "text",
+      "text": "## INTERNAL DEVELOPMENT / DESIGN\n\n- FIN.AI.FINANCE.MANAGEMENT.v1.2 | Design | Active | WS2 Rule Catalogue and Databricks access; then WS3 source discovery\n- PUR.GDI.Automation.v1.0 | Active / WFX API Integration | Active | WFX API contract discovery and controlled integration design\n- WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1 | Analysis / Product Design | Active | Sampling workflow and product design",
+      "x": 1980,
+      "y": 0,
+      "width": 600,
+      "height": 420
+    },
+    {
+      "id": "road-4",
+      "type": "text",
+      "text": "## INTERNAL DEVELOPMENT / DEVELOPMENT\n\n- COSTING.AGENTIC.PLATFORM.v1.1 | Active Development | Active | Sew v1.2 and Wash Agent development\n- PROD.IOT.CHuyenTreo.v1.0 | Development | Active | Source and KPI reconciliation",
+      "x": 2640,
+      "y": 0,
+      "width": 600,
+      "height": 420
+    },
+    {
+      "id": "road-5",
+      "type": "text",
+      "text": "## INTERNAL DEVELOPMENT / UAT / PRE-GO-LIVE\n\n- TD.TechnicalKnowledge.Platform.v2.1 | Initial Sync Demo Completed / Sync Validation & Stabilization | Active | Incremental sync hardening and Technical UAT\n- PPJ.ExpenseInvoices.v1.1 | UAT / Pre-Go-Live | Active | Production Readiness / Go-Live\n- PUR.Material.Allocation.v1.1 | First Flow Validated | Active | Exception, rollback and transaction-safety testing\n- MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1 | Active | Active | Chico's rule validation",
+      "x": 3300,
+      "y": 0,
+      "width": 600,
+      "height": 480
+    },
+    {
+      "id": "road-6",
+      "type": "text",
+      "text": "## INTERNAL DEVELOPMENT / GO-LIVE / PRODUCTION / SUPPORT\n\n- HR.SSPFD.Workflow.v1.1 | Production | Active | Production rollout and data-quality monitoring\n- SCP.SOURCING.CHATBOT.v2.3 | Production | Active | Production data quality and stress testing\n- PPJ.InvoiceDownloader.v1.2 | Production | Active | Operational reliability\n- PUR.Inventory.Report.v2.1 | Production / Enhancement | Active | Post-enhancement support\n- PPJ.PERRI.Chatbot.v3.2 | Production | Active | Permissioned production orchestration\n- PPJ.AI.Hub.v2.1 | Internal Production Platform | Active | Platform operations\n- FD.Datamart.v2.2 | Support | Support | Operational support\n- CPD.Datamart.v1.1 | Maintenance | Support | Operational maintenance\n- ACC.GRN-SupplierInvoiceBot.v2.3 | Production Support | Support | Operational stability and exceptions\n- PUR.Adhoc.Indent.South.v1.0 | Maintenance | Support | Operational maintenance\n- PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0 | Maintenance | Support | IT helpdesk maintenance",
+      "x": 3960,
+      "y": 0,
+      "width": 600,
+      "height": 1110
+    },
+    {
+      "id": "road-7",
+      "type": "text",
+      "text": "## INTERNAL DEVELOPMENT / CLOSED\n\n- ACC.Inventory.Report.v1.0 | Closed | Closed | Closed / no active follow-up\n- MER.PO.Commit.v1.1 | Closed | Closed | Closed\n- EXIM.ExpenseInvoices.Automation.v1.1 | Closed | Closed | Closed; succeeded by PPJ.ExpenseInvoices.v1.1\n- AI.Automation.Workshop.202606 | Closed | Closed | Closed event\n- AI.Automation.Workshop.Analysis.202606 | Closed | Closed | Closed analysis\n- VITAS.Sharing.202606 | Closed | Closed | Closed event",
+      "x": 4620,
+      "y": 0,
+      "width": 600,
+      "height": 660
+    },
+    {
+      "id": "road-8",
+      "type": "text",
+      "text": "## EXTERNAL DEVELOPMENT / BACKLOG\n\n- No current registered project",
+      "x": 0,
+      "y": 1800,
+      "width": 600,
+      "height": 420
+    },
+    {
+      "id": "road-9",
+      "type": "text",
+      "text": "## EXTERNAL DEVELOPMENT / KICK-OFF\n\n- No current registered project",
+      "x": 660,
+      "y": 1800,
+      "width": 600,
+      "height": 420
+    },
+    {
+      "id": "road-10",
+      "type": "text",
+      "text": "## EXTERNAL DEVELOPMENT / ANALYSIS\n\n- PPJxQSee.AI | On Hold | External Collaboration | Reactivation decision\n- QC.Primo1D.RFID.Thread.v1.0 | Business Case / Pre-PoC | External Collaboration | Business/customer case decision\n- PPJxStratova.AI | Strategic Technology Evaluation | External Collaboration | Build-vs-buy evaluation\n- PPJxNUNOX.ScanTrial | Partnership / Digital Library Evaluation | External Collaboration | Working-session outcome unconfirmed\n- PROD.COWASH.v2.0 | On Hold | External Collaboration | Owner/data/KPI/access/technical direction",
+      "x": 1320,
+      "y": 1800,
+      "width": 600,
+      "height": 570
+    },
+    {
+      "id": "road-11",
+      "type": "text",
+      "text": "## EXTERNAL DEVELOPMENT / DESIGN\n\n- PPJ.UIT.ACADEMIC.COLLABORATION.v1.1 | Design | External Collaboration | Academic problem package",
+      "x": 1980,
+      "y": 1800,
+      "width": 600,
+      "height": 420
+    },
+    {
+      "id": "road-12",
+      "type": "text",
+      "text": "## EXTERNAL DEVELOPMENT / DEVELOPMENT\n\n- No current registered project",
+      "x": 2640,
+      "y": 1800,
+      "width": 600,
+      "height": 420
+    },
+    {
+      "id": "road-13",
+      "type": "text",
+      "text": "## EXTERNAL DEVELOPMENT / UAT / PRE-GO-LIVE\n\n- No current registered project",
+      "x": 3300,
+      "y": 1800,
+      "width": 600,
+      "height": 420
+    },
+    {
+      "id": "road-14",
+      "type": "text",
+      "text": "## EXTERNAL DEVELOPMENT / GO-LIVE / PRODUCTION / SUPPORT\n\n- No current registered project",
+      "x": 3960,
+      "y": 1800,
+      "width": 600,
+      "height": 420
+    },
+    {
+      "id": "road-15",
+      "type": "text",
+      "text": "## EXTERNAL DEVELOPMENT / CLOSED\n\n- No current registered project",
+      "x": 4620,
+      "y": 1800,
+      "width": 600,
+      "height": 420
+    }
+  ],
+  "edges": []
+}

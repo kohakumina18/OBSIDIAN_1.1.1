@@ -1,0 +1,85 @@
+﻿---
+type: project_memory
+project_name: "PUR.GDI.Automation.v1.0"
+project_file: "PUR.GDI Automation.md"
+project_code: "PUR.GDI.Automation.v1.0"
+department: "Purchasing"
+cluster: "Purchasing Workflow"
+phase: "On Hold"
+technical_members: ["Hien", "Khoa"]
+last_verified: "2026-07-13"
+confidence: "Strong"
+canonical_code: "PUR.GDI.Automation.v1.0"
+current_file: "PUR.GDI Automation.md"
+primary_domain: "Sourcing / Purchasing"
+primary_capability: "Purchasing transaction: GDI creation automation"
+secondary_domains: "WFX, Purchasing Operations"
+lifecycle: "On Hold / Pending Decision"
+progress: "TBD"
+current_gate: "Blocked / Scope Reassessment"
+---
+
+# Project Memory: PUR.GDI.Automation.v1.0
+
+## One-Line Understanding
+
+Purchasing GDI creation automation currently on hold due WFX/system dependency.
+
+## Current Outcome
+
+Automate GDI only after input standardization and WFX readiness are resolved.
+
+## Latest Update Summary
+
+Canonical naming populated from portfolio dictionary.
+
+## What This Project Is
+
+Automation for Goods Delivery Instruction creation.
+
+## What This Project Is Not
+
+Not active production if WFX modification/dependency remains blocked.
+
+## Key Users
+
+Purchasing users.
+
+## Systems / Data
+
+WFX, GDI input, delivery instruction data.
+
+## Known Risks / Blockers
+
+WFX dependency and source-system readiness.
+
+## Next Actions
+
+Keep on hold until WFX blocker is unblocked.
+
+## Do Not Drift Rules
+
+- Do not spend large effort while WFX blocker remains.
+- Do not mark production until dependency is resolved.
+
+## Source Links
+
+- [[PUR.GDI Automation]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]
+
+<!-- PPJ_DOMAIN_GOVERNANCE_START -->
+## Domain Governance
+
+- Canonical Code: PUR.GDI.Automation.v1.0
+- Current File: [[PUR.GDI Automation]]
+- Primary Domain: Sourcing / Purchasing
+- Secondary Domains: WFX, Purchasing Operations
+- Lifecycle: On Hold / Pending Decision
+- Progress: TBD
+- Current Gate: Blocked / Scope Reassessment
+
+## Domain Do Not Drift Rules
+- Do not mark production while WFX dependency remains.
+<!-- PPJ_DOMAIN_GOVERNANCE_END -->
+
+

@@ -1,0 +1,62 @@
+---
+type: project_memory
+project_name: "TD.TechnicalKnowledge.Platform.v2.1"
+project_file: "TD.TechnicalPlatform_v2.1.md"
+project_code: "TD.TechnicalKnowledge.Platform.v2.1"
+department: "Technical Department"
+cluster: "Technical Knowledge / Training"
+phase: "New Request / Analysis"
+technical_members: ["Huy", "Khoa"]
+stakeholders: ["Anh Tu", "Technical Department"]
+last_verified: "2026-06-28"
+confidence: "Strong"
+---
+
+# Project Memory: TD.TechnicalKnowledge.Platform.v2.1
+
+## One-Line Understanding
+
+Technical knowledge platform for buyer reference, pattern, BOM, costing history, videos, and training material.
+
+## Current Outcome
+
+Create a technical data node for search, training, and future costing agents.
+
+## Latest Update Summary
+
+Canonical naming populated; linked strongly to Costing Agentic Platform as technical data source.
+
+## What This Project Is
+
+Knowledge/search/training platform for Technical Department data.
+
+## What This Project Is Not
+
+Not automatically identical to CPD Datamart or Costing Platform; it supports them as a data node.
+
+## Key Users
+
+Technical Department, Anh Tu, AI/Automation, costing-related users.
+
+## Systems / Data
+
+Buyer reference, pattern, BOM, costing old, technical docs, sewing videos, training materials, possible Directus sync.
+
+## Known Risks / Blockers
+
+Distributed technical data, unclear naming convention, training vs operating data separation, sensitive technical permission.
+
+## Next Actions
+
+Define data structure, access model, and relation to costing agents.
+
+## Do Not Drift Rules
+
+- Respect technical data sensitivity.
+- Do not merge with CPD Datamart unless explicitly approved.
+
+## Source Links
+
+- [[TD.TechnicalPlatform_v2.1]]
+- [[COSTING.AGENTIC.PLATFORM.v1.1]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]

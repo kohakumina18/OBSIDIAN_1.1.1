@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{
+			"id":"f881de2dc18ba2b0",
+			"type":"text",
+			"text":"### 1. Hiện tại khi NPL được điều chuyển từ Style A sang Style B trên WFX, **giá trị material cost đang được hệ thống xử lý như thế nào?**\n\nA. Cost vẫn ghi nhận tại Style A  \nB. Cost được chuyển sang Style B theo quantity điều chuyển  \nC. Một phần cost ở A, một phần ở B  \nD. Quantity chuyển nhưng cost không chuyển  \nE. Phụ thuộc loại NPL / transaction  \nF. Chưa xác định – cần kiểm tra transaction thực tế trên WFX\n\n---\n\n### 2. Cost được WFX chuyển theo NPL hiện tại là loại cost nào?\n\nA. Giá mua trên PO  \nB. Giá tại GRN  \nC. Actual cost của stock record  \nD. Actual cost + landed cost đã phân bổ vào stock  \nE. Weighted average cost  \nF. Khác / cần xác nhận bằng transaction thực tế\n\n\n\n---\n\n### 3. Khi NPL đã được nhận theo PO/GRN của Style A rồi điều chuyển sang Style B, hiện tại **PO – GRN – Supplier Invoice có thay đổi reference không?**\n\nA. Vẫn giữ PO/GRN/Invoice gốc  \nB. Chuyển reference sang Style B  \nC. WFX tạo thêm reference mới cho Style B  \nD. Có thay đổi tùy transaction  \nE. Chưa xác định\n\n---\n\n### 4. Sau khi Cross-Style Allocation, trên báo cáo cost của **OC đích**, material cost vừa nhận có xuất hiện đầy đủ không?\n\nA. Có, xuất hiện đầy đủ  \nB. Có nhưng chỉ một phần  \nC. Quantity có nhưng cost chưa thấy  \nD. Cost nằm tại Style nhưng không xuống OC  \nE. Phụ thuộc report  \nF. Chưa kiểm tra\n\n---\n\n### 5. Khi cùng một NPL được điều chuyển qua nhiều vòng:\n\nStyle A → Style B → Style C\n\nhiện tại WFX ghi nhận cost ở Style C như thế nào?\n\nA. Cost gốc từ A vẫn đi theo đến C  \nB. Chỉ giữ cost từ transaction B → C  \nC. Recalculate lại cost ở mỗi lần transfer  \nD. Cost không đi theo toàn bộ chain  \nE. Chưa xác định\n\n---\n\n### 6. Khi phân tích hiệu suất OC hiện tại, các nhóm chi phí nào **thực tế đang được đưa vào OC performance report**?\n\nA. Material cost  \nB. Material + Processing  \nC. Material + Processing + OVH  \nD. Tùy loại OC / loại report  \nE. Có cost nằm ở Style level nhưng không xuống OC  \nF. Cần Kế toán kiểm tra trực tiếp report\n\nCâu này để xác định nguyên nhân một OC có thể nhìn “hiệu suất rất cao”.\n\n---\n\n### 7. Với trường hợp điều chuyển **cùng Style nhưng khác OC**, hiện tại khi drill-up lên Style:\n\nA. Tổng material cost của Style vẫn cân bằng  \nB. Có chênh lệch ở Style level  \nC. OC riêng lẻ có thể lệch nhưng tổng Style vẫn đúng  \nD. Cả OC và Style đều giữ đúng cost  \nE. Chưa xác định\n\n\n---\n\n### 8. Khi điều chuyển **khác Style**, hiện tại report nào của WFX bị thay đổi sau transaction?\n\nA. Material allocation / stock report  \nB. OC performance report  \nC. Style profitability / efficiency report  \nD. Financial/costing report  \nE. Customs / material consumption report  \nF. Nhiều report trên  \nG. Chưa có danh sách đầy đủ\n\n---\n\n### 9. Khi NPL nhập cho Style A nhưng được sử dụng cho Style B, hiện tại WFX đang giữ source reference nào để phục vụ quyết toán?\n\nA. Original PO  \nB. Original GRN  \nC. Original import/customs reference  \nD. Original Article/Lot/Site  \nE. Destination Style/OC consumption reference  \nF. Tất cả các reference trên  \nG. Chưa xác định\n\n---\n\n### 10. Sau một Cross-Style transaction, hiện tại có report/màn hình nào của WFX cho phép đối chiếu đầy đủ:\n\n> Source Quantity → Source Cost → Destination Quantity → Destination Cost\n\nA. Có một report duy nhất  \nB. Có nhưng phải ghép nhiều report  \nC. Có thể truy bằng transaction history  \nD. Chỉ kiểm tra quantity, chưa kiểm tra được cost  \nE. Không có sẵn  \nF. Chưa xác định\n\n---",
+			"styleAttributes":{},
+			"x":160,
+			"y":-180,
+			"width":720,
+			"height":2680
+		}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

@@ -1,0 +1,59 @@
+---
+type: project_memory
+project_name: "PUR.Inventory.Report.v1.0"
+project_file: "PUR.Inventory Report.md"
+project_code: "PUR.Inventory.Report.v1.0"
+department: "Purchasing"
+cluster: "Purchasing Report"
+phase: "Maintenance and Support"
+technical_members: ["Nam"]
+last_verified: "2026-06-28"
+confidence: "Strong"
+---
+
+# Project Memory: PUR.Inventory.Report.v1.0
+
+## One-Line Understanding
+
+Purchasing inventory report and lookup automation.
+
+## Current Outcome
+
+Give Purchasing stable inventory visibility and reduce repeated manual reporting work.
+
+## Latest Update Summary
+
+Canonical naming populated from portfolio dictionary.
+
+## What This Project Is
+
+Maintenance/support reporting project for inventory data output and refresh.
+
+## What This Project Is Not
+
+Not a new purchasing transaction workflow unless later confirmed.
+
+## Key Users
+
+Purchasing users.
+
+## Systems / Data
+
+Inventory source data, report refresh, Purchasing report output.
+
+## Known Risks / Blockers
+
+Source data stability and validation when upstream systems change.
+
+## Next Actions
+
+Confirm source data, refresh schedule, report fields, and user validation.
+
+## Do Not Drift Rules
+
+- Confirm users, source, and refresh schedule before changing scope.
+
+## Source Links
+
+- [[PUR.Inventory Report]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]

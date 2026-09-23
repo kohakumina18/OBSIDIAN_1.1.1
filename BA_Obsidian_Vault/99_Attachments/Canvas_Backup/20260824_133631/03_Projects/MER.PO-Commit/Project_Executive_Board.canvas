@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "MER.PO.Commit.v1.1\n\nDomain: Merchandising\nLifecycle: Closed\nGate: Closed\nOutcome: Preserve the closed PO Commit project history.\nLast Verified: 2026-08-24",
+      "x": 0,
+      "y": 0,
+      "width": 720,
+      "height": 360
+    }
+  ],
+  "edges": []
+}

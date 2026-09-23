@@ -1,0 +1,99 @@
+﻿---
+type: project_memory
+project_name: "COSTING.AGENTIC.PLATFORM.v1.1"
+project_file: "PPJ.COSTING.AGENT.PLATFORM.v1.1.md"
+project_code: "COSTING.AGENTIC.PLATFORM.v1.1"
+department: "MER"
+cluster: "Costing Agentic Platform"
+phase: "Development"
+technical_members: ["Lam", "Khoa", "Uyen"]
+last_verified: "2026-07-18"
+confidence: "Strong"
+canonical_code: "COSTING.AGENTIC.PLATFORM.v1.1"
+current_file: "PPJ.COSTING.AGENT.PLATFORM.v1.1.md"
+primary_domain: "Merchandising"
+primary_capability: "Costing, quotation, market intelligence, customer workflows"
+secondary_domains: "Technical, Sew, Wash, Fabric, Finance"
+lifecycle: "Development"
+progress: "TBD"
+current_gate: "Sew Prototype / Demo Preparation"
+status: "Development"
+current_outcome: "Sew extraction prototype and Wash MVP data/input-output definition"
+latest_update_summary: "Sew prototype validated the flow Sewing Description -> Description Analysis -> Sewing Operation Extraction -> Standardized Operation List -> Expert Review. Extraction is not validated SMV, CM, final Sew Cost, or production-ready costing. Wash remains a workstream under this project: free-text input must be structured into attributes, missing-information checks, similar recipe retrieval, draft process recommendation, and mandatory Wash expert review."
+known_risks: "Sew descriptions may lack technical detail. | Buyer formats are not standardized across more than 150 buyers. | Wash recipes are high-risk references and cannot be automatically applied. | Expert recommendation and final approved costing must remain separate."
+decisions_needed: "Approve Sew extraction acceptance criteria. | Confirm Wash MVP input/output and Wash data owner. | Confirm GTAS/IED Wash integration boundary and expert-approval boundary."
+next_actions: "Run Sew demo and expert validation; classify correct, missing, excessive and incorrectly ordered operations. | Establish extraction accuracy baseline, then map operation to machine type and standard time. | Collect 20-30 Wash requests with recipes/processes and build Wash Type Taxonomy. | Confirm Wash outputs, recipe storage, GTAS/IED boundary and expert approval; build similarity-search prototype."
+priority: "P2 (Sew); P9 (Wash workstream)"
+recent_update_events: ["PPJ-WEEKLY-20260713-20260718"]
+secondary_workstream_gate: "Wash Discovery / Dataset Preparation"
+---
+
+# Project Memory: COSTING.AGENTIC.PLATFORM.v1.1
+
+## One-Line Understanding
+
+Strategic agentic platform for multi-department technical costing and quotation workflows.
+
+## Current Outcome
+
+Route customer requests through costing/technical agents and consolidate results for MER review.
+
+## Latest Update Summary
+
+Canonical project now absorbs Costing Intelligence, MER Costing, Merchandising Intelligence, Costing Chatbot aliases.
+
+## What This Project Is
+
+Agentic platform with BOM, Sew, Wash, Cut, Technical Knowledge, Historical Costing, and Quotation Consolidation agents.
+
+## What This Project Is Not
+
+Not a simple calculator or single chatbot.
+
+## Key Users
+
+MER, BOM, Sew, Wash, Cut, Costing, Technical Department, BDE.
+
+## Systems / Data
+
+Sketch, techpack, sample image, buyer reference, BOM, construction, wash, historical costing, quote history.
+
+## Known Risks / Blockers
+
+Distributed costing data, unstandardized technical experience, unclear source of truth, need human review.
+
+## Next Actions
+
+Collect real sample requests and define batch quotation workflow.
+
+## Do Not Drift Rules
+
+- Treat as strategic platform, not simple calculator.
+- Keep human MER review before official quotation.
+
+## Source Links
+
+- [[PPJ.COSTING.AGENT.PLATFORM.v1.1]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]
+
+<!-- PPJ_DOMAIN_GOVERNANCE_START -->
+## Domain Governance
+
+- Canonical Code: COSTING.AGENTIC.PLATFORM.v1.1
+- Current File: [[PPJ.COSTING.AGENT.PLATFORM.v1.1]]
+- Primary Domain: Merchandising
+- Secondary Domains: Technical, Sew, Wash, Fabric, Finance
+- Lifecycle: Analysis
+- Progress: TBD
+- Current Gate: Data Acquisition / Sew-first Implementation
+
+## Domain Do Not Drift Rules
+- Keep as strategic platform, not simple calculator.
+<!-- PPJ_DOMAIN_GOVERNANCE_END -->
+
+## Recent Update Events
+
+| Date | Update Type | Summary | Source | Confidence |
+| --- | --- | --- | --- | --- |
+| 2026-07-18 | Weekly Portfolio Update | Sew prototype validated the flow Sewing Description -> Description Analysis -> Sewing Operation Extraction -> Standardized Operation List -> Expert Review. Extraction is not validated SMV, CM, final Sew Cost, or production-ready costing. Wash remains a workstream under this project: free-text input must be structured into attributes, missing-information checks, similar recipe retrieval, draft process recommendation, and mandatory Wash expert review. | PPJ-WEEKLY-20260713-20260718 | Strong |
+
