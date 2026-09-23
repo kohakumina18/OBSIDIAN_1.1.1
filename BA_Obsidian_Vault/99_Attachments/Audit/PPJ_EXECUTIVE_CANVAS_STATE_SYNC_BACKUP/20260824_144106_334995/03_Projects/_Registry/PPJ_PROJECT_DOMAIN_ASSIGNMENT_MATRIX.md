@@ -1,0 +1,125 @@
+# PPJ Project Domain Assignment Matrix
+
+
+<!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
+## Authoritative Current-State Overlay - 2026-08-24
+
+Source event: `PPJ-PORTFOLIO-SNAPSHOT-20260824`. This overlay supersedes older current-state rows below; older rows remain historical evidence.
+
+| Canonical Project | Primary Domain | Delivery Stream | Delivery Stage | Lifecycle | Status | Registration | Last Verified |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| FIN.AI.FINANCE.MANAGEMENT.v1.2 | Finance / Accounting | INTERNAL DEVELOPMENT | ANALYSIS | Strategic Active | Active | Registered | 2026-08-24 |
+| COSTING.AGENTIC.PLATFORM.v1.1 | Merchandising | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development | Active | Registered | 2026-08-24 |
+| PUR.GDI.Automation.v1.0 | Sourcing / Purchasing | INTERNAL DEVELOPMENT | DESIGN | Active / WFX API Integration | Active | Registered | 2026-08-24 |
+| TD.TechnicalKnowledge.Platform.v2.1 | Fabric / Textiles Technique | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Initial Sync Demo Completed / Sync Validation & Stabilization | Active | Registered | 2026-08-24 |
+| Admin Expense Management.v1.1 | Needs Domain Governance Decision | INTERNAL DEVELOPMENT | ANALYSIS | Workflow Demo Completed / Requirement Refinement | Active | Registered | 2026-08-24 |
+| PPJ.ExpenseInvoices.v1.1 | Finance / Accounting | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | UAT / Pre-Go-Live | Active | Registered | 2026-08-24 |
+| PUR.Material.Allocation.v1.1 | Sourcing / Purchasing | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | First Flow Validated | Active | Registered | 2026-08-24 |
+| MER.MARKET.INTELLIGENCE.v1.1 | Merchandising | INTERNAL DEVELOPMENT | ANALYSIS | Active Intelligence | Active | Registered | 2026-08-24 |
+| MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1 | Merchandising | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Active | Active | Registered | 2026-08-24 |
+| WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1 | Production + Wash | INTERNAL DEVELOPMENT | DESIGN | Analysis / Product Design | Active | Registered | 2026-08-24 |
+| PROD.IOT.CHuyenTreo.v1.0 | Production + Wash | INTERNAL DEVELOPMENT | DEVELOPMENT | Development | Active | Registered | 2026-08-24 |
+| HR.SSPFD.Workflow.v1.1 | HR | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Registered | 2026-08-24 |
+| SCP.SOURCING.CHATBOT.v2.3 | Sourcing / Purchasing | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Registered | 2026-08-24 |
+| PPJ.InvoiceDownloader.v1.2 | Finance / Accounting | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Registered | 2026-08-24 |
+| PUR.Inventory.Report.v2.1 | Sourcing / Purchasing | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production / Enhancement | Active | Registered | 2026-08-24 |
+| PPJ.PERRI.Chatbot.v3.2 | Internal Chatbot & AI Platforms | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Registered | 2026-08-24 |
+| PPJ.AI.Hub.v2.1 | Internal Chatbot & AI Platforms | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Internal Production Platform | Active | Registered | 2026-08-24 |
+| FD.Datamart.v2.2 | Fabric / Textiles Technique | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Support | Support | Registered | 2026-08-24 |
+| CPD.Datamart.v1.1 | Fabric / Textiles Technique | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Maintenance | Support | Registered | 2026-08-24 |
+| ACC.GRN-SupplierInvoiceBot.v2.3 | Finance / Accounting | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production Support | Support | Registered | 2026-08-24 |
+| PUR.Adhoc.Indent.South.v1.0 | Sourcing / Purchasing | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Maintenance | Support | Registered | 2026-08-24 |
+| PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0 | Internal Chatbot & AI Platforms | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Maintenance | Support | Registered | 2026-08-24 |
+| PPJxQSee.AI | QC / TQM | EXTERNAL DEVELOPMENT | ANALYSIS | On Hold | External Collaboration | Registered | 2026-08-24 |
+| QC.Primo1D.RFID.Thread.v1.0 | QC / TQM | EXTERNAL DEVELOPMENT | ANALYSIS | Business Case / Pre-PoC | External Collaboration | Registered | 2026-08-24 |
+| PPJxStratova.AI | Fabric / Textiles Technique | EXTERNAL DEVELOPMENT | ANALYSIS | Strategic Technology Evaluation | External Collaboration | Registered | 2026-08-24 |
+| PPJxNUNOX.ScanTrial | Fabric / Textiles Technique | EXTERNAL DEVELOPMENT | ANALYSIS | Partnership / Digital Library Evaluation | External Collaboration | Registered | 2026-08-24 |
+| PPJ.UIT.ACADEMIC.COLLABORATION.v1.1 | External Collaboration | EXTERNAL DEVELOPMENT | ANALYSIS | Active / Problem Framing | External Collaboration | Registered | 2026-08-24 |
+| PROD.COWASH.v2.0 | Production + Wash | EXTERNAL DEVELOPMENT | ANALYSIS | On Hold | External Collaboration | Registered | 2026-08-24 |
+| PUR.HM.LabelO.Processing.Automation.v1.0 | Sourcing / Purchasing | INTERNAL DEVELOPMENT | ANALYSIS | On Hold | On Hold | Registered | 2026-08-24 |
+| ACC.Inventory.Report.v1.0 | Finance / Accounting | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Registered | 2026-08-24 |
+| MER.PO.Commit.v1.1 | Merchandising | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Registered | 2026-08-24 |
+| EXIM.ExpenseInvoices.Automation.v1.1 | Finance / Accounting | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Registered | 2026-08-24 |
+| AI.Automation.Workshop.202606 | External Collaboration | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Registered | 2026-08-24 |
+| AI.Automation.Workshop.Analysis.202606 | External Collaboration | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Registered | 2026-08-24 |
+| VITAS.Sharing.202606 | External Collaboration | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Registered | 2026-08-24 |
+| Warehouse AWB OCR | Needs Domain Governance Decision | Candidate / Not Registered | Candidate / Not Registered | Active Enhancement | Candidate | Canonical Code Needed | 2026-08-24 |
+| CPD In-house Pattern Generation | Fabric / Textiles Technique | Candidate / Not Registered | Candidate / Not Registered | Internal Prototype / Evaluation | Candidate | Canonical Code Not Confirmed | 2026-08-24 |
+<!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_END -->
+
+Last updated: 2026-07-13
+
+| Canonical Code | Current File | Primary Domain | Primary Capability | Secondary Domains | Lifecycle | Progress | Status / Gate | Owner / Primary Users | Confidence | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| PPJ.UIT.ACADEMIC.COLLABORATION.v1.1 | PPJ.UIT.ACADEMIC.COLLABORATION.v1.1.md | External Collaboration | Academic partnership, innovation, prototype, talent pipeline | Education, Innovation, Talent Pipeline | Analysis | TBD | Partnership Follow-up / Confirmed Direction | PPJ / UIT / AISC / BA Coordination | Strong | Primary domain is based on owner/users/capability. |
+| PPJxQSee.AI | PPJxQSee.ai.md | QC / TQM | Quality inspection, defect detection, traceability | Factory, Production, MER, Customer | On Hold / Pending Decision | TBD | Internal Resource Constraint / Reactivation Criteria Required | QC and TQM owners required | Strong | Primary domain is based on owner/users/capability. |
+| QC.Primo1D.RFID.Thread.v1.0 | PPJ XPrimo1D RFID Thread.md | QC / TQM | Quality inspection, defect detection, traceability | MER, Customer, Factory | Hardware Trial / Feasibility Assessment | TBD | Pre-contact / Internal Alignment | QC / Production / Khoa | Strong | Primary domain is based on owner/users/capability. |
+| SCP.SOURCING.CHATBOT.v2.3 | SCP.SOURCING.CHATBOT.v2.3.md | Sourcing / Purchasing | Sourcing intelligence: supplier, material, sample, search, intelligence | Data Governance, AI Chatbot, Supplier Data | Closeout Preparation | TBD | Output Finalization / UAT Acceptance / Handover Preparation | Sourcing; data/permission/support owners Need Confirmation | Strong | Primary domain is based on owner/users/capability. |
+| PUR.Adhoc.Indent.South.v1.0 | PUR.Adhoc Indent mien Nam.md | Sourcing / Purchasing | Purchasing transaction: regional adhoc indent workflow | WFX, Purchasing Operations | Production / Support | TBD | Production / Support | Purchasing South / Uyen / Nam | Strong | Primary domain is based on owner/users/capability. |
+| PUR.Material.Allocation.v1.1 | PUR.Material.Allocation.v1.1.md | Sourcing / Purchasing | Purchasing transaction: allocation, validation, review | WFX, Inventory, Production | Development | 50% | Blocked by WFX dependency | Purchasing / Khoa / Uyen / Nam / Phat | Strong | Primary domain is based on owner/users/capability. |
+| PUR.Inventory.Report.v2.1 | PUR.Inventory Report.md | Sourcing / Purchasing | Purchasing transaction/reporting: inventory visibility | Inventory, Reporting, WFX | Production / Support | v2.1 enhancement completed | v2.1 Enhancement Completed / Post-release Validation | Purchasing and material planning | Strong | Primary domain is based on owner/users/capability. |
+| PUR.GDI.Automation.v1.0 | PUR.GDI Automation.md | Sourcing / Purchasing | Purchasing transaction: GDI creation automation | WFX, Purchasing Operations | Analysis / Solution Redesign | TBD | Business Flow Confirmed / API Integration Discovery | Purchasing and participating MER leaders/managers | Strong | Primary domain is based on owner/users/capability. |
+| PUR.HM.LabelO.Processing.Automation.v1.0 | PUR.H&M Label-O Processing.md | Sourcing / Purchasing | Purchasing/customer-specific transaction automation | Customer, Production, QC | On Hold / Pending Decision | TBD | On Hold / Delayed | Purchasing / Uyen / Khoa / Nam | Strong | Primary domain is based on owner/users/capability. |
+| COSTING.AGENTIC.PLATFORM.v1.1 | PPJ.COSTING.AGENT.PLATFORM.v1.1.md | Merchandising | Costing, quotation, market intelligence, customer workflows | Technical, Sew, Wash, Fabric, Finance | Development | TBD | Sew Costing v1.1 Demo Completed / v1.2 Development | Merchandising and Sew experts | Strong | Primary domain is based on owner/users/capability. |
+| MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1 | MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1.md | Merchandising | Costing, quotation, market intelligence, customer workflows | Accounting, Customer, Invoice Data | UAT / Stabilization | TBD | Stabilize | MER / Khoa / Hien | Strong | Primary domain is based on owner/users/capability. |
+| MER.MARKET.INTELLIGENCE.v1.1 | E-commerce Market Intelligence.md | Merchandising | Costing, quotation, market intelligence, customer workflows | External Data, Product, Fabric, Customer Signals | Analysis | TBD | Multi-source Data Follow-up | MER / Khoa / Phat / Nghia | Strong | Primary domain is based on owner/users/capability. |
+| MER.PO.Commit.v1.1 | MER.PO-Commit.md | Merchandising | Costing, quotation, market intelligence, customer workflows | Purchasing, Customer, Packing List | Closed / Completed | TBD | Closed / Production Support | MER / Uyen / Lam | Strong | Primary domain is based on owner/users/capability. |
+| PROD.IOT.CHuyenTreo.v1.0 | PROD.IOT.CHuyenTreo_1.md | Production + Wash | Factory execution, production data, wash operations | IoT, Factory, Dashboard | Development | 50% | Development | Production / Factory / Khoa / Linh | Strong | Primary domain is based on owner/users/capability. |
+| PROD.COWASH.v2.0 | PROD.COWASH.md | Production + Wash | Factory execution, production data, wash operations | R&D Wash, Factory, Operational Data | On Hold / Pending Decision | TBD | Re-scope / Source API unclear | Production / Wash / Khoa / Linh | Strong | Primary domain is based on owner/users/capability. |
+| WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1 | WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1.md | Production + Wash | Factory execution, production data, wash operations | R&D Wash, Portal, Sampling Workflow | Analysis | TBD | New Booking / Analysis | R&D Wash / Khoa / Huy / Hien | Strong | Primary domain is based on owner/users/capability. |
+| FIN.AI.FINANCE.MANAGEMENT.v1.2 | FIN.AI.FINANCE.MANAGEMENT.v1.1.md | Finance / Accounting | Financial analysis, reporting, invoices, GRN | Data, IT, Sales, Management | Analysis / Design | TBD | Data Discovery / Databricks Access Blocked / Rule Engine Design | Accounting; data-access governance owner Needs Confirmation | Strong | Primary domain is based on owner/users/capability. |
+| ACC.Inventory.Report.v1.0 | ACC.Inventory.Report.v1.0.md | Finance / Accounting | Inventory quantity, value, period control and reconciliation | Warehouse, Purchasing, Data, Audit | Backlog / Pending Resource | Not Started | Business Discovery Approval | Accounting / Business Owner Needs Confirmation | Strong registration; Needs Confirmation requirements and ownership | Separate from PUR.Inventory.Report.v2.1; shared-data relationship pending Business Discovery. |
+| PPJ.ExpenseInvoices.v1.1 | PPJ. Expense-Invoices.v1.1.md | Finance / Accounting | Financial analysis, reporting, invoices, GRN | EXIM, ERP, Department Mapping | UAT / Stabilization | TBD | Supplier and Mapping Expansion / Defect Closure | Accounting | Strong | Primary domain is based on owner/users/capability. |
+| ACC.GRN-SupplierInvoiceBot.v2.3 | ACC.GRN-SupplierInvoiceBot.v2.3.md | Finance / Accounting | Financial analysis, reporting, invoices, GRN | WFX, Supplier Invoice, Accounting | Production / Support | TBD | Maintenance and Support | Accounting / Uyen / Hien / Khoa | Strong | Primary domain is based on owner/users/capability. |
+| PPJ.InvoiceDownloader.v1.2 | PPJ.Invoice Downloader.v1.2.md | Finance / Accounting | Financial analysis, reporting, invoices, GRN | EXIM, Purchasing, API, E-invoice | Production / Support | TBD | Business Adoption | Accounting / EXIM / Uyen / Nam / Phat | Strong | Primary domain is based on owner/users/capability. |
+| PPJ.AI.Hub.v2.1 | PPJ.AI.Hub.v2.1.md | Internal Chatbot & AI Platforms | AI access, agent orchestration, helpdesk, shared platforms | Management, Reporting, Internal Tools | Production / Support | TBD | Platform / Internal Hub | AI Team / Management / Reporting / Khoa / Huy | Strong | Primary domain is based on owner/users/capability. |
+| PPJ.PERRI.Chatbot.v3.2 | PPJ.PERRI.Chatbot.md | Internal Chatbot & AI Platforms | AI access, agent orchestration, helpdesk, shared platforms | Department Agents, Permission, Logs | Production / Support | TBD | Permission Enhancement | PPJ departments / Khoa / Nam | Strong | Primary domain is based on owner/users/capability. |
+| PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0 | PPJ.GLPI-Helpdesk-AI Chatbot.md | Internal Chatbot & AI Platforms | AI access, agent orchestration, helpdesk, shared platforms | IT Helpdesk, GLPI, ERP Support | Maintenance | TBD | Maintenance and Support | IT / ERP Helpdesk / Huy | Strong | Primary domain is based on owner/users/capability. |
+| HR.SSPFD.Workflow.v1.1 | HR.SS&PFD.v1.1.md | HR | Employee, payroll, BHXH and HR-sensitive workflows | WISER, BHXH, Sensitive HR Data | Production Rollout / Stabilization | TBD | UAT Completed / Initial Deployment / Group Rollout | HR; production owner Needs Confirmation | Strong | Primary domain is based on owner/users/capability. |
+| FD.Datamart.v2.2 | FD.Datamart.v2.2.md | Fabric / Textiles Technique | Fabric, pattern, BOM, technical knowledge, 3D and scanning | Directus, QR, Hanger, Fabric Data | Final Stabilization / Pending Acceptance | TBD | Final Stabilization / Closeout | FD / Khoa / Nghia / Nam | Strong | Primary domain is based on owner/users/capability. |
+| TD.TechnicalKnowledge.Platform.v2.1 | TD.TechnicalPlatform_v2.1.md | Fabric / Textiles Technique | Fabric, pattern, BOM, technical knowledge, 3D and scanning | Merchandising, Costing, Training | Development / Data Validation | ETL completed for currently identified v2.1 sources | ETL Completed / Data Foundation Available / Data Acceptance Pending | Technical team | Strong | Primary domain is based on owner/users/capability. |
+| CPD.Datamart.v1.1 | CPD.Datamart.v1.1.md | Fabric / Textiles Technique | Fabric, pattern, BOM, technical knowledge, 3D and scanning | 3D Design, Image Search, Visual Assets | Development | TBD | Data Foundation | CPD / 3D Design / Linh / Phat | Strong | Primary domain is based on owner/users/capability. |
+| PPJxNUNOX.ScanTrial | PPJxNUNOX.md | Fabric / Textiles Technique | Fabric, pattern, BOM, technical knowledge, 3D and scanning | Hardware Trial, Sourcing, Factory | Hardware Trial / Feasibility Assessment | TBD | Vendor Visit Proposed / Pending Leadership Approval | Leadership sponsor Needs Confirmation | Strong | Primary domain is based on owner/users/capability. |
+| PPJxStratova.AI | PPJxStratova AI.md | Fabric / Textiles Technique | Fabric, pattern, BOM, technical knowledge, 3D and scanning | Pattern AI, Vendor Screening, Lessons Learned | Closed / Opportunity Under Review | TBD | Reopened Discussion / Pending Leadership Direction | Leadership decision owner Needs Confirmation | Strong | Primary domain is based on owner/users/capability. |
+
+<!-- PPJ_EXECUTIVE_DELIVERY_STAGE_START -->
+## Executive Delivery-State Index
+
+| Project | Delivery Stream | Delivery Stage | Lifecycle | Status | Gate | Last Verified |
+|---|---|---|---|---|---|---|
+| ACC.GRN-SupplierInvoiceBot.v2.3 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production Support | Support | Operational stability and exceptions |  |
+| ACC.Inventory.Report.v1.0 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed / no active follow-up |  |
+| AI.Automation.Workshop.202606 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed event |  |
+| AI.Automation.Workshop.Analysis.202606 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed analysis |  |
+| Admin Expense Management.v1.1 | INTERNAL DEVELOPMENT | ANALYSIS | Workflow Demo Completed / Requirement Refinement | Active | Expand demonstrated travel request into end-to-end expense and settlement requirements |  |
+| COSTING.AGENTIC.PLATFORM.v1.1 | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development | Active | Sew v1.2 and Wash Agent development |  |
+| CPD.Datamart.v1.1 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Maintenance | Support | Operational maintenance |  |
+| EXIM.ExpenseInvoices.Automation.v1.1 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed; succeeded by PPJ.ExpenseInvoices.v1.1 |  |
+| FD.Datamart.v2.2 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Support | Support | Operational support |  |
+| FIN.AI.FINANCE.MANAGEMENT.v1.2 | INTERNAL DEVELOPMENT | DESIGN | Design | Active | WS2 Rule Catalogue and Databricks access; then WS3 source discovery | 2026-08-24 |
+| HR.SSPFD.Workflow.v1.1 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Production rollout and data-quality monitoring |  |
+| MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1 | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Active | Active | Chico's rule validation |  |
+| MER.MARKET.INTELLIGENCE.v1.1 | INTERNAL DEVELOPMENT | ANALYSIS | Active Intelligence | Active | Commercial intelligence delivery |  |
+| MER.PO.Commit.v1.1 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed |  |
+| PPJ.AI.Hub.v2.1 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Internal Production Platform | Active | Platform operations |  |
+| PPJ.ExpenseInvoices.v1.1 | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | UAT / Pre-Go-Live | Active | Production Readiness / Go-Live |  |
+| PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Maintenance | Support | IT helpdesk maintenance |  |
+| PPJ.InvoiceDownloader.v1.2 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Operational reliability |  |
+| PPJ.PERRI.Chatbot.v3.2 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Permissioned production orchestration |  |
+| PPJ.UIT.ACADEMIC.COLLABORATION.v1.1 | EXTERNAL DEVELOPMENT | DESIGN | Design | External Collaboration | Academic problem package | 2026-08-24 |
+| PPJxNUNOX.ScanTrial | EXTERNAL DEVELOPMENT | ANALYSIS | Partnership / Digital Library Evaluation | External Collaboration | Working-session outcome unconfirmed |  |
+| PPJxQSee.AI | EXTERNAL DEVELOPMENT | ANALYSIS | On Hold | External Collaboration | Reactivation decision |  |
+| PPJxStratova.AI | EXTERNAL DEVELOPMENT | ANALYSIS | Strategic Technology Evaluation | External Collaboration | Build-vs-buy evaluation |  |
+| PROD.COWASH.v2.0 | EXTERNAL DEVELOPMENT | ANALYSIS | On Hold | External Collaboration | Owner/data/KPI/access/technical direction |  |
+| PROD.IOT.CHuyenTreo.v1.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Development | Active | Source and KPI reconciliation |  |
+| PUR.Adhoc.Indent.South.v1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Maintenance | Support | Operational maintenance |  |
+| PUR.GDI.Automation.v1.0 | INTERNAL DEVELOPMENT | DESIGN | Active / WFX API Integration | Active | WFX API contract discovery and controlled integration design |  |
+| PUR.HM.LabelO.Processing.Automation.v1.0 | INTERNAL DEVELOPMENT | ANALYSIS | On Hold | On Hold | Scalability decision |  |
+| PUR.Inventory.Report.v2.1 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production / Enhancement | Active | Post-enhancement support |  |
+| PUR.Material.Allocation.v1.1 | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | First Flow Validated | Active | Exception, rollback and transaction-safety testing |  |
+| QC.Primo1D.RFID.Thread.v1.0 | EXTERNAL DEVELOPMENT | ANALYSIS | Business Case / Pre-PoC | External Collaboration | Business/customer case decision |  |
+| SCP.SOURCING.CHATBOT.v2.3 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Production data quality and stress testing |  |
+| TD.TechnicalKnowledge.Platform.v2.1 | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Initial Sync Demo Completed / Sync Validation & Stabilization | Active | Incremental sync hardening and Technical UAT |  |
+| VITAS.Sharing.202606 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed event |  |
+| WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1 | INTERNAL DEVELOPMENT | DESIGN | Analysis / Product Design | Active | Sampling workflow and product design |  |
+<!-- PPJ_EXECUTIVE_DELIVERY_STAGE_END -->

@@ -1,0 +1,61 @@
+---
+type: project_memory
+project_name: "PUR.Material.Allocation.v1.1"
+project_file: "PUR.Material.Allocation.v1.1.md"
+project_code: "PUR.Material.Allocation.v1.1"
+department: "Purchasing"
+cluster: "Purchasing Workflow"
+phase: "Analysis / Early Development"
+technical_members: ["Uyen", "Khoa"]
+progress: "10%"
+last_verified: "2026-06-28"
+confidence: "Strong"
+---
+
+# Project Memory: PUR.Material.Allocation.v1.1
+
+## One-Line Understanding
+
+Purchasing material allocation/transfer/borrow workflow with WFX dependency and validation before save/post.
+
+## Current Outcome
+
+Support allocation decisions and reduce manual WFX handling after real test data and rules are confirmed.
+
+## Latest Update Summary
+
+Team is requesting test data from Precision team and working with chi Tuyet; users are busy so data is incomplete.
+
+## What This Project Is
+
+Semi-automation/automation for material allocation, transfer, or borrow between OC/style/order.
+
+## What This Project Is Not
+
+Not production-ready until WFX logic, user review, and test data are confirmed.
+
+## Key Users
+
+Purchasing/business users and Precision-related stakeholders.
+
+## Systems / Data
+
+WFX, allocation data, transfer/borrow cases, validation rules.
+
+## Known Risks / Blockers
+
+Missing real test data, busy business users, WFX dependency, unclear business rules.
+
+## Next Actions
+
+Get real test data and define validation/user review flow.
+
+## Do Not Drift Rules
+
+- Keep WFX dependency visible.
+- Do not mark production while test data and rules are incomplete.
+
+## Source Links
+
+- [[PUR.Material.Allocation.v1.1]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]

@@ -1,0 +1,149 @@
+{
+  "nodes": [
+    {
+      "id": "lane-0",
+      "type": "group",
+      "x": 0,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "BACKLOG"
+    },
+    {
+      "id": "lane-1",
+      "type": "group",
+      "x": 600,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "THIS WEEK"
+    },
+    {
+      "id": "lane-2",
+      "type": "group",
+      "x": 1200,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "IN PROGRESS"
+    },
+    {
+      "id": "lane-3",
+      "type": "group",
+      "x": 1800,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "BLOCKED / WAITING"
+    },
+    {
+      "id": "lane-4",
+      "type": "group",
+      "x": 2400,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "REVIEW / UAT"
+    },
+    {
+      "id": "lane-5",
+      "type": "group",
+      "x": 3000,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "DONE"
+    },
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "HR.SSPFD.Workflow.v1.1\n\nDomain: HR\nLifecycle: Production\nProgress: TBD\nGate: Production rollout and data-quality monitoring\nOutcome: Standardize employee data into a trusted Employee Master and support applicant extraction/prefill.\nTop Blocker: Sensitive HR data\nNext Milestone: Monitor rollout by company/factory\nPriority: P8\nLast Verified: 2026-08-24",
+      "x": 0,
+      "y": 0,
+      "width": 1140,
+      "height": 420
+    },
+    {
+      "id": "task-0",
+      "type": "file",
+      "file": "03_Projects/HR.SS&PFD.v1.1/Tasks/HR.SSPFD.Workflow.v1.1-20260824-TASK-001_Monitor-rollout-by-company-factory.md",
+      "x": 30,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-1",
+      "type": "file",
+      "file": "03_Projects/HR.SS&PFD.v1.1/Tasks/HR.SSPFD.Workflow.v1.1-20260824-TASK-002_Track-standardization-missing-field-duplicate-and-matching-success-KPI.md",
+      "x": 30,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-2",
+      "type": "file",
+      "file": "03_Projects/HR.SS&PFD.v1.1/Tasks/HR.SSPFD.Workflow.v1.1-20260824-TASK-003_Stabilize-applicant-extraction-and-prefill-workflow.md",
+      "x": 30,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-3",
+      "type": "file",
+      "file": "03_Projects/HR.SS&PFD.v1.1/Tasks/HR.SSPFD.Workflow.v1.1-TASK-001_HR-Software-Handover-Package.md",
+      "x": 3030,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-4",
+      "type": "file",
+      "file": "03_Projects/HR.SS&PFD.v1.1/Tasks/HR.SSPFD.Workflow.v1.1-TASK-002_HR-Group-Rollout-and-Production-Ownership.md",
+      "x": 3030,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-5",
+      "type": "file",
+      "file": "03_Projects/HR.SS&PFD.v1.1/Tasks/HR.SSPFD.Workflow.v1.1-TASK-003_Monitor-rollout-by-company-and-factory.md",
+      "x": 3030,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-6",
+      "type": "file",
+      "file": "03_Projects/HR.SS&PFD.v1.1/Tasks/HR.SSPFD.Workflow.v1.1-TASK-004_Finalize-employee-matching-and-conflict-handling-rules.md",
+      "x": 3030,
+      "y": 1110,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-7",
+      "type": "file",
+      "file": "03_Projects/HR.SS&PFD.v1.1/Tasks/HR.SSPFD.Workflow.v1.1-TASK-005_Monitor-rollout-issues-fix-and-retest.md",
+      "x": 3030,
+      "y": 1290,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-8",
+      "type": "file",
+      "file": "03_Projects/HR.SS&PFD.v1.1/Tasks/HR.SSPFD.Workflow.v1.1-TASK-006_Build-rollout-status-dashboard-and-complete-Workflow-2-user-.md",
+      "x": 3030,
+      "y": 1470,
+      "width": 480,
+      "height": 140
+    }
+  ],
+  "edges": []
+}

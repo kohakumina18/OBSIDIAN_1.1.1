@@ -1,0 +1,60 @@
+---
+type: project_memory
+project_name: "COSTING.AGENTIC.PLATFORM.v1.1"
+project_file: "PPJ.COSTING.AGENT.PLATFORM.v1.1.md"
+project_code: "COSTING.AGENTIC.PLATFORM.v1.1"
+department: "MER"
+cluster: "Costing Agentic Platform"
+phase: "Analysis / Strategic Platform"
+technical_members: ["Lam", "Khoa", "Uyen"]
+last_verified: "2026-06-28"
+confidence: "Strong"
+---
+
+# Project Memory: COSTING.AGENTIC.PLATFORM.v1.1
+
+## One-Line Understanding
+
+Strategic agentic platform for multi-department technical costing and quotation workflows.
+
+## Current Outcome
+
+Route customer requests through costing/technical agents and consolidate results for MER review.
+
+## Latest Update Summary
+
+Canonical project now absorbs Costing Intelligence, MER Costing, Merchandising Intelligence, Costing Chatbot aliases.
+
+## What This Project Is
+
+Agentic platform with BOM, Sew, Wash, Cut, Technical Knowledge, Historical Costing, and Quotation Consolidation agents.
+
+## What This Project Is Not
+
+Not a simple calculator or single chatbot.
+
+## Key Users
+
+MER, BOM, Sew, Wash, Cut, Costing, Technical Department, BDE.
+
+## Systems / Data
+
+Sketch, techpack, sample image, buyer reference, BOM, construction, wash, historical costing, quote history.
+
+## Known Risks / Blockers
+
+Distributed costing data, unstandardized technical experience, unclear source of truth, need human review.
+
+## Next Actions
+
+Collect real sample requests and define batch quotation workflow.
+
+## Do Not Drift Rules
+
+- Treat as strategic platform, not simple calculator.
+- Keep human MER review before official quotation.
+
+## Source Links
+
+- [[PPJ.COSTING.AGENT.PLATFORM.v1.1]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]

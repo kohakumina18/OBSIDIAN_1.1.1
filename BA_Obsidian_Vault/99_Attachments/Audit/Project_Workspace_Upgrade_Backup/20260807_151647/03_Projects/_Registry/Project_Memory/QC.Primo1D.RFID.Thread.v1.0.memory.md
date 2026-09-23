@@ -1,0 +1,86 @@
+---
+type: project_memory
+project_name: "QC.Primo1D.RFID.Thread.v1.0"
+project_file: "PPJ XPrimo1D RFID Thread.md"
+project_code: "QC.Primo1D.RFID.Thread.v1.0"
+department: "QC / Production / Innovation"
+cluster: "RFID / QC Exploration"
+phase: "Exploration"
+last_verified: "2026-07-13"
+confidence: "Strong"
+canonical_code: "QC.Primo1D.RFID.Thread.v1.0"
+current_file: "PPJ XPrimo1D RFID Thread.md"
+primary_domain: "QC / TQM"
+primary_capability: "Quality inspection, defect detection, traceability"
+secondary_domains: "MER, Customer, Factory"
+lifecycle: "Hardware Trial / Feasibility Assessment"
+progress: "TBD"
+current_gate: "Pre-contact / Internal Alignment"
+workspace_path: "03_Projects/PPJ XPrimo1D RFID Thread"
+project_home: "03_Projects/PPJ XPrimo1D RFID Thread/00_Project_Home.md"
+project_board: "03_Projects/PPJ XPrimo1D RFID Thread/Project_Executive_Board.canvas"
+task_folder: "03_Projects/PPJ XPrimo1D RFID Thread/Tasks"
+documentation_status: "Workspace Created"
+---
+
+# Project Memory: QC.Primo1D.RFID.Thread.v1.0
+
+## One-Line Understanding
+
+RFID thread exploration for product identification, traceability, and possible QC/logistics use cases.
+
+## Current Outcome
+
+Evaluate feasibility, integration, durability, cost, and business use before PoC/production decision.
+
+## Latest Update Summary
+
+Canonical naming maps PPJ XPrimo1D RFID Thread to QC.Primo1D.RFID.Thread.v1.0.
+
+## What This Project Is
+
+External technology exploration for RFID thread.
+
+## What This Project Is Not
+
+Not confirmed production rollout.
+
+## Key Users
+
+QC, production, logistics, innovation stakeholders.
+
+## Systems / Data
+
+RFID tag/thread, reader infrastructure, traceability data, garment/product identity.
+
+## Known Risks / Blockers
+
+Cost, durability, washing/production impact, reader infrastructure, ERP/traceability integration.
+
+## Next Actions
+
+Define use case, PoC scope, and feasibility criteria.
+
+## Do Not Drift Rules
+
+- Keep as exploration unless trial is confirmed.
+
+## Source Links
+
+- [[PPJ XPrimo1D RFID Thread]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]
+
+<!-- PPJ_DOMAIN_GOVERNANCE_START -->
+## Domain Governance
+
+- Canonical Code: QC.Primo1D.RFID.Thread.v1.0
+- Current File: [[PPJ XPrimo1D RFID Thread]]
+- Primary Domain: QC / TQM
+- Secondary Domains: MER, Customer, Factory
+- Lifecycle: Hardware Trial / Feasibility Assessment
+- Progress: TBD
+- Current Gate: Pre-contact / Internal Alignment
+
+## Domain Do Not Drift Rules
+- Keep as traceability/QC feasibility, not general vendor project.
+<!-- PPJ_DOMAIN_GOVERNANCE_END -->

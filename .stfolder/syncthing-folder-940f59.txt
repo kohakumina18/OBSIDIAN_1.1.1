@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: obsidian-vault
+created: 2026-08-27T14:01:55+07:00

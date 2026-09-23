@@ -1,0 +1,282 @@
+﻿# PPJ Project Governance Gap Report - 20260627  Generated: 2026-06-27 21:51  ## Executive Summary  This report lists missing project governance fields across top-level PPJ project notes. Missing values are marked as TBD or absent. No project notes were modified.  | Gap Type | Count | |---|---:|
+| Blocker | 42 |
+| DecisionNeeded | 45 |
+| NextAction | 16 |
+| Owner | 45 |
+| Phase | 20 |
+| Progress | 45 |
+| RelatedDeliverable | 17 |
+| RelatedSystem | 42 |
+| Status | 23 |
+
+## Missing Phase
+
+- [[Adhoc Indent miền Nam]] - Adhoc Indent miền Nam.md
+- [[Adhoc Indent]] - Adhoc Indent.md
+- [[Chuyền Treo IoT Dashboard]] - Chuyền Treo IoT Dashboard.md
+- [[Chuyền treo ver1]] - Chuyền treo ver1.md
+- [[Cowash VER2]] - Cowash VER2.md
+- [[CPD Fabric Database]] - CPD Fabric Database.md
+- [[E-commerce Exploration]] - E-commerce Exploration.md
+- [[FD Hanger VER2]] - FD Hanger VER2.md
+- [[GDI Automation]] - GDI Automation.md
+- [[Import Export Automation]] - Import Export Automation.md
+- [[Market Intelligence]] - Market Intelligence.md
+- [[PO Commit]] - PO Commit.md
+- [[PPJ x Nunox]] - PPJ x Nunox.md
+- [[PPJ x Stratova AI]] - PPJ x Stratova AI.md
+- [[PPJ.GLPI-Helpdesk-AI Chatbot]] - PPJ.GLPI-Helpdesk-AI Chatbot.md
+- [[PPJ.PERRI.Chatbot]] - PPJ.PERRI.Chatbot.md
+- [[Purchasing Inventory Report]] - Purchasing Inventory Report.md
+- [[Sourcing Chatbot v2.3]] - Sourcing Chatbot v2.3.md
+- [[Sourcing VER2]] - Sourcing VER2.md
+- [[Web Tổng Hợp Tool]] - Web Tổng Hợp Tool.md
+
+## Missing Owner
+
+- [[ACC.CHICOS.INVOICE.RECHECK-AUDIT.v1.1]] - ACC.CHICOS.INVOICE.RECHECK-AUDIT.v1.1.md
+- [[Accounting GRN Supplier Invoice Bot]] - Accounting GRN Supplier Invoice Bot.md
+- [[Adhoc Indent mien Nam]] - Adhoc Indent mien Nam.md
+- [[Adhoc Indent miền Nam]] - Adhoc Indent miền Nam.md
+- [[Adhoc Indent]] - Adhoc Indent.md
+- [[AI Automation Workshop]] - AI Automation Workshop.md
+- [[Chuyền Treo IoT Dashboard]] - Chuyền Treo IoT Dashboard.md
+- [[Chuyền treo ver1]] - Chuyền treo ver1.md
+- [[Cowash VER2]] - Cowash VER2.md
+- [[COWASH]] - COWASH.md
+- [[CPD Fabric Database]] - CPD Fabric Database.md
+- [[E-commerce Exploration]] - E-commerce Exploration.md
+- [[E-commerce Market Intelligence]] - E-commerce Market Intelligence.md
+- [[EX-IM Expense Invoice Bot]] - EX-IM Expense Invoice Bot.md
+- [[FD Hanger VER2]] - FD Hanger VER2.md
+- [[GDI Automation]] - GDI Automation.md
+- [[H&M Label-O Processing]] - H&M Label-O Processing.md
+- [[HR.SS&PFD.v1.1]] - HR.SS&PFD.v1.1.md
+- [[Import Export Automation]] - Import Export Automation.md
+- [[IOT.CHuyenTreo_1]] - IOT.CHuyenTreo_1.md
+- [[Market Intelligence]] - Market Intelligence.md
+- [[MER Costing Intelligence]] - MER Costing Intelligence.md
+- [[NUNOX]] - NUNOX.md
+- [[PO Commit]] - PO Commit.md
+- [[PPJ x Nunox]] - PPJ x Nunox.md
+- [[PPJ x Stratova AI]] - PPJ x Stratova AI.md
+- [[PPJ. Expense-Invoices.v1.1]] - PPJ. Expense-Invoices.v1.1.md
+- [[PPJ.GLPI-Helpdesk-AI Chatbot]] - PPJ.GLPI-Helpdesk-AI Chatbot.md
+- [[PPJ.Invoice Downloader.v1.2]] - PPJ.Invoice Downloader.v1.2.md
+- [[PPJ.PERRI.Chatbot]] - PPJ.PERRI.Chatbot.md
+
+## Missing Status
+
+- [[ACC.CHICOS.INVOICE.RECHECK-AUDIT.v1.1]] - ACC.CHICOS.INVOICE.RECHECK-AUDIT.v1.1.md
+- [[Adhoc Indent mien Nam]] - Adhoc Indent mien Nam.md
+- [[Adhoc Indent]] - Adhoc Indent.md
+- [[Chuyền Treo IoT Dashboard]] - Chuyền Treo IoT Dashboard.md
+- [[Cowash VER2]] - Cowash VER2.md
+- [[CPD Fabric Database]] - CPD Fabric Database.md
+- [[E-commerce Exploration]] - E-commerce Exploration.md
+- [[FD Hanger VER2]] - FD Hanger VER2.md
+- [[GDI Automation]] - GDI Automation.md
+- [[Import Export Automation]] - Import Export Automation.md
+- [[IOT.CHuyenTreo_1]] - IOT.CHuyenTreo_1.md
+- [[Market Intelligence]] - Market Intelligence.md
+- [[PO Commit]] - PO Commit.md
+- [[PPJ x Nunox]] - PPJ x Nunox.md
+- [[PPJ x Stratova AI]] - PPJ x Stratova AI.md
+- [[PPJ.GLPI-Helpdesk-AI Chatbot]] - PPJ.GLPI-Helpdesk-AI Chatbot.md
+- [[PPJ.PERRI.Chatbot]] - PPJ.PERRI.Chatbot.md
+- [[Purchasing Inventory Report]] - Purchasing Inventory Report.md
+- [[SCP.SOURCING.CHATBOT.v2.3]] - SCP.SOURCING.CHATBOT.v2.3.md
+- [[Sourcing VER2]] - Sourcing VER2.md
+- [[WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1]] - WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1.md
+- [[Web Tong Hop Tool]] - Web Tong Hop Tool.md
+- [[Web Tổng Hợp Tool]] - Web Tổng Hợp Tool.md
+
+## Missing Progress
+
+- [[ACC.CHICOS.INVOICE.RECHECK-AUDIT.v1.1]] - ACC.CHICOS.INVOICE.RECHECK-AUDIT.v1.1.md
+- [[Accounting GRN Supplier Invoice Bot]] - Accounting GRN Supplier Invoice Bot.md
+- [[Adhoc Indent mien Nam]] - Adhoc Indent mien Nam.md
+- [[Adhoc Indent miền Nam]] - Adhoc Indent miền Nam.md
+- [[Adhoc Indent]] - Adhoc Indent.md
+- [[AI Automation Workshop]] - AI Automation Workshop.md
+- [[Chuyền Treo IoT Dashboard]] - Chuyền Treo IoT Dashboard.md
+- [[Chuyền treo ver1]] - Chuyền treo ver1.md
+- [[Cowash VER2]] - Cowash VER2.md
+- [[COWASH]] - COWASH.md
+- [[CPD Fabric Database]] - CPD Fabric Database.md
+- [[E-commerce Exploration]] - E-commerce Exploration.md
+- [[E-commerce Market Intelligence]] - E-commerce Market Intelligence.md
+- [[EX-IM Expense Invoice Bot]] - EX-IM Expense Invoice Bot.md
+- [[FD Hanger VER2]] - FD Hanger VER2.md
+- [[GDI Automation]] - GDI Automation.md
+- [[H&M Label-O Processing]] - H&M Label-O Processing.md
+- [[HR.SS&PFD.v1.1]] - HR.SS&PFD.v1.1.md
+- [[Import Export Automation]] - Import Export Automation.md
+- [[IOT.CHuyenTreo_1]] - IOT.CHuyenTreo_1.md
+- [[Market Intelligence]] - Market Intelligence.md
+- [[MER Costing Intelligence]] - MER Costing Intelligence.md
+- [[NUNOX]] - NUNOX.md
+- [[PO Commit]] - PO Commit.md
+- [[PPJ x Nunox]] - PPJ x Nunox.md
+- [[PPJ x Stratova AI]] - PPJ x Stratova AI.md
+- [[PPJ. Expense-Invoices.v1.1]] - PPJ. Expense-Invoices.v1.1.md
+- [[PPJ.GLPI-Helpdesk-AI Chatbot]] - PPJ.GLPI-Helpdesk-AI Chatbot.md
+- [[PPJ.Invoice Downloader.v1.2]] - PPJ.Invoice Downloader.v1.2.md
+- [[PPJ.PERRI.Chatbot]] - PPJ.PERRI.Chatbot.md
+
+## Missing Next Action
+
+- [[Adhoc Indent]] - Adhoc Indent.md
+- [[Chuyền Treo IoT Dashboard]] - Chuyền Treo IoT Dashboard.md
+- [[Cowash VER2]] - Cowash VER2.md
+- [[CPD Fabric Database]] - CPD Fabric Database.md
+- [[E-commerce Exploration]] - E-commerce Exploration.md
+- [[FD Hanger VER2]] - FD Hanger VER2.md
+- [[GDI Automation]] - GDI Automation.md
+- [[Import Export Automation]] - Import Export Automation.md
+- [[Market Intelligence]] - Market Intelligence.md
+- [[PO Commit]] - PO Commit.md
+- [[PPJ x Nunox]] - PPJ x Nunox.md
+- [[PPJ x Stratova AI]] - PPJ x Stratova AI.md
+- [[PPJ.GLPI-Helpdesk-AI Chatbot]] - PPJ.GLPI-Helpdesk-AI Chatbot.md
+- [[PPJ.PERRI.Chatbot]] - PPJ.PERRI.Chatbot.md
+- [[Purchasing Inventory Report]] - Purchasing Inventory Report.md
+- [[Web Tổng Hợp Tool]] - Web Tổng Hợp Tool.md
+
+## Missing Blocker
+
+- [[ACC.CHICOS.INVOICE.RECHECK-AUDIT.v1.1]] - ACC.CHICOS.INVOICE.RECHECK-AUDIT.v1.1.md
+- [[Accounting GRN Supplier Invoice Bot]] - Accounting GRN Supplier Invoice Bot.md
+- [[Adhoc Indent mien Nam]] - Adhoc Indent mien Nam.md
+- [[Adhoc Indent miền Nam]] - Adhoc Indent miền Nam.md
+- [[Adhoc Indent]] - Adhoc Indent.md
+- [[AI Automation Workshop]] - AI Automation Workshop.md
+- [[Chuyền Treo IoT Dashboard]] - Chuyền Treo IoT Dashboard.md
+- [[Chuyền treo ver1]] - Chuyền treo ver1.md
+- [[Cowash VER2]] - Cowash VER2.md
+- [[COWASH]] - COWASH.md
+- [[CPD Fabric Database]] - CPD Fabric Database.md
+- [[E-commerce Exploration]] - E-commerce Exploration.md
+- [[E-commerce Market Intelligence]] - E-commerce Market Intelligence.md
+- [[EX-IM Expense Invoice Bot]] - EX-IM Expense Invoice Bot.md
+- [[FD Hanger VER2]] - FD Hanger VER2.md
+- [[GDI Automation]] - GDI Automation.md
+- [[H&M Label-O Processing]] - H&M Label-O Processing.md
+- [[HR.SS&PFD.v1.1]] - HR.SS&PFD.v1.1.md
+- [[Import Export Automation]] - Import Export Automation.md
+- [[IOT.CHuyenTreo_1]] - IOT.CHuyenTreo_1.md
+- [[Market Intelligence]] - Market Intelligence.md
+- [[MER Costing Intelligence]] - MER Costing Intelligence.md
+- [[NUNOX]] - NUNOX.md
+- [[PO Commit]] - PO Commit.md
+- [[PPJ x Nunox]] - PPJ x Nunox.md
+- [[PPJ x Stratova AI]] - PPJ x Stratova AI.md
+- [[PPJ.GLPI-Helpdesk-AI Chatbot]] - PPJ.GLPI-Helpdesk-AI Chatbot.md
+- [[PPJ.Invoice Downloader.v1.2]] - PPJ.Invoice Downloader.v1.2.md
+- [[PPJ.PERRI.Chatbot]] - PPJ.PERRI.Chatbot.md
+- [[Primo1D RFID Thread]] - Primo1D RFID Thread.md
+
+## Missing Decision Needed
+
+- [[ACC.CHICOS.INVOICE.RECHECK-AUDIT.v1.1]] - ACC.CHICOS.INVOICE.RECHECK-AUDIT.v1.1.md
+- [[Accounting GRN Supplier Invoice Bot]] - Accounting GRN Supplier Invoice Bot.md
+- [[Adhoc Indent mien Nam]] - Adhoc Indent mien Nam.md
+- [[Adhoc Indent miền Nam]] - Adhoc Indent miền Nam.md
+- [[Adhoc Indent]] - Adhoc Indent.md
+- [[AI Automation Workshop]] - AI Automation Workshop.md
+- [[Chuyền Treo IoT Dashboard]] - Chuyền Treo IoT Dashboard.md
+- [[Chuyền treo ver1]] - Chuyền treo ver1.md
+- [[Cowash VER2]] - Cowash VER2.md
+- [[COWASH]] - COWASH.md
+- [[CPD Fabric Database]] - CPD Fabric Database.md
+- [[E-commerce Exploration]] - E-commerce Exploration.md
+- [[E-commerce Market Intelligence]] - E-commerce Market Intelligence.md
+- [[EX-IM Expense Invoice Bot]] - EX-IM Expense Invoice Bot.md
+- [[FD Hanger VER2]] - FD Hanger VER2.md
+- [[GDI Automation]] - GDI Automation.md
+- [[H&M Label-O Processing]] - H&M Label-O Processing.md
+- [[HR.SS&PFD.v1.1]] - HR.SS&PFD.v1.1.md
+- [[Import Export Automation]] - Import Export Automation.md
+- [[IOT.CHuyenTreo_1]] - IOT.CHuyenTreo_1.md
+- [[Market Intelligence]] - Market Intelligence.md
+- [[MER Costing Intelligence]] - MER Costing Intelligence.md
+- [[NUNOX]] - NUNOX.md
+- [[PO Commit]] - PO Commit.md
+- [[PPJ x Nunox]] - PPJ x Nunox.md
+- [[PPJ x Stratova AI]] - PPJ x Stratova AI.md
+- [[PPJ. Expense-Invoices.v1.1]] - PPJ. Expense-Invoices.v1.1.md
+- [[PPJ.GLPI-Helpdesk-AI Chatbot]] - PPJ.GLPI-Helpdesk-AI Chatbot.md
+- [[PPJ.Invoice Downloader.v1.2]] - PPJ.Invoice Downloader.v1.2.md
+- [[PPJ.PERRI.Chatbot]] - PPJ.PERRI.Chatbot.md
+
+## Missing Deliverable
+
+- [[Adhoc Indent]] - Adhoc Indent.md
+- [[Chuyền Treo IoT Dashboard]] - Chuyền Treo IoT Dashboard.md
+- [[Cowash VER2]] - Cowash VER2.md
+- [[CPD Fabric Database]] - CPD Fabric Database.md
+- [[E-commerce Exploration]] - E-commerce Exploration.md
+- [[FD Hanger VER2]] - FD Hanger VER2.md
+- [[GDI Automation]] - GDI Automation.md
+- [[Import Export Automation]] - Import Export Automation.md
+- [[Market Intelligence]] - Market Intelligence.md
+- [[PO Commit]] - PO Commit.md
+- [[PPJ x Nunox]] - PPJ x Nunox.md
+- [[PPJ x Stratova AI]] - PPJ x Stratova AI.md
+- [[PPJ.GLPI-Helpdesk-AI Chatbot]] - PPJ.GLPI-Helpdesk-AI Chatbot.md
+- [[PPJ.PERRI.Chatbot]] - PPJ.PERRI.Chatbot.md
+- [[Purchasing Inventory Report]] - Purchasing Inventory Report.md
+- [[Sourcing VER2]] - Sourcing VER2.md
+- [[Web Tổng Hợp Tool]] - Web Tổng Hợp Tool.md
+
+## Missing Source of Truth
+
+- [[ACC.CHICOS.INVOICE.RECHECK-AUDIT.v1.1]] - ACC.CHICOS.INVOICE.RECHECK-AUDIT.v1.1.md
+- [[Accounting GRN Supplier Invoice Bot]] - Accounting GRN Supplier Invoice Bot.md
+- [[Adhoc Indent mien Nam]] - Adhoc Indent mien Nam.md
+- [[Adhoc Indent miền Nam]] - Adhoc Indent miền Nam.md
+- [[Adhoc Indent]] - Adhoc Indent.md
+- [[AI Automation Workshop]] - AI Automation Workshop.md
+- [[Chuyền Treo IoT Dashboard]] - Chuyền Treo IoT Dashboard.md
+- [[Chuyền treo ver1]] - Chuyền treo ver1.md
+- [[Cowash VER2]] - Cowash VER2.md
+- [[COWASH]] - COWASH.md
+- [[CPD Fabric Database]] - CPD Fabric Database.md
+- [[E-commerce Exploration]] - E-commerce Exploration.md
+- [[E-commerce Market Intelligence]] - E-commerce Market Intelligence.md
+- [[EX-IM Expense Invoice Bot]] - EX-IM Expense Invoice Bot.md
+- [[FD Hanger VER2]] - FD Hanger VER2.md
+- [[GDI Automation]] - GDI Automation.md
+- [[H&M Label-O Processing]] - H&M Label-O Processing.md
+- [[HR.SS&PFD.v1.1]] - HR.SS&PFD.v1.1.md
+- [[Import Export Automation]] - Import Export Automation.md
+- [[IOT.CHuyenTreo_1]] - IOT.CHuyenTreo_1.md
+- [[Market Intelligence]] - Market Intelligence.md
+- [[MER Costing Intelligence]] - MER Costing Intelligence.md
+- [[NUNOX]] - NUNOX.md
+- [[PO Commit]] - PO Commit.md
+- [[PPJ x Nunox]] - PPJ x Nunox.md
+- [[PPJ x Stratova AI]] - PPJ x Stratova AI.md
+- [[PPJ. Expense-Invoices.v1.1]] - PPJ. Expense-Invoices.v1.1.md
+- [[PPJ.GLPI-Helpdesk-AI Chatbot]] - PPJ.GLPI-Helpdesk-AI Chatbot.md
+- [[PPJ.Invoice Downloader.v1.2]] - PPJ.Invoice Downloader.v1.2.md
+- [[PPJ.PERRI.Chatbot]] - PPJ.PERRI.Chatbot.md
+
+## Top Priority Fixes
+
+1. Fill phase, owner, status, progress, next action, blocker, and decision-needed fields for P1/P2 projects.
+2. Standardize canonical sourcing, WFX-blocked purchasing automation, invoice automation, R&D Wash portal, and factory IoT projects first.
+3. Add related deliverable and source-of-truth fields for all automation, data, and chatbot projects.
+4. Keep alias notes only for backlink preservation after canonical names are approved.
+
+## Related Concepts
+
+[[Data Governance]]
+[[Traceability]]
+[[Portfolio Management]]
+
+## Methods
+
+[[Requirement Validation]]
+[[Data Mapping]]
+[[Impact Analysis]]

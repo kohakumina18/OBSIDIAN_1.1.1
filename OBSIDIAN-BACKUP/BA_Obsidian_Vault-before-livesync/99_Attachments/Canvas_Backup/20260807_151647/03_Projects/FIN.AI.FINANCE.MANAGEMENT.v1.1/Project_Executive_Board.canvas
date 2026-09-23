@@ -1,0 +1,157 @@
+{
+  "nodes": [
+    {
+      "id": "ppj-board-metadata",
+      "type": "text",
+      "text": "FIN.AI.FINANCE.MANAGEMENT.v1.2 — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1",
+      "x": 0,
+      "y": -220,
+      "width": 760,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "ppj-exec-summary",
+      "type": "text",
+      "text": "FIN.AI.FINANCE.MANAGEMENT.v1.2\n\nDomain:\nFinance / Accounting\n\nLifecycle:\nAnalysis / Design\n\nProgress:\nTBD\n\nGate:\nData Discovery / Databricks Access Blocked / Rule Engine Design\n\nOutcome:\nCentralized financial control and analysis platform for OC cost completeness, exception detection, order effectiveness, drill-down reporting, Power BI and AI-assisted analysis.\n\nTop Blocker:\nApproved Databricks account and read permission are not available.\n\nNext Milestone:\nFollow up Databricks account approval and confirm account, role, catalog, schema, table and read-only permission.\n\nLast Verified:\n2026-08-01",
+      "x": 0,
+      "y": -90,
+      "width": 760,
+      "height": 560,
+      "color": "4"
+    },
+    {
+      "id": "ppj-management-attention",
+      "type": "text",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Required data is outside the currently governed DWH.\n- OC linking keys may be incomplete.\n- Accounting approval and warning thresholds are pending.\n\nDecisions Needed\n- Define official Databricks access governance.\n- Approve Accounting rules and thresholds.\n- Confirm source owners and sources of truth.\n\nExternal Dependencies\n- Databricks Sources -> Finance Source Inventory -> Data Profiling -> Rule Engine -> OC Exception Detection -> Accounting Validation",
+      "x": 810,
+      "y": -90,
+      "width": 500,
+      "height": 560,
+      "color": "1"
+    },
+    {
+      "id": "ppj-lane-f3e573404df4",
+      "type": "group",
+      "x": 0,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BACKLOG",
+      "color": "1"
+    },
+    {
+      "id": "ppj-task-542a5688badd",
+      "type": "text",
+      "text": "[[Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-TASK-001_Finance-OC-Control-Dataset-and-Exception-Catalogue]]\n\nFinance OC Control Dataset and Exception Catalogue\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-8d767178b3a7",
+      "type": "group",
+      "x": 350,
+      "y": 560,
+      "width": 300,
+      "height": 1050,
+      "label": "THIS WEEK",
+      "color": "2"
+    },
+    {
+      "id": "ppj-task-e4abff6d7ba7",
+      "type": "text",
+      "text": "[[Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-TASK-004_Complete-Workstream-2-Source-Inventory-and-profile-each-sour]]\n\nComplete Workstream 2 Source Inventory and profile each source\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 370,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-d52a3641e1c5",
+      "type": "text",
+      "text": "[[Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-TASK-005_Confirm-OC-linking-keys-and-finalize-the-Rule-Engine-Catalog]]\n\nConfirm OC linking keys and finalize the Rule Engine Catalogue\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 370,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-0bb934feccae",
+      "type": "text",
+      "text": "[[Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-TASK-002_Finance-Databricks-Access-and-Rule-Engine-Finalization]]\n\nFinance Databricks Access and Rule Engine Finalization\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 370,
+      "y": 1010,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-0ece69718430",
+      "type": "text",
+      "text": "[[Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-TASK-003_Follow-up-Databricks-account-approval-and-confirm-account-ro]]\n\nFollow up Databricks account approval and confirm account, role, catalog, schema, table and read-onl\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 370,
+      "y": 1200,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-184919f525cd",
+      "type": "text",
+      "text": "[[Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-TASK-006_Select-20-30-sample-OCs-and-compare-Rule-Engine-results-with]]\n\nSelect 20-30 sample OCs and compare Rule Engine results with manual Accounting controls\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 370,
+      "y": 1390,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-bf81443bfcae",
+      "type": "group",
+      "x": 700,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "IN PROGRESS",
+      "color": "3"
+    },
+    {
+      "id": "ppj-lane-276d6ca3922f",
+      "type": "group",
+      "x": 1050,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BLOCKED / WAITING",
+      "color": "4"
+    },
+    {
+      "id": "ppj-lane-a82db70f445e",
+      "type": "group",
+      "x": 1400,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "REVIEW / UAT",
+      "color": "5"
+    },
+    {
+      "id": "ppj-lane-e782e7728e49",
+      "type": "group",
+      "x": 1750,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "DONE",
+      "color": "6"
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {
+      "project": "FIN.AI.FINANCE.MANAGEMENT.v1.2",
+      "board_type": "project_executive_kanban",
+      "last_verified": "2026-08-01"
+    }
+  }
+}

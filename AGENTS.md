@@ -87,6 +87,9 @@ The previous local Windows vault is a legacy/reference source only:
 
 ```powershell
 C:\Users\nvakt\Documents\obsidian\BA_Obsidian_Vault
+
+and another on yoga thinkpad laptop:
+D:\PPJ\syncing
 ```
 
 Do not write project updates, registry changes, tasks, reports, or Canvas state to the legacy local vault unless the user explicitly requests it.

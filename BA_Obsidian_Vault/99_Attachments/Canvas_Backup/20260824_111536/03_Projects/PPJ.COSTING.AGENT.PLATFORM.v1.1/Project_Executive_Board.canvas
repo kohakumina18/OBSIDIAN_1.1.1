@@ -1,0 +1,175 @@
+{
+  "nodes": [
+    {
+      "id": "ppj-board-metadata",
+      "type": "text",
+      "text": "COSTING.AGENTIC.PLATFORM.v1.1 — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1",
+      "x": 0,
+      "y": -220,
+      "width": 760,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "ppj-exec-summary",
+      "type": "text",
+      "text": "COSTING.AGENTIC.PLATFORM.v1.1\n\nDomain:\nMerchandising\n\nLifecycle:\nDevelopment\n\nProgress:\nTBD\n\nGate:\nSew Costing v1.1 Demo Completed / v1.2 Development\n\nOutcome:\nCosting and Quotation Package for Merchandising review and customer quotation proposals.\n\nTop Blocker:\nGTAS/IED data contract and integration format are not confirmed.\n\nNext Milestone:\nEvaluate the v1.1 demo with Sew experts and establish an accuracy baseline.\n\nLast Verified:\n2026-08-01",
+      "x": 0,
+      "y": -90,
+      "width": 760,
+      "height": 560,
+      "color": "4"
+    },
+    {
+      "id": "ppj-management-attention",
+      "type": "text",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- SAM is not final without validated standards and expert review.\n- AI suggestion and approved costing must remain separate.\n\nDecisions Needed\n- Approve Sew v1.2 accuracy and acceptance plan.\n- Confirm GTAS/IED data contract and expert-approval boundary.\n\nExternal Dependencies\n- TD.TechnicalKnowledge.Platform.v2.1 -> Consumption / Pattern / BOM / Construction / History -> Costing Platform\n- AI Suggestion -> Expert-approved Result -> Final GTAS/IED Transfer",
+      "x": 810,
+      "y": -90,
+      "width": 500,
+      "height": 560,
+      "color": "1"
+    },
+    {
+      "id": "ppj-lane-f3e573404df4",
+      "type": "group",
+      "x": 0,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BACKLOG",
+      "color": "1"
+    },
+    {
+      "id": "ppj-task-8dd0c0f998af",
+      "type": "text",
+      "text": "[[Tasks/COSTING.AGENTIC.PLATFORM.v1.1-TASK-001_Costing-Sew-Demo-and-Expert-Validation]]\n\nCosting Sew Demo and Expert Validation\n\nPriority: P2\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-b35a08358ed5",
+      "type": "text",
+      "text": "[[Tasks/COSTING.AGENTIC.PLATFORM.v1.1-TASK-002_Costing-Wash-Dataset-and-MVP-Definition]]\n\nCosting Wash Dataset and MVP Definition\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-8d767178b3a7",
+      "type": "group",
+      "x": 350,
+      "y": 560,
+      "width": 300,
+      "height": 1240,
+      "label": "THIS WEEK",
+      "color": "2"
+    },
+    {
+      "id": "ppj-task-7afac1b22279",
+      "type": "text",
+      "text": "[[Tasks/COSTING.AGENTIC.PLATFORM.v1.1-TASK-005_Analyze-extraction-errors-and-improve-SAM-calculation]]\n\nAnalyze extraction errors and improve SAM calculation\n\nPriority: P3\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 370,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-757e05341b8a",
+      "type": "text",
+      "text": "[[Tasks/COSTING.AGENTIC.PLATFORM.v1.1-TASK-006_Confirm-GTAS-IED-data-contract-and-API-integration-format]]\n\nConfirm GTAS/IED data contract and API/integration format\n\nPriority: P3\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 370,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-d8ed23f23321",
+      "type": "text",
+      "text": "[[Tasks/COSTING.AGENTIC.PLATFORM.v1.1-TASK-007_Connect-Technical-consumption-data]]\n\nConnect Technical consumption data\n\nPriority: P3\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 370,
+      "y": 1010,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-2f67c002855b",
+      "type": "text",
+      "text": "[[Tasks/COSTING.AGENTIC.PLATFORM.v1.1-TASK-008_Continue-the-Wash-dataset-workstream-without-creating-a-sepa]]\n\nContinue the Wash dataset workstream without creating a separate root project\n\nPriority: P3\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 370,
+      "y": 1200,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-bb4081478b70",
+      "type": "text",
+      "text": "[[Tasks/COSTING.AGENTIC.PLATFORM.v1.1-TASK-003_Costing-Sew-v1-2-Accuracy-and-GTAS-IED-Contract]]\n\nCosting Sew v1.2 Accuracy and GTAS-IED Contract\n\nPriority: P3\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 370,
+      "y": 1390,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-be59ed267e0f",
+      "type": "text",
+      "text": "[[Tasks/COSTING.AGENTIC.PLATFORM.v1.1-TASK-004_Evaluate-the-v1-1-demo-with-Sew-experts-and-establish-an-acc]]\n\nEvaluate the v1.1 demo with Sew experts and establish an accuracy baseline\n\nPriority: P3\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 370,
+      "y": 1580,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-bf81443bfcae",
+      "type": "group",
+      "x": 700,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "IN PROGRESS",
+      "color": "3"
+    },
+    {
+      "id": "ppj-lane-276d6ca3922f",
+      "type": "group",
+      "x": 1050,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BLOCKED / WAITING",
+      "color": "4"
+    },
+    {
+      "id": "ppj-lane-a82db70f445e",
+      "type": "group",
+      "x": 1400,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "REVIEW / UAT",
+      "color": "5"
+    },
+    {
+      "id": "ppj-lane-e782e7728e49",
+      "type": "group",
+      "x": 1750,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "DONE",
+      "color": "6"
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {
+      "project": "COSTING.AGENTIC.PLATFORM.v1.1",
+      "board_type": "project_executive_kanban",
+      "last_verified": "2026-08-01"
+    }
+  }
+}

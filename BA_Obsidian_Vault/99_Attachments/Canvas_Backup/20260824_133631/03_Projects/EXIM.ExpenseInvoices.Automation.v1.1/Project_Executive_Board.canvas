@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "EXIM.ExpenseInvoices.Automation.v1.1\n\nDomain: Finance / Accounting\nLifecycle: Closed\nGate: Closed; succeeded by PPJ.ExpenseInvoices.v1.1\nOutcome: Preserve the closed EXIM automation history separately from its broader successor.\nLast Verified: 2026-08-24",
+      "x": 0,
+      "y": 0,
+      "width": 720,
+      "height": 360
+    }
+  ],
+  "edges": []
+}

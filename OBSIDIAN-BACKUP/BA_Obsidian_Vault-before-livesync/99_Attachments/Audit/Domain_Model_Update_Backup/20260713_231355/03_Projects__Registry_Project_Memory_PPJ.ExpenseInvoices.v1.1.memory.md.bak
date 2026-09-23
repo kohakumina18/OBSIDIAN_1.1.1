@@ -1,0 +1,83 @@
+﻿---
+type: project_memory
+project_name: "PPJ.ExpenseInvoices.v1.1"
+project_file: "PPJ. Expense-Invoices.v1.1.md"
+project_code: "PPJ.ExpenseInvoices.v1.1"
+department: "Accounting / related departments"
+cluster: "Expense Invoice Platform"
+phase: "Analysis / Design"
+last_verified: "2026-07-13"
+confidence: "Strong"
+canonical_code: "PPJ.ExpenseInvoices.v1.1"
+current_file: "PPJ. Expense-Invoices.v1.1.md"
+primary_domain: "Finance / Accounting"
+primary_capability: "Financial analysis, reporting, invoices, GRN"
+secondary_domains: "EXIM, ERP, Department Mapping"
+lifecycle: "UAT / Stabilization"
+progress: "TBD"
+current_gate: "Cross-department Expansion"
+---
+
+# Project Memory: PPJ.ExpenseInvoices.v1.1
+
+## One-Line Understanding
+
+Expense invoice platform/workflow for mapping accounting fields, ledger, and department/factory rules before automation.
+
+## Current Outcome
+
+Prepare clean data mapping and validation foundation for expense invoice processing.
+
+## Latest Update Summary
+
+Currently waiting for Factory 0 / department mapping ledger and field-level accounting mapping.
+
+## What This Project Is
+
+Expense invoice workflow/data mapping foundation.
+
+## What This Project Is Not
+
+Not a v2 rollout to all departments unless formally approved.
+
+## Key Users
+
+Accounting and related departments.
+
+## Systems / Data
+
+Expense invoices, ledger/account mapping, department/factory mapping, accounting fields.
+
+## Known Risks / Blockers
+
+Ledger mapping incomplete, source-of-truth for accounting fields unclear.
+
+## Next Actions
+
+Complete ledger/department mapping before building broader workflow automation.
+
+## Do Not Drift Rules
+
+- Do not create v2 without approval.
+- Do not build workflow before mapping is clear.
+
+## Source Links
+
+- [[PPJ. Expense-Invoices.v1.1]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]
+
+<!-- PPJ_DOMAIN_GOVERNANCE_START -->
+## Domain Governance
+
+- Canonical Code: PPJ.ExpenseInvoices.v1.1
+- Current File: [[PPJ. Expense-Invoices.v1.1]]
+- Primary Domain: Finance / Accounting
+- Secondary Domains: EXIM, ERP, Department Mapping
+- Lifecycle: UAT / Stabilization
+- Progress: TBD
+- Current Gate: Cross-department Expansion
+
+## Domain Do Not Drift Rules
+- Do not create v2 without approval.
+<!-- PPJ_DOMAIN_GOVERNANCE_END -->
+

@@ -1,0 +1,98 @@
+﻿---
+type: project_memory
+project_name: "HR.SSPFD.Workflow.v1.1"
+project_file: "HR.SS&PFD.v1.1.md"
+project_code: "HR.SSPFD.Workflow.v1.1"
+department: "HR"
+cluster: "HR / Internal Process"
+phase: "On Hold / Pending Decision"
+last_verified: "2026-07-18"
+confidence: "Strong"
+canonical_code: "HR.SSPFD.Workflow.v1.1"
+current_file: "HR.SS&PFD.v1.1.md"
+primary_domain: "HR"
+primary_capability: "Employee, payroll, BHXH and HR-sensitive workflows"
+secondary_domains: "WISER, BHXH, Sensitive HR Data"
+lifecycle: "On Hold / Pending Decision"
+progress: "TBD"
+current_gate: "Transfer Preparation / Pending Handover"
+status: "On Hold / Pending Decision"
+current_outcome: "Complete Software Team handover package with scope, data, rules, workflow, roles and security requirements"
+latest_update_summary: "Stakeholders agreed the solution is more appropriate for transfer to the Software Team because it behaves as a business application, workflow management, data-processing software, rule-based validation and user-facing system rather than an AI-led initiative. The project is pending handover and is not completed or closed."
+known_risks: "Software Team owner and remaining AI Team responsibility are not confirmed. | HR data is highly sensitive. | Verbal-only handover and missing formal acceptance are insufficient."
+decisions_needed: "Assign Software Team owner. | Confirm AI Team support boundary. | Approve handover package and acceptance criteria."
+next_actions: "Prepare business context, problem, MVP scope, data sources and field inventory. | Document audit rules, current process, target workflow and user roles. | Document security requirements, open questions, samples and meeting notes. | Secure formal owner assignment and handover acceptance."
+priority: "P6"
+recent_update_events: ["PPJ-WEEKLY-20260713-20260718"]
+---
+
+# Project Memory: HR.SSPFD.Workflow.v1.1
+
+## One-Line Understanding
+
+HR/BHXH workflow requiring latest 3-month WISER data and field-level mapping.
+
+## Current Outcome
+
+Prepare structured HR process/reporting support after data and meaning are confirmed.
+
+## Latest Update Summary
+
+Canonical naming populated and tied to HR/BHXH WISER data context.
+
+## What This Project Is
+
+HR internal process/data project for SS&PFD/BHXH-related workflow.
+
+## What This Project Is Not
+
+Not fully defined beyond WISER data need unless HR confirms scope.
+
+## Key Users
+
+HR users.
+
+## Systems / Data
+
+WISER data, HR/BHXH fields, latest three months data.
+
+## Known Risks / Blockers
+
+Acronym meaning and exact process scope need confirmation.
+
+## Next Actions
+
+Collect latest 3-month WISER dataset and confirm field meaning.
+
+## Do Not Drift Rules
+
+- Do not expand SS&PFD meaning beyond evidence.
+- Keep HR/BHXH data confirmation as blocker.
+
+## Source Links
+
+- [[HR.SS&PFD.v1.1]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]
+
+<!-- PPJ_DOMAIN_GOVERNANCE_START -->
+## Domain Governance
+
+- Canonical Code: HR.SSPFD.Workflow.v1.1
+- Current File: [[HR.SS&PFD.v1.1]]
+- Primary Domain: HR
+- Secondary Domains: WISER, BHXH, Sensitive HR Data
+- Lifecycle: Analysis
+- Progress: TBD
+- Current Gate: Data Confirmation
+
+## Domain Do Not Drift Rules
+- Do not expand SS&PFD without evidence; HR data is sensitive.
+<!-- PPJ_DOMAIN_GOVERNANCE_END -->
+
+## Recent Update Events
+
+| Date | Update Type | Summary | Source | Confidence |
+| --- | --- | --- | --- | --- |
+| 2026-07-18 | Weekly Portfolio Update | Stakeholders agreed the solution is more appropriate for transfer to the Software Team because it behaves as a business application, workflow management, data-processing software, rule-based validation and user-facing system rather than an AI-led initiative. The project is pending handover and is not completed or closed. | PPJ-WEEKLY-20260713-20260718 | Strong |
+
+

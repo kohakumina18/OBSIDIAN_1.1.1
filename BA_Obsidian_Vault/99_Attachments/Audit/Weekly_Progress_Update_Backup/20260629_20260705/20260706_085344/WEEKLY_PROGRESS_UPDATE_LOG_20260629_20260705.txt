@@ -1,0 +1,53 @@
+﻿Weekly Progress Update Log
+Week: 2026-06-29 to 2026-07-05
+Timestamp: 2026-07-06 08:53:44
+Backup root: C:\Users\nvakt\Documents\obsidian\BA_Obsidian_Vault\99_Attachments\Audit\Weekly_Progress_Update_Backup\20260629_20260705\20260706_085344
+
+SKIPPED	10_Reports/PPJ_Weekly_Executive_Recap_2026-06-29_to_2026-07-05.md	Weekly report file not requested; use -CreateWeeklyReport to write it
+UPDATED	03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1.md	Phase/status/weekly block updated
+UPDATED	03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1.md	Phase/status/weekly block updated
+UPDATED	03_Projects/SCP.SOURCING.CHATBOT.v2.3.md	Phase/status/weekly block updated
+UPDATED	03_Projects/PPJ. Expense-Invoices.v1.1.md	Phase/status/weekly block updated
+UPDATED	03_Projects/PPJxQSee.ai.md	Phase/status/weekly block updated
+UPDATED	03_Projects/PUR.GDI Automation.md	Phase/status/weekly block updated
+UPDATED	03_Projects/FD.Datamart.v2.2.md	Phase/status/weekly block updated
+UPDATED	03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1.md	Phase/status/weekly block updated
+UPDATED	03_Projects/PPJ.Invoice Downloader.v1.2.md	Phase/status/weekly block updated
+UPDATED	03_Projects/E-commerce Market Intelligence.md	Phase/status/weekly block updated
+UPDATED	03_Projects/PPJ XPrimo1D RFID Thread.md	Phase/status/weekly block updated
+UPDATED	03_Projects/MER.PO-Commit.md	Phase/status/weekly block updated
+UPDATED	03_Projects/EXIM.ExpenseInvoices.Automation.v1.1.md	Phase/status/weekly block updated
+UPDATED	03_Projects/AI Automation Workshop.md	Phase/status/weekly block updated
+UPDATED	03_Projects/VITAS Sharing.md	Phase/status/weekly block updated
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_MEMORY_INDEX.md	FIN.AI.FINANCE.MANAGEMENT.v1.1 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_MEMORY_INDEX.md	COSTING.AGENTIC.PLATFORM.v1.1 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_MEMORY_INDEX.md	SCP.SOURCING.CHATBOT.v2.3 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_MEMORY_INDEX.md	PPJ.ExpenseInvoices.v1.1 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_MEMORY_INDEX.md	PPJxQSee.AI phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_MEMORY_INDEX.md	PUR.GDI.Automation.v1.0 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_MEMORY_INDEX.md	FD.Datamart.v2.2 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_MEMORY_INDEX.md	PPJ.UIT.ACADEMIC.COLLABORATION.v1.1 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_MEMORY_INDEX.md	PPJ.InvoiceDownloader.v1.2 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_MEMORY_INDEX.md	MER.MARKET.INTELLIGENCE.v1.1 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_MEMORY_INDEX.md	QC.Primo1D.RFID.Thread.v1.0 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_MEMORY_INDEX.md	MER.PO.Commit.v1.1 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_MEMORY_INDEX.md	EXIM.ExpenseInvoices.Automation.v1.1 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_MEMORY_INDEX.md	AI.Automation.Workshop.202606 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_MEMORY_INDEX.md	VITAS.Sharing.202606 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_REGISTRY.md	FIN.AI.FINANCE.MANAGEMENT.v1.1 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_REGISTRY.md	COSTING.AGENTIC.PLATFORM.v1.1 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_REGISTRY.md	SCP.SOURCING.CHATBOT.v2.3 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_REGISTRY.md	PPJ.ExpenseInvoices.v1.1 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_REGISTRY.md	PPJxQSee.AI phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_REGISTRY.md	PUR.GDI.Automation.v1.0 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_REGISTRY.md	FD.Datamart.v2.2 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_REGISTRY.md	PPJ.UIT.ACADEMIC.COLLABORATION.v1.1 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_REGISTRY.md	PPJ.InvoiceDownloader.v1.2 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_REGISTRY.md	MER.MARKET.INTELLIGENCE.v1.1 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_REGISTRY.md	QC.Primo1D.RFID.Thread.v1.0 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_REGISTRY.md	MER.PO.Commit.v1.1 phase/priority synced
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_REGISTRY.md	EXIM.ExpenseInvoices.Automation.v1.1 phase/priority synced
+SKIPPED	03_Projects/_Registry/PPJ_PROJECT_REGISTRY.md	AI.Automation.Workshop.202606 not found in table
+UPDATED	03_Projects/_Registry/PPJ_PROJECT_REGISTRY.md	VITAS.Sharing.202606 phase/priority synced
+SKIPPED	03_Projects/_Registry/PPJ_PROJECT_RESOURCE_MATRIX.md	Phase column not found
+UPDATED	03_Projects/Canvas/PPJ_Executive_Board.canvas	Executive Canvas updated and JSON validated

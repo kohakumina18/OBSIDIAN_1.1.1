@@ -1,0 +1,122 @@
+{
+  "nodes": [
+    {
+      "id": "lane-0",
+      "type": "group",
+      "x": 0,
+      "y": 500,
+      "width": 540,
+      "height": 1320,
+      "label": "BACKLOG"
+    },
+    {
+      "id": "lane-1",
+      "type": "group",
+      "x": 600,
+      "y": 500,
+      "width": 540,
+      "height": 1320,
+      "label": "THIS WEEK"
+    },
+    {
+      "id": "lane-2",
+      "type": "group",
+      "x": 1200,
+      "y": 500,
+      "width": 540,
+      "height": 1320,
+      "label": "IN PROGRESS"
+    },
+    {
+      "id": "lane-3",
+      "type": "group",
+      "x": 1800,
+      "y": 500,
+      "width": 540,
+      "height": 1320,
+      "label": "BLOCKED / WAITING"
+    },
+    {
+      "id": "lane-4",
+      "type": "group",
+      "x": 2400,
+      "y": 500,
+      "width": 540,
+      "height": 1320,
+      "label": "REVIEW / UAT"
+    },
+    {
+      "id": "lane-5",
+      "type": "group",
+      "x": 3000,
+      "y": 500,
+      "width": 540,
+      "height": 1320,
+      "label": "DONE"
+    },
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "PROD.IOT.CHuyenTreo.v1.0\n\nDomain: Production + Wash\nDelivery Stage: DEVELOPMENT\nLifecycle: Development\nStatus: Active\nProgress: TBD\nGate: Source and KPI reconciliation\nOutcome: Provide production-line visibility for output, target vs actual, efficiency, downtime, WIP, line status, hourly production and trends.\nTop Blocker: Source/KPI reconciliation\nNext Milestone: Reconcile source data\nPriority: Medium\nLast Verified: 2026-08-24",
+      "x": 0,
+      "y": 0,
+      "width": 1140,
+      "height": 420
+    },
+    {
+      "id": "task-0",
+      "type": "file",
+      "file": "03_Projects/PROD.IOT.CHuyenTreo_1/Tasks/PROD.IOT.CHuyenTreo.v1.0-20260824-TASK-001_Reconcile-source-data.md",
+      "x": 30,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-1",
+      "type": "file",
+      "file": "03_Projects/PROD.IOT.CHuyenTreo_1/Tasks/PROD.IOT.CHuyenTreo.v1.0-20260824-TASK-002_Confirm-KPI-definitions-with-Production.md",
+      "x": 30,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-2",
+      "type": "file",
+      "file": "03_Projects/PROD.IOT.CHuyenTreo_1/Tasks/PROD.IOT.CHuyenTreo.v1.0-20260824-TASK-003_Validate-dashboard-measures.md",
+      "x": 30,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-3",
+      "type": "file",
+      "file": "03_Projects/PROD.IOT.CHuyenTreo_1/Tasks/PROD.IOT.CHuyenTreo.v1.0-TASK-001_Review-repaired-block-with-project-owner.md",
+      "x": 3030,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-4",
+      "type": "file",
+      "file": "03_Projects/PROD.IOT.CHuyenTreo_1/Tasks/PROD.IOT.CHuyenTreo.v1.0-TASK-002_Confirm-missing-data-fields-and-workflow.md",
+      "x": 3030,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-5",
+      "type": "file",
+      "file": "03_Projects/PROD.IOT.CHuyenTreo_1/Tasks/PROD.IOT.CHuyenTreo.v1.0-TASK-003_Update-related-BRD-SOP-user-manual-after-confirmation.md",
+      "x": 3030,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,1344 @@
+# Project Workspace Upgrade Plan — 2026-08-07
+
+## Executive Summary
+
+- Canonical projects detected: 32
+- Workspaces to create: 0
+- Existing workspaces: 32
+- Total Markdown files proposed: 0
+- Existing Markdown files preserved: 1132
+- Initial tasks proposed: 131
+- Project Executive Boards proposed: 0
+- Safe to Apply: True
+
+## Canonical Projects Detected
+
+| Project | Project File | Lifecycle | Documentation Pack | Workspace | Markdown Create | Preserve | Initial Tasks | Board |
+| --- | --- | --- | --- | --- | ---: | ---: | ---: | --- |
+| ACC.GRN-SupplierInvoiceBot.v2.3 | ACC.GRN-SupplierInvoiceBot.v2.3.md | C. Production / Maintenance | Transaction Automation | Existing | 0 | 33 | 3 | Preserve |
+| ACC.Inventory.Report.v1.0 | ACC.Inventory.Report.v1.0.md | D. Backlog / Pending Resource | Data / Reporting / Finance + Backlog Discovery | Existing | 0 | 37 | 5 | Preserve |
+| COSTING.AGENTIC.PLATFORM.v1.1 | PPJ.COSTING.AGENT.PLATFORM.v1.1.md | A. Active / Delivery | AI / Chatbot / Agent + Transaction Automation | Existing | 0 | 40 | 8 | Preserve |
+| CPD.Datamart.v1.1 | CPD.Datamart.v1.1.md | A. Active / Delivery | Data / Reporting / Finance | Existing | 0 | 37 | 7 | Preserve |
+| EXIM.ExpenseInvoices.Automation.v1.1 | EXIM.ExpenseInvoices.Automation.v1.1.md | F. Closed / Canceled | Transaction Automation + Closeout | Existing | 0 | 32 | 0 | Preserve |
+| FD.Datamart.v2.2 | FD.Datamart.v2.2.md | C. Production / Maintenance | Data / Reporting / Finance | Existing | 0 | 34 | 4 | Preserve |
+| FIN.AI.FINANCE.MANAGEMENT.v1.2 | FIN.AI.FINANCE.MANAGEMENT.v1.1.md | A. Active / Delivery | Data / Reporting / Finance | Existing | 0 | 36 | 6 | Preserve |
+| HR.SSPFD.Workflow.v1.1 | HR.SS&PFD.v1.1.md | C. Production / Maintenance | Transaction Automation | Existing | 0 | 36 | 6 | Preserve |
+| MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1 | MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1.md | B. UAT / Stabilization | Transaction Automation | Existing | 0 | 33 | 3 | Preserve |
+| MER.MARKET.INTELLIGENCE.v1.1 | E-commerce Market Intelligence v.2.3.md | A. Active / Delivery | Data / Reporting / Finance | Existing | 0 | 33 | 3 | Preserve |
+| MER.PO.Commit.v1.1 | MER.PO-Commit.md | F. Closed / Canceled | Transaction Automation + Closeout | Existing | 0 | 32 | 0 | Preserve |
+| PPJ.AI.Hub.v2.1 | PPJ.AI.Hub.v2.1.md | C. Production / Maintenance | AI / Chatbot / Agent | Existing | 0 | 37 | 5 | Preserve |
+| PPJ.ExpenseInvoices.v1.1 | PPJ. Expense-Invoices.v1.1.md | B. UAT / Stabilization | Transaction Automation | Existing | 0 | 36 | 6 | Preserve |
+| PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0 | PPJ.GLPI-Helpdesk-AI Chatbot.md | C. Production / Maintenance | AI / Chatbot / Agent | Existing | 0 | 37 | 5 | Preserve |
+| PPJ.InvoiceDownloader.v1.2 | PPJ.Invoice Downloader.v1.2.md | C. Production / Maintenance | Transaction Automation | Existing | 0 | 33 | 3 | Preserve |
+| PPJ.PERRI.Chatbot.v3.2 | PPJ.PERRI.Chatbot.md | C. Production / Maintenance | AI / Chatbot / Agent + Transaction Automation | Existing | 0 | 37 | 5 | Preserve |
+| PPJ.UIT.ACADEMIC.COLLABORATION.v1.1 | PPJ.UIT.ACADEMIC.COLLABORATION.v1.1.md | G. External Trial / PoC | External / PoC | Existing | 0 | 38 | 5 | Preserve |
+| PPJxNUNOX.ScanTrial | PPJxNUNOX.md | G. External Trial / PoC | External / PoC | Existing | 0 | 38 | 5 | Preserve |
+| PPJxQSee.AI | PPJxQSee.ai.md | E. On Hold / Pending Decision | External / PoC + Decision / Re-scope | Existing | 0 | 40 | 5 | Preserve |
+| PPJxStratova.AI | PPJxStratova AI.md | F. Closed / Canceled | External / PoC + Closeout | Existing | 0 | 36 | 1 | Preserve |
+| PROD.COWASH.v2.0 | PROD.COWASH.md | E. On Hold / Pending Decision | Data / Reporting / Finance + Decision / Re-scope | Existing | 0 | 35 | 3 | Preserve |
+| PROD.IOT.CHuyenTreo.v1.0 | PROD.IOT.CHuyenTreo_1.md | A. Active / Delivery | Data / Reporting / Finance | Existing | 0 | 33 | 3 | Preserve |
+| PUR.Adhoc.Indent.South.v1.0 | PUR.Adhoc Indent mien Nam.md | C. Production / Maintenance | Transaction Automation | Existing | 0 | 33 | 3 | Preserve |
+| PUR.GDI.Automation.v1.0 | PUR.GDI Automation.md | A. Active / Delivery | Transaction Automation | Existing | 0 | 35 | 5 | Preserve |
+| PUR.HM.LabelO.Processing.Automation.v1.0 | PUR.H&M Label-O Processing.md | E. On Hold / Pending Decision | Transaction Automation + Decision / Re-scope | Existing | 0 | 35 | 3 | Preserve |
+| PUR.Inventory.Report.v2.1 | PUR.Inventory Report.md | C. Production / Maintenance | Data / Reporting / Finance | Existing | 0 | 35 | 5 | Preserve |
+| PUR.Material.Allocation.v1.1 | PUR.Material.Allocation.v1.2.md | B. UAT / Stabilization | Transaction Automation | Existing | 0 | 36 | 6 | Preserve |
+| QC.Primo1D.RFID.Thread.v1.0 | PPJ XPrimo1D RFID Thread.md | G. External Trial / PoC | External / PoC | Existing | 0 | 36 | 3 | Preserve |
+| SCP.SOURCING.CHATBOT.v2.3 | SCP.SOURCING.CHATBOT.v2.3.md | B. UAT / Stabilization | AI / Chatbot / Agent + Data / Reporting / Finance | Existing | 0 | 38 | 6 | Preserve |
+| TD.TechnicalKnowledge.Platform.v2.1 | TD.TechnicalPlatform_v2.1.md | A. Active / Delivery | Data / Reporting / Finance | Existing | 0 | 36 | 6 | Preserve |
+| VITAS.Sharing.202606 | VITAS Sharing.md | F. Closed / Canceled | Closeout | Existing | 0 | 32 | 0 | Preserve |
+| WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1 | WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1.md | A. Active / Delivery | Data / Reporting / Finance | Existing | 0 | 33 | 3 | Preserve |
+
+## Project Files Resolved
+
+- ACC.GRN-SupplierInvoiceBot.v2.3 -> 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3.md
+- ACC.Inventory.Report.v1.0 -> 03_Projects/ACC.Inventory.Report.v1.0.md
+- COSTING.AGENTIC.PLATFORM.v1.1 -> 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1.md
+- CPD.Datamart.v1.1 -> 03_Projects/CPD.Datamart.v1.1.md
+- EXIM.ExpenseInvoices.Automation.v1.1 -> 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1.md
+- FD.Datamart.v2.2 -> 03_Projects/FD.Datamart.v2.2.md
+- FIN.AI.FINANCE.MANAGEMENT.v1.2 -> 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1.md
+- HR.SSPFD.Workflow.v1.1 -> 03_Projects/HR.SS&PFD.v1.1.md
+- MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1 -> 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1.md
+- MER.MARKET.INTELLIGENCE.v1.1 -> 03_Projects/E-commerce Market Intelligence v.2.3.md
+- MER.PO.Commit.v1.1 -> 03_Projects/MER.PO-Commit.md
+- PPJ.AI.Hub.v2.1 -> 03_Projects/PPJ.AI.Hub.v2.1.md
+- PPJ.ExpenseInvoices.v1.1 -> 03_Projects/PPJ. Expense-Invoices.v1.1.md
+- PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0 -> 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot.md
+- PPJ.InvoiceDownloader.v1.2 -> 03_Projects/PPJ.Invoice Downloader.v1.2.md
+- PPJ.PERRI.Chatbot.v3.2 -> 03_Projects/PPJ.PERRI.Chatbot.md
+- PPJ.UIT.ACADEMIC.COLLABORATION.v1.1 -> 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1.md
+- PPJxNUNOX.ScanTrial -> 03_Projects/PPJxNUNOX.md
+- PPJxQSee.AI -> 03_Projects/PPJxQSee.ai.md
+- PPJxStratova.AI -> 03_Projects/PPJxStratova AI.md
+- PROD.COWASH.v2.0 -> 03_Projects/PROD.COWASH.md
+- PROD.IOT.CHuyenTreo.v1.0 -> 03_Projects/PROD.IOT.CHuyenTreo_1.md
+- PUR.Adhoc.Indent.South.v1.0 -> 03_Projects/PUR.Adhoc Indent mien Nam.md
+- PUR.GDI.Automation.v1.0 -> 03_Projects/PUR.GDI Automation.md
+- PUR.HM.LabelO.Processing.Automation.v1.0 -> 03_Projects/PUR.H&M Label-O Processing.md
+- PUR.Inventory.Report.v2.1 -> 03_Projects/PUR.Inventory Report.md
+- PUR.Material.Allocation.v1.1 -> 03_Projects/PUR.Material.Allocation.v1.2.md
+- QC.Primo1D.RFID.Thread.v1.0 -> 03_Projects/PPJ XPrimo1D RFID Thread.md
+- SCP.SOURCING.CHATBOT.v2.3 -> 03_Projects/SCP.SOURCING.CHATBOT.v2.3.md
+- TD.TechnicalKnowledge.Platform.v2.1 -> 03_Projects/TD.TechnicalPlatform_v2.1.md
+- VITAS.Sharing.202606 -> 03_Projects/VITAS Sharing.md
+- WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1 -> 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1.md
+
+## Workspaces Already Existing
+
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3
+- 03_Projects/ACC.Inventory.Report.v1.0
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1
+- 03_Projects/CPD.Datamart.v1.1
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1
+- 03_Projects/FD.Datamart.v2.2
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1
+- 03_Projects/HR.SS&PFD.v1.1
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1
+- 03_Projects/E-commerce Market Intelligence v.2.3
+- 03_Projects/MER.PO-Commit
+- 03_Projects/PPJ.AI.Hub.v2.1
+- 03_Projects/PPJ. Expense-Invoices.v1.1
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot
+- 03_Projects/PPJ.Invoice Downloader.v1.2
+- 03_Projects/PPJ.PERRI.Chatbot
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1
+- 03_Projects/PPJxNUNOX
+- 03_Projects/PPJxQSee.ai
+- 03_Projects/PPJxStratova AI
+- 03_Projects/PROD.COWASH
+- 03_Projects/PROD.IOT.CHuyenTreo_1
+- 03_Projects/PUR.Adhoc Indent mien Nam
+- 03_Projects/PUR.GDI Automation
+- 03_Projects/PUR.H&M Label-O Processing
+- 03_Projects/PUR.Inventory Report
+- 03_Projects/PUR.Material.Allocation.v1.2
+- 03_Projects/PPJ XPrimo1D RFID Thread
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3
+- 03_Projects/TD.TechnicalPlatform_v2.1
+- 03_Projects/VITAS Sharing
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1
+
+## Workspaces To Create
+
+- None
+
+## Documentation Pack Selection
+
+Each workspace receives the required 30-document baseline. AI projects receive guardrail/tool-source documents; external trials receive PoC/evaluation/vendor documents; backlog/on-hold projects receive discovery/next-gate documents; closed projects receive closeout/lessons documents. Inapplicable downstream documents are created minimally with lifecycle status rather than fabricated content.
+
+## Files To Preserve
+
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/00_Project_Home.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/01_Management/Project_Profile.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/01_Management/Project_Plan.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/01_Management/Milestones.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/01_Management/Weekly_Status.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/02_Business/Business_Context.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/02_Business/BRD.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/03_Process/AS_IS_Process.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/03_Process/TO_BE_Process.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/03_Process/Process_Gaps.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/04_Data/Data_Spec.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/04_Data/Data_Source_Inventory.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/05_Requirements/Functional_Requirements.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/05_Requirements/Use_Cases.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/06_Solution/Solution_Overview.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/06_Solution/Integration_Spec.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/07_Test_UAT/UAT_Plan.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/07_Test_UAT/UAT_Cases.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/07_Test_UAT/Defect_Log.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/08_Implementation/Implementation_Plan.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/08_Implementation/Deployment_Checklist.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/09_Operations/User_Manual.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/09_Operations/Support_and_Maintenance.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/10_Governance/Risks_Issues.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/10_Governance/Decision_Log.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/10_Governance/Dependencies.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/10_Governance/Change_Log.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/Tasks/ACC.GRN-SupplierInvoiceBot.v2.3-TASK-001_Review-repaired-block-with-project-owner.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/Tasks/ACC.GRN-SupplierInvoiceBot.v2.3-TASK-002_Confirm-missing-data-fields-and-workflow.md
+- 03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/Tasks/ACC.GRN-SupplierInvoiceBot.v2.3-TASK-003_Update-related-BRD-SOP-user-manual-after-confirmation.md
+- 03_Projects/ACC.Inventory.Report.v1.0/00_Project_Home.md
+- 03_Projects/ACC.Inventory.Report.v1.0/01_Management/Project_Profile.md
+- 03_Projects/ACC.Inventory.Report.v1.0/01_Management/Project_Plan.md
+- 03_Projects/ACC.Inventory.Report.v1.0/01_Management/Milestones.md
+- 03_Projects/ACC.Inventory.Report.v1.0/01_Management/Weekly_Status.md
+- 03_Projects/ACC.Inventory.Report.v1.0/02_Business/Business_Context.md
+- 03_Projects/ACC.Inventory.Report.v1.0/02_Business/BRD.md
+- 03_Projects/ACC.Inventory.Report.v1.0/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/ACC.Inventory.Report.v1.0/03_Process/AS_IS_Process.md
+- 03_Projects/ACC.Inventory.Report.v1.0/03_Process/TO_BE_Process.md
+- 03_Projects/ACC.Inventory.Report.v1.0/03_Process/Process_Gaps.md
+- 03_Projects/ACC.Inventory.Report.v1.0/04_Data/Data_Spec.md
+- 03_Projects/ACC.Inventory.Report.v1.0/04_Data/Data_Source_Inventory.md
+- 03_Projects/ACC.Inventory.Report.v1.0/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/ACC.Inventory.Report.v1.0/05_Requirements/Functional_Requirements.md
+- 03_Projects/ACC.Inventory.Report.v1.0/05_Requirements/Use_Cases.md
+- 03_Projects/ACC.Inventory.Report.v1.0/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/ACC.Inventory.Report.v1.0/06_Solution/Solution_Overview.md
+- 03_Projects/ACC.Inventory.Report.v1.0/06_Solution/Integration_Spec.md
+- 03_Projects/ACC.Inventory.Report.v1.0/07_Test_UAT/UAT_Plan.md
+- 03_Projects/ACC.Inventory.Report.v1.0/07_Test_UAT/UAT_Cases.md
+- 03_Projects/ACC.Inventory.Report.v1.0/07_Test_UAT/Defect_Log.md
+- 03_Projects/ACC.Inventory.Report.v1.0/08_Implementation/Implementation_Plan.md
+- 03_Projects/ACC.Inventory.Report.v1.0/08_Implementation/Deployment_Checklist.md
+- 03_Projects/ACC.Inventory.Report.v1.0/09_Operations/User_Manual.md
+- 03_Projects/ACC.Inventory.Report.v1.0/09_Operations/Support_and_Maintenance.md
+- 03_Projects/ACC.Inventory.Report.v1.0/10_Governance/Risks_Issues.md
+- 03_Projects/ACC.Inventory.Report.v1.0/10_Governance/Decision_Log.md
+- 03_Projects/ACC.Inventory.Report.v1.0/10_Governance/Dependencies.md
+- 03_Projects/ACC.Inventory.Report.v1.0/10_Governance/Change_Log.md
+- 03_Projects/ACC.Inventory.Report.v1.0/01_Management/Next_Gate.md
+- 03_Projects/ACC.Inventory.Report.v1.0/02_Business/Discovery_Questions.md
+- 03_Projects/ACC.Inventory.Report.v1.0/Tasks/ACC.Inventory.Report.v1.0-TASK-001_ACC-Inventory-Report-v1-0-Business-Discovery-Preparation.md
+- 03_Projects/ACC.Inventory.Report.v1.0/Tasks/ACC.Inventory.Report.v1.0-TASK-002_Assign-Accounting-Business-Owner.md
+- 03_Projects/ACC.Inventory.Report.v1.0/Tasks/ACC.Inventory.Report.v1.0-TASK-003_Assign-BA-Data-and-Technical-resources.md
+- 03_Projects/ACC.Inventory.Report.v1.0/Tasks/ACC.Inventory.Report.v1.0-TASK-004_Collect-current-Accounting-inventory-report.md
+- 03_Projects/ACC.Inventory.Report.v1.0/Tasks/ACC.Inventory.Report.v1.0-TASK-005_Collect-PUR-Inventory-Report-v2-1-dataset-and-logic.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/00_Project_Home.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/01_Management/Project_Profile.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/01_Management/Project_Plan.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/01_Management/Milestones.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/01_Management/Weekly_Status.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/02_Business/Business_Context.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/02_Business/BRD.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/03_Process/AS_IS_Process.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/03_Process/TO_BE_Process.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/03_Process/Process_Gaps.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/04_Data/Data_Spec.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/04_Data/Data_Source_Inventory.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/05_Requirements/Functional_Requirements.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/05_Requirements/Use_Cases.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/06_Solution/Solution_Overview.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/06_Solution/Integration_Spec.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/07_Test_UAT/UAT_Plan.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/07_Test_UAT/UAT_Cases.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/07_Test_UAT/Defect_Log.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/08_Implementation/Implementation_Plan.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/08_Implementation/Deployment_Checklist.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/09_Operations/User_Manual.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/09_Operations/Support_and_Maintenance.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/10_Governance/Risks_Issues.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/10_Governance/Decision_Log.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/10_Governance/Dependencies.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/10_Governance/Change_Log.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/06_Solution/AI_Behavior_and_Guardrails.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/06_Solution/Knowledge_and_Tool_Sources.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/Tasks/COSTING.AGENTIC.PLATFORM.v1.1-TASK-001_Costing-Sew-Demo-and-Expert-Validation.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/Tasks/COSTING.AGENTIC.PLATFORM.v1.1-TASK-002_Costing-Wash-Dataset-and-MVP-Definition.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/Tasks/COSTING.AGENTIC.PLATFORM.v1.1-TASK-003_Costing-Sew-v1-2-Accuracy-and-GTAS-IED-Contract.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/Tasks/COSTING.AGENTIC.PLATFORM.v1.1-TASK-004_Evaluate-the-v1-1-demo-with-Sew-experts-and-establish-an-acc.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/Tasks/COSTING.AGENTIC.PLATFORM.v1.1-TASK-005_Analyze-extraction-errors-and-improve-SAM-calculation.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/Tasks/COSTING.AGENTIC.PLATFORM.v1.1-TASK-006_Confirm-GTAS-IED-data-contract-and-API-integration-format.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/Tasks/COSTING.AGENTIC.PLATFORM.v1.1-TASK-007_Connect-Technical-consumption-data.md
+- 03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1/Tasks/COSTING.AGENTIC.PLATFORM.v1.1-TASK-008_Continue-the-Wash-dataset-workstream-without-creating-a-sepa.md
+- 03_Projects/CPD.Datamart.v1.1/00_Project_Home.md
+- 03_Projects/CPD.Datamart.v1.1/01_Management/Project_Profile.md
+- 03_Projects/CPD.Datamart.v1.1/01_Management/Project_Plan.md
+- 03_Projects/CPD.Datamart.v1.1/01_Management/Milestones.md
+- 03_Projects/CPD.Datamart.v1.1/01_Management/Weekly_Status.md
+- 03_Projects/CPD.Datamart.v1.1/02_Business/Business_Context.md
+- 03_Projects/CPD.Datamart.v1.1/02_Business/BRD.md
+- 03_Projects/CPD.Datamart.v1.1/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/CPD.Datamart.v1.1/03_Process/AS_IS_Process.md
+- 03_Projects/CPD.Datamart.v1.1/03_Process/TO_BE_Process.md
+- 03_Projects/CPD.Datamart.v1.1/03_Process/Process_Gaps.md
+- 03_Projects/CPD.Datamart.v1.1/04_Data/Data_Spec.md
+- 03_Projects/CPD.Datamart.v1.1/04_Data/Data_Source_Inventory.md
+- 03_Projects/CPD.Datamart.v1.1/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/CPD.Datamart.v1.1/05_Requirements/Functional_Requirements.md
+- 03_Projects/CPD.Datamart.v1.1/05_Requirements/Use_Cases.md
+- 03_Projects/CPD.Datamart.v1.1/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/CPD.Datamart.v1.1/06_Solution/Solution_Overview.md
+- 03_Projects/CPD.Datamart.v1.1/06_Solution/Integration_Spec.md
+- 03_Projects/CPD.Datamart.v1.1/07_Test_UAT/UAT_Plan.md
+- 03_Projects/CPD.Datamart.v1.1/07_Test_UAT/UAT_Cases.md
+- 03_Projects/CPD.Datamart.v1.1/07_Test_UAT/Defect_Log.md
+- 03_Projects/CPD.Datamart.v1.1/08_Implementation/Implementation_Plan.md
+- 03_Projects/CPD.Datamart.v1.1/08_Implementation/Deployment_Checklist.md
+- 03_Projects/CPD.Datamart.v1.1/09_Operations/User_Manual.md
+- 03_Projects/CPD.Datamart.v1.1/09_Operations/Support_and_Maintenance.md
+- 03_Projects/CPD.Datamart.v1.1/10_Governance/Risks_Issues.md
+- 03_Projects/CPD.Datamart.v1.1/10_Governance/Decision_Log.md
+- 03_Projects/CPD.Datamart.v1.1/10_Governance/Dependencies.md
+- 03_Projects/CPD.Datamart.v1.1/10_Governance/Change_Log.md
+- 03_Projects/CPD.Datamart.v1.1/Tasks/CPD.Datamart.v1.1-TASK-001_Confirm-current-CPD-3D-Design-library-location.md
+- 03_Projects/CPD.Datamart.v1.1/Tasks/CPD.Datamart.v1.1-TASK-002_Walk-through-Chi-Trang-3D-Design-sample-search-workflow.md
+- 03_Projects/CPD.Datamart.v1.1/Tasks/CPD.Datamart.v1.1-TASK-003_Collect-sample-image-and-3D-asset-examples.md
+- 03_Projects/CPD.Datamart.v1.1/Tasks/CPD.Datamart.v1.1-TASK-004_Define-metadata-dictionary.md
+- 03_Projects/CPD.Datamart.v1.1/Tasks/CPD.Datamart.v1.1-TASK-005_Define-search-scenarios.md
+- 03_Projects/CPD.Datamart.v1.1/Tasks/CPD.Datamart.v1.1-TASK-006_Prepare-UAT-checklist.md
+- 03_Projects/CPD.Datamart.v1.1/Tasks/CPD.Datamart.v1.1-TASK-007_Keep-FD-Datamart-v2-2-separate.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/00_Project_Home.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/01_Management/Project_Profile.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/01_Management/Project_Plan.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/01_Management/Milestones.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/01_Management/Weekly_Status.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/02_Business/Business_Context.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/02_Business/BRD.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/03_Process/AS_IS_Process.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/03_Process/TO_BE_Process.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/03_Process/Process_Gaps.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/04_Data/Data_Spec.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/04_Data/Data_Source_Inventory.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/05_Requirements/Functional_Requirements.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/05_Requirements/Use_Cases.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/06_Solution/Solution_Overview.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/06_Solution/Integration_Spec.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/07_Test_UAT/UAT_Plan.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/07_Test_UAT/UAT_Cases.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/07_Test_UAT/Defect_Log.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/08_Implementation/Implementation_Plan.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/08_Implementation/Deployment_Checklist.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/09_Operations/User_Manual.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/09_Operations/Support_and_Maintenance.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/10_Governance/Risks_Issues.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/10_Governance/Decision_Log.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/10_Governance/Dependencies.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/10_Governance/Change_Log.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/01_Management/Closeout_Summary.md
+- 03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/01_Management/Lessons_Learned.md
+- 03_Projects/FD.Datamart.v2.2/00_Project_Home.md
+- 03_Projects/FD.Datamart.v2.2/01_Management/Project_Profile.md
+- 03_Projects/FD.Datamart.v2.2/01_Management/Project_Plan.md
+- 03_Projects/FD.Datamart.v2.2/01_Management/Milestones.md
+- 03_Projects/FD.Datamart.v2.2/01_Management/Weekly_Status.md
+- 03_Projects/FD.Datamart.v2.2/02_Business/Business_Context.md
+- 03_Projects/FD.Datamart.v2.2/02_Business/BRD.md
+- 03_Projects/FD.Datamart.v2.2/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/FD.Datamart.v2.2/03_Process/AS_IS_Process.md
+- 03_Projects/FD.Datamart.v2.2/03_Process/TO_BE_Process.md
+- 03_Projects/FD.Datamart.v2.2/03_Process/Process_Gaps.md
+- 03_Projects/FD.Datamart.v2.2/04_Data/Data_Spec.md
+- 03_Projects/FD.Datamart.v2.2/04_Data/Data_Source_Inventory.md
+- 03_Projects/FD.Datamart.v2.2/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/FD.Datamart.v2.2/05_Requirements/Functional_Requirements.md
+- 03_Projects/FD.Datamart.v2.2/05_Requirements/Use_Cases.md
+- 03_Projects/FD.Datamart.v2.2/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/FD.Datamart.v2.2/06_Solution/Solution_Overview.md
+- 03_Projects/FD.Datamart.v2.2/06_Solution/Integration_Spec.md
+- 03_Projects/FD.Datamart.v2.2/07_Test_UAT/UAT_Plan.md
+- 03_Projects/FD.Datamart.v2.2/07_Test_UAT/UAT_Cases.md
+- 03_Projects/FD.Datamart.v2.2/07_Test_UAT/Defect_Log.md
+- 03_Projects/FD.Datamart.v2.2/08_Implementation/Implementation_Plan.md
+- 03_Projects/FD.Datamart.v2.2/08_Implementation/Deployment_Checklist.md
+- 03_Projects/FD.Datamart.v2.2/09_Operations/User_Manual.md
+- 03_Projects/FD.Datamart.v2.2/09_Operations/Support_and_Maintenance.md
+- 03_Projects/FD.Datamart.v2.2/10_Governance/Risks_Issues.md
+- 03_Projects/FD.Datamart.v2.2/10_Governance/Decision_Log.md
+- 03_Projects/FD.Datamart.v2.2/10_Governance/Dependencies.md
+- 03_Projects/FD.Datamart.v2.2/10_Governance/Change_Log.md
+- 03_Projects/FD.Datamart.v2.2/Tasks/FD.Datamart.v2.2-TASK-001_FD-Support-Ownership-and-Maintenance-Backlog.md
+- 03_Projects/FD.Datamart.v2.2/Tasks/FD.Datamart.v2.2-TASK-002_Confirm-support-owner-and-SLA.md
+- 03_Projects/FD.Datamart.v2.2/Tasks/FD.Datamart.v2.2-TASK-003_Create-update-maintenance-backlog.md
+- 03_Projects/FD.Datamart.v2.2/Tasks/FD.Datamart.v2.2-TASK-004_Classify-open-requests-as-defect-data-correction-configurati.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/00_Project_Home.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/01_Management/Project_Profile.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/01_Management/Project_Plan.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/01_Management/Milestones.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/01_Management/Weekly_Status.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/02_Business/Business_Context.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/02_Business/BRD.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/03_Process/AS_IS_Process.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/03_Process/TO_BE_Process.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/03_Process/Process_Gaps.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/04_Data/Data_Spec.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/04_Data/Data_Source_Inventory.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/05_Requirements/Functional_Requirements.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/05_Requirements/Use_Cases.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/06_Solution/Solution_Overview.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/06_Solution/Integration_Spec.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/07_Test_UAT/UAT_Plan.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/07_Test_UAT/UAT_Cases.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/07_Test_UAT/Defect_Log.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/08_Implementation/Implementation_Plan.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/08_Implementation/Deployment_Checklist.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/09_Operations/User_Manual.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/09_Operations/Support_and_Maintenance.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/10_Governance/Risks_Issues.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/10_Governance/Decision_Log.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/10_Governance/Dependencies.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/10_Governance/Change_Log.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-TASK-001_Finance-OC-Control-Dataset-and-Exception-Catalogue.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-TASK-002_Finance-Databricks-Access-and-Rule-Engine-Finalization.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-TASK-003_Follow-up-Databricks-account-approval-and-confirm-account-ro.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-TASK-004_Complete-Workstream-2-Source-Inventory-and-profile-each-sour.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-TASK-005_Confirm-OC-linking-keys-and-finalize-the-Rule-Engine-Catalog.md
+- 03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1/Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-TASK-006_Select-20-30-sample-OCs-and-compare-Rule-Engine-results-with.md
+- 03_Projects/HR.SS&PFD.v1.1/00_Project_Home.md
+- 03_Projects/HR.SS&PFD.v1.1/01_Management/Project_Profile.md
+- 03_Projects/HR.SS&PFD.v1.1/01_Management/Project_Plan.md
+- 03_Projects/HR.SS&PFD.v1.1/01_Management/Milestones.md
+- 03_Projects/HR.SS&PFD.v1.1/01_Management/Weekly_Status.md
+- 03_Projects/HR.SS&PFD.v1.1/02_Business/Business_Context.md
+- 03_Projects/HR.SS&PFD.v1.1/02_Business/BRD.md
+- 03_Projects/HR.SS&PFD.v1.1/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/HR.SS&PFD.v1.1/03_Process/AS_IS_Process.md
+- 03_Projects/HR.SS&PFD.v1.1/03_Process/TO_BE_Process.md
+- 03_Projects/HR.SS&PFD.v1.1/03_Process/Process_Gaps.md
+- 03_Projects/HR.SS&PFD.v1.1/04_Data/Data_Spec.md
+- 03_Projects/HR.SS&PFD.v1.1/04_Data/Data_Source_Inventory.md
+- 03_Projects/HR.SS&PFD.v1.1/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/HR.SS&PFD.v1.1/05_Requirements/Functional_Requirements.md
+- 03_Projects/HR.SS&PFD.v1.1/05_Requirements/Use_Cases.md
+- 03_Projects/HR.SS&PFD.v1.1/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/HR.SS&PFD.v1.1/06_Solution/Solution_Overview.md
+- 03_Projects/HR.SS&PFD.v1.1/06_Solution/Integration_Spec.md
+- 03_Projects/HR.SS&PFD.v1.1/07_Test_UAT/UAT_Plan.md
+- 03_Projects/HR.SS&PFD.v1.1/07_Test_UAT/UAT_Cases.md
+- 03_Projects/HR.SS&PFD.v1.1/07_Test_UAT/Defect_Log.md
+- 03_Projects/HR.SS&PFD.v1.1/08_Implementation/Implementation_Plan.md
+- 03_Projects/HR.SS&PFD.v1.1/08_Implementation/Deployment_Checklist.md
+- 03_Projects/HR.SS&PFD.v1.1/09_Operations/User_Manual.md
+- 03_Projects/HR.SS&PFD.v1.1/09_Operations/Support_and_Maintenance.md
+- 03_Projects/HR.SS&PFD.v1.1/10_Governance/Risks_Issues.md
+- 03_Projects/HR.SS&PFD.v1.1/10_Governance/Decision_Log.md
+- 03_Projects/HR.SS&PFD.v1.1/10_Governance/Dependencies.md
+- 03_Projects/HR.SS&PFD.v1.1/10_Governance/Change_Log.md
+- 03_Projects/HR.SS&PFD.v1.1/Tasks/HR.SSPFD.Workflow.v1.1-TASK-001_HR-Software-Handover-Package.md
+- 03_Projects/HR.SS&PFD.v1.1/Tasks/HR.SSPFD.Workflow.v1.1-TASK-002_HR-Group-Rollout-and-Production-Ownership.md
+- 03_Projects/HR.SS&PFD.v1.1/Tasks/HR.SSPFD.Workflow.v1.1-TASK-003_Monitor-rollout-by-company-and-factory.md
+- 03_Projects/HR.SS&PFD.v1.1/Tasks/HR.SSPFD.Workflow.v1.1-TASK-004_Finalize-employee-matching-and-conflict-handling-rules.md
+- 03_Projects/HR.SS&PFD.v1.1/Tasks/HR.SSPFD.Workflow.v1.1-TASK-005_Monitor-rollout-issues-fix-and-retest.md
+- 03_Projects/HR.SS&PFD.v1.1/Tasks/HR.SSPFD.Workflow.v1.1-TASK-006_Build-rollout-status-dashboard-and-complete-Workflow-2-user-.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/00_Project_Home.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/01_Management/Project_Profile.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/01_Management/Project_Plan.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/01_Management/Milestones.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/01_Management/Weekly_Status.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/02_Business/Business_Context.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/02_Business/BRD.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/03_Process/AS_IS_Process.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/03_Process/TO_BE_Process.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/03_Process/Process_Gaps.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/04_Data/Data_Spec.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/04_Data/Data_Source_Inventory.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/05_Requirements/Functional_Requirements.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/05_Requirements/Use_Cases.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/06_Solution/Solution_Overview.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/06_Solution/Integration_Spec.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/07_Test_UAT/UAT_Plan.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/07_Test_UAT/UAT_Cases.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/07_Test_UAT/Defect_Log.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/08_Implementation/Implementation_Plan.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/08_Implementation/Deployment_Checklist.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/09_Operations/User_Manual.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/09_Operations/Support_and_Maintenance.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/10_Governance/Risks_Issues.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/10_Governance/Decision_Log.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/10_Governance/Dependencies.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/10_Governance/Change_Log.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/Tasks/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1-TASK-001_Review-repaired-block-with-project-owner.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/Tasks/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1-TASK-002_Confirm-missing-data-fields-and-workflow.md
+- 03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/Tasks/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1-TASK-003_Update-related-BRD-SOP-user-manual-after-confirmation.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/00_Project_Home.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/01_Management/Project_Profile.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/01_Management/Project_Plan.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/01_Management/Milestones.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/01_Management/Weekly_Status.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/02_Business/Business_Context.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/02_Business/BRD.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/03_Process/AS_IS_Process.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/03_Process/TO_BE_Process.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/03_Process/Process_Gaps.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/04_Data/Data_Spec.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/04_Data/Data_Source_Inventory.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/05_Requirements/Functional_Requirements.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/05_Requirements/Use_Cases.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/06_Solution/Solution_Overview.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/06_Solution/Integration_Spec.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/07_Test_UAT/UAT_Plan.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/07_Test_UAT/UAT_Cases.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/07_Test_UAT/Defect_Log.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/08_Implementation/Implementation_Plan.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/08_Implementation/Deployment_Checklist.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/09_Operations/User_Manual.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/09_Operations/Support_and_Maintenance.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/10_Governance/Risks_Issues.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/10_Governance/Decision_Log.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/10_Governance/Dependencies.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/10_Governance/Change_Log.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/Tasks/MER.MARKET.INTELLIGENCE.v1.1-TASK-001_Review-repaired-block-with-project-owner.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/Tasks/MER.MARKET.INTELLIGENCE.v1.1-TASK-002_Confirm-missing-data-fields-and-workflow.md
+- 03_Projects/E-commerce Market Intelligence v.2.3/Tasks/MER.MARKET.INTELLIGENCE.v1.1-TASK-003_Update-related-BRD-SOP-user-manual-after-confirmation.md
+- 03_Projects/MER.PO-Commit/00_Project_Home.md
+- 03_Projects/MER.PO-Commit/01_Management/Project_Profile.md
+- 03_Projects/MER.PO-Commit/01_Management/Project_Plan.md
+- 03_Projects/MER.PO-Commit/01_Management/Milestones.md
+- 03_Projects/MER.PO-Commit/01_Management/Weekly_Status.md
+- 03_Projects/MER.PO-Commit/02_Business/Business_Context.md
+- 03_Projects/MER.PO-Commit/02_Business/BRD.md
+- 03_Projects/MER.PO-Commit/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/MER.PO-Commit/03_Process/AS_IS_Process.md
+- 03_Projects/MER.PO-Commit/03_Process/TO_BE_Process.md
+- 03_Projects/MER.PO-Commit/03_Process/Process_Gaps.md
+- 03_Projects/MER.PO-Commit/04_Data/Data_Spec.md
+- 03_Projects/MER.PO-Commit/04_Data/Data_Source_Inventory.md
+- 03_Projects/MER.PO-Commit/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/MER.PO-Commit/05_Requirements/Functional_Requirements.md
+- 03_Projects/MER.PO-Commit/05_Requirements/Use_Cases.md
+- 03_Projects/MER.PO-Commit/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/MER.PO-Commit/06_Solution/Solution_Overview.md
+- 03_Projects/MER.PO-Commit/06_Solution/Integration_Spec.md
+- 03_Projects/MER.PO-Commit/07_Test_UAT/UAT_Plan.md
+- 03_Projects/MER.PO-Commit/07_Test_UAT/UAT_Cases.md
+- 03_Projects/MER.PO-Commit/07_Test_UAT/Defect_Log.md
+- 03_Projects/MER.PO-Commit/08_Implementation/Implementation_Plan.md
+- 03_Projects/MER.PO-Commit/08_Implementation/Deployment_Checklist.md
+- 03_Projects/MER.PO-Commit/09_Operations/User_Manual.md
+- 03_Projects/MER.PO-Commit/09_Operations/Support_and_Maintenance.md
+- 03_Projects/MER.PO-Commit/10_Governance/Risks_Issues.md
+- 03_Projects/MER.PO-Commit/10_Governance/Decision_Log.md
+- 03_Projects/MER.PO-Commit/10_Governance/Dependencies.md
+- 03_Projects/MER.PO-Commit/10_Governance/Change_Log.md
+- 03_Projects/MER.PO-Commit/01_Management/Closeout_Summary.md
+- 03_Projects/MER.PO-Commit/01_Management/Lessons_Learned.md
+- 03_Projects/PPJ.AI.Hub.v2.1/00_Project_Home.md
+- 03_Projects/PPJ.AI.Hub.v2.1/01_Management/Project_Profile.md
+- 03_Projects/PPJ.AI.Hub.v2.1/01_Management/Project_Plan.md
+- 03_Projects/PPJ.AI.Hub.v2.1/01_Management/Milestones.md
+- 03_Projects/PPJ.AI.Hub.v2.1/01_Management/Weekly_Status.md
+- 03_Projects/PPJ.AI.Hub.v2.1/02_Business/Business_Context.md
+- 03_Projects/PPJ.AI.Hub.v2.1/02_Business/BRD.md
+- 03_Projects/PPJ.AI.Hub.v2.1/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/PPJ.AI.Hub.v2.1/03_Process/AS_IS_Process.md
+- 03_Projects/PPJ.AI.Hub.v2.1/03_Process/TO_BE_Process.md
+- 03_Projects/PPJ.AI.Hub.v2.1/03_Process/Process_Gaps.md
+- 03_Projects/PPJ.AI.Hub.v2.1/04_Data/Data_Spec.md
+- 03_Projects/PPJ.AI.Hub.v2.1/04_Data/Data_Source_Inventory.md
+- 03_Projects/PPJ.AI.Hub.v2.1/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/PPJ.AI.Hub.v2.1/05_Requirements/Functional_Requirements.md
+- 03_Projects/PPJ.AI.Hub.v2.1/05_Requirements/Use_Cases.md
+- 03_Projects/PPJ.AI.Hub.v2.1/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/PPJ.AI.Hub.v2.1/06_Solution/Solution_Overview.md
+- 03_Projects/PPJ.AI.Hub.v2.1/06_Solution/Integration_Spec.md
+- 03_Projects/PPJ.AI.Hub.v2.1/07_Test_UAT/UAT_Plan.md
+- 03_Projects/PPJ.AI.Hub.v2.1/07_Test_UAT/UAT_Cases.md
+- 03_Projects/PPJ.AI.Hub.v2.1/07_Test_UAT/Defect_Log.md
+- 03_Projects/PPJ.AI.Hub.v2.1/08_Implementation/Implementation_Plan.md
+- 03_Projects/PPJ.AI.Hub.v2.1/08_Implementation/Deployment_Checklist.md
+- 03_Projects/PPJ.AI.Hub.v2.1/09_Operations/User_Manual.md
+- 03_Projects/PPJ.AI.Hub.v2.1/09_Operations/Support_and_Maintenance.md
+- 03_Projects/PPJ.AI.Hub.v2.1/10_Governance/Risks_Issues.md
+- 03_Projects/PPJ.AI.Hub.v2.1/10_Governance/Decision_Log.md
+- 03_Projects/PPJ.AI.Hub.v2.1/10_Governance/Dependencies.md
+- 03_Projects/PPJ.AI.Hub.v2.1/10_Governance/Change_Log.md
+- 03_Projects/PPJ.AI.Hub.v2.1/06_Solution/AI_Behavior_and_Guardrails.md
+- 03_Projects/PPJ.AI.Hub.v2.1/06_Solution/Knowledge_and_Tool_Sources.md
+- 03_Projects/PPJ.AI.Hub.v2.1/Tasks/PPJ.AI.Hub.v2.1-TASK-001_Define-module-registry-fields.md
+- 03_Projects/PPJ.AI.Hub.v2.1/Tasks/PPJ.AI.Hub.v2.1-TASK-002_Confirm-initial-modules.md
+- 03_Projects/PPJ.AI.Hub.v2.1/Tasks/PPJ.AI.Hub.v2.1-TASK-003_Confirm-owner-and-support-process.md
+- 03_Projects/PPJ.AI.Hub.v2.1/Tasks/PPJ.AI.Hub.v2.1-TASK-004_Create-AI-Hub-user-journey.md
+- 03_Projects/PPJ.AI.Hub.v2.1/Tasks/PPJ.AI.Hub.v2.1-TASK-005_Create-first-release-roadmap.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/00_Project_Home.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/01_Management/Project_Profile.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/01_Management/Project_Plan.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/01_Management/Milestones.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/01_Management/Weekly_Status.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/02_Business/Business_Context.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/02_Business/BRD.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/03_Process/AS_IS_Process.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/03_Process/TO_BE_Process.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/03_Process/Process_Gaps.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/04_Data/Data_Spec.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/04_Data/Data_Source_Inventory.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/05_Requirements/Functional_Requirements.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/05_Requirements/Use_Cases.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/06_Solution/Solution_Overview.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/06_Solution/Integration_Spec.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/07_Test_UAT/UAT_Plan.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/07_Test_UAT/UAT_Cases.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/07_Test_UAT/Defect_Log.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/08_Implementation/Implementation_Plan.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/08_Implementation/Deployment_Checklist.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/09_Operations/User_Manual.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/09_Operations/Support_and_Maintenance.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/10_Governance/Risks_Issues.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/10_Governance/Decision_Log.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/10_Governance/Dependencies.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/10_Governance/Change_Log.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/Tasks/PPJ.ExpenseInvoices.v1.1-TASK-001_Expense-Invoice-Mapping-Closure-and-Go-live-Readiness.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/Tasks/PPJ.ExpenseInvoices.v1.1-TASK-002_Expense-Invoice-Supplier-Mapping-and-UAT-Closure.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/Tasks/PPJ.ExpenseInvoices.v1.1-TASK-003_Finalize-frequent-supplier-list-and-standardize-supplier-cod.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/Tasks/PPJ.ExpenseInvoices.v1.1-TASK-004_Confirm-mapping-ownership-and-close-critical-defects.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/Tasks/PPJ.ExpenseInvoices.v1.1-TASK-005_Run-regression-testing.md
+- 03_Projects/PPJ. Expense-Invoices.v1.1/Tasks/PPJ.ExpenseInvoices.v1.1-TASK-006_Confirm-go-live-boundary-production-monitoring-and-support-e.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/00_Project_Home.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/01_Management/Project_Profile.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/01_Management/Project_Plan.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/01_Management/Milestones.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/01_Management/Weekly_Status.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/02_Business/Business_Context.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/02_Business/BRD.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/03_Process/AS_IS_Process.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/03_Process/TO_BE_Process.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/03_Process/Process_Gaps.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/04_Data/Data_Spec.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/04_Data/Data_Source_Inventory.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/05_Requirements/Functional_Requirements.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/05_Requirements/Use_Cases.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/06_Solution/Solution_Overview.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/06_Solution/Integration_Spec.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/07_Test_UAT/UAT_Plan.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/07_Test_UAT/UAT_Cases.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/07_Test_UAT/Defect_Log.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/08_Implementation/Implementation_Plan.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/08_Implementation/Deployment_Checklist.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/09_Operations/User_Manual.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/09_Operations/Support_and_Maintenance.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/10_Governance/Risks_Issues.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/10_Governance/Decision_Log.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/10_Governance/Dependencies.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/10_Governance/Change_Log.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/06_Solution/AI_Behavior_and_Guardrails.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/06_Solution/Knowledge_and_Tool_Sources.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/Tasks/PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0-TASK-001_Inventory-current-GLPI-FAQ-ticket-categories.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/Tasks/PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0-TASK-002_Confirm-top-repeated-IT-questions.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/Tasks/PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0-TASK-003_Define-escalation-and-fallback-rules.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/Tasks/PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0-TASK-004_Confirm-ticket-creation-scope.md
+- 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/Tasks/PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0-TASK-005_Prepare-UAT-with-IT-helpdesk-users.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/00_Project_Home.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/01_Management/Project_Profile.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/01_Management/Project_Plan.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/01_Management/Milestones.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/01_Management/Weekly_Status.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/02_Business/Business_Context.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/02_Business/BRD.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/03_Process/AS_IS_Process.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/03_Process/TO_BE_Process.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/03_Process/Process_Gaps.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/04_Data/Data_Spec.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/04_Data/Data_Source_Inventory.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/05_Requirements/Functional_Requirements.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/05_Requirements/Use_Cases.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/06_Solution/Solution_Overview.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/06_Solution/Integration_Spec.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/07_Test_UAT/UAT_Plan.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/07_Test_UAT/UAT_Cases.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/07_Test_UAT/Defect_Log.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/08_Implementation/Implementation_Plan.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/08_Implementation/Deployment_Checklist.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/09_Operations/User_Manual.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/09_Operations/Support_and_Maintenance.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/10_Governance/Risks_Issues.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/10_Governance/Decision_Log.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/10_Governance/Dependencies.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/10_Governance/Change_Log.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/Tasks/PPJ.InvoiceDownloader.v1.2-TASK-001_Review-repaired-block-with-project-owner.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/Tasks/PPJ.InvoiceDownloader.v1.2-TASK-002_Confirm-missing-data-fields-and-workflow.md
+- 03_Projects/PPJ.Invoice Downloader.v1.2/Tasks/PPJ.InvoiceDownloader.v1.2-TASK-003_Update-related-BRD-SOP-user-manual-after-confirmation.md
+- 03_Projects/PPJ.PERRI.Chatbot/00_Project_Home.md
+- 03_Projects/PPJ.PERRI.Chatbot/01_Management/Project_Profile.md
+- 03_Projects/PPJ.PERRI.Chatbot/01_Management/Project_Plan.md
+- 03_Projects/PPJ.PERRI.Chatbot/01_Management/Milestones.md
+- 03_Projects/PPJ.PERRI.Chatbot/01_Management/Weekly_Status.md
+- 03_Projects/PPJ.PERRI.Chatbot/02_Business/Business_Context.md
+- 03_Projects/PPJ.PERRI.Chatbot/02_Business/BRD.md
+- 03_Projects/PPJ.PERRI.Chatbot/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/PPJ.PERRI.Chatbot/03_Process/AS_IS_Process.md
+- 03_Projects/PPJ.PERRI.Chatbot/03_Process/TO_BE_Process.md
+- 03_Projects/PPJ.PERRI.Chatbot/03_Process/Process_Gaps.md
+- 03_Projects/PPJ.PERRI.Chatbot/04_Data/Data_Spec.md
+- 03_Projects/PPJ.PERRI.Chatbot/04_Data/Data_Source_Inventory.md
+- 03_Projects/PPJ.PERRI.Chatbot/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/PPJ.PERRI.Chatbot/05_Requirements/Functional_Requirements.md
+- 03_Projects/PPJ.PERRI.Chatbot/05_Requirements/Use_Cases.md
+- 03_Projects/PPJ.PERRI.Chatbot/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/PPJ.PERRI.Chatbot/06_Solution/Solution_Overview.md
+- 03_Projects/PPJ.PERRI.Chatbot/06_Solution/Integration_Spec.md
+- 03_Projects/PPJ.PERRI.Chatbot/07_Test_UAT/UAT_Plan.md
+- 03_Projects/PPJ.PERRI.Chatbot/07_Test_UAT/UAT_Cases.md
+- 03_Projects/PPJ.PERRI.Chatbot/07_Test_UAT/Defect_Log.md
+- 03_Projects/PPJ.PERRI.Chatbot/08_Implementation/Implementation_Plan.md
+- 03_Projects/PPJ.PERRI.Chatbot/08_Implementation/Deployment_Checklist.md
+- 03_Projects/PPJ.PERRI.Chatbot/09_Operations/User_Manual.md
+- 03_Projects/PPJ.PERRI.Chatbot/09_Operations/Support_and_Maintenance.md
+- 03_Projects/PPJ.PERRI.Chatbot/10_Governance/Risks_Issues.md
+- 03_Projects/PPJ.PERRI.Chatbot/10_Governance/Decision_Log.md
+- 03_Projects/PPJ.PERRI.Chatbot/10_Governance/Dependencies.md
+- 03_Projects/PPJ.PERRI.Chatbot/10_Governance/Change_Log.md
+- 03_Projects/PPJ.PERRI.Chatbot/06_Solution/AI_Behavior_and_Guardrails.md
+- 03_Projects/PPJ.PERRI.Chatbot/06_Solution/Knowledge_and_Tool_Sources.md
+- 03_Projects/PPJ.PERRI.Chatbot/Tasks/PPJ.PERRI.Chatbot.v3.2-TASK-001_Map-PERRI-access-roles-by-department.md
+- 03_Projects/PPJ.PERRI.Chatbot/Tasks/PPJ.PERRI.Chatbot.v3.2-TASK-002_Define-approved-tool-catalog-with-PPJ-AI-Hub-v2-1.md
+- 03_Projects/PPJ.PERRI.Chatbot/Tasks/PPJ.PERRI.Chatbot.v3.2-TASK-003_Confirm-Invoice-Downloader-integration-scope.md
+- 03_Projects/PPJ.PERRI.Chatbot/Tasks/PPJ.PERRI.Chatbot.v3.2-TASK-004_Draft-fallback-and-escalation-rules.md
+- 03_Projects/PPJ.PERRI.Chatbot/Tasks/PPJ.PERRI.Chatbot.v3.2-TASK-005_Define-audit-log-schema.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/00_Project_Home.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/01_Management/Project_Profile.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/01_Management/Project_Plan.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/01_Management/Milestones.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/01_Management/Weekly_Status.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/02_Business/Business_Context.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/02_Business/BRD.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/03_Process/AS_IS_Process.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/03_Process/TO_BE_Process.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/03_Process/Process_Gaps.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/04_Data/Data_Spec.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/04_Data/Data_Source_Inventory.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/05_Requirements/Functional_Requirements.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/05_Requirements/Use_Cases.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/06_Solution/Solution_Overview.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/06_Solution/Integration_Spec.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/07_Test_UAT/UAT_Plan.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/07_Test_UAT/UAT_Cases.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/07_Test_UAT/Defect_Log.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/08_Implementation/Implementation_Plan.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/08_Implementation/Deployment_Checklist.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/09_Operations/User_Manual.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/09_Operations/Support_and_Maintenance.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/10_Governance/Risks_Issues.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/10_Governance/Decision_Log.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/10_Governance/Dependencies.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/10_Governance/Change_Log.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/01_Management/PoC_Trial_Plan.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/01_Management/Evaluation_Criteria.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/10_Governance/Vendor_and_Commercial_Dependencies.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/Tasks/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1-TASK-001_Summarize-PPJ-problem-topics-suitable-for-UIT.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/Tasks/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1-TASK-002_Classify-topics-by-thesis-course-project-AISC-mentoring-prot.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/Tasks/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1-TASK-003_Work-with-c-Ph-ng-to-confirm-contact-flow-and-collaboration-.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/Tasks/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1-TASK-004_Review-AISC-sponsorship-file-if-PPJ-wants-official-participa.md
+- 03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/Tasks/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1-TASK-005_Prepare-a-short-topic-list-with-business-context-expected-ou.md
+- 03_Projects/PPJxNUNOX/00_Project_Home.md
+- 03_Projects/PPJxNUNOX/01_Management/Project_Profile.md
+- 03_Projects/PPJxNUNOX/01_Management/Project_Plan.md
+- 03_Projects/PPJxNUNOX/01_Management/Milestones.md
+- 03_Projects/PPJxNUNOX/01_Management/Weekly_Status.md
+- 03_Projects/PPJxNUNOX/02_Business/Business_Context.md
+- 03_Projects/PPJxNUNOX/02_Business/BRD.md
+- 03_Projects/PPJxNUNOX/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/PPJxNUNOX/03_Process/AS_IS_Process.md
+- 03_Projects/PPJxNUNOX/03_Process/TO_BE_Process.md
+- 03_Projects/PPJxNUNOX/03_Process/Process_Gaps.md
+- 03_Projects/PPJxNUNOX/04_Data/Data_Spec.md
+- 03_Projects/PPJxNUNOX/04_Data/Data_Source_Inventory.md
+- 03_Projects/PPJxNUNOX/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/PPJxNUNOX/05_Requirements/Functional_Requirements.md
+- 03_Projects/PPJxNUNOX/05_Requirements/Use_Cases.md
+- 03_Projects/PPJxNUNOX/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/PPJxNUNOX/06_Solution/Solution_Overview.md
+- 03_Projects/PPJxNUNOX/06_Solution/Integration_Spec.md
+- 03_Projects/PPJxNUNOX/07_Test_UAT/UAT_Plan.md
+- 03_Projects/PPJxNUNOX/07_Test_UAT/UAT_Cases.md
+- 03_Projects/PPJxNUNOX/07_Test_UAT/Defect_Log.md
+- 03_Projects/PPJxNUNOX/08_Implementation/Implementation_Plan.md
+- 03_Projects/PPJxNUNOX/08_Implementation/Deployment_Checklist.md
+- 03_Projects/PPJxNUNOX/09_Operations/User_Manual.md
+- 03_Projects/PPJxNUNOX/09_Operations/Support_and_Maintenance.md
+- 03_Projects/PPJxNUNOX/10_Governance/Risks_Issues.md
+- 03_Projects/PPJxNUNOX/10_Governance/Decision_Log.md
+- 03_Projects/PPJxNUNOX/10_Governance/Dependencies.md
+- 03_Projects/PPJxNUNOX/10_Governance/Change_Log.md
+- 03_Projects/PPJxNUNOX/01_Management/PoC_Trial_Plan.md
+- 03_Projects/PPJxNUNOX/01_Management/Evaluation_Criteria.md
+- 03_Projects/PPJxNUNOX/10_Governance/Vendor_and_Commercial_Dependencies.md
+- 03_Projects/PPJxNUNOX/Tasks/PPJxNUNOX.ScanTrial-TASK-001_NUNOX-Visit-Preparation-and-Digital-Library-Business-Case.md
+- 03_Projects/PPJxNUNOX/Tasks/PPJxNUNOX.ScanTrial-TASK-002_Obtain-leadership-direction-and-confirm-the-17-18-August-sch.md
+- 03_Projects/PPJxNUNOX/Tasks/PPJxNUNOX.ScanTrial-TASK-003_Define-session-objective-sample-dataset-and-user-groups.md
+- 03_Projects/PPJxNUNOX/Tasks/PPJxNUNOX.ScanTrial-TASK-004_Evaluate-scanner-workflow-storage-and-access.md
+- 03_Projects/PPJxNUNOX/Tasks/PPJxNUNOX.ScanTrial-TASK-005_Assess-integration-boundaries-with-FD-CPD-and-Technical-Plat.md
+- 03_Projects/PPJxQSee.ai/00_Project_Home.md
+- 03_Projects/PPJxQSee.ai/01_Management/Project_Profile.md
+- 03_Projects/PPJxQSee.ai/01_Management/Project_Plan.md
+- 03_Projects/PPJxQSee.ai/01_Management/Milestones.md
+- 03_Projects/PPJxQSee.ai/01_Management/Weekly_Status.md
+- 03_Projects/PPJxQSee.ai/02_Business/Business_Context.md
+- 03_Projects/PPJxQSee.ai/02_Business/BRD.md
+- 03_Projects/PPJxQSee.ai/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/PPJxQSee.ai/03_Process/AS_IS_Process.md
+- 03_Projects/PPJxQSee.ai/03_Process/TO_BE_Process.md
+- 03_Projects/PPJxQSee.ai/03_Process/Process_Gaps.md
+- 03_Projects/PPJxQSee.ai/04_Data/Data_Spec.md
+- 03_Projects/PPJxQSee.ai/04_Data/Data_Source_Inventory.md
+- 03_Projects/PPJxQSee.ai/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/PPJxQSee.ai/05_Requirements/Functional_Requirements.md
+- 03_Projects/PPJxQSee.ai/05_Requirements/Use_Cases.md
+- 03_Projects/PPJxQSee.ai/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/PPJxQSee.ai/06_Solution/Solution_Overview.md
+- 03_Projects/PPJxQSee.ai/06_Solution/Integration_Spec.md
+- 03_Projects/PPJxQSee.ai/07_Test_UAT/UAT_Plan.md
+- 03_Projects/PPJxQSee.ai/07_Test_UAT/UAT_Cases.md
+- 03_Projects/PPJxQSee.ai/07_Test_UAT/Defect_Log.md
+- 03_Projects/PPJxQSee.ai/08_Implementation/Implementation_Plan.md
+- 03_Projects/PPJxQSee.ai/08_Implementation/Deployment_Checklist.md
+- 03_Projects/PPJxQSee.ai/09_Operations/User_Manual.md
+- 03_Projects/PPJxQSee.ai/09_Operations/Support_and_Maintenance.md
+- 03_Projects/PPJxQSee.ai/10_Governance/Risks_Issues.md
+- 03_Projects/PPJxQSee.ai/10_Governance/Decision_Log.md
+- 03_Projects/PPJxQSee.ai/10_Governance/Dependencies.md
+- 03_Projects/PPJxQSee.ai/10_Governance/Change_Log.md
+- 03_Projects/PPJxQSee.ai/01_Management/PoC_Trial_Plan.md
+- 03_Projects/PPJxQSee.ai/01_Management/Evaluation_Criteria.md
+- 03_Projects/PPJxQSee.ai/10_Governance/Vendor_and_Commercial_Dependencies.md
+- 03_Projects/PPJxQSee.ai/01_Management/Next_Gate.md
+- 03_Projects/PPJxQSee.ai/02_Business/Discovery_Questions.md
+- 03_Projects/PPJxQSee.ai/Tasks/PPJxQSee.AI-TASK-001_QSee-Proposal-Evaluation-and-Recommendation.md
+- 03_Projects/PPJxQSee.ai/Tasks/PPJxQSee.AI-TASK-002_QSee-Formal-Hold-and-Reactivation-Criteria.md
+- 03_Projects/PPJxQSee.ai/Tasks/PPJxQSee.AI-TASK-003_Confirm-formal-hold-status.md
+- 03_Projects/PPJxQSee.ai/Tasks/PPJxQSee.AI-TASK-004_Define-reactivation-criteria-covering-owners-dataset-labelin.md
+- 03_Projects/PPJxQSee.ai/Tasks/PPJxQSee.AI-TASK-005_Preserve-NDA-and-proposal-documents.md
+- 03_Projects/PPJxStratova AI/00_Project_Home.md
+- 03_Projects/PPJxStratova AI/01_Management/Project_Profile.md
+- 03_Projects/PPJxStratova AI/01_Management/Project_Plan.md
+- 03_Projects/PPJxStratova AI/01_Management/Milestones.md
+- 03_Projects/PPJxStratova AI/01_Management/Weekly_Status.md
+- 03_Projects/PPJxStratova AI/02_Business/Business_Context.md
+- 03_Projects/PPJxStratova AI/02_Business/BRD.md
+- 03_Projects/PPJxStratova AI/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/PPJxStratova AI/03_Process/AS_IS_Process.md
+- 03_Projects/PPJxStratova AI/03_Process/TO_BE_Process.md
+- 03_Projects/PPJxStratova AI/03_Process/Process_Gaps.md
+- 03_Projects/PPJxStratova AI/04_Data/Data_Spec.md
+- 03_Projects/PPJxStratova AI/04_Data/Data_Source_Inventory.md
+- 03_Projects/PPJxStratova AI/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/PPJxStratova AI/05_Requirements/Functional_Requirements.md
+- 03_Projects/PPJxStratova AI/05_Requirements/Use_Cases.md
+- 03_Projects/PPJxStratova AI/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/PPJxStratova AI/06_Solution/Solution_Overview.md
+- 03_Projects/PPJxStratova AI/06_Solution/Integration_Spec.md
+- 03_Projects/PPJxStratova AI/07_Test_UAT/UAT_Plan.md
+- 03_Projects/PPJxStratova AI/07_Test_UAT/UAT_Cases.md
+- 03_Projects/PPJxStratova AI/07_Test_UAT/Defect_Log.md
+- 03_Projects/PPJxStratova AI/08_Implementation/Implementation_Plan.md
+- 03_Projects/PPJxStratova AI/08_Implementation/Deployment_Checklist.md
+- 03_Projects/PPJxStratova AI/09_Operations/User_Manual.md
+- 03_Projects/PPJxStratova AI/09_Operations/Support_and_Maintenance.md
+- 03_Projects/PPJxStratova AI/10_Governance/Risks_Issues.md
+- 03_Projects/PPJxStratova AI/10_Governance/Decision_Log.md
+- 03_Projects/PPJxStratova AI/10_Governance/Dependencies.md
+- 03_Projects/PPJxStratova AI/10_Governance/Change_Log.md
+- 03_Projects/PPJxStratova AI/01_Management/PoC_Trial_Plan.md
+- 03_Projects/PPJxStratova AI/01_Management/Evaluation_Criteria.md
+- 03_Projects/PPJxStratova AI/10_Governance/Vendor_and_Commercial_Dependencies.md
+- 03_Projects/PPJxStratova AI/01_Management/Closeout_Summary.md
+- 03_Projects/PPJxStratova AI/01_Management/Lessons_Learned.md
+- 03_Projects/PPJxStratova AI/Tasks/PPJxStratova.AI-TASK-001_Stratova-Commercial-and-Funding-Option-Paper.md
+- 03_Projects/PROD.COWASH/00_Project_Home.md
+- 03_Projects/PROD.COWASH/01_Management/Project_Profile.md
+- 03_Projects/PROD.COWASH/01_Management/Project_Plan.md
+- 03_Projects/PROD.COWASH/01_Management/Milestones.md
+- 03_Projects/PROD.COWASH/01_Management/Weekly_Status.md
+- 03_Projects/PROD.COWASH/02_Business/Business_Context.md
+- 03_Projects/PROD.COWASH/02_Business/BRD.md
+- 03_Projects/PROD.COWASH/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/PROD.COWASH/03_Process/AS_IS_Process.md
+- 03_Projects/PROD.COWASH/03_Process/TO_BE_Process.md
+- 03_Projects/PROD.COWASH/03_Process/Process_Gaps.md
+- 03_Projects/PROD.COWASH/04_Data/Data_Spec.md
+- 03_Projects/PROD.COWASH/04_Data/Data_Source_Inventory.md
+- 03_Projects/PROD.COWASH/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/PROD.COWASH/05_Requirements/Functional_Requirements.md
+- 03_Projects/PROD.COWASH/05_Requirements/Use_Cases.md
+- 03_Projects/PROD.COWASH/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/PROD.COWASH/06_Solution/Solution_Overview.md
+- 03_Projects/PROD.COWASH/06_Solution/Integration_Spec.md
+- 03_Projects/PROD.COWASH/07_Test_UAT/UAT_Plan.md
+- 03_Projects/PROD.COWASH/07_Test_UAT/UAT_Cases.md
+- 03_Projects/PROD.COWASH/07_Test_UAT/Defect_Log.md
+- 03_Projects/PROD.COWASH/08_Implementation/Implementation_Plan.md
+- 03_Projects/PROD.COWASH/08_Implementation/Deployment_Checklist.md
+- 03_Projects/PROD.COWASH/09_Operations/User_Manual.md
+- 03_Projects/PROD.COWASH/09_Operations/Support_and_Maintenance.md
+- 03_Projects/PROD.COWASH/10_Governance/Risks_Issues.md
+- 03_Projects/PROD.COWASH/10_Governance/Decision_Log.md
+- 03_Projects/PROD.COWASH/10_Governance/Dependencies.md
+- 03_Projects/PROD.COWASH/10_Governance/Change_Log.md
+- 03_Projects/PROD.COWASH/01_Management/Next_Gate.md
+- 03_Projects/PROD.COWASH/02_Business/Discovery_Questions.md
+- 03_Projects/PROD.COWASH/Tasks/PROD.COWASH.v2.0-TASK-001_Review-repaired-block-with-project-owner.md
+- 03_Projects/PROD.COWASH/Tasks/PROD.COWASH.v2.0-TASK-002_Confirm-missing-data-fields-and-workflow.md
+- 03_Projects/PROD.COWASH/Tasks/PROD.COWASH.v2.0-TASK-003_Update-related-BRD-SOP-user-manual-after-confirmation.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/00_Project_Home.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/01_Management/Project_Profile.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/01_Management/Project_Plan.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/01_Management/Milestones.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/01_Management/Weekly_Status.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/02_Business/Business_Context.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/02_Business/BRD.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/03_Process/AS_IS_Process.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/03_Process/TO_BE_Process.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/03_Process/Process_Gaps.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/04_Data/Data_Spec.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/04_Data/Data_Source_Inventory.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/05_Requirements/Functional_Requirements.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/05_Requirements/Use_Cases.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/06_Solution/Solution_Overview.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/06_Solution/Integration_Spec.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/07_Test_UAT/UAT_Plan.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/07_Test_UAT/UAT_Cases.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/07_Test_UAT/Defect_Log.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/08_Implementation/Implementation_Plan.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/08_Implementation/Deployment_Checklist.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/09_Operations/User_Manual.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/09_Operations/Support_and_Maintenance.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/10_Governance/Risks_Issues.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/10_Governance/Decision_Log.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/10_Governance/Dependencies.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/10_Governance/Change_Log.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/Tasks/PROD.IOT.CHuyenTreo.v1.0-TASK-001_Review-repaired-block-with-project-owner.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/Tasks/PROD.IOT.CHuyenTreo.v1.0-TASK-002_Confirm-missing-data-fields-and-workflow.md
+- 03_Projects/PROD.IOT.CHuyenTreo_1/Tasks/PROD.IOT.CHuyenTreo.v1.0-TASK-003_Update-related-BRD-SOP-user-manual-after-confirmation.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/00_Project_Home.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/01_Management/Project_Profile.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/01_Management/Project_Plan.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/01_Management/Milestones.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/01_Management/Weekly_Status.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/02_Business/Business_Context.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/02_Business/BRD.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/03_Process/AS_IS_Process.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/03_Process/TO_BE_Process.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/03_Process/Process_Gaps.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/04_Data/Data_Spec.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/04_Data/Data_Source_Inventory.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/05_Requirements/Functional_Requirements.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/05_Requirements/Use_Cases.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/06_Solution/Solution_Overview.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/06_Solution/Integration_Spec.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/07_Test_UAT/UAT_Plan.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/07_Test_UAT/UAT_Cases.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/07_Test_UAT/Defect_Log.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/08_Implementation/Implementation_Plan.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/08_Implementation/Deployment_Checklist.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/09_Operations/User_Manual.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/09_Operations/Support_and_Maintenance.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/10_Governance/Risks_Issues.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/10_Governance/Decision_Log.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/10_Governance/Dependencies.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/10_Governance/Change_Log.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/Tasks/PUR.Adhoc.Indent.South.v1.0-TASK-001_Review-repaired-block-with-project-owner.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/Tasks/PUR.Adhoc.Indent.South.v1.0-TASK-002_Confirm-missing-data-fields-and-workflow.md
+- 03_Projects/PUR.Adhoc Indent mien Nam/Tasks/PUR.Adhoc.Indent.South.v1.0-TASK-003_Update-related-BRD-SOP-user-manual-after-confirmation.md
+- 03_Projects/PUR.GDI Automation/00_Project_Home.md
+- 03_Projects/PUR.GDI Automation/01_Management/Project_Profile.md
+- 03_Projects/PUR.GDI Automation/01_Management/Project_Plan.md
+- 03_Projects/PUR.GDI Automation/01_Management/Milestones.md
+- 03_Projects/PUR.GDI Automation/01_Management/Weekly_Status.md
+- 03_Projects/PUR.GDI Automation/02_Business/Business_Context.md
+- 03_Projects/PUR.GDI Automation/02_Business/BRD.md
+- 03_Projects/PUR.GDI Automation/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/PUR.GDI Automation/03_Process/AS_IS_Process.md
+- 03_Projects/PUR.GDI Automation/03_Process/TO_BE_Process.md
+- 03_Projects/PUR.GDI Automation/03_Process/Process_Gaps.md
+- 03_Projects/PUR.GDI Automation/04_Data/Data_Spec.md
+- 03_Projects/PUR.GDI Automation/04_Data/Data_Source_Inventory.md
+- 03_Projects/PUR.GDI Automation/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/PUR.GDI Automation/05_Requirements/Functional_Requirements.md
+- 03_Projects/PUR.GDI Automation/05_Requirements/Use_Cases.md
+- 03_Projects/PUR.GDI Automation/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/PUR.GDI Automation/06_Solution/Solution_Overview.md
+- 03_Projects/PUR.GDI Automation/06_Solution/Integration_Spec.md
+- 03_Projects/PUR.GDI Automation/07_Test_UAT/UAT_Plan.md
+- 03_Projects/PUR.GDI Automation/07_Test_UAT/UAT_Cases.md
+- 03_Projects/PUR.GDI Automation/07_Test_UAT/Defect_Log.md
+- 03_Projects/PUR.GDI Automation/08_Implementation/Implementation_Plan.md
+- 03_Projects/PUR.GDI Automation/08_Implementation/Deployment_Checklist.md
+- 03_Projects/PUR.GDI Automation/09_Operations/User_Manual.md
+- 03_Projects/PUR.GDI Automation/09_Operations/Support_and_Maintenance.md
+- 03_Projects/PUR.GDI Automation/10_Governance/Risks_Issues.md
+- 03_Projects/PUR.GDI Automation/10_Governance/Decision_Log.md
+- 03_Projects/PUR.GDI Automation/10_Governance/Dependencies.md
+- 03_Projects/PUR.GDI Automation/10_Governance/Change_Log.md
+- 03_Projects/PUR.GDI Automation/Tasks/PUR.GDI.Automation.v1.0-TASK-001_GDI-WFX-API-Architecture-and-Prototype.md
+- 03_Projects/PUR.GDI Automation/Tasks/PUR.GDI.Automation.v1.0-TASK-002_Request-WFX-API-documentation-and-supported-create-update-dr.md
+- 03_Projects/PUR.GDI Automation/Tasks/PUR.GDI.Automation.v1.0-TASK-003_Confirm-authentication-request-response-schema-idempotency-a.md
+- 03_Projects/PUR.GDI Automation/Tasks/PUR.GDI.Automation.v1.0-TASK-004_Confirm-rollback-audit-and-approval-before-submit-requiremen.md
+- 03_Projects/PUR.GDI Automation/Tasks/PUR.GDI.Automation.v1.0-TASK-005_Build-and-test-an-API-prototype-in-a-non-production-environm.md
+- 03_Projects/PUR.H&M Label-O Processing/00_Project_Home.md
+- 03_Projects/PUR.H&M Label-O Processing/01_Management/Project_Profile.md
+- 03_Projects/PUR.H&M Label-O Processing/01_Management/Project_Plan.md
+- 03_Projects/PUR.H&M Label-O Processing/01_Management/Milestones.md
+- 03_Projects/PUR.H&M Label-O Processing/01_Management/Weekly_Status.md
+- 03_Projects/PUR.H&M Label-O Processing/02_Business/Business_Context.md
+- 03_Projects/PUR.H&M Label-O Processing/02_Business/BRD.md
+- 03_Projects/PUR.H&M Label-O Processing/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/PUR.H&M Label-O Processing/03_Process/AS_IS_Process.md
+- 03_Projects/PUR.H&M Label-O Processing/03_Process/TO_BE_Process.md
+- 03_Projects/PUR.H&M Label-O Processing/03_Process/Process_Gaps.md
+- 03_Projects/PUR.H&M Label-O Processing/04_Data/Data_Spec.md
+- 03_Projects/PUR.H&M Label-O Processing/04_Data/Data_Source_Inventory.md
+- 03_Projects/PUR.H&M Label-O Processing/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/PUR.H&M Label-O Processing/05_Requirements/Functional_Requirements.md
+- 03_Projects/PUR.H&M Label-O Processing/05_Requirements/Use_Cases.md
+- 03_Projects/PUR.H&M Label-O Processing/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/PUR.H&M Label-O Processing/06_Solution/Solution_Overview.md
+- 03_Projects/PUR.H&M Label-O Processing/06_Solution/Integration_Spec.md
+- 03_Projects/PUR.H&M Label-O Processing/07_Test_UAT/UAT_Plan.md
+- 03_Projects/PUR.H&M Label-O Processing/07_Test_UAT/UAT_Cases.md
+- 03_Projects/PUR.H&M Label-O Processing/07_Test_UAT/Defect_Log.md
+- 03_Projects/PUR.H&M Label-O Processing/08_Implementation/Implementation_Plan.md
+- 03_Projects/PUR.H&M Label-O Processing/08_Implementation/Deployment_Checklist.md
+- 03_Projects/PUR.H&M Label-O Processing/09_Operations/User_Manual.md
+- 03_Projects/PUR.H&M Label-O Processing/09_Operations/Support_and_Maintenance.md
+- 03_Projects/PUR.H&M Label-O Processing/10_Governance/Risks_Issues.md
+- 03_Projects/PUR.H&M Label-O Processing/10_Governance/Decision_Log.md
+- 03_Projects/PUR.H&M Label-O Processing/10_Governance/Dependencies.md
+- 03_Projects/PUR.H&M Label-O Processing/10_Governance/Change_Log.md
+- 03_Projects/PUR.H&M Label-O Processing/01_Management/Next_Gate.md
+- 03_Projects/PUR.H&M Label-O Processing/02_Business/Discovery_Questions.md
+- 03_Projects/PUR.H&M Label-O Processing/Tasks/PUR.HM.LabelO.Processing.Automation.v1.0-TASK-001_Review-repaired-block-with-project-owner.md
+- 03_Projects/PUR.H&M Label-O Processing/Tasks/PUR.HM.LabelO.Processing.Automation.v1.0-TASK-002_Confirm-missing-data-fields-and-workflow.md
+- 03_Projects/PUR.H&M Label-O Processing/Tasks/PUR.HM.LabelO.Processing.Automation.v1.0-TASK-003_Update-related-BRD-SOP-user-manual-after-confirmation.md
+- 03_Projects/PUR.Inventory Report/00_Project_Home.md
+- 03_Projects/PUR.Inventory Report/01_Management/Project_Profile.md
+- 03_Projects/PUR.Inventory Report/01_Management/Project_Plan.md
+- 03_Projects/PUR.Inventory Report/01_Management/Milestones.md
+- 03_Projects/PUR.Inventory Report/01_Management/Weekly_Status.md
+- 03_Projects/PUR.Inventory Report/02_Business/Business_Context.md
+- 03_Projects/PUR.Inventory Report/02_Business/BRD.md
+- 03_Projects/PUR.Inventory Report/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/PUR.Inventory Report/03_Process/AS_IS_Process.md
+- 03_Projects/PUR.Inventory Report/03_Process/TO_BE_Process.md
+- 03_Projects/PUR.Inventory Report/03_Process/Process_Gaps.md
+- 03_Projects/PUR.Inventory Report/04_Data/Data_Spec.md
+- 03_Projects/PUR.Inventory Report/04_Data/Data_Source_Inventory.md
+- 03_Projects/PUR.Inventory Report/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/PUR.Inventory Report/05_Requirements/Functional_Requirements.md
+- 03_Projects/PUR.Inventory Report/05_Requirements/Use_Cases.md
+- 03_Projects/PUR.Inventory Report/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/PUR.Inventory Report/06_Solution/Solution_Overview.md
+- 03_Projects/PUR.Inventory Report/06_Solution/Integration_Spec.md
+- 03_Projects/PUR.Inventory Report/07_Test_UAT/UAT_Plan.md
+- 03_Projects/PUR.Inventory Report/07_Test_UAT/UAT_Cases.md
+- 03_Projects/PUR.Inventory Report/07_Test_UAT/Defect_Log.md
+- 03_Projects/PUR.Inventory Report/08_Implementation/Implementation_Plan.md
+- 03_Projects/PUR.Inventory Report/08_Implementation/Deployment_Checklist.md
+- 03_Projects/PUR.Inventory Report/09_Operations/User_Manual.md
+- 03_Projects/PUR.Inventory Report/09_Operations/Support_and_Maintenance.md
+- 03_Projects/PUR.Inventory Report/10_Governance/Risks_Issues.md
+- 03_Projects/PUR.Inventory Report/10_Governance/Decision_Log.md
+- 03_Projects/PUR.Inventory Report/10_Governance/Dependencies.md
+- 03_Projects/PUR.Inventory Report/10_Governance/Change_Log.md
+- 03_Projects/PUR.Inventory Report/Tasks/PUR.Inventory.Report.v2.1-TASK-001_Purchasing-Inventory-v2-1-Post-release-Validation.md
+- 03_Projects/PUR.Inventory Report/Tasks/PUR.Inventory.Report.v2.1-TASK-002_Collect-post-v2-1-feedback.md
+- 03_Projects/PUR.Inventory Report/Tasks/PUR.Inventory.Report.v2.1-TASK-003_Validate-totals-refresh-and-source-reconciliation.md
+- 03_Projects/PUR.Inventory Report/Tasks/PUR.Inventory.Report.v2.1-TASK-004_Separate-defects-from-enhancements.md
+- 03_Projects/PUR.Inventory Report/Tasks/PUR.Inventory.Report.v2.1-TASK-005_Confirm-enhancement-backlog-and-monitor-production-stability.md
+- 03_Projects/PUR.Material.Allocation.v1.2/00_Project_Home.md
+- 03_Projects/PUR.Material.Allocation.v1.2/01_Management/Project_Profile.md
+- 03_Projects/PUR.Material.Allocation.v1.2/01_Management/Project_Plan.md
+- 03_Projects/PUR.Material.Allocation.v1.2/01_Management/Milestones.md
+- 03_Projects/PUR.Material.Allocation.v1.2/01_Management/Weekly_Status.md
+- 03_Projects/PUR.Material.Allocation.v1.2/02_Business/Business_Context.md
+- 03_Projects/PUR.Material.Allocation.v1.2/02_Business/BRD.md
+- 03_Projects/PUR.Material.Allocation.v1.2/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/PUR.Material.Allocation.v1.2/03_Process/AS_IS_Process.md
+- 03_Projects/PUR.Material.Allocation.v1.2/03_Process/TO_BE_Process.md
+- 03_Projects/PUR.Material.Allocation.v1.2/03_Process/Process_Gaps.md
+- 03_Projects/PUR.Material.Allocation.v1.2/04_Data/Data_Spec.md
+- 03_Projects/PUR.Material.Allocation.v1.2/04_Data/Data_Source_Inventory.md
+- 03_Projects/PUR.Material.Allocation.v1.2/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/PUR.Material.Allocation.v1.2/05_Requirements/Functional_Requirements.md
+- 03_Projects/PUR.Material.Allocation.v1.2/05_Requirements/Use_Cases.md
+- 03_Projects/PUR.Material.Allocation.v1.2/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/PUR.Material.Allocation.v1.2/06_Solution/Solution_Overview.md
+- 03_Projects/PUR.Material.Allocation.v1.2/06_Solution/Integration_Spec.md
+- 03_Projects/PUR.Material.Allocation.v1.2/07_Test_UAT/UAT_Plan.md
+- 03_Projects/PUR.Material.Allocation.v1.2/07_Test_UAT/UAT_Cases.md
+- 03_Projects/PUR.Material.Allocation.v1.2/07_Test_UAT/Defect_Log.md
+- 03_Projects/PUR.Material.Allocation.v1.2/08_Implementation/Implementation_Plan.md
+- 03_Projects/PUR.Material.Allocation.v1.2/08_Implementation/Deployment_Checklist.md
+- 03_Projects/PUR.Material.Allocation.v1.2/09_Operations/User_Manual.md
+- 03_Projects/PUR.Material.Allocation.v1.2/09_Operations/Support_and_Maintenance.md
+- 03_Projects/PUR.Material.Allocation.v1.2/10_Governance/Risks_Issues.md
+- 03_Projects/PUR.Material.Allocation.v1.2/10_Governance/Decision_Log.md
+- 03_Projects/PUR.Material.Allocation.v1.2/10_Governance/Dependencies.md
+- 03_Projects/PUR.Material.Allocation.v1.2/10_Governance/Change_Log.md
+- 03_Projects/PUR.Material.Allocation.v1.2/Tasks/PUR.Material.Allocation.v1.1-TASK-001_TASK-Waiting-WFX-Save-function.md
+- 03_Projects/PUR.Material.Allocation.v1.2/Tasks/PUR.Material.Allocation.v1.1-TASK-002_Material-Allocation-Exception-Testing-and-Transaction-Safety.md
+- 03_Projects/PUR.Material.Allocation.v1.2/Tasks/PUR.Material.Allocation.v1.1-TASK-003_Test-many-to-one-one-to-many-partial-allocation-insufficient.md
+- 03_Projects/PUR.Material.Allocation.v1.2/Tasks/PUR.Material.Allocation.v1.1-TASK-004_Test-transaction-failure-retry-and-define-rollback.md
+- 03_Projects/PUR.Material.Allocation.v1.2/Tasks/PUR.Material.Allocation.v1.1-TASK-005_Define-audit-log-and-user-review-before-posting.md
+- 03_Projects/PUR.Material.Allocation.v1.2/Tasks/PUR.Material.Allocation.v1.1-TASK-006_Prepare-UAT-with-Ms-Tuyet-and-Precision-users.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/00_Project_Home.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/01_Management/Project_Profile.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/01_Management/Project_Plan.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/01_Management/Milestones.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/01_Management/Weekly_Status.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/02_Business/Business_Context.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/02_Business/BRD.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/03_Process/AS_IS_Process.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/03_Process/TO_BE_Process.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/03_Process/Process_Gaps.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/04_Data/Data_Spec.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/04_Data/Data_Source_Inventory.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/05_Requirements/Functional_Requirements.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/05_Requirements/Use_Cases.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/06_Solution/Solution_Overview.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/06_Solution/Integration_Spec.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/07_Test_UAT/UAT_Plan.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/07_Test_UAT/UAT_Cases.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/07_Test_UAT/Defect_Log.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/08_Implementation/Implementation_Plan.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/08_Implementation/Deployment_Checklist.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/09_Operations/User_Manual.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/09_Operations/Support_and_Maintenance.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/10_Governance/Risks_Issues.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/10_Governance/Decision_Log.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/10_Governance/Dependencies.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/10_Governance/Change_Log.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/01_Management/PoC_Trial_Plan.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/01_Management/Evaluation_Criteria.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/10_Governance/Vendor_and_Commercial_Dependencies.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/Tasks/QC.Primo1D.RFID.Thread.v1.0-TASK-001_Review-repaired-block-with-project-owner.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/Tasks/QC.Primo1D.RFID.Thread.v1.0-TASK-002_Confirm-missing-data-fields-and-workflow.md
+- 03_Projects/PPJ XPrimo1D RFID Thread/Tasks/QC.Primo1D.RFID.Thread.v1.0-TASK-003_Update-related-BRD-SOP-user-manual-after-confirmation.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/00_Project_Home.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/01_Management/Project_Profile.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/01_Management/Project_Plan.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/01_Management/Milestones.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/01_Management/Weekly_Status.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/02_Business/Business_Context.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/02_Business/BRD.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/03_Process/AS_IS_Process.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/03_Process/TO_BE_Process.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/03_Process/Process_Gaps.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/04_Data/Data_Spec.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/04_Data/Data_Source_Inventory.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/05_Requirements/Functional_Requirements.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/05_Requirements/Use_Cases.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/06_Solution/Solution_Overview.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/06_Solution/Integration_Spec.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/07_Test_UAT/UAT_Plan.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/07_Test_UAT/UAT_Cases.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/07_Test_UAT/Defect_Log.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/08_Implementation/Implementation_Plan.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/08_Implementation/Deployment_Checklist.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/09_Operations/User_Manual.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/09_Operations/Support_and_Maintenance.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/10_Governance/Risks_Issues.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/10_Governance/Decision_Log.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/10_Governance/Dependencies.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/10_Governance/Change_Log.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/06_Solution/AI_Behavior_and_Guardrails.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/06_Solution/Knowledge_and_Tool_Sources.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/Tasks/SCP.SOURCING.CHATBOT.v2.3-TASK-001_Sourcing-Post-training-Usage-Assessment.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/Tasks/SCP.SOURCING.CHATBOT.v2.3-TASK-002_Sourcing-Closeout-and-External-Data-Standardization-Backlog.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/Tasks/SCP.SOURCING.CHATBOT.v2.3-TASK-003_Finalize-output-format-and-confirm-UAT-acceptance.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/Tasks/SCP.SOURCING.CHATBOT.v2.3-TASK-004_Complete-User-Manual-and-support-handover.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/Tasks/SCP.SOURCING.CHATBOT.v2.3-TASK-005_Separate-defects-from-enhancements-and-transfer-remaining-is.md
+- 03_Projects/SCP.SOURCING.CHATBOT.v2.3/Tasks/SCP.SOURCING.CHATBOT.v2.3-TASK-006_Create-update-the-Sourcing-External-Data-Standardization-Bac.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/00_Project_Home.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/01_Management/Project_Profile.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/01_Management/Project_Plan.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/01_Management/Milestones.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/01_Management/Weekly_Status.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/02_Business/Business_Context.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/02_Business/BRD.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/03_Process/AS_IS_Process.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/03_Process/TO_BE_Process.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/03_Process/Process_Gaps.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/04_Data/Data_Spec.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/04_Data/Data_Source_Inventory.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/05_Requirements/Functional_Requirements.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/05_Requirements/Use_Cases.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/06_Solution/Solution_Overview.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/06_Solution/Integration_Spec.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/07_Test_UAT/UAT_Plan.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/07_Test_UAT/UAT_Cases.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/07_Test_UAT/Defect_Log.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/08_Implementation/Implementation_Plan.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/08_Implementation/Deployment_Checklist.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/09_Operations/User_Manual.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/09_Operations/Support_and_Maintenance.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/10_Governance/Risks_Issues.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/10_Governance/Decision_Log.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/10_Governance/Dependencies.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/10_Governance/Change_Log.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/Tasks/TD.TechnicalKnowledge.Platform.v2.1-TASK-001_Technical-ETL-Reconciliation-and-Data-Acceptance.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/Tasks/TD.TechnicalKnowledge.Platform.v2.1-TASK-002_Measure-ETL-coverage-and-reconcile-with-source-systems.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/Tasks/TD.TechnicalKnowledge.Platform.v2.1-TASK-003_Detect-duplicates-and-missing-keys.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/Tasks/TD.TechnicalKnowledge.Platform.v2.1-TASK-004_Confirm-record-version-and-approved-latest-version-logic.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/Tasks/TD.TechnicalKnowledge.Platform.v2.1-TASK-005_Build-search-retrieval-and-permission-layers.md
+- 03_Projects/TD.TechnicalPlatform_v2.1/Tasks/TD.TechnicalKnowledge.Platform.v2.1-TASK-006_Connect-consumption-data-to-Costing-and-prepare-Technical-us.md
+- 03_Projects/VITAS Sharing/00_Project_Home.md
+- 03_Projects/VITAS Sharing/01_Management/Project_Profile.md
+- 03_Projects/VITAS Sharing/01_Management/Project_Plan.md
+- 03_Projects/VITAS Sharing/01_Management/Milestones.md
+- 03_Projects/VITAS Sharing/01_Management/Weekly_Status.md
+- 03_Projects/VITAS Sharing/02_Business/Business_Context.md
+- 03_Projects/VITAS Sharing/02_Business/BRD.md
+- 03_Projects/VITAS Sharing/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/VITAS Sharing/03_Process/AS_IS_Process.md
+- 03_Projects/VITAS Sharing/03_Process/TO_BE_Process.md
+- 03_Projects/VITAS Sharing/03_Process/Process_Gaps.md
+- 03_Projects/VITAS Sharing/04_Data/Data_Spec.md
+- 03_Projects/VITAS Sharing/04_Data/Data_Source_Inventory.md
+- 03_Projects/VITAS Sharing/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/VITAS Sharing/05_Requirements/Functional_Requirements.md
+- 03_Projects/VITAS Sharing/05_Requirements/Use_Cases.md
+- 03_Projects/VITAS Sharing/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/VITAS Sharing/06_Solution/Solution_Overview.md
+- 03_Projects/VITAS Sharing/06_Solution/Integration_Spec.md
+- 03_Projects/VITAS Sharing/07_Test_UAT/UAT_Plan.md
+- 03_Projects/VITAS Sharing/07_Test_UAT/UAT_Cases.md
+- 03_Projects/VITAS Sharing/07_Test_UAT/Defect_Log.md
+- 03_Projects/VITAS Sharing/08_Implementation/Implementation_Plan.md
+- 03_Projects/VITAS Sharing/08_Implementation/Deployment_Checklist.md
+- 03_Projects/VITAS Sharing/09_Operations/User_Manual.md
+- 03_Projects/VITAS Sharing/09_Operations/Support_and_Maintenance.md
+- 03_Projects/VITAS Sharing/10_Governance/Risks_Issues.md
+- 03_Projects/VITAS Sharing/10_Governance/Decision_Log.md
+- 03_Projects/VITAS Sharing/10_Governance/Dependencies.md
+- 03_Projects/VITAS Sharing/10_Governance/Change_Log.md
+- 03_Projects/VITAS Sharing/01_Management/Closeout_Summary.md
+- 03_Projects/VITAS Sharing/01_Management/Lessons_Learned.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/00_Project_Home.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/01_Management/Project_Profile.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/01_Management/Project_Plan.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/01_Management/Milestones.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/01_Management/Weekly_Status.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/02_Business/Business_Context.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/02_Business/BRD.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/02_Business/Scope_and_Business_Rules.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/03_Process/AS_IS_Process.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/03_Process/TO_BE_Process.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/03_Process/Process_Gaps.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/04_Data/Data_Spec.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/04_Data/Data_Source_Inventory.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/04_Data/Data_Quality_and_Traceability.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/05_Requirements/Functional_Requirements.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/05_Requirements/Use_Cases.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/05_Requirements/Acceptance_Criteria.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/06_Solution/Solution_Overview.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/06_Solution/Integration_Spec.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/07_Test_UAT/UAT_Plan.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/07_Test_UAT/UAT_Cases.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/07_Test_UAT/Defect_Log.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/08_Implementation/Implementation_Plan.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/08_Implementation/Deployment_Checklist.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/09_Operations/User_Manual.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/09_Operations/Support_and_Maintenance.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/10_Governance/Risks_Issues.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/10_Governance/Decision_Log.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/10_Governance/Dependencies.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/10_Governance/Change_Log.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/Tasks/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1-TASK-001_Review-repaired-block-with-project-owner.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/Tasks/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1-TASK-002_Confirm-missing-data-fields-and-workflow.md
+- 03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/Tasks/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1-TASK-003_Update-related-BRD-SOP-user-manual-after-confirmation.md
+
+## Initial Task Count Per Project
+
+- ACC.GRN-SupplierInvoiceBot.v2.3: 3
+- ACC.Inventory.Report.v1.0: 5
+- COSTING.AGENTIC.PLATFORM.v1.1: 8
+- CPD.Datamart.v1.1: 7
+- EXIM.ExpenseInvoices.Automation.v1.1: 0
+- FD.Datamart.v2.2: 4
+- FIN.AI.FINANCE.MANAGEMENT.v1.2: 6
+- HR.SSPFD.Workflow.v1.1: 6
+- MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1: 3
+- MER.MARKET.INTELLIGENCE.v1.1: 3
+- MER.PO.Commit.v1.1: 0
+- PPJ.AI.Hub.v2.1: 5
+- PPJ.ExpenseInvoices.v1.1: 6
+- PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0: 5
+- PPJ.InvoiceDownloader.v1.2: 3
+- PPJ.PERRI.Chatbot.v3.2: 5
+- PPJ.UIT.ACADEMIC.COLLABORATION.v1.1: 5
+- PPJxNUNOX.ScanTrial: 5
+- PPJxQSee.AI: 5
+- PPJxStratova.AI: 1
+- PROD.COWASH.v2.0: 3
+- PROD.IOT.CHuyenTreo.v1.0: 3
+- PUR.Adhoc.Indent.South.v1.0: 3
+- PUR.GDI.Automation.v1.0: 5
+- PUR.HM.LabelO.Processing.Automation.v1.0: 3
+- PUR.Inventory.Report.v2.1: 5
+- PUR.Material.Allocation.v1.1: 6
+- QC.Primo1D.RFID.Thread.v1.0: 3
+- SCP.SOURCING.CHATBOT.v2.3: 6
+- TD.TechnicalKnowledge.Platform.v2.1: 6
+- VITAS.Sharing.202606: 0
+- WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1: 3
+
+## Boards To Create
+
+- None
+
+## Root Notes To Update
+
+- Managed-block workspace links proposed: 30
+- Root notes will not be moved or renamed.
+- User-written content outside PPJ project knowledge markers will be preserved.
+
+## Memory Cards To Update
+
+- Project memory cards proposed for workspace-path metadata: 32
+
+## Registry Updates
+
+- Workspace overlay rows proposed: 32
+- Command Center workspace rows proposed: 32
+
+## Global Canvas Links To Update
+
+- Existing project cards receiving compact Project Board references: 0
+- No duplicate project cards will be created.
+
+## Hard Stops
+
+- None
+
+## Warnings
+
+- PUR.GDI.Automation.v1.0: Managed project knowledge block is missing; root note would be preserved
+- TD.TechnicalKnowledge.Platform.v2.1: Managed project knowledge block is missing; root note would be preserved
+
+## Estimated Total Files To Create
+
+- Markdown: 0
+- Canvas: 0
+- Total: 0
+
+## Apply Command
+
+Approval required:
+
+```bash
+python3 scripts/upgrade_ppj_project_workspaces.py --apply --all
+```

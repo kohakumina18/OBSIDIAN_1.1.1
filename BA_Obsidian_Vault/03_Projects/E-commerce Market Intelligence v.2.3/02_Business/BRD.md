@@ -1,0 +1,115 @@
+---
+type: "brd"
+project: "MER.MARKET.INTELLIGENCE.v1.1"
+source_project: "E-commerce Market Intelligence v.2.3.md"
+source_event: "Canonical naming populated"
+last_verified: "2026-07-13"
+confidence: "Strong"
+documentation_status: "Current Working Document"
+generated_by: "upgrade_ppj_project_workspaces.py"
+---
+# Business Requirements Document
+
+## Executive Summary
+
+Market/product intelligence using internal sales/PO/inventory and external market signals such as Quince data.
+
+## Business Problem
+
+Needs Confirmation from the current project evidence and responsible business users.
+
+## Objectives
+
+- Find product, fabric, fitting, color, material, and market opportunities for MER/business decisions.
+
+## Users / Stakeholders
+
+- Primary users: MER / Khoa / Phat / Nghia
+- Business owner: Needs Confirmation
+- BA / Coordination: Khoa
+
+## Current Process
+
+Needs Confirmation. See [[../03_Process/AS_IS_Process]].
+
+## Pain Points
+
+- Requires clean sales/PO/inventory data and clear definition of market signals.
+
+## Target Process
+
+See [[../03_Process/TO_BE_Process]]. Target flow remains subject to current-gate approval.
+
+## Scope
+
+- Analysis/dashboard/reporting project for product opportunity and market signal interpretation.
+
+## Out of Scope
+
+- Not pure market research detached from production capability or inventory reality.
+
+## Business Requirements
+
+- Deliver the verified project outcome without unapproved scope expansion.
+- Preserve review, exception, evidence and traceability controls appropriate to the project type.
+- Confirm any missing rule with the responsible business owner.
+
+## Business Rules
+
+See [[Scope_and_Business_Rules]]. Unconfirmed rules remain Needs Confirmation.
+
+## Data Requirements Summary
+
+See [[../04_Data/Data_Spec]] and [[../04_Data/Data_Source_Inventory]].
+
+## Integration Summary
+
+See [[../06_Solution/Integration_Spec]]. No direct transactional write is assumed.
+
+## AI / Automation Scope
+
+Applicable only where confirmed in the project memory, project note or approved update.
+
+## Human Validation
+
+Responsible users must validate outputs before business decisions or transactions when automation or AI is involved.
+
+## Exception / Fallback
+
+Unresolved exceptions must be logged, assigned and handled through an approved manual or system fallback.
+
+## KPI / Measurable Outcome
+
+Needs Confirmation.
+
+## Risks
+
+- Requires clean sales/PO/inventory data and clear definition of market signals.
+
+## Assumptions
+
+- Registry, memory and root project note remain the source of truth.
+- Unverified details are not treated as approved requirements.
+
+## Dependencies
+
+- Needs Confirmation
+
+## Decisions Required
+
+- Confirm business owner.
+- Confirm technical owner.
+- Confirm source of truth.
+- Confirm phase, scope, and next action.
+
+## Acceptance Summary
+
+See [[../05_Requirements/Acceptance_Criteria]]. Formal acceptance owner and evidence remain Needs Confirmation unless explicitly recorded.
+
+## Evidence Basis
+
+- Root project note: [[../E-commerce Market Intelligence v.2.3]]
+- Project memory: [[03_Projects/_Registry/Project_Memory/MER.MARKET.INTELLIGENCE.v1.1.memory]]
+- Source event: Canonical naming populated
+- Last verified: 2026-07-13
+- Confidence: Strong

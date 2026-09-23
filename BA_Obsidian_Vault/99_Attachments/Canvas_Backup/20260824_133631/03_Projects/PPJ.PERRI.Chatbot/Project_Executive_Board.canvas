@@ -1,0 +1,131 @@
+{
+  "nodes": [
+    {
+      "id": "lane-0",
+      "type": "group",
+      "x": 0,
+      "y": 500,
+      "width": 540,
+      "height": 1510,
+      "label": "BACKLOG"
+    },
+    {
+      "id": "lane-1",
+      "type": "group",
+      "x": 600,
+      "y": 500,
+      "width": 540,
+      "height": 1510,
+      "label": "THIS WEEK"
+    },
+    {
+      "id": "lane-2",
+      "type": "group",
+      "x": 1200,
+      "y": 500,
+      "width": 540,
+      "height": 1510,
+      "label": "IN PROGRESS"
+    },
+    {
+      "id": "lane-3",
+      "type": "group",
+      "x": 1800,
+      "y": 500,
+      "width": 540,
+      "height": 1510,
+      "label": "BLOCKED / WAITING"
+    },
+    {
+      "id": "lane-4",
+      "type": "group",
+      "x": 2400,
+      "y": 500,
+      "width": 540,
+      "height": 1510,
+      "label": "REVIEW / UAT"
+    },
+    {
+      "id": "lane-5",
+      "type": "group",
+      "x": 3000,
+      "y": 500,
+      "width": 540,
+      "height": 1510,
+      "label": "DONE"
+    },
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "PPJ.PERRI.Chatbot.v3.2\n\nDomain: Internal Chatbot & AI Platforms\nLifecycle: Production\nProgress: TBD\nGate: Permissioned production orchestration\nOutcome: Operate PPJ's conversational orchestrator for department agents, knowledge retrieval and controlled tool/API execution.\nTop Blocker: Action-agent permissions and audit\nNext Milestone: Maintain permission and approval controls\nPriority: Support\nLast Verified: 2026-08-24",
+      "x": 0,
+      "y": 0,
+      "width": 1140,
+      "height": 420
+    },
+    {
+      "id": "task-0",
+      "type": "file",
+      "file": "03_Projects/PPJ.PERRI.Chatbot/Tasks/PPJ.PERRI.Chatbot.v3.2-20260824-TASK-001_Maintain-permission-and-approval-controls.md",
+      "x": 30,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-1",
+      "type": "file",
+      "file": "03_Projects/PPJ.PERRI.Chatbot/Tasks/PPJ.PERRI.Chatbot.v3.2-20260824-TASK-002_Monitor-tool-execution-and-audit-logs.md",
+      "x": 30,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-2",
+      "type": "file",
+      "file": "03_Projects/PPJ.PERRI.Chatbot/Tasks/PPJ.PERRI.Chatbot.v3.2-TASK-001_Map-PERRI-access-roles-by-department.md",
+      "x": 3030,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-3",
+      "type": "file",
+      "file": "03_Projects/PPJ.PERRI.Chatbot/Tasks/PPJ.PERRI.Chatbot.v3.2-TASK-002_Define-approved-tool-catalog-with-PPJ-AI-Hub-v2-1.md",
+      "x": 3030,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-4",
+      "type": "file",
+      "file": "03_Projects/PPJ.PERRI.Chatbot/Tasks/PPJ.PERRI.Chatbot.v3.2-TASK-003_Confirm-Invoice-Downloader-integration-scope.md",
+      "x": 3030,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-5",
+      "type": "file",
+      "file": "03_Projects/PPJ.PERRI.Chatbot/Tasks/PPJ.PERRI.Chatbot.v3.2-TASK-004_Draft-fallback-and-escalation-rules.md",
+      "x": 3030,
+      "y": 1110,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-6",
+      "type": "file",
+      "file": "03_Projects/PPJ.PERRI.Chatbot/Tasks/PPJ.PERRI.Chatbot.v3.2-TASK-005_Define-audit-log-schema.md",
+      "x": 3030,
+      "y": 1290,
+      "width": 480,
+      "height": 140
+    }
+  ],
+  "edges": []
+}

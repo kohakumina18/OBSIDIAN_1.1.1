@@ -1,0 +1,209 @@
+{
+  "main": {
+    "id": "52e13f859167488d",
+    "type": "split",
+    "children": [
+      {
+        "id": "fcedcedd00b3df48",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "61e0ce4d2be14fd8",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Obsidian/PPJ-Business-English-ESL/SS-NOTES/SS4.25.07.2026.canvas",
+                "viewState": {
+                  "x": 17977.142524800536,
+                  "y": 13763.128738147327,
+                  "zoom": -1.5080353452265265
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "SS4.25.07.2026"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "412c227875dbb680",
+    "type": "split",
+    "children": [
+      {
+        "id": "4bc1f05b2b04ce6b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e9114c42494ef40c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "871bd332f68c65e8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "c1e40fdccf4669e3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "7cd75abcb15ee549",
+    "type": "split",
+    "children": [
+      {
+        "id": "4b239d674f9a54fa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9b3ed83680614e5c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Obsidian/PPJ-Business-English-ESL/SS-NOTES/SS4.25.07.2026.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "1534e9a9acf89a47",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Obsidian/PPJ-Business-English-ESL/SS-NOTES/SS4.25.07.2026.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "d22dd1df094b5346",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "7e8f167dac31ef2d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "16bf6b9cd8d4b09f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Obsidian/PPJ-Business-English-ESL/SS-NOTES/SS4.25.07.2026.canvas",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "61e0ce4d2be14fd8",
+  "lastOpenFiles": [
+    "Pasted image 20260825180948.png",
+    "Pasted image 20260825180915.png",
+    "Pasted image 20260825180804.png",
+    "Pasted image 20260825163052.png",
+    "Pasted image 20260822130823.png",
+    "PPJ-Business-English-ESL/SS-NOTES/SS4.25.07.2026.canvas",
+    "HAPPYDAYS-ESL/NOTES/NOTES.canvas",
+    "Obsidian/PPJ-Business-English-ESL/SS-NOTES/SS4.25.07.2026.canvas",
+    "Pasted image 20260820175619.png",
+    "Pasted image 20260814173057.png"
+  ]
+}

@@ -1,0 +1,87 @@
+---
+type: project_memory
+project_name: "MER.PO.Commit.v1.1"
+project_file: "MER.PO-Commit.md"
+project_code: "MER.PO.Commit.v1.1"
+department: "MER"
+cluster: "MER Workflow"
+phase: "Closed / Production Support"
+technical_members: ["Lam", "Uyen"]
+last_verified: "2026-07-13"
+confidence: "Strong"
+canonical_code: "MER.PO.Commit.v1.1"
+current_file: "MER.PO-Commit.md"
+primary_domain: "Merchandising"
+primary_capability: "Costing, quotation, market intelligence, customer workflows"
+secondary_domains: "Purchasing, Customer, Packing List"
+lifecycle: "Closed / Completed"
+progress: "TBD"
+current_gate: "Closed / Production Support"
+workspace_path: "03_Projects/MER.PO-Commit"
+project_home: "03_Projects/MER.PO-Commit/00_Project_Home.md"
+project_board: "03_Projects/MER.PO-Commit/Project_Executive_Board.canvas"
+task_folder: "03_Projects/MER.PO-Commit/Tasks"
+documentation_status: "Workspace Created"
+---
+
+# Project Memory: MER.PO.Commit.v1.1
+
+## One-Line Understanding
+
+MER automation to create OC template, NPL file, and Packing List from customer PO.
+
+## Current Outcome
+
+Support PO processing and reduce manual preparation work.
+
+## Latest Update Summary
+
+Status is closed with possible production support or enhancement for customer-specific logic such as Canadian Tire.
+
+## What This Project Is
+
+PO processing support automation for MER.
+
+## What This Project Is Not
+
+Not active new development unless enhancement is approved.
+
+## Key Users
+
+MER users.
+
+## Systems / Data
+
+Customer PO, OC template, NPL file, Packing List, customer-specific formats.
+
+## Known Risks / Blockers
+
+Changing customer PO formats and hard-coded logic.
+
+## Next Actions
+
+Maintain production support if needed; confirm before reopening.
+
+## Do Not Drift Rules
+
+- Confirm closed vs production support before claiming active development.
+
+## Source Links
+
+- [[MER.PO-Commit]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]
+
+<!-- PPJ_DOMAIN_GOVERNANCE_START -->
+## Domain Governance
+
+- Canonical Code: MER.PO.Commit.v1.1
+- Current File: [[MER.PO-Commit]]
+- Primary Domain: Merchandising
+- Secondary Domains: Purchasing, Customer, Packing List
+- Lifecycle: Closed / Completed
+- Progress: TBD
+- Current Gate: Closed / Production Support
+
+## Domain Do Not Drift Rules
+- Closed lifecycle remains inside Merchandising domain.
+<!-- PPJ_DOMAIN_GOVERNANCE_END -->

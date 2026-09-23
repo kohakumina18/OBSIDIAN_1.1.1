@@ -1,0 +1,384 @@
+﻿{
+    "nodes":  [
+                  {
+                      "id":  "2d4a18914efb",
+                      "type":  "group",
+                      "x":  -2240,
+                      "y":  50,
+                      "width":  3360,
+                      "height":  1750,
+                      "color":  "4",
+                      "label":  "DEVELOPMENT / STABILIZE"
+                  },
+                  {
+                      "id":  "a29c942bd94a",
+                      "type":  "group",
+                      "x":  -4160,
+                      "y":  30,
+                      "width":  1560,
+                      "height":  1770,
+                      "color":  "3",
+                      "label":  "ANALYSIS / DESIGN"
+                  },
+                  {
+                      "id":  "6d57e1a5f306",
+                      "type":  "group",
+                      "x":  2400,
+                      "y":  140,
+                      "width":  2800,
+                      "height":  853,
+                      "color":  "2",
+                      "label":  "PRODUCTION / SUPPORTING"
+                  },
+                  {
+                      "id":  "6054186acff0",
+                      "type":  "group",
+                      "x":  6210,
+                      "y":  0,
+                      "width":  720,
+                      "height":  720,
+                      "color":  "6",
+                      "label":  "TASKS / DOCS TO UPDATE"
+                  },
+                  {
+                      "id":  "a4694eb501c7",
+                      "type":  "group",
+                      "x":  5440,
+                      "y":  690,
+                      "width":  500,
+                      "height":  990,
+                      "color":  "1",
+                      "label":  "CLOSED / CANCELLED"
+                  },
+                  {
+                      "id":  "398fe74b5ba1",
+                      "type":  "group",
+                      "x":  5440,
+                      "y":  30,
+                      "width":  650,
+                      "height":  420,
+                      "color":  "1",
+                      "label":  "BLOCKED / DEPENDENCY"
+                  },
+                  {
+                      "id":  "6497a996074c6b30",
+                      "type":  "group",
+                      "x":  5440,
+                      "y":  -600,
+                      "width":  540,
+                      "height":  400,
+                      "label":  "Untitled group"
+                  },
+                  {
+                      "id":  "a18d605687ba",
+                      "type":  "group",
+                      "x":  5460,
+                      "y":  -580,
+                      "width":  500,
+                      "height":  360,
+                      "color":  "6",
+                      "label":  "EXTERNAL / 3RD PARTIES"
+                  },
+                  {
+                      "id":  "4c51761c23d0a507",
+                      "type":  "group",
+                      "x":  5450,
+                      "y":  80,
+                      "width":  340,
+                      "height":  230,
+                      "label":  "Untitled group"
+                  },
+                  {
+                      "id":  "3dba2b8d533f",
+                      "type":  "text",
+                      "text":  "PPJ Executive Board\n\nUse this canvas for weekly review:\n- blockers\n- active delivery\n- production\n- external collaboration",
+                      "x":  -430,
+                      "y":  -800,
+                      "width":  760,
+                      "height":  160,
+                      "color":  "6"
+                  },
+                  {
+                      "id":  "766950980bdf",
+                      "type":  "file",
+                      "file":  "03_Projects/MER Costing Intelligence.md",
+                      "x":  -4040,
+                      "y":  100,
+                      "width":  300,
+                      "height":  1500
+                  },
+                  {
+                      "id":  "775a486b1153",
+                      "type":  "file",
+                      "file":  "03_Projects/E-commerce Market Intelligence.md",
+                      "x":  -3680,
+                      "y":  100,
+                      "width":  300,
+                      "height":  1500
+                  },
+                  {
+                      "id":  "0de741faf2fc",
+                      "type":  "file",
+                      "file":  "03_Projects/Accounting Expense Invoices.md",
+                      "x":  -3320,
+                      "y":  100,
+                      "width":  300,
+                      "height":  1500
+                  },
+                  {
+                      "id":  "7171a0a773e9",
+                      "type":  "file",
+                      "file":  "03_Projects/Sourcing Chatbot v2.3.md",
+                      "x":  -2200,
+                      "y":  160,
+                      "width":  591,
+                      "height":  1305
+                  },
+                  {
+                      "id":  "de83ecd065bf",
+                      "type":  "file",
+                      "file":  "03_Projects/FD QR Hanger.md",
+                      "x":  -920,
+                      "y":  160,
+                      "width":  591,
+                      "height":  1324
+                  },
+                  {
+                      "id":  "d99aa728db14",
+                      "type":  "file",
+                      "file":  "03_Projects/ChuyÃ¡Â»Ân treo ver1.md",
+                      "x":  -261,
+                      "y":  156,
+                      "width":  591,
+                      "height":  1309
+                  },
+                  {
+                      "id":  "22f11122a9c2",
+                      "type":  "file",
+                      "file":  "03_Projects/PERRI Chatbot.md",
+                      "x":  2430,
+                      "y":  210,
+                      "width":  300,
+                      "height":  85
+                  },
+                  {
+                      "id":  "6afaadc420cc",
+                      "type":  "file",
+                      "file":  "03_Projects/GLPI Helpdesk AI Chatbot.md",
+                      "x":  2430,
+                      "y":  315,
+                      "width":  300,
+                      "height":  85
+                  },
+                  {
+                      "id":  "12a82f99d768",
+                      "type":  "file",
+                      "file":  "03_Projects/Invoice Downloader.md",
+                      "x":  2430,
+                      "y":  420,
+                      "width":  300,
+                      "height":  85
+                  },
+                  {
+                      "id":  "375ab4ec0a12",
+                      "type":  "file",
+                      "file":  "03_Projects/PO Commit.md",
+                      "x":  2430,
+                      "y":  525,
+                      "width":  300,
+                      "height":  85
+                  },
+                  {
+                      "id":  "d1f591bf5cf1",
+                      "type":  "file",
+                      "file":  "03_Projects/Accounting GRN Supplier Invoice Bot.md",
+                      "x":  2430,
+                      "y":  630,
+                      "width":  300,
+                      "height":  85
+                  },
+                  {
+                      "id":  "5c57fbe57a60",
+                      "type":  "file",
+                      "file":  "03_Projects/EXIM Expense Invoice Bot.md",
+                      "x":  2430,
+                      "y":  735,
+                      "width":  300,
+                      "height":  85
+                  },
+                  {
+                      "id":  "0d988b281716",
+                      "type":  "file",
+                      "file":  "03_Projects/Adhoc Indent miÃ¡Â»Ân Nam.md",
+                      "x":  2780,
+                      "y":  220,
+                      "width":  300,
+                      "height":  85
+                  },
+                  {
+                      "id":  "0a453ca345f3",
+                      "type":  "file",
+                      "file":  "03_Projects/CPD Datamart.md",
+                      "x":  2780,
+                      "y":  325,
+                      "width":  300,
+                      "height":  85
+                  },
+                  {
+                      "id":  "1abeeb381d5b",
+                      "type":  "file",
+                      "file":  "03_Projects/Purchasing Inventory Report.md",
+                      "x":  2780,
+                      "y":  430,
+                      "width":  300,
+                      "height":  85
+                  },
+                  {
+                      "id":  "879bf2b0edd3",
+                      "type":  "file",
+                      "file":  "03_Projects/NUNOX.md",
+                      "x":  3130,
+                      "y":  425,
+                      "width":  300,
+                      "height":  85
+                  },
+                  {
+                      "id":  "37db3e610fd1",
+                      "type":  "file",
+                      "file":  "03_Projects/Workshop Analysis.md",
+                      "x":  3130,
+                      "y":  530,
+                      "width":  300,
+                      "height":  85
+                  },
+                  {
+                      "id":  "019ac87aabcb",
+                      "type":  "file",
+                      "file":  "03_Projects/VITAS Sharing.md",
+                      "x":  3130,
+                      "y":  635,
+                      "width":  300,
+                      "height":  85
+                  },
+                  {
+                      "id":  "975bafa6b5bb",
+                      "type":  "file",
+                      "file":  "03_Projects/COWASH.md",
+                      "x":  3130,
+                      "y":  215,
+                      "width":  300,
+                      "height":  85
+                  },
+                  {
+                      "id":  "b2e4b10ae363",
+                      "type":  "file",
+                      "file":  "03_Projects/Primo1D RFID Thread.md",
+                      "x":  3130,
+                      "y":  320,
+                      "width":  300,
+                      "height":  85
+                  },
+                  {
+                      "id":  "f9a4063814d1",
+                      "type":  "file",
+                      "file":  "03_Projects/Stratova AI.md",
+                      "x":  5470,
+                      "y":  760,
+                      "width":  300,
+                      "height":  85
+                  },
+                  {
+                      "id":  "19abc39f27b6",
+                      "type":  "file",
+                      "file":  "03_Projects/AI Automation Workshop.md",
+                      "x":  5470,
+                      "y":  865,
+                      "width":  300,
+                      "height":  85
+                  },
+                  {
+                      "id":  "170dfce2cc8e",
+                      "type":  "file",
+                      "file":  "03_Projects/H\u0026M Label-O Processing.md",
+                      "x":  5470,
+                      "y":  950,
+                      "width":  300,
+                      "height":  85
+                  },
+                  {
+                      "id":  "0ff1c976d7d5",
+                      "type":  "file",
+                      "file":  "03_Projects/QSee.ai.md",
+                      "x":  5490,
+                      "y":  -510,
+                      "width":  300,
+                      "height":  85
+                  },
+                  {
+                      "id":  "22f7af45b804",
+                      "type":  "file",
+                      "file":  "03_Projects/Material Allocation.md",
+                      "x":  5470,
+                      "y":  100,
+                      "width":  300,
+                      "height":  85
+                  },
+                  {
+                      "id":  "9195fd6f9009",
+                      "type":  "file",
+                      "file":  "03_Projects/PUR.GDI Automation.md",
+                      "x":  5470,
+                      "y":  205,
+                      "width":  300,
+                      "height":  85
+                  },
+                  {
+                      "id":  "a101e1869d4c",
+                      "type":  "file",
+                      "file":  "03_Projects/HR Project.md",
+                      "x":  380,
+                      "y":  156,
+                      "width":  540,
+                      "height":  1348
+                  },
+                  {
+                      "id":  "c99ff7f8b6b0",
+                      "type":  "file",
+                      "file":  "03_Projects/_Tasks/20260624_2224_TASK_Material Allocation_Waiting WFX Save function.md",
+                      "x":  5470,
+                      "y":  215,
+                      "width":  300,
+                      "height":  90,
+                      "color":  "6"
+                  },
+                  {
+                      "id":  "fc3a3af935b1",
+                      "type":  "file",
+                      "file":  "03_Projects/CPD Fabric Database.md",
+                      "x":  -920,
+                      "y":  1520,
+                      "width":  591,
+                      "height":  234
+                  },
+                  {
+                      "id":  "63572c1582d9",
+                      "type":  "file",
+                      "file":  "03_Projects/_Tasks/20260624_2224_TASK_Sourcing VER2_Validate ColorName before AI pilot.md",
+                      "x":  6240,
+                      "y":  70,
+                      "width":  300,
+                      "height":  90,
+                      "color":  "6"
+                  }
+              ],
+    "edges":  [
+                  {
+                      "id":  "16a3257421bd",
+                      "fromNode":  "22f7af45b804",
+                      "fromSide":  "right",
+                      "toNode":  "c99ff7f8b6b0",
+                      "toSide":  "left",
+                      "label":  "task"
+                  }
+              ]
+}

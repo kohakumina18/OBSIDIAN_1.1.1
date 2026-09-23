@@ -1,0 +1,61 @@
+---
+type: project_memory
+project_name: "SCP.SOURCING.CHATBOT.v2.3"
+project_file: "SCP.SOURCING.CHATBOT.v2.3.md"
+project_code: "SCP.SOURCING.CHATBOT.v2.3"
+department: "Sourcing"
+cluster: "Sourcing AI / Data Platform"
+phase: "Development / Data Strategy Discussion"
+technical_members: ["Huy", "Khoa", "Linh", "Nghia"]
+progress: "80%"
+last_verified: "2026-06-28"
+confidence: "Strong"
+---
+
+# Project Memory: SCP.SOURCING.CHATBOT.v2.3
+
+## One-Line Understanding
+
+Consolidated Sourcing data platform and chatbot for supplier, material, fabric, trims, and sample lookup.
+
+## Current Outcome
+
+Build governed sourcing repository and chatbot search with clear metadata and data owner.
+
+## Latest Update Summary
+
+Team continues POC/data strategy discussion with Linh and Roberto, especially external sample volume before large import.
+
+## What This Project Is
+
+One consolidated project covering sourcing data repository, external samples, and chatbot lookup.
+
+## What This Project Is Not
+
+Do not split into separate Sourcing Repository, External Sample Management, and Sourcing Chatbot projects without approval.
+
+## Key Users
+
+Sourcing users and stakeholders managing supplier/material/sample data.
+
+## Systems / Data
+
+Supplier data, fabric, trims, external sample data, metadata, file/document storage, chatbot search.
+
+## Known Risks / Blockers
+
+Large external data volume, missing metadata minimum, missing data owner, naming convention risk.
+
+## Next Actions
+
+Finalize data strategy and minimum metadata before large import.
+
+## Do Not Drift Rules
+
+- Keep sourcing consolidated under `SCP.SOURCING.CHATBOT.v2.3`.
+- Do not create separate project notes for external samples without approval.
+
+## Source Links
+
+- [[SCP.SOURCING.CHATBOT.v2.3]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]

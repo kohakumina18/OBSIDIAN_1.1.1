@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "ACC.Inventory.Report.v1.0\n\nDomain: Finance / Accounting\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: CLOSED\nLifecycle: Closed\nStatus: Closed\nGate: Closed / no active follow-up\nOutcome: Preserve the completed Accounting inventory-report history with no active delivery.\nLast Verified: 2026-08-24",
+      "x": 0,
+      "y": 0,
+      "width": 720,
+      "height": 400
+    }
+  ],
+  "edges": []
+}

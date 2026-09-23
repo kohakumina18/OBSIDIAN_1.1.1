@@ -1,0 +1,299 @@
+{
+  "main": {
+    "id": "b94de414d52a689c",
+    "type": "split",
+    "children": [
+      {
+        "id": "6b06a32520889543",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "965c27265f9df892",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "03_Projects/Canvas/PPJ_Executive_Board_v2.canvas",
+                "viewState": {
+                  "x": 3000.3707400838866,
+                  "y": 718.9211746121186,
+                  "zoom": -1.425462682852881
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "PPJ_Executive_Board_v2"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f775e11a5decc30e",
+    "type": "split",
+    "children": [
+      {
+        "id": "27cba8e520bee3b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b6dac0ecc1c8d4e2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c2f45f4254578b47",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "aa2a1e27919db134",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 250.94140625
+  },
+  "right": {
+    "id": "100925a1dba5e390",
+    "type": "split",
+    "children": [
+      {
+        "id": "cbf209601c420216",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "63ccef404e2e39fb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "01_Daily_Notes/NOTES-JULU.canvas",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "c9db77f95c2bfe7b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "01_Daily_Notes/NOTES-JULU.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "dace61b07bd7ba0a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "cb298faa5f1882bb",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "311478c6b727e826",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01_Daily_Notes/NOTES-JULU.canvas",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "8e703aaf475bc47e",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "6d166da25c9070ae",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "2e9b300561c37cd8",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
+          },
+          {
+            "id": "df8a53ce0ea09ac6",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "01_Daily_Notes/NOTES-JULU.canvas"
+              },
+              "icon": "lucide-info",
+              "title": "File properties"
+            }
+          }
+        ],
+        "currentTab": 8
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-kanban:Create new board": false,
+      "templater-obsidian:Templater": false,
+      "githobs:Manage a github issue": false,
+      "audio-recorder:Start/stop recording": false,
+      "copilot:Open Copilot Chat": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "965c27265f9df892",
+  "lastOpenFiles": [
+    "03_Projects/PUR.Material.Allocation.v1.2/ALLOC.canvas",
+    "03_Projects/Canvas/PPJ_Executive_Board_v2.canvas",
+    "01_Daily_Notes/DOCS/ADMIN.WORK-TRAVEL.canvas",
+    "01_Daily_Notes/DOCS/WAREHOUSE.AWB-OCR/AAD.canvas",
+    "Pasted image 20260826093257.png",
+    "Pasted image 20260826093215.png",
+    "01_Daily_Notes/DOCS/WAREHOUSE.AWB-OCR/Untitled.md",
+    "01_Daily_Notes/DOCS/WAREHOUSE.AWB-OCR",
+    "03_Projects/Canvas/PPJ_EndToEnd_Process_Automation_Coverage.canvas",
+    "03_Projects/Canvas/PPJ_Portfolio.canvas",
+    "03_Projects/Canvas/PPJ_Roadmap_2026.canvas",
+    "03_Projects/Canvas/PPJ_Domain_Encapsulation.canvas",
+    "03_Projects/Canvas/PPJ_Data_Flow.canvas",
+    "03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3.md",
+    "03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3/Project_Executive_Board.md",
+    "03_Projects/Canvas/PPJ_Executive_Board.canvas",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_SYNC_LOG_20260824_163535_040563.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_SYNC_LOG_20260824_163530_483488.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_SYNC_LOG_20260824_163528_187797.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_SYNC_LOG_20260824_163525_130304.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_SYNC_LOG_20260824_163522_080097.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_SYNC_LOG_20260824_163514_518593.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_SYNC_LOG_20260824_163500_964335.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_SYNC_LOG_20260824_145714_603596.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_SYNC_LOG_20260824_145712_305766.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_SYNC_LOG_20260824_145707_004644.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_SYNC_LOG_20260824_144134_412363.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_SYNC_LOG_20260824_144130_605786.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_SYNC_LOG_20260824_144113_295812.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_SYNC_LOG_20260824_144113_249131.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_SYNC_LOG_20260824_144108_697344.md",
+    "99_Attachments/Canvas_Backup/20260824_144108_694352/03_Projects/Canvas/PPJ_Roadmap_2026.canvas",
+    "99_Attachments/Canvas_Backup/20260824_144108_694352/03_Projects/PUR.H&M Label-O Processing",
+    "99_Attachments/Canvas_Backup/20260824_144108_694352/03_Projects/Canvas",
+    "99_Attachments/Canvas_Backup/20260824_144108_694352/03_Projects",
+    "99_Attachments/Canvas_Backup/20260824_144108_694352",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_STATE_SYNC_BACKUP/20260824_144108_694352/03_Projects/_Registry/Project_Memory/PUR.HM.LabelO.Processing.Automation.v1.0.memory.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_STATE_SYNC_BACKUP/20260824_144108_694352/03_Projects/PUR.H&M Label-O Processing/10_Governance/Change_Log.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_STATE_SYNC_BACKUP/20260824_144108_694352/03_Projects/_Registry/Portfolio_Snapshots/PPJ_PORTFOLIO_SNAPSHOT_20260824.json",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_STATE_SYNC_BACKUP/20260824_144108_694352/03_Projects/PUR.H&M Label-O Processing/01_Management/Weekly_Status.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_STATE_SYNC_BACKUP/20260824_144108_694352/03_Projects/PUR.H&M Label-O Processing/01_Management/Project_Profile.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_STATE_SYNC_BACKUP/20260824_144108_694352/03_Projects/PUR.H&M Label-O Processing/01_Management/Project_Plan.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_STATE_SYNC_BACKUP/20260824_144108_694352/03_Projects/PUR.H&M Label-O Processing/01_Management/Milestones.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_STATE_SYNC_BACKUP/20260824_144108_694352/03_Projects/_Registry/Project_Memory",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_STATE_SYNC_BACKUP/20260824_144108_694352/03_Projects/_Registry/Portfolio_Snapshots",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_STATE_SYNC_BACKUP/20260824_144108_694352/03_Projects/_Registry/PPJ_PROJECT_UPDATE_LEDGER.md",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_STATE_SYNC_BACKUP/20260824_144108_694352/03_Projects/PUR.H&M Label-O Processing/10_Governance",
+    "99_Attachments/Audit/PPJ_EXECUTIVE_CANVAS_STATE_SYNC_BACKUP/20260824_144108_694352/03_Projects/PUR.H&M Label-O Processing/01_Management",
+    "Pasted image 20260819095113.png",
+    "Pasted image 20260814113327.png",
+    "Pasted image 20260814113111.png",
+    "Pasted image 20260814113003.png",
+    "Pasted image 20260811124609.png",
+    "Pasted image 20260811124546.png",
+    "Pasted image 20260811124457.png",
+    "Pasted image 20260811124204.png"
+  ]
+}

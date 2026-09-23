@@ -1,0 +1,35 @@
+---
+type: project_task
+project: "MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1"
+task_id: "MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1-TASK-003"
+title: "Update related BRD/SOP/user manual after confirmation"
+status: this_week
+priority: P1
+owner: "Needs Confirmation"
+due: ""
+source_event: "Canonical naming populated"
+created: 2026-08-07
+updated: 2026-08-07
+blocked_by: []
+depends_on: []
+acceptance: "Completion evidence is recorded and reviewed by the responsible owner."
+---
+
+# Update related BRD/SOP/user manual after confirmation
+
+## Project
+
+[[../00_Project_Home|MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1]]
+
+## Acceptance
+
+Completion evidence is recorded and reviewed by the responsible owner.
+
+## Source
+
+- Source event: Canonical naming populated
+- Imported source task: Project memory / root project note
+
+## Notes
+
+TBD

@@ -1,0 +1,88 @@
+---
+type: project_memory
+project_name: "MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1"
+project_file: "MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1.md"
+project_code: "MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1"
+department: "MER"
+cluster: "MER Invoice / Costing Audit"
+phase: "Stabilize"
+technical_members: ["Hien", "Khoa"]
+last_verified: "2026-07-13"
+confidence: "Strong"
+canonical_code: "MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1"
+current_file: "MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1.md"
+primary_domain: "Merchandising"
+primary_capability: "Costing, quotation, market intelligence, customer workflows"
+secondary_domains: "Accounting, Customer, Invoice Data"
+lifecycle: "UAT / Stabilization"
+progress: "TBD"
+current_gate: "Stabilize"
+workspace_path: "03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1"
+project_home: "03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/00_Project_Home.md"
+project_board: "03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/Project_Executive_Board.canvas"
+task_folder: "03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/Tasks"
+documentation_status: "Workspace Created"
+---
+
+# Project Memory: MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1
+
+## One-Line Understanding
+
+MER-led Chico's costing/invoice recheck and audit automation pilot.
+
+## Current Outcome
+
+Help MER review costing/invoice documents, find mismatch/missing data, and output audit reports.
+
+## Latest Update Summary
+
+Canonical naming confirms this is MER-led, not default Accounting project.
+
+## What This Project Is
+
+Audit/recheck/checking automation for Chico's costing and invoice workflow.
+
+## What This Project Is Not
+
+Not purely Accounting unless evidence proves scope transfer.
+
+## Key Users
+
+MER users reviewing Chico's costing and invoice evidence.
+
+## Systems / Data
+
+Sample invoice, costing files, source-of-truth fields, audit checklist, output report.
+
+## Known Risks / Blockers
+
+Need real sample invoice/costing, MER checklist, source of truth, and human review.
+
+## Next Actions
+
+Stabilize checklist and mismatch/warning report output.
+
+## Do Not Drift Rules
+
+- Keep MER-led classification unless evidence proves otherwise.
+- Require human review before official use.
+
+## Source Links
+
+- [[MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]
+
+<!-- PPJ_DOMAIN_GOVERNANCE_START -->
+## Domain Governance
+
+- Canonical Code: MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1
+- Current File: [[MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1]]
+- Primary Domain: Merchandising
+- Secondary Domains: Accounting, Customer, Invoice Data
+- Lifecycle: UAT / Stabilization
+- Progress: TBD
+- Current Gate: Stabilize
+
+## Domain Do Not Drift Rules
+- Do not classify as Finance; primary business scope is MER costing/commercial logic.
+<!-- PPJ_DOMAIN_GOVERNANCE_END -->

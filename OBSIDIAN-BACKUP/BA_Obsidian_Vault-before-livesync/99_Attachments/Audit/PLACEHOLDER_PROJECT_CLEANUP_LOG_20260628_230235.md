@@ -1,0 +1,21 @@
+﻿# Placeholder Project Cleanup Log - 20260628_230235
+
+- Backup: 03_Projects\_Registry\PPJ_PROJECT_MEMORY_INDEX.md
+- Backup: 03_Projects\_Registry\PPJ_PROJECT_REGISTRY.md
+- Backup: 03_Projects\_Registry\PPJ_PROJECT_UPDATE_LEDGER.md
+- Backup: scripts\Create-PPJProjectUpdateIntake.ps1
+- Backup: scripts\Update-PPJProjectKnowledgeFromIntake.ps1
+- Backup: scripts\Register-PPJProject.ps1
+- Backup: 03_Projects\_Registry\Project_Memory\PROJECT_NAME.v1.1.memory.md
+- Backup: 03_Projects\_Registry\Project_Update_Intake\PROJECT_NAME_INTAKE_20260628_224323.md
+- Backup: 03_Projects\PROJECT_NAME.v1.1.md
+- Archived dummy file: 03_Projects\_Registry\Project_Memory\PROJECT_NAME.v1.1.memory.md
+- Archived dummy file: 03_Projects\_Registry\Project_Update_Intake\PROJECT_NAME_INTAKE_20260628_224323.md
+- Archived dummy file: 03_Projects\PROJECT_NAME.v1.1.md
+- Removed PROJECT_NAME rows from PPJ_PROJECT_MEMORY_INDEX.md
+- Removed PROJECT_NAME rows from PPJ_PROJECT_REGISTRY.md
+- Patched scripts\Create-PPJProjectUpdateIntake.ps1: Inserted placeholder hard-fail guard
+- Patched scripts\Update-PPJProjectKnowledgeFromIntake.ps1: Inserted placeholder hard-fail guard
+- Patched scripts\Update-PPJProjectKnowledgeFromIntake.ps1: Inserted zero-events Apply guard
+- Patched scripts\Register-PPJProject.ps1: Inserted placeholder hard-fail guard
+- Wrote report: 10_Reports\PLACEHOLDER_PROJECT_CLEANUP_REPORT_20260628.md

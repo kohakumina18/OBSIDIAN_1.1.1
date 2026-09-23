@@ -1,0 +1,157 @@
+{
+  "nodes": [
+    {
+      "id": "ppj-board-metadata",
+      "type": "text",
+      "text": "PUR.Material.Allocation.v1.1 — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1",
+      "x": 0,
+      "y": -220,
+      "width": 760,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "ppj-exec-summary",
+      "type": "text",
+      "text": "PUR.Material.Allocation.v1.1\n\nDomain:\nSourcing / Purchasing\n\nLifecycle:\nUAT / Stabilization\n\nProgress:\n50%\n\nGate:\nFirst Flow Validated / Extended Exception Testing\n\nOutcome:\nValidated unreserve, destination-OC matching and allocation flow with controlled UAT foundation\n\nTop Blocker:\nNeeds Confirmation\n\nNext Milestone:\nTest many-to-one, one-to-many, partial allocation, insufficient quantity, Buyer Reference mismatch and duplicate allocation.\n\nLast Verified:\n2026-07-18",
+      "x": 0,
+      "y": -90,
+      "width": 760,
+      "height": 560,
+      "color": "4"
+    },
+    {
+      "id": "ppj-management-attention",
+      "type": "text",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Only Sewing and Embroidery scope is confirmed.\n- Quantity may change during transaction execution.\n- Rollback is undefined when unreserve succeeds but allocation fails.\n\nDecisions Needed\n- Confirm transaction rollback design.\n- Confirm auditability and user confirmation before posting.\n- Confirm whether additional material categories enter scope.\n\nExternal Dependencies\n- Needs Confirmation",
+      "x": 810,
+      "y": -90,
+      "width": 500,
+      "height": 560,
+      "color": "1"
+    },
+    {
+      "id": "ppj-lane-f3e573404df4",
+      "type": "group",
+      "x": 0,
+      "y": 560,
+      "width": 300,
+      "height": 1050,
+      "label": "BACKLOG",
+      "color": "1"
+    },
+    {
+      "id": "ppj-task-644fd8cd88d8",
+      "type": "text",
+      "text": "[[Tasks/PUR.Material.Allocation.v1.1-TASK-005_Define-audit-log-and-user-review-before-posting]]\n\nDefine audit log and user review before posting\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-c95849e6f30c",
+      "type": "text",
+      "text": "[[Tasks/PUR.Material.Allocation.v1.1-TASK-006_Prepare-UAT-with-Ms-Tuyet-and-Precision-users]]\n\nPrepare UAT with Ms. Tuyet and Precision users\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-19a03218e54e",
+      "type": "text",
+      "text": "[[Tasks/PUR.Material.Allocation.v1.1-TASK-001_TASK-Waiting-WFX-Save-function]]\n\nTASK - Waiting WFX Save function\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 1010,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-e118942c4b95",
+      "type": "text",
+      "text": "[[Tasks/PUR.Material.Allocation.v1.1-TASK-003_Test-many-to-one-one-to-many-partial-allocation-insufficient]]\n\nTest many-to-one, one-to-many, partial allocation, insufficient quantity, Buyer Reference mismatch a\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 1200,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-f6aef1b31b77",
+      "type": "text",
+      "text": "[[Tasks/PUR.Material.Allocation.v1.1-TASK-004_Test-transaction-failure-retry-and-define-rollback]]\n\nTest transaction failure/retry and define rollback\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 1390,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-8d767178b3a7",
+      "type": "group",
+      "x": 350,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "THIS WEEK",
+      "color": "2"
+    },
+    {
+      "id": "ppj-task-c209b3c22ddb",
+      "type": "text",
+      "text": "[[Tasks/PUR.Material.Allocation.v1.1-TASK-002_Material-Allocation-Exception-Testing-and-Transaction-Safety]]\n\nMaterial Allocation Exception Testing and Transaction Safety\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 370,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-bf81443bfcae",
+      "type": "group",
+      "x": 700,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "IN PROGRESS",
+      "color": "3"
+    },
+    {
+      "id": "ppj-lane-276d6ca3922f",
+      "type": "group",
+      "x": 1050,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BLOCKED / WAITING",
+      "color": "4"
+    },
+    {
+      "id": "ppj-lane-a82db70f445e",
+      "type": "group",
+      "x": 1400,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "REVIEW / UAT",
+      "color": "5"
+    },
+    {
+      "id": "ppj-lane-e782e7728e49",
+      "type": "group",
+      "x": 1750,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "DONE",
+      "color": "6"
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {
+      "project": "PUR.Material.Allocation.v1.1",
+      "board_type": "project_executive_kanban",
+      "last_verified": "2026-07-18"
+    }
+  }
+}
