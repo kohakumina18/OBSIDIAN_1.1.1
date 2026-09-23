@@ -3,7 +3,7 @@
     {
       "id": "ppj-board-metadata",
       "type": "text",
-      "text": "LOG_ExpenseInvoiceProcessing_v1.2.0 — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1",
+      "text": "LOG_ExpenseInvoiceProcessing_v1.2.2 — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1",
       "x": 0,
       "y": -220,
       "width": 760,
@@ -13,7 +13,7 @@
     {
       "id": "ppj-exec-summary",
       "type": "text",
-      "text": "LOG_ExpenseInvoiceProcessing_v1.2.0\n\nDomain:\nLogistics / EXIM\n\nLifecycle:\nUAT / Stabilization\n\nProgress:\nTBD\n\nGate:\nRegional rollout, tax rules and invoice validation\n\nOutcome:\nProcess Logistics / Import-Export expense invoices with regional and tax rules, invoice validation, user workflow and exception management.\n\nTop Blocker:\nMapping completeness\n\nNext Milestone:\nClose remaining defects and retest\n\nLast Verified:\n2026-09-18",
+      "text": "LOG_ExpenseInvoiceProcessing_v1.2.2\n\nDomain:\nLogistics / EXIM\n\nLifecycle:\nUAT / Stabilization\n\nProgress:\nTBD\n\nGate:\nRegional rollout, tax rules and invoice validation\n\nOutcome:\nProcess Logistics / Import-Export expense invoices with regional and tax rules, invoice validation, user workflow and exception management.\n\nTop Blocker:\nMapping completeness\n\nNext Milestone:\nClose remaining defects and retest\n\nLast Verified:\n2026-09-18",
       "x": 0,
       "y": -90,
       "width": 760,
@@ -23,7 +23,7 @@
     {
       "id": "ppj-management-attention",
       "type": "text",
-      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Mapping completeness\n- Real-data defects\n- Regional / tax-rule variation\n\nDecisions Needed\n- Confirm LOG_ExpenseInvoiceProcessing_v1.2.0 is the renamed successor of PPJ.ExpenseInvoices.v1.1 and whether the earlier Export exclusion still applies\n\nExternal Dependencies\n- None recorded",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Mapping completeness\n- Real-data defects\n- Regional / tax-rule variation\n\nDecisions Needed\n- Confirm LOG_ExpenseInvoiceProcessing_v1.2.2 is the renamed successor of PPJ.ExpenseInvoices.v1.1 and whether the earlier Export exclusion still applies\n\nExternal Dependencies\n- None recorded",
       "x": 810,
       "y": -90,
       "width": 500,
@@ -185,7 +185,7 @@
   "metadata": {
     "version": "1.0-1.0",
     "frontmatter": {
-      "project": "LOG_ExpenseInvoiceProcessing_v1.2.0",
+      "project": "LOG_ExpenseInvoiceProcessing_v1.2.2",
       "board_type": "project_executive_kanban",
       "last_verified": "2026-09-18"
     }

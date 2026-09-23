@@ -21,14 +21,14 @@ generated_by: "upgrade_ppj_project_workspaces.py"
 | Lifecycle | Closed |
 | Status | Closed |
 | Progress | TBD |
-| Gate | Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.0 |
+| Gate | Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.2 |
 | Priority | Closed |
 | Outcome | Preserve the closed legacy EXIM Expense Invoice Automation history separately from its successor. |
 | Source Event | PPJ-PORTFOLIO-SNAPSHOT-20260918 |
 
 ### Latest Update
 
-Replaced / Closed. LOG_ExpenseInvoiceProcessing_v1.2.0 is the current Logistics / Import-Export expense-invoice project; histories remain separate.
+Replaced / Closed. LOG_ExpenseInvoiceProcessing_v1.2.2 is the current Logistics / Import-Export expense-invoice project; histories remain separate.
 
 ### Current Risks
 
@@ -36,7 +36,7 @@ Replaced / Closed. LOG_ExpenseInvoiceProcessing_v1.2.0 is the current Logistics 
 
 ### Dependencies
 
-- Historical predecessor -> LOG_ExpenseInvoiceProcessing_v1.2.0
+- Historical predecessor -> LOG_ExpenseInvoiceProcessing_v1.2.2
 
 ### Next Actions
 

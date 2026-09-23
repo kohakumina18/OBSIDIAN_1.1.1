@@ -13,7 +13,7 @@
     {
       "id": "ppj-exec-summary",
       "type": "text",
-      "text": "EXIM.ExpenseInvoices.Automation.v1.1\n\nDomain:\nFinance / Accounting\n\nLifecycle:\nDONE / CLOSED\n\nProgress:\nTBD\n\nGate:\nReplaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.0\n\nOutcome:\nPreserve the closed legacy EXIM Expense Invoice Automation history separately from its successor.\n\nTop Blocker:\nNone recorded\n\nNext Milestone:\nNo active actions\n\nLast Verified:\n2026-09-18",
+      "text": "EXIM.ExpenseInvoices.Automation.v1.1\n\nDomain:\nFinance / Accounting\n\nLifecycle:\nDONE / CLOSED\n\nProgress:\nTBD\n\nGate:\nReplaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.2\n\nOutcome:\nPreserve the closed legacy EXIM Expense Invoice Automation history separately from its successor.\n\nTop Blocker:\nNone recorded\n\nNext Milestone:\nNo active actions\n\nLast Verified:\n2026-09-18",
       "x": 0,
       "y": -90,
       "width": 760,
@@ -23,7 +23,7 @@
     {
       "id": "ppj-management-attention",
       "type": "text",
-      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- None recorded\n\nDecisions Needed\n- None recorded\n\nExternal Dependencies\n- Historical predecessor -> LOG_ExpenseInvoiceProcessing_v1.2.0",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- None recorded\n\nDecisions Needed\n- None recorded\n\nExternal Dependencies\n- Historical predecessor -> LOG_ExpenseInvoiceProcessing_v1.2.2",
       "x": 810,
       "y": -90,
       "width": 500,

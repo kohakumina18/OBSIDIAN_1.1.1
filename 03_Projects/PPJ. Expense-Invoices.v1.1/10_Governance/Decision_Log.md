@@ -14,7 +14,7 @@ generated_by: "upgrade_ppj_project_workspaces.py"
 
 | Field | Value |
 | --- | --- |
-| Canonical Code | LOG_ExpenseInvoiceProcessing_v1.2.0 |
+| Canonical Code | LOG_ExpenseInvoiceProcessing_v1.2.2 |
 | Domain | Logistics / EXIM |
 | Delivery Stream | INTERNAL DEVELOPMENT |
 | Delivery Stage | UAT / PRE-GO-LIVE |

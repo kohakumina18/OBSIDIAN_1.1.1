@@ -1,6 +1,6 @@
 ---
 type: project_task
-project: "LOG_ExpenseInvoiceProcessing_v1.2.0"
+project: "LOG_ExpenseInvoiceProcessing_v1.2.2"
 task_id: "PPJ.ExpenseInvoices.v1.1-20260824-TASK-002"
 title: "Confirm mapping and frequent-supplier readiness"
 status: "backlog"

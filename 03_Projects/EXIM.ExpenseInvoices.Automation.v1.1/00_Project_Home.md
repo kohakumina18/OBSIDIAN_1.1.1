@@ -8,7 +8,7 @@ confidence: "Strong for business concept; project note needs confirmation"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
 lifecycle: "Closed"
-current_gate: "Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.0"
+current_gate: "Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.2"
 priority: "Closed"
 delivery_stage: "CLOSED"
 status: "Closed"
@@ -29,7 +29,7 @@ delivery_stream: "INTERNAL DEVELOPMENT"
 | Lifecycle | Closed |
 | Status | Closed |
 | Progress | TBD |
-| Current Gate | Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.0 |
+| Current Gate | Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.2 |
 | Priority | Closed |
 | Business Owner | Needs Confirmation |
 | Registration | Registered |
@@ -46,7 +46,7 @@ Preserve the closed legacy EXIM Expense Invoice Automation history separately fr
 
 ## Latest Update
 
-Replaced / Closed. LOG_ExpenseInvoiceProcessing_v1.2.0 is the current Logistics / Import-Export expense-invoice project; histories remain separate.
+Replaced / Closed. LOG_ExpenseInvoiceProcessing_v1.2.2 is the current Logistics / Import-Export expense-invoice project; histories remain separate.
 
 ## Risks / Blockers
 
@@ -58,7 +58,7 @@ Replaced / Closed. LOG_ExpenseInvoiceProcessing_v1.2.0 is the current Logistics 
 
 ## Dependencies
 
-- Historical predecessor -> LOG_ExpenseInvoiceProcessing_v1.2.0
+- Historical predecessor -> LOG_ExpenseInvoiceProcessing_v1.2.2
 
 ## Next Actions
 

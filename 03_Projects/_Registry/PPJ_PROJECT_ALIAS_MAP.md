@@ -13,7 +13,7 @@ Source event: `PPJ-PORTFOLIO-SNAPSHOT-20260918`. This overlay supersedes older c
 | PUR_GDIAutomation_v1.0.0 | PUR.GDI.Automation.v1.0; PPJ.PUR.GDI.API.AUTOMATION | PUR.GDI Automation.md | PUR.GDI Automation | Registered |
 | TD_TechnicalKnowledgePlatform_v2.1.0 | TD.TechnicalKnowledge.Platform.v2.1; TD.TechnicalPlatform_v2.1 | TD.TechnicalPlatform_v2.1.md | TD.TechnicalPlatform_v2.1 | Registered |
 | ADMIN_ExpenseManagement_v1.1.0 | Admin Expense Management.v1.1; Business Travel / Admin Expense Management | ADMIN_ExpenseManagement_v1.1.0.md | ADMIN_ExpenseManagement_v1.1.0 | Registered |
-| LOG_ExpenseInvoiceProcessing_v1.2.0 | PPJ.ExpenseInvoices.v1.1; PPJ. Expense-Invoices.v1.1; Accounting Expense Invoices | PPJ. Expense-Invoices.v1.1.md | PPJ. Expense-Invoices.v1.1 | Registered |
+| LOG_ExpenseInvoiceProcessing_v1.2.2 | PPJ.ExpenseInvoices.v1.1; PPJ. Expense-Invoices.v1.1; Accounting Expense Invoices | PPJ. Expense-Invoices.v1.1.md | PPJ. Expense-Invoices.v1.1 | Registered |
 | PUR_MaterialAllocation_v1.1.0 | PUR.Material.Allocation.v1.1; PUR.Material.Allocation.v1.2; Material Allocation | PUR.Material.Allocation.v1.2.md | PUR.Material.Allocation.v1.2 | Registered |
 | MER_MarketIntelligence_v1.1.0 | MER.MARKET.INTELLIGENCE.v1.1; E-commerce Market Intelligence | E-commerce Market Intelligence v.2.3.md | E-commerce Market Intelligence v.2.3 | Registered |
 | MER_InvoiceDataRecheck_v1.1.0 | MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1; ACC.CHICOS.INVOICE.RECHECK-AUDIT.v1.1 | MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1.md | MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1 | Registered |

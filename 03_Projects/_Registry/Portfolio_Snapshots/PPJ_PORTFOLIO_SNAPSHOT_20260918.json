@@ -1,6 +1,6 @@
 {
-  "source_event": "PPJ-PORTFOLIO-SNAPSHOT-20260918",
-  "last_verified": "2026-09-18",
+  "source_event": "PPJ-EXECUTIVE-CANVAS-SYNC-20260923_134955",
+  "last_verified": "2026-09-23",
   "portfolio_maturity": "Stage 3 - Controlled Delivery / Early Scale",
   "naming_standard": "<DEPARTMENT>_<APPLICATION>_v<MAJOR>.<MINOR>.<PATCH>",
   "strategic_direction": [
@@ -12,7 +12,7 @@
   "governance_exceptions": [
     "`CPD In-house Pattern Generation`: internal prototype/evaluation and benchmark for the Stratova PoC; canonical code is not confirmed; no canonical root project was created.",
     "`WH_AWBExtraction_v1.1.0` and `ADMIN_ExpenseManagement_v1.1.0`: registered by the 2026-09-18 baseline (domains Warehouse and Administration added to the domain model); root notes, memory cards and workspaces were created through `register_ppj_project.py` with owners, technical members and dates still Needs Confirmation.",
-    "`LOG_ExpenseInvoiceProcessing_v1.2.0`: mapped as the renamed successor of `PPJ.ExpenseInvoices.v1.1` under Logistics / EXIM; confirm the mapping and whether the earlier Export exclusion still applies.",
+    "`LOG_ExpenseInvoiceProcessing_v1.2.2`: mapped as the renamed successor of `PPJ.ExpenseInvoices.v1.1` under Logistics / EXIM; confirm the mapping and whether the earlier Export exclusion still applies.",
     "`PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0` and `PPJxNUNOX.ScanTrial`: not listed in the 2026-09-18 baseline; legacy canonical codes retained until they are named and confirmed."
   ],
   "discovery": [
@@ -284,7 +284,7 @@
       "link_target": ""
     },
     {
-      "code": "LOG_ExpenseInvoiceProcessing_v1.2.0",
+      "code": "LOG_ExpenseInvoiceProcessing_v1.2.2",
       "domain": "Logistics / EXIM",
       "lifecycle": "Regional Rollout / UAT",
       "gate": "Regional rollout, tax rules and invoice validation",
@@ -304,7 +304,7 @@
         "Go-live support readiness"
       ],
       "decisions": [
-        "Confirm LOG_ExpenseInvoiceProcessing_v1.2.0 is the renamed successor of PPJ.ExpenseInvoices.v1.1 and whether the earlier Export exclusion still applies"
+        "Confirm LOG_ExpenseInvoiceProcessing_v1.2.2 is the renamed successor of PPJ.ExpenseInvoices.v1.1 and whether the earlier Export exclusion still applies"
       ],
       "dependencies": [],
       "capability": "Expense-invoice intake, mapping, validation, tax/regional rules and exception handling for Logistics / EXIM and regional rollout.",
@@ -326,7 +326,9 @@
         "PPJ. Expense-Invoices.v1.1",
         "Accounting Expense Invoices"
       ],
-      "link_target": ""
+      "link_target": "",
+      "last_verified": "2026-09-23",
+      "source_event": "PPJ-EXECUTIVE-CANVAS-SYNC-20260923_134955"
     },
     {
       "code": "PUR_MaterialAllocation_v1.1.0",
@@ -1284,15 +1286,15 @@
       "code": "EXIM.ExpenseInvoices.Automation.v1.1",
       "domain": "Finance / Accounting",
       "lifecycle": "Closed",
-      "gate": "Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.0",
+      "gate": "Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.2",
       "priority": "Closed",
       "outcome": "Preserve the closed legacy EXIM Expense Invoice Automation history separately from its successor.",
-      "latest": "Replaced / Closed. LOG_ExpenseInvoiceProcessing_v1.2.0 is the current Logistics / Import-Export expense-invoice project; histories remain separate.",
+      "latest": "Replaced / Closed. LOG_ExpenseInvoiceProcessing_v1.2.2 is the current Logistics / Import-Export expense-invoice project; histories remain separate.",
       "next_actions": [],
       "risks": [],
       "decisions": [],
       "dependencies": [
-        "Historical predecessor -> LOG_ExpenseInvoiceProcessing_v1.2.0"
+        "Historical predecessor -> LOG_ExpenseInvoiceProcessing_v1.2.2"
       ],
       "capability": "",
       "progress": "TBD",

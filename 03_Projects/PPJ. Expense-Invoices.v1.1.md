@@ -4,7 +4,7 @@ project_name: "Accounting Expense Invoices"
 cluster: "Automation"
 status: "Active"
 priority: "P4"
-project_code: "LOG_ExpenseInvoiceProcessing_v1.2.0"
+project_code: "LOG_ExpenseInvoiceProcessing_v1.2.2"
 department: "EXIM / Accounting"
 object: "Inferred from filename"
 project_characteristic: "internal automation"
@@ -27,18 +27,32 @@ source_files: []
 phase_canvas_group: "STABILIZE / UAT"
 last_weekly_update: "2026-06-29 to 2026-07-05"
 weekly_rank: "4"
-canonical_code: "LOG_ExpenseInvoiceProcessing_v1.2.0"
+canonical_code: "LOG_ExpenseInvoiceProcessing_v1.2.2"
 current_file: "PPJ. Expense-Invoices.v1.1.md"
 primary_domain: "Logistics / EXIM"
 lifecycle: "Regional Rollout / UAT"
 current_gate: "Regional rollout, tax rules and invoice validation"
-last_verified: "2026-09-18"
-source_event: "PPJ-PORTFOLIO-SNAPSHOT-20260918"
+last_verified: "2026-09-23"
+source_event: "PPJ-EXECUTIVE-CANVAS-SYNC-20260923_134955"
 dependencies: ["Supplier Master -> Supplier Mapping -> Department/Factory and Ledger Mapping -> Validation -> Expense Invoice Entry -> Monitoring"]
 delivery_stage: "UAT / PRE-GO-LIVE"
 stage_entered_date: "Needs Confirmation"
 delivery_stream: "INTERNAL DEVELOPMENT"
 ---
+
+<!-- PPJ_EXECUTIVE_DELIVERY_STAGE_START -->
+## Executive Delivery State
+
+| Field | Current |
+|---|---|
+| Delivery Stream | INTERNAL DEVELOPMENT |
+| Delivery Stage | UAT / PRE-GO-LIVE |
+| Detailed Lifecycle | Regional Rollout / UAT |
+| Status | Active |
+| Current Gate | Regional rollout, tax rules and invoice validation |
+| Stage Entered | Needs Confirmation |
+| Last Verified | 2026-09-23 |
+<!-- PPJ_EXECUTIVE_DELIVERY_STAGE_END -->
 
 # Accounting Expense Invoices
 
@@ -313,7 +327,7 @@ Do not create PPJ.Expense-Invoices.v2.0.md yet.
 
 | Field | Value |
 | --- | --- |
-| Canonical Code | LOG_ExpenseInvoiceProcessing_v1.2.0 |
+| Canonical Code | LOG_ExpenseInvoiceProcessing_v1.2.2 |
 | Legacy Code(s) | PPJ.ExpenseInvoices.v1.1; PPJ. Expense-Invoices.v1.1; Accounting Expense Invoices |
 | Primary Domain | Logistics / EXIM |
 | Delivery Stream | INTERNAL DEVELOPMENT |
@@ -349,7 +363,7 @@ Current Logistics / Import-Export expense-invoice project (Active Regional Rollo
 
 ## Decisions Needed
 
-- Confirm LOG_ExpenseInvoiceProcessing_v1.2.0 is the renamed successor of PPJ.ExpenseInvoices.v1.1 and whether the earlier Export exclusion still applies
+- Confirm LOG_ExpenseInvoiceProcessing_v1.2.2 is the renamed successor of PPJ.ExpenseInvoices.v1.1 and whether the earlier Export exclusion still applies
 
 ## Dependencies
 

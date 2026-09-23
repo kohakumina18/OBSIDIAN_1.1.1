@@ -2,13 +2,13 @@
 type: project_memory
 project_name: "PPJ.ExpenseInvoices.v1.1"
 project_file: "PPJ. Expense-Invoices.v1.1.md"
-project_code: "LOG_ExpenseInvoiceProcessing_v1.2.0"
+project_code: "LOG_ExpenseInvoiceProcessing_v1.2.2"
 department: "Accounting / related departments"
 cluster: "Expense Invoice Platform"
 phase: "UAT / PRE-GO-LIVE"
-last_verified: "2026-09-18"
+last_verified: "2026-09-23"
 confidence: "Strong"
-canonical_code: "LOG_ExpenseInvoiceProcessing_v1.2.0"
+canonical_code: "LOG_ExpenseInvoiceProcessing_v1.2.2"
 current_file: "PPJ. Expense-Invoices.v1.1.md"
 primary_domain: "Logistics / EXIM"
 primary_capability: "Financial analysis, reporting, invoices, GRN"
@@ -20,7 +20,7 @@ status: "Active"
 current_outcome: "Process Logistics / Import-Export expense invoices with regional and tax rules, invoice validation, user workflow and exception management."
 latest_update_summary: "Current Logistics / Import-Export expense-invoice project (Active Regional Rollout / UAT). Focus: regional rollout, tax rules, invoice validation, user workflow and exception management. Replaces the ambiguity created by older EXIM expense-invoice names. Prior guidance (departments/factories except Export; EXIM-first historical) is preserved in project history."
 known_risks: "Mapping completeness | Real-data defects | Regional / tax-rule variation | Go-live support readiness"
-decisions_needed: "Confirm LOG_ExpenseInvoiceProcessing_v1.2.0 is the renamed successor of PPJ.ExpenseInvoices.v1.1 and whether the earlier Export exclusion still applies"
+decisions_needed: "Confirm LOG_ExpenseInvoiceProcessing_v1.2.2 is the renamed successor of PPJ.ExpenseInvoices.v1.1 and whether the earlier Export exclusion still applies"
 next_actions: "Close remaining defects and retest | Confirm mapping and frequent-supplier readiness | Complete production-readiness review and go-live decision | Confirm regional and tax rules for each rollout region"
 priority: "P4"
 recent_update_events: ["PPJ-PORTFOLIO-SNAPSHOT-20260918"]
@@ -31,18 +31,32 @@ project_home: "03_Projects/PPJ. Expense-Invoices.v1.1/00_Project_Home.md"
 project_board: "03_Projects/PPJ. Expense-Invoices.v1.1/Project_Executive_Board.canvas"
 task_folder: "03_Projects/PPJ. Expense-Invoices.v1.1/Tasks"
 documentation_status: "Workspace Created"
-source_event: "PPJ-PORTFOLIO-SNAPSHOT-20260918"
+source_event: "PPJ-EXECUTIVE-CANVAS-SYNC-20260923_134955"
 delivery_stage: "UAT / PRE-GO-LIVE"
 stage_entered_date: "Needs Confirmation"
 delivery_stream: "INTERNAL DEVELOPMENT"
 ---
+
+<!-- PPJ_EXECUTIVE_DELIVERY_STAGE_START -->
+## Executive Delivery State
+
+| Field | Current |
+|---|---|
+| Delivery Stream | INTERNAL DEVELOPMENT |
+| Delivery Stage | UAT / PRE-GO-LIVE |
+| Detailed Lifecycle | Regional Rollout / UAT |
+| Status | Active |
+| Current Gate | Regional rollout, tax rules and invoice validation |
+| Stage Entered | Needs Confirmation |
+| Last Verified | 2026-09-23 |
+<!-- PPJ_EXECUTIVE_DELIVERY_STAGE_END -->
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
 ## Current Portfolio State
 
 | Field | Value |
 | --- | --- |
-| Canonical Code | LOG_ExpenseInvoiceProcessing_v1.2.0 |
+| Canonical Code | LOG_ExpenseInvoiceProcessing_v1.2.2 |
 | Legacy Code(s) | PPJ.ExpenseInvoices.v1.1; PPJ. Expense-Invoices.v1.1; Accounting Expense Invoices |
 | Primary Domain | Logistics / EXIM |
 | Delivery Stream | INTERNAL DEVELOPMENT |
@@ -78,7 +92,7 @@ Current Logistics / Import-Export expense-invoice project (Active Regional Rollo
 
 ## Decisions Needed
 
-- Confirm LOG_ExpenseInvoiceProcessing_v1.2.0 is the renamed successor of PPJ.ExpenseInvoices.v1.1 and whether the earlier Export exclusion still applies
+- Confirm LOG_ExpenseInvoiceProcessing_v1.2.2 is the renamed successor of PPJ.ExpenseInvoices.v1.1 and whether the earlier Export exclusion still applies
 
 ## Dependencies
 

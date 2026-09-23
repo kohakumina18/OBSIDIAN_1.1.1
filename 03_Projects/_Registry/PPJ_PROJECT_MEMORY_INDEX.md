@@ -13,7 +13,7 @@ Source event: `PPJ-PORTFOLIO-SNAPSHOT-20260918`. This overlay supersedes older c
 | PUR_GDIAutomation_v1.0.0 | [[PUR.GDI.Automation.v1.0.memory]] | [[PUR.GDI Automation]] | Sourcing / Purchasing | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development / WFX API Integration | Active | P3 | WFX API integration and GDI data-entry workflow | Give Purchasing end-to-end package-dispatch tracking through GDI and provide API capability for automated/assisted GDI data entry while preserving WFX transaction control, validation, confirmation and audit. | 2026-09-18 |
 | TD_TechnicalKnowledgePlatform_v2.1.0 | [[TD.TechnicalKnowledge.Platform.v2.1.memory]] | [[TD.TechnicalPlatform_v2.1]] | Fabric / Textiles Technique | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Sync Validation & Stabilization | Active | P5 | Sync validation and canonical technical model | Technical Data Backbone for Pattern, BOM, Consumption, Construction, documents and historical records; upstream source for Costing, Sew Agent, BOM, Consumption, Pattern, Technical Search and Similar Style. | 2026-09-18 |
 | ADMIN_ExpenseManagement_v1.1.0 | [[ADMIN_ExpenseManagement_v1.1.0.memory]] | [[ADMIN_ExpenseManagement_v1.1.0]] | Administration | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Active / Requirement Refinement / UAT Preparation | Active | P6 | Multi-traveler request model, end-to-end lifecycle and UAT preparation | Standardize Administration business-travel and expense-management workflows: Request -> Approval -> Business Trip -> Advance -> Expense -> Settlement. | 2026-09-18 |
-| LOG_ExpenseInvoiceProcessing_v1.2.0 | [[PPJ.ExpenseInvoices.v1.1.memory]] | [[PPJ. Expense-Invoices.v1.1]] | Logistics / EXIM | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Regional Rollout / UAT | Active | P4 | Regional rollout, tax rules and invoice validation | Process Logistics / Import-Export expense invoices with regional and tax rules, invoice validation, user workflow and exception management. | 2026-09-18 |
+| LOG_ExpenseInvoiceProcessing_v1.2.2 | [[PPJ.ExpenseInvoices.v1.1.memory]] | [[PPJ. Expense-Invoices.v1.1]] | Logistics / EXIM | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Regional Rollout / UAT | Active | P4 | Regional rollout, tax rules and invoice validation | Process Logistics / Import-Export expense invoices with regional and tax rules, invoice validation, user workflow and exception management. | 2026-09-18 |
 | PUR_MaterialAllocation_v1.1.0 | [[PUR.Material.Allocation.v1.1.memory]] | [[PUR.Material.Allocation.v1.2]] | Sourcing / Purchasing | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Validation / Stabilization | Active | P7 | Transaction reliability and exception control | Validate controlled reallocation of surplus material across eligible OCs: Material Requirement -> Availability -> Allocation -> Validation -> WFX Transaction. | 2026-09-18 |
 | MER_MarketIntelligence_v1.1.0 | [[MER.MARKET.INTELLIGENCE.v1.1.memory]] | [[E-commerce Market Intelligence v.2.3]] | Merchandising | INTERNAL DEVELOPMENT | ANALYSIS | Active Intelligence | Active | Medium | Market and customer intelligence delivery | Turn market, customer, competitor, trend and demand signals into business intelligence for Merchandising. | 2026-09-18 |
 | MER_InvoiceDataRecheck_v1.1.0 | [[MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1.memory]] | [[MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1]] | Merchandising | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Active | Active | Medium | Multi-customer invoice, cost and data checking | Cross-check costing data, commercial cost, invoice data and customer rules, route exceptions to user review. | 2026-09-18 |
@@ -40,7 +40,7 @@ Source event: `PPJ-PORTFOLIO-SNAPSHOT-20260918`. This overlay supersedes older c
 | PUR_HMLabelProcessing_v1.0.0 | [[PUR.HM.LabelO.Processing.Automation.v1.0.memory]] | [[PUR.H&M Label-O Processing]] | Sourcing / Purchasing | INTERNAL DEVELOPMENT | ANALYSIS | On Hold | On Hold | Hold | Business priority paused | Hold H&M Label-O processing automation pending a scalable business case; name shortened to the actual process. | 2026-09-18 |
 | ACC_InventoryReport_v1.0.0 | [[ACC.Inventory.Report.v1.0.memory]] | [[ACC.Inventory.Report.v1.0]] | Finance / Accounting | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed | Closed / no active follow-up | Preserve the completed Accounting inventory-report history with no active delivery. | 2026-09-18 |
 | MER_POCommit_v1.1.0 | [[MER.PO.Commit.v1.1.memory]] | [[MER.PO-Commit]] | Merchandising | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed | Closed | Preserve the closed PO Commit project history (Customer Order -> MER PO Creation; ~70-80% of customer scenarios covered). | 2026-09-18 |
-| EXIM.ExpenseInvoices.Automation.v1.1 | [[EXIM.ExpenseInvoices.Automation.v1.1.memory]] | [[EXIM.ExpenseInvoices.Automation.v1.1]] | Finance / Accounting | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed | Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.0 | Preserve the closed legacy EXIM Expense Invoice Automation history separately from its successor. | 2026-09-18 |
+| EXIM.ExpenseInvoices.Automation.v1.1 | [[EXIM.ExpenseInvoices.Automation.v1.1.memory]] | [[EXIM.ExpenseInvoices.Automation.v1.1]] | Finance / Accounting | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed | Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.2 | Preserve the closed legacy EXIM Expense Invoice Automation history separately from its successor. | 2026-09-18 |
 | AI.Automation.Workshop.202606 | [[AI.Automation.Workshop.202606.memory]] | [[AI Automation Workshop]] | External Collaboration | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed | Closed event | Preserve the June 2026 AI Automation Workshop record. | 2026-09-18 |
 | AI.Automation.Workshop.Analysis.202606 | [[AI.Automation.Workshop.Analysis.202606.memory]] | [[Workshop Analysis]] | External Collaboration | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed | Closed analysis | Preserve the June 2026 workshop analysis record. | 2026-09-18 |
 | VITAS.Sharing.202606 | [[VITAS.Sharing.202606.memory]] | [[VITAS Sharing]] | External Collaboration | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed | Closed event | Preserve the June 2026 VITAS sharing record. | 2026-09-18 |
@@ -135,39 +135,40 @@ Last updated: 2026-07-13
 
 | Project | Delivery Stream | Delivery Stage | Lifecycle | Status | Gate | Last Verified |
 |---|---|---|---|---|---|---|
-| ACC.GRN-SupplierInvoiceBot.v2.3 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production Support | Support | Operational stability and exceptions |  |
-| ACC.Inventory.Report.v1.0 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed / no active follow-up |  |
+| ACC_GRNSupplierInvoiceBot_v2.3.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production Support | Support | Operational stability and exceptions |  |
+| ACC_InventoryReport_v1.0.0 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed / no active follow-up |  |
+| ADMIN_ExpenseManagement_v1.1.0 | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Active / Requirement Refinement / UAT Preparation | Active | Multi-traveler request model, end-to-end lifecycle and UAT preparation |  |
 | AI.Automation.Workshop.202606 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed event |  |
 | AI.Automation.Workshop.Analysis.202606 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed analysis |  |
-| Admin Expense Management.v1.1 | INTERNAL DEVELOPMENT | ANALYSIS | Workflow Demo Completed / Requirement Refinement | Active | Expand demonstrated travel request into end-to-end expense and settlement requirements |  |
-| COSTING.AGENTIC.PLATFORM.v1.1 | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development | Active | Sew v1.2 and Wash Agent development |  |
-| CPD.Datamart.v1.1 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Maintenance | Support | Operational maintenance |  |
-| EXIM.ExpenseInvoices.Automation.v1.1 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed; succeeded by PPJ.ExpenseInvoices.v1.1 |  |
-| FD.Datamart.v2.2 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Support | Support | Operational support |  |
-| FIN.AI.FINANCE.MANAGEMENT.v1.2 | INTERNAL DEVELOPMENT | DESIGN | Design | Active | WS2 Rule Catalogue and Databricks access; then WS3 source discovery | 2026-08-24 |
-| HR.SSPFD.Workflow.v1.1 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Production rollout and data-quality monitoring |  |
-| MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1 | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Active | Active | Chico's rule validation |  |
-| MER.MARKET.INTELLIGENCE.v1.1 | INTERNAL DEVELOPMENT | ANALYSIS | Active Intelligence | Active | Commercial intelligence delivery |  |
-| MER.PO.Commit.v1.1 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed |  |
-| PPJ.AI.Hub.v2.1 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Internal Production Platform | Active | Platform operations |  |
-| PPJ.ExpenseInvoices.v1.1 | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | UAT / Pre-Go-Live | Active | Production Readiness / Go-Live |  |
+| AI_ApplicationHub_v2.1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Internal Production Platform | Active | Platform operations |  |
+| AI_PERRIPlatform_v3.2.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Permissioned production orchestration |  |
+| CPD_VisualSampleDatamart_v1.1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Maintenance | Support | Operational maintenance |  |
+| EXIM.ExpenseInvoices.Automation.v1.1 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.2 |  |
+| EXT_AcademicCollaboration_v1.1.0 | EXTERNAL DEVELOPMENT | DESIGN | Active / Problem Framing | External Collaboration | Academic problem package |  |
+| FAB_FabricDatamart_v2.2.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Support | Support | Operational support |  |
+| FIN_FinanceManagement_v1.2.0 | INTERNAL DEVELOPMENT | DESIGN | Strategic Active | Active | WS2 OC / Cost Control and WS3 Factory Performance |  |
+| FIN_InvoiceDownloader_v1.2.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Operational reliability |  |
+| HR_EmployeeDataPlatform_v1.1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production / Expansion | Active | Production rollout and data-quality monitoring |  |
+| LOG_ExpenseInvoiceProcessing_v1.2.2 | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Regional Rollout / UAT | Active | Regional rollout, tax rules and invoice validation | 2026-09-23 |
+| MER_CostingAgenticPlatform_v1.1.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development | Active | Sew Agent fixes and Wash Agent development |  |
+| MER_InvoiceDataRecheck_v1.1.0 | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Active | Active | Multi-customer invoice, cost and data checking |  |
+| MER_MarketIntelligence_v1.1.0 | INTERNAL DEVELOPMENT | ANALYSIS | Active Intelligence | Active | Market and customer intelligence delivery |  |
+| MER_POCommit_v1.1.0 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed |  |
 | PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Maintenance | Support | IT helpdesk maintenance |  |
-| PPJ.InvoiceDownloader.v1.2 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Operational reliability |  |
-| PPJ.PERRI.Chatbot.v3.2 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Permissioned production orchestration |  |
-| PPJ.UIT.ACADEMIC.COLLABORATION.v1.1 | EXTERNAL DEVELOPMENT | DESIGN | Design | External Collaboration | Academic problem package | 2026-08-24 |
 | PPJxNUNOX.ScanTrial | EXTERNAL DEVELOPMENT | ANALYSIS | Partnership / Digital Library Evaluation | External Collaboration | Working-session outcome unconfirmed |  |
-| PPJxQSee.AI | EXTERNAL DEVELOPMENT | ANALYSIS | On Hold | External Collaboration | Reactivation decision |  |
-| PPJxStratova.AI | EXTERNAL DEVELOPMENT | ANALYSIS | Strategic Technology Evaluation | External Collaboration | Build-vs-buy evaluation |  |
-| PROD.COWASH.v2.0 | EXTERNAL DEVELOPMENT | ANALYSIS | On Hold | External Collaboration | Owner/data/KPI/access/technical direction |  |
-| PROD.IOT.CHuyenTreo.v1.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Development | Active | Source and KPI reconciliation |  |
-| PUR.Adhoc.Indent.South.v1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Maintenance | Support | Operational maintenance |  |
-| PUR.GDI.Automation.v1.0 | INTERNAL DEVELOPMENT | DESIGN | Active / WFX API Integration | Active | WFX API contract discovery and controlled integration design |  |
-| PUR.HM.LabelO.Processing.Automation.v1.0 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Scalability decision | 2026-08-24 |
-| PUR.Inventory.Report.v2.1 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production / Enhancement | Active | Post-enhancement support |  |
-| PUR.Material.Allocation.v1.1 | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | First Flow Validated | Active | Exception, rollback and transaction-safety testing |  |
-| QC.Primo1D.RFID.Thread.v1.0 | EXTERNAL DEVELOPMENT | ANALYSIS | Business Case / Pre-PoC | External Collaboration | Business/customer case decision |  |
-| SCP.SOURCING.CHATBOT.v2.3 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Production data quality and stress testing |  |
-| TD.TechnicalKnowledge.Platform.v2.1 | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Initial Sync Demo Completed / Sync Validation & Stabilization | Active | Incremental sync hardening and Technical UAT |  |
+| PPJxStratova.AI | EXTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Historical record; current Stratova PoC negotiation tracked as DISCOVERY_PatternGenerationPoC |  |
+| PROD_HangingLineIoT_v1.0.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Development | Active | Source and KPI reconciliation |  |
+| PUR_AdhocIndentSouth_v1.0.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Maintenance | Support | Operational maintenance |  |
+| PUR_GDIAutomation_v1.0.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development / WFX API Integration | Active | WFX API integration and GDI data-entry workflow |  |
+| PUR_HMLabelProcessing_v1.0.0 | INTERNAL DEVELOPMENT | ANALYSIS | On Hold | On Hold | Business priority paused |  |
+| PUR_InventoryReport_v2.1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Post-enhancement support |  |
+| PUR_MaterialAllocation_v1.1.0 | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Validation / Stabilization | Active | Transaction reliability and exception control |  |
+| QC_DefectDetection_v1.0.0 | EXTERNAL DEVELOPMENT | ANALYSIS | On Hold | External Collaboration | Reactivation decision |  |
+| QC_ThreadTraceability_v1.0.0 | EXTERNAL DEVELOPMENT | ANALYSIS | Pre-PoC / Business Case | External Collaboration | Business/customer case decision |  |
+| SCP_SourcingChatbot_v2.3.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Production monitoring, data quality and retrieval quality |  |
+| TD_TechnicalKnowledgePlatform_v2.1.0 | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Sync Validation & Stabilization | Active | Sync validation and canonical technical model |  |
 | VITAS.Sharing.202606 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed event |  |
-| WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1 | INTERNAL DEVELOPMENT | DESIGN | Analysis / Product Design | Active | Sampling workflow and product design |  |
+| WASH_COWASH_v2.0.0 | EXTERNAL DEVELOPMENT | ANALYSIS | On Hold | External Collaboration | Delivery paused |  |
+| WASH_SamplingManagement_v1.1.0 | INTERNAL DEVELOPMENT | DESIGN | Analysis / Product Design | Active | Sampling workflow and product design |  |
+| WH_AWBExtraction_v1.1.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development | Active | AWB image OCR and DHL email extraction; table/cell understanding and weight/unit reliability |  |
 <!-- PPJ_EXECUTIVE_DELIVERY_STAGE_END -->

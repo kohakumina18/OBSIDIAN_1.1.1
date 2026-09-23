@@ -19,14 +19,14 @@ current_file: "EXIM.ExpenseInvoices.Automation.v1.1.md"
 primary_domain: "Finance / Accounting"
 lifecycle: "Closed"
 progress: "TBD"
-current_gate: "Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.0"
+current_gate: "Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.2"
 priority: "Closed"
 current_outcome: "Preserve the closed legacy EXIM Expense Invoice Automation history separately from its successor."
-latest_update_summary: "Replaced / Closed. LOG_ExpenseInvoiceProcessing_v1.2.0 is the current Logistics / Import-Export expense-invoice project; histories remain separate."
+latest_update_summary: "Replaced / Closed. LOG_ExpenseInvoiceProcessing_v1.2.2 is the current Logistics / Import-Export expense-invoice project; histories remain separate."
 known_risks: "None recorded"
 decisions_needed: "None recorded"
 next_actions: "No active actions"
-dependencies: "Historical predecessor -> LOG_ExpenseInvoiceProcessing_v1.2.0"
+dependencies: "Historical predecessor -> LOG_ExpenseInvoiceProcessing_v1.2.2"
 source_event: "PPJ-PORTFOLIO-SNAPSHOT-20260918"
 status: "Closed"
 known_blockers: "None recorded"
@@ -49,7 +49,7 @@ delivery_stream: "INTERNAL DEVELOPMENT"
 | Lifecycle | Closed |
 | Status | Closed |
 | Progress | TBD |
-| Current Gate | Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.0 |
+| Current Gate | Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.2 |
 | Priority | Closed |
 | Business Owner | Needs Confirmation |
 | Registration | Registered |
@@ -66,7 +66,7 @@ Preserve the closed legacy EXIM Expense Invoice Automation history separately fr
 
 ## Latest Update
 
-Replaced / Closed. LOG_ExpenseInvoiceProcessing_v1.2.0 is the current Logistics / Import-Export expense-invoice project; histories remain separate.
+Replaced / Closed. LOG_ExpenseInvoiceProcessing_v1.2.2 is the current Logistics / Import-Export expense-invoice project; histories remain separate.
 
 ## Risks / Blockers
 
@@ -78,7 +78,7 @@ Replaced / Closed. LOG_ExpenseInvoiceProcessing_v1.2.0 is the current Logistics 
 
 ## Dependencies
 
-- Historical predecessor -> LOG_ExpenseInvoiceProcessing_v1.2.0
+- Historical predecessor -> LOG_ExpenseInvoiceProcessing_v1.2.2
 
 ## Next Actions
 

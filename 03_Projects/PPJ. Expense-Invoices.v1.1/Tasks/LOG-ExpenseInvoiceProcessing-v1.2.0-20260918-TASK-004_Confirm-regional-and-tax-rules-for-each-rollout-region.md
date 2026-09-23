@@ -1,6 +1,6 @@
 ---
 type: project_task
-project: "LOG_ExpenseInvoiceProcessing_v1.2.0"
+project: "LOG_ExpenseInvoiceProcessing_v1.2.2"
 task_id: "LOG-ExpenseInvoiceProcessing-v1.2.0-20260918-TASK-004"
 title: "Confirm regional and tax rules for each rollout region"
 status: "backlog"
@@ -17,7 +17,7 @@ acceptance: "Completion evidence is recorded and reviewed by the responsible bus
 
 ## Project
 
-[[../00_Project_Home|LOG_ExpenseInvoiceProcessing_v1.2.0]]
+[[../00_Project_Home|LOG_ExpenseInvoiceProcessing_v1.2.2]]
 
 ## Outcome
 

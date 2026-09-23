@@ -13,7 +13,7 @@ Source event: `PPJ-PORTFOLIO-SNAPSHOT-20260918`. This overlay supersedes older c
 | PUR_GDIAutomation_v1.0.0 | Sourcing / Purchasing | Needs Confirmation | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development / WFX API Integration | Active | P3 | WFX API integration and GDI data-entry workflow | 4 |
 | TD_TechnicalKnowledgePlatform_v2.1.0 | Fabric / Textiles Technique | Needs Confirmation | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Sync Validation & Stabilization | Active | P5 | Sync validation and canonical technical model | 4 |
 | ADMIN_ExpenseManagement_v1.1.0 | Administration | Administration | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Active / Requirement Refinement / UAT Preparation | Active | P6 | Multi-traveler request model, end-to-end lifecycle and UAT preparation | 5 |
-| LOG_ExpenseInvoiceProcessing_v1.2.0 | Logistics / EXIM | Logistics / EXIM | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Regional Rollout / UAT | Active | P4 | Regional rollout, tax rules and invoice validation | 4 |
+| LOG_ExpenseInvoiceProcessing_v1.2.2 | Logistics / EXIM | Logistics / EXIM | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Regional Rollout / UAT | Active | P4 | Regional rollout, tax rules and invoice validation | 4 |
 | PUR_MaterialAllocation_v1.1.0 | Sourcing / Purchasing | Needs Confirmation | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Validation / Stabilization | Active | P7 | Transaction reliability and exception control | 3 |
 | MER_MarketIntelligence_v1.1.0 | Merchandising | Needs Confirmation | INTERNAL DEVELOPMENT | ANALYSIS | Active Intelligence | Active | Medium | Market and customer intelligence delivery | 2 |
 | MER_InvoiceDataRecheck_v1.1.0 | Merchandising | Needs Confirmation | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Active | Active | Medium | Multi-customer invoice, cost and data checking | 2 |
@@ -40,7 +40,7 @@ Source event: `PPJ-PORTFOLIO-SNAPSHOT-20260918`. This overlay supersedes older c
 | PUR_HMLabelProcessing_v1.0.0 | Sourcing / Purchasing | Needs Confirmation | INTERNAL DEVELOPMENT | ANALYSIS | On Hold | On Hold | Hold | Business priority paused | 1 |
 | ACC_InventoryReport_v1.0.0 | Finance / Accounting | Needs Confirmation | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed | Closed / no active follow-up | 0 |
 | MER_POCommit_v1.1.0 | Merchandising | Needs Confirmation | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed | Closed | 0 |
-| EXIM.ExpenseInvoices.Automation.v1.1 | Finance / Accounting | Needs Confirmation | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed | Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.0 | 0 |
+| EXIM.ExpenseInvoices.Automation.v1.1 | Finance / Accounting | Needs Confirmation | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed | Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.2 | 0 |
 | AI.Automation.Workshop.202606 | External Collaboration | Needs Confirmation | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed | Closed event | 0 |
 | AI.Automation.Workshop.Analysis.202606 | External Collaboration | Needs Confirmation | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed | Closed analysis | 0 |
 | VITAS.Sharing.202606 | External Collaboration | Needs Confirmation | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed | Closed event | 0 |
