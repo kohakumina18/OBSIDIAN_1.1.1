@@ -220,6 +220,69 @@ def align_existing_canvas(canvas: dict[str, Any], snapshot: dict[str, Any], conf
     return canvas
 
 
+# A canonical code is a distinctive token, so it is matched on word boundaries
+# rather than as a loose substring: LOG_X_v1.2.0 must not also rewrite
+# LOG_X_v1.2.01. A trailing "." is allowed so a code ending a sentence matches.
+def rewrite_codes(value: Any, rename_map: dict[str, str]) -> Any:
+    if isinstance(value, str):
+        for old, new in rename_map.items():
+            value = re.sub(rf"(?<![A-Za-z0-9_]){re.escape(old)}(?![A-Za-z0-9_])", new, value)
+        return value
+    if isinstance(value, list):
+        return [rewrite_codes(x, rename_map) for x in value]
+    if isinstance(value, dict):
+        return {k: rewrite_codes(v, rename_map) for k, v in value.items()}
+    return value
+
+
+# Append-only history. Rewriting a code here would falsify the record of the
+# rename itself - the ledger row reads "old -> new" and both sides must survive.
+RENAME_EXEMPT = ("PPJ_PROJECT_UPDATE_LEDGER.md", "Change_Log.md")
+
+
+def rewrite_code_references(rename_map: dict[str, str], changes: dict[Path, str]) -> None:
+    """Carry a rename across the project system of record.
+
+    The overlay blocks inside the registry are rebuilt from the snapshot, but
+    the rest of 03_Projects is not: static registry rows (alias map, naming
+    dictionary, domain model), workspace documents, task notes and the other
+    portfolio canvases all hold the code as plain text and would otherwise keep
+    pointing at the retired one.
+
+    The sweep stops at 03_Projects on purpose. Daily notes, meeting notes,
+    decision logs and reports record what was true when they were written;
+    rewriting a code there would falsify the account rather than update it.
+    """
+    if not rename_map:
+        return
+    targets: set[Path] = {x for x in changes if x.suffix in (".md", ".json", ".canvas")}
+    for pattern in ("03_Projects/**/*.md", "03_Projects/**/*.canvas", "03_Projects/**/*.json"):
+        targets.update(lib.ROOT.glob(pattern))
+    for path in sorted(targets):
+        if path.name in RENAME_EXEMPT:
+            continue
+        text = changes.get(path)
+        if text is None:
+            if not path.exists():
+                continue
+            text = path.read_text(encoding="utf-8-sig")
+        # JSON and Canvas files are rewritten through the parsed document, not
+        # as raw text: in the file a newline inside a string is the two
+        # characters \ and n, so a word-boundary match would see the "n" as the
+        # preceding character and skip a code that starts a line.
+        if path.suffix in (".json", ".canvas"):
+            try:
+                document = json.loads(text)
+            except json.JSONDecodeError:
+                continue
+            updated = rewrite_codes(document, rename_map)
+            rewritten = text if updated == document else json_text(updated)
+        else:
+            rewritten = rewrite_codes(text, rename_map)
+        if rewritten != text:
+            stage(changes, path, rewritten)
+
+
 def update_field_change_log(path: Path, item: dict[str, Any], edits: list[dict[str, str]], changes: dict[Path, str]) -> None:
     if not path.exists():
         return
@@ -299,6 +362,14 @@ def persist_transitions(
         item["source_event"] = event
         rename_map[rename["code"]] = rename["new_code"]
         touched[rename["code"]] = item
+    if rename_map:
+        # Mutate each project in place so `by_code` and `touched` keep pointing
+        # at the same objects; `code` is already correct and must not be
+        # rewritten a second time.
+        for project in snapshot["projects"]:
+            for key, value in list(project.items()):
+                if key != "code":
+                    project[key] = rewrite_codes(value, rename_map)
 
     for code, item in touched.items():
         for path in project_paths(item):
@@ -339,6 +410,10 @@ def persist_transitions(
     for name in ("PPJ_Portfolio.canvas", "PPJ_Domain_Encapsulation.canvas"):
         update_view_canvas(lib.ROOT / "03_Projects/Canvas" / name, projects, changes)
     stage(changes, lib.ROOT / "03_Projects/Canvas/PPJ_Roadmap_2026.canvas", roadmap_canvas(snapshot, config))
+
+    # Before the ledger rows are appended, so the "old -> new" record they carry
+    # is not itself rewritten.
+    rewrite_code_references(rename_map, changes)
 
     ledger = lib.ROOT / "03_Projects/_Registry/PPJ_PROJECT_UPDATE_LEDGER.md"
     old = ledger.read_text(encoding="utf-8-sig")
