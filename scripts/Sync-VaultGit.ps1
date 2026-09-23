@@ -14,6 +14,9 @@
 
     Log:  <vault>\.git\vault-sync.log   (inside .git, so it is never committed)
 
+    Any ERROR-level log line also raises a Windows toast notification (best
+    effort; silently skipped if there is no interactive logon session).
+
 .PARAMETER VaultPath
     Vault root. Defaults to the parent of the folder holding this script.
 
@@ -37,11 +40,30 @@ $LogFile      = Join-Path $VaultPath '.git\vault-sync.log'
 $LockFile     = Join-Path $VaultPath '.git\vault-sync.lock'
 $ConflictFile = Join-Path $VaultPath 'SYNC-CONFLICT-README.md'
 
+# Best-effort Windows toast so an unattended failure (fetch offline, push
+# rejected, conflict) is actually seen instead of sitting quietly in the log.
+# Requires an interactive logon session; silently does nothing otherwise.
+function Show-PPJToast {
+    param([string]$Title, [string]$Message)
+    try {
+        [Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType = WindowsRuntime] | Out-Null
+        [Windows.Data.Xml.Dom.XmlDocument, Windows.Data.Xml.Dom.XmlDocument, ContentType = WindowsRuntime] | Out-Null
+        $template = [Windows.UI.Notifications.ToastNotificationManager]::GetTemplateContent(
+            [Windows.UI.Notifications.ToastTemplateType]::ToastText02)
+        $texts = $template.GetElementsByTagName('text')
+        $texts.Item(0).AppendChild($template.CreateTextNode($Title)) | Out-Null
+        $texts.Item(1).AppendChild($template.CreateTextNode($Message)) | Out-Null
+        $toast = [Windows.UI.Notifications.ToastNotification]::new($template)
+        [Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier('Microsoft.Windows.Explorer').Show($toast)
+    } catch { }
+}
+
 function Write-Log {
     param([string]$Level, [string]$Message)
     $line = '{0} [{1}] {2}' -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $Level, $Message
     try { Add-Content -LiteralPath $LogFile -Value $line -Encoding UTF8 } catch { }
     if (-not $Quiet) { Write-Host $line }
+    if ($Level -eq 'ERROR') { Show-PPJToast -Title "Vault sync failed on $env:COMPUTERNAME" -Message $Message }
 }
 
 function Resolve-Git {
@@ -60,9 +82,23 @@ function Resolve-Git {
 
 # Runs git and returns a result object instead of throwing, so one failed git
 # call can be logged with its stderr rather than killing the run silently.
+#
+# Under $ErrorActionPreference = 'Stop' (set script-wide above), PowerShell
+# promotes *any* stderr line from a native command captured via 2>&1 into a
+# terminating error - including git's routine progress/warning chatter on
+# fetch, push and status, not just real failures. That would abort straight
+# to the outer catch before Code/Text are ever inspected, so stderr is
+# non-terminating for the duration of this call; Code is still the real
+# signal callers check.
 function Invoke-Git {
     param([string[]]$Arguments)
-    $out = & $Git -C $VaultPath @Arguments 2>&1
+    $previous = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+    try {
+        $out = & $Git -C $VaultPath @Arguments 2>&1
+    } finally {
+        $ErrorActionPreference = $previous
+    }
     $code = $LASTEXITCODE
     $text = ($out | ForEach-Object { $_.ToString() }) -join "`n"
     return [pscustomobject]@{ Code = $code; Text = $text }
