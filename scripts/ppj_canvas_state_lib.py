@@ -26,6 +26,29 @@ PROJECT_MARKER = re.compile(r"<!--\s*PPJ_PROJECT_CARD:([^>]+?)\s*-->")
 CANDIDATE_MARKER = re.compile(r"<!--\s*PPJ_CANDIDATE_CARD:([^>]+?)\s*-->")
 VIEW_MARKER = re.compile(r"<!--\s*PPJ_PORTFOLIO_VIEW_CARD:([^>]+?)\s*-->")
 
+# Hidden fingerprint of the card body as this library last generated it. It is
+# what separates "the user typed into this card" from "this card is simply
+# older than the snapshot": a card whose body still hashes to its recorded
+# signature was not touched by hand, however stale its values are.
+CARD_SIGNATURE = re.compile(r"\n*<!--\s*PPJ_CARD_SIG:([0-9a-f]+)\s*-->")
+
+# Card label -> snapshot key for the fields a human may edit directly on the
+# board. Delivery Stream and Delivery Stage are deliberately absent: those are
+# owned by card geometry, and accepting them as text too would give one fact
+# two contradictory sources.
+EDITABLE_CARD_FIELDS = {
+    "Domain": "domain",
+    "Lifecycle": "lifecycle",
+    "Status": "status",
+    "Progress": "progress",
+    "Priority": "priority",
+    "Gate": "gate",
+}
+
+CARD_HEADING = re.compile(r"(?m)^##\s+\[\[(?P<target>[^|\]]+)\|(?P<alias>[^\]]+)\]\]\s*$")
+CARD_FIELD = re.compile(r"(?m)^(?P<label>[A-Za-z][A-Za-z /]*?):[ \t]*(?P<value>.*)$")
+CARD_OUTCOME = re.compile(r"(?m)^Outcome[ \t]*\n-[ \t]*(?P<value>.+?)(?=\n[ \t]*\n|\Z)", re.S)
+
 
 class StateError(RuntimeError):
     pass
@@ -174,7 +197,7 @@ def root_link(item: dict[str, Any]) -> str:
     return f"[[07_Decision_Log/DEC-20260824-ADMIN-EXPENSE-DOMAIN|{item['code']}]]"
 
 
-def project_card_text(item: dict[str, Any]) -> str:
+def project_card_body(item: dict[str, Any]) -> str:
     workspace = item.get("workspace")
     board = f"[[03_Projects/{workspace}/Project_Executive_Board|Local Project Board]]" if workspace else "Needs Confirmation"
     return (
@@ -189,6 +212,78 @@ def project_card_text(item: dict[str, Any]) -> str:
         f"Gate: {item.get('gate', 'Needs Confirmation')}\n\n"
         f"Outcome\n- {item.get('outcome', 'Needs Confirmation')}\n\nBoard\n- {board}"
     )
+
+
+def card_signature(body: str) -> str:
+    return hashlib.sha1(body.strip().encode("utf-8")).hexdigest()[:12]
+
+
+def project_card_text(item: dict[str, Any]) -> str:
+    body = project_card_body(item)
+    return f"{body}\n\n<!-- PPJ_CARD_SIG:{card_signature(body)} -->"
+
+
+def split_card_signature(text: str) -> tuple[str, str | None]:
+    match = CARD_SIGNATURE.search(text)
+    if not match:
+        return text.strip(), None
+    return CARD_SIGNATURE.sub("", text).strip(), match.group(1)
+
+
+def card_is_pristine(text: str, item: dict[str, Any]) -> bool:
+    """True when the card body is byte-for-byte what this library last wrote."""
+    body, signature = split_card_signature(text)
+    if signature is not None:
+        return card_signature(body) == signature
+    # Cards written before signatures existed carry none; fall back to comparing
+    # against what the current snapshot would render. This is exact for an
+    # up-to-date card and conservative for a stale one - a stale untouched card
+    # reads as edited once, and the first apply gives every card a signature.
+    return body == project_card_body(item)
+
+
+def parse_card_text(text: str) -> dict[str, Any]:
+    """Read the editable facts a human can type into a project card."""
+    body, _ = split_card_signature(text)
+    parsed: dict[str, Any] = {}
+    heading = CARD_HEADING.search(body)
+    if heading:
+        parsed["code"] = heading.group("alias").strip()
+        parsed["link_target"] = heading.group("target").strip()
+    for match in CARD_FIELD.finditer(body):
+        key = EDITABLE_CARD_FIELDS.get(match.group("label").strip())
+        if key:
+            parsed[key] = match.group("value").strip()
+    outcome = CARD_OUTCOME.search(body)
+    if outcome:
+        parsed["outcome"] = " ".join(outcome.group("value").split())
+    return parsed
+
+
+def card_field_edits(text: str, item: dict[str, Any]) -> dict[str, str]:
+    """Editable fields whose card value differs from the snapshot.
+
+    An empty card value is ignored rather than treated as a deletion: clearing a
+    line by accident should not wipe a field across the whole vault.
+    """
+    parsed = parse_card_text(text)
+    edits: dict[str, str] = {}
+    for key in list(EDITABLE_CARD_FIELDS.values()) + ["outcome"]:
+        if key not in parsed:
+            continue
+        new = str(parsed[key]).strip()
+        old = " ".join(str(item.get(key, "")).split())
+        if new and new != old:
+            edits[key] = new
+    return edits
+
+
+def card_code_rename(text: str, item: dict[str, Any]) -> str | None:
+    """The new canonical code when the heading alias was edited, else None."""
+    code = str(parse_card_text(text).get("code", "")).strip()
+    if code and code != item["code"]:
+        return code
+    return None
 
 
 def render_executive_canvas(snapshot: dict[str, Any], config: dict[str, Any]) -> dict[str, Any]:

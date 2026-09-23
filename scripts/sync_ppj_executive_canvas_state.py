@@ -35,6 +35,8 @@ def parse_args() -> argparse.Namespace:
     scope.add_argument("--all", action="store_true", help="Process every registered project (default)")
     parser.add_argument("--force", action="store_true", help="Override protected transition checks")
     parser.add_argument("--approve-reopen", action="store_true", help="Explicitly allow CLOSED -> active transition")
+    parser.add_argument("--approve-rename", action="store_true", help="Explicitly allow a canonical code rename typed into a card heading")
+    parser.add_argument("--ignore-card-edits", action="store_true", help="Treat card text as display-only and read geometry alone")
     parser.add_argument("--reflow", action="store_true", help="Rebuild and sort the whole Executive Canvas")
     parser.add_argument("--verbose", action="store_true")
     return parser.parse_args()
@@ -218,12 +220,48 @@ def align_existing_canvas(canvas: dict[str, Any], snapshot: dict[str, Any], conf
     return canvas
 
 
-def persist_transitions(snapshot: dict[str, Any], config: dict[str, Any], transitions: list[dict[str, str]], canvas: dict[str, Any]) -> dict[Path, str]:
+def update_field_change_log(path: Path, item: dict[str, Any], edits: list[dict[str, str]], changes: dict[Path, str]) -> None:
+    if not path.exists():
+        return
+    old = changes.get(path, path.read_text(encoding="utf-8-sig"))
+    event = item["source_event"]
+    detail = "; ".join(f"{x['field']}: {x['old'] or '(empty)'} -> {x['new']}" for x in edits)
+    row = (f"- {item['last_verified']} | `{event}` | {detail} | card-edit | "
+           f"Source: Executive Canvas card text.")
+    if row in old:
+        return
+    stage(changes, path, old.rstrip() + "\n\n" + row + "\n")
+
+
+def persist_transitions(
+    snapshot: dict[str, Any],
+    config: dict[str, Any],
+    transitions: list[dict[str, str]],
+    canvas: dict[str, Any],
+    field_edits: list[dict[str, str]] | None = None,
+    renames: list[dict[str, str]] | None = None,
+) -> dict[Path, str]:
     changes: dict[Path, str] = {}
     today = dt.date.today().isoformat()
     stamp = dt.datetime.now().strftime("%Y%m%d_%H%M%S")
     event = f"PPJ-EXECUTIVE-CANVAS-SYNC-{stamp}"
     by_code = {x["code"]: x for x in snapshot["projects"]}
+    field_edits = field_edits or []
+    renames = renames or []
+    touched: dict[str, dict[str, Any]] = {}
+
+    # Typed card facts are applied before geometry. Where a stage change makes a
+    # typed lifecycle/status impossible, the geometry invariants below correct
+    # it - position stays the stronger signal, as elsewhere in this model.
+    edits_by_code: dict[str, list[dict[str, str]]] = {}
+    for edit in field_edits:
+        item = by_code[edit["code"]]
+        item[edit["field"]] = edit["new"]
+        item["last_verified"] = today
+        item["source_event"] = event
+        edits_by_code.setdefault(edit["code"], []).append(edit)
+        touched[edit["code"]] = item
+
     for move in transitions:
         item = by_code[move["code"]]
         old_stage, new_stage = move["old"], move["new"]
@@ -243,13 +281,34 @@ def persist_transitions(snapshot: dict[str, Any], config: dict[str, Any], transi
             item["status"] = "External Collaboration"
         elif old_stream == "EXTERNAL DEVELOPMENT" and item.get("status") == "External Collaboration":
             item["status"] = "On Hold" if "on hold" in str(item.get("lifecycle", "")).lower() else "Active"
+        touched[move["code"]] = item
+        workspace = item.get("workspace")
+        if workspace:
+            update_change_log(lib.ROOT / "03_Projects" / workspace / "10_Governance/Change_Log.md", item, move, changes)
+
+    # A canonical code rename only rewrites the snapshot identity. Every derived
+    # artefact - card marker, registry overlays, note frontmatter - is
+    # regenerated from it further down. Files and folders named after the old
+    # code are left alone and reported instead; renaming those is a separate,
+    # link-breaking operation.
+    rename_map: dict[str, str] = {}
+    for rename in renames:
+        item = by_code[rename["code"]]
+        item["code"] = rename["new_code"]
+        item["last_verified"] = today
+        item["source_event"] = event
+        rename_map[rename["code"]] = rename["new_code"]
+        touched[rename["code"]] = item
+
+    for code, item in touched.items():
         for path in project_paths(item):
             update_note(path, item, changes)
         workspace = item.get("workspace")
         if workspace:
             base = lib.ROOT / "03_Projects" / workspace
-            update_change_log(base / "10_Governance/Change_Log.md", item, move, changes)
             update_local_board(base / "Project_Executive_Board.canvas", item, changes)
+            if code in edits_by_code:
+                update_field_change_log(base / "10_Governance/Change_Log.md", item, edits_by_code[code], changes)
 
     snapshot["last_verified"] = today
     snapshot["source_event"] = event
@@ -265,11 +324,17 @@ def persist_transitions(snapshot: dict[str, Any], config: dict[str, Any], transi
     stage(changes, command, lib.replace_block(old, SYNC_START, SYNC_END, overlay, near_top=True))
 
     # Preserve the user's just-saved geometry; refresh only card state text.
+    # A renamed card still carries its old marker here, so it is resolved
+    # through rename_map - otherwise the card would keep the stale code and the
+    # next run would read the rename all over again.
     projects = {x["code"]: x for x in lib.registered_projects(snapshot)}
     for node in canvas.get("nodes", []):
         marker = lib.PROJECT_MARKER.search(str(node.get("text", "")))
-        if marker and marker.group(1).strip() in projects:
-            node["text"] = lib.project_card_text(projects[marker.group(1).strip()])
+        if not marker:
+            continue
+        code = rename_map.get(marker.group(1).strip(), marker.group(1).strip())
+        if code in projects:
+            node["text"] = lib.project_card_text(projects[code])
     stage(changes, lib.CANVAS_PATH, json_text(canvas))
     for name in ("PPJ_Portfolio.canvas", "PPJ_Domain_Encapsulation.canvas"):
         update_view_canvas(lib.ROOT / "03_Projects/Canvas" / name, projects, changes)
@@ -278,17 +343,23 @@ def persist_transitions(snapshot: dict[str, Any], config: dict[str, Any], transi
     ledger = lib.ROOT / "03_Projects/_Registry/PPJ_PROJECT_UPDATE_LEDGER.md"
     old = ledger.read_text(encoding="utf-8-sig")
     rows = [f"| {today} | {x['code']} | delivery_stream / delivery_stage | {x['old_stream']} / {x['old']} -> {x['new_stream']} / {x['new']} | {x['kind']} | Executive Canvas geometry | {event} | Strong | Registry / notes / boards / canvases | Validate next gate and status. |" for x in transitions]
+    rows += [f"| {today} | {rename_map.get(x['code'], x['code'])} | {x['field']} | {x['old'] or '(empty)'} -> {x['new']} | card-edit | Executive Canvas card text | {event} | Strong | Registry / notes / boards / canvases | Confirm the typed value is correct. |" for x in field_edits]
+    rows += [f"| {today} | {x['new_code']} | code | {x['code']} -> {x['new_code']} | rename | Executive Canvas card heading | {event} | Strong | Registry / notes / boards / canvases | Files and folders still carry the old code; rename them separately if required. |" for x in renames]
     stage(changes, ledger, old.rstrip() + "\n" + "\n".join(rows) + "\n")
     return changes
 
 
-def write_audit(args: argparse.Namespace, direction: str, transitions: list[dict[str, str]], errors: list[str], changes: dict[Path, str], applied: bool, backups: tuple[Path, Path] | None = None) -> Path:
+def write_audit(args: argparse.Namespace, direction: str, transitions: list[dict[str, str]], errors: list[str], changes: dict[Path, str], applied: bool, backups: tuple[Path, Path] | None = None, field_edits: list[dict[str, str]] | None = None, renames: list[dict[str, str]] | None = None) -> Path:
+    field_edits = field_edits or []
+    renames = renames or []
     stamp = dt.datetime.now().strftime("%Y%m%d_%H%M%S_%f")
     path = lib.AUDIT_ROOT / f"PPJ_EXECUTIVE_CANVAS_SYNC_LOG_{stamp}.md"
-    lines = [f"# PPJ Executive Canvas Sync Log - {stamp}", "", f"- Direction: `{direction}`", f"- Mode: `{'APPLY' if applied else 'DRY RUN'}`", f"- Scope: `{', '.join(args.project or ['ALL'])}`", f"- Proposed transitions: {len(transitions)}", f"- Files changed: {len(changes)}", f"- Errors/rejections: {len(errors)}"]
+    lines = [f"# PPJ Executive Canvas Sync Log - {stamp}", "", f"- Direction: `{direction}`", f"- Mode: `{'APPLY' if applied else 'DRY RUN'}`", f"- Scope: `{', '.join(args.project or ['ALL'])}`", f"- Proposed transitions: {len(transitions)}", f"- Card field edits: {len(field_edits)}", f"- Code renames: {len(renames)}", f"- Files changed: {len(changes)}", f"- Errors/rejections: {len(errors)}"]
     if backups:
         lines += [f"- State backup: `{backups[0].relative_to(lib.ROOT)}`", f"- Canvas backup: `{backups[1].relative_to(lib.ROOT)}`"]
     lines += ["", "## Transitions", ""] + ([f"- `{x['code']}`: `{x['old_stream']} / {x['old']}` -> `{x['new_stream']} / {x['new']}` ({x['kind']})" for x in transitions] or ["- None"])
+    lines += ["", "## Card Field Edits", ""] + ([f"- `{x['code']}`.`{x['field']}`: `{x['old'] or '(empty)'}` -> `{x['new']}`" for x in field_edits] or ["- None"])
+    lines += ["", "## Code Renames", ""] + ([f"- `{x['code']}` -> `{x['new_code']}` (files and folders keep the old code)" for x in renames] or ["- None"])
     lines += ["", "## Errors / Rejections", ""] + ([f"- {x}" for x in errors] or ["- None"])
     lines += ["", "## Changed Files", ""] + ([f"- `{x.relative_to(lib.ROOT)}`" for x in sorted(changes)] or ["- None"])
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -313,6 +384,8 @@ def main() -> int:
         return 2
 
     transitions: list[dict[str, str]] = []
+    field_edits: list[dict[str, str]] = []
+    renames: list[dict[str, str]] = []
     errors: list[str] = []
     changes: dict[Path, str] = {}
     direction = "from-canvas" if args.from_canvas else "to-canvas"
@@ -333,8 +406,23 @@ def main() -> int:
                     errors.append(f"reopen rejected for {code}; use --approve-reopen after review")
                     continue
                 transitions.append({"code": code, "old_stream": old_stream, "new_stream": new_stream, "old": old, "new": new, "kind": kind})
-        if not errors and transitions:
-            changes = persist_transitions(snapshot, config, transitions, canvas)
+        if not errors and not args.ignore_card_edits:
+            for code in sorted(scope):
+                card = resolution["cards"].get(code)
+                if card is None or lib.card_is_pristine(str(card.get("text", "")), projects[code]):
+                    continue
+                rename = lib.card_code_rename(str(card.get("text", "")), projects[code])
+                if rename:
+                    if rename in projects:
+                        errors.append(f"rename rejected for {code}: {rename} is already a registered project")
+                    elif args.approve_rename or args.force:
+                        renames.append({"code": code, "new_code": rename})
+                    else:
+                        errors.append(f"canonical code rename {code} -> {rename} rejected; use --approve-rename after review")
+                for field, value in lib.card_field_edits(str(card.get("text", "")), projects[code]).items():
+                    field_edits.append({"code": code, "field": field, "old": " ".join(str(projects[code].get(field, "")).split()), "new": value})
+        if not errors and (transitions or field_edits or renames):
+            changes = persist_transitions(snapshot, config, transitions, canvas, field_edits, renames)
     else:
         resolution = lib.resolve_canvas(canvas, config, snapshot)
         if args.reflow or resolution["errors"]:
@@ -350,12 +438,18 @@ def main() -> int:
     if applied and changes:
         stamp = dt.datetime.now().strftime("%Y%m%d_%H%M%S_%f")
         backups = lib.backup_and_write(changes, stamp)
-    audit = write_audit(args, direction, transitions, errors, changes, applied, backups)
+    audit = write_audit(args, direction, transitions, errors, changes, applied, backups, field_edits, renames)
     print(f"Direction: {direction}")
     print(f"Mode: {'APPLY' if args.apply else 'DRY RUN'}")
     print(f"Transitions: {len(transitions)}")
     for move in transitions:
         print(f"  {move['code']}: {move['old_stream']} / {move['old']} -> {move['new_stream']} / {move['new']} ({move['kind']})")
+    print(f"Card field edits: {len(field_edits)}")
+    for edit in field_edits:
+        print(f"  {edit['code']}.{edit['field']}: {edit['old'] or '(empty)'} -> {edit['new']}")
+    print(f"Code renames: {len(renames)}")
+    for rename in renames:
+        print(f"  {rename['code']} -> {rename['new_code']}")
     print(f"Errors/rejections: {len(errors)}")
     for error in errors:
         print(f"  ERROR: {error}")

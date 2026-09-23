@@ -284,6 +284,24 @@ After a card is dragged and Canvas is saved, geometry is authoritative only when
 
 On the Ubuntu vault, `ppj-executive-canvas-watcher.service` normally performs this guarded synchronization automatically within about 1-2 seconds after Obsidian saves the Canvas. Manual commands remain available for audit/recovery. Do not run a second watcher process while the service is active.
 
+## Editing card text directly
+
+Card text is an input as well as an output. These fields may be typed straight into a card and are written back to the snapshot and every derived artefact:
+
+```text
+Domain | Lifecycle | Status | Progress | Priority | Gate | Outcome
+```
+
+`Delivery Stream` and `Delivery Stage` are deliberately **not** editable as text. Those two belong to card geometry, and accepting them from both position and text would give one fact two contradictory sources. Move the card instead.
+
+Each generated card carries a hidden `<!-- PPJ_CARD_SIG:... -->` fingerprint of its own body. A card whose body still hashes to its signature was not touched by hand, so the vault refreshes it; a card that no longer matches was edited, so the typed values win. This is what keeps a merely stale card from overwriting the vault with old values.
+
+Where a typed `Lifecycle` or `Status` is incompatible with a stage change made in the same save, geometry corrects it - position stays the stronger signal.
+
+Editing the alias in a card heading renames the project's **canonical code**, which is an identity change, not a label change. It is rejected unless `--approve-rename` (or `--force`) is passed, and the target code must not already be registered. An approved rename rewrites the snapshot, the card marker and every derived artefact; files and folders named after the old code keep their names and are reported for separate handling.
+
+Pass `--ignore-card-edits` to read geometry alone and treat card text as display-only.
+
 ---
 
 # 6. Important Encoding Rule
