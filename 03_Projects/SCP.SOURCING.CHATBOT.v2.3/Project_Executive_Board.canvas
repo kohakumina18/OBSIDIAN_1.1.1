@@ -1,0 +1,184 @@
+{
+  "nodes": [
+    {
+      "id": "ppj-board-metadata",
+      "type": "text",
+      "text": "SCP_SourcingChatbot_v2.3.0 — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1",
+      "x": 0,
+      "y": -220,
+      "width": 760,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "ppj-exec-summary",
+      "type": "text",
+      "text": "SCP_SourcingChatbot_v2.3.0\n\nDomain:\nSourcing / Purchasing\n\nLifecycle:\nCloseout Preparation\n\nProgress:\nTBD\n\nGate:\nProduction monitoring, data quality and retrieval quality\n\nOutcome:\nOne production application for supplier/material intelligence: Supplier Data + Material Data + Search + Comparison + RAG + Chatbot.\n\nTop Blocker:\nManual external-data input\n\nNext Milestone:\nClean missing fields, mixed types, duplicates and naming\n\nLast Verified:\n2026-09-18",
+      "x": 0,
+      "y": -90,
+      "width": 760,
+      "height": 560,
+      "color": "4"
+    },
+    {
+      "id": "ppj-management-attention",
+      "type": "text",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Manual external-data input\n- Non-standard naming and metadata\n- Data-quality drift\n\nDecisions Needed\n- None recorded\n\nExternal Dependencies\n- None recorded",
+      "x": 810,
+      "y": -90,
+      "width": 500,
+      "height": 560,
+      "color": "1"
+    },
+    {
+      "id": "ppj-lane-f3e573404df4",
+      "type": "group",
+      "x": 0,
+      "y": 560,
+      "width": 300,
+      "height": 670,
+      "label": "BACKLOG",
+      "color": "1"
+    },
+    {
+      "id": "ppj-task-c67fc835a261",
+      "type": "text",
+      "text": "[[Tasks/SCP.SOURCING.CHATBOT.v2.3-20260824-TASK-001_Clean-missing-fields-mixed-types-duplicates-and-naming]]\n\nClean missing fields, mixed types, duplicates and naming\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 20,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-d18a1e4b1b57",
+      "type": "text",
+      "text": "[[Tasks/SCP.SOURCING.CHATBOT.v2.3-20260824-TASK-003_Monitor-adoption-and-production-quality]]\n\nMonitor adoption and production quality\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 20,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-3a263bf4db06",
+      "type": "text",
+      "text": "[[Tasks/SCP.SOURCING.CHATBOT.v2.3-20260824-TASK-002_Stress-test-retrieval-with-real-Sourcing-questions]]\n\nStress-test retrieval with real Sourcing questions\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 20,
+      "y": 1010,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-8d767178b3a7",
+      "type": "group",
+      "x": 350,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "THIS WEEK",
+      "color": "2"
+    },
+    {
+      "id": "ppj-lane-bf81443bfcae",
+      "type": "group",
+      "x": 700,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "IN PROGRESS",
+      "color": "3"
+    },
+    {
+      "id": "ppj-lane-276d6ca3922f",
+      "type": "group",
+      "x": 1050,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BLOCKED / WAITING",
+      "color": "4"
+    },
+    {
+      "id": "ppj-lane-a82db70f445e",
+      "type": "group",
+      "x": 1400,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "REVIEW / UAT",
+      "color": "5"
+    },
+    {
+      "id": "ppj-lane-e782e7728e49",
+      "type": "group",
+      "x": 1750,
+      "y": 560,
+      "width": 300,
+      "height": 1240,
+      "label": "DONE",
+      "color": "6"
+    },
+    {
+      "id": "ppj-task-4e751d7e8d4c",
+      "type": "text",
+      "text": "[[Tasks/SCP.SOURCING.CHATBOT.v2.3-TASK-004_Complete-User-Manual-and-support-handover]]\n\nComplete User Manual and support handover\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-5088a9bcbba2",
+      "type": "text",
+      "text": "[[Tasks/SCP.SOURCING.CHATBOT.v2.3-TASK-006_Create-update-the-Sourcing-External-Data-Standardization-Bac]]\n\nCreate/update the Sourcing External Data Standardization Backlog section within this project\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-ae2fb3420e99",
+      "type": "text",
+      "text": "[[Tasks/SCP.SOURCING.CHATBOT.v2.3-TASK-003_Finalize-output-format-and-confirm-UAT-acceptance]]\n\nFinalize output format and confirm UAT acceptance\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1010,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-9077182aaec3",
+      "type": "text",
+      "text": "[[Tasks/SCP.SOURCING.CHATBOT.v2.3-TASK-005_Separate-defects-from-enhancements-and-transfer-remaining-is]]\n\nSeparate defects from enhancements and transfer remaining issues to maintenance backlog\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1200,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-e46acfbad222",
+      "type": "text",
+      "text": "[[Tasks/SCP.SOURCING.CHATBOT.v2.3-TASK-002_Sourcing-Closeout-and-External-Data-Standardization-Backlog]]\n\nSourcing Closeout and External Data Standardization Backlog\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1390,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-b7006960f5c0",
+      "type": "text",
+      "text": "[[Tasks/SCP.SOURCING.CHATBOT.v2.3-TASK-001_Sourcing-Post-training-Usage-Assessment]]\n\nSourcing Post-training Usage Assessment\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1580,
+      "width": 260,
+      "height": 155
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {
+      "project": "SCP_SourcingChatbot_v2.3.0",
+      "board_type": "project_executive_kanban",
+      "last_verified": "2026-09-18"
+    }
+  }
+}

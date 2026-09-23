@@ -1,0 +1,148 @@
+{
+  "nodes": [
+    {
+      "id": "ppj-board-metadata",
+      "type": "text",
+      "text": "ADMIN_ExpenseManagement_v1.1.0 — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1",
+      "x": 0,
+      "y": -220,
+      "width": 760,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "ppj-exec-summary",
+      "type": "text",
+      "text": "ADMIN_ExpenseManagement_v1.1.0\n\nDomain:\nAdministration\n\nLifecycle:\nActive / Requirement Refinement / UAT Preparation\n\nProgress:\n~90% (2026-09-15 meeting recap)\n\nGate:\nMulti-traveler request model, end-to-end lifecycle and UAT preparation\n\nOutcome:\nStandardize Administration business-travel and expense-management workflows: Request -> Approval -> Business Trip -> Advance -> Expense -> Settlement.\n\nTop Blocker:\nScope creep beyond Request -> Approval -> Trip -> Expense -> Settlement\n\nNext Milestone:\nValidate the booking workflow and status model\n\nLast Verified:\n2026-09-18",
+      "x": 0,
+      "y": -90,
+      "width": 760,
+      "height": 560,
+      "color": "4"
+    },
+    {
+      "id": "ppj-management-attention",
+      "type": "text",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Scope creep beyond Request -> Approval -> Trip -> Expense -> Settlement\n- Approval/status rules need confirmation\n- Multi-traveler data model complexity\n\nDecisions Needed\n- None recorded\n\nExternal Dependencies\n- None recorded",
+      "x": 810,
+      "y": -90,
+      "width": 500,
+      "height": 560,
+      "color": "1"
+    },
+    {
+      "id": "ppj-lane-f3e573404df4",
+      "type": "group",
+      "x": 0,
+      "y": 560,
+      "width": 300,
+      "height": 1050,
+      "label": "BACKLOG",
+      "color": "1"
+    },
+    {
+      "id": "ppj-task-849f37cc8cea",
+      "type": "text",
+      "text": "[[Tasks/ADMIN-ExpenseManagement-v1.1.0-20260918-TASK-004_Define-vendor-catalogue-and-expense-categories]]\n\nDefine vendor catalogue and expense categories\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 20,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-da593abf16a3",
+      "type": "text",
+      "text": "[[Tasks/ADMIN-ExpenseManagement-v1.1.0-20260918-TASK-003_Finalize-approval-matrix-advance-expense-submission-and-settlement]]\n\nFinalize approval matrix, advance, expense submission and settlement\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 20,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-8b60965e4004",
+      "type": "text",
+      "text": "[[Tasks/ADMIN-ExpenseManagement-v1.1.0-20260918-TASK-002_Model-multi-traveler-requests-with-per-traveler-travel-plans]]\n\nModel multi-traveler requests with per-traveler travel plans\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 20,
+      "y": 1010,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-934b85b9cd99",
+      "type": "text",
+      "text": "[[Tasks/ADMIN-ExpenseManagement-v1.1.0-20260918-TASK-005_Prepare-UAT]]\n\nPrepare UAT\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 20,
+      "y": 1200,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-4f05dfc770b1",
+      "type": "text",
+      "text": "[[Tasks/ADMIN-ExpenseManagement-v1.1.0-20260918-TASK-001_Validate-the-booking-workflow-and-status-model]]\n\nValidate the booking workflow and status model\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 20,
+      "y": 1390,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-8d767178b3a7",
+      "type": "group",
+      "x": 350,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "THIS WEEK",
+      "color": "2"
+    },
+    {
+      "id": "ppj-lane-bf81443bfcae",
+      "type": "group",
+      "x": 700,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "IN PROGRESS",
+      "color": "3"
+    },
+    {
+      "id": "ppj-lane-276d6ca3922f",
+      "type": "group",
+      "x": 1050,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BLOCKED / WAITING",
+      "color": "4"
+    },
+    {
+      "id": "ppj-lane-a82db70f445e",
+      "type": "group",
+      "x": 1400,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "REVIEW / UAT",
+      "color": "5"
+    },
+    {
+      "id": "ppj-lane-e782e7728e49",
+      "type": "group",
+      "x": 1750,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "DONE",
+      "color": "6"
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {
+      "project": "ADMIN_ExpenseManagement_v1.1.0",
+      "board_type": "project_executive_kanban",
+      "last_verified": "2026-09-18"
+    }
+  }
+}

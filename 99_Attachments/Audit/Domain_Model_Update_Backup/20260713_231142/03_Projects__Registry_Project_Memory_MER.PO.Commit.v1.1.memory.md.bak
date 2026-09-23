@@ -1,0 +1,59 @@
+---
+type: project_memory
+project_name: "MER.PO.Commit.v1.1"
+project_file: "MER.PO-Commit.md"
+project_code: "MER.PO.Commit.v1.1"
+department: "MER"
+cluster: "MER Workflow"
+phase: "Closed / Production Support"
+technical_members: ["Lam", "Uyen"]
+last_verified: "2026-06-28"
+confidence: "Strong"
+---
+
+# Project Memory: MER.PO.Commit.v1.1
+
+## One-Line Understanding
+
+MER automation to create OC template, NPL file, and Packing List from customer PO.
+
+## Current Outcome
+
+Support PO processing and reduce manual preparation work.
+
+## Latest Update Summary
+
+Status is closed with possible production support or enhancement for customer-specific logic such as Canadian Tire.
+
+## What This Project Is
+
+PO processing support automation for MER.
+
+## What This Project Is Not
+
+Not active new development unless enhancement is approved.
+
+## Key Users
+
+MER users.
+
+## Systems / Data
+
+Customer PO, OC template, NPL file, Packing List, customer-specific formats.
+
+## Known Risks / Blockers
+
+Changing customer PO formats and hard-coded logic.
+
+## Next Actions
+
+Maintain production support if needed; confirm before reopening.
+
+## Do Not Drift Rules
+
+- Confirm closed vs production support before claiming active development.
+
+## Source Links
+
+- [[MER.PO-Commit]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]

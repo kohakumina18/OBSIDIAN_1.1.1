@@ -1,0 +1,59 @@
+{
+  "nodes": [
+    {
+      "id": "road-0",
+      "type": "text",
+      "text": "STRATEGIC NEXT\n\n- Finance WS2 -> WS3\n- Costing Sew v1.2\n- GDI WFX API\n- Technical Sync Stabilization\n- Admin Expense Requirement Refinement",
+      "x": 0,
+      "y": 0,
+      "width": 540,
+      "height": 460
+    },
+    {
+      "id": "road-1",
+      "type": "text",
+      "text": "DELIVERY GATES\n\n- ExpenseInvoices -> Production Readiness\n- Material Allocation -> Exception / UAT",
+      "x": 620,
+      "y": 0,
+      "width": 540,
+      "height": 460
+    },
+    {
+      "id": "road-2",
+      "type": "text",
+      "text": "PRODUCTION SCALE\n\n- HR rollout\n- Sourcing data-quality improvement",
+      "x": 1240,
+      "y": 0,
+      "width": 540,
+      "height": 460
+    },
+    {
+      "id": "road-3",
+      "type": "text",
+      "text": "EVALUATION\n\n- Pattern Build-vs-Buy\n- NUNOX\n- Stratova\n- Primo1D",
+      "x": 1860,
+      "y": 0,
+      "width": 540,
+      "height": 460
+    },
+    {
+      "id": "road-4",
+      "type": "text",
+      "text": "ON HOLD\n\n- QSee\n- COWASH\n- H&M Label-O",
+      "x": 2480,
+      "y": 0,
+      "width": 540,
+      "height": 460
+    },
+    {
+      "id": "road-5",
+      "type": "text",
+      "text": "CLOSED\n\n- ACC.Inventory.Report.v1.0\n- MER.PO.Commit.v1.1\n- EXIM.ExpenseInvoices.Automation.v1.1",
+      "x": 3100,
+      "y": 0,
+      "width": 540,
+      "height": 460
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,166 @@
+{
+  "nodes": [
+    {
+      "id": "ppj-board-metadata",
+      "type": "text",
+      "text": "AI_ApplicationHub_v2.1.0 — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1",
+      "x": 0,
+      "y": -220,
+      "width": 760,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "ppj-exec-summary",
+      "type": "text",
+      "text": "AI_ApplicationHub_v2.1.0\n\nDomain:\nInternal Chatbot & AI Platforms\n\nLifecycle:\nPlatform / Internal Hub\n\nProgress:\nTBD\n\nGate:\nPlatform operations\n\nOutcome:\nAI application discovery, access and launch layer for the internal AI ecosystem.\n\nTop Blocker:\nNone recorded\n\nNext Milestone:\nMaintain application catalogue and access\n\nLast Verified:\n2026-09-18",
+      "x": 0,
+      "y": -90,
+      "width": 760,
+      "height": 560,
+      "color": "4"
+    },
+    {
+      "id": "ppj-management-attention",
+      "type": "text",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- None recorded\n\nDecisions Needed\n- None recorded\n\nExternal Dependencies\n- None recorded",
+      "x": 810,
+      "y": -90,
+      "width": 500,
+      "height": 560,
+      "color": "1"
+    },
+    {
+      "id": "ppj-lane-f3e573404df4",
+      "type": "group",
+      "x": 0,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BACKLOG",
+      "color": "1"
+    },
+    {
+      "id": "ppj-task-850e9b0c7910",
+      "type": "text",
+      "text": "[[Tasks/PPJ.AI.Hub.v2.1-20260824-TASK-002_Keep-project-registry-ownership-outside-AI-Hub]]\n\nKeep project registry ownership outside AI Hub\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 20,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-314d4517ba05",
+      "type": "text",
+      "text": "[[Tasks/PPJ.AI.Hub.v2.1-20260824-TASK-001_Maintain-application-catalogue-and-access]]\n\nMaintain application catalogue and access\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 20,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-8d767178b3a7",
+      "type": "group",
+      "x": 350,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "THIS WEEK",
+      "color": "2"
+    },
+    {
+      "id": "ppj-lane-bf81443bfcae",
+      "type": "group",
+      "x": 700,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "IN PROGRESS",
+      "color": "3"
+    },
+    {
+      "id": "ppj-lane-276d6ca3922f",
+      "type": "group",
+      "x": 1050,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BLOCKED / WAITING",
+      "color": "4"
+    },
+    {
+      "id": "ppj-lane-a82db70f445e",
+      "type": "group",
+      "x": 1400,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "REVIEW / UAT",
+      "color": "5"
+    },
+    {
+      "id": "ppj-lane-e782e7728e49",
+      "type": "group",
+      "x": 1750,
+      "y": 560,
+      "width": 300,
+      "height": 1050,
+      "label": "DONE",
+      "color": "6"
+    },
+    {
+      "id": "ppj-task-24cfc0efb5f4",
+      "type": "text",
+      "text": "[[Tasks/PPJ.AI.Hub.v2.1-TASK-002_Confirm-initial-modules]]\n\nConfirm initial modules\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-0bb2743c81df",
+      "type": "text",
+      "text": "[[Tasks/PPJ.AI.Hub.v2.1-TASK-003_Confirm-owner-and-support-process]]\n\nConfirm owner and support process\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-26926decb43c",
+      "type": "text",
+      "text": "[[Tasks/PPJ.AI.Hub.v2.1-TASK-004_Create-AI-Hub-user-journey]]\n\nCreate AI Hub user journey\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1010,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-f6bf0827159e",
+      "type": "text",
+      "text": "[[Tasks/PPJ.AI.Hub.v2.1-TASK-005_Create-first-release-roadmap]]\n\nCreate first release roadmap\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1200,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-6bcf8caf4968",
+      "type": "text",
+      "text": "[[Tasks/PPJ.AI.Hub.v2.1-TASK-001_Define-module-registry-fields]]\n\nDefine module registry fields\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1390,
+      "width": 260,
+      "height": 155
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {
+      "project": "AI_ApplicationHub_v2.1.0",
+      "board_type": "project_executive_kanban",
+      "last_verified": "2026-09-18"
+    }
+  }
+}

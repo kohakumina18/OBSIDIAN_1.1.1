@@ -1,0 +1,166 @@
+{
+  "nodes": [
+    {
+      "id": "ppj-board-metadata",
+      "type": "text",
+      "text": "PUR_InventoryReport_v2.1.0 — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1",
+      "x": 0,
+      "y": -220,
+      "width": 760,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "ppj-exec-summary",
+      "type": "text",
+      "text": "PUR_InventoryReport_v2.1.0\n\nDomain:\nSourcing / Purchasing\n\nLifecycle:\nProduction / Support\n\nProgress:\nv2.1 enhancement completed\n\nGate:\nPost-enhancement support\n\nOutcome:\nPurchasing operational inventory reporting: enhanced visibility, reports, tables, filters and material monitoring.\n\nTop Blocker:\nNone recorded\n\nNext Milestone:\nCollect operational feedback\n\nLast Verified:\n2026-09-18",
+      "x": 0,
+      "y": -90,
+      "width": 760,
+      "height": 560,
+      "color": "4"
+    },
+    {
+      "id": "ppj-management-attention",
+      "type": "text",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- None recorded\n\nDecisions Needed\n- None recorded\n\nExternal Dependencies\n- None recorded",
+      "x": 810,
+      "y": -90,
+      "width": 500,
+      "height": 560,
+      "color": "1"
+    },
+    {
+      "id": "ppj-lane-f3e573404df4",
+      "type": "group",
+      "x": 0,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BACKLOG",
+      "color": "1"
+    },
+    {
+      "id": "ppj-task-e0d1cab9a5d9",
+      "type": "text",
+      "text": "[[Tasks/PUR.Inventory.Report.v2.1-20260824-TASK-001_Collect-operational-feedback]]\n\nCollect operational feedback\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 20,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-ca797d00359f",
+      "type": "text",
+      "text": "[[Tasks/PUR.Inventory.Report.v2.1-20260824-TASK-002_Prioritize-validated-reporting-enhancements]]\n\nPrioritize validated reporting enhancements\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 20,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-8d767178b3a7",
+      "type": "group",
+      "x": 350,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "THIS WEEK",
+      "color": "2"
+    },
+    {
+      "id": "ppj-lane-bf81443bfcae",
+      "type": "group",
+      "x": 700,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "IN PROGRESS",
+      "color": "3"
+    },
+    {
+      "id": "ppj-lane-276d6ca3922f",
+      "type": "group",
+      "x": 1050,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BLOCKED / WAITING",
+      "color": "4"
+    },
+    {
+      "id": "ppj-lane-a82db70f445e",
+      "type": "group",
+      "x": 1400,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "REVIEW / UAT",
+      "color": "5"
+    },
+    {
+      "id": "ppj-lane-e782e7728e49",
+      "type": "group",
+      "x": 1750,
+      "y": 560,
+      "width": 300,
+      "height": 1050,
+      "label": "DONE",
+      "color": "6"
+    },
+    {
+      "id": "ppj-task-b53cc294aa34",
+      "type": "text",
+      "text": "[[Tasks/PUR.Inventory.Report.v2.1-TASK-002_Collect-post-v2-1-feedback]]\n\nCollect post-v2.1 feedback\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-671596c4c25b",
+      "type": "text",
+      "text": "[[Tasks/PUR.Inventory.Report.v2.1-TASK-005_Confirm-enhancement-backlog-and-monitor-production-stability]]\n\nConfirm enhancement backlog and monitor production stability\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-48e43cf4bcae",
+      "type": "text",
+      "text": "[[Tasks/PUR.Inventory.Report.v2.1-TASK-001_Purchasing-Inventory-v2-1-Post-release-Validation]]\n\nPurchasing Inventory v2.1 Post-release Validation\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1010,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-bbc32fd129cb",
+      "type": "text",
+      "text": "[[Tasks/PUR.Inventory.Report.v2.1-TASK-004_Separate-defects-from-enhancements]]\n\nSeparate defects from enhancements\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1200,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-2b822f026e71",
+      "type": "text",
+      "text": "[[Tasks/PUR.Inventory.Report.v2.1-TASK-003_Validate-totals-refresh-and-source-reconciliation]]\n\nValidate totals, refresh and source reconciliation\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1390,
+      "width": 260,
+      "height": 155
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {
+      "project": "PUR_InventoryReport_v2.1.0",
+      "board_type": "project_executive_kanban",
+      "last_verified": "2026-09-18"
+    }
+  }
+}

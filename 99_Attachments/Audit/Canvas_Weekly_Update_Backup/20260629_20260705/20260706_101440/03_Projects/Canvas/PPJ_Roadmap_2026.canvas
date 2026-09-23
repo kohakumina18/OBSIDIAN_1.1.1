@@ -1,0 +1,385 @@
+﻿{
+    "nodes":  [
+                  {
+                      "id":  "road-title",
+                      "type":  "text",
+                      "text":  "PPJ Roadmap 2026 - Outcome View\nUpdated: 2026-07-02\nUse for quarterly delivery, support load, blocked dependency review, and external PoC tracking.",
+                      "x":  "-20",
+                      "y":  "-280",
+                      "width":  1240,
+                      "height":  160,
+                      "color":  "6"
+                  },
+                  {
+                      "id":  "91498a6e5017",
+                      "type":  "group",
+                      "x":  0,
+                      "y":  0,
+                      "width":  820,
+                      "height":  1320,
+                      "color":  "3",
+                      "label":  "Q3 ANALYSIS"
+                  },
+                  {
+                      "id":  "26c26f5881fd",
+                      "type":  "file",
+                      "file":  "03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1.md",
+                      "x":  30,
+                      "y":  80,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "5b209cb905e8",
+                      "type":  "file",
+                      "file":  "03_Projects/TD.TechnicalPlatform_v2.1.md",
+                      "x":  30,
+                      "y":  185,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "543a5b3a7a2d",
+                      "type":  "file",
+                      "file":  "03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1.md",
+                      "x":  30,
+                      "y":  290,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "11edd834df33",
+                      "type":  "file",
+                      "file":  "03_Projects/E-commerce Market Intelligence.md",
+                      "x":  30,
+                      "y":  395,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "2db0543508a5",
+                      "type":  "file",
+                      "file":  "03_Projects/PPJ. Expense-Invoices.v1.1.md",
+                      "x":  30,
+                      "y":  500,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "e7ec128e43e3",
+                      "type":  "file",
+                      "file":  "03_Projects/HR.SS\u0026PFD.v1.1.md",
+                      "x":  30,
+                      "y":  605,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "5f48db1a7781",
+                      "type":  "file",
+                      "file":  "03_Projects/Workshop Analysis.md",
+                      "x":  30,
+                      "y":  710,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "62b3a4c2f685",
+                      "type":  "group",
+                      "x":  900,
+                      "y":  0,
+                      "width":  820,
+                      "height":  1320,
+                      "color":  "4",
+                      "label":  "Q3 BUILD"
+                  },
+                  {
+                      "id":  "0057ae8afa7e",
+                      "type":  "file",
+                      "file":  "03_Projects/SCP.SOURCING.CHATBOT.v2.3.md",
+                      "x":  930,
+                      "y":  80,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "9beb92a26614",
+                      "type":  "file",
+                      "file":  "03_Projects/CPD.Datamart.v1.1.md",
+                      "x":  930,
+                      "y":  185,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "0eef9cd0a511",
+                      "type":  "file",
+                      "file":  "03_Projects/PROD.IOT.CHuyenTreo_1.md",
+                      "x":  930,
+                      "y":  290,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "dbad7c331da5",
+                      "type":  "group",
+                      "x":  1800,
+                      "y":  0,
+                      "width":  820,
+                      "height":  1320,
+                      "color":  "5",
+                      "label":  "Q3 STABILIZE"
+                  },
+                  {
+                      "id":  "d0d4972a7b56",
+                      "type":  "file",
+                      "file":  "03_Projects/FD.Datamart.v2.2.md",
+                      "x":  1830,
+                      "y":  80,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "e85f1f7b3c17",
+                      "type":  "file",
+                      "file":  "03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1.md",
+                      "x":  1830,
+                      "y":  185,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "be3c3ce7e48e",
+                      "type":  "group",
+                      "x":  2700,
+                      "y":  0,
+                      "width":  820,
+                      "height":  1320,
+                      "color":  "2",
+                      "label":  "PRODUCTION SUPPORT"
+                  },
+                  {
+                      "id":  "68a9d2c578d8",
+                      "type":  "file",
+                      "file":  "03_Projects/PPJ.PERRI.Chatbot.md",
+                      "x":  2730,
+                      "y":  80,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "2d20e44fb440",
+                      "type":  "file",
+                      "file":  "03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot.md",
+                      "x":  2730,
+                      "y":  185,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "7f38cdbd1b82",
+                      "type":  "file",
+                      "file":  "03_Projects/PPJ.AI.Hub.v2.1.md",
+                      "x":  2730,
+                      "y":  290,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "9fac1fa8493c",
+                      "type":  "file",
+                      "file":  "03_Projects/PPJ.Invoice Downloader.v1.2.md",
+                      "x":  2730,
+                      "y":  395,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "616496621b5a",
+                      "type":  "file",
+                      "file":  "03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3.md",
+                      "x":  2730,
+                      "y":  500,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "f4d5aba56e8a",
+                      "type":  "file",
+                      "file":  "03_Projects/PUR.Adhoc Indent mien Nam.md",
+                      "x":  2730,
+                      "y":  605,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "65817edfd6b7",
+                      "type":  "file",
+                      "file":  "03_Projects/PUR.Inventory Report.md",
+                      "x":  2730,
+                      "y":  710,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "2b8b8e5977d6",
+                      "type":  "group",
+                      "x":  3600,
+                      "y":  0,
+                      "width":  820,
+                      "height":  1320,
+                      "color":  "1",
+                      "label":  "BLOCKED / DEPENDENCY"
+                  },
+                  {
+                      "id":  "85f465432021",
+                      "type":  "file",
+                      "file":  "03_Projects/PUR.Material.Allocation.v1.1.md",
+                      "x":  3630,
+                      "y":  80,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "52221f2feb63",
+                      "type":  "file",
+                      "file":  "03_Projects/PUR.GDI Automation.md",
+                      "x":  3630,
+                      "y":  185,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "89da3780b14d",
+                      "type":  "file",
+                      "file":  "03_Projects/PUR.H\u0026M Label-O Processing.md",
+                      "x":  3630,
+                      "y":  290,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "20dc419864e5",
+                      "type":  "file",
+                      "file":  "03_Projects/PROD.COWASH.md",
+                      "x":  3630,
+                      "y":  395,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "48dbd4aa19e2",
+                      "type":  "group",
+                      "x":  4500,
+                      "y":  0,
+                      "width":  820,
+                      "height":  1320,
+                      "color":  "6",
+                      "label":  "EXTERNAL / POC"
+                  },
+                  {
+                      "id":  "897f08b30360",
+                      "type":  "file",
+                      "file":  "03_Projects/PPJxQSee.ai.md",
+                      "x":  4530,
+                      "y":  80,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "39b3b360d60b",
+                      "type":  "file",
+                      "file":  "03_Projects/PPJxNUNOX.md",
+                      "x":  4530,
+                      "y":  185,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "07ebe091890d",
+                      "type":  "file",
+                      "file":  "03_Projects/PPJ XPrimo1D RFID Thread.md",
+                      "x":  4530,
+                      "y":  290,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "e54a0fe561fd",
+                      "type":  "file",
+                      "file":  "03_Projects/VITAS Sharing.md",
+                      "x":  4530,
+                      "y":  395,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "24dcb90636f2",
+                      "type":  "group",
+                      "x":  5400,
+                      "y":  0,
+                      "width":  820,
+                      "height":  1320,
+                      "color":  "1",
+                      "label":  "CLOSED / PARKED"
+                  },
+                  {
+                      "id":  "6f0bca8968bc",
+                      "type":  "file",
+                      "file":  "03_Projects/MER.PO-Commit.md",
+                      "x":  5430,
+                      "y":  80,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "e579babec3c2",
+                      "type":  "file",
+                      "file":  "03_Projects/PPJxStratova AI.md",
+                      "x":  5430,
+                      "y":  185,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "e371eb7295a0",
+                      "type":  "file",
+                      "file":  "03_Projects/AI Automation Workshop.md",
+                      "x":  5430,
+                      "y":  290,
+                      "width":  330,
+                      "height":  85
+                  },
+                  {
+                      "id":  "road-backlog-idea-20260703",
+                      "type":  "group",
+                      "x":  6300,
+                      "y":  0,
+                      "width":  820,
+                      "height":  760,
+                      "color":  "6",
+                      "label":  "BACKLOG / IDEA / PARTNERSHIP"
+                  },
+                  {
+                      "id":  "road-uit-academic-20260703",
+                      "type":  "file",
+                      "file":  "03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1.md",
+                      "x":  6330,
+                      "y":  80,
+                      "width":  360,
+                      "height":  85
+                  },
+                  {
+                      "id":  "road-fin-ai-20260703",
+                      "type":  "file",
+                      "file":  "03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1.md",
+                      "x":  6330,
+                      "y":  185,
+                      "width":  360,
+                      "height":  85
+                  }
+              ],
+    "edges":  [
+
+              ]
+}

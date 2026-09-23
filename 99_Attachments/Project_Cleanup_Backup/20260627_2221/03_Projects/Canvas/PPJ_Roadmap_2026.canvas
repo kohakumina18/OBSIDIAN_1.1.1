@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"36c97c8375ba","type":"text","text":"PPJ Roadmap 2026\n\nUse this for planning quarterly delivery and avoiding scope explosion.","x":0,"y":"-220","width":760,"height":140,"color":"6"},
+		{"id":"ade5e40c1f5d","type":"group","label":"DEVELOPMENT / STABILIZE","x":0,"y":0,"width":620,"height":760,"color":"5"},
+		{"id":"b23df2c6c470","type":"file","file":"03_Projects/FD QR Hanger.md","x":30,"y":70,"width":300,"height":85},
+		{"id":"97afc31a9227","type":"file","file":"03_Projects/PPJ.Invoice Downloader.v1.2.md","x":30,"y":175,"width":300,"height":85},
+		{"id":"be87d6c408e4","type":"file","file":"03_Projects/PPJ. Expense-Invoices.v1.1.md","x":30,"y":280,"width":300,"height":85},
+		{"id":"ac7c342e28b8","type":"file","file":"03_Projects/PUR.Material.Allocation.v1.1.md","x":30,"y":385,"width":300,"height":85},
+		{"id":"00e8b48b1c39","type":"file","file":"03_Projects/Workshop Analysis.md","x":30,"y":490,"width":300,"height":85},
+		{"id":"805b5bbf7399","type":"group","label":"DATA FOUNDATION","x":700,"y":0,"width":620,"height":760,"color":"5"},
+		{"id":"e1dec0c54876","type":"file","file":"03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1.md","x":730,"y":70,"width":300,"height":85},
+		{"id":"9f64d9c0bff1","type":"file","file":"03_Projects/E-commerce Market Intelligence.md","x":730,"y":175,"width":300,"height":85},
+		{"id":"ff3db9de7172","type":"file","file":"03_Projects/Sourcing Chatbot v2.3.md","x":730,"y":280,"width":300,"height":85},
+		{"id":"d237e8c5ce53","type":"file","file":"03_Projects/Sourcing VER2.md","x":730,"y":385,"width":300,"height":85},
+		{"id":"ecd80c7832e2","type":"file","file":"03_Projects/CPD Fabric Database.md","x":730,"y":490,"width":300,"height":85},
+		{"id":"daa4aec1a263","type":"group","label":"Q4 – Scale / Integration","x":1400,"y":0,"width":620,"height":760,"color":"5"},
+		{"id":"2f276eee638b","type":"file","file":"03_Projects/PPJ.PERRI.Chatbot.md","x":1430,"y":70,"width":300,"height":85},
+		{"id":"fcd06a475c7c","type":"file","file":"03_Projects/PPJxQSee.ai.md","x":1430,"y":175,"width":300,"height":85},
+		{"id":"c2972f730b6e","type":"file","file":"03_Projects/PPJ XPrimo1D RFID Thread.md","x":1430,"y":280,"width":300,"height":85},
+		{"id":"662d52fd6052","type":"file","file":"03_Projects/PPJxNUNOX.md","x":1430,"y":385,"width":300,"height":85},
+		{"id":"3f2bf99e6863","type":"file","file":"03_Projects/PROD.Chuyền treo ver1.md","x":1430,"y":490,"width":300,"height":85}
+	],
+	"edges":[]
+}

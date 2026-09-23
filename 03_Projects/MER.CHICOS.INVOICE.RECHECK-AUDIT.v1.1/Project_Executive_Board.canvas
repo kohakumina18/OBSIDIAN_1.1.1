@@ -1,0 +1,157 @@
+{
+  "nodes": [
+    {
+      "id": "ppj-board-metadata",
+      "type": "text",
+      "text": "MER_InvoiceDataRecheck_v1.1.0 — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1",
+      "x": 0,
+      "y": -220,
+      "width": 760,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "ppj-exec-summary",
+      "type": "text",
+      "text": "MER_InvoiceDataRecheck_v1.1.0\n\nDomain:\nMerchandising\n\nLifecycle:\nSTABILIZE\n\nProgress:\nTBD\n\nGate:\nMulti-customer invoice, cost and data checking\n\nOutcome:\nCross-check costing data, commercial cost, invoice data and customer rules, route exceptions to user review.\n\nTop Blocker:\nCustomer-rule coverage across customers\n\nNext Milestone:\nValidate customer-specific recheck rules, starting from the Chico's baseline\n\nLast Verified:\n2026-09-18",
+      "x": 0,
+      "y": -90,
+      "width": 760,
+      "height": 560,
+      "color": "4"
+    },
+    {
+      "id": "ppj-management-attention",
+      "type": "text",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Customer-rule coverage across customers\n\nDecisions Needed\n- None recorded\n\nExternal Dependencies\n- None recorded",
+      "x": 810,
+      "y": -90,
+      "width": 500,
+      "height": 560,
+      "color": "1"
+    },
+    {
+      "id": "ppj-lane-f3e573404df4",
+      "type": "group",
+      "x": 0,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BACKLOG",
+      "color": "1"
+    },
+    {
+      "id": "ppj-task-5cbaa31d814c",
+      "type": "text",
+      "text": "[[Tasks/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1-20260824-TASK-002_Confirm-audit-output-with-Merchandising]]\n\nConfirm audit output with Merchandising\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 20,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-7f7b56882824",
+      "type": "text",
+      "text": "[[Tasks/MER-InvoiceDataRecheck-v1.1.0-20260918-TASK-001_Validate-customer-specific-recheck-rules-starting-from-the-Chico-s-bas]]\n\nValidate customer-specific recheck rules, starting from the Chico's baseline\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 20,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-8d767178b3a7",
+      "type": "group",
+      "x": 350,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "THIS WEEK",
+      "color": "2"
+    },
+    {
+      "id": "ppj-lane-bf81443bfcae",
+      "type": "group",
+      "x": 700,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "IN PROGRESS",
+      "color": "3"
+    },
+    {
+      "id": "ppj-lane-276d6ca3922f",
+      "type": "group",
+      "x": 1050,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BLOCKED / WAITING",
+      "color": "4"
+    },
+    {
+      "id": "ppj-lane-a82db70f445e",
+      "type": "group",
+      "x": 1400,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "REVIEW / UAT",
+      "color": "5"
+    },
+    {
+      "id": "ppj-lane-e782e7728e49",
+      "type": "group",
+      "x": 1750,
+      "y": 560,
+      "width": 300,
+      "height": 860,
+      "label": "DONE",
+      "color": "6"
+    },
+    {
+      "id": "ppj-task-ebbdf0a87e32",
+      "type": "text",
+      "text": "[[Tasks/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1-TASK-002_Confirm-missing-data-fields-and-workflow]]\n\nConfirm missing data fields and workflow\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-31c7f334b90e",
+      "type": "text",
+      "text": "[[Tasks/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1-TASK-001_Review-repaired-block-with-project-owner]]\n\nReview repaired block with project owner\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-d2ae1bc2d014",
+      "type": "text",
+      "text": "[[Tasks/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1-TASK-003_Update-related-BRD-SOP-user-manual-after-confirmation]]\n\nUpdate related BRD/SOP/user manual after confirmation\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1010,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-04c76059a950",
+      "type": "text",
+      "text": "[[Tasks/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1-20260824-TASK-001_Validate-Chico-s-specific-recheck-logic]]\n\nValidate Chico's-specific recheck logic\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 1770,
+      "y": 1200,
+      "width": 260,
+      "height": 155
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {
+      "project": "MER_InvoiceDataRecheck_v1.1.0",
+      "board_type": "project_executive_kanban",
+      "last_verified": "2026-09-18"
+    }
+  }
+}

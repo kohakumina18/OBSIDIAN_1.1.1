@@ -1,0 +1,193 @@
+{
+  "nodes": [
+    {
+      "id": "ppj-board-metadata",
+      "type": "text",
+      "text": "TD_TechnicalKnowledgePlatform_v2.1.0 — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1",
+      "x": 0,
+      "y": -220,
+      "width": 760,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "ppj-exec-summary",
+      "type": "text",
+      "text": "TD_TechnicalKnowledgePlatform_v2.1.0\n\nDomain:\nFabric / Textiles Technique\n\nLifecycle:\nDevelopment / Data Validation\n\nProgress:\nETL completed for currently identified v2.1 sources\n\nGate:\nSync validation and canonical technical model\n\nOutcome:\nTechnical Data Backbone for Pattern, BOM, Consumption, Construction, documents and historical records; upstream source for Costing, Sew Agent, BOM, Consumption, Pattern, Technical Search and Similar Style.\n\nTop Blocker:\nSync reliability\n\nNext Milestone:\nImplement incremental sync, error handling and retry\n\nLast Verified:\n2026-09-18",
+      "x": 0,
+      "y": -90,
+      "width": 760,
+      "height": 560,
+      "color": "4"
+    },
+    {
+      "id": "ppj-management-attention",
+      "type": "text",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Sync reliability\n- Version governance\n- Missing keys and duplicate records\n\nDecisions Needed\n- None recorded\n\nExternal Dependencies\n- Technical sources -> ETL -> Technical Data Layer -> Sync -> Platform -> Costing / Pattern / Wash / Search",
+      "x": 810,
+      "y": -90,
+      "width": 500,
+      "height": 560,
+      "color": "1"
+    },
+    {
+      "id": "ppj-lane-f3e573404df4",
+      "type": "group",
+      "x": 0,
+      "y": 560,
+      "width": 300,
+      "height": 860,
+      "label": "BACKLOG",
+      "color": "1"
+    },
+    {
+      "id": "ppj-task-0bda8396bf6f",
+      "type": "text",
+      "text": "[[Tasks/TD.TechnicalKnowledge.Platform.v2.1-20260824-TASK-002_Add-duplicate-missing-key-and-reconciliation-checks]]\n\nAdd duplicate, missing-key and reconciliation checks\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 20,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-77f0cbd3538f",
+      "type": "text",
+      "text": "[[Tasks/TD.TechnicalKnowledge.Platform.v2.1-20260824-TASK-004_Finalize-permissions-and-prepare-Technical-UAT]]\n\nFinalize permissions and prepare Technical UAT\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 20,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-cc36ee4a084d",
+      "type": "text",
+      "text": "[[Tasks/TD.TechnicalKnowledge.Platform.v2.1-20260824-TASK-003_Govern-versions-and-latest-approved-record-logic]]\n\nGovern versions and latest/approved-record logic\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 20,
+      "y": 1010,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-788bc545bcc1",
+      "type": "text",
+      "text": "[[Tasks/TD.TechnicalKnowledge.Platform.v2.1-20260824-TASK-001_Implement-incremental-sync-error-handling-and-retry]]\n\nImplement incremental sync, error handling and retry\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 20,
+      "y": 1200,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-8d767178b3a7",
+      "type": "group",
+      "x": 350,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "THIS WEEK",
+      "color": "2"
+    },
+    {
+      "id": "ppj-lane-bf81443bfcae",
+      "type": "group",
+      "x": 700,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "IN PROGRESS",
+      "color": "3"
+    },
+    {
+      "id": "ppj-lane-276d6ca3922f",
+      "type": "group",
+      "x": 1050,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BLOCKED / WAITING",
+      "color": "4"
+    },
+    {
+      "id": "ppj-lane-a82db70f445e",
+      "type": "group",
+      "x": 1400,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "REVIEW / UAT",
+      "color": "5"
+    },
+    {
+      "id": "ppj-lane-e782e7728e49",
+      "type": "group",
+      "x": 1750,
+      "y": 560,
+      "width": 300,
+      "height": 1240,
+      "label": "DONE",
+      "color": "6"
+    },
+    {
+      "id": "ppj-task-4236483c3054",
+      "type": "text",
+      "text": "[[Tasks/TD.TechnicalKnowledge.Platform.v2.1-TASK-005_Build-search-retrieval-and-permission-layers]]\n\nBuild search/retrieval and permission layers\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-f436a24e18a5",
+      "type": "text",
+      "text": "[[Tasks/TD.TechnicalKnowledge.Platform.v2.1-TASK-004_Confirm-record-version-and-approved-latest-version-logic]]\n\nConfirm record version and approved/latest version logic\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-bdfb75f729b7",
+      "type": "text",
+      "text": "[[Tasks/TD.TechnicalKnowledge.Platform.v2.1-TASK-006_Connect-consumption-data-to-Costing-and-prepare-Technical-us]]\n\nConnect consumption data to Costing and prepare Technical-user UAT\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1010,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-06e6450b6521",
+      "type": "text",
+      "text": "[[Tasks/TD.TechnicalKnowledge.Platform.v2.1-TASK-003_Detect-duplicates-and-missing-keys]]\n\nDetect duplicates and missing keys\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1200,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-bae34a75bcee",
+      "type": "text",
+      "text": "[[Tasks/TD.TechnicalKnowledge.Platform.v2.1-TASK-002_Measure-ETL-coverage-and-reconcile-with-source-systems]]\n\nMeasure ETL coverage and reconcile with source systems\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1390,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-a751eff0a7ae",
+      "type": "text",
+      "text": "[[Tasks/TD.TechnicalKnowledge.Platform.v2.1-TASK-001_Technical-ETL-Reconciliation-and-Data-Acceptance]]\n\nTechnical ETL Reconciliation and Data Acceptance\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1580,
+      "width": 260,
+      "height": 155
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {
+      "project": "TD_TechnicalKnowledgePlatform_v2.1.0",
+      "board_type": "project_executive_kanban",
+      "last_verified": "2026-09-18"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+---
+type: project_memory
+project_name: "PPJxQSee.AI"
+project_file: "PPJxQSee.ai.md"
+project_code: "PPJxQSee.AI"
+department: "QC / Production"
+cluster: "External Collaboration"
+phase: "NDA approved / Use case discussion"
+last_verified: "2026-06-28"
+confidence: "Strong"
+---
+
+# Project Memory: PPJxQSee.AI
+
+## One-Line Understanding
+
+External QSee.ai collaboration exploration for QC/production AI inspection use cases.
+
+## Current Outcome
+
+Define PoC use case, data requirement, success criteria, and vendor feasibility after NDA.
+
+## Latest Update Summary
+
+NDA approved; preparing use-case discussion.
+
+## What This Project Is
+
+Vendor exploration/PoC candidate for AI quality inspection or defect detection.
+
+## What This Project Is Not
+
+Not confirmed implementation or production deployment.
+
+## Key Users
+
+QC, production, AI/Automation stakeholders.
+
+## Systems / Data
+
+Inspection images/video, defect labels, production/QC process, vendor PoC materials.
+
+## Known Risks / Blockers
+
+PoC scope, data privacy, sample data, measurable success criteria.
+
+## Next Actions
+
+Prepare use-case shortlist and PoC criteria.
+
+## Do Not Drift Rules
+
+- Do not claim implementation unless PoC is confirmed.
+- Keep NDA/use-case stage visible.
+
+## Source Links
+
+- [[PPJxQSee.ai]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]

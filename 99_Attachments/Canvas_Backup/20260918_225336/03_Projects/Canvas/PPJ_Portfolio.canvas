@@ -1,0 +1,401 @@
+{
+  "nodes": [
+    {
+      "id": "group-0",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "width": 620,
+      "height": 1620,
+      "label": "STRATEGIC ACTIVE"
+    },
+    {
+      "id": "view-card-c8bfa41fdd3072d6",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:FIN_FinanceManagement_v1.2.0 -->\n\n## [[03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1|FIN_FinanceManagement_v1.2.0]]\n\nDomain: Finance / Accounting\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: DESIGN\nLifecycle: Strategic Active\nStatus: Active\nPriority: P1\nGate: WS2 OC / Cost Control and WS3 Factory Performance",
+      "x": 30,
+      "y": 80,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-f61db9de0d8408c8",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:MER_CostingAgenticPlatform_v1.1.0 -->\n\n## [[03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1|MER_CostingAgenticPlatform_v1.1.0]]\n\nDomain: Merchandising\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: DEVELOPMENT\nLifecycle: Active Development\nStatus: Active\nPriority: P2\nGate: Sew Agent fixes and Wash Agent development",
+      "x": 30,
+      "y": 380,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-636072440b331a08",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:PUR_GDIAutomation_v1.0.0 -->\n\n## [[03_Projects/PUR.GDI Automation|PUR_GDIAutomation_v1.0.0]]\n\nDomain: Sourcing / Purchasing\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: DEVELOPMENT\nLifecycle: Active Development / WFX API Integration\nStatus: Active\nPriority: P3\nGate: WFX API integration and GDI data-entry workflow",
+      "x": 30,
+      "y": 680,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-bdb2978a9aa37731",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:TD_TechnicalKnowledgePlatform_v2.1.0 -->\n\n## [[03_Projects/TD.TechnicalPlatform_v2.1|TD_TechnicalKnowledgePlatform_v2.1.0]]\n\nDomain: Fabric / Textiles Technique\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: UAT / PRE-GO-LIVE\nLifecycle: Sync Validation & Stabilization\nStatus: Active\nPriority: P5\nGate: Sync validation and canonical technical model",
+      "x": 30,
+      "y": 980,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-826d6b5050952dc7",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:ADMIN_ExpenseManagement_v1.1.0 -->\n\n## [[07_Decision_Log/DEC-20260824-ADMIN-EXPENSE-DOMAIN|ADMIN_ExpenseManagement_v1.1.0]]\n\nDomain: Administration\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: UAT / PRE-GO-LIVE\nLifecycle: Active / Requirement Refinement / UAT Preparation\nStatus: Active\nPriority: P6\nGate: Multi-traveler request model, end-to-end lifecycle and UAT preparation",
+      "x": 30,
+      "y": 1280,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "group-1",
+      "type": "group",
+      "x": 700,
+      "y": 0,
+      "width": 620,
+      "height": 2220,
+      "label": "ACTIVE DELIVERY / UAT"
+    },
+    {
+      "id": "view-card-11803b459454587c",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:LOG_ExpenseInvoiceProcessing_v1.2.0 -->\n\n## [[03_Projects/PPJ. Expense-Invoices.v1.1|LOG_ExpenseInvoiceProcessing_v1.2.0]]\n\nDomain: Logistics / EXIM\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: UAT / PRE-GO-LIVE\nLifecycle: Regional Rollout / UAT\nStatus: Active\nPriority: P4\nGate: Regional rollout, tax rules and invoice validation",
+      "x": 730,
+      "y": 80,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-23c5e8356f192a63",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:PUR_MaterialAllocation_v1.1.0 -->\n\n## [[03_Projects/PUR.Material.Allocation.v1.2|PUR_MaterialAllocation_v1.1.0]]\n\nDomain: Sourcing / Purchasing\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: UAT / PRE-GO-LIVE\nLifecycle: Validation / Stabilization\nStatus: Active\nPriority: P7\nGate: Transaction reliability and exception control",
+      "x": 730,
+      "y": 380,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-9d7d6f8176953bd7",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:MER_MarketIntelligence_v1.1.0 -->\n\n## [[03_Projects/E-commerce Market Intelligence v.2.3|MER_MarketIntelligence_v1.1.0]]\n\nDomain: Merchandising\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: ANALYSIS\nLifecycle: Active Intelligence\nStatus: Active\nPriority: Medium\nGate: Market and customer intelligence delivery",
+      "x": 730,
+      "y": 680,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-2303c59d0f777019",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:MER_InvoiceDataRecheck_v1.1.0 -->\n\n## [[03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1|MER_InvoiceDataRecheck_v1.1.0]]\n\nDomain: Merchandising\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: UAT / PRE-GO-LIVE\nLifecycle: Active\nStatus: Active\nPriority: Medium\nGate: Multi-customer invoice, cost and data checking",
+      "x": 730,
+      "y": 980,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-e5e04d23066ec878",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:WASH_SamplingManagement_v1.1.0 -->\n\n## [[03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1|WASH_SamplingManagement_v1.1.0]]\n\nDomain: Production + Wash\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: DESIGN\nLifecycle: Analysis / Product Design\nStatus: Active\nPriority: Medium\nGate: Sampling workflow and product design",
+      "x": 730,
+      "y": 1280,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-bf4ae233aced925a",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:PROD_HangingLineIoT_v1.0.0 -->\n\n## [[03_Projects/PROD.IOT.CHuyenTreo_1|PROD_HangingLineIoT_v1.0.0]]\n\nDomain: Production + Wash\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: DEVELOPMENT\nLifecycle: Development\nStatus: Active\nPriority: Medium\nGate: Source and KPI reconciliation",
+      "x": 730,
+      "y": 1580,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-60e0dd9d246c0ef3",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:WH_AWBExtraction_v1.1.0 -->\n\n## [[03_Projects/_Registry/Project_Update_Proposals/WAREHOUSE_AWB_OCR_CURRENT_INITIATIVE|WH_AWBExtraction_v1.1.0]]\n\nDomain: Warehouse\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: DEVELOPMENT\nLifecycle: Active Development\nStatus: Active\nPriority: Medium\nGate: AWB image OCR and DHL email extraction; table/cell understanding and weight/unit reliability",
+      "x": 730,
+      "y": 1880,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "group-2",
+      "type": "group",
+      "x": 1400,
+      "y": 0,
+      "width": 620,
+      "height": 1920,
+      "label": "PRODUCTION"
+    },
+    {
+      "id": "view-card-1726ac78ef6229bb",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:HR_EmployeeDataPlatform_v1.1.0 -->\n\n## [[03_Projects/HR.SS&PFD.v1.1|HR_EmployeeDataPlatform_v1.1.0]]\n\nDomain: HR\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: GO-LIVE / PRODUCTION / SUPPORT\nLifecycle: Production / Expansion\nStatus: Active\nPriority: P8\nGate: Production rollout and data-quality monitoring",
+      "x": 1430,
+      "y": 80,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-8700b8cbca31c656",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:SCP_SourcingChatbot_v2.3.0 -->\n\n## [[03_Projects/SCP.SOURCING.CHATBOT.v2.3|SCP_SourcingChatbot_v2.3.0]]\n\nDomain: Sourcing / Purchasing\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: GO-LIVE / PRODUCTION / SUPPORT\nLifecycle: Production\nStatus: Active\nPriority: P9\nGate: Production monitoring, data quality and retrieval quality",
+      "x": 1430,
+      "y": 380,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-7f6f6f7800d23fc0",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:FIN_InvoiceDownloader_v1.2.0 -->\n\n## [[03_Projects/PPJ.Invoice Downloader.v1.2|FIN_InvoiceDownloader_v1.2.0]]\n\nDomain: Finance / Accounting\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: GO-LIVE / PRODUCTION / SUPPORT\nLifecycle: Production\nStatus: Active\nPriority: Support\nGate: Operational reliability",
+      "x": 1430,
+      "y": 680,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-819426cbf2044bd9",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:PUR_InventoryReport_v2.1.0 -->\n\n## [[03_Projects/PUR.Inventory Report|PUR_InventoryReport_v2.1.0]]\n\nDomain: Sourcing / Purchasing\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: GO-LIVE / PRODUCTION / SUPPORT\nLifecycle: Production\nStatus: Active\nPriority: Support\nGate: Post-enhancement support",
+      "x": 1430,
+      "y": 980,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-2951fc98ebe46224",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:AI_PERRIPlatform_v3.2.0 -->\n\n## [[03_Projects/PPJ.PERRI.Chatbot|AI_PERRIPlatform_v3.2.0]]\n\nDomain: Internal Chatbot & AI Platforms\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: GO-LIVE / PRODUCTION / SUPPORT\nLifecycle: Production\nStatus: Active\nPriority: Support\nGate: Permissioned production orchestration",
+      "x": 1430,
+      "y": 1280,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-f97d3e50f9797cb2",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:AI_ApplicationHub_v2.1.0 -->\n\n## [[03_Projects/PPJ.AI.Hub.v2.1|AI_ApplicationHub_v2.1.0]]\n\nDomain: Internal Chatbot & AI Platforms\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: GO-LIVE / PRODUCTION / SUPPORT\nLifecycle: Internal Production Platform\nStatus: Active\nPriority: Support\nGate: Platform operations",
+      "x": 1430,
+      "y": 1580,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "group-3",
+      "type": "group",
+      "x": 2100,
+      "y": 0,
+      "width": 620,
+      "height": 1620,
+      "label": "MAINTENANCE / SUPPORT"
+    },
+    {
+      "id": "view-card-d632c727fcf1b272",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:FAB_FabricDatamart_v2.2.0 -->\n\n## [[03_Projects/FD.Datamart.v2.2|FAB_FabricDatamart_v2.2.0]]\n\nDomain: Fabric / Textiles Technique\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: GO-LIVE / PRODUCTION / SUPPORT\nLifecycle: Support\nStatus: Support\nPriority: Support\nGate: Operational support",
+      "x": 2130,
+      "y": 80,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-7069cdd093e61b27",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:CPD_VisualSampleDatamart_v1.1.0 -->\n\n## [[03_Projects/CPD.Datamart.v1.1|CPD_VisualSampleDatamart_v1.1.0]]\n\nDomain: Fabric / Textiles Technique\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: GO-LIVE / PRODUCTION / SUPPORT\nLifecycle: Maintenance\nStatus: Support\nPriority: Support\nGate: Operational maintenance",
+      "x": 2130,
+      "y": 380,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-7808c863f2d04f50",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:ACC_GRNSupplierInvoiceBot_v2.3.0 -->\n\n## [[03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3|ACC_GRNSupplierInvoiceBot_v2.3.0]]\n\nDomain: Finance / Accounting\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: GO-LIVE / PRODUCTION / SUPPORT\nLifecycle: Production Support\nStatus: Support\nPriority: Support\nGate: Operational stability and exceptions",
+      "x": 2130,
+      "y": 680,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-2586e301dbef15ed",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:PUR_AdhocIndentSouth_v1.0.0 -->\n\n## [[03_Projects/PUR.Adhoc Indent mien Nam|PUR_AdhocIndentSouth_v1.0.0]]\n\nDomain: Sourcing / Purchasing\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: GO-LIVE / PRODUCTION / SUPPORT\nLifecycle: Maintenance\nStatus: Support\nPriority: Support\nGate: Operational maintenance",
+      "x": 2130,
+      "y": 980,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-5d7ba017ace2d618",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0 -->\n\n## [[03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot|PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0]]\n\nDomain: Internal Chatbot & AI Platforms\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: GO-LIVE / PRODUCTION / SUPPORT\nLifecycle: Maintenance\nStatus: Support\nPriority: Support\nGate: IT helpdesk maintenance",
+      "x": 2130,
+      "y": 1280,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "group-4",
+      "type": "group",
+      "x": 2800,
+      "y": 0,
+      "width": 620,
+      "height": 1920,
+      "label": "ON HOLD / DECISION"
+    },
+    {
+      "id": "view-card-127efc72e51b0426",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:QC_DefectDetection_v1.0.0 -->\n\n## [[03_Projects/PPJxQSee.ai|QC_DefectDetection_v1.0.0]]\n\nDomain: QC / TQM\nDelivery Stream: EXTERNAL DEVELOPMENT\nDelivery Stage: ANALYSIS\nLifecycle: On Hold\nStatus: External Collaboration\nPriority: Hold\nGate: Reactivation decision",
+      "x": 2830,
+      "y": 80,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-ec0c18223545c889",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:QC_ThreadTraceability_v1.0.0 -->\n\n## [[03_Projects/PPJ XPrimo1D RFID Thread|QC_ThreadTraceability_v1.0.0]]\n\nDomain: QC / TQM\nDelivery Stream: EXTERNAL DEVELOPMENT\nDelivery Stage: ANALYSIS\nLifecycle: Pre-PoC / Business Case\nStatus: External Collaboration\nPriority: Decision\nGate: Business/customer case decision",
+      "x": 2830,
+      "y": 380,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-92d77f1c5438b1dd",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:PPJxNUNOX.ScanTrial -->\n\n## [[03_Projects/PPJxNUNOX|PPJxNUNOX.ScanTrial]]\n\nDomain: Fabric / Textiles Technique\nDelivery Stream: EXTERNAL DEVELOPMENT\nDelivery Stage: ANALYSIS\nLifecycle: Partnership / Digital Library Evaluation\nStatus: External Collaboration\nPriority: Decision\nGate: Working-session outcome unconfirmed",
+      "x": 2830,
+      "y": 680,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-4989bc5cc504da12",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:EXT_AcademicCollaboration_v1.1.0 -->\n\n## [[03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1|EXT_AcademicCollaboration_v1.1.0]]\n\nDomain: External Collaboration\nDelivery Stream: EXTERNAL DEVELOPMENT\nDelivery Stage: DESIGN\nLifecycle: Active / Problem Framing\nStatus: External Collaboration\nPriority: Medium\nGate: Academic problem package",
+      "x": 2830,
+      "y": 980,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-48fcb8c564ffe503",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:WASH_COWASH_v2.0.0 -->\n\n## [[03_Projects/PROD.COWASH|WASH_COWASH_v2.0.0]]\n\nDomain: Production + Wash\nDelivery Stream: EXTERNAL DEVELOPMENT\nDelivery Stage: ANALYSIS\nLifecycle: On Hold\nStatus: External Collaboration\nPriority: Hold\nGate: Delivery paused",
+      "x": 2830,
+      "y": 1280,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-885f2a14d71f456c",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:PUR_HMLabelProcessing_v1.0.0 -->\n\n## [[03_Projects/PUR.H&M Label-O Processing|PUR_HMLabelProcessing_v1.0.0]]\n\nDomain: Sourcing / Purchasing\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: ANALYSIS\nLifecycle: On Hold\nStatus: On Hold\nPriority: Hold\nGate: Business priority paused",
+      "x": 2830,
+      "y": 1580,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "group-5",
+      "type": "group",
+      "x": 3500,
+      "y": 0,
+      "width": 620,
+      "height": 2220,
+      "label": "CLOSED"
+    },
+    {
+      "id": "view-card-876c80d4a28537bd",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:PPJxStratova.AI -->\n\n## [[03_Projects/PPJxStratova AI|PPJxStratova.AI]]\n\nDomain: Fabric / Textiles Technique\nDelivery Stream: EXTERNAL DEVELOPMENT\nDelivery Stage: CLOSED\nLifecycle: Closed\nStatus: Closed\nPriority: Closed\nGate: Historical record; current Stratova PoC negotiation tracked as DISCOVERY_PatternGenerationPoC",
+      "x": 3530,
+      "y": 80,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-c1f6db9624e257b7",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:ACC_InventoryReport_v1.0.0 -->\n\n## [[03_Projects/ACC.Inventory.Report.v1.0|ACC_InventoryReport_v1.0.0]]\n\nDomain: Finance / Accounting\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: CLOSED\nLifecycle: Closed\nStatus: Closed\nPriority: Closed\nGate: Closed / no active follow-up",
+      "x": 3530,
+      "y": 380,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-157e77f5c5f29098",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:MER_POCommit_v1.1.0 -->\n\n## [[03_Projects/MER.PO-Commit|MER_POCommit_v1.1.0]]\n\nDomain: Merchandising\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: CLOSED\nLifecycle: Closed\nStatus: Closed\nPriority: Closed\nGate: Closed",
+      "x": 3530,
+      "y": 680,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-82ee54fcf9b45741",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:EXIM.ExpenseInvoices.Automation.v1.1 -->\n\n## [[03_Projects/EXIM.ExpenseInvoices.Automation.v1.1|EXIM.ExpenseInvoices.Automation.v1.1]]\n\nDomain: Finance / Accounting\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: CLOSED\nLifecycle: Closed\nStatus: Closed\nPriority: Closed\nGate: Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.0",
+      "x": 3530,
+      "y": 980,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-172d16f43f564683",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:AI.Automation.Workshop.202606 -->\n\n## [[03_Projects/AI Automation Workshop|AI.Automation.Workshop.202606]]\n\nDomain: External Collaboration\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: CLOSED\nLifecycle: Closed\nStatus: Closed\nPriority: Closed\nGate: Closed event",
+      "x": 3530,
+      "y": 1280,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-8d4de8036ee7ed8b",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:AI.Automation.Workshop.Analysis.202606 -->\n\n## [[03_Projects/Workshop Analysis|AI.Automation.Workshop.Analysis.202606]]\n\nDomain: External Collaboration\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: CLOSED\nLifecycle: Closed\nStatus: Closed\nPriority: Closed\nGate: Closed analysis",
+      "x": 3530,
+      "y": 1580,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "view-card-94179d95d27c94ed",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:VITAS.Sharing.202606 -->\n\n## [[03_Projects/VITAS Sharing|VITAS.Sharing.202606]]\n\nDomain: External Collaboration\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: CLOSED\nLifecycle: Closed\nStatus: Closed\nPriority: Closed\nGate: Closed event",
+      "x": 3530,
+      "y": 1880,
+      "width": 560,
+      "height": 270
+    },
+    {
+      "id": "group-6",
+      "type": "group",
+      "x": 4200,
+      "y": 0,
+      "width": 620,
+      "height": 420,
+      "label": "GOVERNANCE / CANDIDATE"
+    },
+    {
+      "id": "view-card-637393f9ca3af457",
+      "type": "text",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:CPD In-house Pattern Generation -->\n\n## [[03_Projects/_Registry/Project_Update_Proposals/CPD_IN_HOUSE_PATTERN_GENERATION_CURRENT_INITIATIVE|CPD In-house Pattern Generation]]\n\nDomain: Fabric / Textiles Technique\nDelivery Stream: Candidate / Not Registered\nDelivery Stage: Candidate / Not Registered\nLifecycle: Internal Prototype / Evaluation\nStatus: Candidate\nPriority: P10\nGate: Build-vs-buy benchmark; canonical code pending",
+      "x": 4230,
+      "y": 80,
+      "width": 560,
+      "height": 270
+    }
+  ],
+  "edges": []
+}

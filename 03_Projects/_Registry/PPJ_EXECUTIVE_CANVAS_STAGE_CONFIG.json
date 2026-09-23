@@ -1,0 +1,90 @@
+{
+  "canvas": "03_Projects/Canvas/PPJ_Executive_Board_v2.canvas",
+  "version": "2.0",
+  "card_marker": "PPJ_PROJECT_CARD",
+  "candidate_marker": "PPJ_CANDIDATE_CARD",
+  "stages": [
+    {
+      "name": "BACKLOG",
+      "order": 1,
+      "default_lifecycle": "Backlog"
+    },
+    {
+      "name": "KICK-OFF",
+      "order": 2,
+      "default_lifecycle": "Kick-Off"
+    },
+    {
+      "name": "ANALYSIS",
+      "order": 3,
+      "default_lifecycle": "Analysis"
+    },
+    {
+      "name": "DESIGN",
+      "order": 4,
+      "default_lifecycle": "Design"
+    },
+    {
+      "name": "DEVELOPMENT",
+      "order": 5,
+      "default_lifecycle": "Development"
+    },
+    {
+      "name": "UAT / PRE-GO-LIVE",
+      "order": 6,
+      "default_lifecycle": "UAT / Pre-Go-Live"
+    },
+    {
+      "name": "GO-LIVE / PRODUCTION / SUPPORT",
+      "order": 7,
+      "default_lifecycle": "Production / Support"
+    },
+    {
+      "name": "CLOSED",
+      "order": 8,
+      "default_lifecycle": "Closed"
+    }
+  ],
+  "streams": [
+    {
+      "name": "INTERNAL DEVELOPMENT",
+      "key": "INTERNAL",
+      "group_ids": {
+        "BACKLOG": "internal-lane-0",
+        "KICK-OFF": "internal-lane-1",
+        "ANALYSIS": "internal-lane-2",
+        "DESIGN": "internal-lane-3",
+        "DEVELOPMENT": "internal-lane-4",
+        "UAT / PRE-GO-LIVE": "internal-lane-5",
+        "GO-LIVE / PRODUCTION / SUPPORT": "internal-lane-6",
+        "CLOSED": "internal-lane-7"
+      }
+    },
+    {
+      "name": "EXTERNAL DEVELOPMENT",
+      "key": "EXTERNAL",
+      "group_ids": {
+        "BACKLOG": "external-lane-0",
+        "KICK-OFF": "external-lane-1",
+        "ANALYSIS": "external-lane-2",
+        "DESIGN": "external-lane-3",
+        "DEVELOPMENT": "external-lane-4",
+        "UAT / PRE-GO-LIVE": "external-lane-5",
+        "GO-LIVE / PRODUCTION / SUPPORT": "external-lane-6",
+        "CLOSED": "external-lane-7"
+      }
+    }
+  ],
+  "side_groups": [
+    "ppj-side-attention",
+    "ppj-side-domain-review",
+    "ppj-side-candidates"
+  ],
+  "governance": {
+    "closed_reopen_requires_approval": true,
+    "on_hold_is_status_not_stage": true,
+    "candidate_cards_are_not_pipeline_cards": true,
+    "geometry_rule": "card center must belong to exactly one configured stream-stage group",
+    "delivery_stream_is_separate_from_stage_and_status": true
+  }
+}

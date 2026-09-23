@@ -1,0 +1,157 @@
+{
+  "nodes": [
+    {
+      "id": "ppj-board-metadata",
+      "type": "text",
+      "text": "HR.SSPFD.Workflow.v1.1 — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1",
+      "x": 0,
+      "y": -220,
+      "width": 760,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "ppj-exec-summary",
+      "type": "text",
+      "text": "HR.SSPFD.Workflow.v1.1\n\nDomain:\nHR\n\nLifecycle:\nProduction Rollout / Stabilization\n\nProgress:\nTBD\n\nGate:\nUAT Completed / Initial Deployment / Group Rollout\n\nOutcome:\nGroup employee master-data standardization and applicant-data extraction/application-form prefill workflows.\n\nTop Blocker:\nProduction-support ownership across HR, Software Team, AI Team and HR IT is not confirmed.\n\nNext Milestone:\nMonitor rollout by company and factory.\n\nLast Verified:\n2026-08-01",
+      "x": 0,
+      "y": -90,
+      "width": 760,
+      "height": 560,
+      "color": "4"
+    },
+    {
+      "id": "ppj-management-attention",
+      "type": "text",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Sensitive HR and applicant data require strict permissions.\n- Incorrect matching may merge unrelated employee records.\n- Applicant consent and privacy controls require confirmation.\n\nDecisions Needed\n- Assign production owner and correction authority.\n- Approve applicant consent and privacy controls.\n- Confirm post-rollout support boundary.\n\nExternal Dependencies\n- Employee source data -> Matching Rules -> Trusted Employee Master -> Group Rollout\n- Applicant Input -> Extraction -> Mandatory-field Validation -> Prefill -> Review -> Structured Submission",
+      "x": 810,
+      "y": -90,
+      "width": 500,
+      "height": 560,
+      "color": "1"
+    },
+    {
+      "id": "ppj-lane-f3e573404df4",
+      "type": "group",
+      "x": 0,
+      "y": 560,
+      "width": 300,
+      "height": 1050,
+      "label": "BACKLOG",
+      "color": "1"
+    },
+    {
+      "id": "ppj-task-41af9ed916ec",
+      "type": "text",
+      "text": "[[Tasks/HR.SSPFD.Workflow.v1.1-TASK-006_Build-rollout-status-dashboard-and-complete-Workflow-2-user-]]\n\nBuild rollout-status dashboard and complete Workflow 2 user guidance\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-8cda54cfad4d",
+      "type": "text",
+      "text": "[[Tasks/HR.SSPFD.Workflow.v1.1-TASK-004_Finalize-employee-matching-and-conflict-handling-rules]]\n\nFinalize employee matching and conflict-handling rules\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-f14f067702ff",
+      "type": "text",
+      "text": "[[Tasks/HR.SSPFD.Workflow.v1.1-TASK-001_HR-Software-Handover-Package]]\n\nHR Software Handover Package\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 1010,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-4d9d2b50a5bb",
+      "type": "text",
+      "text": "[[Tasks/HR.SSPFD.Workflow.v1.1-TASK-003_Monitor-rollout-by-company-and-factory]]\n\nMonitor rollout by company and factory\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 1200,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-c95a92de5cd9",
+      "type": "text",
+      "text": "[[Tasks/HR.SSPFD.Workflow.v1.1-TASK-005_Monitor-rollout-issues-fix-and-retest]]\n\nMonitor rollout issues, fix and retest\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 1390,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-8d767178b3a7",
+      "type": "group",
+      "x": 350,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "THIS WEEK",
+      "color": "2"
+    },
+    {
+      "id": "ppj-task-fe0a01b640d3",
+      "type": "text",
+      "text": "[[Tasks/HR.SSPFD.Workflow.v1.1-TASK-002_HR-Group-Rollout-and-Production-Ownership]]\n\nHR Group Rollout and Production Ownership\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 370,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-bf81443bfcae",
+      "type": "group",
+      "x": 700,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "IN PROGRESS",
+      "color": "3"
+    },
+    {
+      "id": "ppj-lane-276d6ca3922f",
+      "type": "group",
+      "x": 1050,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BLOCKED / WAITING",
+      "color": "4"
+    },
+    {
+      "id": "ppj-lane-a82db70f445e",
+      "type": "group",
+      "x": 1400,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "REVIEW / UAT",
+      "color": "5"
+    },
+    {
+      "id": "ppj-lane-e782e7728e49",
+      "type": "group",
+      "x": 1750,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "DONE",
+      "color": "6"
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {
+      "project": "HR.SSPFD.Workflow.v1.1",
+      "board_type": "project_executive_kanban",
+      "last_verified": "2026-08-01"
+    }
+  }
+}

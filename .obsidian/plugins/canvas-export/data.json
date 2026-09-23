@@ -1,0 +1,12 @@
+{
+  "defaultFormats": [
+    "html-light"
+  ],
+  "groupTitleSize": 150,
+  "outputSubfolder": "",
+  "lastFormats": [
+    "d2",
+    "html-dark",
+    "mermaid"
+  ]
+}

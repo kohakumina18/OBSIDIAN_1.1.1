@@ -1,0 +1,104 @@
+{
+  "nodes": [
+    {
+      "id": "lane-0",
+      "type": "group",
+      "x": 0,
+      "y": 500,
+      "width": 540,
+      "height": 940,
+      "label": "BACKLOG"
+    },
+    {
+      "id": "lane-1",
+      "type": "group",
+      "x": 600,
+      "y": 500,
+      "width": 540,
+      "height": 940,
+      "label": "THIS WEEK"
+    },
+    {
+      "id": "lane-2",
+      "type": "group",
+      "x": 1200,
+      "y": 500,
+      "width": 540,
+      "height": 940,
+      "label": "IN PROGRESS"
+    },
+    {
+      "id": "lane-3",
+      "type": "group",
+      "x": 1800,
+      "y": 500,
+      "width": 540,
+      "height": 940,
+      "label": "BLOCKED / WAITING"
+    },
+    {
+      "id": "lane-4",
+      "type": "group",
+      "x": 2400,
+      "y": 500,
+      "width": 540,
+      "height": 940,
+      "label": "REVIEW / UAT"
+    },
+    {
+      "id": "lane-5",
+      "type": "group",
+      "x": 3000,
+      "y": 500,
+      "width": 540,
+      "height": 940,
+      "label": "DONE"
+    },
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "PPJxStratova.AI\n\nDomain: Fabric / Textiles Technique\nDelivery Stage: ANALYSIS\nLifecycle: Strategic Technology Evaluation\nStatus: External Collaboration\nProgress: TBD\nGate: Build-vs-buy evaluation\nOutcome: Evaluate Stratova pattern technology against the internal pattern-generation benchmark.\nTop Blocker: Ownership and licensing\nNext Milestone: Clarify funding, credits, licensing and long-term cloud cost\nPriority: Decision\nLast Verified: 2026-08-24",
+      "x": 0,
+      "y": 0,
+      "width": 1140,
+      "height": 420
+    },
+    {
+      "id": "task-0",
+      "type": "file",
+      "file": "03_Projects/PPJxStratova AI/Tasks/PPJxStratova.AI-20260824-TASK-001_Clarify-funding-credits-licensing-and-long-term-cloud-cost.md",
+      "x": 30,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-1",
+      "type": "file",
+      "file": "03_Projects/PPJxStratova AI/Tasks/PPJxStratova.AI-20260824-TASK-002_Confirm-data-model-pattern-ownership-and-CAD-integration.md",
+      "x": 30,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-2",
+      "type": "file",
+      "file": "03_Projects/PPJxStratova AI/Tasks/PPJxStratova.AI-20260824-TASK-003_Run-the-same-test-cases-as-the-internal-prototype-with-blind-Pattern-E.md",
+      "x": 30,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-3",
+      "type": "file",
+      "file": "03_Projects/PPJxStratova AI/Tasks/PPJxStratova.AI-TASK-001_Stratova-Commercial-and-Funding-Option-Paper.md",
+      "x": 3030,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    }
+  ],
+  "edges": []
+}

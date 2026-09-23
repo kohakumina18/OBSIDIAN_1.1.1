@@ -1,0 +1,97 @@
+﻿---
+type: project_memory
+project_name: "PPJxQSee.AI"
+project_file: "PPJxQSee.ai.md"
+project_code: "PPJxQSee.AI"
+department: "QC / Production"
+cluster: "External Collaboration"
+phase: "PoC / Sample Data Preparation"
+last_verified: "2026-07-18"
+confidence: "Strong"
+canonical_code: "PPJxQSee.AI"
+current_file: "PPJxQSee.ai.md"
+primary_domain: "QC / TQM"
+primary_capability: "Quality inspection, defect detection, traceability"
+secondary_domains: "Factory, Production, MER, Customer"
+lifecycle: "PoC / Sample Data Preparation"
+progress: "TBD"
+current_gate: "Formal Proposal Evaluation"
+status: "PoC / Sample Data Preparation"
+current_outcome: "QSee Collaboration Evaluation and Recommendation"
+latest_update_summary: "QSee submitted a formal proposal, PPJ QC received it, and chá»‹ TiÃªn requested detailed evaluation by the AI & Automation Team. This stage is proposal evaluation, not implementation approval."
+known_risks: "Proposal may be broader than PPJ need and PoC KPI is unclear. | Dataset may be insufficient and vendor data-use rights may be unacceptable. | Customer-facing sharing lacks governance; post-PoC cost and factory stability are unclear."
+decisions_needed: "Approve evaluation criteria and confirm pilot scope. | Confirm data ownership terms. | Approve, condition, revise, hold or reject collaboration after evaluation."
+next_actions: "Evaluate business fit, scope, feasibility, accuracy, security, commercial model and operational readiness. | Extract commitments, assumptions and exclusions; confirm JC/official pilot scope. | Define dataset, top defects, ground truth and PoC success criteria with QC. | Clarify data ownership and commercial terms; issue recommendation."
+priority: "P4"
+recent_update_events: ["PPJ-WEEKLY-20260713-20260718"]
+---
+
+# Project Memory: PPJxQSee.AI
+
+## One-Line Understanding
+
+External QSee.ai collaboration exploration for QC/production AI inspection use cases.
+
+## Current Outcome
+
+Define PoC use case, data requirement, success criteria, and vendor feasibility after NDA.
+
+## Latest Update Summary
+
+NDA approved; preparing use-case discussion.
+
+## What This Project Is
+
+Vendor exploration/PoC candidate for AI quality inspection or defect detection.
+
+## What This Project Is Not
+
+Not confirmed implementation or production deployment.
+
+## Key Users
+
+QC, production, AI/Automation stakeholders.
+
+## Systems / Data
+
+Inspection images/video, defect labels, production/QC process, vendor PoC materials.
+
+## Known Risks / Blockers
+
+PoC scope, data privacy, sample data, measurable success criteria.
+
+## Next Actions
+
+Prepare use-case shortlist and PoC criteria.
+
+## Do Not Drift Rules
+
+- Do not claim implementation unless PoC is confirmed.
+- Keep NDA/use-case stage visible.
+
+## Source Links
+
+- [[PPJxQSee.ai]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]
+
+<!-- PPJ_DOMAIN_GOVERNANCE_START -->
+## Domain Governance
+
+- Canonical Code: PPJxQSee.AI
+- Current File: [[PPJxQSee.ai]]
+- Primary Domain: QC / TQM
+- Secondary Domains: Factory, Production, MER, Customer
+- Lifecycle: PoC / Sample Data Preparation
+- Progress: TBD
+- Current Gate: NDA approved / PoC scope definition
+
+## Domain Do Not Drift Rules
+- Primary domain is QC / TQM, not External Collaboration.
+<!-- PPJ_DOMAIN_GOVERNANCE_END -->
+
+## Recent Update Events
+
+| Date | Update Type | Summary | Source | Confidence |
+| --- | --- | --- | --- | --- |
+| 2026-07-18 | Weekly Portfolio Update | QSee submitted a formal proposal, PPJ QC received it, and chá»‹ TiÃªn requested detailed evaluation by the AI & Automation Team. This stage is proposal evaluation, not implementation approval. | PPJ-WEEKLY-20260713-20260718 | Strong |
+

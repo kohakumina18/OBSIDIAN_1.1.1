@@ -1,0 +1,31 @@
+direction: right
+market: "CUSTOMER / MARKET\nMER_MarketIntelligence_v1.1.0"
+mer: "MERCHANDISING\nMER_CostingAgenticPlatform_v1.1.0\nMER_InvoiceDataRecheck_v1.1.0"
+tech: "TECHNICAL DEVELOPMENT\nTD_TechnicalKnowledgePlatform_v2.1.0\nFAB_FabricDatamart_v2.2.0\nCPD_VisualSampleDatamart_v1.1.0"
+source: "SOURCING\nSCP_SourcingChatbot_v2.3.0"
+purchase: "PURCHASING\nPUR_GDIAutomation_v1.0.0\nPUR_MaterialAllocation_v1.1.0\nPUR_AdhocIndentSouth_v1.0.0\nPUR_InventoryReport_v2.1.0"
+warehouse: "WAREHOUSE / MATERIAL\nWH_AWBExtraction_v1.1.0"
+production: "PRODUCTION\nPROD_HangingLineIoT_v1.0.0"
+wash: "WASH\nWASH_SamplingManagement_v1.1.0\nWASH_COWASH_v2.0.0"
+qc: "QC / TQM\nQC_DefectDetection_v1.0.0\nQC_ThreadTraceability_v1.0.0"
+logistics: "LOGISTICS / EXIM\nLOG_ExpenseInvoiceProcessing_v1.2.0"
+finance: "FINANCE / ACCOUNTING\nFIN_FinanceManagement_v1.2.0\nFIN_InvoiceDownloader_v1.2.0\nACC_GRNSupplierInvoiceBot_v2.3.0"
+market -> mer
+mer -> tech
+tech -> source
+source -> purchase
+purchase -> warehouse
+warehouse -> production
+production -> wash
+wash -> qc
+qc -> logistics
+logistics -> finance
+wfx: "WFX ERP"
+gtas: "GTAS / IED"
+third: "Third-party Systems"
+data: "DWH / Databricks"
+ai: "AI + Automation + Human Control"
+wfx -> data
+gtas -> data
+third -> data
+data -> ai

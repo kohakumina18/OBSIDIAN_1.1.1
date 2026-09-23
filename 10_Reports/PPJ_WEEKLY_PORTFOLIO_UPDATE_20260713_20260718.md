@@ -1,0 +1,220 @@
+﻿# PPJ AI & Automation Team
+
+# Weekly Portfolio Update
+
+## Reporting Period
+
+2026-07-13 to 2026-07-18
+
+Next planning period: 2026-07-20 to 2026-07-25
+
+## Executive Summary
+
+Eight portfolio projects moved through control design, prototype validation, guided UAT, pre-go-live testing, handover preparation, production support and proposal evaluation. The weekly direction emphasizes trusted data and business controls before AI, expert validation before costing automation, and explicit ownership before go-live or handover.
+
+## Portfolio Movement Summary
+
+- Finance shifted to centralized OC cost control and exception management; v1.2 remains a proposed canonical migration pending approval.
+- Costing entered Sew prototype/demo preparation; Wash remains a lower-priority workstream under the same project.
+- Material Allocation validated its first split-OC unreserve/allocation flow and moved to exception testing.
+- Expense Invoices entered pre-go-live mapping validation for departments/factories, with Export excluded.
+- Sourcing completed the third guided training session and moved into adoption measurement.
+- HR prepared for Software Team transfer but remains on hold, not completed.
+- FD moved to maintenance/production support at 100% of current implementation scope.
+- QSee entered formal proposal evaluation, not implementation approval.
+
+## Detailed Project Updates
+
+## Finance / Accounting
+
+### **`FIN.AI.FINANCE.MANAGEMENT.v1.1`**
+
+Business Problem
+: Build a centralized financial control and analysis platform helping Accounting verify completeness, reconcile planned and actual OC costs, manage exceptions, automatically recheck corrections, and provide trusted data to Power BI and AI assistance.
+
+Delivered Progress
+: After the 2026-07-17 discussion, the project was repositioned from a standalone chatbot/reporting initiative into a centralized financial-control platform. The operating sequence is Data Control -> Exception Handling -> Trusted Data Confirmation -> Reporting -> Analysis -> AI-assisted Q&A. MVP covers materials and trims, subcontracting, basic overhead, correct OC/period posting, missing cost detection, exception assignment, automatic recheck, and evidence traceability.
+
+Current Capability
+: OC Cost Reconciliation and Exception Management Tool
+
+Risk / Decision
+: Official Costing source and version-selection logic are not confirmed. / Approve or defer canonical migration to FIN.AI.FINANCE.MANAGEMENT.v1.2.
+
+Next Action
+: Collect 20-30 sample OCs and approved Costing plans.
+
+### **`PPJ.ExpenseInvoices.v1.1`**
+
+Business Problem
+: Deploy expense-invoice processing for departments and factories, excluding Export in the current rollout.
+
+Delivered Progress
+: The business period was confirmed; departments/factories began submitting mapping files and testing real data. Mappings continued changing, users received upload/operating support, and defects found with real data were fixed during pre-go-live. Current active scope is departments and factories, with Export excluded. Older EXIM-first wording remains historical only.
+
+Current Capability
+: Approved mapping table, validated upload, defect closure, pre-go-live checklist and user support guide
+
+Risk / Decision
+: Mapping changes close to go-live. / Approve mapping cut-off and go-live readiness.
+
+Next Action
+: Follow units missing mappings and validate mapping completeness.
+## Merchandising
+
+### **`COSTING.AGENTIC.PLATFORM.v1.1`**
+
+Business Problem
+: Support Merchandising in creating costing faster for review and customer quotation proposals across Sew, BOM, Wash, Fabric Consumption, Historical Costing and Cost Consolidation workstreams.
+
+Delivered Progress
+: Sew prototype validated the flow Sewing Description -> Description Analysis -> Sewing Operation Extraction -> Standardized Operation List -> Expert Review. Extraction is not validated SMV, CM, final Sew Cost, or production-ready costing. Wash remains a workstream under this project: free-text input must be structured into attributes, missing-information checks, similar recipe retrieval, draft process recommendation, and mandatory Wash expert review.
+
+Current Capability
+: Sew extraction prototype and Wash MVP data/input-output definition
+
+Risk / Decision
+: Sew descriptions may lack technical detail. / Approve Sew extraction acceptance criteria.
+
+Next Action
+: Run Sew demo and expert validation; classify correct, missing, excessive and incorrectly ordered operations.
+## Sourcing / Purchasing
+
+### **`PUR.Material.Allocation.v1.1`**
+
+Business Problem
+: Automate reallocation of surplus Sewing and Embroidery materials/trims between split OCs while reducing manual WFX operations and allocation errors.
+
+Delivered Progress
+: The first business flow was successfully tested: Source OC with Surplus -> Validate Surplus -> Unreserve -> Find Destination OC -> Validate Style and Buyer Reference -> Allocate -> Verify Result. Destination OCs are split OCs with the same Style and Buyer Reference.
+
+Current Capability
+: Validated unreserve, destination-OC matching and allocation flow with controlled UAT foundation
+
+Risk / Decision
+: Only Sewing and Embroidery scope is confirmed. / Confirm transaction rollback design.
+
+Next Action
+: Test many-to-one, one-to-many, partial allocation, insufficient quantity, Buyer Reference mismatch and duplicate allocation.
+
+### **`SCP.SOURCING.CHATBOT.v2.3`**
+
+Business Problem
+: Help Sourcing users search supplier, fabric, trims, material and sample data.
+
+Delivered Progress
+: The third user-training session was completed for Ms. Lam and Ms. Minh Anh, covering login, permissions, question formulation, data search, result validation, and feedback/defect reporting. Real use cases and adoption support continue.
+
+Current Capability
+: Post-training usage assessment and prioritized feedback backlog
+
+Risk / Decision
+: Low usage may reflect weak habit, incomplete data, poor search quality, complex permissions or insufficient business value. / Confirm UAT acceptance owner.
+
+Next Action
+: Monitor usage and collect actual questions from Ms. Lam and Ms. Minh Anh.
+## HR
+
+### **`HR.SSPFD.Workflow.v1.1`**
+
+Business Problem
+: Analyze and audit HR, payroll and BHXH workflows, with the original MVP focused on GREA BHXH data.
+
+Delivered Progress
+: Stakeholders agreed the solution is more appropriate for transfer to the Software Team because it behaves as a business application, workflow management, data-processing software, rule-based validation and user-facing system rather than an AI-led initiative. The project is pending handover and is not completed or closed.
+
+Current Capability
+: Complete Software Team handover package with scope, data, rules, workflow, roles and security requirements
+
+Risk / Decision
+: Software Team owner and remaining AI Team responsibility are not confirmed. / Assign Software Team owner.
+
+Next Action
+: Prepare business context, problem, MVP scope, data sources and field inventory.
+## Fabric / Textiles Technique
+
+### **`FD.Datamart.v2.2`**
+
+Business Problem
+: Manage Fabric, Hanger and QR information in Directus for search, sample management and FD operations.
+
+Delivered Progress
+: The current implementation scope is complete and the project moved from active delivery into support after training and handover. Defects, data corrections, QR/Hanger configuration, permissions and minor enhancements enter a support backlog; new functions or major process changes require enhancement approval or a new version/project.
+
+Current Capability
+: Support ownership and classified maintenance backlog
+
+Risk / Decision
+: Formal support owner, SLA and enhancement approval process are not confirmed. / Confirm formal support ownership.
+
+Next Action
+: Confirm support owner and SLA.
+## QC / TQM
+
+### **`PPJxQSee.AI`**
+
+Business Problem
+: Evaluate QSee collaboration for QC AI Vision, defect detection, visual inspection, real-time quality data, customer transparency and potential reduction of third-party inspection.
+
+Delivered Progress
+: QSee submitted a formal proposal, PPJ QC received it, and Ms. Tien requested detailed evaluation by the AI & Automation Team. This stage is proposal evaluation, not implementation approval.
+
+Current Capability
+: QSee Collaboration Evaluation and Recommendation
+
+Risk / Decision
+: Proposal may be broader than PPJ need and PoC KPI is unclear. / Approve evaluation criteria and confirm pilot scope.
+
+Next Action
+: Evaluate business fit, scope, feasibility, accuracy, security, commercial model and operational readiness.
+
+## Lifecycle Changes
+
+- **`FIN.AI.FINANCE.MANAGEMENT.v1.1`**: Analysis / Design | Gate: Discovery / Control Design / Business Rule Definition | Progress: TBD
+- **`COSTING.AGENTIC.PLATFORM.v1.1`**: Development | Gate: Sew Prototype / Demo Preparation | Progress: TBD
+- **`PUR.Material.Allocation.v1.1`**: UAT / Stabilization | Gate: First Flow Validated / Extended Exception Testing | Progress: TBD
+- **`PPJ.ExpenseInvoices.v1.1`**: UAT / Stabilization | Gate: Pre-go-live / Mapping Validation / User Testing | Progress: TBD
+- **`SCP.SOURCING.CHATBOT.v2.3`**: UAT / Stabilization | Gate: Guided UAT / User Adoption | Progress: TBD
+- **`HR.SSPFD.Workflow.v1.1`**: On Hold / Pending Decision | Gate: Transfer Preparation / Pending Handover | Progress: TBD
+- **`FD.Datamart.v2.2`**: Maintenance | Gate: Production Support | Progress: 100% of current implementation scope
+- **`PPJxQSee.AI`**: PoC / Sample Data Preparation | Gate: Formal Proposal Evaluation | Progress: TBD
+
+
+## Priority Plan: 2026-07-20 to 2026-07-25
+
+- **`FIN.AI.FINANCE.MANAGEMENT.v1.1`** - P1: OC sample set, exception catalogue and control-process specification.
+- **`COSTING.AGENTIC.PLATFORM.v1.1`** - P2 (Sew); P9 (Wash workstream): Sew extraction demo and expert-validation result; Wash dataset request and MVP input/output confirmation.
+- **`PPJ.ExpenseInvoices.v1.1`** - P3: Completed mapping, defect closure and go-live readiness decision.
+- **`PPJxQSee.AI`** - P4: Proposal evaluation and collaboration recommendation.
+- **`PUR.Material.Allocation.v1.1`** - P5: Exception-case testing and UAT plan.
+- **`HR.SSPFD.Workflow.v1.1`** - P6: Software Team handover package.
+- **`SCP.SOURCING.CHATBOT.v2.3`** - P7: Post-training usage assessment and prioritized feedback.
+- **`FD.Datamart.v2.2`** - P8: Support ownership and maintenance backlog.
+- **`COSTING.AGENTIC.PLATFORM.v1.1`** - P9 Wash workstream: Wash dataset request and MVP input/output confirmation. This is not a separate project.
+
+## Management Attention
+
+Finance control rules and v1.2 migration, Expense Invoice go-live readiness, Material Allocation rollback, HR handover owner, QSee proposal evaluation, and Wash expert-approval boundary require management or domain-owner attention.
+
+## Decisions Required
+
+- **`FIN.AI.FINANCE.MANAGEMENT.v1.1`**: Approve or defer canonical migration to FIN.AI.FINANCE.MANAGEMENT.v1.2.; Confirm official Costing source and version-selection rule.; Confirm exception ownership and financial-control thresholds.
+- **`COSTING.AGENTIC.PLATFORM.v1.1`**: Approve Sew extraction acceptance criteria.; Confirm Wash MVP input/output and Wash data owner.; Confirm GTAS/IED Wash integration boundary and expert-approval boundary.
+- **`PUR.Material.Allocation.v1.1`**: Confirm transaction rollback design.; Confirm auditability and user confirmation before posting.; Confirm whether additional material categories enter scope.
+- **`PPJ.ExpenseInvoices.v1.1`**: Approve mapping cut-off and go-live readiness.; Confirm Accounting acceptance owner.; Confirm production-support ownership and escalation flow.
+- **`SCP.SOURCING.CHATBOT.v2.3`**: Confirm UAT acceptance owner.; Define adoption KPI and minimum successful-use threshold.
+- **`HR.SSPFD.Workflow.v1.1`**: Assign Software Team owner.; Confirm AI Team support boundary.; Approve handover package and acceptance criteria.
+- **`FD.Datamart.v2.2`**: Confirm formal support ownership.; Confirm enhancement approval process.
+- **`PPJxQSee.AI`**: Approve evaluation criteria and confirm pilot scope.; Confirm data ownership terms.; Approve, condition, revise, hold or reject collaboration after evaluation.
+
+
+## Portfolio Risks
+
+- Source data, mapping and ownership remain the main constraints across Finance, Expense Invoices and Costing.
+- Transaction safety and rollback remain critical for Material Allocation.
+- Adoption must be measured after Sourcing training.
+- HR and QSee require governance before transfer or collaboration decisions.
+
+## Conclusion
+
+The portfolio is moving from broad concepts toward controlled operational capability. Next week should prioritize evidence, validation, ownership and explicit go/no-go decisions rather than expanding scope.

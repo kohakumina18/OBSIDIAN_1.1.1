@@ -1,0 +1,184 @@
+{
+  "nodes": [
+    {
+      "id": "ppj-board-metadata",
+      "type": "text",
+      "text": "PUR_GDIAutomation_v1.0.0 — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1",
+      "x": 0,
+      "y": -220,
+      "width": 760,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "ppj-exec-summary",
+      "type": "text",
+      "text": "PUR_GDIAutomation_v1.0.0\n\nDomain:\nSourcing / Purchasing\n\nLifecycle:\nAnalysis / Solution Redesign\n\nProgress:\nTBD\n\nGate:\nWFX API integration and GDI data-entry workflow\n\nOutcome:\nGive Purchasing end-to-end package-dispatch tracking through GDI and provide API capability for automated/assisted GDI data entry while preserving WFX transaction control, validation, confirmation and audit.\n\nTop Blocker:\nWFX API ownership and sandbox\n\nNext Milestone:\nObtain WFX API authentication and operation documentation\n\nLast Verified:\n2026-09-18",
+      "x": 0,
+      "y": -90,
+      "width": 760,
+      "height": 560,
+      "color": "4"
+    },
+    {
+      "id": "ppj-management-attention",
+      "type": "text",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- WFX API ownership and sandbox\n- Authentication and rate limits\n- Transaction integrity\n\nDecisions Needed\n- None recorded\n\nExternal Dependencies\n- WFX API -> Business validation -> Controlled GDI transaction -> Confirmation / Audit",
+      "x": 810,
+      "y": -90,
+      "width": 500,
+      "height": 560,
+      "color": "1"
+    },
+    {
+      "id": "ppj-lane-f3e573404df4",
+      "type": "group",
+      "x": 0,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BACKLOG",
+      "color": "1"
+    },
+    {
+      "id": "ppj-lane-8d767178b3a7",
+      "type": "group",
+      "x": 350,
+      "y": 560,
+      "width": 300,
+      "height": 860,
+      "label": "THIS WEEK",
+      "color": "2"
+    },
+    {
+      "id": "ppj-task-eddf36dbc5b4",
+      "type": "text",
+      "text": "[[Tasks/PUR.GDI.Automation.v1.0-20260824-TASK-002_Confirm-create-update-lookup-draft-submit-cancel-status-schemas]]\n\nConfirm create/update/lookup/draft/submit/cancel/status schemas\n\nPriority: P3\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 370,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-3d9b9119eed7",
+      "type": "text",
+      "text": "[[Tasks/PUR.GDI.Automation.v1.0-20260824-TASK-003_Define-validation-idempotency-duplicate-retry-and-timeout-controls]]\n\nDefine validation, idempotency, duplicate, retry and timeout controls\n\nPriority: P3\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 370,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-8ce0ecf5540e",
+      "type": "text",
+      "text": "[[Tasks/PUR.GDI.Automation.v1.0-20260824-TASK-004_Design-audit-logging-and-transaction-confirmation]]\n\nDesign audit logging and transaction confirmation\n\nPriority: P3\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 370,
+      "y": 1010,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-bbb9631c187f",
+      "type": "text",
+      "text": "[[Tasks/PUR.GDI.Automation.v1.0-20260824-TASK-001_Obtain-WFX-API-authentication-and-operation-documentation]]\n\nObtain WFX API authentication and operation documentation\n\nPriority: P3\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 370,
+      "y": 1200,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-bf81443bfcae",
+      "type": "group",
+      "x": 700,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "IN PROGRESS",
+      "color": "3"
+    },
+    {
+      "id": "ppj-lane-276d6ca3922f",
+      "type": "group",
+      "x": 1050,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BLOCKED / WAITING",
+      "color": "4"
+    },
+    {
+      "id": "ppj-lane-a82db70f445e",
+      "type": "group",
+      "x": 1400,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "REVIEW / UAT",
+      "color": "5"
+    },
+    {
+      "id": "ppj-lane-e782e7728e49",
+      "type": "group",
+      "x": 1750,
+      "y": 560,
+      "width": 300,
+      "height": 1050,
+      "label": "DONE",
+      "color": "6"
+    },
+    {
+      "id": "ppj-task-25506adbac80",
+      "type": "text",
+      "text": "[[Tasks/PUR.GDI.Automation.v1.0-TASK-005_Build-and-test-an-API-prototype-in-a-non-production-environm]]\n\nBuild and test an API prototype in a non-production environment\n\nPriority: P2\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-175564ea4155",
+      "type": "text",
+      "text": "[[Tasks/PUR.GDI.Automation.v1.0-TASK-003_Confirm-authentication-request-response-schema-idempotency-a]]\n\nConfirm authentication, request/response schema, idempotency and duplicate rules\n\nPriority: P2\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-ec9ded6c2cdc",
+      "type": "text",
+      "text": "[[Tasks/PUR.GDI.Automation.v1.0-TASK-004_Confirm-rollback-audit-and-approval-before-submit-requiremen]]\n\nConfirm rollback, audit and approval-before-submit requirements\n\nPriority: P2\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1010,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-2c75d6eb0716",
+      "type": "text",
+      "text": "[[Tasks/PUR.GDI.Automation.v1.0-TASK-001_GDI-WFX-API-Architecture-and-Prototype]]\n\nGDI WFX API Architecture and Prototype\n\nPriority: P2\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1200,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-a05da1ff1bd3",
+      "type": "text",
+      "text": "[[Tasks/PUR.GDI.Automation.v1.0-TASK-002_Request-WFX-API-documentation-and-supported-create-update-dr]]\n\nRequest WFX API documentation and supported create/update/draft/submit/cancel/status operations\n\nPriority: P2\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1390,
+      "width": 260,
+      "height": 155
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {
+      "project": "PUR_GDIAutomation_v1.0.0",
+      "board_type": "project_executive_kanban",
+      "last_verified": "2026-09-18"
+    }
+  }
+}

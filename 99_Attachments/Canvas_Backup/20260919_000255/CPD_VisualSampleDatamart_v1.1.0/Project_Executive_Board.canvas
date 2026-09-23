@@ -1,0 +1,140 @@
+{
+  "nodes": [
+    {
+      "id": "lane-0",
+      "type": "group",
+      "x": 0,
+      "y": 500,
+      "width": 540,
+      "height": 1700,
+      "label": "BACKLOG"
+    },
+    {
+      "id": "lane-1",
+      "type": "group",
+      "x": 600,
+      "y": 500,
+      "width": 540,
+      "height": 1700,
+      "label": "THIS WEEK"
+    },
+    {
+      "id": "lane-2",
+      "type": "group",
+      "x": 1200,
+      "y": 500,
+      "width": 540,
+      "height": 1700,
+      "label": "IN PROGRESS"
+    },
+    {
+      "id": "lane-3",
+      "type": "group",
+      "x": 1800,
+      "y": 500,
+      "width": 540,
+      "height": 1700,
+      "label": "BLOCKED / WAITING"
+    },
+    {
+      "id": "lane-4",
+      "type": "group",
+      "x": 2400,
+      "y": 500,
+      "width": 540,
+      "height": 1700,
+      "label": "REVIEW / UAT"
+    },
+    {
+      "id": "lane-5",
+      "type": "group",
+      "x": 3000,
+      "y": 500,
+      "width": 540,
+      "height": 1700,
+      "label": "DONE"
+    },
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "CPD_VisualSampleDatamart_v1.1.0\n\nDomain: Fabric / Textiles Technique\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: GO-LIVE / PRODUCTION / SUPPORT\nLifecycle: Maintenance\nStatus: Support\nProgress: TBD\nGate: Operational maintenance\nOutcome: Maintain the 3D / visual sample library: 3D, visual samples, images, design assets and image search.\nTop Blocker: None recorded\nNext Milestone: Maintain visual assets and image-search quality\nPriority: Support\nLast Verified: 2026-09-18",
+      "x": 0,
+      "y": 0,
+      "width": 1140,
+      "height": 420
+    },
+    {
+      "id": "task-0",
+      "type": "file",
+      "file": "03_Projects/CPD.Datamart.v1.1/Tasks/CPD.Datamart.v1.1-20260824-TASK-001_Maintain-visual-assets-and-image-search-quality.md",
+      "x": 30,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-1",
+      "type": "file",
+      "file": "03_Projects/CPD.Datamart.v1.1/Tasks/CPD.Datamart.v1.1-TASK-001_Confirm-current-CPD-3D-Design-library-location.md",
+      "x": 3030,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-2",
+      "type": "file",
+      "file": "03_Projects/CPD.Datamart.v1.1/Tasks/CPD.Datamart.v1.1-TASK-002_Walk-through-Chi-Trang-3D-Design-sample-search-workflow.md",
+      "x": 3030,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-3",
+      "type": "file",
+      "file": "03_Projects/CPD.Datamart.v1.1/Tasks/CPD.Datamart.v1.1-TASK-003_Collect-sample-image-and-3D-asset-examples.md",
+      "x": 3030,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-4",
+      "type": "file",
+      "file": "03_Projects/CPD.Datamart.v1.1/Tasks/CPD.Datamart.v1.1-TASK-004_Define-metadata-dictionary.md",
+      "x": 3030,
+      "y": 1110,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-5",
+      "type": "file",
+      "file": "03_Projects/CPD.Datamart.v1.1/Tasks/CPD.Datamart.v1.1-TASK-005_Define-search-scenarios.md",
+      "x": 3030,
+      "y": 1290,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-6",
+      "type": "file",
+      "file": "03_Projects/CPD.Datamart.v1.1/Tasks/CPD.Datamart.v1.1-TASK-006_Prepare-UAT-checklist.md",
+      "x": 3030,
+      "y": 1470,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-7",
+      "type": "file",
+      "file": "03_Projects/CPD.Datamart.v1.1/Tasks/CPD.Datamart.v1.1-TASK-007_Keep-FD-Datamart-v2-2-separate.md",
+      "x": 3030,
+      "y": 1650,
+      "width": 480,
+      "height": 140
+    }
+  ],
+  "edges": []
+}

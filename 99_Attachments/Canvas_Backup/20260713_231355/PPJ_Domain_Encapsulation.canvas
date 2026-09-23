@@ -1,0 +1,497 @@
+﻿{
+    "nodes":  [
+                  {
+                      "id":  "title",
+                      "type":  "text",
+                      "x":  0,
+                      "y":  -520,
+                      "width":  3400,
+                      "height":  180,
+                      "text":  "PPJ AI \u0026 Automation Portfolio - Domain Encapsulation View\r\nPrimary Domain = Business Owner + Primary Users + Primary Business Capability",
+                      "color":  "1"
+                  },
+                  {
+                      "id":  "legend",
+                      "type":  "text",
+                      "x":  3500,
+                      "y":  -520,
+                      "width":  1600,
+                      "height":  180,
+                      "text":  "Legend\r\nLifecycle and Progress are separate.\r\nOne project appears in one primary domain only.\r\nSecondary domains are tags, not duplicate cards.\r\nNo existing portfolio canvases are updated by this view.",
+                      "color":  "6"
+                  },
+                  {
+                      "id":  "domain-1",
+                      "type":  "group",
+                      "x":  0,
+                      "y":  0,
+                      "width":  2500,
+                      "height":  1700,
+                      "label":  "External Collaboration",
+                      "color":  "4"
+                  },
+                  {
+                      "id":  "domain-1-capability",
+                      "type":  "text",
+                      "x":  35,
+                      "y":  45,
+                      "width":  2430,
+                      "height":  90,
+                      "text":  "Capability: Academic partnership, innovation, prototype, talent pipeline",
+                      "color":  "5"
+                  },
+                  {
+                      "id":  "card-PPJ-UIT-ACADEMIC-COLLABORATION-v1-1",
+                      "type":  "text",
+                      "x":  35,
+                      "y":  170,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[PPJ.UIT.ACADEMIC.COLLABORATION.v1.1]]\r\n\r\nPPJ.UIT.ACADEMIC.COLLABORATION.v1.1\r\n\r\nDomain: External Collaboration\r\nLifecycle: Analysis\r\nProgress: TBD\r\nGate: Partnership Follow-up / Confirmed Direction\r\n\r\nOutcome\r\n- Build innovation, mentoring, internship, and academic prototype pipeline.\r\n\r\nSecondary\r\n- Education, Innovation, Talent Pipeline",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "domain-2",
+                      "type":  "group",
+                      "x":  2680,
+                      "y":  0,
+                      "width":  2500,
+                      "height":  1700,
+                      "label":  "QC / TQM",
+                      "color":  "4"
+                  },
+                  {
+                      "id":  "domain-2-capability",
+                      "type":  "text",
+                      "x":  2715,
+                      "y":  45,
+                      "width":  2430,
+                      "height":  90,
+                      "text":  "Capability: Quality inspection, defect detection, traceability",
+                      "color":  "5"
+                  },
+                  {
+                      "id":  "card-PPJxQSee-AI",
+                      "type":  "text",
+                      "x":  2715,
+                      "y":  170,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[PPJxQSee.ai]]\r\n\r\nPPJxQSee.AI\r\n\r\nDomain: QC / TQM\r\nLifecycle: PoC / Sample Data Preparation\r\nProgress: TBD\r\nGate: NDA approved / PoC scope definition\r\n\r\nOutcome\r\n- Define QC/production AI inspection PoC scope, data requirement, and success criteria.\r\n\r\nSecondary\r\n- Factory, Production, MER, Customer",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "card-QC-Primo1D-RFID-Thread-v1-0",
+                      "type":  "text",
+                      "x":  3515,
+                      "y":  170,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[PPJ XPrimo1D RFID Thread]]\r\n\r\nQC.Primo1D.RFID.Thread.v1.0\r\n\r\nDomain: QC / TQM\r\nLifecycle: Hardware Trial / Feasibility Assessment\r\nProgress: TBD\r\nGate: Pre-contact / Internal Alignment\r\n\r\nOutcome\r\n- Explore RFID thread feasibility for product traceability and identification.\r\n\r\nSecondary\r\n- MER, Customer, Factory",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "domain-3",
+                      "type":  "group",
+                      "x":  5360,
+                      "y":  0,
+                      "width":  2500,
+                      "height":  1700,
+                      "label":  "Sourcing / Purchasing",
+                      "color":  "4"
+                  },
+                  {
+                      "id":  "domain-3-capability",
+                      "type":  "text",
+                      "x":  5395,
+                      "y":  45,
+                      "width":  2430,
+                      "height":  90,
+                      "text":  "Capability: Supplier/material intelligence and purchasing transactions",
+                      "color":  "5"
+                  },
+                  {
+                      "id":  "card-SCP-SOURCING-CHATBOT-v2-3",
+                      "type":  "text",
+                      "x":  5395,
+                      "y":  170,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[SCP.SOURCING.CHATBOT.v2.3]]\r\n\r\nSCP.SOURCING.CHATBOT.v2.3\r\n\r\nDomain: Sourcing / Purchasing\r\nLifecycle: UAT / Stabilization\r\nProgress: 80%\r\nGate: UAT / Iterative Improvement\r\n\r\nOutcome\r\n- Enable governed supplier, material, fabric, trims, and sample lookup through sourcing chatbot.\r\n\r\nSecondary\r\n- Data Governance, AI Chatbot, Supplier Data",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "card-PUR-Adhoc-Indent-South-v1-0",
+                      "type":  "text",
+                      "x":  6195,
+                      "y":  170,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[PUR.Adhoc Indent mien Nam]]\r\n\r\nPUR.Adhoc.Indent.South.v1.0\r\n\r\nDomain: Sourcing / Purchasing\r\nLifecycle: Production / Support\r\nProgress: TBD\r\nGate: Production / Support\r\n\r\nOutcome\r\n- Support South-region adhoc indent processing and operational exceptions.\r\n\r\nSecondary\r\n- WFX, Purchasing Operations",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "card-PUR-Material-Allocation-v1-1",
+                      "type":  "text",
+                      "x":  6995,
+                      "y":  170,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[PUR.Material.Allocation.v1.1]]\r\n\r\nPUR.Material.Allocation.v1.1\r\n\r\nDomain: Sourcing / Purchasing\r\nLifecycle: Development\r\nProgress: 50%\r\nGate: Blocked by WFX dependency\r\n\r\nOutcome\r\n- Support material allocation decisions and reduce manual processing with WFX-aware validation.\r\n\r\nSecondary\r\n- WFX, Inventory, Production",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "card-PUR-Inventory-Report-v1-0",
+                      "type":  "text",
+                      "x":  5395,
+                      "y":  475,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[PUR.Inventory Report]]\r\n\r\nPUR.Inventory.Report.v1.0\r\n\r\nDomain: Sourcing / Purchasing\r\nLifecycle: Production / Support\r\nProgress: TBD\r\nGate: Maintenance and Support\r\n\r\nOutcome\r\n- Improve purchasing inventory visibility and reduce repeated reporting work.\r\n\r\nSecondary\r\n- Inventory, Reporting, WFX",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "card-PUR-GDI-Automation-v1-0",
+                      "type":  "text",
+                      "x":  6195,
+                      "y":  475,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[PUR.GDI Automation]]\r\n\r\nPUR.GDI.Automation.v1.0\r\n\r\nDomain: Sourcing / Purchasing\r\nLifecycle: On Hold / Pending Decision\r\nProgress: TBD\r\nGate: Blocked / Scope Reassessment\r\n\r\nOutcome\r\n- Automate GDI workflow after input standardization and WFX feasibility are resolved.\r\n\r\nSecondary\r\n- WFX, Purchasing Operations",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "card-PUR-HM-LabelO-Processing-Automation-v1-0",
+                      "type":  "text",
+                      "x":  6995,
+                      "y":  475,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[PUR.H\u0026M Label-O Processing]]\r\n\r\nPUR.HM.LabelO.Processing.Automation.v1.0\r\n\r\nDomain: Sourcing / Purchasing\r\nLifecycle: On Hold / Pending Decision\r\nProgress: TBD\r\nGate: On Hold / Delayed\r\n\r\nOutcome\r\n- Support H\u0026M Label-O processing if requirements and blockers are confirmed.\r\n\r\nSecondary\r\n- Customer, Production, QC",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "domain-4",
+                      "type":  "group",
+                      "x":  0,
+                      "y":  1880,
+                      "width":  2500,
+                      "height":  1700,
+                      "label":  "Merchandising",
+                      "color":  "4"
+                  },
+                  {
+                      "id":  "domain-4-capability",
+                      "type":  "text",
+                      "x":  35,
+                      "y":  1925,
+                      "width":  2430,
+                      "height":  90,
+                      "text":  "Capability: Costing, quotation, market intelligence, customer workflows",
+                      "color":  "5"
+                  },
+                  {
+                      "id":  "card-COSTING-AGENTIC-PLATFORM-v1-1",
+                      "type":  "text",
+                      "x":  35,
+                      "y":  2050,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[PPJ.COSTING.AGENT.PLATFORM.v1.1]]\r\n\r\nCOSTING.AGENTIC.PLATFORM.v1.1\r\n\r\nDomain: Merchandising\r\nLifecycle: Analysis\r\nProgress: TBD\r\nGate: Data Acquisition / Sew-first Implementation\r\n\r\nOutcome\r\n- Route customer requests through costing, technical, sew, wash, cut, and historical costing agents.\r\n\r\nSecondary\r\n- Technical, Sew, Wash, Fabric, Finance",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "card-MER-CHICOS-INVOICE-RECHECK-AUDIT-v1-1",
+                      "type":  "text",
+                      "x":  835,
+                      "y":  2050,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1]]\r\n\r\nMER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1\r\n\r\nDomain: Merchandising\r\nLifecycle: UAT / Stabilization\r\nProgress: TBD\r\nGate: Stabilize\r\n\r\nOutcome\r\n- Standardize and speed up Chico\u0027s invoice/costing checking and audit logic.\r\n\r\nSecondary\r\n- Accounting, Customer, Invoice Data",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "card-MER-MARKET-INTELLIGENCE-v1-1",
+                      "type":  "text",
+                      "x":  1635,
+                      "y":  2050,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[E-commerce Market Intelligence]]\r\n\r\nMER.MARKET.INTELLIGENCE.v1.1\r\n\r\nDomain: Merchandising\r\nLifecycle: Analysis\r\nProgress: TBD\r\nGate: Multi-source Data Follow-up\r\n\r\nOutcome\r\n- Identify product, fabric, color, fit, and market opportunities using internal and external signals.\r\n\r\nSecondary\r\n- External Data, Product, Fabric, Customer Signals",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "card-MER-PO-Commit-v1-1",
+                      "type":  "text",
+                      "x":  35,
+                      "y":  2355,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[MER.PO-Commit]]\r\n\r\nMER.PO.Commit.v1.1\r\n\r\nDomain: Merchandising\r\nLifecycle: Closed / Completed\r\nProgress: TBD\r\nGate: Closed / Production Support\r\n\r\nOutcome\r\n- Preserve PO/customer commitment workflow support and reopen only if enhancement is approved.\r\n\r\nSecondary\r\n- Purchasing, Customer, Packing List",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "domain-5",
+                      "type":  "group",
+                      "x":  2680,
+                      "y":  1880,
+                      "width":  2500,
+                      "height":  1700,
+                      "label":  "Production + Wash",
+                      "color":  "4"
+                  },
+                  {
+                      "id":  "domain-5-capability",
+                      "type":  "text",
+                      "x":  2715,
+                      "y":  1925,
+                      "width":  2430,
+                      "height":  90,
+                      "text":  "Capability: Factory execution, production data, wash operations",
+                      "color":  "5"
+                  },
+                  {
+                      "id":  "card-PROD-IOT-CHuyenTreo-v1-0",
+                      "type":  "text",
+                      "x":  2715,
+                      "y":  2050,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[PROD.IOT.CHuyenTreo_1]]\r\n\r\nPROD.IOT.CHuyenTreo.v1.0\r\n\r\nDomain: Production + Wash\r\nLifecycle: Development\r\nProgress: 50%\r\nGate: Development\r\n\r\nOutcome\r\n- Improve production line visibility through Chuyen Treo IoT monitoring/dashboard.\r\n\r\nSecondary\r\n- IoT, Factory, Dashboard",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "card-PROD-COWASH-v2-0",
+                      "type":  "text",
+                      "x":  3515,
+                      "y":  2050,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[PROD.COWASH]]\r\n\r\nPROD.COWASH.v2.0\r\n\r\nDomain: Production + Wash\r\nLifecycle: On Hold / Pending Decision\r\nProgress: TBD\r\nGate: Re-scope / Source API unclear\r\n\r\nOutcome\r\n- Clarify operational wash data, machine, output, delay, and rework tracking/reporting.\r\n\r\nSecondary\r\n- R\u0026D Wash, Factory, Operational Data",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "card-WASH-SAMPLING-MANAGEMENT-PORTAL-v1-1",
+                      "type":  "text",
+                      "x":  4315,
+                      "y":  2050,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1]]\r\n\r\nWASH.SAMPLING.MANAGEMENT.PORTAL.v1.1\r\n\r\nDomain: Production + Wash\r\nLifecycle: Analysis\r\nProgress: TBD\r\nGate: New Booking / Analysis\r\n\r\nOutcome\r\n- Centralize wash sampling requests, trials, results, approval, attachments, status, and history.\r\n\r\nSecondary\r\n- R\u0026D Wash, Portal, Sampling Workflow",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "domain-6",
+                      "type":  "group",
+                      "x":  5360,
+                      "y":  1880,
+                      "width":  2500,
+                      "height":  1700,
+                      "label":  "Finance / Accounting",
+                      "color":  "4"
+                  },
+                  {
+                      "id":  "domain-6-capability",
+                      "type":  "text",
+                      "x":  5395,
+                      "y":  1925,
+                      "width":  2430,
+                      "height":  90,
+                      "text":  "Capability: Financial analysis, reporting, invoices, GRN",
+                      "color":  "5"
+                  },
+                  {
+                      "id":  "card-FIN-AI-FINANCE-MANAGEMENT-v1-1",
+                      "type":  "text",
+                      "x":  5395,
+                      "y":  2050,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[FIN.AI.FINANCE.MANAGEMENT.v1.1]]\r\n\r\nFIN.AI.FINANCE.MANAGEMENT.v1.1\r\n\r\nDomain: Finance / Accounting\r\nLifecycle: Analysis\r\nProgress: TBD\r\nGate: Discovery / BRD / Strategic Program\r\n\r\nOutcome\r\n- Prepare finance AI management discovery for cash flow, reporting, forecasting, and management insight.\r\n\r\nSecondary\r\n- Data, IT, Sales, Management",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "card-PPJ-ExpenseInvoices-v1-1",
+                      "type":  "text",
+                      "x":  6195,
+                      "y":  2050,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[PPJ. Expense-Invoices.v1.1]]\r\n\r\nPPJ.ExpenseInvoices.v1.1\r\n\r\nDomain: Finance / Accounting\r\nLifecycle: UAT / Stabilization\r\nProgress: TBD\r\nGate: Cross-department Expansion\r\n\r\nOutcome\r\n- Complete accounting mapping before expanding expense invoice automation.\r\n\r\nSecondary\r\n- EXIM, ERP, Department Mapping",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "card-ACC-GRN-SupplierInvoiceBot-v2-3",
+                      "type":  "text",
+                      "x":  6995,
+                      "y":  2050,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[ACC.GRN-SupplierInvoiceBot.v2.3]]\r\n\r\nACC.GRN-SupplierInvoiceBot.v2.3\r\n\r\nDomain: Finance / Accounting\r\nLifecycle: Production / Support\r\nProgress: TBD\r\nGate: Maintenance and Support\r\n\r\nOutcome\r\n- Maintain Accounting GRN and supplier invoice bot, exception handling, logs, and support.\r\n\r\nSecondary\r\n- WFX, Supplier Invoice, Accounting",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "card-PPJ-InvoiceDownloader-v1-2",
+                      "type":  "text",
+                      "x":  5395,
+                      "y":  2355,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[PPJ.Invoice Downloader.v1.2]]\r\n\r\nPPJ.InvoiceDownloader.v1.2\r\n\r\nDomain: Finance / Accounting\r\nLifecycle: Production / Support\r\nProgress: TBD\r\nGate: Business Adoption\r\n\r\nOutcome\r\n- Download, merge, log, permission, retry, and fallback for e-invoice workflows.\r\n\r\nSecondary\r\n- EXIM, Purchasing, API, E-invoice",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "domain-7",
+                      "type":  "group",
+                      "x":  0,
+                      "y":  3760,
+                      "width":  2500,
+                      "height":  1700,
+                      "label":  "Internal Chatbot \u0026 AI Platforms",
+                      "color":  "4"
+                  },
+                  {
+                      "id":  "domain-7-capability",
+                      "type":  "text",
+                      "x":  35,
+                      "y":  3805,
+                      "width":  2430,
+                      "height":  90,
+                      "text":  "Capability: AI access, agent orchestration, helpdesk, shared platforms",
+                      "color":  "5"
+                  },
+                  {
+                      "id":  "card-PPJ-AI-Hub-v2-1",
+                      "type":  "text",
+                      "x":  35,
+                      "y":  3930,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[PPJ.AI.Hub.v2.1]]\r\n\r\nPPJ.AI.Hub.v2.1\r\n\r\nDomain: Internal Chatbot \u0026 AI Platforms\r\nLifecycle: Production / Support\r\nProgress: TBD\r\nGate: Platform / Internal Hub\r\n\r\nOutcome\r\n- Centralize access, governance, module registry, and discovery for PPJ AI tools and automation modules.\r\n\r\nSecondary\r\n- Management, Reporting, Internal Tools",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "card-PPJ-PERRI-Chatbot-v3-2",
+                      "type":  "text",
+                      "x":  835,
+                      "y":  3930,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[PPJ.PERRI.Chatbot]]\r\n\r\nPPJ.PERRI.Chatbot.v3.2\r\n\r\nDomain: Internal Chatbot \u0026 AI Platforms\r\nLifecycle: Production / Support\r\nProgress: TBD\r\nGate: Permission Enhancement\r\n\r\nOutcome\r\n- Provide controlled chatbot orchestration for PPJ knowledge, Q\u0026A, data lookup, and tool workflows.\r\n\r\nSecondary\r\n- Department Agents, Permission, Logs",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "card-PPJ-GLPI-Helpdesk-AI-Chatbot-v1-0",
+                      "type":  "text",
+                      "x":  1635,
+                      "y":  3930,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[PPJ.GLPI-Helpdesk-AI Chatbot]]\r\n\r\nPPJ.GLPI.Helpdesk.AI.Chatbot.v1.0\r\n\r\nDomain: Internal Chatbot \u0026 AI Platforms\r\nLifecycle: Maintenance\r\nProgress: TBD\r\nGate: Maintenance and Support\r\n\r\nOutcome\r\n- Help users resolve IT/ERP support questions and route GLPI requests faster.\r\n\r\nSecondary\r\n- IT Helpdesk, GLPI, ERP Support",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "domain-8",
+                      "type":  "group",
+                      "x":  2680,
+                      "y":  3760,
+                      "width":  2500,
+                      "height":  1700,
+                      "label":  "HR",
+                      "color":  "4"
+                  },
+                  {
+                      "id":  "domain-8-capability",
+                      "type":  "text",
+                      "x":  2715,
+                      "y":  3805,
+                      "width":  2430,
+                      "height":  90,
+                      "text":  "Capability: Employee, payroll, BHXH and HR-sensitive workflows",
+                      "color":  "5"
+                  },
+                  {
+                      "id":  "card-HR-SSPFD-Workflow-v1-1",
+                      "type":  "text",
+                      "x":  2715,
+                      "y":  3930,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[HR.SS\u0026PFD.v1.1]]\r\n\r\nHR.SSPFD.Workflow.v1.1\r\n\r\nDomain: HR\r\nLifecycle: Analysis\r\nProgress: TBD\r\nGate: Data Confirmation\r\n\r\nOutcome\r\n- Prepare structured HR/BHXH workflow support using latest confirmed HR-sensitive data.\r\n\r\nSecondary\r\n- WISER, BHXH, Sensitive HR Data",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "domain-9",
+                      "type":  "group",
+                      "x":  5360,
+                      "y":  3760,
+                      "width":  2500,
+                      "height":  1700,
+                      "label":  "Fabric / Textiles Technique",
+                      "color":  "4"
+                  },
+                  {
+                      "id":  "domain-9-capability",
+                      "type":  "text",
+                      "x":  5395,
+                      "y":  3805,
+                      "width":  2430,
+                      "height":  90,
+                      "text":  "Capability: Fabric, pattern, BOM, technical knowledge, 3D and scanning",
+                      "color":  "5"
+                  },
+                  {
+                      "id":  "card-FD-Datamart-v2-2",
+                      "type":  "text",
+                      "x":  5395,
+                      "y":  3930,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[FD.Datamart.v2.2]]\r\n\r\nFD.Datamart.v2.2\r\n\r\nDomain: Fabric / Textiles Technique\r\nLifecycle: Final Stabilization / Pending Acceptance\r\nProgress: TBD\r\nGate: Final Stabilization / Closeout\r\n\r\nOutcome\r\n- Manage FD/fabric/hanger data in Directus with QR support for hanger operation.\r\n\r\nSecondary\r\n- Directus, QR, Hanger, Fabric Data",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "card-TD-TechnicalKnowledge-Platform-v2-1",
+                      "type":  "text",
+                      "x":  6195,
+                      "y":  3930,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[TD.TechnicalPlatform_v2.1]]\r\n\r\nTD.TechnicalKnowledge.Platform.v2.1\r\n\r\nDomain: Fabric / Textiles Technique\r\nLifecycle: Analysis\r\nProgress: TBD\r\nGate: New Request / Analysis\r\n\r\nOutcome\r\n- Create technical knowledge foundation for pattern, BOM, construction, technical documents, and costing agents.\r\n\r\nSecondary\r\n- Merchandising, Costing, Training",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "card-CPD-Datamart-v1-1",
+                      "type":  "text",
+                      "x":  6995,
+                      "y":  3930,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[CPD.Datamart.v1.1]]\r\n\r\nCPD.Datamart.v1.1\r\n\r\nDomain: Fabric / Textiles Technique\r\nLifecycle: Development\r\nProgress: TBD\r\nGate: Data Foundation\r\n\r\nOutcome\r\n- Build searchable visual sample library and image search for 3D Design.\r\n\r\nSecondary\r\n- 3D Design, Image Search, Visual Assets",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "card-PPJxNUNOX-ScanTrial",
+                      "type":  "text",
+                      "x":  5395,
+                      "y":  4235,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[PPJxNUNOX]]\r\n\r\nPPJxNUNOX.ScanTrial\r\n\r\nDomain: Fabric / Textiles Technique\r\nLifecycle: Hardware Trial / Feasibility Assessment\r\nProgress: TBD\r\nGate: Hardware Trial / Feasibility Assessment\r\n\r\nOutcome\r\n- Evaluate NUNOX high-quality fabric image capture hardware for fabric/sample data foundation.\r\n\r\nSecondary\r\n- Hardware Trial, Sourcing, Factory",
+                      "color":  "2"
+                  },
+                  {
+                      "id":  "card-PPJxStratova-AI",
+                      "type":  "text",
+                      "x":  6195,
+                      "y":  4235,
+                      "width":  760,
+                      "height":  270,
+                      "text":  "[[PPJxStratova AI]]\r\n\r\nPPJxStratova.AI\r\n\r\nDomain: Fabric / Textiles Technique\r\nLifecycle: Canceled / Closed\r\nProgress: TBD\r\nGate: Canceled / Closed\r\n\r\nOutcome\r\n- Preserve Pattern AI vendor screening history and lessons learned.\r\n\r\nSecondary\r\n- Pattern AI, Vendor Screening, Lessons Learned",
+                      "color":  "2"
+                  }
+              ],
+    "edges":  [
+
+              ]
+}

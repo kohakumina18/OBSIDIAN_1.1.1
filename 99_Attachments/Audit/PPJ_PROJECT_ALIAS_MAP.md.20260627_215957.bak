@@ -1,0 +1,32 @@
+﻿# PPJ Project Alias Map
+
+Generated: 
+2026-06-27 21:51
+
+## Executive Summary
+
+This alias map proposes canonical project names and duplicate handling. It does not modify project notes. Project_SmartFlow is excluded from PPJ portfolio reconciliation.
+
+| Alias Filename | Canonical Filename | Reason | Confidence | Recommended Action | Link Update Needed | Canvas Update Needed |
+|---|---|---|---|---|---|---|
+| Adhoc Indent miền Nam.md | Adhoc Indent mien Nam.md | Vietnamese accent filename duplicate; prefer ASCII canonical for scripts. | High | Convert alias note after link update review | Yes | Yes |
+| Adhoc Indent.md | Adhoc Indent mien Nam.md | Short/old umbrella name for same Adhoc Indent scope. | Medium | Convert alias note if content is empty or merge recommendation if non-empty | Yes | No evidence found |
+| Chuyền Treo IoT Dashboard.md | IOT.CHuyenTreo_1.md | Coded project filename available; likely same factory IoT dashboard. | Medium | Review and merge content before alias conversion | Yes | No evidence found |
+| Chuyền treo ver1.md | IOT.CHuyenTreo_1.md | Old Vietnamese/non-coded project name; coded IoT filename available. | Medium | Review because README currently references Chuyen treo ver1 | Yes | Yes |
+| Cowash VER2.md | COWASH.md | Version label duplicate for COWASH project. | High | Convert zero-byte alias or merge if non-empty | Yes | No evidence found |
+| E-commerce Exploration.md | E-commerce Market Intelligence.md | Exploration appears to be old/short name for Market Intelligence work. | High | Convert alias note or merge content | Yes | No evidence found |
+| Market Intelligence.md | E-commerce Market Intelligence.md | Generic market intelligence alias; canonical project is business-specific. | Medium | Convert alias after link update | Yes | Yes |
+| GDI Automation.md | PUR.GDI Automation.md | Coded Purchasing GDI project name preferred. | High | Convert alias note | Yes | Yes |
+| Import Export Automation.md | PPJ. Expense-Invoices.v1.1.md | Old umbrella name overlaps invoice automation foundation. | Medium | Archive or alias after confirming content scope | Yes | No evidence found |
+| EX-IM Expense Invoice Bot.md | PPJ. Expense-Invoices.v1.1.md | Likely EXIM-specific alias under expense invoice automation foundation. | Medium | Review before merge because EXIM may remain a separate production bot | Yes | Yes |
+| PPJ x Nunox.md | NUNOX.md | Vendor partnership naming duplicate. | High | Convert alias note or merge vendor trial context | Yes | No evidence found |
+| PPJ x Stratova AI.md | Stratova AI.md | Vendor partnership naming duplicate. | High | Convert alias note or archive cancelled duplicate | Yes | No evidence found |
+| Sourcing Chatbot v2.3.md | SCP.SOURCING.CHATBOT.v2.3.md | Coded sourcing project name is canonical; sourcing must not be split. | High | Convert alias after preserving content | Yes | Yes |
+| Sourcing VER2.md | SCP.SOURCING.CHATBOT.v2.3.md | Old sourcing version alias; canonical project includes chatbot and external sample repository. | High | Convert alias after preserving content | Yes | Yes |
+| Web Tổng Hợp Tool.md | Web Tong Hop Tool.md | Vietnamese accent filename duplicate; prefer ASCII canonical for scripts. | High | Convert alias note | Yes | No evidence found |
+| WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1.md | RND.WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1.md | README names RND.WASH as canonical coded R&D Wash portal project. | Medium | Rename/canonicalize only after approval because canonical file does not yet exist | Yes | Yes |
+| CPD Fabric Database.md | TD.TechnicalPlatform_v2.1.md | CPD fabric database appears to be business name for technical CPD datamart platform. | Medium | Review before alias because business-facing note may be useful | Yes | Yes |
+
+## Important Rule
+
+- [[SCP.SOURCING.CHATBOT.v2.3]] is the consolidated sourcing project. Do not split sourcing into separate projects unless explicitly requested.

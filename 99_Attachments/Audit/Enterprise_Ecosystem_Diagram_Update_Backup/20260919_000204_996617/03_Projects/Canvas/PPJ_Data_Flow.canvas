@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"flow-0","type":"text","text":"FINANCE FOUNDATION\n\nWFX / Databricks / DWH\n-> Finance Source Control\n-> Rule Engine\n-> OC Control\n-> Factory Performance\n-> Power BI / AI","x":0,"y":0,"width":600,"height":420},
+		{"id":"flow-1","type":"text","text":"TECHNICAL + COSTING FOUNDATION\n\nTechnical Sources\n-> ETL\n-> Technical Data Layer\n-> Sync\n-> TD_TechnicalKnowledgePlatform\n-> Costing / Pattern / Wash","x":680,"y":0,"width":600,"height":420},
+		{"id":"flow-2","type":"text","text":"TRANSACTION FOUNDATION\n\nWFX API\n-> Business Validation\n-> Controlled Transaction\n-> GDI / Future WFX Automation\n-> Audit","x":1360,"y":0,"width":600,"height":420},
+		{"id":"flow-3","type":"text","text":"HR DATA FOUNDATION\n\nEmployee Data\n-> Standardization\n-> Employee Master\n-> Future HR Workflows","x":2040,"y":0,"width":600,"height":420},
+		{"id":"flow-4","type":"text","text":"SOURCING DATA FOUNDATION\n\nExternal Supplier / Material Data\n-> Standardization\n-> Sourcing Platform\n-> Sourcing Chatbot","x":2720,"y":0,"width":600,"height":420}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

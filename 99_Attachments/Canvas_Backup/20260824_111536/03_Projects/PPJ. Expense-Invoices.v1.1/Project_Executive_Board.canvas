@@ -1,0 +1,157 @@
+{
+  "nodes": [
+    {
+      "id": "ppj-board-metadata",
+      "type": "text",
+      "text": "PPJ.ExpenseInvoices.v1.1 — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1",
+      "x": 0,
+      "y": -220,
+      "width": 760,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "ppj-exec-summary",
+      "type": "text",
+      "text": "PPJ.ExpenseInvoices.v1.1\n\nDomain:\nFinance / Accounting\n\nLifecycle:\nUAT / Stabilization\n\nProgress:\nTBD\n\nGate:\nSupplier and Mapping Expansion / Defect Closure\n\nOutcome:\nExpense-invoice workflow for approved business scope, supplier mapping, department/factory mapping, ledger/account mapping, validation and controlled entry.\n\nTop Blocker:\nMapping ownership and go-live boundary are not confirmed.\n\nNext Milestone:\nFinalize frequent-supplier list and standardize supplier codes.\n\nLast Verified:\n2026-08-01",
+      "x": 0,
+      "y": -90,
+      "width": 760,
+      "height": 560,
+      "color": "4"
+    },
+    {
+      "id": "ppj-management-attention",
+      "type": "text",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Duplicate invoices, invalid mappings and weak error handling could affect Accounting operations.\n- Production monitoring and escalation ownership are pending.\n\nDecisions Needed\n- Approve supplier and mapping ownership.\n- Confirm go-live boundary and production-support escalation.\n\nExternal Dependencies\n- Supplier Master -> Supplier Mapping -> Department/Factory and Ledger Mapping -> Validation -> Expense Invoice Entry -> Monitoring",
+      "x": 810,
+      "y": -90,
+      "width": 500,
+      "height": 560,
+      "color": "1"
+    },
+    {
+      "id": "ppj-lane-f3e573404df4",
+      "type": "group",
+      "x": 0,
+      "y": 560,
+      "width": 300,
+      "height": 1050,
+      "label": "BACKLOG",
+      "color": "1"
+    },
+    {
+      "id": "ppj-task-a78773e0c3c8",
+      "type": "text",
+      "text": "[[Tasks/PPJ.ExpenseInvoices.v1.1-TASK-001_Expense-Invoice-Mapping-Closure-and-Go-live-Readiness]]\n\nExpense Invoice Mapping Closure and Go-live Readiness\n\nPriority: P3\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-37d6cdafe048",
+      "type": "text",
+      "text": "[[Tasks/PPJ.ExpenseInvoices.v1.1-TASK-006_Confirm-go-live-boundary-production-monitoring-and-support-e]]\n\nConfirm go-live boundary, production monitoring and support escalation\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-0e2a69ffa72f",
+      "type": "text",
+      "text": "[[Tasks/PPJ.ExpenseInvoices.v1.1-TASK-004_Confirm-mapping-ownership-and-close-critical-defects]]\n\nConfirm mapping ownership and close critical defects\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 1010,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-bc38aacf9295",
+      "type": "text",
+      "text": "[[Tasks/PPJ.ExpenseInvoices.v1.1-TASK-003_Finalize-frequent-supplier-list-and-standardize-supplier-cod]]\n\nFinalize frequent-supplier list and standardize supplier codes\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 1200,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-517d5e49676f",
+      "type": "text",
+      "text": "[[Tasks/PPJ.ExpenseInvoices.v1.1-TASK-005_Run-regression-testing]]\n\nRun regression testing\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 20,
+      "y": 1390,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-8d767178b3a7",
+      "type": "group",
+      "x": 350,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "THIS WEEK",
+      "color": "2"
+    },
+    {
+      "id": "ppj-task-267bd9cbcb96",
+      "type": "text",
+      "text": "[[Tasks/PPJ.ExpenseInvoices.v1.1-TASK-002_Expense-Invoice-Supplier-Mapping-and-UAT-Closure]]\n\nExpense Invoice Supplier Mapping and UAT Closure\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 370,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-bf81443bfcae",
+      "type": "group",
+      "x": 700,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "IN PROGRESS",
+      "color": "3"
+    },
+    {
+      "id": "ppj-lane-276d6ca3922f",
+      "type": "group",
+      "x": 1050,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BLOCKED / WAITING",
+      "color": "4"
+    },
+    {
+      "id": "ppj-lane-a82db70f445e",
+      "type": "group",
+      "x": 1400,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "REVIEW / UAT",
+      "color": "5"
+    },
+    {
+      "id": "ppj-lane-e782e7728e49",
+      "type": "group",
+      "x": 1750,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "DONE",
+      "color": "6"
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {
+      "project": "PPJ.ExpenseInvoices.v1.1",
+      "board_type": "project_executive_kanban",
+      "last_verified": "2026-08-01"
+    }
+  }
+}

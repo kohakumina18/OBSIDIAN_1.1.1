@@ -1,0 +1,28 @@
+flowchart TB
+  subgraph L1["LAYER 1 - BUSINESS PROCESS"]
+    MARKET["Customer / Market"] --> MER["Merchandising"] --> TECH["Technical Development"] --> SCP["Sourcing"] --> PUR["Purchasing"] --> WH["Warehouse / Material"] --> PROD["Production"] --> WASH["Wash"] --> QC["QC / TQM"] --> LOG["Logistics / EXIM"] --> FIN["Finance / Accounting"]
+  end
+  subgraph L2["LAYER 2 - CORE ERP"]
+    WFX["WFX ERP: Master Data / Order / Purchasing / Material / Inventory / Transaction"]
+  end
+  subgraph L3["LAYER 3 - SPECIALIZED / THIRD-PARTY"]
+    MMX["MMX"]
+    EOFFICE["eOffice"]
+    VNPT["VNPT e-Invoice"]
+    IOT["IoT / WISER / INA"]
+    EXT["External Platforms"]
+  end
+  subgraph L4["LAYER 4 - INTERNAL PPJ APPLICATIONS"]
+    GTAS["GTAS / IED"]
+    MARTS["Datamarts"]
+    PORTALS["Internal Portals"]
+  end
+  subgraph L5["LAYER 5 - DATA + AI + AUTOMATION"]
+    DWH["DWH / Databricks"] --> PERRI["PERRI / AI Hub"] --> AUTO["OCR / RAG / Agents / RPA / API"] --> HUMAN["Human Confirm"] --> EXEC["Controlled Write-back / Execute"]
+  end
+  L1 --> WFX
+  WFX --> L3
+  WFX --> L4
+  L3 --> DWH
+  L4 --> DWH
+  EXEC --> WFX

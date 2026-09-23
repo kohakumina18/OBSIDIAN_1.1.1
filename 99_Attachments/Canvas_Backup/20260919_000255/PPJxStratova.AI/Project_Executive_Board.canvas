@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "PPJxStratova.AI\n\nDomain: Fabric / Textiles Technique\nDelivery Stream: EXTERNAL DEVELOPMENT\nDelivery Stage: CLOSED\nLifecycle: Closed\nStatus: Closed\nGate: Historical record; current Stratova PoC negotiation tracked as DISCOVERY_PatternGenerationPoC\nOutcome: Historical closed record of the earlier Stratova evaluation. Do not reuse this code for the current pattern-generation PoC.\nLast Verified: 2026-09-18",
+      "x": 0,
+      "y": 0,
+      "width": 720,
+      "height": 400
+    }
+  ],
+  "edges": []
+}

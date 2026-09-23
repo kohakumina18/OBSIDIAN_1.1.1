@@ -1,0 +1,99 @@
+﻿---
+type: project_memory
+project_name: "SCP.SOURCING.CHATBOT.v2.3"
+project_file: "SCP.SOURCING.CHATBOT.v2.3.md"
+project_code: "SCP.SOURCING.CHATBOT.v2.3"
+department: "Sourcing"
+cluster: "Sourcing AI / Data Platform"
+phase: "UAT / Stabilization"
+technical_members: ["Huy", "Khoa", "Linh", "Nghia"]
+progress: "TBD"
+last_verified: "2026-07-18"
+confidence: "Strong"
+canonical_code: "SCP.SOURCING.CHATBOT.v2.3"
+current_file: "SCP.SOURCING.CHATBOT.v2.3.md"
+primary_domain: "Sourcing / Purchasing"
+primary_capability: "Sourcing intelligence: supplier, material, sample, search, intelligence"
+secondary_domains: "Data Governance, AI Chatbot, Supplier Data"
+lifecycle: "UAT / Stabilization"
+current_gate: "Guided UAT / User Adoption"
+status: "UAT / Stabilization"
+current_outcome: "Post-training usage assessment and prioritized feedback backlog"
+latest_update_summary: "The third user-training session was completed for chá»‹ LÃ¢m and chá»‹ Minh Anh, covering login, permissions, question formulation, data search, result validation, and feedback/defect reporting. Real use cases and adoption support continue."
+known_risks: "Low usage may reflect weak habit, incomplete data, poor search quality, complex permissions or insufficient business value."
+decisions_needed: "Confirm UAT acceptance owner. | Define adoption KPI and minimum successful-use threshold."
+next_actions: "Monitor usage and collect actual questions from chá»‹ LÃ¢m and chá»‹ Minh Anh. | Measure search success rate. | Classify data, search, permission, answer-quality and training feedback. | Fix/retest and prepare quick user guide."
+priority: "P7"
+recent_update_events: ["PPJ-WEEKLY-20260713-20260718"]
+---
+
+# Project Memory: SCP.SOURCING.CHATBOT.v2.3
+
+## One-Line Understanding
+
+Consolidated Sourcing data platform and chatbot for supplier, material, fabric, trims, and sample lookup.
+
+## Current Outcome
+
+Build governed sourcing repository and chatbot search with clear metadata and data owner.
+
+## Latest Update Summary
+
+Team continues POC/data strategy discussion with Linh and Roberto, especially external sample volume before large import.
+
+## What This Project Is
+
+One consolidated project covering sourcing data repository, external samples, and chatbot lookup.
+
+## What This Project Is Not
+
+Do not split into separate Sourcing Repository, External Sample Management, and Sourcing Chatbot projects without approval.
+
+## Key Users
+
+Sourcing users and stakeholders managing supplier/material/sample data.
+
+## Systems / Data
+
+Supplier data, fabric, trims, external sample data, metadata, file/document storage, chatbot search.
+
+## Known Risks / Blockers
+
+Large external data volume, missing metadata minimum, missing data owner, naming convention risk.
+
+## Next Actions
+
+Finalize data strategy and minimum metadata before large import.
+
+## Do Not Drift Rules
+
+- Keep sourcing consolidated under `SCP.SOURCING.CHATBOT.v2.3`.
+- Do not create separate project notes for external samples without approval.
+
+## Source Links
+
+- [[SCP.SOURCING.CHATBOT.v2.3]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]
+
+<!-- PPJ_DOMAIN_GOVERNANCE_START -->
+## Domain Governance
+
+- Canonical Code: SCP.SOURCING.CHATBOT.v2.3
+- Current File: [[SCP.SOURCING.CHATBOT.v2.3]]
+- Primary Domain: Sourcing / Purchasing
+- Secondary Domains: Data Governance, AI Chatbot, Supplier Data
+- Lifecycle: UAT / Stabilization
+- Progress: 80%
+- Current Gate: UAT / Iterative Improvement
+
+## Domain Do Not Drift Rules
+- Do not split sourcing into separate project notes without approval.
+- Do not mix sourcing intelligence with purchasing transaction automation.
+<!-- PPJ_DOMAIN_GOVERNANCE_END -->
+
+## Recent Update Events
+
+| Date | Update Type | Summary | Source | Confidence |
+| --- | --- | --- | --- | --- |
+| 2026-07-18 | Weekly Portfolio Update | The third user-training session was completed for chá»‹ LÃ¢m and chá»‹ Minh Anh, covering login, permissions, question formulation, data search, result validation, and feedback/defect reporting. Real use cases and adoption support continue. | PPJ-WEEKLY-20260713-20260718 | Strong |
+

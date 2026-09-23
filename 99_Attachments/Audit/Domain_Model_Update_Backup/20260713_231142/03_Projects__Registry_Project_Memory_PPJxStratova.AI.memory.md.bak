@@ -1,0 +1,59 @@
+---
+type: project_memory
+project_name: "PPJxStratova.AI"
+project_file: "PPJxStratova AI.md"
+project_code: "PPJxStratova.AI"
+department: "AI / External Vendor"
+cluster: "External Collaboration / Closed"
+phase: "Canceled"
+last_verified: "2026-06-28"
+confidence: "Strong for closed/canceled status"
+---
+
+# Project Memory: PPJxStratova.AI
+
+## One-Line Understanding
+
+Canceled Pattern AI vendor exploration with Stratova AI.
+
+## Current Outcome
+
+Preserve vendor screening lessons and avoid treating it as active project.
+
+## Latest Update Summary
+
+Marked canceled due unclear PoC/resource and unclear practical fit.
+
+## What This Project Is
+
+Historical external vendor engagement.
+
+## What This Project Is Not
+
+Not an active implementation project.
+
+## Key Users
+
+AI/Automation and vendor-screening stakeholders.
+
+## Systems / Data
+
+Pattern AI concept, vendor proposal materials, lessons learned.
+
+## Known Risks / Blockers
+
+Unclear PoC design, unclear resource ownership, unclear business value.
+
+## Next Actions
+
+Use only as vendor evaluation reference.
+
+## Do Not Drift Rules
+
+- Keep closed/canceled unless user reopens.
+- Use Weak/Needs Confirmation for any technical claims beyond known vendor history.
+
+## Source Links
+
+- [[PPJxStratova AI]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]

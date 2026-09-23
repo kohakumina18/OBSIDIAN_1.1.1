@@ -1,0 +1,28 @@
+# Python virtualenv (machine-specific, rebuild with: python3 -m venv .venv)
+.venv/
+__pycache__/
+*.pyc
+
+# Smart Connections plugin embeddings cache (regenerable, binary)
+.smart-env/
+
+# Obsidian per-device UI state and regenerable search index cache
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/copilot/copilot-index-*.json
+.obsidian/copilot-index-*.json
+
+# Obsidian trash (deleted-note holding area)
+.trash/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Claude Code harness lock file (ephemeral, machine/session-specific)
+.claude/scheduled_tasks.lock
+
+# Script temp-write artifacts (rename-on-write leftovers, should not normally exist)
+*.tmp-2*
+*.ppj-sync-tmp

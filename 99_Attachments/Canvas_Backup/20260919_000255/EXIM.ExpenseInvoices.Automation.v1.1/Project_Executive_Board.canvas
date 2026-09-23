@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "EXIM.ExpenseInvoices.Automation.v1.1\n\nDomain: Finance / Accounting\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: CLOSED\nLifecycle: Closed\nStatus: Closed\nGate: Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.0\nOutcome: Preserve the closed legacy EXIM Expense Invoice Automation history separately from its successor.\nLast Verified: 2026-09-18",
+      "x": 0,
+      "y": 0,
+      "width": 720,
+      "height": 400
+    }
+  ],
+  "edges": []
+}

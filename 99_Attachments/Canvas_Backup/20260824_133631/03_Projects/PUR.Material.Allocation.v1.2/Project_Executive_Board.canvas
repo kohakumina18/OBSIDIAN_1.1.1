@@ -1,0 +1,149 @@
+{
+  "nodes": [
+    {
+      "id": "lane-0",
+      "type": "group",
+      "x": 0,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "BACKLOG"
+    },
+    {
+      "id": "lane-1",
+      "type": "group",
+      "x": 600,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "THIS WEEK"
+    },
+    {
+      "id": "lane-2",
+      "type": "group",
+      "x": 1200,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "IN PROGRESS"
+    },
+    {
+      "id": "lane-3",
+      "type": "group",
+      "x": 1800,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "BLOCKED / WAITING"
+    },
+    {
+      "id": "lane-4",
+      "type": "group",
+      "x": 2400,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "REVIEW / UAT"
+    },
+    {
+      "id": "lane-5",
+      "type": "group",
+      "x": 3000,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "DONE"
+    },
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "PUR.Material.Allocation.v1.1\n\nDomain: Sourcing / Purchasing\nLifecycle: First Flow Validated\nProgress: TBD\nGate: Exception, rollback and transaction-safety testing\nOutcome: Validate controlled reallocation of surplus NPL across eligible OCs.\nTop Blocker: Partial-allocation correctness\nNext Milestone: Test multiple OCs and partial allocation\nPriority: P7\nLast Verified: 2026-08-24",
+      "x": 0,
+      "y": 0,
+      "width": 1140,
+      "height": 420
+    },
+    {
+      "id": "task-0",
+      "type": "file",
+      "file": "03_Projects/PUR.Material.Allocation.v1.2/Tasks/PUR.Material.Allocation.v1.1-20260824-TASK-001_Test-multiple-OCs-and-partial-allocation.md",
+      "x": 30,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-1",
+      "type": "file",
+      "file": "03_Projects/PUR.Material.Allocation.v1.2/Tasks/PUR.Material.Allocation.v1.1-20260824-TASK-002_Test-insufficient-stock-duplicates-and-failure-paths.md",
+      "x": 30,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-2",
+      "type": "file",
+      "file": "03_Projects/PUR.Material.Allocation.v1.2/Tasks/PUR.Material.Allocation.v1.1-20260824-TASK-003_Validate-rollback-audit-and-user-confirmation.md",
+      "x": 30,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-3",
+      "type": "file",
+      "file": "03_Projects/PUR.Material.Allocation.v1.2/Tasks/PUR.Material.Allocation.v1.1-TASK-001_TASK-Waiting-WFX-Save-function.md",
+      "x": 3030,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-4",
+      "type": "file",
+      "file": "03_Projects/PUR.Material.Allocation.v1.2/Tasks/PUR.Material.Allocation.v1.1-TASK-002_Material-Allocation-Exception-Testing-and-Transaction-Safety.md",
+      "x": 3030,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-5",
+      "type": "file",
+      "file": "03_Projects/PUR.Material.Allocation.v1.2/Tasks/PUR.Material.Allocation.v1.1-TASK-003_Test-many-to-one-one-to-many-partial-allocation-insufficient.md",
+      "x": 3030,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-6",
+      "type": "file",
+      "file": "03_Projects/PUR.Material.Allocation.v1.2/Tasks/PUR.Material.Allocation.v1.1-TASK-004_Test-transaction-failure-retry-and-define-rollback.md",
+      "x": 3030,
+      "y": 1110,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-7",
+      "type": "file",
+      "file": "03_Projects/PUR.Material.Allocation.v1.2/Tasks/PUR.Material.Allocation.v1.1-TASK-005_Define-audit-log-and-user-review-before-posting.md",
+      "x": 3030,
+      "y": 1290,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-8",
+      "type": "file",
+      "file": "03_Projects/PUR.Material.Allocation.v1.2/Tasks/PUR.Material.Allocation.v1.1-TASK-006_Prepare-UAT-with-Ms-Tuyet-and-Precision-users.md",
+      "x": 3030,
+      "y": 1470,
+      "width": 480,
+      "height": 140
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,31 @@
+direction: down
+business: "LAYER 1 - BUSINESS PROCESS" {
+  market: "Customer / Market"
+  merchandising: "Merchandising"
+  technical: "Technical Development"
+  sourcing: "Sourcing"
+  purchasing: "Purchasing"
+  warehouse: "Warehouse / Material"
+  production: "Production"
+  wash: "Wash"
+  qc: "QC / TQM"
+  logistics: "Logistics / EXIM"
+  finance: "Finance / Accounting"
+  market -> merchandising -> technical -> sourcing -> purchasing -> warehouse -> production -> wash -> qc -> logistics -> finance
+}
+erp: "LAYER 2 - CORE ERP" { wfx: "WFX ERP - Operational Transaction Backbone" }
+third_party: "LAYER 3 - SPECIALIZED / THIRD-PARTY" { systems: "MMX | eOffice | VNPT e-Invoice | IoT / WISER / INA | External Platforms" }
+internal: "LAYER 4 - INTERNAL PPJ APPLICATIONS" { apps: "GTAS / IED | Datamarts | Internal Portals" }
+data_ai: "LAYER 5 - DATA + AI + AUTOMATION" {
+  dwh: "DWH / Databricks"
+  ai: "PERRI / AI Hub / OCR / RAG / Agents / RPA / API"
+  human: "Human Confirm"
+  execute: "Controlled Write-back / Execute"
+  dwh -> ai -> human -> execute
+}
+business -> erp
+erp -> third_party
+erp -> internal
+third_party -> data_ai
+internal -> data_ai
+data_ai.execute -> erp.wfx

@@ -1,0 +1,158 @@
+{
+  "nodes": [
+    {
+      "id": "lane-0",
+      "type": "group",
+      "x": 0,
+      "y": 500,
+      "width": 540,
+      "height": 2080,
+      "label": "BACKLOG"
+    },
+    {
+      "id": "lane-1",
+      "type": "group",
+      "x": 600,
+      "y": 500,
+      "width": 540,
+      "height": 2080,
+      "label": "THIS WEEK"
+    },
+    {
+      "id": "lane-2",
+      "type": "group",
+      "x": 1200,
+      "y": 500,
+      "width": 540,
+      "height": 2080,
+      "label": "IN PROGRESS"
+    },
+    {
+      "id": "lane-3",
+      "type": "group",
+      "x": 1800,
+      "y": 500,
+      "width": 540,
+      "height": 2080,
+      "label": "BLOCKED / WAITING"
+    },
+    {
+      "id": "lane-4",
+      "type": "group",
+      "x": 2400,
+      "y": 500,
+      "width": 540,
+      "height": 2080,
+      "label": "REVIEW / UAT"
+    },
+    {
+      "id": "lane-5",
+      "type": "group",
+      "x": 3000,
+      "y": 500,
+      "width": 540,
+      "height": 2080,
+      "label": "DONE"
+    },
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "TD_TechnicalKnowledgePlatform_v2.1.0\n\nDomain: Fabric / Textiles Technique\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: UAT / PRE-GO-LIVE\nLifecycle: Sync Validation & Stabilization\nStatus: Active\nProgress: TBD\nGate: Sync validation and canonical technical model\nOutcome: Technical Data Backbone for Pattern, BOM, Consumption, Construction, documents and historical records; upstream source for Costing, Sew Agent, BOM, Consumption, Pattern, Technical Search and Similar Style.\nTop Blocker: Sync reliability\nNext Milestone: Implement incremental sync, error handling and retry\nPriority: P5\nLast Verified: 2026-09-18",
+      "x": 0,
+      "y": 0,
+      "width": 1140,
+      "height": 420
+    },
+    {
+      "id": "task-0",
+      "type": "file",
+      "file": "03_Projects/TD.TechnicalPlatform_v2.1/Tasks/TD.TechnicalKnowledge.Platform.v2.1-20260824-TASK-001_Implement-incremental-sync-error-handling-and-retry.md",
+      "x": 30,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-1",
+      "type": "file",
+      "file": "03_Projects/TD.TechnicalPlatform_v2.1/Tasks/TD.TechnicalKnowledge.Platform.v2.1-20260824-TASK-002_Add-duplicate-missing-key-and-reconciliation-checks.md",
+      "x": 30,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-2",
+      "type": "file",
+      "file": "03_Projects/TD.TechnicalPlatform_v2.1/Tasks/TD.TechnicalKnowledge.Platform.v2.1-20260824-TASK-003_Govern-versions-and-latest-approved-record-logic.md",
+      "x": 30,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-3",
+      "type": "file",
+      "file": "03_Projects/TD.TechnicalPlatform_v2.1/Tasks/TD.TechnicalKnowledge.Platform.v2.1-20260824-TASK-004_Finalize-permissions-and-prepare-Technical-UAT.md",
+      "x": 30,
+      "y": 1110,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-4",
+      "type": "file",
+      "file": "03_Projects/TD.TechnicalPlatform_v2.1/Tasks/TD.TechnicalKnowledge.Platform.v2.1-TASK-001_Technical-ETL-Reconciliation-and-Data-Acceptance.md",
+      "x": 3030,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-5",
+      "type": "file",
+      "file": "03_Projects/TD.TechnicalPlatform_v2.1/Tasks/TD.TechnicalKnowledge.Platform.v2.1-TASK-002_Measure-ETL-coverage-and-reconcile-with-source-systems.md",
+      "x": 3030,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-6",
+      "type": "file",
+      "file": "03_Projects/TD.TechnicalPlatform_v2.1/Tasks/TD.TechnicalKnowledge.Platform.v2.1-TASK-003_Detect-duplicates-and-missing-keys.md",
+      "x": 3030,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-7",
+      "type": "file",
+      "file": "03_Projects/TD.TechnicalPlatform_v2.1/Tasks/TD.TechnicalKnowledge.Platform.v2.1-TASK-004_Confirm-record-version-and-approved-latest-version-logic.md",
+      "x": 3030,
+      "y": 1110,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-8",
+      "type": "file",
+      "file": "03_Projects/TD.TechnicalPlatform_v2.1/Tasks/TD.TechnicalKnowledge.Platform.v2.1-TASK-005_Build-search-retrieval-and-permission-layers.md",
+      "x": 3030,
+      "y": 1290,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-9",
+      "type": "file",
+      "file": "03_Projects/TD.TechnicalPlatform_v2.1/Tasks/TD.TechnicalKnowledge.Platform.v2.1-TASK-006_Connect-consumption-data-to-Costing-and-prepare-Technical-us.md",
+      "x": 3030,
+      "y": 1470,
+      "width": 480,
+      "height": 140
+    }
+  ],
+  "edges": []
+}

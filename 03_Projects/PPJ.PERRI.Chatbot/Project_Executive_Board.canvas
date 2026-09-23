@@ -1,0 +1,166 @@
+{
+  "nodes": [
+    {
+      "id": "ppj-board-metadata",
+      "type": "text",
+      "text": "AI_PERRIPlatform_v3.2.0 — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1",
+      "x": 0,
+      "y": -220,
+      "width": 760,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "ppj-exec-summary",
+      "type": "text",
+      "text": "AI_PERRIPlatform_v3.2.0\n\nDomain:\nInternal Chatbot & AI Platforms\n\nLifecycle:\nProduction\n\nProgress:\nTBD\n\nGate:\nPermissioned production orchestration\n\nOutcome:\nOperate PPJ's conversational orchestration platform: User -> PERRI -> Intent -> Agent / Tool -> Data / Knowledge / API -> Controlled Response / Action.\n\nTop Blocker:\nAction-agent permissions and audit\n\nNext Milestone:\nMaintain permission and approval controls\n\nLast Verified:\n2026-09-18",
+      "x": 0,
+      "y": -90,
+      "width": 760,
+      "height": 560,
+      "color": "4"
+    },
+    {
+      "id": "ppj-management-attention",
+      "type": "text",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Action-agent permissions and audit\n\nDecisions Needed\n- None recorded\n\nExternal Dependencies\n- None recorded",
+      "x": 810,
+      "y": -90,
+      "width": 500,
+      "height": 560,
+      "color": "1"
+    },
+    {
+      "id": "ppj-lane-f3e573404df4",
+      "type": "group",
+      "x": 0,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BACKLOG",
+      "color": "1"
+    },
+    {
+      "id": "ppj-task-1ec4f7dc4c6b",
+      "type": "text",
+      "text": "[[Tasks/PPJ.PERRI.Chatbot.v3.2-20260824-TASK-001_Maintain-permission-and-approval-controls]]\n\nMaintain permission and approval controls\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 20,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-c8e95c33c32c",
+      "type": "text",
+      "text": "[[Tasks/PPJ.PERRI.Chatbot.v3.2-20260824-TASK-002_Monitor-tool-execution-and-audit-logs]]\n\nMonitor tool execution and audit logs\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
+      "x": 20,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-lane-8d767178b3a7",
+      "type": "group",
+      "x": 350,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "THIS WEEK",
+      "color": "2"
+    },
+    {
+      "id": "ppj-lane-bf81443bfcae",
+      "type": "group",
+      "x": 700,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "IN PROGRESS",
+      "color": "3"
+    },
+    {
+      "id": "ppj-lane-276d6ca3922f",
+      "type": "group",
+      "x": 1050,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "BLOCKED / WAITING",
+      "color": "4"
+    },
+    {
+      "id": "ppj-lane-a82db70f445e",
+      "type": "group",
+      "x": 1400,
+      "y": 560,
+      "width": 300,
+      "height": 500,
+      "label": "REVIEW / UAT",
+      "color": "5"
+    },
+    {
+      "id": "ppj-lane-e782e7728e49",
+      "type": "group",
+      "x": 1750,
+      "y": 560,
+      "width": 300,
+      "height": 1050,
+      "label": "DONE",
+      "color": "6"
+    },
+    {
+      "id": "ppj-task-c064bbe4918b",
+      "type": "text",
+      "text": "[[Tasks/PPJ.PERRI.Chatbot.v3.2-TASK-003_Confirm-Invoice-Downloader-integration-scope]]\n\nConfirm Invoice Downloader integration scope\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-c62c6de50670",
+      "type": "text",
+      "text": "[[Tasks/PPJ.PERRI.Chatbot.v3.2-TASK-002_Define-approved-tool-catalog-with-PPJ-AI-Hub-v2-1]]\n\nDefine approved tool catalog with PPJ.AI.Hub.v2.1\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 820,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-7c53fc134c91",
+      "type": "text",
+      "text": "[[Tasks/PPJ.PERRI.Chatbot.v3.2-TASK-005_Define-audit-log-schema]]\n\nDefine audit log schema\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1010,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-cc79b4624e44",
+      "type": "text",
+      "text": "[[Tasks/PPJ.PERRI.Chatbot.v3.2-TASK-004_Draft-fallback-and-escalation-rules]]\n\nDraft fallback and escalation rules\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1200,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-3324750097b8",
+      "type": "text",
+      "text": "[[Tasks/PPJ.PERRI.Chatbot.v3.2-TASK-001_Map-PERRI-access-roles-by-department]]\n\nMap PERRI access roles by department\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
+      "x": 1770,
+      "y": 1390,
+      "width": 260,
+      "height": 155
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {
+      "project": "AI_PERRIPlatform_v3.2.0",
+      "board_type": "project_executive_kanban",
+      "last_verified": "2026-09-18"
+    }
+  }
+}

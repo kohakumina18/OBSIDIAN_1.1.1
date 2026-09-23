@@ -1,0 +1,61 @@
+---
+type: "project_profile"
+project: "ADMIN_ExpenseManagement_v1.1.0"
+source_project: "ADMIN_ExpenseManagement_v1.1.0.md"
+source_event: "PPJ-PROJECT-REGISTRATION-ADMIN_ExpenseManagement_v1.1.0-20260918"
+last_verified: "2026-09-18"
+confidence: "Needs Confirmation"
+documentation_status: "Current Working Document"
+generated_by: "upgrade_ppj_project_workspaces.py"
+---
+# Project Profile
+
+## Identity
+
+| Field | Value |
+| --- | --- |
+| Canonical Code | ADMIN_ExpenseManagement_v1.1.0 |
+| Physical Project Note | ADMIN_ExpenseManagement_v1.1.0.md |
+| Primary Domain | Administration |
+| Cluster | Workflow |
+| Lifecycle Class | B. UAT / Stabilization |
+| Lifecycle | UAT Preparation |
+| Current Gate | Registration / Business Discovery |
+| Priority | P6 |
+| Business Owner | Administration |
+
+## One-Line Understanding
+
+Administration project for ExpenseManagement: Business travel request, approval, advance, expense and settlement.
+
+## Intended Outcome
+
+Standardize Administration business-travel and expense workflows: Request -> Approval -> Business Trip -> Advance -> Expense -> Settlement, with multi-traveler requests.
+
+## Users and Delivery Participants
+
+- Primary users: Employees requesting travel; Admin staff by region (HO, Da Nang, Ha Noi, Nha Trang/Phu Yen); approvers; accounting
+- BA / Coordination: Khoa
+- Technical members: Needs Confirmation
+
+## Current Scope
+
+- ExpenseManagement
+- Business travel request, approval, advance, expense and settlement
+
+## Explicit Boundaries
+
+- Unapproved expansion or merger with another canonical project
+
+## Current Gate and Next Move
+
+- Gate: Registration / Business Discovery
+- Next actions: Validate booking workflow and status model, model multi-traveler requests, and prepare UAT
+
+## Evidence Basis
+
+- Root project note: [[03_Projects/ADMIN_ExpenseManagement_v1.1.0]]
+- Project memory: [[03_Projects/_Registry/Project_Memory/ADMIN_ExpenseManagement_v1.1.0.memory]]
+- Source event: PPJ-PROJECT-REGISTRATION-ADMIN_ExpenseManagement_v1.1.0-20260918
+- Last verified: 2026-09-18
+- Confidence: Needs Confirmation

@@ -1,0 +1,149 @@
+{
+  "nodes": [
+    {
+      "id": "lane-0",
+      "type": "group",
+      "x": 0,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "BACKLOG"
+    },
+    {
+      "id": "lane-1",
+      "type": "group",
+      "x": 600,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "THIS WEEK"
+    },
+    {
+      "id": "lane-2",
+      "type": "group",
+      "x": 1200,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "IN PROGRESS"
+    },
+    {
+      "id": "lane-3",
+      "type": "group",
+      "x": 1800,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "BLOCKED / WAITING"
+    },
+    {
+      "id": "lane-4",
+      "type": "group",
+      "x": 2400,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "REVIEW / UAT"
+    },
+    {
+      "id": "lane-5",
+      "type": "group",
+      "x": 3000,
+      "y": 500,
+      "width": 540,
+      "height": 1890,
+      "label": "DONE"
+    },
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "PUR_GDIAutomation_v1.0.0\n\nDomain: Sourcing / Purchasing\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: DEVELOPMENT\nLifecycle: Active Development / WFX API Integration\nStatus: Active\nProgress: TBD\nGate: WFX API integration and GDI data-entry workflow\nOutcome: Give Purchasing end-to-end package-dispatch tracking through GDI and provide API capability for automated/assisted GDI data entry while preserving WFX transaction control, validation, confirmation and audit.\nTop Blocker: WFX API ownership and sandbox\nNext Milestone: Obtain WFX API authentication and operation documentation\nPriority: P3\nLast Verified: 2026-09-18",
+      "x": 0,
+      "y": 0,
+      "width": 1140,
+      "height": 420
+    },
+    {
+      "id": "task-0",
+      "type": "file",
+      "file": "03_Projects/PUR.GDI Automation/Tasks/PUR.GDI.Automation.v1.0-20260824-TASK-001_Obtain-WFX-API-authentication-and-operation-documentation.md",
+      "x": 630,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-1",
+      "type": "file",
+      "file": "03_Projects/PUR.GDI Automation/Tasks/PUR.GDI.Automation.v1.0-20260824-TASK-002_Confirm-create-update-lookup-draft-submit-cancel-status-schemas.md",
+      "x": 630,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-2",
+      "type": "file",
+      "file": "03_Projects/PUR.GDI Automation/Tasks/PUR.GDI.Automation.v1.0-20260824-TASK-003_Define-validation-idempotency-duplicate-retry-and-timeout-controls.md",
+      "x": 630,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-3",
+      "type": "file",
+      "file": "03_Projects/PUR.GDI Automation/Tasks/PUR.GDI.Automation.v1.0-20260824-TASK-004_Design-audit-logging-and-transaction-confirmation.md",
+      "x": 630,
+      "y": 1110,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-4",
+      "type": "file",
+      "file": "03_Projects/PUR.GDI Automation/Tasks/PUR.GDI.Automation.v1.0-TASK-001_GDI-WFX-API-Architecture-and-Prototype.md",
+      "x": 3030,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-5",
+      "type": "file",
+      "file": "03_Projects/PUR.GDI Automation/Tasks/PUR.GDI.Automation.v1.0-TASK-002_Request-WFX-API-documentation-and-supported-create-update-dr.md",
+      "x": 3030,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-6",
+      "type": "file",
+      "file": "03_Projects/PUR.GDI Automation/Tasks/PUR.GDI.Automation.v1.0-TASK-003_Confirm-authentication-request-response-schema-idempotency-a.md",
+      "x": 3030,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-7",
+      "type": "file",
+      "file": "03_Projects/PUR.GDI Automation/Tasks/PUR.GDI.Automation.v1.0-TASK-004_Confirm-rollback-audit-and-approval-before-submit-requiremen.md",
+      "x": 3030,
+      "y": 1110,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-8",
+      "type": "file",
+      "file": "03_Projects/PUR.GDI Automation/Tasks/PUR.GDI.Automation.v1.0-TASK-005_Build-and-test-an-API-prototype-in-a-non-production-environm.md",
+      "x": 3030,
+      "y": 1290,
+      "width": 480,
+      "height": 140
+    }
+  ],
+  "edges": []
+}

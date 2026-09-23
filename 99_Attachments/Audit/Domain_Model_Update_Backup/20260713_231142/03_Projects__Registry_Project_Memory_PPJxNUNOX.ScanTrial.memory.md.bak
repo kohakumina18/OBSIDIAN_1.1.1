@@ -1,0 +1,59 @@
+---
+type: project_memory
+project_name: "PPJxNUNOX.ScanTrial"
+project_file: "PPJxNUNOX.md"
+project_code: "PPJxNUNOX.ScanTrial"
+department: "Sourcing / Fabric"
+cluster: "Hardware Trial"
+phase: "Trials / Free of Charge"
+last_verified: "2026-06-28"
+confidence: "Strong"
+---
+
+# Project Memory: PPJxNUNOX.ScanTrial
+
+## One-Line Understanding
+
+NUNOX high-quality fabric sample scan trial for image quality and fabric/sample data foundation.
+
+## Current Outcome
+
+Evaluate whether scan output can support Sourcing, FD, CPD, or fabric visual data workflows.
+
+## Latest Update Summary
+
+Free trial/scan evaluation captured in canonical portfolio.
+
+## What This Project Is
+
+External hardware/tool feasibility trial for fabric/sample scanning.
+
+## What This Project Is Not
+
+Not confirmed production hardware rollout.
+
+## Key Users
+
+Sourcing, fabric, sample, data/AI stakeholders.
+
+## Systems / Data
+
+Fabric samples, scanned images, metadata, possible visual search/use-case datasets.
+
+## Known Risks / Blockers
+
+Exact hardware scope, scan quality, cost, data integration, user workflow.
+
+## Next Actions
+
+Evaluate trial output quality and define business fit.
+
+## Do Not Drift Rules
+
+- Confirm exact hardware scope.
+- Do not mark as implementation unless rollout is approved.
+
+## Source Links
+
+- [[PPJxNUNOX]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]

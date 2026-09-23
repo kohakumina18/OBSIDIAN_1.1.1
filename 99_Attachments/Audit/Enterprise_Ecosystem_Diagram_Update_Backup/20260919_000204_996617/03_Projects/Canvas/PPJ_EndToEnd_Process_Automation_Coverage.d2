@@ -1,0 +1,196 @@
+direction: down
+
+lane_commercial: "LANE 1 - COMMERCIAL / MER / CUSTOMER" {
+  style: {
+    fill: "#ffe8cc"
+    stroke: "#e8590c"
+    stroke-dash: 5
+  }
+  s01_sales: "1. Sales Pitch / Market Understanding\nPurpose: identify opportunity, trend, target price, customer direction.\nCoverage: AI-assisted intelligence\n[[E-commerce Market Intelligence v.2.3]]\n> Canonical: MER.MARKET.INTELLIGENCE.v1.2"
+  s01_sales.style: {
+    fill: "#e5dbff"
+    stroke: "#7950f2"
+  }
+  s08_quote_review: "8. Quotation Review / Negotiation\nReview target price, margin, assumptions, alternatives, risk.\nCoverage: decision support\n> [[PPJ.COSTING.AGENT.PLATFORM.v1.1]]\n> [[FIN.AI.FINANCE.MANAGEMENT.v1.1]]\nGap: quote approval workflow and assumption versioning."
+  s08_quote_review.style: {
+    fill: "#d0ebff"
+    stroke: "#1c7ed6"
+  }
+  s09_po: "9. PO / Order Confirmation\nConfirm PO, style, quantity, delivery, price and commitment.\nCoverage: workflow automation / historical support\n> [[MER.PO-Commit]]\nCanonical: MER.PO.Commit.v1.1"
+  s09_po.style: {
+    fill: "#e5dbff"
+    stroke: "#7950f2"
+  }
+  s02_request: "2. Customer Request / RFQ\nInputs: email, RFQ, techpack, sample image, target price, timeline.\nCoverage: partly AI-assisted, mostly manual\n\nGap: intake normalization agent."
+  s02_request.style: {
+    fill: "#ffc9c9"
+    stroke: "#e03131"
+  }
+  s07_costing: "7. Costing / Quotation\nAgentic costing uses upstream inputs:\nCPD + FD + TD + SEW + Consumption + Denim-only Wash.\nCoverage: LLM-assisted / agentic decision support\n> [[PPJ.COSTING.AGENT.PLATFORM.v1.1]]"
+  s07_costing.style: {
+    fill: "#d0ebff"
+    stroke: "#1c7ed6"
+  }
+}
+
+lane_material: "LANE 2 - CREATIVE / FABRIC / TECHNICAL / SOURCING / PURCHASING" {
+  style: {
+    fill: "#e5dbff"
+    stroke: "#7950f2"
+    stroke-dash: 5
+  }
+  s03_cpd: "3. Creative Product Design / 3D Visual Library\nPre-costing design reference, image search, sample library.\nCoverage: data repository / search\n> [[CPD.Datamart.v1.1]]\nOutput: design/style reference for costing."
+  s03_cpd.style: {
+    fill: "#e5dbff"
+    stroke: "#7950f2"
+  }
+  s06_inputs: "6. SEW / Consumption / Denim-only Wash Inputs\nSEW: construction, manpower, SMV/SAM if available.\nConsumption: fabric/trim/yield/wastage.\nWash: denim or wash-required only.\nCoverage: partial / input readiness gap\n> [[TD.TechnicalPlatform_v2.1]]\n> [[FD.Datamart.v2.2]]\n> [[WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1]]\n> [[PROD.COWASH]]"
+  s06_inputs.style: {
+    fill: "#ffe8cc"
+    stroke: "#e8590c"
+  }
+  s11_purchasing: "11. Purchasing / Allocation / Indent / GDI / Inventory\nTransaction workflow, allocation, indent, GDI, inventory, label processing.\nCoverage: automation / workflow / reporting\n> [[PUR.Material.Allocation.v1.2]]\n> [[PUR.GDI Automation]]\n> [[PUR.Adhoc Indent mien Nam]]\n> [[PUR.Inventory Report]]\n> [[PUR.H&M Label-O Processing]]"
+  s11_purchasing.style: {
+    fill: "#e5dbff"
+    stroke: "#7950f2"
+  }
+  s10_sourcing: "10. Sourcing / Supplier / Material Intelligence\nSupplier, material, sample, search, sourcing history.\nCoverage: LLM chatbot / data search\n> [[SCP.SOURCING.CHATBOT.v2.3]]\nBoundary: intelligence, not purchasing transaction."
+  s10_sourcing.style: {
+    fill: "#d0ebff"
+    stroke: "#1c7ed6"
+  }
+  s12_grn: "12. Material Receiving / Warehouse / GRN\nReceive goods, GRN, supplier invoice matching, WFX reconciliation.\nCoverage: bot automation / invoice utility\n> [[ACC.GRN-SupplierInvoiceBot.v2.3]]\n> [[PPJ.Invoice Downloader.v1.2]]"
+  s12_grn.style: {
+    fill: "#e5dbff"
+    stroke: "#7950f2"
+  }
+  s04_fd: "4. Fabric \nFabric identity, hanger, QR, fabric visibility and material reference.\nCoverage: Directus repository / QR\n> [[FD.Datamart.v2.2]]\nOutput: fabric/material reference for costing."
+  s04_fd.style: {
+    fill: "#e5dbff"
+    stroke: "#7950f2"
+  }
+  s05_td: "5. Technical Knowledge / BOM / Pattern / Construction\nBOM, pattern, measurement, sewing method, technical docs.\nCoverage: knowledge platform / possible RAG\n> [[TD.TechnicalPlatform_v2.1]]\nOutput: technical feasibility for costing."
+  s05_td.style: {
+    fill: "#e5dbff"
+    stroke: "#7950f2"
+  }
+}
+
+lane_finance_ai: "LANE 4 - FINANCE / AI PLATFORM / REPORTING" {
+  style: {
+    fill: "#fcc2d7"
+    stroke: "#c2255c"
+    stroke-dash: 5
+  }
+  s20_ai_platform: "20. Cross-Process AI / Platform / Helpdesk Layer\nNot a linear stage. Supports approved search, access, orchestration and IT helpdesk.\n\n[[PPJ.AI.Hub.v2.1]] = app discovery/access\n[[PPJ.PERRI.Chatbot]] = controlled conversational orchestration\n[[PPJ.GLPI-Helpdesk-AI Chatbot]] = IT support knowledge\n\nRule: domain owner approves data; AI assists, user approves action."
+  s20_ai_platform.style: {
+    fill: "#fcc2d7"
+    stroke: "#c2255c"
+  }
+  s19_finance: "19. Finance / Accounting / Reporting / Management Insight\nERP, WFX, DWH, invoice, GRN, costing plan, sales efficiency, profitability.\nCoverage: AI-assisted analytics / automation\n> [[FIN.AI.FINANCE.MANAGEMENT.v1.1]]\n> [[ACC.GRN-SupplierInvoiceBot.v2.3]]\n> [[PPJ. Expense-Invoices.v1.1]]\n> [[PPJ.Invoice Downloader.v1.2]]"
+  s19_finance.style: {
+    fill: "#d0ebff"
+    stroke: "#1c7ed6"
+  }
+  s18_exim: "18. EXIM / Shipping Documents / Expense Invoice\nShipping docs, service invoices, department/factory/ledger mapping.\nCoverage: automation utility / EXIM-first processing\n> [[PPJ. Expense-Invoices.v1.1]]\n> [[PPJ.Invoice Downloader.v1.2]]"
+  s18_exim.style: {
+    fill: "#e5dbff"
+    stroke: "#7950f2"
+  }
+}
+
+lane_factory: "LANE 3 - FACTORY / WASH / QC / SHIPPING" {
+  style: {
+    fill: "#b2f2bb"
+    stroke: "#2f9e44"
+    stroke-dash: 5
+  }
+  s17_shipping: "17. Packing / Final Warehouse / Shipping Readiness\nFinished goods, QC pass, packing list, carton, shipping instruction, EXIM handoff.\nCoverage: current gap / indirect support only\nGap: Shipping Readiness Dashboard."
+  s17_shipping.style: {
+    fill: "#ffc9c9"
+    stroke: "#e03131"
+  }
+  s13_planning: "13. Production Planning / Factory Preparation\nOrder readiness, material readiness, line plan, manpower, sewing method.\nCoverage: partial production visibility\n> [[PROD.IOT.CHuyenTreo_1]]\nGap: costing assumptions -> production plan bridge."
+  s13_planning.style: {
+    fill: "#ffc9c9"
+    stroke: "#e03131"
+  }
+  s16_qc: "16. QC / TQM / Traceability\nInspection, defect detection, customer quality, RFID/product ID exploration.\nCoverage: AI inspection PoC / RFID feasibility\n> [[PPJxQSee.ai]]\n> [[PPJ XPrimo1D RFID Thread]]\n> ![[Pasted image 20260715140648.png]]"
+  s16_qc.style: {
+    fill: "#d0ebff"
+    stroke: "#1c7ed6"
+  }
+  s15_wash: "15. Wash / R&D Wash / Operational Wash\nSampling request/trial/result/approval/history and operational wash output/delay/rework.\nCoverage: workflow portal / operational data\n> [[WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1]]\n> [[PROD.COWASH]]"
+  s15_wash.style: {
+    fill: "#e5dbff"
+    stroke: "#7950f2"
+  }
+  s14_production: "14. Production Execution / Cut /  Sewing Line\nTrack output, target, downtime, efficiency and operational progress.\nCoverage: IoT / dashboard\n> [[PROD.IOT.CHuyenTreo_1]]\n---CUT - AUTOMATION"
+  s14_production.style: {
+    fill: "#d0ebff"
+    stroke: "#1c7ed6"
+  }
+}
+
+5c72ef84bb65aa75: "Pasted image 20260715135638.png"
+title: "PPJ End-to-End Process and Automation Coverage\nSales pitching -> shipping -> finance reporting\nHighlighted: automation, LLM support, data repositories, workflow gaps"
+title.style: {
+  fill: "#ffc9c9"
+  stroke: "#e03131"
+}
+gap_intake: "WHITE SPACE 1\nCustomer Request Intake Agent\nNormalize RFQ, techpack, image, target price, timeline, missing info."
+gap_intake.style: {
+  fill: "#ffc9c9"
+  stroke: "#e03131"
+}
+gap_evidence: "WHITE SPACE 2\nQuotation Evidence Pack\nTrace CPD, FD, TD, SEW, consumption and wash assumptions used in quote."
+gap_evidence.style: {
+  fill: "#ffc9c9"
+  stroke: "#e03131"
+}
+gap_order_twin: "WHITE SPACE 5\nPPJ Order Lifecycle Twin\nOne view from customer request to shipment and finance.\n\n![[Pasted image 20260714002848.png]]"
+gap_order_twin.style: {
+  fill: "#ffc9c9"
+  stroke: "#e03131"
+}
+gap_shipping: "WHITE SPACE 3\nShipping Readiness Dashboard\nPO, QC pass, packing, carton, document and invoice readiness."
+gap_shipping.style: {
+  fill: "#ffc9c9"
+  stroke: "#e03131"
+}
+gap_variance: "WHITE SPACE 4\nCosting Actual Variance Engine\nCompare quote assumptions vs actual consumption, SEW, wash, production efficiency and rework."
+gap_variance.style: {
+  fill: "#ffc9c9"
+  stroke: "#e03131"
+}
+
+lane_commercial.s01_sales -> lane_commercial.s02_request: "opportunity -> RFQ"
+lane_commercial.s02_request -> lane_material.s03_cpd: "design reference"
+lane_commercial.s02_request -> lane_material.s04_fd: "fabric expectation"
+lane_commercial.s02_request -> lane_material.s05_td: "techpack / BOM"
+lane_material.s03_cpd -> lane_commercial.s07_costing: "visual input"
+lane_material.s04_fd -> lane_commercial.s07_costing: "fabric input"
+lane_material.s05_td -> lane_commercial.s07_costing: "technical input"
+lane_material.s06_inputs -> lane_commercial.s07_costing: "SEW / consumption / wash"
+lane_commercial.s07_costing -> lane_commercial.s08_quote_review: "quote recommendation"
+lane_commercial.s08_quote_review -> lane_commercial.s09_po: "accepted quote"
+lane_commercial.s09_po -> lane_material.s10_sourcing: "material need"
+lane_material.s10_sourcing -> lane_material.s11_purchasing: "supplier/material decision"
+lane_material.s11_purchasing -> lane_material.s12_grn: "received material / GRN"
+lane_material.s12_grn -> lane_factory.s13_planning: "material readiness"
+lane_factory.s13_planning -> lane_factory.s14_production: "line execution"
+lane_factory.s14_production -> lane_factory.s15_wash: "wash if required"
+lane_factory.s15_wash -> lane_factory.s16_qc: "quality check"
+lane_factory.s16_qc -> lane_factory.s17_shipping: "QC pass"
+lane_factory.s17_shipping -> lane_finance_ai.s18_exim: "shipping docs / expense"
+lane_finance_ai.s18_exim -> lane_finance_ai.s19_finance: "invoice / reporting"
+lane_finance_ai.s20_ai_platform -> lane_commercial.s02_request: "document Q&A potential"
+lane_finance_ai.s20_ai_platform -> lane_commercial.s07_costing: "agent orchestration"
+lane_finance_ai.s20_ai_platform -> lane_material.s10_sourcing: "approved search"
+lane_finance_ai.s19_finance -> gap_variance: "actual vs quote feedback"
+lane_factory.s17_shipping -> gap_shipping: "gap"
+lane_commercial.s02_request -> gap_intake: "gap"
+lane_commercial.s07_costing -> gap_evidence: "gap"
+lane_commercial.s09_po -> gap_order_twin: "future order twin"
+lane_finance_ai.s19_finance -> gap_order_twin: "lifecycle close loop"
+lane_material.s05_td -> lane_material.s06_inputs

@@ -1,0 +1,30 @@
+flowchart LR
+  MARKET["CUSTOMER / MARKET<br/>MER_MarketIntelligence_v1.1.0"]
+  MER["MERCHANDISING<br/>MER_CostingAgenticPlatform_v1.1.0<br/>MER_InvoiceDataRecheck_v1.1.0"]
+  MARKET --> MER
+  TECH["TECHNICAL DEVELOPMENT<br/>TD_TechnicalKnowledgePlatform_v2.1.0<br/>FAB_FabricDatamart_v2.2.0<br/>CPD_VisualSampleDatamart_v1.1.0"]
+  MER --> TECH
+  SOURCE["SOURCING<br/>SCP_SourcingChatbot_v2.3.0"]
+  TECH --> SOURCE
+  PURCHASE["PURCHASING<br/>PUR_GDIAutomation_v1.0.0<br/>PUR_MaterialAllocation_v1.1.0<br/>PUR_AdhocIndentSouth_v1.0.0<br/>PUR_InventoryReport_v2.1.0"]
+  SOURCE --> PURCHASE
+  WAREHOUSE["WAREHOUSE / MATERIAL<br/>WH_AWBExtraction_v1.1.0"]
+  PURCHASE --> WAREHOUSE
+  PRODUCTION["PRODUCTION<br/>PROD_HangingLineIoT_v1.0.0"]
+  WAREHOUSE --> PRODUCTION
+  WASH["WASH<br/>WASH_SamplingManagement_v1.1.0<br/>WASH_COWASH_v2.0.0"]
+  PRODUCTION --> WASH
+  QC["QC / TQM<br/>QC_DefectDetection_v1.0.0<br/>QC_ThreadTraceability_v1.0.0"]
+  WASH --> QC
+  LOGISTICS["LOGISTICS / EXIM<br/>LOG_ExpenseInvoiceProcessing_v1.2.0"]
+  QC --> LOGISTICS
+  FINANCE["FINANCE / ACCOUNTING<br/>FIN_FinanceManagement_v1.2.0<br/>FIN_InvoiceDownloader_v1.2.0<br/>ACC_GRNSupplierInvoiceBot_v2.3.0"]
+  LOGISTICS --> FINANCE
+  DATA["DWH / Databricks"] --- MER
+  DATA --- PROD
+  DATA --- FINANCE
+  AI["AI + Automation"] --- MER
+  AI --- SOURCE
+  AI --- PURCHASE
+  AI --- WAREHOUSE
+  AI --- QC

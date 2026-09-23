@@ -1,0 +1,113 @@
+{
+  "nodes": [
+    {
+      "id": "lane-0",
+      "type": "group",
+      "x": 0,
+      "y": 500,
+      "width": 540,
+      "height": 1130,
+      "label": "BACKLOG"
+    },
+    {
+      "id": "lane-1",
+      "type": "group",
+      "x": 600,
+      "y": 500,
+      "width": 540,
+      "height": 1130,
+      "label": "THIS WEEK"
+    },
+    {
+      "id": "lane-2",
+      "type": "group",
+      "x": 1200,
+      "y": 500,
+      "width": 540,
+      "height": 1130,
+      "label": "IN PROGRESS"
+    },
+    {
+      "id": "lane-3",
+      "type": "group",
+      "x": 1800,
+      "y": 500,
+      "width": 540,
+      "height": 1130,
+      "label": "BLOCKED / WAITING"
+    },
+    {
+      "id": "lane-4",
+      "type": "group",
+      "x": 2400,
+      "y": 500,
+      "width": 540,
+      "height": 1130,
+      "label": "REVIEW / UAT"
+    },
+    {
+      "id": "lane-5",
+      "type": "group",
+      "x": 3000,
+      "y": 500,
+      "width": 540,
+      "height": 1130,
+      "label": "DONE"
+    },
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "WH_AWBExtraction_v1.1.0\n\nDomain: Warehouse\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: DEVELOPMENT\nLifecycle: Active Development\nStatus: Active\nProgress: TBD\nGate: AWB image OCR and DHL email extraction; table/cell understanding and weight/unit reliability\nOutcome: Canonical umbrella for AWB OCR + DHL email extraction: both channels converge into one validated Canonical AWB Record (AWB number, sender, recipient, pieces, weight, unit, reference, origin, carrier, destination, dates).\nTop Blocker: Mixed-unit weight extraction\nNext Milestone: Improve table structure and cell-boundary understanding\nPriority: Medium\nLast Verified: 2026-09-18",
+      "x": 0,
+      "y": 0,
+      "width": 1140,
+      "height": 420
+    },
+    {
+      "id": "task-0",
+      "type": "file",
+      "file": "03_Projects/WH_AWBExtraction_v1.1.0/Tasks/WH-AWBExtraction-v1.1.0-20260918-TASK-001_Improve-table-structure-and-cell-boundary-understanding.md",
+      "x": 30,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-1",
+      "type": "file",
+      "file": "03_Projects/WH_AWBExtraction_v1.1.0/Tasks/WH-AWBExtraction-v1.1.0-20260918-TASK-002_Improve-shipment-weight-and-weight-unit-reliability-kg-g-lb-lbs-oz-mix.md",
+      "x": 30,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-2",
+      "type": "file",
+      "file": "03_Projects/WH_AWBExtraction_v1.1.0/Tasks/WH-AWBExtraction-v1.1.0-20260918-TASK-003_Add-post-processing-and-validation-rules.md",
+      "x": 30,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-3",
+      "type": "file",
+      "file": "03_Projects/WH_AWBExtraction_v1.1.0/Tasks/WH-AWBExtraction-v1.1.0-20260918-TASK-004_Add-confidence-scoring-and-human-review.md",
+      "x": 30,
+      "y": 1110,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-4",
+      "type": "file",
+      "file": "03_Projects/WH_AWBExtraction_v1.1.0/Tasks/WH-AWBExtraction-v1.1.0-20260918-TASK-005_Add-extraction-logging-and-DHL-email-channel-mapping-to-the-Canonical-.md",
+      "x": 30,
+      "y": 1290,
+      "width": 480,
+      "height": 140
+    }
+  ],
+  "edges": []
+}

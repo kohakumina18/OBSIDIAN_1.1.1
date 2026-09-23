@@ -1,0 +1,77 @@
+{
+  "nodes": [
+    {
+      "id": "road-0",
+      "type": "text",
+      "text": "## BACKLOG\n\n- No current registered project",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 420
+    },
+    {
+      "id": "road-1",
+      "type": "text",
+      "text": "## KICK-OFF\n\n- No current registered project",
+      "x": 660,
+      "y": 0,
+      "width": 600,
+      "height": 420
+    },
+    {
+      "id": "road-2",
+      "type": "text",
+      "text": "## ANALYSIS\n\n- FIN.AI.FINANCE.MANAGEMENT.v1.2 | Strategic Active | WS2 Rule Catalogue and Databricks access; then WS3 source discovery\n- Admin Expense Management.v1.1 | Workflow Demo Completed / Requirement Refinement | Expand demonstrated travel request into end-to-end expense and settlement requirements\n- MER.MARKET.INTELLIGENCE.v1.1 | Active Intelligence | Commercial intelligence delivery\n- PPJxQSee.AI | On Hold | Reactivation decision\n- QC.Primo1D.RFID.Thread.v1.0 | Business Case / Pre-PoC | Business/customer case decision\n- PPJxStratova.AI | Strategic Technology Evaluation | Build-vs-buy evaluation\n- PPJxNUNOX.ScanTrial | Partnership / Digital Library Evaluation | Working-session outcome unconfirmed\n- PPJ.UIT.ACADEMIC.COLLABORATION.v1.1 | Active / Problem Framing | Academic problem package\n- PROD.COWASH.v2.0 | On Hold | Owner/data/KPI/access/technical direction\n- PUR.HM.LabelO.Processing.Automation.v1.0 | On Hold | Scalability decision",
+      "x": 1320,
+      "y": 0,
+      "width": 600,
+      "height": 1020
+    },
+    {
+      "id": "road-3",
+      "type": "text",
+      "text": "## DESIGN\n\n- PUR.GDI.Automation.v1.0 | Active / WFX API Integration | WFX API contract discovery and controlled integration design\n- WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1 | Analysis / Product Design | Sampling workflow and product design",
+      "x": 1980,
+      "y": 0,
+      "width": 600,
+      "height": 420
+    },
+    {
+      "id": "road-4",
+      "type": "text",
+      "text": "## DEVELOPMENT\n\n- COSTING.AGENTIC.PLATFORM.v1.1 | Active Development | Sew v1.2 and Wash Agent development\n- PROD.IOT.CHuyenTreo.v1.0 | Development | Source and KPI reconciliation",
+      "x": 2640,
+      "y": 0,
+      "width": 600,
+      "height": 420
+    },
+    {
+      "id": "road-5",
+      "type": "text",
+      "text": "## UAT / PRE-GO-LIVE\n\n- TD.TechnicalKnowledge.Platform.v2.1 | Initial Sync Demo Completed / Sync Validation & Stabilization | Incremental sync hardening and Technical UAT\n- PPJ.ExpenseInvoices.v1.1 | UAT / Pre-Go-Live | Production Readiness / Go-Live\n- PUR.Material.Allocation.v1.1 | First Flow Validated | Exception, rollback and transaction-safety testing\n- MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1 | Active | Chico's rule validation",
+      "x": 3300,
+      "y": 0,
+      "width": 600,
+      "height": 480
+    },
+    {
+      "id": "road-6",
+      "type": "text",
+      "text": "## GO-LIVE / PRODUCTION / SUPPORT\n\n- HR.SSPFD.Workflow.v1.1 | Production | Production rollout and data-quality monitoring\n- SCP.SOURCING.CHATBOT.v2.3 | Production | Production data quality and stress testing\n- PPJ.InvoiceDownloader.v1.2 | Production | Operational reliability\n- PUR.Inventory.Report.v2.1 | Production / Enhancement | Post-enhancement support\n- PPJ.PERRI.Chatbot.v3.2 | Production | Permissioned production orchestration\n- PPJ.AI.Hub.v2.1 | Internal Production Platform | Platform operations\n- FD.Datamart.v2.2 | Support | Operational support\n- CPD.Datamart.v1.1 | Maintenance | Operational maintenance\n- ACC.GRN-SupplierInvoiceBot.v2.3 | Production Support | Operational stability and exceptions\n- PUR.Adhoc.Indent.South.v1.0 | Maintenance | Operational maintenance\n- PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0 | Maintenance | IT helpdesk maintenance",
+      "x": 3960,
+      "y": 0,
+      "width": 600,
+      "height": 1110
+    },
+    {
+      "id": "road-7",
+      "type": "text",
+      "text": "## CLOSED\n\n- ACC.Inventory.Report.v1.0 | Closed | Closed / no active follow-up\n- MER.PO.Commit.v1.1 | Closed | Closed\n- EXIM.ExpenseInvoices.Automation.v1.1 | Closed | Closed; succeeded by PPJ.ExpenseInvoices.v1.1\n- AI.Automation.Workshop.202606 | Closed | Closed event\n- AI.Automation.Workshop.Analysis.202606 | Closed | Closed analysis\n- VITAS.Sharing.202606 | Closed | Closed event",
+      "x": 4620,
+      "y": 0,
+      "width": 600,
+      "height": 660
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,70 @@
+---
+type: "milestones"
+project: "TD.TechnicalKnowledge.Platform.v2.1"
+source_project: "TD.TechnicalPlatform_v2.1.md"
+source_event: "PPJ-WEEKLY-20260727-20260801"
+last_verified: "2026-08-01"
+confidence: "Strong"
+documentation_status: "Current Working Document"
+generated_by: "upgrade_ppj_project_workspaces.py"
+---
+
+<!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
+## Current State - 2026-09-18
+
+| Field | Value |
+| --- | --- |
+| Canonical Code | TD_TechnicalKnowledgePlatform_v2.1.0 |
+| Domain | Fabric / Textiles Technique |
+| Delivery Stream | INTERNAL DEVELOPMENT |
+| Delivery Stage | UAT / PRE-GO-LIVE |
+| Lifecycle | Sync Validation & Stabilization |
+| Status | Active |
+| Progress | TBD |
+| Gate | Sync validation and canonical technical model |
+| Priority | P5 |
+| Outcome | Technical Data Backbone for Pattern, BOM, Consumption, Construction, documents and historical records; upstream source for Costing, Sew Agent, BOM, Consumption, Pattern, Technical Search and Similar Style. |
+| Source Event | PPJ-PORTFOLIO-SNAPSHOT-20260918 |
+
+### Latest Update
+
+Past simple ETL development: Source Systems -> ETL -> Technical Knowledge Model -> Sync -> Applications / AI. Initial sync has been demonstrated. Current priority: canonical technical model, source of truth, sync rules, ownership, version control, duplicate management, UAT, permission and traceability.
+
+### Current Risks
+
+- Sync reliability
+- Version governance
+- Missing keys and duplicate records
+- Technical UAT acceptance
+
+### Dependencies
+
+- Technical sources -> ETL -> Technical Data Layer -> Sync -> Platform -> Costing / Pattern / Wash / Search
+
+### Next Actions
+
+- Implement incremental sync, error handling and retry
+- Add duplicate, missing-key and reconciliation checks
+- Govern versions and latest/approved-record logic
+- Finalize permissions and prepare Technical UAT
+<!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_END -->
+
+# Milestones
+
+| Milestone | State | Evidence / Exit Condition | Owner | Target |
+| --- | --- | --- | --- | --- |
+| Current Gate: ETL Completed / Data Foundation Available / Data Acceptance Pending | Current | Gate evidence reviewed | Needs Confirmation | TBD |
+| Next Approved Outcome | Planned | Technical data and knowledge foundation for search, retrieval, Pattern, BOM, construction, consumption, historical cases, Costing and future domain AI. | Needs Confirmation | TBD |
+| Operational Handover or Closeout | Not Started | Acceptance, ownership and support confirmed | Needs Confirmation | TBD |
+
+## Notes
+
+Milestone dates remain TBD until confirmed by the responsible owner.
+
+## Evidence Basis
+
+- Root project note: [[../TD.TechnicalPlatform_v2.1]]
+- Project memory: [[03_Projects/_Registry/Project_Memory/TD.TechnicalKnowledge.Platform.v2.1.memory]]
+- Source event: PPJ-WEEKLY-20260727-20260801
+- Last verified: 2026-08-01
+- Confidence: Strong

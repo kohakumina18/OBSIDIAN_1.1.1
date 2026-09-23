@@ -1,0 +1,63 @@
+﻿# PPJ Project Registry
+
+Generated: 
+2026-06-27 21:51
+
+## Executive Summary
+
+- Scope: Top-level Markdown project notes under [[03_Projects]], excluding [[Project_SmartFlow]] and project command-center support notes.
+- Markdown project files scanned: 
+45
+- Canonical project candidates after alias exclusion: 
+28
+- Zero-byte notes found: 
+16
+- Duplicate or alias candidates found: 
+17
+- Governance field gaps found: 
+295
+
+## Master Project Registry
+
+| Project Name | Canonical Filename | Phase | Cluster | Owner | Department | Status | Progress | Blocker | Decision Needed | Next Action | Related Deliverable | Related System | Source File | Data Quality Score | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---:|---|
+| ACC.CHICOS.INVOICE.RECHECK-AUDIT.v1.1 | ACC.CHICOS.INVOICE.RECHECK-AUDIT.v1.1.md | ANALYSIS | Automation | TBD | TBD | TBD | TBD | TBD | TBD | Next Actions: | BRD | TBD | ACC.CHICOS.INVOICE.RECHECK-AUDIT.v1.1.md | 36 | TBD |
+| Accounting Expense Invoices | PPJ. Expense-Invoices.v1.1.md | [[ANALYSIS]] | Automation | TBD | TBD | Analysis | TBD | dependency | TBD | Next Actions | BRD | TBD | PPJ. Expense-Invoices.v1.1.md | 55 | TBD |
+| Accounting GRN Supplier Invoice Bot | Accounting GRN Supplier Invoice Bot.md | [[PRODUCTION / SUPPORT]] | Automation | TBD | TBD | Production | TBD | TBD | TBD | Next Actions | BRD | TBD | Accounting GRN Supplier Invoice Bot.md | 45 | TBD |
+| Adhoc Indent mien Nam | Adhoc Indent mien Nam.md | PRODUCTION / SUPPORT | Automation | TBD | TBD | TBD | TBD | TBD | TBD | Next Actions: | BRD | TBD | Adhoc Indent mien Nam.md | 36 | TBD |
+| AI Automation Workshop | AI Automation Workshop.md | [[CLOSED / CANCELLED]] | Governance | TBD | TBD | Closed | TBD | TBD | TBD | Next Actions | BRD | TBD | AI Automation Workshop.md | 45 | TBD |
+| Chuyen treo ver1 | IOT.CHuyenTreo_1.md | DEVELOPMENT | Factory / IoT | TBD | TBD | TBD | TBD | TBD | TBD | Next Actions: | BRD | TBD | IOT.CHuyenTreo_1.md | 36 | TBD |
+| COWASH | COWASH.md | [[PENDING]] | Factory / IoT | TBD | TBD | Pending | TBD | TBD | TBD | Next Actions | BRD | TBD | COWASH.md | 45 | TBD |
+| CPD Datamart | TD.TechnicalPlatform_v2.1.md | [[PRODUCTION / SUPPORT]] | Data | TBD | TBD | Production | TBD | TBD | TBD | Next Actions | BRD | TBD | TD.TechnicalPlatform_v2.1.md | 45 | TBD |
+| E-commerce Market Intelligence | E-commerce Market Intelligence.md | [[ANALYSIS]] | AI | TBD | TBD | Analysis | TBD | TBD | TBD | Next Actions | BRD | TBD | E-commerce Market Intelligence.md | 45 | TBD |
+| FD Hanger VER2 | FD Hanger VER2.md | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | FD Hanger VER2.md | 0 | TBD |
+| H&M Label-O Processing | H&M Label-O Processing.md | [[PENDING]] | Automation | TBD | TBD | Pending | TBD | TBD | TBD | Next Actions | BRD | TBD | H&M Label-O Processing.md | 45 | TBD |
+| HR Project | HR.SS&PFD.v1.1.md | [[DESIGN]] | Governance | TBD | TBD | Design | TBD | TBD | TBD | Next Actions | BRD | TBD | HR.SS&PFD.v1.1.md | 45 | TBD |
+| Invoice Downloader | PPJ.Invoice Downloader.v1.2.md | [[PRODUCTION / SUPPORT]] | Automation | TBD | TBD | Production | TBD | TBD | TBD | Next Actions | BRD | TBD | PPJ.Invoice Downloader.v1.2.md | 45 | TBD |
+| Material Allocation | PUR.Material.Allocation.v1.1.md | [[BLOCKED / DEPENDENCY]] | Automation | TBD | TBD | Blocked | TBD | Blocked" | TBD | - Confirm timeline with WFX owner | BRD | WFX | PUR.Material.Allocation.v1.1.md | 64 | TBD |
+| MER Costing Intelligence | MER Costing Intelligence.md | [[ANALYSIS]] | AI | TBD | TBD | Analysis | TBD | TBD | TBD | Next Actions | BRD | TBD | MER Costing Intelligence.md | 45 | TBD |
+| NUNOX | NUNOX.md | [[EXTERNAL]] | External | TBD | TBD | Trial | TBD | TBD | TBD | Next Actions | BRD | TBD | NUNOX.md | 45 | TBD |
+| PO Commit | PO Commit.md | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | PO Commit.md | 0 | TBD |
+| PPJ.GLPI-Helpdesk-AI Chatbot | PPJ.GLPI-Helpdesk-AI Chatbot.md | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | PPJ.GLPI-Helpdesk-AI Chatbot.md | 0 | TBD |
+| PPJ.PERRI.Chatbot | PPJ.PERRI.Chatbot.md | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | PPJ.PERRI.Chatbot.md | 0 | TBD |
+| Primo1D RFID Thread | Primo1D RFID Thread.md | [[EXTERNAL]] | External | TBD | TBD | Exploration | TBD | TBD | TBD | Next Actions | BRD | TBD | Primo1D RFID Thread.md | 45 | TBD |
+| PUR.GDI Automation | PUR.GDI Automation.md | [[BLOCKED / DEPENDENCY]] | Automation | TBD | TBD | Blocked | TBD | Blocked" | TBD | Next Actions | BRD | WFX | PUR.GDI Automation.md | 64 | TBD |
+| Purchasing Inventory Report | Purchasing Inventory Report.md | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | Purchasing Inventory Report.md | 0 | TBD |
+| QSee.ai | QSee.ai.md | [[EXTERNAL]] | External | TBD | TBD | External | TBD | TBD | TBD | Next Actions | BRD | TBD | QSee.ai.md | 45 | TBD |
+| SCP.SOURCING.CHATBOT.v2.3 | SCP.SOURCING.CHATBOT.v2.3.md | DEVELOPMENT | AI / Data | TBD | TBD | TBD | TBD | TBD | TBD | Next Actions: | BRD | TBD | SCP.SOURCING.CHATBOT.v2.3.md | 36 | TBD |
+| Stratova AI | Stratova AI.md | [[CLOSED / CANCELLED]] | External | TBD | TBD | Cancelled | TBD | TBD | TBD | Next Actions | BRD | TBD | Stratova AI.md | 45 | TBD |
+| VITAS Sharing | VITAS Sharing.md | [[EXTERNAL]] | Governance | TBD | TBD | External Sharing | TBD | TBD | TBD | Next Actions | BRD | TBD | VITAS Sharing.md | 45 | TBD |
+| Web Tong Hop Tool | Web Tong Hop Tool.md | PRODUCTION / SUPPORT | Reporting | TBD | TBD | TBD | TBD | TBD | TBD | Next Actions: | BRD | TBD | Web Tong Hop Tool.md | 36 | TBD |
+| Workshop Analysis | Workshop Analysis.md | [[ANALYSIS]] | Governance | TBD | TBD | Analysis | TBD | TBD | TBD | Next Actions | BRD | TBD | Workshop Analysis.md | 45 | TBD |
+
+## Related Concepts
+
+[[Portfolio Management]]
+[[Traceability]]
+[[Data Governance]]
+
+## Methods
+
+[[Data Mapping]]
+[[Impact Analysis]]
+[[Decision Matrix]]

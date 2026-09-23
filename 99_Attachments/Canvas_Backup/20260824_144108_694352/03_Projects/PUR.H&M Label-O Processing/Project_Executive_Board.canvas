@@ -1,0 +1,104 @@
+{
+  "nodes": [
+    {
+      "id": "lane-0",
+      "type": "group",
+      "x": 0,
+      "y": 500,
+      "width": 540,
+      "height": 940,
+      "label": "BACKLOG"
+    },
+    {
+      "id": "lane-1",
+      "type": "group",
+      "x": 600,
+      "y": 500,
+      "width": 540,
+      "height": 940,
+      "label": "THIS WEEK"
+    },
+    {
+      "id": "lane-2",
+      "type": "group",
+      "x": 1200,
+      "y": 500,
+      "width": 540,
+      "height": 940,
+      "label": "IN PROGRESS"
+    },
+    {
+      "id": "lane-3",
+      "type": "group",
+      "x": 1800,
+      "y": 500,
+      "width": 540,
+      "height": 940,
+      "label": "BLOCKED / WAITING"
+    },
+    {
+      "id": "lane-4",
+      "type": "group",
+      "x": 2400,
+      "y": 500,
+      "width": 540,
+      "height": 940,
+      "label": "REVIEW / UAT"
+    },
+    {
+      "id": "lane-5",
+      "type": "group",
+      "x": 3000,
+      "y": 500,
+      "width": 540,
+      "height": 940,
+      "label": "DONE"
+    },
+    {
+      "id": "summary",
+      "type": "text",
+      "text": "PUR.HM.LabelO.Processing.Automation.v1.0\n\nDomain: Sourcing / Purchasing\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: UAT / PRE-GO-LIVE\nLifecycle: UAT / Pre-Go-Live\nStatus: On Hold\nProgress: TBD\nGate: Scalability decision\nOutcome: Hold H&M Label-O automation pending a scalable business case.\nTop Blocker: None recorded\nNext Milestone: Confirm whether a scalable rules model and sufficient value exist\nPriority: Hold\nLast Verified: 2026-08-24",
+      "x": 0,
+      "y": 0,
+      "width": 1140,
+      "height": 420
+    },
+    {
+      "id": "task-0",
+      "type": "file",
+      "file": "03_Projects/PUR.H&M Label-O Processing/Tasks/PUR.HM.LabelO.Processing.Automation.v1.0-20260824-TASK-001_Confirm-whether-a-scalable-rules-model-and-sufficient-value-exist.md",
+      "x": 1830,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-1",
+      "type": "file",
+      "file": "03_Projects/PUR.H&M Label-O Processing/Tasks/PUR.HM.LabelO.Processing.Automation.v1.0-TASK-001_Review-repaired-block-with-project-owner.md",
+      "x": 3030,
+      "y": 570,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-2",
+      "type": "file",
+      "file": "03_Projects/PUR.H&M Label-O Processing/Tasks/PUR.HM.LabelO.Processing.Automation.v1.0-TASK-002_Confirm-missing-data-fields-and-workflow.md",
+      "x": 3030,
+      "y": 750,
+      "width": 480,
+      "height": 140
+    },
+    {
+      "id": "task-3",
+      "type": "file",
+      "file": "03_Projects/PUR.H&M Label-O Processing/Tasks/PUR.HM.LabelO.Processing.Automation.v1.0-TASK-003_Update-related-BRD-SOP-user-manual-after-confirmation.md",
+      "x": 3030,
+      "y": 930,
+      "width": 480,
+      "height": 140
+    }
+  ],
+  "edges": []
+}

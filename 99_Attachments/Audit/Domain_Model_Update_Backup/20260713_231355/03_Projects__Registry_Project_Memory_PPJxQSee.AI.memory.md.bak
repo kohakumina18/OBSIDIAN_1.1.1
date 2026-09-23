@@ -1,0 +1,83 @@
+﻿---
+type: project_memory
+project_name: "PPJxQSee.AI"
+project_file: "PPJxQSee.ai.md"
+project_code: "PPJxQSee.AI"
+department: "QC / Production"
+cluster: "External Collaboration"
+phase: "NDA approved / Use case discussion"
+last_verified: "2026-07-13"
+confidence: "Strong"
+canonical_code: "PPJxQSee.AI"
+current_file: "PPJxQSee.ai.md"
+primary_domain: "QC / TQM"
+primary_capability: "Quality inspection, defect detection, traceability"
+secondary_domains: "Factory, Production, MER, Customer"
+lifecycle: "PoC / Sample Data Preparation"
+progress: "TBD"
+current_gate: "NDA approved / PoC scope definition"
+---
+
+# Project Memory: PPJxQSee.AI
+
+## One-Line Understanding
+
+External QSee.ai collaboration exploration for QC/production AI inspection use cases.
+
+## Current Outcome
+
+Define PoC use case, data requirement, success criteria, and vendor feasibility after NDA.
+
+## Latest Update Summary
+
+NDA approved; preparing use-case discussion.
+
+## What This Project Is
+
+Vendor exploration/PoC candidate for AI quality inspection or defect detection.
+
+## What This Project Is Not
+
+Not confirmed implementation or production deployment.
+
+## Key Users
+
+QC, production, AI/Automation stakeholders.
+
+## Systems / Data
+
+Inspection images/video, defect labels, production/QC process, vendor PoC materials.
+
+## Known Risks / Blockers
+
+PoC scope, data privacy, sample data, measurable success criteria.
+
+## Next Actions
+
+Prepare use-case shortlist and PoC criteria.
+
+## Do Not Drift Rules
+
+- Do not claim implementation unless PoC is confirmed.
+- Keep NDA/use-case stage visible.
+
+## Source Links
+
+- [[PPJxQSee.ai]]
+- [[PPJ_PROJECT_CANONICAL_NAMING_DICTIONARY]]
+
+<!-- PPJ_DOMAIN_GOVERNANCE_START -->
+## Domain Governance
+
+- Canonical Code: PPJxQSee.AI
+- Current File: [[PPJxQSee.ai]]
+- Primary Domain: QC / TQM
+- Secondary Domains: Factory, Production, MER, Customer
+- Lifecycle: PoC / Sample Data Preparation
+- Progress: TBD
+- Current Gate: NDA approved / PoC scope definition
+
+## Domain Do Not Drift Rules
+- Primary domain is QC / TQM, not External Collaboration.
+<!-- PPJ_DOMAIN_GOVERNANCE_END -->
+

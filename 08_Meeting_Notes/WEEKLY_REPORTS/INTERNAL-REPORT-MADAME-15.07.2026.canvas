@@ -1,0 +1,6 @@
+{
+	"nodes":[
+		{"id":"6bce9297d7c78563","x":-360,"y":-220,"width":585,"height":240,"type":"text","text":"1. tp vải nhập về nhiêu ? xuất nhiêu ? kh nào ? tồn kho nhiêu ?\n2. vải có thể thanh khoản cho 1 đơn khác - cuối năm thanh khoản =0 ?????????/\n3. nhập 100 - đưa khách hàng 70 - 30 còn ở đâu ???\n4. \n\nmáy cắt tự đôngk\n\ndữ liệu sl đơn hàng, đơn hàng, bao nhiêu lớp cắt, bao nhiêu cây vải, sl cắt ?"}
+	],
+	"edges":[]
+}
