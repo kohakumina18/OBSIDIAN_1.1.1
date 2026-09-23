@@ -89,6 +89,17 @@ if (-not $VaultPath) {
 
 if (Test-Path -LiteralPath $AlertPath) { Remove-Item -Force $AlertPath -ErrorAction SilentlyContinue }
 
+# This vault previously synced via Syncthing (and, before that, Obsidian
+# LiveSync) - see 99_Attachments/Legacy_Syncthing_Import/README.md. A live
+# Syncthing/LiveSync process alongside git can silently overwrite files, so
+# flag it (never blocks the sync - this machine can't tell if it's actually
+# watching *this* folder, only that it's running at all).
+$conflictingProcess = Get-Process -Name 'syncthing', 'syncthingtray' -ErrorAction SilentlyContinue | Select-Object -First 1
+if ($conflictingProcess) {
+    Show-PPJToast -Title 'PPJ Vault: Syncthing detected' `
+        -Message "Syncthing is running alongside the git sync. If it still watches this vault folder, the two can overwrite each other - see PPJ_SYNC_DEVICE_REGISTRY.md."
+}
+
 $syncScript = Join-Path $VaultPath 'scripts\Sync-VaultGit.ps1'
 & $syncScript -VaultPath $VaultPath -Quiet:$Quiet
 exit $LASTEXITCODE
