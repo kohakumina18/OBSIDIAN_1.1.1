@@ -284,6 +284,8 @@ After a card is dragged and Canvas is saved, geometry is authoritative only when
 
 On the Ubuntu vault, `ppj-executive-canvas-watcher.service` normally performs this guarded synchronization automatically within about 1-2 seconds after Obsidian saves the Canvas. Manual commands remain available for audit/recovery. Do not run a second watcher process while the service is active.
 
+On the Windows vault (`D:\PPJ\syncing`), the scheduled task **PPJ Executive Canvas Watcher** does the same job. It starts a minute after logon and runs `scripts/Start-PPJCanvasWatcher.ps1`, which launches the watcher in `--apply` mode and logs to `.git\canvas-watcher.log`. The launcher refuses to start if a watcher is already running, for the same reason the Ubuntu service does: two watchers would race on the same Canvas and snapshot.
+
 ## Editing card text directly
 
 Card text is an input as well as an output. These fields may be typed straight into a card and are written back to the snapshot and every derived artefact:
