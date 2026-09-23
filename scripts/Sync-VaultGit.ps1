@@ -26,7 +26,7 @@ param(
     [switch]$Quiet
 )
 
-Set-StrictMode -Version 2.0
+Set-StrictMode -Version 1.0
 $ErrorActionPreference = 'Stop'
 
 if (-not $VaultPath) {
@@ -62,8 +62,17 @@ function Resolve-Git {
 # call can be logged with its stderr rather than killing the run silently.
 function Invoke-Git {
     param([string[]]$Arguments)
-    $out = & $Git -C $VaultPath @Arguments 2>&1
-    $code = $LASTEXITCODE
+    # git writes ordinary progress to stderr. Under $ErrorActionPreference='Stop'
+    # a redirected stderr record becomes a terminating error, so it is relaxed
+    # for the duration of the call and the exit code is what decides success.
+    $previous = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+    try {
+        $out = & $Git -C $VaultPath @Arguments 2>&1
+        $code = $LASTEXITCODE
+    } finally {
+        $ErrorActionPreference = $previous
+    }
     $text = ($out | ForEach-Object { $_.ToString() }) -join "`n"
     return [pscustomobject]@{ Code = $code; Text = $text }
 }
@@ -123,7 +132,7 @@ try {
     # --- 1. commit local work -----------------------------------------------
     $status = (Invoke-Git @('status', '--porcelain')).Text
     if ($status.Trim()) {
-        $count = ($status -split "`n" | Where-Object { $_.Trim() }).Count
+        $count = @($status -split "`n" | Where-Object { $_.Trim() }).Count
         $add = Invoke-Git @('add', '-A')
         if ($add.Code -ne 0) {
             Write-Log 'ERROR' "git add failed: $($add.Text)"
