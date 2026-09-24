@@ -1,0 +1,9 @@
+[Unit]
+Description=PPJ Obsidian vault <-> GitHub sync (scripts/sync_vault_git.py)
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=@@VAULT_ROOT@@
+ExecStart=@@PYTHON@@ @@VAULT_ROOT@@/scripts/sync_vault_git.py --quiet

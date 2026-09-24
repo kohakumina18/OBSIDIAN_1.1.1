@@ -1,0 +1,11 @@
+[Unit]
+Description=PPJ Obsidian vault sync every 8 hours (see 03_Projects/_Registry/PPJ_SYNC_DEVICE_REGISTRY.md)
+
+[Timer]
+# :20 past HAKU's 00:00/08:00/16:00 so the two never push at the same instant.
+OnCalendar=*-*-* 00,08,16:20:00
+# Catch up at next boot/login if the machine was off at a trigger time.
+Persistent=true
+
+[Install]
+WantedBy=timers.target
