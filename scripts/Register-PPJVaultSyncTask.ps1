@@ -15,13 +15,15 @@
     drive is unplugged, so it can notice that and say so instead of just failing
     to launch. See that script's own header for how it then finds the vault.
 
-    Schedule: every 8 hours, default start 00:00 (00:00 / 08:00 / 16:00) - see
-    PPJ_SYNC_DEVICE_REGISTRY.md for why (multiple devices are now actively
-    edited the same day; once-daily left too wide a conflict window). Every
-    device in the registry runs this same script but passes its own -StartTime,
-    offset 10-15 min from every other device's, so scheduled pushes don't race:
-    HAKU 00:00, YOGHAAKU 00:15, NVAKHOA-THINKPAD-E14-GEN-7 (Linux, via the
-    systemd timer instead) 00:20. Check the registry before picking a new one.
+    Schedule: every 3 hours by default, first run at -StartTime - see
+    PPJ_SYNC_DEVICE_REGISTRY.md for why (multiple devices are actively edited
+    the same day; once-daily, then 8h, both left too wide a window for two
+    machines to edit the same file before either found out about the other).
+    Every device in the registry runs this same script but passes its own
+    -StartTime, offset 10-15 min from every other device's on the shared grid,
+    so scheduled pushes don't race: HAKU 00:00, YOGHAAKU 00:15,
+    NVAKHOA-THINKPAD-E14-GEN-7 (Linux, via the systemd timer instead) 00:20.
+    Check the registry before picking a new one.
     - Runs only when you are logged on (needed for git/SSH and for the
       Windows toast notification to be visible).
     - "Start the task as soon as possible after a scheduled start is missed"
@@ -31,13 +33,22 @@
     - Won't stack a second run if a previous one is still going.
 
 .PARAMETER StartTime
-    First run time as "HH:mm" (24h, local time); repeats every 8h after that.
-    Pick something 10-15 min offset from every other device in the registry.
+    First run time as "HH:mm" (24h, local time); repeats every -IntervalHours
+    after that. Pick something 10-15 min offset from every other device in the
+    registry.
+
+.PARAMETER IntervalHours
+    Hours between runs. Defaults to the fleet's current standard (3h) - only
+    override this to test something locally; a change meant to stick belongs
+    in the registry as a fleet-wide decision, the same way 8h -> 3h was.
 #>
 
 param(
     [ValidatePattern('^([01]\d|2[0-3]):[0-5]\d$')]
-    [string]$StartTime = "00:00"
+    [string]$StartTime = "00:00",
+
+    [ValidateRange(1, 24)]
+    [int]$IntervalHours = 3
 )
 
 $ErrorActionPreference = "Stop"
@@ -62,7 +73,7 @@ $action = New-ScheduledTaskAction -Execute "powershell.exe" `
     -WorkingDirectory $DeployDir
 
 $trigger = New-ScheduledTaskTrigger -Once -At $StartTime `
-    -RepetitionInterval (New-TimeSpan -Hours 8) -RepetitionDuration (New-TimeSpan -Days 3650)
+    -RepetitionInterval (New-TimeSpan -Hours $IntervalHours) -RepetitionDuration (New-TimeSpan -Days 3650)
 
 $settings = New-ScheduledTaskSettingsSet `
     -StartWhenAvailable `
@@ -80,9 +91,9 @@ Unregister-ScheduledTask -TaskName $OldTaskName -Confirm:$false -ErrorAction Sil
 
 Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $trigger `
     -Settings $settings -Principal $principal `
-    -Description "Vault -> GitHub sync (every 8h, starting $StartTime) for the PPJ Obsidian vault, https://github.com/kohakumina18/OBSIDIAN_1.1.1. Entry point: $DeployedPath (deployed copy of scripts\Invoke-PPJVaultSyncLauncher.ps1), which finds the vault and hands off to scripts\Sync-VaultGit.ps1 on it. See 03_Projects/_Registry/PPJ_SYNC_DEVICE_REGISTRY.md." |
+    -Description "Vault -> GitHub sync (every ${IntervalHours}h, starting $StartTime) for the PPJ Obsidian vault, https://github.com/kohakumina18/OBSIDIAN_1.1.1. Entry point: $DeployedPath (deployed copy of scripts\Invoke-PPJVaultSyncLauncher.ps1), which finds the vault and hands off to scripts\Sync-VaultGit.ps1 on it. See 03_Projects/_Registry/PPJ_SYNC_DEVICE_REGISTRY.md." |
     Out-Null
 
-Write-Host "Registered scheduled task '$TaskName' (every 8h, starting $StartTime):"
+Write-Host "Registered scheduled task '$TaskName' (every ${IntervalHours}h, starting $StartTime):"
 Get-ScheduledTaskInfo -TaskName $TaskName | Format-List NextRunTime, LastRunTime, LastTaskResult
 Write-Host "Run it once by hand to test: Start-ScheduledTask -TaskName '$TaskName'"

@@ -22,7 +22,7 @@ for unit in ppj-vault-sync.service ppj-vault-sync.timer; do
 done
 systemctl --user daemon-reload
 systemctl --user enable --now ppj-vault-sync.timer
-printf 'ENABLED and STARTED: ppj-vault-sync.timer (00:20 / 08:20 / 16:20, Persistent=true)\n'
+printf 'ENABLED and STARTED: ppj-vault-sync.timer (every 3h at :20 past - 00:20/03:20/06:20/.../21:20, Persistent=true)\n'
 printf 'Next run:  systemctl --user list-timers ppj-vault-sync.timer\n'
 printf 'Run now:   systemctl --user start ppj-vault-sync.service\n'
 printf 'Log:       %s/.git/vault-sync.log  (or: journalctl --user -u ppj-vault-sync.service)\n' "${VAULT_ROOT}"
