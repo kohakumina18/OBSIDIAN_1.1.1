@@ -1,459 +1,61 @@
 {
-  "nodes": [
-    {
-      "id": "e2e-title",
-      "type": "text",
-      "x": 0,
-      "y": -360,
-      "width": 10600,
-      "height": 190,
-      "text": "# PPJ END-TO-END BUSINESS PROCESS + APPLICATION / AI COVERAGE\n\nCustomer and market -> order and material -> production and quality -> logistics and finance",
-      "color": "5"
-    },
-    {
-      "id": "architecture-reference",
-      "type": "file",
-      "x": 0,
-      "y": -140,
-      "width": 900,
-      "height": 130,
-      "file": "02_BA_Knowledge/Enterprise_Architecture/PPJ_Enterprise_Application_AI_Automation_Ecosystem.md"
-    },
-    {
-      "id": "g-business",
-      "type": "group",
-      "x": 0,
-      "y": 100,
-      "width": 10600,
-      "height": 780,
-      "label": "PRIMARY BUSINESS FLOW",
-      "color": "3"
-    },
-    {
-      "id": "g-support",
-      "type": "group",
-      "x": 0,
-      "y": 1080,
-      "width": 10600,
-      "height": 600,
-      "label": "PARALLEL ENTERPRISE SERVICES",
-      "color": "6"
-    },
-    {
-      "id": "g-backbone",
-      "type": "group",
-      "x": 0,
-      "y": 1880,
-      "width": 10600,
-      "height": 650,
-      "label": "SYSTEM + DATA + AI BACKBONE",
-      "color": "5"
-    },
-    {
-      "id": "g-control",
-      "type": "group",
-      "x": 0,
-      "y": 2730,
-      "width": 10600,
-      "height": 480,
-      "label": "CONTROL PRINCIPLE",
-      "color": "2"
-    },
-    {
-      "id": "stage-market",
-      "type": "text",
-      "x": 60,
-      "y": 230,
-      "width": 820,
-      "height": 510,
-      "text": "## 1. CUSTOMER / MARKET\n\nMER_MarketIntelligence_v1.1.0",
-      "color": "3"
-    },
-    {
-      "id": "stage-mer",
-      "type": "text",
-      "x": 1010,
-      "y": 230,
-      "width": 820,
-      "height": 510,
-      "text": "## 2. MERCHANDISING\n\nMER_CostingAgenticPlatform_v1.1.0\nMER_InvoiceDataRecheck_v1.1.0",
-      "color": "3"
-    },
-    {
-      "id": "stage-tech",
-      "type": "text",
-      "x": 1960,
-      "y": 230,
-      "width": 820,
-      "height": 510,
-      "text": "## 3. TECHNICAL DEVELOPMENT\n\nTD_TechnicalKnowledgePlatform_v2.1.0\nFAB_FabricDatamart_v2.2.0\nCPD_VisualSampleDatamart_v1.1.0",
-      "color": "3"
-    },
-    {
-      "id": "stage-source",
-      "type": "text",
-      "x": 2910,
-      "y": 230,
-      "width": 820,
-      "height": 510,
-      "text": "## 4. SOURCING\n\nSCP_SourcingChatbot_v2.3.0",
-      "color": "3"
-    },
-    {
-      "id": "stage-purchase",
-      "type": "text",
-      "x": 3860,
-      "y": 230,
-      "width": 820,
-      "height": 510,
-      "text": "## 5. PURCHASING\n\nPUR_GDIAutomation_v1.0.0\nPUR_MaterialAllocation_v1.1.0\nPUR_AdhocIndentSouth_v1.0.0\nPUR_InventoryReport_v2.1.0",
-      "color": "3"
-    },
-    {
-      "id": "stage-warehouse",
-      "type": "text",
-      "x": 4810,
-      "y": 230,
-      "width": 820,
-      "height": 510,
-      "text": "## 6. WAREHOUSE / MATERIAL\n\nWH_AWBExtraction_v1.1.0",
-      "color": "3"
-    },
-    {
-      "id": "stage-production",
-      "type": "text",
-      "x": 5760,
-      "y": 230,
-      "width": 820,
-      "height": 510,
-      "text": "## 7. PRODUCTION\n\nPROD_HangingLineIoT_v1.0.0",
-      "color": "3"
-    },
-    {
-      "id": "stage-wash",
-      "type": "text",
-      "x": 6710,
-      "y": 230,
-      "width": 820,
-      "height": 510,
-      "text": "## 8. WASH\n\nWASH_SamplingManagement_v1.1.0\nWASH_COWASH_v2.0.0",
-      "color": "3"
-    },
-    {
-      "id": "stage-qc",
-      "type": "text",
-      "x": 7660,
-      "y": 230,
-      "width": 820,
-      "height": 510,
-      "text": "## 9. QC / TQM\n\nQC_DefectDetection_v1.0.0\nQC_ThreadTraceability_v1.0.0",
-      "color": "3"
-    },
-    {
-      "id": "stage-logistics",
-      "type": "text",
-      "x": 8610,
-      "y": 230,
-      "width": 820,
-      "height": 510,
-      "text": "## 10. LOGISTICS / EXIM\n\nLOG_ExpenseInvoiceProcessing_v1.2.2",
-      "color": "3"
-    },
-    {
-      "id": "stage-finance",
-      "type": "text",
-      "x": 9560,
-      "y": 230,
-      "width": 820,
-      "height": 510,
-      "text": "## 11. FINANCE / ACCOUNTING\n\nFIN_FinanceManagement_v1.2.0\nFIN_InvoiceDownloader_v1.2.0\nACC_GRNSupplierInvoiceBot_v2.3.0",
-      "color": "3"
-    },
-    {
-      "id": "support-admin",
-      "type": "text",
-      "x": 180,
-      "y": 1190,
-      "width": 2200,
-      "height": 350,
-      "text": "## ADMINISTRATION\nADMIN_ExpenseManagement_v1.1.0\nTravel -> Advance -> Expense -> Settlement",
-      "color": "6"
-    },
-    {
-      "id": "support-hr",
-      "type": "text",
-      "x": 2730,
-      "y": 1190,
-      "width": 2200,
-      "height": 350,
-      "text": "## HR\nHR_EmployeeDataPlatform_v1.1.0\nEmployee data -> Trusted Employee Master",
-      "color": "6"
-    },
-    {
-      "id": "support-ai",
-      "type": "text",
-      "x": 5280,
-      "y": 1190,
-      "width": 2200,
-      "height": 350,
-      "text": "## AI PLATFORMS\nAI_PERRIPlatform_v3.2.0\nAI_ApplicationHub_v2.1.0",
-      "color": "6"
-    },
-    {
-      "id": "support-ext",
-      "type": "text",
-      "x": 7830,
-      "y": 1190,
-      "width": 2200,
-      "height": 350,
-      "text": "## EXTERNAL COLLABORATION\nEXT_AcademicCollaboration_v1.1.0\nVendor / academic discovery and evaluation",
-      "color": "6"
-    },
-    {
-      "id": "back-wfx",
-      "type": "text",
-      "x": 160,
-      "y": 2000,
-      "width": 1800,
-      "height": 350,
-      "text": "## WFX ERP\nOperational transaction backbone",
-      "color": "5"
-    },
-    {
-      "id": "back-gtas",
-      "type": "text",
-      "x": 2210,
-      "y": 2000,
-      "width": 1800,
-      "height": 350,
-      "text": "## GTAS / IED\nPPJ application layer",
-      "color": "5"
-    },
-    {
-      "id": "back-third",
-      "type": "text",
-      "x": 4260,
-      "y": 2000,
-      "width": 1800,
-      "height": 350,
-      "text": "## THIRD-PARTY\nMMX | eOffice | VNPT | IoT",
-      "color": "5"
-    },
-    {
-      "id": "back-data",
-      "type": "text",
-      "x": 6310,
-      "y": 2000,
-      "width": 1800,
-      "height": 350,
-      "text": "## DWH / DATABRICKS\nGoverned analytics and AI data",
-      "color": "5"
-    },
-    {
-      "id": "back-ai",
-      "type": "text",
-      "x": 8360,
-      "y": 2000,
-      "width": 1800,
-      "height": 350,
-      "text": "## AI / AUTOMATION\nOCR | RAG | Agents | API | RPA",
-      "color": "5"
-    },
-    {
-      "id": "control-pattern",
-      "type": "text",
-      "x": 500,
-      "y": 2830,
-      "width": 4600,
-      "height": 260,
-      "text": "# AI OPERATING PATTERN\nRead -> Understand -> Validate -> Recommend -> Automate -> Human Confirm",
-      "color": "2"
-    },
-    {
-      "id": "control-execute",
-      "type": "text",
-      "x": 5500,
-      "y": 2830,
-      "width": 4600,
-      "height": 260,
-      "text": "# EXECUTION BOUNDARY\nOnly approved, permissioned and auditable actions write back or execute.",
-      "color": "2"
-    }
-  ],
-  "edges": [
-    {
-      "id": "business-flow-1",
-      "fromNode": "stage-market",
-      "fromSide": "right",
-      "toNode": "stage-mer",
-      "toSide": "left"
-    },
-    {
-      "id": "business-flow-2",
-      "fromNode": "stage-mer",
-      "fromSide": "right",
-      "toNode": "stage-tech",
-      "toSide": "left"
-    },
-    {
-      "id": "business-flow-3",
-      "fromNode": "stage-tech",
-      "fromSide": "right",
-      "toNode": "stage-source",
-      "toSide": "left"
-    },
-    {
-      "id": "business-flow-4",
-      "fromNode": "stage-source",
-      "fromSide": "right",
-      "toNode": "stage-purchase",
-      "toSide": "left"
-    },
-    {
-      "id": "business-flow-5",
-      "fromNode": "stage-purchase",
-      "fromSide": "right",
-      "toNode": "stage-warehouse",
-      "toSide": "left"
-    },
-    {
-      "id": "business-flow-6",
-      "fromNode": "stage-warehouse",
-      "fromSide": "right",
-      "toNode": "stage-production",
-      "toSide": "left"
-    },
-    {
-      "id": "business-flow-7",
-      "fromNode": "stage-production",
-      "fromSide": "right",
-      "toNode": "stage-wash",
-      "toSide": "left"
-    },
-    {
-      "id": "business-flow-8",
-      "fromNode": "stage-wash",
-      "fromSide": "right",
-      "toNode": "stage-qc",
-      "toSide": "left"
-    },
-    {
-      "id": "business-flow-9",
-      "fromNode": "stage-qc",
-      "fromSide": "right",
-      "toNode": "stage-logistics",
-      "toSide": "left"
-    },
-    {
-      "id": "business-flow-10",
-      "fromNode": "stage-logistics",
-      "fromSide": "right",
-      "toNode": "stage-finance",
-      "toSide": "left"
-    },
-    {
-      "id": "backbone-1",
-      "fromNode": "back-wfx",
-      "fromSide": "right",
-      "toNode": "back-gtas",
-      "toSide": "left"
-    },
-    {
-      "id": "backbone-2",
-      "fromNode": "back-gtas",
-      "fromSide": "right",
-      "toNode": "back-third",
-      "toSide": "left"
-    },
-    {
-      "id": "backbone-3",
-      "fromNode": "back-third",
-      "fromSide": "right",
-      "toNode": "back-data",
-      "toSide": "left"
-    },
-    {
-      "id": "backbone-4",
-      "fromNode": "back-data",
-      "fromSide": "right",
-      "toNode": "back-ai",
-      "toSide": "left"
-    },
-    {
-      "id": "control-link",
-      "fromNode": "control-pattern",
-      "fromSide": "right",
-      "toNode": "control-execute",
-      "toSide": "left",
-      "label": "approved action"
-    },
-    {
-      "id": "wfx-purchase",
-      "fromNode": "back-wfx",
-      "fromSide": "top",
-      "toNode": "stage-purchase",
-      "toSide": "bottom",
-      "label": "transaction services"
-    },
-    {
-      "id": "gtas-tech",
-      "fromNode": "back-gtas",
-      "fromSide": "top",
-      "toNode": "stage-tech",
-      "toSide": "bottom",
-      "label": "technical / costing"
-    },
-    {
-      "id": "third-production",
-      "fromNode": "back-third",
-      "fromSide": "top",
-      "toNode": "stage-production",
-      "toSide": "bottom",
-      "label": "machine / platform data"
-    },
-    {
-      "id": "data-finance",
-      "fromNode": "back-data",
-      "fromSide": "top",
-      "toNode": "stage-finance",
-      "toSide": "bottom",
-      "label": "analytics"
-    },
-    {
-      "id": "ai-mer",
-      "fromNode": "back-ai",
-      "fromSide": "top",
-      "toNode": "stage-mer",
-      "toSide": "bottom",
-      "label": "assist"
-    },
-    {
-      "id": "ai-source",
-      "fromNode": "back-ai",
-      "fromSide": "top",
-      "toNode": "stage-source",
-      "toSide": "bottom",
-      "label": "search / compare"
-    },
-    {
-      "id": "ai-warehouse",
-      "fromNode": "back-ai",
-      "fromSide": "top",
-      "toNode": "stage-warehouse",
-      "toSide": "bottom",
-      "label": "extract / validate"
-    },
-    {
-      "id": "ai-qc",
-      "fromNode": "back-ai",
-      "fromSide": "top",
-      "toNode": "stage-qc",
-      "toSide": "bottom",
-      "label": "detect / classify"
-    }
-  ],
-  "metadata": {
-    "version": "1.0-1.0",
-    "frontmatter": {}
-  }
+	"nodes":[
+		{"id":"e2e-title","type":"text","x":0,"y":-360,"width":10600,"height":190,"text":"# PPJ END-TO-END BUSINESS PROCESS + APPLICATION / AI COVERAGE\n\nCustomer and market -> order and material -> production and quality -> logistics and finance","color":"5"},
+		{"id":"architecture-reference","type":"file","x":0,"y":-140,"width":900,"height":130,"file":"02_BA_Knowledge/Enterprise_Architecture/PPJ_Enterprise_Application_AI_Automation_Ecosystem.md"},
+		{"id":"g-business","type":"group","x":0,"y":100,"width":10600,"height":780,"label":"PRIMARY BUSINESS FLOW","color":"3"},
+		{"id":"g-support","type":"group","x":0,"y":1080,"width":10600,"height":600,"label":"PARALLEL ENTERPRISE SERVICES","color":"6"},
+		{"id":"g-backbone","type":"group","x":0,"y":1880,"width":10600,"height":650,"label":"SYSTEM + DATA + AI BACKBONE","color":"5"},
+		{"id":"g-control","type":"group","x":0,"y":2730,"width":10600,"height":480,"label":"CONTROL PRINCIPLE","color":"2"},
+		{"id":"stage-market","type":"text","x":60,"y":230,"width":820,"height":510,"text":"## 1. CUSTOMER / MARKET\n\nMER_MarketIntelligence_v1.1.0","color":"3"},
+		{"id":"stage-mer","type":"text","x":1010,"y":230,"width":820,"height":510,"text":"## 2. MERCHANDISING\n\nMER_CostingAgenticPlatform_v1.1.0\nMER_InvoiceDataRecheck_v1.1.0","color":"3"},
+		{"id":"stage-tech","type":"text","x":1960,"y":230,"width":820,"height":510,"text":"## 3. TECHNICAL DEVELOPMENT\n\nTD_TechnicalKnowledgePlatform_v2.1.0\nFAB_FabricDatamart_v2.2.0\nCPD_VisualSampleDatamart_v1.1.0","color":"3"},
+		{"id":"stage-source","type":"text","x":2910,"y":230,"width":820,"height":510,"text":"## 4. SOURCING\n\nSCP_SourcingChatbot_v2.3.0","color":"3"},
+		{"id":"stage-purchase","type":"text","x":3860,"y":230,"width":820,"height":510,"text":"## 5. PURCHASING\n\nPUR_GDIAutomation_v1.0.0\nPUR_MaterialAllocation_v1.1.0\nPUR_AdhocIndentSouth_v1.0.0\nPUR_InventoryReport_v2.1.0","color":"3"},
+		{"id":"stage-warehouse","type":"text","x":4810,"y":230,"width":820,"height":510,"text":"## 6. WAREHOUSE / MATERIAL\n\nWH_AWBExtraction_v1.1.0","color":"3"},
+		{"id":"stage-production","type":"text","x":5760,"y":230,"width":820,"height":510,"text":"## 7. PRODUCTION\n\nPROD_HangingLineIoT_v1.0.0","color":"3"},
+		{"id":"stage-wash","type":"text","x":6710,"y":230,"width":820,"height":510,"text":"## 8. WASH\n\nWASH_SamplingManagement_v1.1.0\nWASH_COWASH_v2.0.0","color":"3"},
+		{"id":"stage-qc","type":"text","x":7660,"y":230,"width":820,"height":510,"text":"## 9. QC / TQM\n\nQC_DefectDetection_v1.0.0\nQC_ThreadTraceability_v1.0.0","color":"3"},
+		{"id":"stage-logistics","type":"text","x":8610,"y":230,"width":820,"height":510,"text":"## 10. LOGISTICS / EXIM\n\nLOG_ExpenseInvoiceProcessing_v1.2.2","color":"3"},
+		{"id":"stage-finance","type":"text","x":9560,"y":230,"width":820,"height":510,"text":"## 11. FINANCE / ACCOUNTING\n\nFIN_FinanceManagement_v1.2.0\nFIN_InvoiceDownloader_v1.2.0\nACC_GRNSupplierInvoiceBot_v2.3.0","color":"3"},
+		{"id":"support-admin","type":"text","x":180,"y":1190,"width":2200,"height":350,"text":"## ADMINISTRATION\nADMIN_ExpenseManagement_v1.1.0\nTravel -> Advance -> Expense -> Settlement","color":"6"},
+		{"id":"support-hr","type":"text","x":2730,"y":1190,"width":2200,"height":350,"text":"## HR\nHR_EmployeeDataPlatform_v1.1.0\nEmployee data -> Trusted Employee Master","color":"6"},
+		{"id":"support-ai","type":"text","x":5280,"y":1190,"width":2200,"height":350,"text":"## AI PLATFORMS\nAI_PERRIPlatform_v3.2.0\nAI_ApplicationHub_v2.1.0","color":"6"},
+		{"id":"support-ext","type":"text","x":7830,"y":1190,"width":2200,"height":350,"text":"## EXTERNAL COLLABORATION\nEXT_AcademicCollaboration_v1.1.0\nVendor / academic discovery and evaluation","color":"6"},
+		{"id":"back-wfx","type":"text","x":160,"y":2000,"width":1800,"height":350,"text":"## WFX ERP\nOperational transaction backbone","color":"5"},
+		{"id":"back-gtas","type":"text","x":2210,"y":2000,"width":1800,"height":350,"text":"## GTAS / IED\nPPJ application layer","color":"5"},
+		{"id":"back-third","type":"text","x":4260,"y":2000,"width":1800,"height":350,"text":"## THIRD-PARTY\nMMX | eOffice | VNPT | IoT","color":"5"},
+		{"id":"back-data","type":"text","x":6310,"y":2000,"width":1800,"height":350,"text":"## DWH / DATABRICKS\nGoverned analytics and AI data","color":"5"},
+		{"id":"back-ai","type":"text","x":8360,"y":2000,"width":1800,"height":350,"text":"## AI / AUTOMATION\nOCR | RAG | Agents | API | RPA","color":"5"},
+		{"id":"control-pattern","type":"text","x":500,"y":2830,"width":4600,"height":260,"text":"# AI OPERATING PATTERN\nRead -> Understand -> Validate -> Recommend -> Automate -> Human Confirm","color":"2"},
+		{"id":"control-execute","type":"text","x":5500,"y":2830,"width":4600,"height":260,"text":"# EXECUTION BOUNDARY\nOnly approved, permissioned and auditable actions write back or execute.","color":"2"}
+	],
+	"edges":[
+		{"id":"business-flow-1","fromNode":"stage-market","fromSide":"right","toNode":"stage-mer","toSide":"left"},
+		{"id":"business-flow-2","fromNode":"stage-mer","fromSide":"right","toNode":"stage-tech","toSide":"left"},
+		{"id":"business-flow-3","fromNode":"stage-tech","fromSide":"right","toNode":"stage-source","toSide":"left"},
+		{"id":"business-flow-4","fromNode":"stage-source","fromSide":"right","toNode":"stage-purchase","toSide":"left"},
+		{"id":"business-flow-5","fromNode":"stage-purchase","fromSide":"right","toNode":"stage-warehouse","toSide":"left"},
+		{"id":"business-flow-6","fromNode":"stage-warehouse","fromSide":"right","toNode":"stage-production","toSide":"left"},
+		{"id":"business-flow-7","fromNode":"stage-production","fromSide":"right","toNode":"stage-wash","toSide":"left"},
+		{"id":"business-flow-8","fromNode":"stage-wash","fromSide":"right","toNode":"stage-qc","toSide":"left"},
+		{"id":"business-flow-9","fromNode":"stage-qc","fromSide":"right","toNode":"stage-logistics","toSide":"left"},
+		{"id":"business-flow-10","fromNode":"stage-logistics","fromSide":"right","toNode":"stage-finance","toSide":"left"},
+		{"id":"backbone-1","fromNode":"back-wfx","fromSide":"right","toNode":"back-gtas","toSide":"left"},
+		{"id":"backbone-2","fromNode":"back-gtas","fromSide":"right","toNode":"back-third","toSide":"left"},
+		{"id":"backbone-3","fromNode":"back-third","fromSide":"right","toNode":"back-data","toSide":"left"},
+		{"id":"backbone-4","fromNode":"back-data","fromSide":"right","toNode":"back-ai","toSide":"left"},
+		{"id":"control-link","fromNode":"control-pattern","fromSide":"right","toNode":"control-execute","toSide":"left","label":"approved action"},
+		{"id":"wfx-purchase","fromNode":"back-wfx","fromSide":"top","toNode":"stage-purchase","toSide":"bottom","label":"transaction services"},
+		{"id":"gtas-tech","fromNode":"back-gtas","fromSide":"top","toNode":"stage-tech","toSide":"bottom","label":"technical / costing"},
+		{"id":"third-production","fromNode":"back-third","fromSide":"top","toNode":"stage-production","toSide":"bottom","label":"machine / platform data"},
+		{"id":"data-finance","fromNode":"back-data","fromSide":"top","toNode":"stage-finance","toSide":"bottom","label":"analytics"},
+		{"id":"ai-mer","fromNode":"back-ai","fromSide":"top","toNode":"stage-mer","toSide":"bottom","label":"assist"},
+		{"id":"ai-source","fromNode":"back-ai","fromSide":"top","toNode":"stage-source","toSide":"bottom","label":"search / compare"},
+		{"id":"ai-warehouse","fromNode":"back-ai","fromSide":"top","toNode":"stage-warehouse","toSide":"bottom","label":"extract / validate"},
+		{"id":"ai-qc","fromNode":"back-ai","fromSide":"top","toNode":"stage-qc","toSide":"bottom","label":"detect / classify"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }
