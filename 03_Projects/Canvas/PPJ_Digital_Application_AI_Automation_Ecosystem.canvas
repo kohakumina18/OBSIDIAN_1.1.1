@@ -137,14 +137,14 @@
       "x": -3900,
       "y": 2040,
       "width": 3200,
-      "height": 1700,
-      "label": "06 POC / VENDOR EVALUATION (dashed = evaluation only)"
+      "height": 1840,
+      "label": "06 POC / VENDOR EVALUATION (evaluation only)"
     },
     {
       "id": "grp-legend",
       "type": "group",
       "x": -3900,
-      "y": 3920,
+      "y": 4060,
       "width": 3200,
       "height": 2320,
       "label": "09 LEGEND"
@@ -174,7 +174,7 @@
       "y": 3640,
       "width": 3200,
       "height": 2320,
-      "label": "DATA / GOVERNANCE GAP"
+      "label": "DATA / GOVERNANCE GAP (curated notes, written 23/09/2026)"
     },
     {
       "id": "eco-title",
@@ -192,7 +192,7 @@
       "y": -1230,
       "width": 9300,
       "height": 260,
-      "text": "ERP -> Enterprise Applications -> Internal Systems -> AI & Automation\n\nPortfolio Baseline: 19/09/2026  |  Vault Reconciliation: 24/09/2026\nGenerated From: PPJ AI & Automation Portfolio (vault registry) + PPJ operating-systems landscape ([[02_BA_Knowledge/Enterprise_Architecture/PPJ_Operational_Systems_Landscape|Operational Systems Landscape]])"
+      "text": "ERP -> Enterprise Applications -> Internal Systems -> AI & Automation\n\nPortfolio Baseline: 19/09/2026  |  Vault Reconciliation: 23/09/2026 (portfolio snapshot)\nGenerated From: PPJ AI & Automation Portfolio (vault registry) + PPJ operating-systems landscape ([[02_BA_Knowledge/Enterprise_Architecture/PPJ_Operational_Systems_Landscape|Operational Systems Landscape]]). Regenerated automatically when the portfolio snapshot changes."
     },
     {
       "id": "eco-exec-summary",
@@ -219,7 +219,7 @@
       "y": -940,
       "width": 2900,
       "height": 640,
-      "text": "## PORTFOLIO INVENTORY\n\nBaseline 19/09/2026 (35 initiatives):\nActive / Dev 16 | Production 6 | Maintenance 4 | Closed 4 | On Hold 3 | Evaluation 2\n\nCurrent Vault 24/09/2026 (36 registered records, recomputed):\nProduction 7 | Active / Dev 10 | UAT / Eval / Analysis 5 | Maintenance 4 | On Hold 3 | Closed 7\n\nBaseline is kept unchanged. Bucket definitions differ - see the gap notes."
+      "text": "## PORTFOLIO INVENTORY\n\nBaseline 19/09/2026 (35 initiatives):\nActive / Dev 16 | Production 6 | Maintenance 4 | Closed 4 | On Hold 3 | Evaluation 2\n\nCurrent Vault 23/09/2026 (36 registered records, recomputed):\nProduction 7 | Active / Dev 10 | UAT / Eval / Analysis 5 | Maintenance 4 | On Hold 3 | Closed 7\n\nBaseline is kept unchanged. Bucket definitions differ - see the gap notes."
     },
     {
       "id": "proj-mer-costingagenticplatform-v1-1-0",
@@ -1049,9 +1049,28 @@
       "text": "## CAPABILITY FLOWS\n(explanatory - not integrations)\n\nSOURCING\nSupplier > Material > Search > Decision\n\nPURCHASING\nPO > Material > Allocation > Dispatch\n\nMERCHANDISING\nMarket > Costing > Quotation > PO\n\nPRODUCTION\nPlanning > Production > Wash > QC\n\nFINANCE\nTransaction > Reporting > Cost Control > RCA\n\nLOGISTICS\nShipment > AWB > Tracking > Invoice\n\nADMIN\nRequest > Approval > Booking > Advance > Expense > Settlement\n\nTECHNICAL\nFabric > Pattern > BOM > Knowledge > Costing"
     },
     {
-      "id": "proj-ppjxnunox-scantrial",
+      "id": "source-systems-diagram",
+      "type": "file",
+      "x": -3900,
+      "y": -1500,
+      "width": 3200,
+      "height": 1785,
+      "file": "99_Attachments/PPJ_Operational_Systems_Landscape_Diagram.png"
+    },
+    {
+      "id": "poc-discovery-patterngenerationpoc",
       "type": "text",
       "x": -3800,
+      "y": 2200,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/_Registry/PPJ_DISCOVERY_REGISTER|DISCOVERY_PatternGenerationPoC]]\n\nStatus: DAF / Commercial / Technical Scope Negotiation\nType: VENDOR EVALUATION (discovery item, not a project)\n\nScope: Pattern generation PoC. Do not reuse the historical PPJxStratova.AI code.\nOpen: Google DAF approval; Funding liability; Rejection responsibility; Termination clause ...\nNo operational integration assumed.",
+      "color": "3"
+    },
+    {
+      "id": "proj-ppjxnunox-scantrial",
+      "type": "text",
+      "x": -2250,
       "y": 2200,
       "width": 1450,
       "height": 380,
@@ -1059,43 +1078,33 @@
       "color": "3"
     },
     {
-      "id": "poc-discovery-pattern",
+      "id": "poc-cand-cpd-in-house-pattern-generation",
       "type": "text",
-      "x": -2250,
-      "y": 2200,
-      "width": 1450,
-      "height": 380,
-      "text": "## [[03_Projects/_Registry/PPJ_DISCOVERY_REGISTER|DISCOVERY_PatternGenerationPoC]]\n\nStratova pattern-generation PoC\n\nStatus: DAF / Commercial / Technical Scope Negotiation\nType: POC / EVALUATION (discovery item, not a project)\n\nCapability: pattern generation; open items include Google DAF approval, funding liability, tolerance and success criteria.\nBusiness affinity: Gerber, ShapeShifter - no integration confirmed.",
-      "color": "3"
-    },
-    {
-      "id": "poc-cpd-candidate",
-      "type": "text",
-      "x": -2250,
+      "x": -3800,
       "y": 2620,
       "width": 1450,
       "height": 380,
-      "text": "## [[03_Projects/_Registry/Project_Update_Proposals/CPD_IN_HOUSE_PATTERN_GENERATION_CURRENT_INITIATIVE|CPD In-house Pattern Generation]]\n\nInternal pattern-generation benchmark\n\nStatus: Internal Prototype / Evaluation\nType: CANDIDATE (not a registered project)\n\nCapability: internal benchmark for the Stratova PoC. Canonical code not confirmed.",
+      "text": "## [[03_Projects/_Registry/Project_Update_Proposals/CPD_IN_HOUSE_PATTERN_GENERATION_CURRENT_INITIATIVE|CPD In-house Pattern Generation]]\n\nStatus: Internal Prototype / Evaluation\nType: CANDIDATE (not a registered project)\n\nCapability: Build an internal pattern-generation benchmark from techpack/image/measurement inputs with Pattern Engineer and CAD validation.\nCanonical code not confirmed.",
       "color": "3"
     },
     {
       "id": "poc-wizcore",
       "type": "text",
-      "x": -3800,
+      "x": -2250,
       "y": 2620,
       "width": 1450,
       "height": 380,
-      "text": "## Wizcore\n\nStatus: Smart Factory Discovery\nType: VENDOR EVALUATION (discovery item)\n\nScope: Factory -> IoT -> Connectivity -> Integration -> Data -> Dashboard -> Traceability -> Analytics / AI.",
+      "text": "## [[03_Projects/_Registry/PPJ_DISCOVERY_REGISTER|Wizcore]]\n\nStatus: Smart Factory Discovery\nType: VENDOR EVALUATION (discovery item, not a project)\n\nScope: Factory -> IoT -> Connectivity -> Integration -> Data -> Dashboard -> Traceability -> Analytics / AI.\nNo operational integration assumed.",
       "color": "3"
     },
     {
-      "id": "poc-faceworks",
+      "id": "poc-faceworks-ai",
       "type": "text",
       "x": -3800,
       "y": 3040,
       "width": 1450,
-      "height": 260,
-      "text": "## Faceworks AI\n\nStatus: Technology Assessment\nType: VENDOR EVALUATION (discovery item)",
+      "height": 380,
+      "text": "## [[03_Projects/_Registry/PPJ_DISCOVERY_REGISTER|Faceworks AI]]\n\nStatus: Technology Assessment\nType: VENDOR EVALUATION (discovery item, not a project)\n\nScope: Potential garment/textile AI capabilities under evaluation.\nNo operational integration assumed.",
       "color": "3"
     },
     {
@@ -1104,25 +1113,25 @@
       "x": -2250,
       "y": 3040,
       "width": 1450,
-      "height": 260,
-      "text": "## Sortech\n\nStatus: Technology / SI Assessment\nType: VENDOR EVALUATION (discovery item)",
+      "height": 380,
+      "text": "## [[03_Projects/_Registry/PPJ_DISCOVERY_REGISTER|Sortech]]\n\nStatus: Technology / SI Assessment\nType: VENDOR EVALUATION (discovery item, not a project)\n\nScope: Potentially relevant to invoice automation, GRN workflows, WFX automation, reconciliation, approvals, agentic workflows and smart-factory integration.\nNo operational integration assumed.",
       "color": "3"
     },
     {
       "id": "poc-quanskill",
       "type": "text",
       "x": -3800,
-      "y": 3340,
+      "y": 3460,
       "width": 1450,
-      "height": 260,
-      "text": "## Quanskill\n\nStatus: Vendor / Product Evaluation\nType: VENDOR EVALUATION (discovery item)\nNot yet an approved implementation project.",
+      "height": 380,
+      "text": "## [[03_Projects/_Registry/PPJ_DISCOVERY_REGISTER|Quanskill]]\n\nStatus: Vendor / Product Evaluation\nType: VENDOR EVALUATION (discovery item, not a project)\n\nScope: Not yet an approved implementation project.\nNo operational integration assumed.",
       "color": "3"
     },
     {
       "id": "legend-nodes",
       "type": "text",
       "x": -3800,
-      "y": 4080,
+      "y": 4220,
       "width": 3000,
       "height": 700,
       "text": "## NODE CATEGORIES\n\nWFX ERP - purple\nThird-Party System - brown\nGTAS Internal System - indigo\nData / Knowledge Platform - teal\nShared AI Platform - pink group\nAI / Automation / Workflow / IoT project - card colour = STATUS (right)\nThe Type line on each card names the class:\nAI APPLICATION | AUTOMATION | WORKFLOW | DATA PLATFORM |\nINTERNAL PLATFORM | IOT | POC / EVALUATION | COLLABORATION | ARCHIVED"
@@ -1131,7 +1140,7 @@
       "id": "legend-edges",
       "type": "text",
       "x": -3800,
-      "y": 4820,
+      "y": 4960,
       "width": 3000,
       "height": 700,
       "text": "## RELATIONSHIPS (label prefix, never colour alone)\n\nINTEGRATION | implemented / confirmed operational integration (green line)\nPLANNED | planned or in-development integration (orange line)\nAFFINITY | business capability affinity, no technical integration confirmed (plain line)\nDATA | data / knowledge dependency (blue line)\n\nCanvas edges cannot be dashed or thinned, so the prefix carries the meaning."
@@ -1140,7 +1149,7 @@
       "id": "legend-status",
       "type": "text",
       "x": -3800,
-      "y": 5560,
+      "y": 5700,
       "width": 3000,
       "height": 680,
       "text": "## STATUS COLOUR (source status text is kept on each card)\n\nGreen - Production / Operational\nBlue - Active / Development / Strategic Active\nYellow - UAT / Evaluation / Pre-PoC / Analysis\nOrange - On Hold\nGrey-blue - Maintenance / Support\nGrey - Closed / Archived"
@@ -1201,7 +1210,7 @@
       "y": 3800,
       "width": 3000,
       "height": 500,
-      "text": "DATA / GOVERNANCE GAP 1 - Expense invoices merged\n\nThe 35-item baseline lists PPJ.ExpenseInvoices.v1.1 and LOG.EXPENSE.INVOICES.V1.2 as two projects. The vault registry (PPJ_PORTFOLIO_SNAPSHOT_20260918) already maps both to ONE project, LOG_ExpenseInvoiceProcessing_v1.2.2, and lists a decision still open: confirm the mapping and whether the earlier Export exclusion applies.\n\nDrawn as one node (vault registry outranks the baseline). Both baseline names are kept on the card.\n\nVault also holds two closed records outside the baseline: EXIM.ExpenseInvoices.Automation.v1.1 and AI.Automation.Workshop.Analysis.202606 - hence 36 records here."
+      "text": "DATA / GOVERNANCE GAP 1 - Expense invoices merged\n\nThe 35-item baseline lists PPJ.ExpenseInvoices.v1.1 and LOG.EXPENSE.INVOICES.V1.2 as two projects. The vault registry (PPJ_PORTFOLIO_SNAPSHOT_20260918) already maps both to ONE project, LOG_ExpenseInvoiceProcessing_v1.2.2, and lists a decision still open: confirm the mapping and whether the earlier Export exclusion applies.\n\nDrawn as one node (vault registry outranks the baseline). Both baseline names are kept on the card.\n\nVault also holds two closed records outside the baseline: EXIM.ExpenseInvoices.Automation.v1.1 and AI.Automation.Workshop.Analysis.202606 - hence 36 records at the time of writing."
     },
     {
       "id": "gap-2",
@@ -1627,10 +1636,10 @@
       "color": "5"
     },
     {
-      "id": "e048-poc-cpd-candidate-poc-discovery-patt",
-      "fromNode": "poc-cpd-candidate",
+      "id": "e048-poc-cand-cpd-in-ho-poc-discovery-patt",
+      "fromNode": "poc-cand-cpd-in-house-pattern-generation",
       "fromSide": "top",
-      "toNode": "poc-discovery-pattern",
+      "toNode": "poc-discovery-patterngenerationpoc",
       "toSide": "bottom",
       "label": "DATA | internal benchmark",
       "color": "5"

@@ -18,7 +18,9 @@ Ring infographic supplied by the vault owner on 2026-09-24:
 - outer ring - GTAS applications, one icon per application;
 - names set around the ring - third-party applications.
 
-The original image was pasted into a working session and is **not stored in the vault**. Open item: save it under `99_Attachments/` and embed it here.
+![[PPJ_Operational_Systems_Landscape_Diagram.png]]
+
+The original image is stored as `99_Attachments/PPJ_Operational_Systems_Landscape_Diagram.png` (950 x 527) and is also embedded on the ecosystem Canvas.
 
 The diagram shows *which systems exist*. It draws no relationships between them, so nothing on this page implies an integration.
 
@@ -95,7 +97,6 @@ Operating systems confirmed elsewhere in the vault but **not on the diagram**: V
 
 ## 5. Open items
 
-- Store the original infographic under `99_Attachments/` and embed it above.
 - **MMSx or MMX?** This diagram and `ADMIN.WORK-TRAVEL.canvas` write "MMSx"; the 2026-09-18 ecosystem note writes "MMX". Treated as the same system; confirm the correct name.
 - The Finance AI canvas also names **GTAS Factory, GTAS Quantity, GTAS Efficiency and GTAS ID**. None appears in the diagram. Decide whether they are aliases or sub-modules of the 16 above, or separate applications.
 - Meaning of the red star on GTAS Costing and the green highlight on Production Planning.

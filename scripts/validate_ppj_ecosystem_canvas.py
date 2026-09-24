@@ -20,7 +20,7 @@ check("JSON parses; only nodes/edges/metadata keys", set(doc) == {"nodes", "edge
 check("unique node ids", len(byid) == len(nodes))
 check("unique edge ids", len({e['id'] for e in edges}) == len(edges))
 check("no orphan edges", all(e["fromNode"] in byid and e["toNode"] in byid for e in edges))
-allowed_node_keys = {"id", "type", "x", "y", "width", "height", "text", "label", "color"}
+allowed_node_keys = {"id", "type", "x", "y", "width", "height", "text", "label", "color", "file"}
 check("node keys are spec keys", all(set(n) <= allowed_node_keys for n in nodes))
 allowed_edge_keys = {"id", "fromNode", "fromSide", "toNode", "toSide", "label", "color"}
 check("edge keys are spec keys", all(set(e) <= allowed_edge_keys for e in edges))
@@ -34,7 +34,9 @@ check("ASCII only (vault canvas-label rule)", raw.isascii(), "" if raw.isascii()
 snap = json.loads((V / "03_Projects/_Registry/Portfolio_Snapshots/PPJ_PORTFOLIO_SNAPSHOT_20260918.json").read_text("utf-8-sig"))
 regs = [p["code"] for p in snap["projects"] if not p.get("candidate")]
 proj_nodes = [n for n in nodes if n["id"].startswith("proj-")]
-check("36 project nodes = 36 registered records", len(proj_nodes) == len(regs) == 36)
+check("one project node per registered record", len(proj_nodes) == len(regs), f"{len(proj_nodes)} nodes / {len(regs)} records")
+check("file nodes point at real files", all((V / n["file"]).exists() for n in nodes if n["type"] == "file"))
+check("LF line endings only (same bytes on every OS)", b"\r" not in CANVAS.read_bytes())
 heads = Counter()
 for n in proj_nodes:
     m = re.search(r"\|([^\]]+)\]\]", n["text"].splitlines()[0]) or re.search(r"## (.+)", n["text"].splitlines()[0])
@@ -107,7 +109,7 @@ for n in nodes:
             bad_links.append(target)
 check("every wikilink resolves to a real file", not bad_links, str(bad_links))
 resolved = sum(len(re.findall(r"\[\[", n.get("text", ""))) for n in proj_nodes)
-check("project links resolved", resolved == 36, f"{resolved}/36")
+check("project links resolved", resolved == len(regs), f"{resolved}/{len(regs)}")
 
 fail = [r for r in res if not r[1]]
 for name, ok, d in res:

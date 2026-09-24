@@ -2,30 +2,45 @@
 
 Dry run (validates, writes nothing):   python scripts/build_ppj_ecosystem_canvas.py
 Write the Canvas:                      python scripts/build_ppj_ecosystem_canvas.py --write
+One-line summary (used by the watcher): add --quiet
 Independent check of the result:       python scripts/validate_ppj_ecosystem_canvas.py
 
-The Canvas is generated, not synchronized: the Executive Canvas watcher does not touch it. Re-run with --write after a
-project is added, renamed or changes status. Hand edits to the .canvas are overwritten by --write.
+The Canvas is kept in sync automatically: watch_ppj_executive_canvas.py (in --apply mode) runs this with --write
+whenever the portfolio snapshot changes, so a project registered, renamed or moved on any device is reflected here.
+Hand edits to the .canvas are overwritten by the next run.
 
-Project data comes from the portfolio snapshot (the vault's own registry); the
-WFX / GTAS / third-party inventory comes from the owner's operating-systems
-infographic recorded in PPJ_Operational_Systems_Landscape.md.
+Project data comes from the portfolio snapshot (the vault's own registry); the WFX / GTAS / third-party inventory
+comes from the owner's operating-systems diagram recorded in PPJ_Operational_Systems_Landscape.md.
+
+Built to be run unattended on any device, so the output depends only on the vault contents:
+  - dates come from the snapshot, never from the clock;
+  - the file is written with LF line endings, atomically, and only when the bytes change;
+  - a project the curated table does not know is placed by its domain instead of aborting the run;
+  - the file is NOT written if a structural check fails (duplicate ids, orphan edges, overlaps, missing projects).
 """
 from __future__ import annotations
 
+import datetime as dt
 import json
 import math
+import os
 import re
 import sys
 from pathlib import Path
 
-VAULT = Path(__file__).resolve().parents[1]
+
+def _arg(name: str, default: str | None = None) -> str | None:
+    return sys.argv[sys.argv.index(name) + 1] if name in sys.argv else default
+
+
+VAULT = Path(_arg("--vault") or Path(__file__).resolve().parents[1])
 SNAP = VAULT / "03_Projects/_Registry/Portfolio_Snapshots/PPJ_PORTFOLIO_SNAPSHOT_20260918.json"
 OUT = VAULT / "03_Projects/Canvas/PPJ_Digital_Application_AI_Automation_Ecosystem.canvas"
-RECONCILED = "24/09/2026"
+DIAGRAM = "99_Attachments/PPJ_Operational_Systems_Landscape_Diagram.png"
 
 snap = json.loads(SNAP.read_text("utf-8-sig"))
 projects = {p["code"]: p for p in snap["projects"]}
+RECONCILED = dt.date.fromisoformat(snap["last_verified"]).strftime("%d/%m/%Y")
 
 # ---------------------------------------------------------------- geometry
 CARD_W, CARD_H, PITCH, PAD, HDR = 1450, 380, 420, 100, 160
@@ -44,21 +59,24 @@ edges: list[dict] = []
 ids: set[str] = set()
 rect: dict[str, tuple[float, float, float, float]] = {}
 kind: dict[str, str] = {}
-warnings: list[str] = []
+notices: list[str] = []      # worth reading, never blocks the write
+problems: list[str] = []     # structural: blocks the write
 
 
 def _add(n: dict, k: str) -> None:
-    assert n["id"] not in ids, f"duplicate id {n['id']}"
+    if n["id"] in ids:
+        problems.append(f"duplicate id {n['id']}")
+        return
     ids.add(n["id"])
     rect[n["id"]] = (n["x"], n["y"], n["width"], n["height"])
     kind[n["id"]] = k
     nodes.append(n)
 
 
-def est_height(text: str, w: float) -> float:
+def est_height(body: str, w: float) -> float:
     cpl = max(20, (w - 40) / 8.6)
     h = 44.0
-    for line in text.split("\n"):
+    for line in body.split("\n"):
         if not line.strip():
             h += 12
             continue
@@ -70,7 +88,7 @@ def est_height(text: str, w: float) -> float:
 def text(nid, x, y, w, h, body, color=None):
     need = est_height(body, w)
     if need > h:
-        warnings.append(f"{nid}: text needs ~{need:.0f} > {h}")
+        notices.append(f"{nid}: text needs ~{need:.0f} > {h}")
     n = {"id": nid, "type": "text", "x": int(x), "y": int(y), "width": int(w), "height": int(h), "text": body}
     if color:
         n["color"] = color
@@ -85,16 +103,19 @@ def group(gid, x, y, w, h, label, color=None):
 
 
 def edge(f, t, cat, label, fs, ts, curve=False):
-    assert f in ids and t in ids, f"edge endpoint missing {f} -> {t}"
+    # A curated edge whose endpoint has gone (a project was renamed or removed) is skipped, not fatal.
+    if f not in ids or t not in ids:
+        notices.append(f"skipped edge {f} -> {t}: endpoint not on the canvas (renamed or removed?)")
+        return
     prefix = {"A": "INTEGRATION", "B": "PLANNED", "C": "AFFINITY", "D": "DATA"}[cat]
     e = {"id": f"e{len(edges)+1:03d}-{f[:18]}-{t[:18]}", "fromNode": f, "fromSide": fs, "toNode": t, "toSide": ts,
          "label": f"{prefix} | {label}"}
     col = {"A": "4", "B": "2", "D": "5"}.get(cat)
     if col:
         e["color"] = col
-    edges.append(e)
     if curve:
         e["_curve"] = True
+    edges.append(e)
 
 
 def slug(s: str) -> str:
@@ -106,9 +127,6 @@ def pid(code: str) -> str:
 
 
 # ------------------------------------------------------------ vault links
-_root_cache: dict[str, str | None] = {}
-
-
 def resolve_link(p: dict) -> str | None:
     root = p.get("root_file")
     if not root:
@@ -116,9 +134,9 @@ def resolve_link(p: dict) -> str | None:
     base = VAULT / "03_Projects"
     cand = base / root
     if not cand.exists():
-        hits = [h for h in base.rglob(Path(root).name) if "_Registry" not in h.parts and "Canvas" not in h.parts]
+        hits = sorted(h for h in base.rglob(Path(root).name) if "_Registry" not in h.parts and "Canvas" not in h.parts)
         if not hits:
-            hits = [h for h in (VAULT / "02_BA_Knowledge").rglob(Path(root).name)]
+            hits = sorted((VAULT / "02_BA_Knowledge").rglob(Path(root).name))
         if not hits:
             return None
         cand = hits[0]
@@ -273,9 +291,49 @@ BASELINE = {
     "EXT_AcademicCollaboration_v1.1.0": "PPJ.UIT.ACADEMIC.COLLABORATION.v1.1",
 }
 
-missing = [c for c, p in projects.items() if not p.get("candidate") and c not in P]
-extra = [c for c in P if c not in projects]
-assert not missing and not extra, (missing, extra)
+# Where a project the curated table does not know is placed: by its Primary Domain.
+DOMAIN_ZONE = {
+    "Merchandising": "MER", "Sourcing / Purchasing": "SRC", "Finance / Accounting": "FIN",
+    "Production + Wash": "PROD", "QC / TQM": "QC", "Warehouse": "WHL", "Logistics / EXIM": "WHL", "HR": "HR",
+    "Administration": "ADMIN", "Fabric / Textiles Technique": "FAB", "Internal Chatbot & AI Platforms": "SHARED",
+    "External Collaboration": "COLLAB",
+}
+# Preferred order inside a zone; anything else in the zone follows in registry order.
+ZONE_ORDER = {
+    "MER": ["MER_CostingAgenticPlatform_v1.1.0", "MER_MarketIntelligence_v1.1.0", "MER_InvoiceDataRecheck_v1.1.0", "MER_POCommit_v1.1.0"],
+    "SRC": ["SCP_SourcingChatbot_v2.3.0", "PUR_AdhocIndentSouth_v1.0.0", "PUR_HMLabelProcessing_v1.0.0",
+            "PUR_InventoryReport_v2.1.0", "PUR_MaterialAllocation_v1.1.0", "PUR_GDIAutomation_v1.0.0"],
+    "WHL": ["WH_AWBExtraction_v1.1.0", "LOG_ExpenseInvoiceProcessing_v1.2.2"],
+    "HR": ["HR_EmployeeDataPlatform_v1.1.0"],
+    "ADMIN": ["ADMIN_ExpenseManagement_v1.1.0"],
+    "FIN": ["FIN_FinanceManagement_v1.2.0", "FIN_InvoiceDownloader_v1.2.0", "ACC_GRNSupplierInvoiceBot_v2.3.0",
+            "ACC_InventoryReport_v1.0.0", "EXIM.ExpenseInvoices.Automation.v1.1"],
+    "QC": ["QC_DefectDetection_v1.0.0", "QC_ThreadTraceability_v1.0.0"],
+    "PROD": ["PROD_HangingLineIoT_v1.0.0", "WASH_SamplingManagement_v1.1.0", "WASH_COWASH_v2.0.0"],
+    "SHARED": ["AI_PERRIPlatform_v3.2.0", "AI_ApplicationHub_v2.1.0", "PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0"],
+    "FAB": ["TD_TechnicalKnowledgePlatform_v2.1.0", "FAB_FabricDatamart_v2.2.0", "CPD_VisualSampleDatamart_v1.1.0", "PPJxStratova.AI"],
+    "POC": ["PPJxNUNOX.ScanTrial"],
+    "COLLAB": ["EXT_AcademicCollaboration_v1.1.0"],
+    "ARCH": ["AI.Automation.Workshop.202606", "AI.Automation.Workshop.Analysis.202606", "VITAS.Sharing.202606"],
+}
+
+registered = {c: p for c, p in projects.items() if not p.get("candidate")}
+for code in [c for c in P if c not in registered]:            # curated but gone (renamed / removed)
+    del P[code]
+    notices.append(f"curated project {code} is no longer registered - card dropped; its edges are skipped")
+for code, p in registered.items():                            # registered but not curated (new / renamed)
+    if code in P:
+        continue
+    closed = "closed" in (p.get("lifecycle") or "").lower()
+    zone = "ARCH" if (closed and p.get("domain") == "External Collaboration") else DOMAIN_ZONE.get(p.get("domain"), "NEW")
+    P[code] = (zone, code, "UNCLASSIFIED (curate in scripts/build_ppj_ecosystem_canvas.py)",
+               " ".join((p.get("outcome") or "").split())[:220], None, "Placed automatically by domain; no curated card yet.")
+    notices.append(f"{code}: not in the curated table - placed in zone {zone} by domain '{p.get('domain')}'")
+
+
+def zone_codes(zone: str) -> list[str]:
+    listed = [c for c in ZONE_ORDER.get(zone, []) if c in P and P[c][0] == zone]
+    return listed + [c for c, v in P.items() if v[0] == zone and c not in listed]
 
 
 def card(code: str, x: int, y: int) -> None:
@@ -305,14 +363,14 @@ def column_group(gid, label, x, y, w, codes, color=None):
 
 
 # =================================================================== TOP ZONE
-group_order: list[str] = []
 text("eco-title", 0, -1500, 9300, 240,
      "# PPJ GROUP\n## Digital Application, AI & Automation Ecosystem")
 text("eco-subtitle", 0, -1230, 9300, 260,
      "ERP -> Enterprise Applications -> Internal Systems -> AI & Automation\n\n"
-     f"Portfolio Baseline: 19/09/2026  |  Vault Reconciliation: {RECONCILED}\n"
+     f"Portfolio Baseline: 19/09/2026  |  Vault Reconciliation: {RECONCILED} (portfolio snapshot)\n"
      "Generated From: PPJ AI & Automation Portfolio (vault registry) + PPJ operating-systems landscape "
-     "([[02_BA_Knowledge/Enterprise_Architecture/PPJ_Operational_Systems_Landscape|Operational Systems Landscape]])")
+     "([[02_BA_Knowledge/Enterprise_Architecture/PPJ_Operational_Systems_Landscape|Operational Systems Landscape]]). "
+     "Regenerated automatically when the portfolio snapshot changes.")
 
 text("eco-exec-summary", 0, -940, 3000, 640,
      "## PPJ DIGITAL EVOLUTION\n\n"
@@ -335,53 +393,41 @@ text("eco-principles", 3200, -940, 3000, 640,
      "- Shared AI services reduce duplicate implementations.\n"
      "- Status and lifecycle are independent from business domain.")
 
-# inventory panel (baseline vs recomputed) -- filled after classes are known
-regs = [p for p in snap["projects"] if not p.get("candidate")]
 cur = {k: 0 for k in CLASS_LABEL}
-for p in regs:
+for p in registered.values():
     cur[status_class(p)] += 1
-assert sum(cur.values()) == len(regs) == 36
 text("eco-inventory", 6400, -940, 2900, 640,
      "## PORTFOLIO INVENTORY\n\n"
      "Baseline 19/09/2026 (35 initiatives):\n"
      "Active / Dev 16 | Production 6 | Maintenance 4 | Closed 4 | On Hold 3 | Evaluation 2\n\n"
-     f"Current Vault {RECONCILED} ({len(regs)} registered records, recomputed):\n"
+     f"Current Vault {RECONCILED} ({len(registered)} registered records, recomputed):\n"
      f"Production {cur['production']} | Active / Dev {cur['active']} | UAT / Eval / Analysis {cur['amber']} | "
      f"Maintenance {cur['maint']} | On Hold {cur['hold']} | Closed {cur['closed']}\n\n"
      "Baseline is kept unchanged. Bucket definitions differ - see the gap notes.")
 
 # ============================================================ LEFT COLUMN
-y = 0
-group_order += ["grp-mer"]
-y_end = column_group("grp-mer", "04.2 MERCHANDISING", LX, y, LW,
-                     ["MER_CostingAgenticPlatform_v1.1.0", "MER_MarketIntelligence_v1.1.0",
-                      "MER_InvoiceDataRecheck_v1.1.0", "MER_POCommit_v1.1.0"])
-y_end = column_group("grp-src", "04.1 SOURCING / PURCHASING", LX, y_end + GAP, LW,
-                     ["SCP_SourcingChatbot_v2.3.0", "PUR_AdhocIndentSouth_v1.0.0", "PUR_HMLabelProcessing_v1.0.0",
-                      "PUR_InventoryReport_v2.1.0", "PUR_MaterialAllocation_v1.1.0", "PUR_GDIAutomation_v1.0.0"])
-y_end = column_group("grp-whl", "04.6 WAREHOUSE / LOGISTICS", LX, y_end + GAP, LW,
-                     ["WH_AWBExtraction_v1.1.0", "LOG_ExpenseInvoiceProcessing_v1.2.2"])
+y_end = column_group("grp-mer", "04.2 MERCHANDISING", LX, 0, LW, zone_codes("MER"))
+y_end = column_group("grp-src", "04.1 SOURCING / PURCHASING", LX, y_end + GAP, LW, zone_codes("SRC"))
+y_end = column_group("grp-whl", "04.6 WAREHOUSE / LOGISTICS", LX, y_end + GAP, LW, zone_codes("WHL"))
 
 # ============================================================ RIGHT COLUMN
-ry = column_group("grp-hr", "04.8 HR", RX, 0, RW, ["HR_EmployeeDataPlatform_v1.1.0"])
-ry = column_group("grp-admin", "04.9 ADMINISTRATION", RX, ry + GAP, RW, ["ADMIN_ExpenseManagement_v1.1.0"])
-ry = column_group("grp-fin", "04.3 FINANCE / ACCOUNTING", RX, ry + GAP, RW,
-                  ["FIN_FinanceManagement_v1.2.0", "FIN_InvoiceDownloader_v1.2.0", "ACC_GRNSupplierInvoiceBot_v2.3.0",
-                   "ACC_InventoryReport_v1.0.0", "EXIM.ExpenseInvoices.Automation.v1.1"])
-ry = column_group("grp-qc", "04.5 QC / TQM", RX, ry + GAP, RW,
-                  ["QC_DefectDetection_v1.0.0", "QC_ThreadTraceability_v1.0.0"])
-ry = column_group("grp-prod", "04.4 PRODUCTION + WASH", RX, ry + GAP, RW,
-                  ["PROD_HangingLineIoT_v1.0.0", "WASH_SamplingManagement_v1.1.0", "WASH_COWASH_v2.0.0"])
+ry = column_group("grp-hr", "04.8 HR", RX, 0, RW, zone_codes("HR"))
+ry = column_group("grp-admin", "04.9 ADMINISTRATION", RX, ry + GAP, RW, zone_codes("ADMIN"))
+ry = column_group("grp-fin", "04.3 FINANCE / ACCOUNTING", RX, ry + GAP, RW, zone_codes("FIN"))
+ry = column_group("grp-qc", "04.5 QC / TQM", RX, ry + GAP, RW, zone_codes("QC"))
+ry = column_group("grp-prod", "04.4 PRODUCTION + WASH", RX, ry + GAP, RW, zone_codes("PROD"))
 
 # ============================================================ CENTRE STACK
-# --- shared AI platforms
+# --- shared AI platforms (rows of three)
 sy = 0
-sh = HDR + CARD_H + 40 + 220 + 40
+sh_codes = zone_codes("SHARED")
+sh_rows = max(1, math.ceil(len(sh_codes) / 3))
+sh = HDR + sh_rows * PITCH + 220 + 40
 group("grp-shared", CX, sy, CW, sh, "04.10 SHARED AI PLATFORMS (enterprise capabilities, not domain apps)", C_SHARED)
 sx0 = CX + (CW - (3 * CARD_W + 2 * 150)) // 2
-for i, c in enumerate(["AI_PERRIPlatform_v3.2.0", "AI_ApplicationHub_v2.1.0", "PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0"]):
-    card(c, sx0 + i * (CARD_W + 150), sy + HDR)
-text("shared-note", sx0, sy + HDR + CARD_H + 40, 3 * CARD_W + 300, 220,
+for i, c in enumerate(sh_codes):
+    card(c, sx0 + (i % 3) * (CARD_W + 150), sy + HDR + (i // 3) * PITCH)
+text("shared-note", sx0, sy + HDR + sh_rows * PITCH, 3 * CARD_W + 300, 220,
      "Conceptual direction: business AI applications -> PPJ AI Hub -> shared AI services / governance / knowledge / models.\n"
      "Edges to AI Hub or PERRI are drawn only where documentation confirms use. None is confirmed today.")
 y_gtas = sy + sh + GAP
@@ -472,16 +518,14 @@ for nid, c, r, name, src in data_nodes:
     text(nid, xs3[c], y_data + HDR + r * DP, DW, DH, f"**{name}**\n{src}", C_DATA)
 y_fab = y_data + dh + GAP
 
-# --- fabric / textiles (bottom centre)
-fh = HDR + 2 * PITCH
+# --- fabric / textiles (bottom centre, two columns)
+fab_codes = zone_codes("FAB")
+fab_rows = max(1, math.ceil(len(fab_codes) / 2))
+fh = HDR + fab_rows * PITCH
 group("grp-fab", CX, y_fab, 3400, fh, "04.7 FABRIC / TEXTILES TECHNIQUE")
-fx = CX + 100
-card("TD_TechnicalKnowledgePlatform_v2.1.0", fx, y_fab + HDR)
-card("FAB_FabricDatamart_v2.2.0", fx + CARD_W + 100, y_fab + HDR)
-card("CPD_VisualSampleDatamart_v1.1.0", fx, y_fab + HDR + PITCH)
-card("PPJxStratova.AI", fx + CARD_W + 100, y_fab + HDR + PITCH)
-
-text("flow-labels", CX + 3600, y_fab, 1800, fh,
+for i, c in enumerate(fab_codes):
+    card(c, CX + 100 + (i % 2) * (CARD_W + 100), y_fab + HDR + (i // 2) * PITCH)
+text("flow-labels", CX + 3600, y_fab, 1800, max(fh, 1000),
      "## CAPABILITY FLOWS\n(explanatory - not integrations)\n\n"
      "SOURCING\nSupplier > Material > Search > Decision\n\n"
      "PURCHASING\nPO > Material > Allocation > Dispatch\n\n"
@@ -494,34 +538,56 @@ text("flow-labels", CX + 3600, y_fab, 1800, fh,
 
 # ========================================================= FAR-LEFT PERIPHERY
 PX, PW = -3900, 3200
+if (VAULT / DIAGRAM).exists():        # the source of the WFX / GTAS / third-party layers, shown at the top left
+    _add({"id": "source-systems-diagram", "type": "file", "x": PX, "y": -1500, "width": PW, "height": 1785,
+          "file": DIAGRAM}, "file")
 poc_y = y_3p
-disc = {d["label"]: d for d in snap["discovery"]}
-cand = next(p for p in snap["projects"] if p.get("candidate"))
-group("grp-poc", PX, poc_y, PW, 1700, "06 POC / VENDOR EVALUATION (dashed = evaluation only)")
-card("PPJxNUNOX.ScanTrial", PX + 100, poc_y + HDR)
-d0 = disc["DISCOVERY_PatternGenerationPoC"]
-text("poc-discovery-pattern", PX + 100 + CARD_W + 100, poc_y + HDR, CARD_W, CARD_H,
-     "## [[03_Projects/_Registry/PPJ_DISCOVERY_REGISTER|DISCOVERY_PatternGenerationPoC]]\n\n"
-     f"Stratova pattern-generation PoC\n\nStatus: {d0['status']}\nType: POC / EVALUATION (discovery item, not a project)\n\n"
-     "Capability: pattern generation; open items include Google DAF approval, funding liability, tolerance and success criteria.\n"
-     "Business affinity: Gerber, ShapeShifter - no integration confirmed.", C_AMBER)
-text("poc-cpd-candidate", PX + 100 + CARD_W + 100, poc_y + HDR + PITCH, CARD_W, CARD_H,
-     "## [[03_Projects/_Registry/Project_Update_Proposals/CPD_IN_HOUSE_PATTERN_GENERATION_CURRENT_INITIATIVE|CPD In-house Pattern Generation]]\n\n"
-     f"Internal pattern-generation benchmark\n\nStatus: {cand['lifecycle']}\nType: CANDIDATE (not a registered project)\n\n"
-     "Capability: internal benchmark for the Stratova PoC. Canonical code not confirmed.", C_AMBER)
-text("poc-wizcore", PX + 100, poc_y + HDR + PITCH, CARD_W, CARD_H,
-     f"## Wizcore\n\nStatus: {disc['Wizcore']['status']}\nType: VENDOR EVALUATION (discovery item)\n\n"
-     f"Scope: {disc['Wizcore']['scope']}", C_AMBER)
-text("poc-faceworks", PX + 100, poc_y + HDR + 2 * PITCH, CARD_W, 260,
-     f"## Faceworks AI\n\nStatus: {disc['Faceworks AI']['status']}\nType: VENDOR EVALUATION (discovery item)", C_AMBER)
-text("poc-sortech", PX + 100 + CARD_W + 100, poc_y + HDR + 2 * PITCH, CARD_W, 260,
-     f"## Sortech\n\nStatus: {disc['Sortech']['status']}\nType: VENDOR EVALUATION (discovery item)", C_AMBER)
-text("poc-quanskill", PX + 100, poc_y + HDR + 2 * PITCH + 300, CARD_W, 260,
-     f"## Quanskill\n\nStatus: {disc['Quanskill']['status']}\nType: VENDOR EVALUATION (discovery item)\n"
-     "Not yet an approved implementation project.", C_AMBER)
+registry_link = "[[03_Projects/_Registry/PPJ_DISCOVERY_REGISTER|{}]]" if (VAULT / "03_Projects/_Registry/PPJ_DISCOVERY_REGISTER.md").exists() else "{}"
+poc_items: list[tuple[str, str]] = []          # (node id, kind) in grid order
+
+
+def discovery_card(d: dict, x: int, y: int) -> str:
+    nid = "poc-" + slug(d["label"])
+    qs = d.get("open_questions") or []
+    lines = ["## " + registry_link.format(d["label"]), "", f"Status: {d['status']}",
+             "Type: VENDOR EVALUATION (discovery item, not a project)", "",
+             "Scope: " + " ".join((d.get("scope") or "").split())[:230]]
+    if qs:
+        lines.append("Open: " + "; ".join(qs[:4]) + (" ..." if len(qs) > 4 else ""))
+    lines.append("No operational integration assumed.")
+    text(nid, x, y, CARD_W, CARD_H, "\n".join(lines), C_AMBER)
+    return nid
+
+
+def candidate_card(p: dict, x: int, y: int) -> str:
+    nid = "poc-cand-" + slug(p["code"])
+    target = p.get("link_target") or ""
+    title = f"[[{target}|{p['code']}]]" if target and (VAULT / (target + ".md")).exists() else p["code"]
+    text(nid, x, y, CARD_W, CARD_H,
+         f"## {title}\n\nStatus: {p['lifecycle']}\nType: CANDIDATE (not a registered project)\n\n"
+         f"Capability: {' '.join((p.get('outcome') or '').split())[:200]}\nCanonical code not confirmed.", C_AMBER)
+    return nid
+
+
+discoveries = list(snap.get("discovery", []))
+candidates = [p for p in snap["projects"] if p.get("candidate")]
+first = [d for d in discoveries if d["label"] == "DISCOVERY_PatternGenerationPoC"]
+rest = [d for d in discoveries if d["label"] != "DISCOVERY_PatternGenerationPoC"]
+slots: list[tuple[str, object]] = [("d", d) for d in first] + [("p", c) for c in zone_codes("POC")] \
+    + [("c", c) for c in candidates] + [("d", d) for d in rest]
+poc_h = HDR + max(1, math.ceil(len(slots) / 2)) * PITCH
+group("grp-poc", PX, poc_y, PW, poc_h, "06 POC / VENDOR EVALUATION (evaluation only)")
+for i, (k, item) in enumerate(slots):
+    x, y = PX + 100 + (i % 2) * (CARD_W + 100), poc_y + HDR + (i // 2) * PITCH
+    if k == "d":
+        discovery_card(item, x, y)
+    elif k == "p":
+        card(item, x, y)
+    else:
+        candidate_card(item, x, y)
 
 # legend (far left, below PoC)
-ly = poc_y + 1700 + GAP
+ly = poc_y + poc_h + GAP
 group("grp-legend", PX, ly, PW, 2320, "09 LEGEND")
 text("legend-nodes", PX + 100, ly + HDR, PW - 200, 700,
      "## NODE CATEGORIES\n\n"
@@ -545,9 +611,10 @@ text("legend-status", PX + 100, ly + HDR + 1480, PW - 200, 680,
 
 # ======================================================== FAR-RIGHT PERIPHERY
 QX, QW = 9600, 3200
-qy = column_group("grp-collab", "07 EXTERNAL COLLABORATION", QX, 0, 1650, ["EXT_AcademicCollaboration_v1.1.0"])
-qy = column_group("grp-arch", "08 ARCHIVED / CLOSED ENABLEMENT", QX, qy + GAP, 1650,
-                  ["AI.Automation.Workshop.202606", "AI.Automation.Workshop.Analysis.202606", "VITAS.Sharing.202606"])
+qy = column_group("grp-collab", "07 EXTERNAL COLLABORATION", QX, 0, 1650, zone_codes("COLLAB"))
+qy = column_group("grp-arch", "08 ARCHIVED / CLOSED ENABLEMENT", QX, qy + GAP, 1650, zone_codes("ARCH"))
+if zone_codes("NEW"):
+    qy = column_group("grp-new", "04.11 NEW / UNCLASSIFIED (not yet curated)", QX, qy + GAP, 1650, zone_codes("NEW"))
 guide_y = qy + GAP
 text("guide", QX, guide_y, QW, 1100,
      "## ARCHITECTURE INTERPRETATION GUIDE\n\n"
@@ -565,7 +632,7 @@ GAPS = [
      "decision still open: confirm the mapping and whether the earlier Export exclusion applies.\n\n"
      "Drawn as one node (vault registry outranks the baseline). Both baseline names are kept on the card.\n\n"
      "Vault also holds two closed records outside the baseline: EXIM.ExpenseInvoices.Automation.v1.1 and "
-     "AI.Automation.Workshop.Analysis.202606 - hence 36 records here."),
+     "AI.Automation.Workshop.Analysis.202606 - hence 36 records at the time of writing."),
     ("gap-2", "DATA / GOVERNANCE GAP 2 - Canonical codes and status\n\n"
      "ACC.GRNInvoiceMatching.v2.3 (baseline) vs ACC_GRNSupplierInvoiceBot_v2.3.0 (vault canonical). The vault says the "
      "GRNInvoiceMatching name is misleading; the canonical code is used.\n\n"
@@ -588,8 +655,7 @@ GAPS = [
      "Status counts: baseline buckets and the recomputed buckets differ (e.g. UAT and Analysis are one bucket here), so the "
      "two rows are not directly comparable."),
 ]
-gh_total = HDR + len(GAPS) * 540 + 0
-group("grp-gap", QX, gap_y, QW, gh_total, "DATA / GOVERNANCE GAP")
+group("grp-gap", QX, gap_y, QW, HDR + len(GAPS) * 540, f"DATA / GOVERNANCE GAP (curated notes, written {RECONCILED})")
 for i, (gid, body) in enumerate(GAPS):
     text(gid, QX + 100, gap_y + HDR + i * 540, QW - 200, 500, body)
 
@@ -626,7 +692,7 @@ edge(S("HR_EmployeeDataPlatform_v1.1.0"), "tp-hris", "C", "employee master data"
 edge(S("ADMIN_ExpenseManagement_v1.1.0"), "tp-e-office", "B", "E-office integration in scope, not confirmed delivered", "left", "right")
 edge(S("ADMIN_ExpenseManagement_v1.1.0"), "tp-hris", "C", "HR / master data", "left", "right")
 edge(S("FIN_FinanceManagement_v1.2.0"), "wfx-finance", "D", "WFX Finance data", "left", "right")
-edge(S("FIN_FinanceManagement_v1.2.0"), "data-dwh", "D", "DWH / Databricks source", "left", "right")  # right socket: corridor is free
+edge(S("FIN_FinanceManagement_v1.2.0"), "data-dwh", "D", "DWH / Databricks source", "left", "right")
 edge(S("FIN_FinanceManagement_v1.2.0"), "tp-power-bi", "D", "Power BI reporting source", "left", "right")
 edge(S("FIN_FinanceManagement_v1.2.0"), "gtas-bi-report", "D", "GTAS BI source", "left", "right")
 edge(S("FIN_FinanceManagement_v1.2.0"), "gtas-financial-statements", "D", "financial statements source", "left", "right")
@@ -648,7 +714,9 @@ edge("wfx-core", "data-dwh", "D", "operational transactions ingested", "bottom",
 edge(S("FAB_FabricDatamart_v2.2.0"), S("TD_TechnicalKnowledgePlatform_v2.1.0"), "D", "fabric data", "left", "right")
 edge(S("CPD_VisualSampleDatamart_v1.1.0"), S("TD_TechnicalKnowledgePlatform_v2.1.0"), "D", "visual sample data", "top", "bottom")
 edge(S("TD_TechnicalKnowledgePlatform_v2.1.0"), "data-technical-knowledge", "D", "same capability", "top", "bottom")
-edge("poc-cpd-candidate", "poc-discovery-pattern", "D", "internal benchmark", "top", "bottom")
+if "poc-discovery-patterngenerationpoc" in ids and candidates:
+    edge("poc-cand-" + slug(candidates[0]["code"]), "poc-discovery-patterngenerationpoc", "D", "internal benchmark", "top", "bottom")
+
 
 # ================================================================= VALIDATION
 def sock(nid, side):
@@ -661,7 +729,7 @@ def seg_hits_rect(p, q, r, pad=6):
     x0, y0, x1, y1 = x - pad, y - pad, x + w + pad, y + h + pad
     t0, t1 = 0.0, 1.0
     dx, dy = q[0] - p[0], q[1] - p[1]
-    for pp, qq, lo, hi in ((-dx, p[0] - x0, 0, 0), (dx, x1 - p[0], 0, 0), (-dy, p[1] - y0, 0, 0), (dy, y1 - p[1], 0, 0)):
+    for pp, qq in ((-dx, p[0] - x0), (dx, x1 - p[0]), (-dy, p[1] - y0), (dy, y1 - p[1])):
         if pp == 0:
             if qq < 0:
                 return False
@@ -678,17 +746,13 @@ def seg_hits_rect(p, q, r, pad=6):
     return t0 <= t1
 
 
-problems: list[str] = []
-# 1 ids / edge endpoints
 for e in edges:
     for k in ("fromNode", "toNode"):
         if e[k] not in ids:
             problems.append(f"orphan edge {e['id']}")
-# 2 project nodes: exactly once each
 proj_nodes = [i for i in ids if i.startswith("proj-")]
-if len(proj_nodes) != 36 or len(set(proj_nodes)) != 36:
-    problems.append(f"project node count {len(proj_nodes)} != 36")
-# 3 overlap among non-group nodes
+if len(set(proj_nodes)) != len(registered) or len(proj_nodes) != len(registered):
+    problems.append(f"project nodes {len(proj_nodes)} != registered records {len(registered)}")
 leafs = [i for i in ids if kind[i] != "group"]
 for i, a in enumerate(leafs):
     ax, ay, aw, ah = rect[a]
@@ -696,55 +760,75 @@ for i, a in enumerate(leafs):
         bx, by, bw, bh = rect[b]
         if ax < bx + bw and bx < ax + aw and ay < by + bh and by < ay + ah:
             problems.append(f"overlap {a} / {b}")
-# 4 leaf must sit inside exactly one group (or none for title-zone nodes)
 groups = [i for i in ids if kind[i] == "group"]
 for a in leafs:
     ax, ay, aw, ah = rect[a]
-    if ay < -200 or a in ("guide", "flow-labels"):   # standalone panels by design
+    if ay < -200 or a in ("guide", "flow-labels"):   # title zone and standalone panels by design
         continue
     inside = [g for g in groups if rect[g][0] <= ax and ax + aw <= rect[g][0] + rect[g][2]
               and rect[g][1] <= ay and ay + ah <= rect[g][1] + rect[g][3]]
     if len(inside) != 1:
         problems.append(f"{a} inside {len(inside)} groups")
-# 5 groups must not overlap each other
 for i, a in enumerate(groups):
     ax, ay, aw, ah = rect[a]
     for b in groups[i + 1:]:
         bx, by, bw, bh = rect[b]
         if ax < bx + bw and bx < ax + aw and ay < by + bh and by < ay + ah:
             problems.append(f"group overlap {a} / {b}")
-# 6 edges must not run through a third-party leaf node
-for e in edges:
+for e in edges:                       # an edge running behind a card misleads, but it should not stop the sync
     if e.get("_curve"):
         continue
     p, q = sock(e["fromNode"], e["fromSide"]), sock(e["toNode"], e["toSide"])
     for n in leafs:
-        if n in (e["fromNode"], e["toNode"]):
-            continue
-        if seg_hits_rect(p, q, rect[n]):
-            problems.append(f"edge {e['fromNode']} -> {e['toNode']} crosses {n}")
+        if n not in (e["fromNode"], e["toNode"]) and seg_hits_rect(p, q, rect[n]):
+            notices.append(f"edge {e['fromNode']} -> {e['toNode']} crosses {n}")
             break
 for e in edges:
     e.pop("_curve", None)
 
 ordered = [n for n in nodes if n["type"] == "group"] + [n for n in nodes if n["type"] != "group"]
-doc = {"nodes": ordered, "edges": edges, "metadata": {"version": "1.0-1.0", "frontmatter": {}}}
-payload = json.dumps(doc, ensure_ascii=False, indent=2) + "\n"
+payload = json.dumps({"nodes": ordered, "edges": edges, "metadata": {"version": "1.0-1.0", "frontmatter": {}}},
+                     ensure_ascii=False, indent=2) + "\n"
 json.loads(payload)  # must parse
+
+
+def write_if_changed(path: Path, data: str) -> str:
+    """LF endings on every OS, atomic replace, and no write at all when nothing changed."""
+    raw = data.encode("utf-8")
+    if path.exists() and path.read_bytes() == raw:
+        return "unchanged"
+    tmp = path.with_name(path.name + ".ppj-sync-tmp")        # gitignored suffix
+    tmp.write_bytes(raw)
+    os.replace(tmp, path)
+    return "written"
+
 
 report = {
     "nodes": len(ordered), "edges": len(edges), "project_nodes": len(proj_nodes),
     "wfx_modules": len(wfx_left) + len(wfx_right), "third_party": len(tp_nodes),
     "gtas": sum(len(c) for c in gtas_layout),
     "links_missing": [c for c in P if resolve_link(projects[c]) is None],
-    "warnings": warnings, "problems": problems, "classes": cur,
+    "notices": notices, "problems": problems, "classes": cur,
     "bbox": (min(r[0] for r in rect.values()), min(r[1] for r in rect.values()),
              max(r[0] + r[2] for r in rect.values()), max(r[1] + r[3] for r in rect.values())),
 }
-if "--write" in sys.argv:
-    OUT.write_text(payload, encoding="utf-8")
-    report["written"] = str(OUT)
+exit_code = 0
+if problems:
+    report["result"] = "BLOCKED - canvas not written"
+    exit_code = 2
+elif "--write" in sys.argv:
+    report["result"] = write_if_changed(OUT, payload)
+    report["path"] = str(OUT)
+else:
+    report["result"] = "dry run - would write" if not OUT.exists() or OUT.read_bytes() != payload.encode("utf-8") \
+        else "dry run - up to date"
 if "--layout-json" in sys.argv:   # optional: geometry dump for a layout preview
-    Path(sys.argv[sys.argv.index("--layout-json") + 1]).write_text(
-        json.dumps({"rect": rect, "kind": kind, "edges": edges}), "utf-8")
-print(json.dumps(report, indent=2, ensure_ascii=False))
+    Path(_arg("--layout-json")).write_text(json.dumps({"rect": rect, "kind": kind, "edges": edges}), "utf-8")
+
+if "--quiet" in sys.argv:
+    tail = f"; {len(problems)} problem(s): {'; '.join(problems[:3])}" if problems else ""
+    print(f"ecosystem canvas: {report['result']} ({len(proj_nodes)} projects, {len(edges)} edges, "
+          f"{len(notices)} notice(s)){tail}")
+else:
+    print(json.dumps(report, indent=2, ensure_ascii=False))
+sys.exit(exit_code)

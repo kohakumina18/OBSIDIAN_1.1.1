@@ -207,7 +207,7 @@ PPJ_Enterprise_Application_AI_Automation_Ecosystem.canvas
 → five-layer enterprise architecture: business, WFX, third-party, PPJ apps, Data/AI/Automation
 
 PPJ_Digital_Application_AI_Automation_Ecosystem.canvas
-→ executive ecosystem view: WFX (16 modules), third-party, GTAS (16 applications), data foundation and all registered AI / Automation projects by business domain; every line labelled INTEGRATION / PLANNED / DATA / AFFINITY. Systems inventory source: 02_BA_Knowledge/Enterprise_Architecture/PPJ_Operational_Systems_Landscape.md. Generated from the portfolio snapshot, not synchronized by the Executive Canvas watcher - regenerate after a project is added, renamed or changes status.
+→ executive ecosystem view: WFX (16 modules), third-party, GTAS (16 applications), data foundation and all registered AI / Automation projects by business domain; every line labelled INTEGRATION / PLANNED / DATA / AFFINITY. Systems inventory source: 02_BA_Knowledge/Enterprise_Architecture/PPJ_Operational_Systems_Landscape.md. Generated from the portfolio snapshot and kept in sync automatically (see "Ecosystem Canvas auto-sync" in section 5); do not hand-edit it, the next run overwrites the file.
 
 PPJ_Project_Process_Map.canvas
 → one process card per registered project: input/trigger, processing steps, human control and final output
@@ -291,6 +291,21 @@ On the Ubuntu vault, `ppj-executive-canvas-watcher.service` normally performs th
 On the Windows vault (`D:\PPJ\syncing`), the scheduled task **PPJ Executive Canvas Watcher** does the same job, registered by `scripts/Register-PPJCanvasWatcherTask.ps1`. It starts a minute after logon and runs `scripts/Start-PPJCanvasWatcher.ps1`, which launches the watcher in `--apply` mode and logs to `.git\canvas-watcher.log`. The launcher refuses to start if a watcher is already running, for the same reason the Ubuntu service does: two watchers would race on the same Canvas and snapshot.
 
 Task Scheduler has no equivalent to systemd's `Restart=always` for a process that dies outside its control (a crash, a manual kill, a reboot mid-run), so the task also carries a second trigger: a supervisor tick every 5 minutes that just runs the launcher again. Since the launcher is already idempotent, a tick either no-ops (watcher alive) or starts a fresh watcher (watcher dead) - the same self-healing as the Linux service, within 5 minutes instead of 5 seconds.
+
+## Ecosystem Canvas auto-sync
+
+`PPJ_Digital_Application_AI_Automation_Ecosystem.canvas` is generated from the portfolio snapshot by `scripts/build_ppj_ecosystem_canvas.py`. The same watcher process that syncs the Executive Canvas keeps it current: in `--apply` mode it also watches the snapshot file, and about two seconds after the snapshot changes it runs the builder with `--write`. That covers every way the snapshot can change - a card edit applied by this watcher, `register_ppj_project.py`, a rename, or a `git pull` that brings in another device's snapshot. `--no-ecosystem` turns it off.
+
+Safe to run on every device at once:
+
+```text
+- dates come from the snapshot, never from the clock
+- the file is written with LF endings, atomically, and only when its bytes change
+- every device that has the same snapshot produces the identical file, so git never sees a conflict
+- a failed structural check (duplicate ids, orphan edges, overlaps, a missing project) leaves the previous file in place
+```
+
+A project the builder's curated table does not know - new, or renamed - is still placed, by its Primary Domain, on a generic card (an unknown domain goes to the `04.11 NEW / UNCLASSIFIED` group). Its curated card, and any lines drawn from it, come back once the table in `build_ppj_ecosystem_canvas.py` is updated; the run prints a notice for each such project. After pulling a new `watch_ppj_executive_canvas.py` the watcher must be restarted to load it (Windows: end the python watcher and the supervisor tick starts it again; Ubuntu: `systemctl --user restart ppj-executive-canvas-watcher.service`).
 
 ## Editing card text directly
 
