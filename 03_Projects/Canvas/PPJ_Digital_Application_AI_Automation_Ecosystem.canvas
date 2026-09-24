@@ -1,0 +1,1643 @@
+{
+  "nodes": [
+    {
+      "id": "grp-mer",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "width": 1650,
+      "height": 1840,
+      "label": "04.2 MERCHANDISING"
+    },
+    {
+      "id": "grp-src",
+      "type": "group",
+      "x": 0,
+      "y": 2020,
+      "width": 1650,
+      "height": 2680,
+      "label": "04.1 SOURCING / PURCHASING"
+    },
+    {
+      "id": "grp-whl",
+      "type": "group",
+      "x": 0,
+      "y": 4880,
+      "width": 1650,
+      "height": 1000,
+      "label": "04.6 WAREHOUSE / LOGISTICS"
+    },
+    {
+      "id": "grp-hr",
+      "type": "group",
+      "x": 7650,
+      "y": 0,
+      "width": 1650,
+      "height": 580,
+      "label": "04.8 HR"
+    },
+    {
+      "id": "grp-admin",
+      "type": "group",
+      "x": 7650,
+      "y": 760,
+      "width": 1650,
+      "height": 580,
+      "label": "04.9 ADMINISTRATION"
+    },
+    {
+      "id": "grp-fin",
+      "type": "group",
+      "x": 7650,
+      "y": 1520,
+      "width": 1650,
+      "height": 2260,
+      "label": "04.3 FINANCE / ACCOUNTING"
+    },
+    {
+      "id": "grp-qc",
+      "type": "group",
+      "x": 7650,
+      "y": 3960,
+      "width": 1650,
+      "height": 1000,
+      "label": "04.5 QC / TQM"
+    },
+    {
+      "id": "grp-prod",
+      "type": "group",
+      "x": 7650,
+      "y": 5140,
+      "width": 1650,
+      "height": 1420,
+      "label": "04.4 PRODUCTION + WASH"
+    },
+    {
+      "id": "grp-shared",
+      "type": "group",
+      "x": 1950,
+      "y": 0,
+      "width": 5400,
+      "height": 840,
+      "label": "04.10 SHARED AI PLATFORMS (enterprise capabilities, not domain apps)",
+      "color": "#d81b60"
+    },
+    {
+      "id": "grp-gtas",
+      "type": "group",
+      "x": 1950,
+      "y": 1020,
+      "width": 5400,
+      "height": 840,
+      "label": "03 GTAS INTERNAL APPLICATIONS - Legacy Internal Development",
+      "color": "#5c6bc0"
+    },
+    {
+      "id": "grp-3p",
+      "type": "group",
+      "x": 1950,
+      "y": 2040,
+      "width": 5400,
+      "height": 1360,
+      "label": "02 THIRD-PARTY ENTERPRISE APPLICATIONS",
+      "color": "#a0522d"
+    },
+    {
+      "id": "grp-wfx",
+      "type": "group",
+      "x": 1950,
+      "y": 3580,
+      "width": 5400,
+      "height": 1520,
+      "label": "01 WFX ERP CORE - Core Enterprise Transaction System",
+      "color": "6"
+    },
+    {
+      "id": "grp-data",
+      "type": "group",
+      "x": 1950,
+      "y": 5280,
+      "width": 5400,
+      "height": 580,
+      "label": "05 DATA / KNOWLEDGE FOUNDATION",
+      "color": "#26a69a"
+    },
+    {
+      "id": "grp-fab",
+      "type": "group",
+      "x": 1950,
+      "y": 6040,
+      "width": 3400,
+      "height": 1000,
+      "label": "04.7 FABRIC / TEXTILES TECHNIQUE"
+    },
+    {
+      "id": "grp-poc",
+      "type": "group",
+      "x": -3900,
+      "y": 2040,
+      "width": 3200,
+      "height": 1700,
+      "label": "06 POC / VENDOR EVALUATION (dashed = evaluation only)"
+    },
+    {
+      "id": "grp-legend",
+      "type": "group",
+      "x": -3900,
+      "y": 3920,
+      "width": 3200,
+      "height": 2320,
+      "label": "09 LEGEND"
+    },
+    {
+      "id": "grp-collab",
+      "type": "group",
+      "x": 9600,
+      "y": 0,
+      "width": 1650,
+      "height": 580,
+      "label": "07 EXTERNAL COLLABORATION"
+    },
+    {
+      "id": "grp-arch",
+      "type": "group",
+      "x": 9600,
+      "y": 760,
+      "width": 1650,
+      "height": 1420,
+      "label": "08 ARCHIVED / CLOSED ENABLEMENT"
+    },
+    {
+      "id": "grp-gap",
+      "type": "group",
+      "x": 9600,
+      "y": 3640,
+      "width": 3200,
+      "height": 2320,
+      "label": "DATA / GOVERNANCE GAP"
+    },
+    {
+      "id": "eco-title",
+      "type": "text",
+      "x": 0,
+      "y": -1500,
+      "width": 9300,
+      "height": 240,
+      "text": "# PPJ GROUP\n## Digital Application, AI & Automation Ecosystem"
+    },
+    {
+      "id": "eco-subtitle",
+      "type": "text",
+      "x": 0,
+      "y": -1230,
+      "width": 9300,
+      "height": 260,
+      "text": "ERP -> Enterprise Applications -> Internal Systems -> AI & Automation\n\nPortfolio Baseline: 19/09/2026  |  Vault Reconciliation: 24/09/2026\nGenerated From: PPJ AI & Automation Portfolio (vault registry) + PPJ operating-systems landscape ([[02_BA_Knowledge/Enterprise_Architecture/PPJ_Operational_Systems_Landscape|Operational Systems Landscape]])"
+    },
+    {
+      "id": "eco-exec-summary",
+      "type": "text",
+      "x": 0,
+      "y": -940,
+      "width": 3000,
+      "height": 640,
+      "text": "## PPJ DIGITAL EVOLUTION\n\n1. WFX provides the ERP transaction backbone.\n2. Third-party enterprise applications provide specialized capabilities.\n3. GTAS applications were built internally to fill operational capability gaps.\n4. AI & Automation projects now add an intelligence and automation layer across existing processes.\n5. Shared data, knowledge and AI platforms increasingly serve reusable cross-functional capabilities.\n6. AI does not replace the ERP; it augments ERP, enterprise systems and business decision-making."
+    },
+    {
+      "id": "eco-principles",
+      "type": "text",
+      "x": 3200,
+      "y": -940,
+      "width": 3000,
+      "height": 640,
+      "text": "## ARCHITECTURE PRINCIPLES\n\n- WFX remains core ERP / transaction backbone.\n- AI projects augment rather than duplicate source systems.\n- System of record must remain explicit.\n- Prefer API-based integration where available.\n- Business affinity does not imply technical integration.\n- Human review remains required for uncertain AI decisions.\n- Reusable data / knowledge layers serve multiple projects.\n- Shared AI services reduce duplicate implementations.\n- Status and lifecycle are independent from business domain."
+    },
+    {
+      "id": "eco-inventory",
+      "type": "text",
+      "x": 6400,
+      "y": -940,
+      "width": 2900,
+      "height": 640,
+      "text": "## PORTFOLIO INVENTORY\n\nBaseline 19/09/2026 (35 initiatives):\nActive / Dev 16 | Production 6 | Maintenance 4 | Closed 4 | On Hold 3 | Evaluation 2\n\nCurrent Vault 24/09/2026 (36 registered records, recomputed):\nProduction 7 | Active / Dev 10 | UAT / Eval / Analysis 5 | Maintenance 4 | On Hold 3 | Closed 7\n\nBaseline is kept unchanged. Bucket definitions differ - see the gap notes."
+    },
+    {
+      "id": "proj-mer-costingagenticplatform-v1-1-0",
+      "type": "text",
+      "x": 100,
+      "y": 160,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/PPJ.COSTING.AGENT.PLATFORM.v1.1|MER_CostingAgenticPlatform_v1.1.0]]\n\nAgentic Costing Platform\n\nDomain: Merchandising\nType: AI APPLICATION (agents / decision support)\nStatus: Active Development\nBaseline code: COSTING.AGENTIC.PLATFORM.v1.1\n\nCapability: Costing and quotation package: Sew Agent, Wash Agent, BOM, consumption, similar style. AI proposes, domain expert approves.",
+      "color": "5"
+    },
+    {
+      "id": "proj-mer-marketintelligence-v1-1-0",
+      "type": "text",
+      "x": 100,
+      "y": 580,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/E-commerce Market Intelligence v.2.3|MER_MarketIntelligence_v1.1.0]]\n\nMarket Intelligence\n\nDomain: Merchandising\nType: AI APPLICATION (data intelligence)\nStatus: Active Intelligence\nBaseline code: MER.MARKET.INTELLIGENCE.v1.1\n\nCapability: Market, customer, product and material opportunity signals from external data and internal history.\nIntelligence layer - not a system of record.\nData input: Enterprise Data / DWH and sales / PO / fabric history (no edge drawn - see guide).",
+      "color": "5"
+    },
+    {
+      "id": "proj-mer-invoicedatarecheck-v1-1-0",
+      "type": "text",
+      "x": 100,
+      "y": 1000,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1|MER_InvoiceDataRecheck_v1.1.0]]\n\nInvoice Data Recheck\n\nDomain: Merchandising\nType: AUTOMATION (audit / rule engine)\nStatus: Active\nBaseline code: MER.INVOICE.DATA.RECHECK.v1.1\n\nCapability: Cross-check costing, commercial and invoice data with configurable customer rule packs; exceptions go to human review.",
+      "color": "5"
+    },
+    {
+      "id": "proj-mer-pocommit-v1-1-0",
+      "type": "text",
+      "x": 100,
+      "y": 1420,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/MER.PO-Commit|MER_POCommit_v1.1.0]]\n\nPO Commit Automation\n\nDomain: Merchandising\nType: AUTOMATION\nStatus: Closed\nBaseline code: MER.PO.Commit.v1.1\n\nCapability: Customer order to MER PO creation; about 70-80% of customer scenarios covered. Historical record.",
+      "color": "#8c8c8c"
+    },
+    {
+      "id": "proj-scp-sourcingchatbot-v2-3-0",
+      "type": "text",
+      "x": 100,
+      "y": 2180,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/SCP.SOURCING.CHATBOT.v2.3|SCP_SourcingChatbot_v2.3.0]]\n\nSourcing AI Chatbot\n\nDomain: Sourcing / Purchasing\nType: AI APPLICATION (RAG / chatbot)\nStatus: Production\nBaseline code: SCP.SOURCING.CHATBOT.v2.3\n\nCapability: Supplier, material and sample search, comparison and sourcing knowledge retrieval.",
+      "color": "4"
+    },
+    {
+      "id": "proj-pur-adhocindentsouth-v1-0-0",
+      "type": "text",
+      "x": 100,
+      "y": 2600,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/PUR.Adhoc Indent mien Nam|PUR_AdhocIndentSouth_v1.0.0]]\n\nAdhoc Indent Automation (South)\n\nDomain: Sourcing / Purchasing\nType: AUTOMATION (rule-based)\nStatus: Maintenance\nBaseline code: PUR.Adhoc.Indent.South.v1.0\n\nCapability: Repeated Adhoc Indent processing for the South region; WFX compatibility.",
+      "color": "#6f8fa8"
+    },
+    {
+      "id": "proj-pur-hmlabelprocessing-v1-0-0",
+      "type": "text",
+      "x": 100,
+      "y": 3020,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/PUR.H&M Label-O Processing|PUR_HMLabelProcessing_v1.0.0]]\n\nH&M Label-O Processing\n\nDomain: Sourcing / Purchasing\nType: AUTOMATION (rule-based)\nStatus: On Hold\nBaseline code: PUR.HM.LabelO.Processing.Automation.v1.0\n\nCapability: H&M Label-O processing; paused pending a scalable business case.",
+      "color": "2"
+    },
+    {
+      "id": "proj-pur-inventoryreport-v2-1-0",
+      "type": "text",
+      "x": 100,
+      "y": 3440,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/PUR.Inventory Report|PUR_InventoryReport_v2.1.0]]\n\nPurchasing Inventory Report\n\nDomain: Sourcing / Purchasing\nType: DATA PLATFORM (reporting / visibility)\nStatus: Production\nBaseline code: PUR.Inventory.Report.v2.1\n\nCapability: Purchasing inventory and material visibility. A data-visibility layer, not an automation bot.",
+      "color": "4"
+    },
+    {
+      "id": "proj-pur-materialallocation-v1-1-0",
+      "type": "text",
+      "x": 100,
+      "y": 3860,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/PUR.Material.Allocation.v1.2|PUR_MaterialAllocation_v1.1.0]]\n\nMaterial Allocation Automation\n\nDomain: Sourcing / Purchasing\nType: AUTOMATION (workflow / transaction)\nStatus: Validation / Stabilization\nBaseline code: PUR.Material.Allocation.v1.1\n\nCapability: Surplus-material unreserve and reallocation across OCs. First Sewing / Embroidery flow validated.",
+      "color": "5"
+    },
+    {
+      "id": "proj-pur-gdiautomation-v1-0-0",
+      "type": "text",
+      "x": 100,
+      "y": 4280,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/PUR.GDI Automation|PUR_GDIAutomation_v1.0.0]]\n\nGDI Automation\n\nDomain: Sourcing / Purchasing\nType: AUTOMATION (API-first transaction)\nStatus: Active Development / WFX API Integration\nBaseline code: PUR.GDI.Automation.v1.0\n\nCapability: Goods dispatch / GDI data entry through WFX GET / POST APIs; API specification and UAT still ahead.\nSystem of Record: WFX.",
+      "color": "5"
+    },
+    {
+      "id": "proj-wh-awbextraction-v1-1-0",
+      "type": "text",
+      "x": 100,
+      "y": 5040,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/WH_AWBExtraction_v1.1.0|WH_AWBExtraction_v1.1.0]]\n\nAWB Document Intelligence\n\nDomain: Warehouse\nType: AI APPLICATION (document intelligence)\nStatus: Active Development\nBaseline code: WH.AWB.EXTRACTION.v1.1\n\nCapability: AWB image OCR and DHL email parsing into one validated canonical AWB record; human validation.",
+      "color": "5"
+    },
+    {
+      "id": "proj-log-expenseinvoiceprocessing-v1-2-2",
+      "type": "text",
+      "x": 100,
+      "y": 5460,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/PPJ. Expense-Invoices.v1.1|LOG_ExpenseInvoiceProcessing_v1.2.2]]\n\nExpense Invoice Processing\n\nDomain: Logistics / EXIM\nType: AUTOMATION (regional invoice)\nStatus: Regional Rollout / UAT\nBaseline code: PPJ.ExpenseInvoices.v1.1 + LOG.EXPENSE.INVOICES.V1.2 (one project in the vault)\n\nCapability: Logistics / EXIM expense invoices: regional and tax rules, validation, exceptions. Regions: HCM, Da Nang, Nha Trang, Ha Noi.\nMerged in the vault registry - see gap note 1.",
+      "color": "3"
+    },
+    {
+      "id": "proj-hr-employeedataplatform-v1-1-0",
+      "type": "text",
+      "x": 7750,
+      "y": 160,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/HR.SS&PFD.v1.1|HR_EmployeeDataPlatform_v1.1.0]]\n\nHR Employee Data Platform\n\nDomain: HR\nType: WORKFLOW (data standardization)\nStatus: Production / Expansion\nBaseline code: HR.SSPFD.Workflow.v1.1\n\nCapability: Employee data collection, validation and standardization into an Employee Master; applicant extraction / prefill.",
+      "color": "4"
+    },
+    {
+      "id": "proj-admin-expensemanagement-v1-1-0",
+      "type": "text",
+      "x": 7750,
+      "y": 920,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/ADMIN_ExpenseManagement_v1.1.0|ADMIN_ExpenseManagement_v1.1.0]]\n\nBusiness Travel & Expense Management\n\nDomain: Administration\nType: WORKFLOW\nStatus: Active / Requirement Refinement / UAT Preparation\nBaseline code: Admin Expense Management.v1.1\n\nCapability: Request, approval, trip, advance, expense, settlement; multi-traveler requests. E-office integration is in scope.",
+      "color": "3"
+    },
+    {
+      "id": "proj-fin-financemanagement-v1-2-0",
+      "type": "text",
+      "x": 7750,
+      "y": 1680,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/FIN.AI.FINANCE.MANAGEMENT.v1.1|FIN_FinanceManagement_v1.2.0]]\n\nFinance AI Management\n\nDomain: Finance / Accounting\nType: AI APPLICATION (finance analytics platform)\nStatus: Strategic Active\nBaseline code: FIN.AI.FINANCE.MANAGEMENT.v1.2\n\nCapability: WS1 financial Q&A; WS2 OC cost and profitability control; WS3 factory cost integrity. Cross-system finance intelligence.\nData sources: WFX + DWH + GTAS / BI sources. Not a financial system of record.",
+      "color": "5"
+    },
+    {
+      "id": "proj-fin-invoicedownloader-v1-2-0",
+      "type": "text",
+      "x": 7750,
+      "y": 2100,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/PPJ.Invoice Downloader.v1.2|FIN_InvoiceDownloader_v1.2.0]]\n\nInvoice Downloader\n\nDomain: Finance / Accounting\nType: AUTOMATION\nStatus: Production\nBaseline code: PPJ.InvoiceDownloader.v1.2\n\nCapability: Downloads VNPT e-invoice files: session / cookie management and file retrieval. No accounting entry.",
+      "color": "4"
+    },
+    {
+      "id": "proj-acc-grnsupplierinvoicebot-v2-3-0",
+      "type": "text",
+      "x": 7750,
+      "y": 2520,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/ACC.GRN-SupplierInvoiceBot.v2.3|ACC_GRNSupplierInvoiceBot_v2.3.0]]\n\nGRN Supplier Invoice Bot\n\nDomain: Finance / Accounting\nType: AUTOMATION (transaction bot)\nStatus: Production Support\nBaseline code: ACC.GRNInvoiceMatching.v2.3 (vault calls this name misleading)\n\nCapability: Validation, business rules and automated data entry for GRN and supplier invoices.\nProcess affinity also: Logistics In-bound (GRN), Purchase Order Management.",
+      "color": "4"
+    },
+    {
+      "id": "proj-acc-inventoryreport-v1-0-0",
+      "type": "text",
+      "x": 7750,
+      "y": 2940,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/ACC.Inventory.Report.v1.0|ACC_InventoryReport_v1.0.0]]\n\nAccounting Inventory Report\n\nDomain: Finance / Accounting\nType: DATA PLATFORM (reporting)\nStatus: Closed\nBaseline code: ACC.Inventory.Report.v1.0\n\nCapability: Accounting inventory reporting. Distinct from the Purchasing Inventory Report.",
+      "color": "#8c8c8c"
+    },
+    {
+      "id": "proj-exim-expenseinvoices-automation-v1-1",
+      "type": "text",
+      "x": 7750,
+      "y": 3360,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/EXIM.ExpenseInvoices.Automation.v1.1|EXIM.ExpenseInvoices.Automation.v1.1]]\n\nEXIM Expense Invoice Bot (legacy)\n\nDomain: Finance / Accounting\nType: AUTOMATION\nStatus: Closed\n\nCapability: Legacy EXIM expense-invoice automation, replaced by LOG_ExpenseInvoiceProcessing_v1.2.2.\nNot in the 35-item baseline; present in the vault registry.",
+      "color": "#8c8c8c"
+    },
+    {
+      "id": "proj-qc-defectdetection-v1-0-0",
+      "type": "text",
+      "x": 7750,
+      "y": 4120,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/PPJxQSee.ai|QC_DefectDetection_v1.0.0]]\n\nAI Defect Detection\n\nDomain: QC / TQM\nType: AI APPLICATION (computer vision)\nStatus: On Hold\nBaseline code: PPJxQSee.AI\n\nCapability: Image, defect detection, classification, QC review. Vendor proposal and NDA only - not an approved PoC.\nStream: EXTERNAL DEVELOPMENT.",
+      "color": "2"
+    },
+    {
+      "id": "proj-qc-threadtraceability-v1-0-0",
+      "type": "text",
+      "x": 7750,
+      "y": 4540,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/PPJ XPrimo1D RFID Thread|QC_ThreadTraceability_v1.0.0]]\n\nRFID Thread Traceability\n\nDomain: QC / TQM\nType: POC / EVALUATION\nStatus: Pre-PoC / Business Case\nBaseline code: QC.Primo1D.RFID.Thread.v1.0\n\nCapability: RFID thread identification and traceability. Business case only; no PoC approved.\nStream: EXTERNAL DEVELOPMENT. No operational integration assumed.",
+      "color": "3"
+    },
+    {
+      "id": "proj-prod-hanginglineiot-v1-0-0",
+      "type": "text",
+      "x": 7750,
+      "y": 5300,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/PROD.IOT.CHuyenTreo_1|PROD_HangingLineIoT_v1.0.0]]\n\nHanging Line IoT\n\nDomain: Production + Wash\nType: IOT\nStatus: Development\nBaseline code: PROD.IOT.CHuyenTreo.v1.0\n\nCapability: Production hanging-line digitalization and monitoring. IoT / operational, not an LLM application.",
+      "color": "5"
+    },
+    {
+      "id": "proj-wash-samplingmanagement-v1-1-0",
+      "type": "text",
+      "x": 7750,
+      "y": 5720,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1|WASH_SamplingManagement_v1.1.0]]\n\nWash Sampling Management Portal\n\nDomain: Production + Wash\nType: WORKFLOW\nStatus: Analysis / Product Design\nBaseline code: WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1\n\nCapability: Wash sample request, planning, result and approval in the PPJ Group Portal.",
+      "color": "3"
+    },
+    {
+      "id": "proj-wash-cowash-v2-0-0",
+      "type": "text",
+      "x": 7750,
+      "y": 6140,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/PROD.COWASH|WASH_COWASH_v2.0.0]]\n\nCOWASH Wash Operations\n\nDomain: Production + Wash\nType: SYSTEM / APPLICATION (production wash platform)\nStatus: On Hold\nBaseline code: PROD.COWASH.v2.0\n\nCapability: Wash production workflow and operational data. Distinct from the sampling portal.",
+      "color": "2"
+    },
+    {
+      "id": "proj-ai-perriplatform-v3-2-0",
+      "type": "text",
+      "x": 2325,
+      "y": 160,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/PPJ.PERRI.Chatbot|AI_PERRIPlatform_v3.2.0]]\n\nPERRI Enterprise Chatbot\n\nDomain: Internal Chatbot & AI Platforms\nType: INTERNAL PLATFORM (shared AI channel)\nStatus: Production\nBaseline code: PPJ.PERRI.Chatbot.v3.2\n\nCapability: Enterprise Q&A and orchestration: intent, agent / tool, controlled response. Not a business-domain application.\nEnterprise knowledge access: no per-project dependency drawn.",
+      "color": "4"
+    },
+    {
+      "id": "proj-ai-applicationhub-v2-1-0",
+      "type": "text",
+      "x": 3925,
+      "y": 160,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/PPJ.AI.Hub.v2.1|AI_ApplicationHub_v2.1.0]]\n\nPPJ AI Hub\n\nDomain: Internal Chatbot & AI Platforms\nType: INTERNAL PLATFORM (shared AI access layer)\nStatus: Internal Production Platform\nBaseline code: PPJ.AI.Hub.v2.1\n\nCapability: AI application discovery, access and launch layer. Not the project registry.\nNo project is drawn as using AI Hub - none is confirmed.",
+      "color": "4"
+    },
+    {
+      "id": "proj-ppj-glpi-helpdesk-ai-chatbot-v1-0",
+      "type": "text",
+      "x": 5525,
+      "y": 160,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot|PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0]]\n\nGLPI Helpdesk AI Chatbot\n\nDomain: Internal Chatbot & AI Platforms\nType: AI APPLICATION (IT helpdesk)\nStatus: Maintenance\n\nCapability: IT helpdesk Q&A, troubleshooting, ERP support and resolved-issue knowledge. Separate from PERRI.",
+      "color": "#6f8fa8"
+    },
+    {
+      "id": "shared-note",
+      "type": "text",
+      "x": 2325,
+      "y": 580,
+      "width": 4650,
+      "height": 220,
+      "text": "Conceptual direction: business AI applications -> PPJ AI Hub -> shared AI services / governance / knowledge / models.\nEdges to AI Hub or PERRI are drawn only where documentation confirms use. None is confirmed today."
+    },
+    {
+      "id": "gtas-costing",
+      "type": "text",
+      "x": 2070,
+      "y": 1180,
+      "width": 1200,
+      "height": 130,
+      "text": "**GTAS Costing**\nstarred in the source diagram",
+      "color": "#5c6bc0"
+    },
+    {
+      "id": "gtas-ied",
+      "type": "text",
+      "x": 2070,
+      "y": 1350,
+      "width": 1200,
+      "height": 130,
+      "text": "**GTAS IED**",
+      "color": "#5c6bc0"
+    },
+    {
+      "id": "gtas-transportation",
+      "type": "text",
+      "x": 2070,
+      "y": 1520,
+      "width": 1200,
+      "height": 130,
+      "text": "**GTAS Transportation**",
+      "color": "#5c6bc0"
+    },
+    {
+      "id": "gtas-sampling",
+      "type": "text",
+      "x": 2070,
+      "y": 1690,
+      "width": 1200,
+      "height": 130,
+      "text": "**GTAS Sampling**",
+      "color": "#5c6bc0"
+    },
+    {
+      "id": "gtas-consumption",
+      "type": "text",
+      "x": 3390,
+      "y": 1180,
+      "width": 1200,
+      "height": 130,
+      "text": "**GTAS Consumption**",
+      "color": "#5c6bc0"
+    },
+    {
+      "id": "gtas-coats-integration",
+      "type": "text",
+      "x": 3390,
+      "y": 1350,
+      "width": 1200,
+      "height": 130,
+      "text": "**GTAS Coats Integration**",
+      "color": "#5c6bc0"
+    },
+    {
+      "id": "gtas-mixable",
+      "type": "text",
+      "x": 3390,
+      "y": 1520,
+      "width": 1200,
+      "height": 130,
+      "text": "**GTAS Mixable**",
+      "color": "#5c6bc0"
+    },
+    {
+      "id": "gtas-inventory",
+      "type": "text",
+      "x": 3390,
+      "y": 1690,
+      "width": 1200,
+      "height": 130,
+      "text": "**GTAS Inventory**",
+      "color": "#5c6bc0"
+    },
+    {
+      "id": "gtas-compliance",
+      "type": "text",
+      "x": 4710,
+      "y": 1180,
+      "width": 1200,
+      "height": 130,
+      "text": "**GTAS Compliance**",
+      "color": "#5c6bc0"
+    },
+    {
+      "id": "gtas-fqm",
+      "type": "text",
+      "x": 4710,
+      "y": 1350,
+      "width": 1200,
+      "height": 130,
+      "text": "**GTAS FQM**",
+      "color": "#5c6bc0"
+    },
+    {
+      "id": "gtas-qc",
+      "type": "text",
+      "x": 4710,
+      "y": 1520,
+      "width": 1200,
+      "height": 130,
+      "text": "**GTAS QC**",
+      "color": "#5c6bc0"
+    },
+    {
+      "id": "gtas-ecus",
+      "type": "text",
+      "x": 4710,
+      "y": 1690,
+      "width": 1200,
+      "height": 130,
+      "text": "**GTAS ECUS**",
+      "color": "#5c6bc0"
+    },
+    {
+      "id": "gtas-bi-report",
+      "type": "text",
+      "x": 6030,
+      "y": 1180,
+      "width": 1200,
+      "height": 130,
+      "text": "**GTAS BI Report**",
+      "color": "#5c6bc0"
+    },
+    {
+      "id": "gtas-financial-statements",
+      "type": "text",
+      "x": 6030,
+      "y": 1350,
+      "width": 1200,
+      "height": 130,
+      "text": "**GTAS Financial Statements**",
+      "color": "#5c6bc0"
+    },
+    {
+      "id": "gtas-production",
+      "type": "text",
+      "x": 6030,
+      "y": 1520,
+      "width": 1200,
+      "height": 130,
+      "text": "**GTAS Production**",
+      "color": "#5c6bc0"
+    },
+    {
+      "id": "gtas-salary",
+      "type": "text",
+      "x": 6030,
+      "y": 1690,
+      "width": 1200,
+      "height": 130,
+      "text": "**GTAS Salary**",
+      "color": "#5c6bc0"
+    },
+    {
+      "id": "tp-mmsx",
+      "type": "text",
+      "x": 2070,
+      "y": 2200,
+      "width": 1200,
+      "height": 160,
+      "text": "**MMSx**\nMaterial management\n(on the operating-systems diagram)",
+      "color": "#a0522d"
+    },
+    {
+      "id": "tp-gerber",
+      "type": "text",
+      "x": 2070,
+      "y": 2400,
+      "width": 1200,
+      "height": 160,
+      "text": "**Gerber**\nPattern / technical design (CAD)\n(on the operating-systems diagram)",
+      "color": "#a0522d"
+    },
+    {
+      "id": "tp-shapeshifter",
+      "type": "text",
+      "x": 2070,
+      "y": 2600,
+      "width": 1200,
+      "height": 160,
+      "text": "**ShapeShifter**\nTechnical / pattern / product development\n(on the operating-systems diagram)",
+      "color": "#a0522d"
+    },
+    {
+      "id": "tp-fastreactplan",
+      "type": "text",
+      "x": 3390,
+      "y": 2200,
+      "width": 1200,
+      "height": 160,
+      "text": "**FastReactPlan**\nProduction planning\n(on the operating-systems diagram)",
+      "color": "#a0522d"
+    },
+    {
+      "id": "tp-glpi",
+      "type": "text",
+      "x": 6030,
+      "y": 2200,
+      "width": 1200,
+      "height": 160,
+      "text": "**GLPI**\nHelpdesk / ITSM\n(vault-confirmed, not on the diagram)",
+      "color": "#a0522d"
+    },
+    {
+      "id": "tp-hris",
+      "type": "text",
+      "x": 6030,
+      "y": 2400,
+      "width": 1200,
+      "height": 160,
+      "text": "**HRIS**\nHuman Resources Information System\n(on the operating-systems diagram)",
+      "color": "#a0522d"
+    },
+    {
+      "id": "tp-e-office",
+      "type": "text",
+      "x": 6030,
+      "y": 2600,
+      "width": 1200,
+      "height": 160,
+      "text": "**E-office**\nDocument receiving, workflow, digital signing\n(on the operating-systems diagram)",
+      "color": "#a0522d"
+    },
+    {
+      "id": "tp-vnpt-e-invoice",
+      "type": "text",
+      "x": 6030,
+      "y": 2800,
+      "width": 1200,
+      "height": 160,
+      "text": "**VNPT E-Invoice**\nElectronic invoice source\n(vault-confirmed, not on the diagram)",
+      "color": "#a0522d"
+    },
+    {
+      "id": "tp-power-bi",
+      "type": "text",
+      "x": 6030,
+      "y": 3000,
+      "width": 1200,
+      "height": 160,
+      "text": "**Power BI**\nReporting / BI\n(vault-confirmed, not on the diagram)",
+      "color": "#a0522d"
+    },
+    {
+      "id": "tp-iot-wiser-ina",
+      "type": "text",
+      "x": 6030,
+      "y": 3200,
+      "width": 1200,
+      "height": 160,
+      "text": "**IoT / WISER / INA**\nMachine and production-line data\n(vault-confirmed, not on the diagram)",
+      "color": "#a0522d"
+    },
+    {
+      "id": "tp-note",
+      "type": "text",
+      "x": 3390,
+      "y": 2400,
+      "width": 2520,
+      "height": 560,
+      "text": "Six of these are drawn on the owner's operating-systems diagram: HRIS, E-office, MMSx, FastReactPlan, Gerber, ShapeShifter.\n\nVNPT E-Invoice, Power BI, GLPI and IoT / WISER / INA are confirmed by vault documents but are not on that diagram.\n\nOnly listed applications are drawn. No further vendor application is assumed."
+    },
+    {
+      "id": "wfx-buyer-order-management",
+      "type": "text",
+      "x": 2050,
+      "y": 3740,
+      "width": 1350,
+      "height": 130,
+      "text": "**Buyer Order Management**",
+      "color": "6"
+    },
+    {
+      "id": "wfx-budgeting-costing",
+      "type": "text",
+      "x": 2050,
+      "y": 3910,
+      "width": 1350,
+      "height": 130,
+      "text": "**Budgeting & Costing**",
+      "color": "6"
+    },
+    {
+      "id": "wfx-bill-of-material",
+      "type": "text",
+      "x": 2050,
+      "y": 4080,
+      "width": 1350,
+      "height": 130,
+      "text": "**Bill of Material**",
+      "color": "6"
+    },
+    {
+      "id": "wfx-raw-material-planning",
+      "type": "text",
+      "x": 2050,
+      "y": 4250,
+      "width": 1350,
+      "height": 130,
+      "text": "**Raw Material Planning**",
+      "color": "6"
+    },
+    {
+      "id": "wfx-purchase-order-management",
+      "type": "text",
+      "x": 2050,
+      "y": 4420,
+      "width": 1350,
+      "height": 130,
+      "text": "**Purchase Order Management**",
+      "color": "6"
+    },
+    {
+      "id": "wfx-inventory-control",
+      "type": "text",
+      "x": 2050,
+      "y": 4590,
+      "width": 1350,
+      "height": 130,
+      "text": "**Inventory Control**",
+      "color": "6"
+    },
+    {
+      "id": "wfx-logistics-in-bound",
+      "type": "text",
+      "x": 2050,
+      "y": 4760,
+      "width": 1350,
+      "height": 130,
+      "text": "**Logistics In-bound**",
+      "color": "6"
+    },
+    {
+      "id": "wfx-logistics-out-bound",
+      "type": "text",
+      "x": 2050,
+      "y": 4930,
+      "width": 1350,
+      "height": 130,
+      "text": "**Logistics Out-bound**",
+      "color": "6"
+    },
+    {
+      "id": "wfx-finance",
+      "type": "text",
+      "x": 5900,
+      "y": 3740,
+      "width": 1350,
+      "height": 130,
+      "text": "**Finance**",
+      "color": "6"
+    },
+    {
+      "id": "wfx-style-library",
+      "type": "text",
+      "x": 5900,
+      "y": 3910,
+      "width": 1350,
+      "height": 130,
+      "text": "**Style Library**",
+      "color": "6"
+    },
+    {
+      "id": "wfx-brandplm",
+      "type": "text",
+      "x": 5900,
+      "y": 4080,
+      "width": 1350,
+      "height": 130,
+      "text": "**BrandPLM**",
+      "color": "6"
+    },
+    {
+      "id": "wfx-sampling",
+      "type": "text",
+      "x": 5900,
+      "y": 4250,
+      "width": 1350,
+      "height": 130,
+      "text": "**Sampling**",
+      "color": "6"
+    },
+    {
+      "id": "wfx-qc",
+      "type": "text",
+      "x": 5900,
+      "y": 4420,
+      "width": 1350,
+      "height": 130,
+      "text": "**QC**",
+      "color": "6"
+    },
+    {
+      "id": "wfx-qa",
+      "type": "text",
+      "x": 5900,
+      "y": 4590,
+      "width": 1350,
+      "height": 130,
+      "text": "**QA**",
+      "color": "6"
+    },
+    {
+      "id": "wfx-production-planning",
+      "type": "text",
+      "x": 5900,
+      "y": 4760,
+      "width": 1350,
+      "height": 130,
+      "text": "**Production Planning**\nhighlighted in the source diagram",
+      "color": "6"
+    },
+    {
+      "id": "wfx-production-management",
+      "type": "text",
+      "x": 5900,
+      "y": 4930,
+      "width": 1350,
+      "height": 130,
+      "text": "**Production Management**",
+      "color": "6"
+    },
+    {
+      "id": "wfx-core",
+      "type": "text",
+      "x": 3500,
+      "y": 3740,
+      "width": 2300,
+      "height": 1320,
+      "text": "# WFX ERP\n\nCore Enterprise Transaction System\n\nReporting & Analysis\nTime & Action Tracking\nTextiles / Garments\n\n16 modules, named from the owner's operating-systems diagram. WFX is the system of record for orders, purchasing, material, inventory and operational transactions.\n\nAI and automation augment WFX; they do not replace it. Not every AI use case writes back to WFX.",
+      "color": "6"
+    },
+    {
+      "id": "data-technical-knowledge",
+      "type": "text",
+      "x": 2070,
+      "y": 5650,
+      "width": 1550,
+      "height": 170,
+      "text": "**Technical Knowledge**\nRealised by TD_TechnicalKnowledgePlatform_v2.1.0 (zone 04.7)",
+      "color": "#26a69a"
+    },
+    {
+      "id": "data-doc-retrieval",
+      "type": "text",
+      "x": 3885,
+      "y": 5440,
+      "width": 1550,
+      "height": 170,
+      "text": "**Document / Knowledge Retrieval**\nConceptual foundation layer",
+      "color": "#26a69a"
+    },
+    {
+      "id": "data-dwh",
+      "type": "text",
+      "x": 5700,
+      "y": 5440,
+      "width": 1550,
+      "height": 170,
+      "text": "**Enterprise Data / DWH**\nDWH / Databricks - confirmed in the 2026-09-18 ecosystem note",
+      "color": "#26a69a"
+    },
+    {
+      "id": "data-master",
+      "type": "text",
+      "x": 2070,
+      "y": 5440,
+      "width": 1550,
+      "height": 170,
+      "text": "**Master Data**\nConceptual foundation layer",
+      "color": "#26a69a"
+    },
+    {
+      "id": "data-workflow",
+      "type": "text",
+      "x": 3885,
+      "y": 5650,
+      "width": 1550,
+      "height": 170,
+      "text": "**Workflow & Process Data**\nConceptual foundation layer",
+      "color": "#26a69a"
+    },
+    {
+      "id": "data-reporting",
+      "type": "text",
+      "x": 5700,
+      "y": 5650,
+      "width": 1550,
+      "height": 170,
+      "text": "**Reporting & Analytics**\nPower BI - confirmed in the Finance AI project documents",
+      "color": "#26a69a"
+    },
+    {
+      "id": "proj-td-technicalknowledgeplatform-v2-1-0",
+      "type": "text",
+      "x": 2050,
+      "y": 6200,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/TD.TechnicalPlatform_v2.1|TD_TechnicalKnowledgePlatform_v2.1.0]]\n\nTechnical Knowledge Platform\n\nDomain: Fabric / Textiles Technique\nType: DATA PLATFORM (knowledge foundation)\nStatus: Sync Validation & Stabilization\nBaseline code: TD.TechnicalKnowledge.Platform.v2.1\n\nCapability: Reusable technical knowledge for pattern, BOM, consumption, costing, sew, wash and technical search.\nKnowledge / data foundation - not an ERP system of record.",
+      "color": "5"
+    },
+    {
+      "id": "proj-fab-fabricdatamart-v2-2-0",
+      "type": "text",
+      "x": 3600,
+      "y": 6200,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/FD.Datamart.v2.2|FAB_FabricDatamart_v2.2.0]]\n\nFabric Datamart\n\nDomain: Fabric / Textiles Technique\nType: DATA PLATFORM (datamart)\nStatus: Support\nBaseline code: FD.Datamart.v2.2\n\nCapability: Fabric, Hanger, QR and material reference data (Directus). Separate from CPD.",
+      "color": "#6f8fa8"
+    },
+    {
+      "id": "proj-cpd-visualsampledatamart-v1-1-0",
+      "type": "text",
+      "x": 2050,
+      "y": 6620,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/CPD.Datamart.v1.1|CPD_VisualSampleDatamart_v1.1.0]]\n\nVisual Sample Datamart\n\nDomain: Fabric / Textiles Technique\nType: DATA PLATFORM (datamart)\nStatus: Maintenance\nBaseline code: CPD.Datamart.v1.1\n\nCapability: 3D / visual sample library and image search. Separate from FD.",
+      "color": "#6f8fa8"
+    },
+    {
+      "id": "proj-ppjxstratova-ai",
+      "type": "text",
+      "x": 3600,
+      "y": 6620,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/PPJxStratova AI|PPJxStratova.AI]]\n\nStratova AI (historical)\n\nDomain: Fabric / Textiles Technique\nType: ARCHIVED (former AI PoC)\nStatus: Closed\n\nCapability: Closed in the vault registry. The current pattern-generation PoC is tracked as DISCOVERY_PatternGenerationPoC (zone 06).\nBusiness affinity: Gerber, ShapeShifter - no integration confirmed.",
+      "color": "#8c8c8c"
+    },
+    {
+      "id": "flow-labels",
+      "type": "text",
+      "x": 5550,
+      "y": 6040,
+      "width": 1800,
+      "height": 1000,
+      "text": "## CAPABILITY FLOWS\n(explanatory - not integrations)\n\nSOURCING\nSupplier > Material > Search > Decision\n\nPURCHASING\nPO > Material > Allocation > Dispatch\n\nMERCHANDISING\nMarket > Costing > Quotation > PO\n\nPRODUCTION\nPlanning > Production > Wash > QC\n\nFINANCE\nTransaction > Reporting > Cost Control > RCA\n\nLOGISTICS\nShipment > AWB > Tracking > Invoice\n\nADMIN\nRequest > Approval > Booking > Advance > Expense > Settlement\n\nTECHNICAL\nFabric > Pattern > BOM > Knowledge > Costing"
+    },
+    {
+      "id": "proj-ppjxnunox-scantrial",
+      "type": "text",
+      "x": -3800,
+      "y": 2200,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/PPJxNUNOX|PPJxNUNOX.ScanTrial]]\n\nNUNOX Scan Trial\n\nDomain: Fabric / Textiles Technique\nType: POC / EVALUATION\nStatus: Partnership / Digital Library Evaluation\n\nCapability: Fabric scanning and Fabric / Garment Digital Library evaluation. Session outcome unconfirmed.\nStream: EXTERNAL DEVELOPMENT. No operational integration assumed.",
+      "color": "3"
+    },
+    {
+      "id": "poc-discovery-pattern",
+      "type": "text",
+      "x": -2250,
+      "y": 2200,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/_Registry/PPJ_DISCOVERY_REGISTER|DISCOVERY_PatternGenerationPoC]]\n\nStratova pattern-generation PoC\n\nStatus: DAF / Commercial / Technical Scope Negotiation\nType: POC / EVALUATION (discovery item, not a project)\n\nCapability: pattern generation; open items include Google DAF approval, funding liability, tolerance and success criteria.\nBusiness affinity: Gerber, ShapeShifter - no integration confirmed.",
+      "color": "3"
+    },
+    {
+      "id": "poc-cpd-candidate",
+      "type": "text",
+      "x": -2250,
+      "y": 2620,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/_Registry/Project_Update_Proposals/CPD_IN_HOUSE_PATTERN_GENERATION_CURRENT_INITIATIVE|CPD In-house Pattern Generation]]\n\nInternal pattern-generation benchmark\n\nStatus: Internal Prototype / Evaluation\nType: CANDIDATE (not a registered project)\n\nCapability: internal benchmark for the Stratova PoC. Canonical code not confirmed.",
+      "color": "3"
+    },
+    {
+      "id": "poc-wizcore",
+      "type": "text",
+      "x": -3800,
+      "y": 2620,
+      "width": 1450,
+      "height": 380,
+      "text": "## Wizcore\n\nStatus: Smart Factory Discovery\nType: VENDOR EVALUATION (discovery item)\n\nScope: Factory -> IoT -> Connectivity -> Integration -> Data -> Dashboard -> Traceability -> Analytics / AI.",
+      "color": "3"
+    },
+    {
+      "id": "poc-faceworks",
+      "type": "text",
+      "x": -3800,
+      "y": 3040,
+      "width": 1450,
+      "height": 260,
+      "text": "## Faceworks AI\n\nStatus: Technology Assessment\nType: VENDOR EVALUATION (discovery item)",
+      "color": "3"
+    },
+    {
+      "id": "poc-sortech",
+      "type": "text",
+      "x": -2250,
+      "y": 3040,
+      "width": 1450,
+      "height": 260,
+      "text": "## Sortech\n\nStatus: Technology / SI Assessment\nType: VENDOR EVALUATION (discovery item)",
+      "color": "3"
+    },
+    {
+      "id": "poc-quanskill",
+      "type": "text",
+      "x": -3800,
+      "y": 3340,
+      "width": 1450,
+      "height": 260,
+      "text": "## Quanskill\n\nStatus: Vendor / Product Evaluation\nType: VENDOR EVALUATION (discovery item)\nNot yet an approved implementation project.",
+      "color": "3"
+    },
+    {
+      "id": "legend-nodes",
+      "type": "text",
+      "x": -3800,
+      "y": 4080,
+      "width": 3000,
+      "height": 700,
+      "text": "## NODE CATEGORIES\n\nWFX ERP - purple\nThird-Party System - brown\nGTAS Internal System - indigo\nData / Knowledge Platform - teal\nShared AI Platform - pink group\nAI / Automation / Workflow / IoT project - card colour = STATUS (right)\nThe Type line on each card names the class:\nAI APPLICATION | AUTOMATION | WORKFLOW | DATA PLATFORM |\nINTERNAL PLATFORM | IOT | POC / EVALUATION | COLLABORATION | ARCHIVED"
+    },
+    {
+      "id": "legend-edges",
+      "type": "text",
+      "x": -3800,
+      "y": 4820,
+      "width": 3000,
+      "height": 700,
+      "text": "## RELATIONSHIPS (label prefix, never colour alone)\n\nINTEGRATION | implemented / confirmed operational integration (green line)\nPLANNED | planned or in-development integration (orange line)\nAFFINITY | business capability affinity, no technical integration confirmed (plain line)\nDATA | data / knowledge dependency (blue line)\n\nCanvas edges cannot be dashed or thinned, so the prefix carries the meaning."
+    },
+    {
+      "id": "legend-status",
+      "type": "text",
+      "x": -3800,
+      "y": 5560,
+      "width": 3000,
+      "height": 680,
+      "text": "## STATUS COLOUR (source status text is kept on each card)\n\nGreen - Production / Operational\nBlue - Active / Development / Strategic Active\nYellow - UAT / Evaluation / Pre-PoC / Analysis\nOrange - On Hold\nGrey-blue - Maintenance / Support\nGrey - Closed / Archived"
+    },
+    {
+      "id": "proj-ext-academiccollaboration-v1-1-0",
+      "type": "text",
+      "x": 9700,
+      "y": 160,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1|EXT_AcademicCollaboration_v1.1.0]]\n\nAcademic Collaboration (UIT)\n\nDomain: External Collaboration\nType: COLLABORATION\nStatus: Active / Problem Framing\nBaseline code: PPJ.UIT.ACADEMIC.COLLABORATION.v1.1\n\nCapability: Academic collaboration: prototypes, research, competitions, talent pipeline. Not a production application.\nStream: EXTERNAL DEVELOPMENT.",
+      "color": "5"
+    },
+    {
+      "id": "proj-ai-automation-workshop-202606",
+      "type": "text",
+      "x": 9700,
+      "y": 920,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/AI Automation Workshop|AI.Automation.Workshop.202606]]\n\nAI Automation Workshop (June 2026)\n\nDomain: External Collaboration\nType: ARCHIVED (enablement)\nStatus: Closed\n\nCapability: Workshop record. No active tasks.",
+      "color": "#8c8c8c"
+    },
+    {
+      "id": "proj-ai-automation-workshop-analysis-202606",
+      "type": "text",
+      "x": 9700,
+      "y": 1340,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/Workshop Analysis|AI.Automation.Workshop.Analysis.202606]]\n\nWorkshop Analysis (June 2026)\n\nDomain: External Collaboration\nType: ARCHIVED (enablement)\nStatus: Closed\n\nCapability: Workshop analysis record. No active tasks.\nNot in the 35-item baseline; present in the vault registry.",
+      "color": "#8c8c8c"
+    },
+    {
+      "id": "proj-vitas-sharing-202606",
+      "type": "text",
+      "x": 9700,
+      "y": 1760,
+      "width": 1450,
+      "height": 380,
+      "text": "## [[03_Projects/VITAS Sharing|VITAS.Sharing.202606]]\n\nVITAS Sharing (June 2026)\n\nDomain: External Collaboration\nType: ARCHIVED (external engagement)\nStatus: Closed\n\nCapability: External sharing record. No active tasks.",
+      "color": "#8c8c8c"
+    },
+    {
+      "id": "guide",
+      "type": "text",
+      "x": 9600,
+      "y": 2360,
+      "width": 3200,
+      "height": 1100,
+      "text": "## ARCHITECTURE INTERPRETATION GUIDE\n\nRead the centre stack top to bottom: shared AI platforms, GTAS internal applications, third-party applications, WFX ERP core, data / knowledge foundation. It is a layered ecosystem, not a strict dependency stack.\n\nDomain groups sit left and right of the stack, next to the systems they relate to.\n\nPosition is not architecture. A line exists only where a vault document supports it, and its label says how strong it is. No line means no relationship is documented.\n\nMost integrations are therefore drawn as AFFINITY. Nothing is drawn as INTEGRATION unless a validated flow exists."
+    },
+    {
+      "id": "gap-1",
+      "type": "text",
+      "x": 9700,
+      "y": 3800,
+      "width": 3000,
+      "height": 500,
+      "text": "DATA / GOVERNANCE GAP 1 - Expense invoices merged\n\nThe 35-item baseline lists PPJ.ExpenseInvoices.v1.1 and LOG.EXPENSE.INVOICES.V1.2 as two projects. The vault registry (PPJ_PORTFOLIO_SNAPSHOT_20260918) already maps both to ONE project, LOG_ExpenseInvoiceProcessing_v1.2.2, and lists a decision still open: confirm the mapping and whether the earlier Export exclusion applies.\n\nDrawn as one node (vault registry outranks the baseline). Both baseline names are kept on the card.\n\nVault also holds two closed records outside the baseline: EXIM.ExpenseInvoices.Automation.v1.1 and AI.Automation.Workshop.Analysis.202606 - hence 36 records here."
+    },
+    {
+      "id": "gap-2",
+      "type": "text",
+      "x": 9700,
+      "y": 4340,
+      "width": 3000,
+      "height": 500,
+      "text": "DATA / GOVERNANCE GAP 2 - Canonical codes and status\n\nACC.GRNInvoiceMatching.v2.3 (baseline) vs ACC_GRNSupplierInvoiceBot_v2.3.0 (vault canonical). The vault says the GRNInvoiceMatching name is misleading; the canonical code is used.\n\nPPJxStratova.AI: baseline says Active PoC; vault says Closed and tracks the live PoC as DISCOVERY_PatternGenerationPoC. Vault used.\n\nPPJ.GLPI.Helpdesk.AI.Chatbot.v1.0: baseline says Merchandising / Shared; vault domain is Internal Chatbot & AI Platforms. Vault used."
+    },
+    {
+      "id": "gap-3",
+      "type": "text",
+      "x": 9700,
+      "y": 4880,
+      "width": 3000,
+      "height": 500,
+      "text": "DATA / GOVERNANCE GAP 3 - Systems inventory\n\nSource: owner's operating-systems diagram. GTAS has 16 applications, not 15: GTAS Costing was missing from the list in circulation.\n\nMMSx (diagram) vs MMX (2026-09-18 ecosystem note): treated as one system, name unconfirmed.\n\nThe Finance AI canvas also names GTAS Factory, Quantity, Efficiency and ID. None is on the diagram; alias or separate application is unconfirmed.\n\nThe red star on GTAS Costing and the green highlight on Production Planning are shown but their meaning is not stated."
+    },
+    {
+      "id": "gap-4",
+      "type": "text",
+      "x": 9700,
+      "y": 5420,
+      "width": 3000,
+      "height": 500,
+      "text": "DATA / GOVERNANCE GAP 4 - Relationship evidence\n\nNo document confirms an integration at WFX-module or GTAS-application level. Those links are AFFINITY.\n\nExceptions drawn stronger: PUR_MaterialAllocation validated flow into WFX (INTEGRATION, validated flow only); FIN_InvoiceDownloader to VNPT (INTEGRATION); PUR_GDIAutomation WFX API, ADMIN_ExpenseManagement E-office and MER_CostingAgenticPlatform GTAS/IED contract are in scope but not delivered (PLANNED).\n\nStatus counts: baseline buckets and the recomputed buckets differ (e.g. UAT and Analysis are one bucket here), so the two rows are not directly comparable."
+    }
+  ],
+  "edges": [
+    {
+      "id": "e001-proj-mer-costingag-wfx-budgeting-cost",
+      "fromNode": "proj-mer-costingagenticplatform-v1-1-0",
+      "fromSide": "right",
+      "toNode": "wfx-budgeting-costing",
+      "toSide": "left",
+      "label": "AFFINITY | costing capability"
+    },
+    {
+      "id": "e002-proj-mer-costingag-wfx-bill-of-materi",
+      "fromNode": "proj-mer-costingagenticplatform-v1-1-0",
+      "fromSide": "right",
+      "toNode": "wfx-bill-of-material",
+      "toSide": "left",
+      "label": "AFFINITY | BOM input"
+    },
+    {
+      "id": "e003-proj-mer-costingag-gtas-ied",
+      "fromNode": "proj-mer-costingagenticplatform-v1-1-0",
+      "fromSide": "right",
+      "toNode": "gtas-ied",
+      "toSide": "left",
+      "label": "PLANNED | GTAS/IED integration contract to be confirmed",
+      "color": "2"
+    },
+    {
+      "id": "e004-proj-mer-costingag-gtas-costing",
+      "fromNode": "proj-mer-costingagenticplatform-v1-1-0",
+      "fromSide": "right",
+      "toNode": "gtas-costing",
+      "toSide": "left",
+      "label": "AFFINITY | costing capability"
+    },
+    {
+      "id": "e005-proj-td-technicalk-proj-mer-costingag",
+      "fromNode": "proj-td-technicalknowledgeplatform-v2-1-0",
+      "fromSide": "left",
+      "toNode": "proj-mer-costingagenticplatform-v1-1-0",
+      "toSide": "left",
+      "label": "DATA | technical knowledge input",
+      "color": "5"
+    },
+    {
+      "id": "e006-proj-mer-marketint-wfx-buyer-order-ma",
+      "fromNode": "proj-mer-marketintelligence-v1-1-0",
+      "fromSide": "right",
+      "toNode": "wfx-buyer-order-management",
+      "toSide": "left",
+      "label": "AFFINITY | sales / PO history"
+    },
+    {
+      "id": "e007-proj-mer-invoiceda-wfx-budgeting-cost",
+      "fromNode": "proj-mer-invoicedatarecheck-v1-1-0",
+      "fromSide": "right",
+      "toNode": "wfx-budgeting-costing",
+      "toSide": "left",
+      "label": "AFFINITY | costing and commercial data"
+    },
+    {
+      "id": "e008-proj-mer-pocommit--wfx-buyer-order-ma",
+      "fromNode": "proj-mer-pocommit-v1-1-0",
+      "fromSide": "right",
+      "toNode": "wfx-buyer-order-management",
+      "toSide": "left",
+      "label": "AFFINITY | historical PO commit"
+    },
+    {
+      "id": "e009-proj-scp-sourcingc-tp-mmsx",
+      "fromNode": "proj-scp-sourcingchatbot-v2-3-0",
+      "fromSide": "right",
+      "toNode": "tp-mmsx",
+      "toSide": "left",
+      "label": "AFFINITY | material / sourcing knowledge"
+    },
+    {
+      "id": "e010-proj-scp-sourcingc-wfx-raw-material-p",
+      "fromNode": "proj-scp-sourcingchatbot-v2-3-0",
+      "fromSide": "right",
+      "toNode": "wfx-raw-material-planning",
+      "toSide": "left",
+      "label": "AFFINITY | material requirement"
+    },
+    {
+      "id": "e011-proj-pur-adhocinde-wfx-purchase-order",
+      "fromNode": "proj-pur-adhocindentsouth-v1-0-0",
+      "fromSide": "right",
+      "toNode": "wfx-purchase-order-management",
+      "toSide": "left",
+      "label": "AFFINITY | purchasing transaction process"
+    },
+    {
+      "id": "e012-proj-pur-hmlabelpr-wfx-purchase-order",
+      "fromNode": "proj-pur-hmlabelprocessing-v1-0-0",
+      "fromSide": "right",
+      "toNode": "wfx-purchase-order-management",
+      "toSide": "left",
+      "label": "AFFINITY | PO / material workflow"
+    },
+    {
+      "id": "e013-proj-pur-inventory-wfx-inventory-cont",
+      "fromNode": "proj-pur-inventoryreport-v2-1-0",
+      "fromSide": "right",
+      "toNode": "wfx-inventory-control",
+      "toSide": "left",
+      "label": "AFFINITY | inventory visibility"
+    },
+    {
+      "id": "e014-proj-pur-inventory-proj-pur-materiala",
+      "fromNode": "proj-pur-inventoryreport-v2-1-0",
+      "fromSide": "bottom",
+      "toNode": "proj-pur-materialallocation-v1-1-0",
+      "toSide": "top",
+      "label": "DATA | inventory visibility feeds allocation",
+      "color": "5"
+    },
+    {
+      "id": "e015-proj-pur-inventory-proj-pur-gdiautoma",
+      "fromNode": "proj-pur-inventoryreport-v2-1-0",
+      "fromSide": "right",
+      "toNode": "proj-pur-gdiautomation-v1-0-0",
+      "toSide": "right",
+      "label": "DATA | inventory visibility feeds dispatch",
+      "color": "5"
+    },
+    {
+      "id": "e016-proj-pur-materiala-wfx-inventory-cont",
+      "fromNode": "proj-pur-materialallocation-v1-1-0",
+      "fromSide": "right",
+      "toNode": "wfx-inventory-control",
+      "toSide": "left",
+      "label": "INTEGRATION | validated flow only; WFX transaction",
+      "color": "4"
+    },
+    {
+      "id": "e017-proj-pur-materiala-wfx-raw-material-p",
+      "fromNode": "proj-pur-materialallocation-v1-1-0",
+      "fromSide": "right",
+      "toNode": "wfx-raw-material-planning",
+      "toSide": "left",
+      "label": "AFFINITY | material requirement"
+    },
+    {
+      "id": "e018-proj-pur-gdiautoma-wfx-purchase-order",
+      "fromNode": "proj-pur-gdiautomation-v1-0-0",
+      "fromSide": "right",
+      "toNode": "wfx-purchase-order-management",
+      "toSide": "left",
+      "label": "PLANNED | WFX GET / POST API in development; WFX is SoR",
+      "color": "2"
+    },
+    {
+      "id": "e019-proj-pur-gdiautoma-wfx-logistics-in-b",
+      "fromNode": "proj-pur-gdiautomation-v1-0-0",
+      "fromSide": "right",
+      "toNode": "wfx-logistics-in-bound",
+      "toSide": "left",
+      "label": "AFFINITY | dispatch process"
+    },
+    {
+      "id": "e020-proj-wh-awbextract-wfx-logistics-in-b",
+      "fromNode": "proj-wh-awbextraction-v1-1-0",
+      "fromSide": "right",
+      "toNode": "wfx-logistics-in-bound",
+      "toSide": "left",
+      "label": "AFFINITY | shipment / AWB process"
+    },
+    {
+      "id": "e021-proj-wh-awbextract-gtas-transportatio",
+      "fromNode": "proj-wh-awbextraction-v1-1-0",
+      "fromSide": "right",
+      "toNode": "gtas-transportation",
+      "toSide": "left",
+      "label": "AFFINITY | shipment process"
+    },
+    {
+      "id": "e022-proj-log-expensein-grp-wfx",
+      "fromNode": "proj-log-expenseinvoiceprocessing-v1-2-2",
+      "fromSide": "right",
+      "toNode": "grp-wfx",
+      "toSide": "left",
+      "label": "AFFINITY | WFX template / additional charge rules (module not named)"
+    },
+    {
+      "id": "e023-proj-hr-employeeda-tp-hris",
+      "fromNode": "proj-hr-employeedataplatform-v1-1-0",
+      "fromSide": "left",
+      "toNode": "tp-hris",
+      "toSide": "right",
+      "label": "AFFINITY | employee master data"
+    },
+    {
+      "id": "e024-proj-admin-expense-tp-e-office",
+      "fromNode": "proj-admin-expensemanagement-v1-1-0",
+      "fromSide": "left",
+      "toNode": "tp-e-office",
+      "toSide": "right",
+      "label": "PLANNED | E-office integration in scope, not confirmed delivered",
+      "color": "2"
+    },
+    {
+      "id": "e025-proj-admin-expense-tp-hris",
+      "fromNode": "proj-admin-expensemanagement-v1-1-0",
+      "fromSide": "left",
+      "toNode": "tp-hris",
+      "toSide": "right",
+      "label": "AFFINITY | HR / master data"
+    },
+    {
+      "id": "e026-proj-fin-financema-wfx-finance",
+      "fromNode": "proj-fin-financemanagement-v1-2-0",
+      "fromSide": "left",
+      "toNode": "wfx-finance",
+      "toSide": "right",
+      "label": "DATA | WFX Finance data",
+      "color": "5"
+    },
+    {
+      "id": "e027-proj-fin-financema-data-dwh",
+      "fromNode": "proj-fin-financemanagement-v1-2-0",
+      "fromSide": "left",
+      "toNode": "data-dwh",
+      "toSide": "right",
+      "label": "DATA | DWH / Databricks source",
+      "color": "5"
+    },
+    {
+      "id": "e028-proj-fin-financema-tp-power-bi",
+      "fromNode": "proj-fin-financemanagement-v1-2-0",
+      "fromSide": "left",
+      "toNode": "tp-power-bi",
+      "toSide": "right",
+      "label": "DATA | Power BI reporting source",
+      "color": "5"
+    },
+    {
+      "id": "e029-proj-fin-financema-gtas-bi-report",
+      "fromNode": "proj-fin-financemanagement-v1-2-0",
+      "fromSide": "left",
+      "toNode": "gtas-bi-report",
+      "toSide": "right",
+      "label": "DATA | GTAS BI source",
+      "color": "5"
+    },
+    {
+      "id": "e030-proj-fin-financema-gtas-financial-sta",
+      "fromNode": "proj-fin-financemanagement-v1-2-0",
+      "fromSide": "left",
+      "toNode": "gtas-financial-statements",
+      "toSide": "right",
+      "label": "DATA | financial statements source",
+      "color": "5"
+    },
+    {
+      "id": "e031-proj-fin-invoicedo-tp-vnpt-e-invoice",
+      "fromNode": "proj-fin-invoicedownloader-v1-2-0",
+      "fromSide": "left",
+      "toNode": "tp-vnpt-e-invoice",
+      "toSide": "right",
+      "label": "INTEGRATION | VNPT portal download",
+      "color": "4"
+    },
+    {
+      "id": "e032-proj-acc-grnsuppli-wfx-finance",
+      "fromNode": "proj-acc-grnsupplierinvoicebot-v2-3-0",
+      "fromSide": "left",
+      "toNode": "wfx-finance",
+      "toSide": "right",
+      "label": "AFFINITY | accounting posting"
+    },
+    {
+      "id": "e033-proj-qc-defectdete-wfx-qc",
+      "fromNode": "proj-qc-defectdetection-v1-0-0",
+      "fromSide": "left",
+      "toNode": "wfx-qc",
+      "toSide": "right",
+      "label": "AFFINITY | quality inspection"
+    },
+    {
+      "id": "e034-proj-qc-defectdete-wfx-qa",
+      "fromNode": "proj-qc-defectdetection-v1-0-0",
+      "fromSide": "left",
+      "toNode": "wfx-qa",
+      "toSide": "right",
+      "label": "AFFINITY | quality assurance"
+    },
+    {
+      "id": "e035-proj-qc-defectdete-wfx-production-man",
+      "fromNode": "proj-qc-defectdetection-v1-0-0",
+      "fromSide": "left",
+      "toNode": "wfx-production-management",
+      "toSide": "right",
+      "label": "AFFINITY | production output"
+    },
+    {
+      "id": "e036-proj-prod-hangingl-wfx-production-man",
+      "fromNode": "proj-prod-hanginglineiot-v1-0-0",
+      "fromSide": "left",
+      "toNode": "wfx-production-management",
+      "toSide": "right",
+      "label": "AFFINITY | production line"
+    },
+    {
+      "id": "e037-proj-prod-hangingl-wfx-production-pla",
+      "fromNode": "proj-prod-hanginglineiot-v1-0-0",
+      "fromSide": "left",
+      "toNode": "wfx-production-planning",
+      "toSide": "right",
+      "label": "AFFINITY | target / WIP"
+    },
+    {
+      "id": "e038-proj-prod-hangingl-tp-iot-wiser-ina",
+      "fromNode": "proj-prod-hanginglineiot-v1-0-0",
+      "fromSide": "left",
+      "toNode": "tp-iot-wiser-ina",
+      "toSide": "right",
+      "label": "DATA | machine / line data",
+      "color": "5"
+    },
+    {
+      "id": "e039-proj-wash-sampling-wfx-sampling",
+      "fromNode": "proj-wash-samplingmanagement-v1-1-0",
+      "fromSide": "left",
+      "toNode": "wfx-sampling",
+      "toSide": "right",
+      "label": "AFFINITY | sampling process"
+    },
+    {
+      "id": "e040-proj-wash-sampling-wfx-production-man",
+      "fromNode": "proj-wash-samplingmanagement-v1-1-0",
+      "fromSide": "left",
+      "toNode": "wfx-production-management",
+      "toSide": "right",
+      "label": "AFFINITY | wash production"
+    },
+    {
+      "id": "e041-proj-wash-cowash-v-wfx-production-man",
+      "fromNode": "proj-wash-cowash-v2-0-0",
+      "fromSide": "left",
+      "toNode": "wfx-production-management",
+      "toSide": "right",
+      "label": "AFFINITY | wash production"
+    },
+    {
+      "id": "e042-proj-wash-cowash-v-wfx-qc",
+      "fromNode": "proj-wash-cowash-v2-0-0",
+      "fromSide": "left",
+      "toNode": "wfx-qc",
+      "toSide": "right",
+      "label": "AFFINITY | wash quality"
+    },
+    {
+      "id": "e043-proj-ppj-glpi-help-tp-glpi",
+      "fromNode": "proj-ppj-glpi-helpdesk-ai-chatbot-v1-0",
+      "fromSide": "right",
+      "toNode": "tp-glpi",
+      "toSide": "right",
+      "label": "AFFINITY | GLPI helpdesk knowledge"
+    },
+    {
+      "id": "e044-wfx-core-data-dwh",
+      "fromNode": "wfx-core",
+      "fromSide": "bottom",
+      "toNode": "data-dwh",
+      "toSide": "top",
+      "label": "DATA | operational transactions ingested",
+      "color": "5"
+    },
+    {
+      "id": "e045-proj-fab-fabricdat-proj-td-technicalk",
+      "fromNode": "proj-fab-fabricdatamart-v2-2-0",
+      "fromSide": "left",
+      "toNode": "proj-td-technicalknowledgeplatform-v2-1-0",
+      "toSide": "right",
+      "label": "DATA | fabric data",
+      "color": "5"
+    },
+    {
+      "id": "e046-proj-cpd-visualsam-proj-td-technicalk",
+      "fromNode": "proj-cpd-visualsampledatamart-v1-1-0",
+      "fromSide": "top",
+      "toNode": "proj-td-technicalknowledgeplatform-v2-1-0",
+      "toSide": "bottom",
+      "label": "DATA | visual sample data",
+      "color": "5"
+    },
+    {
+      "id": "e047-proj-td-technicalk-data-technical-kno",
+      "fromNode": "proj-td-technicalknowledgeplatform-v2-1-0",
+      "fromSide": "top",
+      "toNode": "data-technical-knowledge",
+      "toSide": "bottom",
+      "label": "DATA | same capability",
+      "color": "5"
+    },
+    {
+      "id": "e048-poc-cpd-candidate-poc-discovery-patt",
+      "fromNode": "poc-cpd-candidate",
+      "fromSide": "top",
+      "toNode": "poc-discovery-pattern",
+      "toSide": "bottom",
+      "label": "DATA | internal benchmark",
+      "color": "5"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  }
+}

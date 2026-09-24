@@ -178,6 +178,7 @@ PPJ_Roadmap_2026.canvas
 PPJ_Domain_Encapsulation.canvas
 PPJ_EndToEnd_Process_Automation_Coverage.canvas
 PPJ_Enterprise_Application_AI_Automation_Ecosystem.canvas
+PPJ_Digital_Application_AI_Automation_Ecosystem.canvas
 PPJ_Project_Process_Map.canvas
 ```
 
@@ -204,6 +205,9 @@ PPJ_EndToEnd_Process_Automation_Coverage.canvas
 
 PPJ_Enterprise_Application_AI_Automation_Ecosystem.canvas
 → five-layer enterprise architecture: business, WFX, third-party, PPJ apps, Data/AI/Automation
+
+PPJ_Digital_Application_AI_Automation_Ecosystem.canvas
+→ executive ecosystem view: WFX (16 modules), third-party, GTAS (16 applications), data foundation and all registered AI / Automation projects by business domain; every line labelled INTEGRATION / PLANNED / DATA / AFFINITY. Systems inventory source: 02_BA_Knowledge/Enterprise_Architecture/PPJ_Operational_Systems_Landscape.md. Generated from the portfolio snapshot, not synchronized by the Executive Canvas watcher - regenerate after a project is added, renamed or changes status.
 
 PPJ_Project_Process_Map.canvas
 → one process card per registered project: input/trigger, processing steps, human control and final output
