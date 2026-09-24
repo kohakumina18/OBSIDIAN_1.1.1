@@ -1,589 +1,73 @@
 {
-  "nodes": [
-    {
-      "id": "ecosystem-title",
-      "type": "text",
-      "x": 0,
-      "y": -420,
-      "width": 11200,
-      "height": 220,
-      "text": "# PPJ ENTERPRISE APPLICATION + AI & AUTOMATION ECOSYSTEM\n\nWFX = transaction backbone | GTAS/internal apps = PPJ application layer | Data + AI = intelligence and automation layer",
-      "color": "5"
-    },
-    {
-      "id": "architecture-reference",
-      "type": "file",
-      "x": 0,
-      "y": -170,
-      "width": 900,
-      "height": 150,
-      "file": "02_BA_Knowledge/Enterprise_Architecture/PPJ_Enterprise_Application_AI_Automation_Ecosystem.md"
-    },
-    {
-      "id": "layer-business",
-      "type": "group",
-      "x": 0,
-      "y": 100,
-      "width": 11200,
-      "height": 620,
-      "label": "LAYER 1 - BUSINESS PROCESS",
-      "color": "3"
-    },
-    {
-      "id": "layer-erp",
-      "type": "group",
-      "x": 0,
-      "y": 900,
-      "width": 11200,
-      "height": 500,
-      "label": "LAYER 2 - CORE ERP",
-      "color": "4"
-    },
-    {
-      "id": "layer-specialized",
-      "type": "group",
-      "x": 0,
-      "y": 1580,
-      "width": 11200,
-      "height": 520,
-      "label": "LAYER 3 - SPECIALIZED / THIRD-PARTY",
-      "color": "1"
-    },
-    {
-      "id": "layer-internal",
-      "type": "group",
-      "x": 0,
-      "y": 2280,
-      "width": 11200,
-      "height": 520,
-      "label": "LAYER 4 - INTERNAL PPJ APPLICATIONS",
-      "color": "6"
-    },
-    {
-      "id": "layer-data-ai",
-      "type": "group",
-      "x": 0,
-      "y": 2980,
-      "width": 11200,
-      "height": 580,
-      "label": "LAYER 5 - DATA + AI + AUTOMATION",
-      "color": "5"
-    },
-    {
-      "id": "layer-control",
-      "type": "group",
-      "x": 0,
-      "y": 3740,
-      "width": 11200,
-      "height": 520,
-      "label": "HUMAN CONTROL + CONTROLLED EXECUTION",
-      "color": "2"
-    },
-    {
-      "id": "business-market",
-      "type": "text",
-      "x": 70,
-      "y": 230,
-      "width": 860,
-      "height": 360,
-      "text": "## CUSTOMER / MARKET\n\nMER_MarketIntelligence_v1.1.0",
-      "color": "3"
-    },
-    {
-      "id": "business-mer",
-      "type": "text",
-      "x": 1070,
-      "y": 230,
-      "width": 860,
-      "height": 360,
-      "text": "## MERCHANDISING\n\nMER_CostingAgenticPlatform_v1.1.0\nMER_InvoiceDataRecheck_v1.1.0",
-      "color": "3"
-    },
-    {
-      "id": "business-tech",
-      "type": "text",
-      "x": 2070,
-      "y": 230,
-      "width": 860,
-      "height": 360,
-      "text": "## TECHNICAL DEVELOPMENT\n\nTD_TechnicalKnowledgePlatform_v2.1.0\nFAB_FabricDatamart_v2.2.0\nCPD_VisualSampleDatamart_v1.1.0",
-      "color": "3"
-    },
-    {
-      "id": "business-source",
-      "type": "text",
-      "x": 3070,
-      "y": 230,
-      "width": 860,
-      "height": 360,
-      "text": "## SOURCING\n\nSCP_SourcingChatbot_v2.3.0",
-      "color": "3"
-    },
-    {
-      "id": "business-purchase",
-      "type": "text",
-      "x": 4070,
-      "y": 230,
-      "width": 860,
-      "height": 360,
-      "text": "## PURCHASING\n\nPUR_GDIAutomation_v1.0.0\nPUR_MaterialAllocation_v1.1.0\nPUR_AdhocIndentSouth_v1.0.0\nPUR_InventoryReport_v2.1.0",
-      "color": "3"
-    },
-    {
-      "id": "business-warehouse",
-      "type": "text",
-      "x": 5070,
-      "y": 230,
-      "width": 860,
-      "height": 360,
-      "text": "## WAREHOUSE / MATERIAL\n\nWH_AWBExtraction_v1.1.0",
-      "color": "3"
-    },
-    {
-      "id": "business-production",
-      "type": "text",
-      "x": 6070,
-      "y": 230,
-      "width": 860,
-      "height": 360,
-      "text": "## PRODUCTION\n\nPROD_HangingLineIoT_v1.0.0",
-      "color": "3"
-    },
-    {
-      "id": "business-wash",
-      "type": "text",
-      "x": 7070,
-      "y": 230,
-      "width": 860,
-      "height": 360,
-      "text": "## WASH\n\nWASH_SamplingManagement_v1.1.0\nWASH_COWASH_v2.0.0",
-      "color": "3"
-    },
-    {
-      "id": "business-qc",
-      "type": "text",
-      "x": 8070,
-      "y": 230,
-      "width": 860,
-      "height": 360,
-      "text": "## QC / TQM\n\nQC_DefectDetection_v1.0.0\nQC_ThreadTraceability_v1.0.0",
-      "color": "3"
-    },
-    {
-      "id": "business-logistics",
-      "type": "text",
-      "x": 9070,
-      "y": 230,
-      "width": 860,
-      "height": 360,
-      "text": "## LOGISTICS / EXIM\n\nLOG_ExpenseInvoiceProcessing_v1.2.2",
-      "color": "3"
-    },
-    {
-      "id": "business-finance",
-      "type": "text",
-      "x": 10070,
-      "y": 230,
-      "width": 860,
-      "height": 360,
-      "text": "## FINANCE / ACCOUNTING\n\nFIN_FinanceManagement_v1.2.0\nFIN_InvoiceDownloader_v1.2.0\nACC_GRNSupplierInvoiceBot_v2.3.0",
-      "color": "3"
-    },
-    {
-      "id": "wfx",
-      "type": "text",
-      "x": 600,
-      "y": 1000,
-      "width": 3000,
-      "height": 280,
-      "text": "# WFX ERP\nMaster Data | Order | Purchasing | Material | Inventory | Operational Transaction",
-      "color": "4"
-    },
-    {
-      "id": "erp-rule",
-      "type": "text",
-      "x": 4200,
-      "y": 1000,
-      "width": 3000,
-      "height": 280,
-      "text": "# ERP CONTROL\nValidation | Permission | Transaction Status | Audit | Error Handling | Rollback",
-      "color": "4"
-    },
-    {
-      "id": "erp-boundary",
-      "type": "text",
-      "x": 7800,
-      "y": 1000,
-      "width": 2700,
-      "height": 280,
-      "text": "# ARCHITECTURE RULE\nAI does not replace WFX or GTAS. Not every AI use case writes back to WFX.",
-      "color": "4"
-    },
-    {
-      "id": "mmx",
-      "type": "text",
-      "x": 400,
-      "y": 1680,
-      "width": 1800,
-      "height": 280,
-      "text": "## MMX\nMaterial | Inventory | Warehouse",
-      "color": "1"
-    },
-    {
-      "id": "eoffice",
-      "type": "text",
-      "x": 2450,
-      "y": 1680,
-      "width": 1800,
-      "height": 280,
-      "text": "## eOffice\nDocument | Workflow | Sign / Approval",
-      "color": "1"
-    },
-    {
-      "id": "vnpt",
-      "type": "text",
-      "x": 4500,
-      "y": 1680,
-      "width": 1800,
-      "height": 280,
-      "text": "## VNPT e-Invoice\nElectronic invoice | Accounting process",
-      "color": "1"
-    },
-    {
-      "id": "iot",
-      "type": "text",
-      "x": 6550,
-      "y": 1680,
-      "width": 1800,
-      "height": 280,
-      "text": "## IoT / WISER / INA\nMachine and production-line data",
-      "color": "1"
-    },
-    {
-      "id": "external",
-      "type": "text",
-      "x": 8600,
-      "y": 1680,
-      "width": 1800,
-      "height": 280,
-      "text": "## EXTERNAL PLATFORMS\nCourier | Supplier | Customer | Academic / Vendor",
-      "color": "1"
-    },
-    {
-      "id": "gtas",
-      "type": "text",
-      "x": 400,
-      "y": 2380,
-      "width": 2400,
-      "height": 280,
-      "text": "# GTAS / IED\nPPJ-specific costing, technical and operational applications",
-      "color": "6"
-    },
-    {
-      "id": "datamarts",
-      "type": "text",
-      "x": 3200,
-      "y": 2380,
-      "width": 2400,
-      "height": 280,
-      "text": "# DATAMARTS\nFabric | Visual Sample | Technical Knowledge | Sourcing",
-      "color": "6"
-    },
-    {
-      "id": "portals",
-      "type": "text",
-      "x": 6000,
-      "y": 2380,
-      "width": 2400,
-      "height": 280,
-      "text": "# INTERNAL PORTALS\nWash Sampling | Admin Expense | AI Applications",
-      "color": "6"
-    },
-    {
-      "id": "utilities",
-      "type": "text",
-      "x": 8800,
-      "y": 2380,
-      "width": 1800,
-      "height": 280,
-      "text": "# UTILITIES\nReporting | Search | Workflow",
-      "color": "6"
-    },
-    {
-      "id": "dwh",
-      "type": "text",
-      "x": 400,
-      "y": 3080,
-      "width": 2200,
-      "height": 320,
-      "text": "# DWH / DATABRICKS\nETL | Curated Data | Lineage | Analytics",
-      "color": "5"
-    },
-    {
-      "id": "perri",
-      "type": "text",
-      "x": 3000,
-      "y": 3080,
-      "width": 2200,
-      "height": 320,
-      "text": "# PERRI / AI HUB\nIntent | Agent / Tool | Controlled response or action",
-      "color": "5"
-    },
-    {
-      "id": "automation",
-      "type": "text",
-      "x": 5600,
-      "y": 3080,
-      "width": 2200,
-      "height": 320,
-      "text": "# AI + AUTOMATION\nOCR | RAG | Agents | Anomaly | RPA | API",
-      "color": "5"
-    },
-    {
-      "id": "ai-pattern",
-      "type": "text",
-      "x": 8200,
-      "y": 3080,
-      "width": 2400,
-      "height": 320,
-      "text": "# OPERATING PATTERN\nRead -> Understand -> Validate -> Recommend -> Automate",
-      "color": "5"
-    },
-    {
-      "id": "human",
-      "type": "text",
-      "x": 800,
-      "y": 3840,
-      "width": 2600,
-      "height": 280,
-      "text": "# HUMAN CONFIRM\nDomain expert validates recommendation, exception and business decision.",
-      "color": "2"
-    },
-    {
-      "id": "permission",
-      "type": "text",
-      "x": 4300,
-      "y": 3840,
-      "width": 2600,
-      "height": 280,
-      "text": "# GOVERNANCE\nOwner | Permission | Evidence | Version | Audit | Fallback",
-      "color": "2"
-    },
-    {
-      "id": "execute",
-      "type": "text",
-      "x": 7800,
-      "y": 3840,
-      "width": 2600,
-      "height": 280,
-      "text": "# WRITE BACK / EXECUTE\nControlled API or user-confirmed transaction into the target system.",
-      "color": "2"
-    }
-  ],
-  "edges": [
-    {
-      "id": "edge-business-1",
-      "fromNode": "business-market",
-      "fromSide": "right",
-      "toNode": "business-mer",
-      "toSide": "left",
-      "label": "business flow"
-    },
-    {
-      "id": "edge-business-2",
-      "fromNode": "business-mer",
-      "fromSide": "right",
-      "toNode": "business-tech",
-      "toSide": "left",
-      "label": "business flow"
-    },
-    {
-      "id": "edge-business-3",
-      "fromNode": "business-tech",
-      "fromSide": "right",
-      "toNode": "business-source",
-      "toSide": "left",
-      "label": "business flow"
-    },
-    {
-      "id": "edge-business-4",
-      "fromNode": "business-source",
-      "fromSide": "right",
-      "toNode": "business-purchase",
-      "toSide": "left",
-      "label": "business flow"
-    },
-    {
-      "id": "edge-business-5",
-      "fromNode": "business-purchase",
-      "fromSide": "right",
-      "toNode": "business-warehouse",
-      "toSide": "left",
-      "label": "business flow"
-    },
-    {
-      "id": "edge-business-6",
-      "fromNode": "business-warehouse",
-      "fromSide": "right",
-      "toNode": "business-production",
-      "toSide": "left",
-      "label": "business flow"
-    },
-    {
-      "id": "edge-business-7",
-      "fromNode": "business-production",
-      "fromSide": "right",
-      "toNode": "business-wash",
-      "toSide": "left",
-      "label": "business flow"
-    },
-    {
-      "id": "edge-business-8",
-      "fromNode": "business-wash",
-      "fromSide": "right",
-      "toNode": "business-qc",
-      "toSide": "left",
-      "label": "business flow"
-    },
-    {
-      "id": "edge-business-9",
-      "fromNode": "business-qc",
-      "fromSide": "right",
-      "toNode": "business-logistics",
-      "toSide": "left",
-      "label": "business flow"
-    },
-    {
-      "id": "edge-business-10",
-      "fromNode": "business-logistics",
-      "fromSide": "right",
-      "toNode": "business-finance",
-      "toSide": "left",
-      "label": "business flow"
-    },
-    {
-      "id": "e-business-wfx",
-      "fromNode": "business-purchase",
-      "fromSide": "bottom",
-      "toNode": "wfx",
-      "toSide": "top",
-      "label": "transaction"
-    },
-    {
-      "id": "e-business-gtas",
-      "fromNode": "business-tech",
-      "fromSide": "bottom",
-      "toNode": "gtas",
-      "toSide": "top",
-      "label": "technical / costing"
-    },
-    {
-      "id": "e-wfx-specialized",
-      "fromNode": "wfx",
-      "fromSide": "bottom",
-      "toNode": "mmx",
-      "toSide": "top",
-      "label": "material data"
-    },
-    {
-      "id": "e-wfx-vnpt",
-      "fromNode": "wfx",
-      "fromSide": "bottom",
-      "toNode": "vnpt",
-      "toSide": "top",
-      "label": "invoice data"
-    },
-    {
-      "id": "e-wfx-iot",
-      "fromNode": "wfx",
-      "fromSide": "bottom",
-      "toNode": "iot",
-      "toSide": "top",
-      "label": "operations"
-    },
-    {
-      "id": "e-wfx-gtas",
-      "fromNode": "wfx",
-      "fromSide": "bottom",
-      "toNode": "gtas",
-      "toSide": "top",
-      "label": "ERP integration"
-    },
-    {
-      "id": "e-specialized-dwh",
-      "fromNode": "external",
-      "fromSide": "bottom",
-      "toNode": "dwh",
-      "toSide": "top",
-      "label": "source data"
-    },
-    {
-      "id": "e-internal-dwh",
-      "fromNode": "datamarts",
-      "fromSide": "bottom",
-      "toNode": "dwh",
-      "toSide": "top",
-      "label": "curated data"
-    },
-    {
-      "id": "e-dwh-perri",
-      "fromNode": "dwh",
-      "fromSide": "right",
-      "toNode": "perri",
-      "toSide": "left",
-      "label": "governed context"
-    },
-    {
-      "id": "e-perri-auto",
-      "fromNode": "perri",
-      "fromSide": "right",
-      "toNode": "automation",
-      "toSide": "left",
-      "label": "agent / tool"
-    },
-    {
-      "id": "e-auto-pattern",
-      "fromNode": "automation",
-      "fromSide": "right",
-      "toNode": "ai-pattern",
-      "toSide": "left",
-      "label": "controlled capability"
-    },
-    {
-      "id": "e-pattern-human",
-      "fromNode": "ai-pattern",
-      "fromSide": "bottom",
-      "toNode": "human",
-      "toSide": "top",
-      "label": "review"
-    },
-    {
-      "id": "e-human-governance",
-      "fromNode": "human",
-      "fromSide": "right",
-      "toNode": "permission",
-      "toSide": "left",
-      "label": "approve"
-    },
-    {
-      "id": "e-governance-execute",
-      "fromNode": "permission",
-      "fromSide": "right",
-      "toNode": "execute",
-      "toSide": "left",
-      "label": "authorize"
-    },
-    {
-      "id": "e-execute-wfx",
-      "fromNode": "execute",
-      "fromSide": "top",
-      "toNode": "wfx",
-      "toSide": "bottom",
-      "label": "controlled write-back"
-    }
-  ],
-  "metadata": {
-    "version": "1.0-1.0",
-    "frontmatter": {}
-  }
+	"nodes":[
+		{"id":"ecosystem-title","type":"text","x":0,"y":-420,"width":11200,"height":220,"text":"# PPJ ENTERPRISE APPLICATION + AI & AUTOMATION ECOSYSTEM\n\nWFX = transaction backbone | GTAS/internal apps = PPJ application layer | Data + AI = intelligence and automation layer","color":"5"},
+		{"id":"architecture-reference","type":"file","x":0,"y":-170,"width":900,"height":150,"file":"02_BA_Knowledge/Enterprise_Architecture/PPJ_Enterprise_Application_AI_Automation_Ecosystem.md"},
+		{"id":"layer-business","type":"group","x":0,"y":100,"width":11200,"height":620,"label":"LAYER 1 - BUSINESS PROCESS","color":"3"},
+		{"id":"layer-erp","type":"group","x":0,"y":900,"width":11200,"height":500,"label":"LAYER 2 - CORE ERP","color":"4"},
+		{"id":"layer-specialized","type":"group","x":0,"y":1580,"width":11200,"height":520,"label":"LAYER 3 - SPECIALIZED / THIRD-PARTY","color":"1"},
+		{"id":"layer-internal","type":"group","x":0,"y":2280,"width":11200,"height":520,"label":"LAYER 4 - INTERNAL PPJ APPLICATIONS","color":"6"},
+		{"id":"layer-data-ai","type":"group","x":0,"y":2980,"width":11200,"height":580,"label":"LAYER 5 - DATA + AI + AUTOMATION","color":"5"},
+		{"id":"layer-control","type":"group","x":0,"y":3740,"width":11200,"height":520,"label":"HUMAN CONTROL + CONTROLLED EXECUTION","color":"2"},
+		{"id":"business-market","type":"text","x":70,"y":230,"width":860,"height":360,"text":"## CUSTOMER / MARKET\n\nMER_MarketIntelligence_v1.1.0","color":"3"},
+		{"id":"business-mer","type":"text","x":1070,"y":230,"width":860,"height":360,"text":"## MERCHANDISING\n\nMER_CostingAgenticPlatform_v1.1.0\nMER_InvoiceDataRecheck_v1.1.0","color":"3"},
+		{"id":"business-tech","type":"text","x":2070,"y":230,"width":860,"height":360,"text":"## TECHNICAL DEVELOPMENT\n\nTD_TechnicalKnowledgePlatform_v2.1.0\nFAB_FabricDatamart_v2.2.0\nCPD_VisualSampleDatamart_v1.1.0","color":"3"},
+		{"id":"business-source","type":"text","x":3070,"y":230,"width":860,"height":360,"text":"## SOURCING\n\nSCP_SourcingChatbot_v2.3.0","color":"3"},
+		{"id":"business-purchase","type":"text","x":4070,"y":230,"width":860,"height":360,"text":"## PURCHASING\n\nPUR_GDIAutomation_v1.0.0\nPUR_MaterialAllocation_v1.1.0\nPUR_AdhocIndentSouth_v1.0.0\nPUR_InventoryReport_v2.1.0","color":"3"},
+		{"id":"business-warehouse","type":"text","x":5070,"y":230,"width":860,"height":360,"text":"## WAREHOUSE / MATERIAL\n\nWH_AWBExtraction_v1.1.0","color":"3"},
+		{"id":"business-production","type":"text","x":6070,"y":230,"width":860,"height":360,"text":"## PRODUCTION\n\nPROD_HangingLineIoT_v1.0.0","color":"3"},
+		{"id":"business-wash","type":"text","x":7070,"y":230,"width":860,"height":360,"text":"## WASH\n\nWASH_SamplingManagement_v1.1.0\nWASH_COWASH_v2.0.0","color":"3"},
+		{"id":"business-qc","type":"text","x":8070,"y":230,"width":860,"height":360,"text":"## QC / TQM\n\nQC_DefectDetection_v1.0.0\nQC_ThreadTraceability_v1.0.0","color":"3"},
+		{"id":"business-logistics","type":"text","x":9070,"y":230,"width":860,"height":360,"text":"## LOGISTICS / EXIM\n\nLOG_ExpenseInvoiceProcessing_v1.2.2","color":"3"},
+		{"id":"business-finance","type":"text","x":10070,"y":230,"width":860,"height":360,"text":"## FINANCE / ACCOUNTING\n\nFIN_FinanceManagement_v1.2.0\nFIN_InvoiceDownloader_v1.2.0\nACC_GRNSupplierInvoiceBot_v2.3.0","color":"3"},
+		{"id":"wfx","type":"text","x":600,"y":1000,"width":3000,"height":280,"text":"# WFX ERP\nMaster Data | Order | Purchasing | Material | Inventory | Operational Transaction","color":"4"},
+		{"id":"erp-rule","type":"text","x":4200,"y":1000,"width":3000,"height":280,"text":"# ERP CONTROL\nValidation | Permission | Transaction Status | Audit | Error Handling | Rollback","color":"4"},
+		{"id":"erp-boundary","type":"text","x":7800,"y":1000,"width":2700,"height":280,"text":"# ARCHITECTURE RULE\nAI does not replace WFX or GTAS. Not every AI use case writes back to WFX.","color":"4"},
+		{"id":"mmx","type":"text","x":400,"y":1680,"width":1800,"height":280,"text":"## MMX\nMaterial | Inventory | Warehouse","color":"1"},
+		{"id":"eoffice","type":"text","x":2450,"y":1680,"width":1800,"height":280,"text":"## eOffice\nDocument | Workflow | Sign / Approval","color":"1"},
+		{"id":"vnpt","type":"text","x":4500,"y":1680,"width":1800,"height":280,"text":"## VNPT e-Invoice\nElectronic invoice | Accounting process","color":"1"},
+		{"id":"iot","type":"text","x":6550,"y":1680,"width":1800,"height":280,"text":"## IoT / WISER / INA\nMachine and production-line data","color":"1"},
+		{"id":"external","type":"text","x":8600,"y":1680,"width":1800,"height":280,"text":"## EXTERNAL PLATFORMS\nCourier | Supplier | Customer | Academic / Vendor","color":"1"},
+		{"id":"gtas","type":"text","x":400,"y":2380,"width":2400,"height":280,"text":"# GTAS / IED\nPPJ-specific costing, technical and operational applications","color":"6"},
+		{"id":"datamarts","type":"text","x":3200,"y":2380,"width":2400,"height":280,"text":"# DATAMARTS\nFabric | Visual Sample | Technical Knowledge | Sourcing","color":"6"},
+		{"id":"portals","type":"text","x":6000,"y":2380,"width":2400,"height":280,"text":"# INTERNAL PORTALS\nWash Sampling | Admin Expense | AI Applications","color":"6"},
+		{"id":"utilities","type":"text","x":8800,"y":2380,"width":1800,"height":280,"text":"# UTILITIES\nReporting | Search | Workflow","color":"6"},
+		{"id":"dwh","type":"text","x":400,"y":3080,"width":2200,"height":320,"text":"# DWH / DATABRICKS\nETL | Curated Data | Lineage | Analytics","color":"5"},
+		{"id":"perri","type":"text","x":3000,"y":3080,"width":2200,"height":320,"text":"# PERRI / AI HUB\nIntent | Agent / Tool | Controlled response or action","color":"5"},
+		{"id":"automation","type":"text","x":5600,"y":3080,"width":2200,"height":320,"text":"# AI + AUTOMATION\nOCR | RAG | Agents | Anomaly | RPA | API","color":"5"},
+		{"id":"ai-pattern","type":"text","x":8200,"y":3080,"width":2400,"height":320,"text":"# OPERATING PATTERN\nRead -> Understand -> Validate -> Recommend -> Automate","color":"5"},
+		{"id":"human","type":"text","x":800,"y":3840,"width":2600,"height":280,"text":"# HUMAN CONFIRM\nDomain expert validates recommendation, exception and business decision.","color":"2"},
+		{"id":"permission","type":"text","x":4300,"y":3840,"width":2600,"height":280,"text":"# GOVERNANCE\nOwner | Permission | Evidence | Version | Audit | Fallback","color":"2"},
+		{"id":"execute","type":"text","x":7800,"y":3840,"width":2600,"height":280,"text":"# WRITE BACK / EXECUTE\nControlled API or user-confirmed transaction into the target system.","color":"2"}
+	],
+	"edges":[
+		{"id":"edge-business-1","fromNode":"business-market","fromSide":"right","toNode":"business-mer","toSide":"left","label":"business flow"},
+		{"id":"edge-business-2","fromNode":"business-mer","fromSide":"right","toNode":"business-tech","toSide":"left","label":"business flow"},
+		{"id":"edge-business-3","fromNode":"business-tech","fromSide":"right","toNode":"business-source","toSide":"left","label":"business flow"},
+		{"id":"edge-business-4","fromNode":"business-source","fromSide":"right","toNode":"business-purchase","toSide":"left","label":"business flow"},
+		{"id":"edge-business-5","fromNode":"business-purchase","fromSide":"right","toNode":"business-warehouse","toSide":"left","label":"business flow"},
+		{"id":"edge-business-6","fromNode":"business-warehouse","fromSide":"right","toNode":"business-production","toSide":"left","label":"business flow"},
+		{"id":"edge-business-7","fromNode":"business-production","fromSide":"right","toNode":"business-wash","toSide":"left","label":"business flow"},
+		{"id":"edge-business-8","fromNode":"business-wash","fromSide":"right","toNode":"business-qc","toSide":"left","label":"business flow"},
+		{"id":"edge-business-9","fromNode":"business-qc","fromSide":"right","toNode":"business-logistics","toSide":"left","label":"business flow"},
+		{"id":"edge-business-10","fromNode":"business-logistics","fromSide":"right","toNode":"business-finance","toSide":"left","label":"business flow"},
+		{"id":"e-business-wfx","fromNode":"business-purchase","fromSide":"bottom","toNode":"wfx","toSide":"top","label":"transaction"},
+		{"id":"e-business-gtas","fromNode":"business-tech","fromSide":"bottom","toNode":"gtas","toSide":"top","label":"technical / costing"},
+		{"id":"e-wfx-specialized","fromNode":"wfx","fromSide":"bottom","toNode":"mmx","toSide":"top","label":"material data"},
+		{"id":"e-wfx-vnpt","fromNode":"wfx","fromSide":"bottom","toNode":"vnpt","toSide":"top","label":"invoice data"},
+		{"id":"e-wfx-iot","fromNode":"wfx","fromSide":"bottom","toNode":"iot","toSide":"top","label":"operations"},
+		{"id":"e-wfx-gtas","fromNode":"wfx","fromSide":"bottom","toNode":"gtas","toSide":"top","label":"ERP integration"},
+		{"id":"e-specialized-dwh","fromNode":"external","fromSide":"bottom","toNode":"dwh","toSide":"top","label":"source data"},
+		{"id":"e-internal-dwh","fromNode":"datamarts","fromSide":"bottom","toNode":"dwh","toSide":"top","label":"curated data"},
+		{"id":"e-dwh-perri","fromNode":"dwh","fromSide":"right","toNode":"perri","toSide":"left","label":"governed context"},
+		{"id":"e-perri-auto","fromNode":"perri","fromSide":"right","toNode":"automation","toSide":"left","label":"agent / tool"},
+		{"id":"e-auto-pattern","fromNode":"automation","fromSide":"right","toNode":"ai-pattern","toSide":"left","label":"controlled capability"},
+		{"id":"e-pattern-human","fromNode":"ai-pattern","fromSide":"bottom","toNode":"human","toSide":"top","label":"review"},
+		{"id":"e-human-governance","fromNode":"human","fromSide":"right","toNode":"permission","toSide":"left","label":"approve"},
+		{"id":"e-governance-execute","fromNode":"permission","fromSide":"right","toNode":"execute","toSide":"left","label":"authorize"},
+		{"id":"e-execute-wfx","fromNode":"execute","fromSide":"top","toNode":"wfx","toSide":"bottom","label":"controlled write-back"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }
