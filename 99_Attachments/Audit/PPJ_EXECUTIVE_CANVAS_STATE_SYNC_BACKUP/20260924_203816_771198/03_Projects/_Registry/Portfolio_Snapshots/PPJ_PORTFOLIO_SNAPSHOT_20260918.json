@@ -1,6 +1,6 @@
 {
-  "source_event": "PPJ-EXECUTIVE-CANVAS-SYNC-20260924_203816",
-  "last_verified": "2026-09-24",
+  "source_event": "PPJ-EXECUTIVE-CANVAS-SYNC-20260923_134955",
+  "last_verified": "2026-09-23",
   "portfolio_maturity": "Stage 3 - Controlled Delivery / Early Scale",
   "naming_standard": "<DEPARTMENT>_<APPLICATION>_v<MAJOR>.<MINOR>.<PATCH>",
   "strategic_direction": [
@@ -411,7 +411,7 @@
     {
       "code": "MER_InvoiceDataRecheck_v1.1.0",
       "domain": "Merchandising",
-      "lifecycle": "Production / Support",
+      "lifecycle": "Active",
       "gate": "Multi-customer invoice, cost and data checking",
       "priority": "Medium",
       "outcome": "Cross-check costing data, commercial cost, invoice data and customer rules, route exceptions to user review.",
@@ -435,17 +435,15 @@
       "lane": "ACTIVE DELIVERY / UAT",
       "candidate": false,
       "registration": "Registered",
-      "delivery_stage": "GO-LIVE / PRODUCTION / SUPPORT",
+      "delivery_stage": "UAT / PRE-GO-LIVE",
       "status": "Active",
-      "stage_entered_date": "2026-09-24",
+      "stage_entered_date": "Needs Confirmation",
       "delivery_stream": "INTERNAL DEVELOPMENT",
       "legacy": [
         "MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1",
         "ACC.CHICOS.INVOICE.RECHECK-AUDIT.v1.1"
       ],
-      "link_target": "",
-      "last_verified": "2026-09-24",
-      "source_event": "PPJ-EXECUTIVE-CANVAS-SYNC-20260924_203816"
+      "link_target": ""
     },
     {
       "code": "WASH_SamplingManagement_v1.1.0",

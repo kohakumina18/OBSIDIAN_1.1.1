@@ -48,20 +48,20 @@
     {
       "id": "road-5",
       "type": "text",
-      "text": "## INTERNAL DEVELOPMENT / UAT / PRE-GO-LIVE\n\n- TD_TechnicalKnowledgePlatform_v2.1.0 | Sync Validation & Stabilization | Active | Sync validation and canonical technical model\n- ADMIN_ExpenseManagement_v1.1.0 | Active / Requirement Refinement / UAT Preparation | Active | Multi-traveler request model, end-to-end lifecycle and UAT preparation\n- LOG_ExpenseInvoiceProcessing_v1.2.2 | Regional Rollout / UAT | Active | Regional rollout, tax rules and invoice validation\n- PUR_MaterialAllocation_v1.1.0 | Validation / Stabilization | Active | Transaction reliability and exception control",
+      "text": "## INTERNAL DEVELOPMENT / UAT / PRE-GO-LIVE\n\n- TD_TechnicalKnowledgePlatform_v2.1.0 | Sync Validation & Stabilization | Active | Sync validation and canonical technical model\n- ADMIN_ExpenseManagement_v1.1.0 | Active / Requirement Refinement / UAT Preparation | Active | Multi-traveler request model, end-to-end lifecycle and UAT preparation\n- LOG_ExpenseInvoiceProcessing_v1.2.2 | Regional Rollout / UAT | Active | Regional rollout, tax rules and invoice validation\n- PUR_MaterialAllocation_v1.1.0 | Validation / Stabilization | Active | Transaction reliability and exception control\n- MER_InvoiceDataRecheck_v1.1.0 | Active | Active | Multi-customer invoice, cost and data checking",
       "x": 3300,
       "y": 0,
       "width": 600,
-      "height": 480
+      "height": 570
     },
     {
       "id": "road-6",
       "type": "text",
-      "text": "## INTERNAL DEVELOPMENT / GO-LIVE / PRODUCTION / SUPPORT\n\n- MER_InvoiceDataRecheck_v1.1.0 | Production / Support | Active | Multi-customer invoice, cost and data checking\n- HR_EmployeeDataPlatform_v1.1.0 | Production / Expansion | Active | Production rollout and data-quality monitoring\n- SCP_SourcingChatbot_v2.3.0 | Production | Active | Production monitoring, data quality and retrieval quality\n- FIN_InvoiceDownloader_v1.2.0 | Production | Active | Operational reliability\n- PUR_InventoryReport_v2.1.0 | Production | Active | Post-enhancement support\n- AI_PERRIPlatform_v3.2.0 | Production | Active | Permissioned production orchestration\n- AI_ApplicationHub_v2.1.0 | Internal Production Platform | Active | Platform operations\n- FAB_FabricDatamart_v2.2.0 | Support | Support | Operational support\n- CPD_VisualSampleDatamart_v1.1.0 | Maintenance | Support | Operational maintenance\n- ACC_GRNSupplierInvoiceBot_v2.3.0 | Production Support | Support | Operational stability and exceptions\n- PUR_AdhocIndentSouth_v1.0.0 | Maintenance | Support | Operational maintenance\n- PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0 | Maintenance | Support | IT helpdesk maintenance",
+      "text": "## INTERNAL DEVELOPMENT / GO-LIVE / PRODUCTION / SUPPORT\n\n- HR_EmployeeDataPlatform_v1.1.0 | Production / Expansion | Active | Production rollout and data-quality monitoring\n- SCP_SourcingChatbot_v2.3.0 | Production | Active | Production monitoring, data quality and retrieval quality\n- FIN_InvoiceDownloader_v1.2.0 | Production | Active | Operational reliability\n- PUR_InventoryReport_v2.1.0 | Production | Active | Post-enhancement support\n- AI_PERRIPlatform_v3.2.0 | Production | Active | Permissioned production orchestration\n- AI_ApplicationHub_v2.1.0 | Internal Production Platform | Active | Platform operations\n- FAB_FabricDatamart_v2.2.0 | Support | Support | Operational support\n- CPD_VisualSampleDatamart_v1.1.0 | Maintenance | Support | Operational maintenance\n- ACC_GRNSupplierInvoiceBot_v2.3.0 | Production Support | Support | Operational stability and exceptions\n- PUR_AdhocIndentSouth_v1.0.0 | Maintenance | Support | Operational maintenance\n- PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0 | Maintenance | Support | IT helpdesk maintenance",
       "x": 3960,
       "y": 0,
       "width": 600,
-      "height": 1200
+      "height": 1110
     },
     {
       "id": "road-7",

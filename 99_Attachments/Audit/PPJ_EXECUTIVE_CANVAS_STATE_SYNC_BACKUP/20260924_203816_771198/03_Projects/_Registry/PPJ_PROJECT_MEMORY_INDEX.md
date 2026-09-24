@@ -151,7 +151,7 @@ Last updated: 2026-07-13
 | HR_EmployeeDataPlatform_v1.1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production / Expansion | Active | Production rollout and data-quality monitoring |  |
 | LOG_ExpenseInvoiceProcessing_v1.2.2 | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Regional Rollout / UAT | Active | Regional rollout, tax rules and invoice validation | 2026-09-23 |
 | MER_CostingAgenticPlatform_v1.1.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development | Active | Sew Agent fixes and Wash Agent development |  |
-| MER_InvoiceDataRecheck_v1.1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production / Support | Active | Multi-customer invoice, cost and data checking | 2026-09-24 |
+| MER_InvoiceDataRecheck_v1.1.0 | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Active | Active | Multi-customer invoice, cost and data checking |  |
 | MER_MarketIntelligence_v1.1.0 | INTERNAL DEVELOPMENT | ANALYSIS | Active Intelligence | Active | Market and customer intelligence delivery |  |
 | MER_POCommit_v1.1.0 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed |  |
 | PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Maintenance | Support | IT helpdesk maintenance |  |

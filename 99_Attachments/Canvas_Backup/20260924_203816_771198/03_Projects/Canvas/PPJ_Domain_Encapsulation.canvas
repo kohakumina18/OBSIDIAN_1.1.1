@@ -273,7 +273,7 @@
     {
       "id": "view-card-1534f8780fe2681b",
       "type": "text",
-      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:MER_InvoiceDataRecheck_v1.1.0 -->\n\n## [[03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1|MER_InvoiceDataRecheck_v1.1.0]]\n\nDomain: Merchandising\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: GO-LIVE / PRODUCTION / SUPPORT\nLifecycle: Production / Support\nStatus: Active\nPriority: Medium\nGate: Multi-customer invoice, cost and data checking",
+      "text": "<!-- PPJ_PORTFOLIO_VIEW_CARD:MER_InvoiceDataRecheck_v1.1.0 -->\n\n## [[03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1|MER_InvoiceDataRecheck_v1.1.0]]\n\nDomain: Merchandising\nDelivery Stream: INTERNAL DEVELOPMENT\nDelivery Stage: UAT / PRE-GO-LIVE\nLifecycle: Active\nStatus: Active\nPriority: Medium\nGate: Multi-customer invoice, cost and data checking",
       "x": 4930,
       "y": 680,
       "width": 560,

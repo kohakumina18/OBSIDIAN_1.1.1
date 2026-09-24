@@ -2,19 +2,34 @@
 type: "project_home"
 project: "MER_InvoiceDataRecheck_v1.1.0"
 source_project: "MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1.md"
-source_event: "PPJ-PORTFOLIO-SNAPSHOT-20260918"
-last_verified: "2026-09-18"
+source_event: "PPJ-EXECUTIVE-CANVAS-SYNC-20260924_203816"
+last_verified: "2026-09-24"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
-lifecycle: "Active"
+lifecycle: "Production / Support"
 current_gate: "Multi-customer invoice, cost and data checking"
 priority: "Medium"
-delivery_stage: "UAT / PRE-GO-LIVE"
+delivery_stage: "GO-LIVE / PRODUCTION / SUPPORT"
 status: "Active"
-stage_entered_date: "Needs Confirmation"
+stage_entered_date: "2026-09-24"
 delivery_stream: "INTERNAL DEVELOPMENT"
+phase: "GO-LIVE / PRODUCTION / SUPPORT"
 ---
+
+<!-- PPJ_EXECUTIVE_DELIVERY_STAGE_START -->
+## Executive Delivery State
+
+| Field | Current |
+|---|---|
+| Delivery Stream | INTERNAL DEVELOPMENT |
+| Delivery Stage | GO-LIVE / PRODUCTION / SUPPORT |
+| Detailed Lifecycle | Production / Support |
+| Status | Active |
+| Current Gate | Multi-customer invoice, cost and data checking |
+| Stage Entered | 2026-09-24 |
+| Last Verified | 2026-09-24 |
+<!-- PPJ_EXECUTIVE_DELIVERY_STAGE_END -->
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
 ## Current Portfolio State

@@ -174,7 +174,7 @@
       "y": 3640,
       "width": 3200,
       "height": 2320,
-      "label": "DATA / GOVERNANCE GAP (curated notes, written 23/09/2026)"
+      "label": "DATA / GOVERNANCE GAP (curated notes, written 24/09/2026)"
     },
     {
       "id": "eco-title",
@@ -192,7 +192,7 @@
       "y": -1230,
       "width": 9300,
       "height": 260,
-      "text": "ERP -> Enterprise Applications -> Internal Systems -> AI & Automation\n\nPortfolio Baseline: 19/09/2026  |  Vault Reconciliation: 23/09/2026 (portfolio snapshot)\nGenerated From: PPJ AI & Automation Portfolio (vault registry) + PPJ operating-systems landscape ([[02_BA_Knowledge/Enterprise_Architecture/PPJ_Operational_Systems_Landscape|Operational Systems Landscape]]). Regenerated automatically when the portfolio snapshot changes."
+      "text": "ERP -> Enterprise Applications -> Internal Systems -> AI & Automation\n\nPortfolio Baseline: 19/09/2026  |  Vault Reconciliation: 24/09/2026 (portfolio snapshot)\nGenerated From: PPJ AI & Automation Portfolio (vault registry) + PPJ operating-systems landscape ([[02_BA_Knowledge/Enterprise_Architecture/PPJ_Operational_Systems_Landscape|Operational Systems Landscape]]). Regenerated automatically when the portfolio snapshot changes."
     },
     {
       "id": "eco-exec-summary",
@@ -219,7 +219,7 @@
       "y": -940,
       "width": 2900,
       "height": 640,
-      "text": "## PORTFOLIO INVENTORY\n\nBaseline 19/09/2026 (35 initiatives):\nActive / Dev 16 | Production 6 | Maintenance 4 | Closed 4 | On Hold 3 | Evaluation 2\n\nCurrent Vault 23/09/2026 (36 registered records, recomputed):\nProduction 7 | Active / Dev 10 | UAT / Eval / Analysis 5 | Maintenance 4 | On Hold 3 | Closed 7\n\nBaseline is kept unchanged. Bucket definitions differ - see the gap notes."
+      "text": "## PORTFOLIO INVENTORY\n\nBaseline 19/09/2026 (35 initiatives):\nActive / Dev 16 | Production 6 | Maintenance 4 | Closed 4 | On Hold 3 | Evaluation 2\n\nCurrent Vault 24/09/2026 (36 registered records, recomputed):\nProduction 8 | Active / Dev 9 | UAT / Eval / Analysis 5 | Maintenance 4 | On Hold 3 | Closed 7\n\nBaseline is kept unchanged. Bucket definitions differ - see the gap notes."
     },
     {
       "id": "proj-mer-costingagenticplatform-v1-1-0",
@@ -248,8 +248,8 @@
       "y": 1000,
       "width": 1450,
       "height": 380,
-      "text": "## [[03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1|MER_InvoiceDataRecheck_v1.1.0]]\n\nInvoice Data Recheck\n\nDomain: Merchandising\nType: AUTOMATION (audit / rule engine)\nStatus: Active\nBaseline code: MER.INVOICE.DATA.RECHECK.v1.1\n\nCapability: Cross-check costing, commercial and invoice data with configurable customer rule packs; exceptions go to human review.",
-      "color": "5"
+      "text": "## [[03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1|MER_InvoiceDataRecheck_v1.1.0]]\n\nInvoice Data Recheck\n\nDomain: Merchandising\nType: AUTOMATION (audit / rule engine)\nStatus: Production / Support\nBaseline code: MER.INVOICE.DATA.RECHECK.v1.1\n\nCapability: Cross-check costing, commercial and invoice data with configurable customer rule packs; exceptions go to human review.",
+      "color": "4"
     },
     {
       "id": "proj-mer-pocommit-v1-1-0",
