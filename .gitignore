@@ -30,3 +30,6 @@ desktop.ini
 # Marker dropped by scripts/Sync-VaultGit.ps1 when a merge conflict blocks syncing
 # (per-device, resolved locally - see .git/vault-sync.log)
 SYNC-CONFLICT-README.md
+
+# Local credentials file - must never be committed on any machine
+01_Daily_Notes/DATA/PARAM.txt
