@@ -643,9 +643,19 @@
 			"x":9400,
 			"y":31000,
 			"width":400,
-			"height":440
+			"height":460
 		},
-		{"id":"31735c1ae669f5af","type":"file","file":"ADMIN_EXPENSE-RECAP-UAT-3.md","x":12300,"y":29500,"width":1420,"height":10097}
+		{"id":"31735c1ae669f5af","type":"file","file":"ADMIN_EXPENSE-RECAP-UAT-3.md","x":12300,"y":29500,"width":1420,"height":10097},
+		{
+			"id":"2f6c697f5437195f",
+			"type":"text",
+			"text":"21.9.2026\n   \n- FOLLOW UP GDI\n- ~~FOLLOW UP MATERIAL ALLOC~~\n- FOLLOW UP LOG.EXPENSE.INVOICES - DANANG + NHATRANG\n- FOLLOW UP ADMIN EXPENSE\n\t- meet up MONDAY AFTERNOON - ADMIN DEPT\n- FOLLOW UP AWB.OCR\n\t- UPDATE / COMMIT TO GITLAB\n- FOLLOW UP AWB.MAIL\n- FOLLOW UP FINANCE-AI: WORKSTREAM 2 \n\t- SET UP MEETING W MRS VIOLET - FABRIC OC\n- FOLLOW UP FINANCE-AI: WORKSTREAM 3\n\t- \n\n\n",
+			"styleAttributes":{},
+			"x":9540,
+			"y":31660,
+			"width":620,
+			"height":540
+		}
 	],
 	"edges":[
 		{
@@ -1151,6 +1161,24 @@
 			"fromSide":"bottom",
 			"toNode":"9c3712fbb7d17026",
 			"toSide":"top"
+		},
+		{
+			"id":"02c4626b1d44196e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"9c3712fbb7d17026",
+			"fromSide":"bottom",
+			"toNode":"2f6c697f5437195f",
+			"toSide":"top"
+		},
+		{
+			"id":"67a0ff4ff2d4dd41",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"2f6c697f5437195f",
+			"fromSide":"right",
+			"toNode":"3aa32940e61d5e35",
+			"toSide":"left"
 		}
 	],
 	"metadata":{
