@@ -14,7 +14,8 @@ comes from the owner's operating-systems diagram recorded in PPJ_Operational_Sys
 
 Built to be run unattended on any device, so the output depends only on the vault contents:
   - dates come from the snapshot, never from the clock;
-  - the file is written with LF line endings, atomically, and only when the bytes change;
+  - the file is written in Obsidian's own canvas format (tabs, one object per line), LF, atomically, and only
+    when its content changes - so opening the canvas in Obsidian does not create a diff for git to carry;
   - a project the curated table does not know is placed by its domain instead of aborting the run;
   - the file is NOT written if a structural check fails (duplicate ids, orphan edges, overlaps, missing projects).
 
@@ -858,16 +859,40 @@ for e in edges:                       # a line running behind a card misleads, b
             break
 
 ordered = [n for n in nodes if n["type"] == "group"] + [n for n in nodes if n["type"] != "group"]
-payload = json.dumps({"nodes": ordered, "edges": edges, "metadata": {"version": "1.0-1.0", "frontmatter": {}}},
-                     ensure_ascii=False, indent=2) + "\n"
+
+
+def obsidian_canvas_json(doc_nodes: list[dict], doc_edges: list[dict]) -> str:
+    """Serialize exactly as Obsidian saves a canvas: tab indents, one compact object per line, no final newline.
+
+    Obsidian rewrites the file in this format whenever the canvas is opened and saved. Writing any other format
+    means Obsidian and this builder keep rewriting each other's bytes, and every device commits the churn.
+    """
+    one = lambda o: json.dumps(o, ensure_ascii=False, separators=(",", ":"))
+    return ("{\n\t\"nodes\":[\n" + ",\n".join("\t\t" + one(n) for n in doc_nodes) + "\n\t],\n"
+            "\t\"edges\":[\n" + ",\n".join("\t\t" + one(e) for e in doc_edges) + "\n\t],\n"
+            "\t\"metadata\":{\n\t\t\"version\":\"1.0-1.0\",\n\t\t\"frontmatter\":{}\n\t}\n}")
+
+
+payload = obsidian_canvas_json(ordered, edges)
 json.loads(payload)  # must parse
 
 
 def write_if_changed(path: Path, data: str) -> str:
-    """LF endings on every OS, atomic replace, and no write at all when nothing changed."""
+    """LF endings on every OS, atomic replace, and no write at all when nothing changed.
+
+    'Nothing changed' is judged on content, not bytes: if Obsidian has re-saved the file in a slightly different
+    layout but the nodes and edges are the same, the file is left alone rather than fought over.
+    """
     raw = data.encode("utf-8")
-    if path.exists() and path.read_bytes() == raw:
-        return "unchanged"
+    if path.exists():
+        current = path.read_bytes()
+        if current == raw:
+            return "unchanged"
+        try:
+            if json.loads(current.decode("utf-8-sig")) == json.loads(data):
+                return "unchanged (same content, Obsidian formatting kept)"
+        except (ValueError, UnicodeDecodeError):
+            pass
     tmp = path.with_name(path.name + ".ppj-sync-tmp")        # gitignored suffix
     tmp.write_bytes(raw)
     os.replace(tmp, path)
@@ -891,8 +916,11 @@ elif "--write" in sys.argv:
     report["result"] = write_if_changed(OUT, payload)
     report["path"] = str(OUT)
 else:
-    report["result"] = "dry run - would write" if not OUT.exists() or OUT.read_bytes() != payload.encode("utf-8") \
-        else "dry run - up to date"
+    try:
+        same = OUT.exists() and json.loads(OUT.read_text("utf-8-sig")) == json.loads(payload)
+    except ValueError:
+        same = False
+    report["result"] = "dry run - up to date" if same else "dry run - would write"
 if "--layout-json" in sys.argv:   # optional: geometry dump for a layout preview
     Path(_arg("--layout-json")).write_text(
         json.dumps({"rect": rect, "kind": kind, "edges": edges}), "utf-8")
