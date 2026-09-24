@@ -1198,6 +1198,8 @@ Không nên mô tả AI như một “hệ thống mới thay GTAS”.
 
 Nó đang **attach vào WFX / GTAS / third-party applications**.
 
+> **Cập nhật 2026-09-24:** danh sách đầy đủ và có tên của các hệ thống đang vận hành (16 module WFX, 16 ứng dụng GTAS gồm GTAS Costing, 6 hệ thống third-party) nằm ở [[PPJ_Operational_Systems_Landscape]]. Mục 22-23 ở trên chỉ mô tả ở mức tổng quát.
+
 ---
 
 # 24. Relationship chính giữa các phòng ban
@@ -1453,6 +1455,8 @@ Như vậy người xem sẽ hiểu ngay:
 
 Related Canvas and Diagrams
 
+[[PPJ_Digital_Application_AI_Automation_Ecosystem.canvas]]
+[[PPJ_Operational_Systems_Landscape]]
 [[PPJ_Enterprise_Application_AI_Automation_Ecosystem]]
 [[PPJ_EndToEnd_Process_Automation_Coverage]]
 [[PPJ_Data_Flow]]
