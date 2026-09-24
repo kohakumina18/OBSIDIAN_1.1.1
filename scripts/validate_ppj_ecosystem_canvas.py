@@ -26,8 +26,12 @@ allowed_edge_keys = {"id", "fromNode", "fromSide", "toNode", "toSide", "label", 
 check("edge keys are spec keys", all(set(e) <= allowed_edge_keys for e in edges))
 check("sides valid", all(e["fromSide"] in ("top", "bottom", "left", "right") and e["toSide"] in ("top", "bottom", "left", "right") for e in edges))
 check("all coordinates integers", all(isinstance(n[k], int) for n in nodes for k in ("x", "y", "width", "height")))
-check("every edge has a category-prefixed label",
-      all(re.match(r"^(INTEGRATION|PLANNED|AFFINITY|DATA) \| ", e.get("label", "")) for e in edges))
+check("every edge label starts with its category",
+      all(re.match(r"^(INTEGRATION|PLANNED|AFFINITY|DATA)( \| .+)?$", e.get("label", "")) for e in edges))
+aff = Counter(e["fromNode"] for e in edges if e["label"].startswith("AFFINITY"))
+check("at most one AFFINITY line per project", all(v == 1 for v in aff.values()), str({k: v for k, v in aff.items() if v > 1}))
+check("edge labels stay short (<= 32 chars)", all(len(e["label"]) <= 32 for e in edges),
+      str([e["label"] for e in edges if len(e["label"]) > 32]))
 check("ASCII only (vault canvas-label rule)", raw.isascii(), "" if raw.isascii() else "non-ascii present")
 
 # CHECK 1 / 2 : the 35 baseline initiatives + canonical codes
@@ -39,8 +43,11 @@ check("file nodes point at real files", all((V / n["file"]).exists() for n in no
 check("LF line endings only (same bytes on every OS)", b"\r" not in CANVAS.read_bytes())
 heads = Counter()
 for n in proj_nodes:
-    m = re.search(r"\|([^\]]+)\]\]", n["text"].splitlines()[0]) or re.search(r"## (.+)", n["text"].splitlines()[0])
+    code_line = n["text"].splitlines()[1]          # line 0 is the friendly name, line 1 the code
+    m = re.search(r"\|([^\]]+)\]\]", code_line) or re.search(r"## (.+)", code_line)
     heads[m.group(1).strip()] += 1
+check("project name and code are headings (legible zoomed out)",
+      all(n["text"].startswith("# ") and n["text"].splitlines()[1].startswith("## ") for n in proj_nodes))
 check("each canonical code appears exactly once", all(heads[c] == 1 for c in regs), str([c for c in regs if heads[c] != 1]))
 BASE35 = """PPJ.UIT.ACADEMIC.COLLABORATION.v1.1|PPJxQSee.AI|QC.Primo1D.RFID.Thread.v1.0|SCP.SOURCING.CHATBOT.v2.3|PUR.Adhoc.Indent.South.v1.0|
 PUR.Material.Allocation.v1.1|PUR.Inventory.Report.v2.1|PUR.GDI.Automation.v1.0|PUR.HM.LabelO.Processing.Automation.v1.0|

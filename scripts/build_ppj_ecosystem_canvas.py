@@ -17,6 +17,13 @@ Built to be run unattended on any device, so the output depends only on the vaul
   - the file is written with LF line endings, atomically, and only when the bytes change;
   - a project the curated table does not know is placed by its domain instead of aborting the run;
   - the file is NOT written if a structural check fails (duplicate ids, orphan edges, overlaps, missing projects).
+
+Readability rules (the Canvas is read zoomed out, where body text is a few pixels high):
+  - anything that must be legible at overview zoom is a Markdown heading: project name, code, status,
+    group titles, system names; body text is detail for zooming in;
+  - each project draws at most ONE business-affinity line; integration, planned and data lines are always drawn;
+  - edge labels are the category word, plus a two- or three-word qualifier only for INTEGRATION and PLANNED;
+  - WFX modules are ordered by the position of the projects that point at them, so lines run roughly parallel.
 """
 from __future__ import annotations
 
@@ -43,11 +50,15 @@ projects = {p["code"]: p for p in snap["projects"]}
 RECONCILED = dt.date.fromisoformat(snap["last_verified"]).strftime("%d/%m/%Y")
 
 # ---------------------------------------------------------------- geometry
-CARD_W, CARD_H, PITCH, PAD, HDR = 1450, 380, 420, 100, 160
-CX, CW = 1950, 5400          # centre stack
+CARD_W, CARD_H, PITCH, HDR = 1450, 520, 570, 170
+CORRIDOR = 900               # free space between a domain column and the centre stack, for the lines
 LX, LW = 0, 1650             # left domain column
-RX, RW = 7650, 1650          # right domain column
-GAP = 180
+CX, CW = LX + LW + CORRIDOR, 5400          # centre stack
+RX, RW = CX + CW + CORRIDOR, 1650          # right domain column
+QX, QW = RX + RW + 300, 3200               # far-right periphery
+PX, PW = -4600, 3200                       # far-left periphery; wide margin for the Technical -> Costing curve
+TOTAL_W = RX + RW
+GAP = 200
 
 # ------------------------------------------------------------------ colours
 C_PROD, C_ACTIVE, C_AMBER, C_HOLD = "4", "5", "3", "2"
@@ -73,15 +84,24 @@ def _add(n: dict, k: str) -> None:
     nodes.append(n)
 
 
+# Obsidian renders h1/h2/h3 at roughly 2.0 / 1.6 / 1.35 times body size.
+_HEAD = {"# ": (2.0, 52), "## ": (1.6, 42), "### ": (1.35, 35)}
+
+
 def est_height(body: str, w: float) -> float:
-    cpl = max(20, (w - 40) / 8.6)
     h = 44.0
     for line in body.split("\n"):
         if not line.strip():
             h += 12
             continue
-        factor = 1.7 if line.startswith("#") else 1.0
-        h += math.ceil(len(line) / (cpl / factor)) * 26 * (1.25 if line.startswith("#") else 1.0)
+        factor, lh = 1.0, 26
+        for prefix, spec in _HEAD.items():
+            if line.startswith(prefix):
+                factor, lh = spec
+                break
+        visible = re.sub(r"\[\[[^\]|]*\|([^\]]*)\]\]", r"\1", line)      # a wikilink shows its alias only
+        cpl = max(10, (w - 40) / (8.6 * factor))
+        h += math.ceil(len(visible) / cpl) * lh
     return h
 
 
@@ -95,27 +115,15 @@ def text(nid, x, y, w, h, body, color=None):
     _add(n, "text")
 
 
-def group(gid, x, y, w, h, label, color=None):
+def group(gid, x, y, w, h, label, color=None, title=None):
+    """A group plus a large heading inside its top band: Obsidian draws group labels too small to read zoomed out."""
     n = {"id": gid, "type": "group", "x": int(x), "y": int(y), "width": int(w), "height": int(h), "label": label}
     if color:
         n["color"] = color
     _add(n, "group")
-
-
-def edge(f, t, cat, label, fs, ts, curve=False):
-    # A curated edge whose endpoint has gone (a project was renamed or removed) is skipped, not fatal.
-    if f not in ids or t not in ids:
-        notices.append(f"skipped edge {f} -> {t}: endpoint not on the canvas (renamed or removed?)")
-        return
-    prefix = {"A": "INTEGRATION", "B": "PLANNED", "C": "AFFINITY", "D": "DATA"}[cat]
-    e = {"id": f"e{len(edges)+1:03d}-{f[:18]}-{t[:18]}", "fromNode": f, "fromSide": fs, "toNode": t, "toSide": ts,
-         "label": f"{prefix} | {label}"}
-    col = {"A": "4", "B": "2", "D": "5"}.get(cat)
-    if col:
-        e["color"] = col
-    if curve:
-        e["_curve"] = True
-    edges.append(e)
+    heading = title or label
+    hw = int(min(w - 60, len(heading) * 17.2 + 120))        # as wide as the h1 text needs; position chosen later
+    text("hdr-" + gid, x + 30, y + 20, hw, HDR - 40, "# " + heading)
 
 
 def slug(s: str) -> str:
@@ -170,14 +178,16 @@ CLASS_LABEL = {"production": "Production / Operational", "active": "Active / Dev
 # zone, friendly name, type (class label), capability, optional system-of-record line, optional note
 P = {
     "MER_CostingAgenticPlatform_v1.1.0": ("MER", "Agentic Costing Platform", "AI APPLICATION (agents / decision support)",
-        "Costing and quotation package: Sew Agent, Wash Agent, BOM, consumption, similar style. AI proposes, domain expert approves.", None, None),
+        "Costing and quotation package: Sew Agent, Wash Agent, BOM, consumption, similar style. AI proposes, domain expert approves.",
+        None, "Also relates to: Bill of Material, GTAS Costing."),
     "MER_MarketIntelligence_v1.1.0": ("MER", "Market Intelligence", "AI APPLICATION (data intelligence)",
         "Market, customer, product and material opportunity signals from external data and internal history.",
-        "Intelligence layer - not a system of record.", "Data input: Enterprise Data / DWH and sales / PO / fabric history (no edge drawn - see guide)."),
+        "Intelligence layer - not a system of record.", "Data input: Enterprise Data / DWH and sales / PO / fabric history (no line drawn)."),
     "MER_InvoiceDataRecheck_v1.1.0": ("MER", "Invoice Data Recheck", "AUTOMATION (audit / rule engine)",
         "Cross-check costing, commercial and invoice data with configurable customer rule packs; exceptions go to human review.", None, None),
     "MER_POCommit_v1.1.0": ("MER", "PO Commit Automation", "AUTOMATION",
-        "Customer order to MER PO creation; about 70-80% of customer scenarios covered. Historical record.", None, None),
+        "Customer order to MER PO creation; about 70-80% of customer scenarios covered. Historical record.", None,
+        "Historical affinity: Buyer Order Management (no line drawn for closed projects)."),
     "AI_PERRIPlatform_v3.2.0": ("SHARED", "PERRI Enterprise Chatbot", "INTERNAL PLATFORM (shared AI channel)",
         "Enterprise Q&A and orchestration: intent, agent / tool, controlled response. Not a business-domain application.", None,
         "Enterprise knowledge access: no per-project dependency drawn."),
@@ -189,28 +199,32 @@ P = {
     "HR_EmployeeDataPlatform_v1.1.0": ("HR", "HR Employee Data Platform", "WORKFLOW (data standardization)",
         "Employee data collection, validation and standardization into an Employee Master; applicant extraction / prefill.", None, None),
     "ADMIN_ExpenseManagement_v1.1.0": ("ADMIN", "Business Travel & Expense Management", "WORKFLOW",
-        "Request, approval, trip, advance, expense, settlement; multi-traveler requests. E-office integration is in scope.", None, None),
+        "Request, approval, trip, advance, expense, settlement; multi-traveler requests. E-office integration is in scope.", None,
+        "Also relates to: HRIS / master data, Finance."),
     "SCP_SourcingChatbot_v2.3.0": ("SRC", "Sourcing AI Chatbot", "AI APPLICATION (RAG / chatbot)",
-        "Supplier, material and sample search, comparison and sourcing knowledge retrieval.", None, None),
+        "Supplier, material and sample search, comparison and sourcing knowledge retrieval.", None,
+        "Also relates to: WFX Raw Material Planning."),
     "PUR_AdhocIndentSouth_v1.0.0": ("SRC", "Adhoc Indent Automation (South)", "AUTOMATION (rule-based)",
         "Repeated Adhoc Indent processing for the South region; WFX compatibility.", None, None),
     "PUR_HMLabelProcessing_v1.0.0": ("SRC", "H&M Label-O Processing", "AUTOMATION (rule-based)",
         "H&M Label-O processing; paused pending a scalable business case.", None, None),
     "PUR_InventoryReport_v2.1.0": ("SRC", "Purchasing Inventory Report", "DATA PLATFORM (reporting / visibility)",
-        "Purchasing inventory and material visibility. A data-visibility layer, not an automation bot.", None, None),
+        "Purchasing inventory and material visibility. A data-visibility layer, not an automation bot.", None,
+        "Also relates to: WFX Inventory Control, MMSx."),
     "PUR_MaterialAllocation_v1.1.0": ("SRC", "Material Allocation Automation", "AUTOMATION (workflow / transaction)",
-        "Surplus-material unreserve and reallocation across OCs. First Sewing / Embroidery flow validated.", None, None),
+        "Surplus-material unreserve and reallocation across OCs. First Sewing / Embroidery flow validated.", None,
+        "Also relates to: WFX Raw Material Planning, Purchase Order Management."),
     "PUR_GDIAutomation_v1.0.0": ("SRC", "GDI Automation", "AUTOMATION (API-first transaction)",
         "Goods dispatch / GDI data entry through WFX GET / POST APIs; API specification and UAT still ahead.",
-        "System of Record: WFX.", None),
+        "System of Record: WFX.", "Also relates to: WFX Logistics In-bound, Inventory Control."),
     "FIN_FinanceManagement_v1.2.0": ("FIN", "Finance AI Management", "AI APPLICATION (finance analytics platform)",
         "WS1 financial Q&A; WS2 OC cost and profitability control; WS3 factory cost integrity. Cross-system finance intelligence.",
-        "Data sources: WFX + DWH + GTAS / BI sources. Not a financial system of record.", None),
+        "Data sources: WFX Finance + DWH + Power BI + GTAS BI Report / Financial Statements. Not a financial system of record.", None),
     "FIN_InvoiceDownloader_v1.2.0": ("FIN", "Invoice Downloader", "AUTOMATION",
         "Downloads VNPT e-invoice files: session / cookie management and file retrieval. No accounting entry.", None, None),
     "ACC_GRNSupplierInvoiceBot_v2.3.0": ("FIN", "GRN Supplier Invoice Bot", "AUTOMATION (transaction bot)",
         "Validation, business rules and automated data entry for GRN and supplier invoices.", None,
-        "Process affinity also: Logistics In-bound (GRN), Purchase Order Management."),
+        "Also relates to: WFX Logistics In-bound (GRN), Purchase Order Management."),
     "ACC_InventoryReport_v1.0.0": ("FIN", "Accounting Inventory Report", "DATA PLATFORM (reporting)",
         "Accounting inventory reporting. Distinct from the Purchasing Inventory Report.", None, None),
     "EXIM.ExpenseInvoices.Automation.v1.1": ("FIN", "EXIM Expense Invoice Bot (legacy)", "AUTOMATION",
@@ -220,16 +234,20 @@ P = {
         "Logistics / EXIM expense invoices: regional and tax rules, validation, exceptions. Regions: HCM, Da Nang, Nha Trang, Ha Noi.", None,
         "Merged in the vault registry - see gap note 1."),
     "WH_AWBExtraction_v1.1.0": ("WHL", "AWB Document Intelligence", "AI APPLICATION (document intelligence)",
-        "AWB image OCR and DHL email parsing into one validated canonical AWB record; human validation.", None, None),
+        "AWB image OCR and DHL email parsing into one validated canonical AWB record; human validation.", None,
+        "Also relates to: GTAS Transportation."),
     "PROD_HangingLineIoT_v1.0.0": ("PROD", "Hanging Line IoT", "IOT",
-        "Production hanging-line digitalization and monitoring. IoT / operational, not an LLM application.", None, None),
+        "Production hanging-line digitalization and monitoring. IoT / operational, not an LLM application.", None,
+        "Also relates to: WFX Production Planning."),
     "WASH_SamplingManagement_v1.1.0": ("PROD", "Wash Sampling Management Portal", "WORKFLOW",
-        "Wash sample request, planning, result and approval in the PPJ Group Portal.", None, None),
+        "Wash sample request, planning, result and approval in the PPJ Group Portal.", None,
+        "Also relates to: WFX Production Management."),
     "WASH_COWASH_v2.0.0": ("PROD", "COWASH Wash Operations", "SYSTEM / APPLICATION (production wash platform)",
-        "Wash production workflow and operational data. Distinct from the sampling portal.", None, None),
+        "Wash production workflow and operational data. Distinct from the sampling portal.", None,
+        "Also relates to: WFX QC."),
     "QC_DefectDetection_v1.0.0": ("QC", "AI Defect Detection", "AI APPLICATION (computer vision)",
         "Image, defect detection, classification, QC review. Vendor proposal and NDA only - not an approved PoC.", None,
-        "Stream: EXTERNAL DEVELOPMENT."),
+        "Stream: EXTERNAL DEVELOPMENT. Also relates to: WFX QA, Production Management."),
     "QC_ThreadTraceability_v1.0.0": ("QC", "RFID Thread Traceability", "POC / EVALUATION",
         "RFID thread identification and traceability. Business case only; no PoC approved.", None,
         "Stream: EXTERNAL DEVELOPMENT. No operational integration assumed."),
@@ -299,10 +317,11 @@ DOMAIN_ZONE = {
     "External Collaboration": "COLLAB",
 }
 # Preferred order inside a zone; anything else in the zone follows in registry order.
+# SRC: Inventory Report sits between Material Allocation and GDI so both of its data lines are short and straight.
 ZONE_ORDER = {
     "MER": ["MER_CostingAgenticPlatform_v1.1.0", "MER_MarketIntelligence_v1.1.0", "MER_InvoiceDataRecheck_v1.1.0", "MER_POCommit_v1.1.0"],
     "SRC": ["SCP_SourcingChatbot_v2.3.0", "PUR_AdhocIndentSouth_v1.0.0", "PUR_HMLabelProcessing_v1.0.0",
-            "PUR_InventoryReport_v2.1.0", "PUR_MaterialAllocation_v1.1.0", "PUR_GDIAutomation_v1.0.0"],
+            "PUR_MaterialAllocation_v1.1.0", "PUR_InventoryReport_v2.1.0", "PUR_GDIAutomation_v1.0.0"],
     "WHL": ["WH_AWBExtraction_v1.1.0", "LOG_ExpenseInvoiceProcessing_v1.2.2"],
     "HR": ["HR_EmployeeDataPlatform_v1.1.0"],
     "ADMIN": ["ADMIN_ExpenseManagement_v1.1.0"],
@@ -320,7 +339,7 @@ ZONE_ORDER = {
 registered = {c: p for c, p in projects.items() if not p.get("candidate")}
 for code in [c for c in P if c not in registered]:            # curated but gone (renamed / removed)
     del P[code]
-    notices.append(f"curated project {code} is no longer registered - card dropped; its edges are skipped")
+    notices.append(f"curated project {code} is no longer registered - card dropped; its lines are skipped")
 for code, p in registered.items():                            # registered but not curated (new / renamed)
     if code in P:
         continue
@@ -340,11 +359,11 @@ def card(code: str, x: int, y: int) -> None:
     zone, friendly, klass, cap, sor, note = P[code]
     p = projects[code]
     link = resolve_link(p)
-    head = f"## {link}" if link else f"## {code}"
-    lines = [head, "", friendly, "", f"Domain: {p['domain']}", f"Type: {klass}", f"Status: {p['lifecycle']}"]
+    lines = [f"# {friendly}", f"## {link}" if link else f"## {code}", f"## {p['lifecycle']}",
+             f"### {klass}", "", f"Domain: {p['domain']}"]
     if code in BASELINE:
         lines.append(f"Baseline code: {BASELINE[code]}")
-    lines += ["", f"Capability: {cap}"]
+    lines.append(f"Capability: {cap}")
     if sor:
         lines.append(sor)
     if note:
@@ -354,61 +373,64 @@ def card(code: str, x: int, y: int) -> None:
     text(pid(code), x, y, CARD_W, CARD_H, "\n".join(lines), CLASS_COLOR[status_class(p)])
 
 
-def column_group(gid, label, x, y, w, codes, color=None):
-    h = HDR + len(codes) * PITCH
-    group(gid, x, y, w, h, label, color)
+def column_group(gid, label, x, y, w, codes, color=None, title=None):
+    h = HDR + max(1, len(codes)) * PITCH
+    group(gid, x, y, w, h, label, color, title)
     for i, c in enumerate(codes):
         card(c, x + (w - CARD_W) // 2, y + HDR + i * PITCH)
     return y + h
 
 
 # =================================================================== TOP ZONE
-text("eco-title", 0, -1500, 9300, 240,
-     "# PPJ GROUP\n## Digital Application, AI & Automation Ecosystem")
-text("eco-subtitle", 0, -1230, 9300, 260,
-     "ERP -> Enterprise Applications -> Internal Systems -> AI & Automation\n\n"
-     f"Portfolio Baseline: 19/09/2026  |  Vault Reconciliation: {RECONCILED} (portfolio snapshot)\n"
+PANEL_W = (TOTAL_W - 2 * 300) // 3
+text("eco-title", 0, -1700, TOTAL_W, 260,
+     "# PPJ GROUP - Digital Application, AI & Automation Ecosystem\n"
+     "## ERP -> Enterprise Applications -> Internal Systems -> AI & Automation")
+text("eco-subtitle", 0, -1420, TOTAL_W, 200,
+     f"### Portfolio Baseline: 19/09/2026  |  Vault Reconciliation: {RECONCILED} (portfolio snapshot)\n"
      "Generated From: PPJ AI & Automation Portfolio (vault registry) + PPJ operating-systems landscape "
      "([[02_BA_Knowledge/Enterprise_Architecture/PPJ_Operational_Systems_Landscape|Operational Systems Landscape]]). "
      "Regenerated automatically when the portfolio snapshot changes.")
 
-text("eco-exec-summary", 0, -940, 3000, 640,
-     "## PPJ DIGITAL EVOLUTION\n\n"
-     "1. WFX provides the ERP transaction backbone.\n"
-     "2. Third-party enterprise applications provide specialized capabilities.\n"
-     "3. GTAS applications were built internally to fill operational capability gaps.\n"
-     "4. AI & Automation projects now add an intelligence and automation layer across existing processes.\n"
-     "5. Shared data, knowledge and AI platforms increasingly serve reusable cross-functional capabilities.\n"
-     "6. AI does not replace the ERP; it augments ERP, enterprise systems and business decision-making.")
+text("eco-exec-summary", 0, -1180, PANEL_W, 900,
+     "# PPJ DIGITAL EVOLUTION\n\n"
+     "### 1. WFX provides the ERP transaction backbone.\n"
+     "### 2. Third-party enterprise applications provide specialized capabilities.\n"
+     "### 3. GTAS applications were built internally to fill operational capability gaps.\n"
+     "### 4. AI & Automation projects add an intelligence and automation layer across existing processes.\n"
+     "### 5. Shared data, knowledge and AI platforms serve reusable cross-functional capabilities.\n"
+     "### 6. AI does not replace the ERP; it augments ERP, enterprise systems and decisions.")
 
-text("eco-principles", 3200, -940, 3000, 640,
-     "## ARCHITECTURE PRINCIPLES\n\n"
-     "- WFX remains core ERP / transaction backbone.\n"
-     "- AI projects augment rather than duplicate source systems.\n"
-     "- System of record must remain explicit.\n"
-     "- Prefer API-based integration where available.\n"
-     "- Business affinity does not imply technical integration.\n"
-     "- Human review remains required for uncertain AI decisions.\n"
-     "- Reusable data / knowledge layers serve multiple projects.\n"
-     "- Shared AI services reduce duplicate implementations.\n"
-     "- Status and lifecycle are independent from business domain.")
+text("eco-principles", PANEL_W + 300, -1180, PANEL_W, 900,
+     "# ARCHITECTURE PRINCIPLES\n\n"
+     "### - WFX remains core ERP / transaction backbone.\n"
+     "### - AI projects augment rather than duplicate source systems.\n"
+     "### - System of record must remain explicit.\n"
+     "### - Prefer API-based integration where available.\n"
+     "### - Business affinity does not imply technical integration.\n"
+     "### - Human review remains required for uncertain AI decisions.\n"
+     "### - Reusable data / knowledge layers serve multiple projects.\n"
+     "### - Shared AI services reduce duplicate implementations.\n"
+     "### - Status and lifecycle are independent from business domain.")
 
 cur = {k: 0 for k in CLASS_LABEL}
 for p in registered.values():
     cur[status_class(p)] += 1
-text("eco-inventory", 6400, -940, 2900, 640,
-     "## PORTFOLIO INVENTORY\n\n"
-     "Baseline 19/09/2026 (35 initiatives):\n"
-     "Active / Dev 16 | Production 6 | Maintenance 4 | Closed 4 | On Hold 3 | Evaluation 2\n\n"
-     f"Current Vault {RECONCILED} ({len(registered)} registered records, recomputed):\n"
-     f"Production {cur['production']} | Active / Dev {cur['active']} | UAT / Eval / Analysis {cur['amber']} | "
+text("eco-inventory", 2 * (PANEL_W + 300), -1180, TOTAL_W - 2 * (PANEL_W + 300), 900,
+     "# PORTFOLIO INVENTORY\n\n"
+     "## Baseline 19/09/2026 - 35 initiatives\n"
+     "### Active / Dev 16 | Production 6 | Maintenance 4 | Closed 4 | On Hold 3 | Evaluation 2\n\n"
+     f"## Current Vault {RECONCILED} - {len(registered)} registered records\n"
+     f"### Production {cur['production']} | Active / Dev {cur['active']} | UAT / Eval / Analysis {cur['amber']} | "
      f"Maintenance {cur['maint']} | On Hold {cur['hold']} | Closed {cur['closed']}\n\n"
      "Baseline is kept unchanged. Bucket definitions differ - see the gap notes.")
 
 # ============================================================ LEFT COLUMN
+# Fabric / Technical sits under Merchandising in the same column: Technical Knowledge feeds the Costing platform,
+# and with both cards on one column that line runs down the outer margin instead of across other cards.
 y_end = column_group("grp-mer", "04.2 MERCHANDISING", LX, 0, LW, zone_codes("MER"))
 y_end = column_group("grp-src", "04.1 SOURCING / PURCHASING", LX, y_end + GAP, LW, zone_codes("SRC"))
-y_end = column_group("grp-whl", "04.6 WAREHOUSE / LOGISTICS", LX, y_end + GAP, LW, zone_codes("WHL"))
+y_end = column_group("grp-fab", "04.7 FABRIC / TEXTILES TECHNIQUE", LX, y_end + GAP, LW, zone_codes("FAB"))
 
 # ============================================================ RIGHT COLUMN
 ry = column_group("grp-hr", "04.8 HR", RX, 0, RW, zone_codes("HR"))
@@ -416,6 +438,68 @@ ry = column_group("grp-admin", "04.9 ADMINISTRATION", RX, ry + GAP, RW, zone_cod
 ry = column_group("grp-fin", "04.3 FINANCE / ACCOUNTING", RX, ry + GAP, RW, zone_codes("FIN"))
 ry = column_group("grp-qc", "04.5 QC / TQM", RX, ry + GAP, RW, zone_codes("QC"))
 ry = column_group("grp-prod", "04.4 PRODUCTION + WASH", RX, ry + GAP, RW, zone_codes("PROD"))
+ry = column_group("grp-whl", "04.6 WAREHOUSE / LOGISTICS", RX, ry + GAP, RW, zone_codes("WHL"))
+
+# ============================================================ EDGE SPEC
+# Declared before the centre stack is laid out, because WFX module order is derived from it.
+# Category: A INTEGRATION (confirmed), B PLANNED, C AFFINITY (business capability only), D DATA dependency.
+S = pid
+EDGE_SPEC = [
+    # --- integration / planned: always drawn
+    (S("PUR_MaterialAllocation_v1.1.0"), "wfx-inventory-control", "A", "validated flow", "right", "left"),
+    (S("FIN_InvoiceDownloader_v1.2.0"), "tp-vnpt-e-invoice", "A", "VNPT download", "left", "right"),
+    (S("MER_CostingAgenticPlatform_v1.1.0"), "gtas-ied", "B", "GTAS/IED contract", "right", "left"),
+    (S("PUR_GDIAutomation_v1.0.0"), "wfx-purchase-order-management", "B", "WFX API", "right", "left"),
+    (S("ADMIN_ExpenseManagement_v1.1.0"), "tp-e-office", "B", "E-office", "left", "right"),
+    # --- data dependencies: always drawn
+    (S("TD_TechnicalKnowledgePlatform_v2.1.0"), S("MER_CostingAgenticPlatform_v1.1.0"), "D", "", "left", "left"),
+    (S("PUR_InventoryReport_v2.1.0"), S("PUR_MaterialAllocation_v1.1.0"), "D", "", "top", "bottom"),
+    (S("PUR_InventoryReport_v2.1.0"), S("PUR_GDIAutomation_v1.0.0"), "D", "", "bottom", "top"),
+    (S("FIN_FinanceManagement_v1.2.0"), "wfx-finance", "D", "", "left", "right"),
+    (S("FIN_FinanceManagement_v1.2.0"), "data-dwh", "D", "", "left", "right"),
+    (S("FIN_FinanceManagement_v1.2.0"), "tp-power-bi", "D", "", "left", "right"),
+    (S("FIN_FinanceManagement_v1.2.0"), "gtas-bi-report", "D", "", "left", "right"),
+    (S("PROD_HangingLineIoT_v1.0.0"), "tp-iot-wiser-ina", "D", "", "left", "right"),
+    ("wfx-core", "data-dwh", "D", "", "bottom", "top"),
+    (S("FAB_FabricDatamart_v2.2.0"), S("TD_TechnicalKnowledgePlatform_v2.1.0"), "D", "", "top", "bottom"),
+    (S("CPD_VisualSampleDatamart_v1.1.0"), S("TD_TechnicalKnowledgePlatform_v2.1.0"), "D", "", "left", "left"),
+    (S("TD_TechnicalKnowledgePlatform_v2.1.0"), "data-technical-knowledge", "D", "", "right", "left"),
+    # --- business affinity: the primary one per project; the others are named on the card instead
+    (S("MER_CostingAgenticPlatform_v1.1.0"), "wfx-budgeting-costing", "C", "", "right", "left"),
+    (S("MER_MarketIntelligence_v1.1.0"), "wfx-buyer-order-management", "C", "", "right", "left"),
+    (S("MER_InvoiceDataRecheck_v1.1.0"), "wfx-budgeting-costing", "C", "", "right", "left"),
+    (S("SCP_SourcingChatbot_v2.3.0"), "tp-mmsx", "C", "", "right", "left"),
+    (S("PUR_AdhocIndentSouth_v1.0.0"), "wfx-purchase-order-management", "C", "", "right", "left"),
+    (S("PUR_HMLabelProcessing_v1.0.0"), "wfx-purchase-order-management", "C", "", "right", "left"),
+    (S("WH_AWBExtraction_v1.1.0"), "wfx-logistics-in-bound", "C", "", "left", "right"),
+    (S("LOG_ExpenseInvoiceProcessing_v1.2.2"), "grp-wfx", "C", "WFX charge rules", "left", "right"),
+    (S("HR_EmployeeDataPlatform_v1.1.0"), "tp-hris", "C", "", "left", "right"),
+    (S("ACC_GRNSupplierInvoiceBot_v2.3.0"), "wfx-finance", "C", "", "left", "right"),
+    (S("QC_DefectDetection_v1.0.0"), "wfx-qc", "C", "", "left", "right"),
+    (S("PROD_HangingLineIoT_v1.0.0"), "wfx-production-management", "C", "", "left", "right"),
+    (S("WASH_SamplingManagement_v1.1.0"), "wfx-sampling", "C", "", "left", "right"),
+    (S("WASH_COWASH_v2.0.0"), "wfx-production-management", "C", "", "left", "right"),
+    (S("PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0"), "tp-glpi", "C", "", "right", "right"),
+]
+CURVED = {(S("TD_TechnicalKnowledgePlatform_v2.1.0"), S("MER_CostingAgenticPlatform_v1.1.0")),
+          (S("CPD_VisualSampleDatamart_v1.1.0"), S("TD_TechnicalKnowledgePlatform_v2.1.0")),
+          (S("PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0"), "tp-glpi")}
+
+
+def centre_y(nid: str) -> float | None:
+    r = rect.get(nid)
+    return None if r is None else r[1] + r[3] / 2
+
+
+def ordered_modules(names: list[str], slot_y: list[float]) -> list[str]:
+    """Order WFX modules by the mean height of the projects pointing at them, so lines run roughly parallel.
+    A module nobody points at keeps its original slot height, so the order stays stable and deterministic."""
+    def key(item):
+        i, name = item
+        ys = [centre_y(f) for f, t, *_ in EDGE_SPEC if t == "wfx-" + slug(name) and centre_y(f) is not None]
+        return (sum(ys) / len(ys) if ys else slot_y[i], i)
+    return [n for _, n in sorted(enumerate(names), key=key)]
+
 
 # ============================================================ CENTRE STACK
 # --- shared AI platforms (rows of three)
@@ -423,19 +507,21 @@ sy = 0
 sh_codes = zone_codes("SHARED")
 sh_rows = max(1, math.ceil(len(sh_codes) / 3))
 sh = HDR + sh_rows * PITCH + 220 + 40
-group("grp-shared", CX, sy, CW, sh, "04.10 SHARED AI PLATFORMS (enterprise capabilities, not domain apps)", C_SHARED)
+group("grp-shared", CX, sy, CW, sh, "04.10 SHARED AI PLATFORMS (enterprise capabilities, not domain apps)", C_SHARED,
+      "04.10 SHARED AI PLATFORMS")
 sx0 = CX + (CW - (3 * CARD_W + 2 * 150)) // 2
 for i, c in enumerate(sh_codes):
     card(c, sx0 + (i % 3) * (CARD_W + 150), sy + HDR + (i // 3) * PITCH)
 text("shared-note", sx0, sy + HDR + sh_rows * PITCH, 3 * CARD_W + 300, 220,
-     "Conceptual direction: business AI applications -> PPJ AI Hub -> shared AI services / governance / knowledge / models.\n"
-     "Edges to AI Hub or PERRI are drawn only where documentation confirms use. None is confirmed today.")
+     "### Enterprise capabilities, not business-domain applications.\n"
+     "Conceptual direction: business AI applications -> PPJ AI Hub -> shared AI services / governance / knowledge / models. "
+     "Lines to AI Hub or PERRI are drawn only where documentation confirms use. None is confirmed today.")
 y_gtas = sy + sh + GAP
 
 # --- GTAS
-NW, NH, NP = 1200, 130, 170
+NW, NH, NP = 1200, 150, 190
 xs4 = [CX + 120 + c * 1320 for c in range(4)]
-gtas_layout = [
+gtas_layout = [          # gtas_layout[c] is column c; lines from the left column land on column 0, from the right on column 3
     ["GTAS Costing", "GTAS IED", "GTAS Transportation", "GTAS Sampling"],
     ["GTAS Consumption", "GTAS Coats Integration", "GTAS Mixable", "GTAS Inventory"],
     ["GTAS Compliance", "GTAS FQM", "GTAS QC", "GTAS ECUS"],
@@ -445,14 +531,14 @@ gh = HDR + 3 * NP + NH + 40
 group("grp-gtas", CX, y_gtas, CW, gh, "03 GTAS INTERNAL APPLICATIONS - Legacy Internal Development", C_GTAS)
 for c, col in enumerate(gtas_layout):
     for r, name in enumerate(col):
-        body = f"**{name}**"
+        body = f"## {name}"
         if name == "GTAS Costing":
             body += "\nstarred in the source diagram"
         text("gtas-" + slug(name.replace("GTAS ", "")), xs4[c], y_gtas + HDR + r * NP, NW, NH, body, C_GTAS)
 y_3p = y_gtas + gh + GAP
 
 # --- third party
-TW, TH, TP = 1200, 160, 200
+TW, TH, TP = 1200, 170, 210
 tp_nodes = {
     "MMSx": (0, 0, "Material management", "diagram"),
     "Gerber": (0, 1, "Pattern / technical design (CAD)", "diagram"),
@@ -469,41 +555,45 @@ th = HDR + 5 * TP + TH + 40
 group("grp-3p", CX, y_3p, CW, th, "02 THIRD-PARTY ENTERPRISE APPLICATIONS", C_3P)
 for name, (c, r, purpose, src) in tp_nodes.items():
     origin = "on the operating-systems diagram" if src == "diagram" else "vault-confirmed, not on the diagram"
-    text("tp-" + slug(name), xs4[c], y_3p + HDR + r * TP, TW, TH, f"**{name}**\n{purpose}\n({origin})", C_3P)
-text("tp-note", xs4[1], y_3p + HDR + TP, 2 * TW + 120, 3 * TP - 40,
-     "Six of these are drawn on the owner's operating-systems diagram: HRIS, E-office, MMSx, FastReactPlan, Gerber, ShapeShifter.\n\n"
-     "VNPT E-Invoice, Power BI, GLPI and IoT / WISER / INA are confirmed by vault documents but are not on that diagram.\n\n"
+    text("tp-" + slug(name), xs4[c], y_3p + HDR + r * TP, TW, TH, f"## {name}\n{purpose} ({origin})", C_3P)
+text("tp-note", xs4[1], y_3p + HDR + TP, 2 * TW + 120, 4 * TP - 40,
+     "### On the owner's operating-systems diagram:\n### HRIS, E-office, MMSx, FastReactPlan, Gerber, ShapeShifter\n\n"
+     "### Confirmed by vault documents, not on the diagram:\n### VNPT E-Invoice, Power BI, GLPI, IoT / WISER / INA\n\n"
      "Only listed applications are drawn. No further vendor application is assumed.")
 y_wfx = y_3p + th + GAP
 
 # --- WFX
-MW, MH, MP = 1350, 130, 170
-wfx_left = ["Buyer Order Management", "Budgeting & Costing", "Bill of Material", "Raw Material Planning",
-            "Purchase Order Management", "Inventory Control", "Logistics In-bound", "Logistics Out-bound"]
-wfx_right = ["Finance", "Style Library", "BrandPLM", "Sampling", "QC", "QA", "Production Planning",
-             "Production Management"]
+MW, MH, MP = 1350, 150, 190
+# Split by the side of the canvas their business owners sit on: merchandising / sourcing on the left,
+# finance, production, quality and logistics on the right.
+wfx_left = ["Buyer Order Management", "Budgeting & Costing", "Bill of Material", "Style Library", "BrandPLM",
+            "Raw Material Planning", "Purchase Order Management", "Inventory Control"]
+wfx_right = ["Finance", "Sampling", "QC", "QA", "Production Planning", "Production Management",
+             "Logistics In-bound", "Logistics Out-bound"]
+slots = [y_wfx + HDR + i * MP + MH / 2 for i in range(8)]
+wfx_left = ordered_modules(wfx_left, slots)
+wfx_right = ordered_modules(wfx_right, slots)
 wh = HDR + 8 * MP - (MP - MH) + 40
 group("grp-wfx", CX, y_wfx, CW, wh, "01 WFX ERP CORE - Core Enterprise Transaction System", C_WFX)
 lx, rx_ = CX + 100, CX + CW - 100 - MW
 for i, name in enumerate(wfx_left):
-    text("wfx-" + slug(name), lx, y_wfx + HDR + i * MP, MW, MH, f"**{name}**", C_WFX)
+    text("wfx-" + slug(name), lx, y_wfx + HDR + i * MP, MW, MH, f"## {name}", C_WFX)
 for i, name in enumerate(wfx_right):
-    body = f"**{name}**" + ("\nhighlighted in the source diagram" if name == "Production Planning" else "")
+    body = f"## {name}" + ("\nhighlighted in the source diagram" if name == "Production Planning" else "")
     text("wfx-" + slug(name), rx_, y_wfx + HDR + i * MP, MW, MH, body, C_WFX)
 hx = lx + MW + 100
 text("wfx-core", hx, y_wfx + HDR, rx_ - 100 - hx, 8 * MP - (MP - MH),
-     "# WFX ERP\n\nCore Enterprise Transaction System\n\n"
-     "Reporting & Analysis\nTime & Action Tracking\nTextiles / Garments\n\n"
+     "# WFX ERP\n## Core Enterprise Transaction System\n\n"
+     "### Reporting & Analysis\n### Time & Action Tracking\n### Textiles / Garments\n\n"
      "16 modules, named from the owner's operating-systems diagram. WFX is the system of record for orders, purchasing, "
-     "material, inventory and operational transactions.\n\n"
-     "AI and automation augment WFX; they do not replace it. Not every AI use case writes back to WFX.", C_WFX)
+     "material, inventory and operational transactions. AI and automation augment WFX; they do not replace it. "
+     "Not every AI use case writes back to WFX.", C_WFX)
 y_data = y_wfx + wh + GAP
 
 # --- data foundation
-DW, DH, DP = 1550, 170, 210
-# Last column ends at x=7250, level with the WFX / GTAS right-hand nodes, so an edge from the right-hand domain
-# column reaches it through the free corridor instead of crossing a module.
-xs3 = [CX + 120, CX + 120 + (7250 - 1550 - (CX + 120)) // 2, 7250 - 1550]
+DW, DH, DP = 1550, 190, 230
+right_edge = CX + CW - 100          # level with the right-hand WFX / GTAS nodes, so lines reach it through the corridor
+xs3 = [CX + 120, CX + 120 + (right_edge - DW - (CX + 120)) // 2, right_edge - DW]
 data_nodes = [
     ("data-technical-knowledge", 0, 1, "Technical Knowledge", "Realised by TD_TechnicalKnowledgePlatform_v2.1.0 (zone 04.7)"),
     ("data-doc-retrieval", 1, 0, "Document / Knowledge Retrieval", "Conceptual foundation layer"),
@@ -515,42 +605,34 @@ data_nodes = [
 dh = HDR + DP + DH + 40
 group("grp-data", CX, y_data, CW, dh, "05 DATA / KNOWLEDGE FOUNDATION", C_DATA)
 for nid, c, r, name, src in data_nodes:
-    text(nid, xs3[c], y_data + HDR + r * DP, DW, DH, f"**{name}**\n{src}", C_DATA)
-y_fab = y_data + dh + GAP
+    text(nid, xs3[c], y_data + HDR + r * DP, DW, DH, f"## {name}\n{src}", C_DATA)
+y_flow = y_data + dh + GAP
 
-# --- fabric / textiles (bottom centre, two columns)
-fab_codes = zone_codes("FAB")
-fab_rows = max(1, math.ceil(len(fab_codes) / 2))
-fh = HDR + fab_rows * PITCH
-group("grp-fab", CX, y_fab, 3400, fh, "04.7 FABRIC / TEXTILES TECHNIQUE")
-for i, c in enumerate(fab_codes):
-    card(c, CX + 100 + (i % 2) * (CARD_W + 100), y_fab + HDR + (i // 2) * PITCH)
-text("flow-labels", CX + 3600, y_fab, 1800, max(fh, 1000),
-     "## CAPABILITY FLOWS\n(explanatory - not integrations)\n\n"
-     "SOURCING\nSupplier > Material > Search > Decision\n\n"
-     "PURCHASING\nPO > Material > Allocation > Dispatch\n\n"
-     "MERCHANDISING\nMarket > Costing > Quotation > PO\n\n"
-     "PRODUCTION\nPlanning > Production > Wash > QC\n\n"
-     "FINANCE\nTransaction > Reporting > Cost Control > RCA\n\n"
-     "LOGISTICS\nShipment > AWB > Tracking > Invoice\n\n"
-     "ADMIN\nRequest > Approval > Booking > Advance > Expense > Settlement\n\n"
-     "TECHNICAL\nFabric > Pattern > BOM > Knowledge > Costing")
+# --- capability flows (bottom centre; explanatory, no lines)
+text("flow-labels", CX, y_flow, CW, 1000,
+     "# CAPABILITY FLOWS (explanatory - not integrations)\n\n"
+     "### SOURCING: Supplier > Material > Search > Decision\n"
+     "### PURCHASING: PO > Material > Allocation > Dispatch\n"
+     "### MERCHANDISING: Market > Costing > Quotation > PO\n"
+     "### PRODUCTION: Planning > Production > Wash > QC\n"
+     "### FINANCE: Transaction > Reporting > Cost Control > RCA\n"
+     "### LOGISTICS: Shipment > AWB > Tracking > Invoice\n"
+     "### ADMIN: Request > Approval > Booking > Advance > Expense > Settlement\n"
+     "### TECHNICAL: Fabric > Pattern > BOM > Knowledge > Costing")
 
 # ========================================================= FAR-LEFT PERIPHERY
-PX, PW = -3900, 3200
 if (VAULT / DIAGRAM).exists():        # the source of the WFX / GTAS / third-party layers, shown at the top left
-    _add({"id": "source-systems-diagram", "type": "file", "x": PX, "y": -1500, "width": PW, "height": 1785,
+    _add({"id": "source-systems-diagram", "type": "file", "x": PX, "y": -1700, "width": PW, "height": 1785,
           "file": DIAGRAM}, "file")
 poc_y = y_3p
 registry_link = "[[03_Projects/_Registry/PPJ_DISCOVERY_REGISTER|{}]]" if (VAULT / "03_Projects/_Registry/PPJ_DISCOVERY_REGISTER.md").exists() else "{}"
-poc_items: list[tuple[str, str]] = []          # (node id, kind) in grid order
 
 
 def discovery_card(d: dict, x: int, y: int) -> str:
     nid = "poc-" + slug(d["label"])
     qs = d.get("open_questions") or []
-    lines = ["## " + registry_link.format(d["label"]), "", f"Status: {d['status']}",
-             "Type: VENDOR EVALUATION (discovery item, not a project)", "",
+    lines = ["# " + d["label"].replace("DISCOVERY_", ""), "## " + registry_link.format(d["label"]),
+             f"## {d['status']}", "### VENDOR EVALUATION (discovery item, not a project)", "",
              "Scope: " + " ".join((d.get("scope") or "").split())[:230]]
     if qs:
         lines.append("Open: " + "; ".join(qs[:4]) + (" ..." if len(qs) > 4 else ""))
@@ -564,7 +646,7 @@ def candidate_card(p: dict, x: int, y: int) -> str:
     target = p.get("link_target") or ""
     title = f"[[{target}|{p['code']}]]" if target and (VAULT / (target + ".md")).exists() else p["code"]
     text(nid, x, y, CARD_W, CARD_H,
-         f"## {title}\n\nStatus: {p['lifecycle']}\nType: CANDIDATE (not a registered project)\n\n"
+         f"# {p['code']}\n## {title}\n## {p['lifecycle']}\n### CANDIDATE (not a registered project)\n\n"
          f"Capability: {' '.join((p.get('outcome') or '').split())[:200]}\nCanonical code not confirmed.", C_AMBER)
     return nid
 
@@ -573,11 +655,11 @@ discoveries = list(snap.get("discovery", []))
 candidates = [p for p in snap["projects"] if p.get("candidate")]
 first = [d for d in discoveries if d["label"] == "DISCOVERY_PatternGenerationPoC"]
 rest = [d for d in discoveries if d["label"] != "DISCOVERY_PatternGenerationPoC"]
-slots: list[tuple[str, object]] = [("d", d) for d in first] + [("p", c) for c in zone_codes("POC")] \
-    + [("c", c) for c in candidates] + [("d", d) for d in rest]
-poc_h = HDR + max(1, math.ceil(len(slots) / 2)) * PITCH
+poc_slots: list[tuple[str, object]] = [("d", d) for d in first] + [("c", c) for c in candidates] \
+    + [("p", c) for c in zone_codes("POC")] + [("d", d) for d in rest]
+poc_h = HDR + max(1, math.ceil(len(poc_slots) / 2)) * PITCH
 group("grp-poc", PX, poc_y, PW, poc_h, "06 POC / VENDOR EVALUATION (evaluation only)")
-for i, (k, item) in enumerate(slots):
+for i, (k, item) in enumerate(poc_slots):
     x, y = PX + 100 + (i % 2) * (CARD_W + 100), poc_y + HDR + (i // 2) * PITCH
     if k == "d":
         discovery_card(item, x, y)
@@ -588,66 +670,68 @@ for i, (k, item) in enumerate(slots):
 
 # legend (far left, below PoC)
 ly = poc_y + poc_h + GAP
-group("grp-legend", PX, ly, PW, 2320, "09 LEGEND")
-text("legend-nodes", PX + 100, ly + HDR, PW - 200, 700,
-     "## NODE CATEGORIES\n\n"
-     "WFX ERP - purple\nThird-Party System - brown\nGTAS Internal System - indigo\n"
-     "Data / Knowledge Platform - teal\nShared AI Platform - pink group\n"
-     "AI / Automation / Workflow / IoT project - card colour = STATUS (right)\n"
-     "The Type line on each card names the class:\nAI APPLICATION | AUTOMATION | WORKFLOW | DATA PLATFORM |\n"
+group("grp-legend", PX, ly, PW, HDR + 3 * 820, "09 LEGEND")
+text("legend-nodes", PX + 100, ly + HDR, PW - 200, 780,
+     "# NODE CATEGORIES\n"
+     "### WFX ERP - purple\n### Third-Party System - brown\n### GTAS Internal System - indigo\n"
+     "### Data / Knowledge Platform - teal\n### Shared AI Platform - pink group\n"
+     "### Project card colour = STATUS (below)\n\n"
+     "The class is on each card under the status: AI APPLICATION | AUTOMATION | WORKFLOW | DATA PLATFORM | "
      "INTERNAL PLATFORM | IOT | POC / EVALUATION | COLLABORATION | ARCHIVED")
-text("legend-edges", PX + 100, ly + HDR + 740, PW - 200, 700,
-     "## RELATIONSHIPS (label prefix, never colour alone)\n\n"
-     "INTEGRATION | implemented / confirmed operational integration (green line)\n"
-     "PLANNED | planned or in-development integration (orange line)\n"
-     "AFFINITY | business capability affinity, no technical integration confirmed (plain line)\n"
-     "DATA | data / knowledge dependency (blue line)\n\n"
-     "Canvas edges cannot be dashed or thinned, so the prefix carries the meaning.")
-text("legend-status", PX + 100, ly + HDR + 1480, PW - 200, 680,
-     "## STATUS COLOUR (source status text is kept on each card)\n\n"
-     "Green - Production / Operational\nBlue - Active / Development / Strategic Active\n"
-     "Yellow - UAT / Evaluation / Pre-PoC / Analysis\nOrange - On Hold\n"
-     "Grey-blue - Maintenance / Support\nGrey - Closed / Archived")
+text("legend-edges", PX + 100, ly + HDR + 820, PW - 200, 780,
+     "# LINES\n"
+     "### INTEGRATION - confirmed operational integration (green)\n"
+     "### PLANNED - in scope or in development (orange)\n"
+     "### DATA - data / knowledge dependency (blue)\n"
+     "### AFFINITY - same business capability, no integration confirmed (grey)\n\n"
+     "The label always names the category; colour is never the only signal. Each project draws at most one "
+     "AFFINITY line; its other related systems are listed on the card.")
+text("legend-status", PX + 100, ly + HDR + 1640, PW - 200, 780,
+     "# STATUS COLOUR\n"
+     "### Green - Production / Operational\n### Blue - Active / Development\n"
+     "### Yellow - UAT / Evaluation / Analysis\n### Orange - On Hold\n"
+     "### Grey-blue - Maintenance / Support\n### Grey - Closed / Archived\n\n"
+     "The exact source status is written on each card under the project code.")
 
 # ======================================================== FAR-RIGHT PERIPHERY
-QX, QW = 9600, 3200
 qy = column_group("grp-collab", "07 EXTERNAL COLLABORATION", QX, 0, 1650, zone_codes("COLLAB"))
 qy = column_group("grp-arch", "08 ARCHIVED / CLOSED ENABLEMENT", QX, qy + GAP, 1650, zone_codes("ARCH"))
 if zone_codes("NEW"):
-    qy = column_group("grp-new", "04.11 NEW / UNCLASSIFIED (not yet curated)", QX, qy + GAP, 1650, zone_codes("NEW"))
+    qy = column_group("grp-new", "04.11 NEW / UNCLASSIFIED (not yet curated)", QX, qy + GAP, 1650, zone_codes("NEW"),
+                      title="04.11 NEW / UNCLASSIFIED")
 guide_y = qy + GAP
-text("guide", QX, guide_y, QW, 1100,
-     "## ARCHITECTURE INTERPRETATION GUIDE\n\n"
-     "Read the centre stack top to bottom: shared AI platforms, GTAS internal applications, third-party applications, "
-     "WFX ERP core, data / knowledge foundation. It is a layered ecosystem, not a strict dependency stack.\n\n"
-     "Domain groups sit left and right of the stack, next to the systems they relate to.\n\n"
-     "Position is not architecture. A line exists only where a vault document supports it, and its label says how "
-     "strong it is. No line means no relationship is documented.\n\n"
-     "Most integrations are therefore drawn as AFFINITY. Nothing is drawn as INTEGRATION unless a validated flow exists.")
-gap_y = guide_y + 1100 + GAP
+text("guide", QX, guide_y, QW, 1300,
+     "# HOW TO READ THIS CANVAS\n\n"
+     "### Centre, top to bottom: shared AI platforms, GTAS, third-party, WFX ERP core, data / knowledge foundation.\n"
+     "### Left and right: AI & Automation projects by business domain.\n"
+     "### Position is not architecture. A line exists only where a vault document supports it.\n\n"
+     "It is a layered ecosystem, not a strict dependency stack. The line label says how strong the relationship is; "
+     "no line means no relationship is documented. Most links are AFFINITY - nothing is drawn as INTEGRATION unless "
+     "a validated flow exists.")
+gap_y = guide_y + 1300 + GAP
 GAPS = [
-    ("gap-1", "DATA / GOVERNANCE GAP 1 - Expense invoices merged\n\n"
+    ("gap-1", "## GAP 1 - Expense invoices merged\n\n"
      "The 35-item baseline lists PPJ.ExpenseInvoices.v1.1 and LOG.EXPENSE.INVOICES.V1.2 as two projects. The vault registry "
      "(PPJ_PORTFOLIO_SNAPSHOT_20260918) already maps both to ONE project, LOG_ExpenseInvoiceProcessing_v1.2.2, and lists a "
      "decision still open: confirm the mapping and whether the earlier Export exclusion applies.\n\n"
      "Drawn as one node (vault registry outranks the baseline). Both baseline names are kept on the card.\n\n"
      "Vault also holds two closed records outside the baseline: EXIM.ExpenseInvoices.Automation.v1.1 and "
      "AI.Automation.Workshop.Analysis.202606 - hence 36 records at the time of writing."),
-    ("gap-2", "DATA / GOVERNANCE GAP 2 - Canonical codes and status\n\n"
+    ("gap-2", "## GAP 2 - Canonical codes and status\n\n"
      "ACC.GRNInvoiceMatching.v2.3 (baseline) vs ACC_GRNSupplierInvoiceBot_v2.3.0 (vault canonical). The vault says the "
      "GRNInvoiceMatching name is misleading; the canonical code is used.\n\n"
      "PPJxStratova.AI: baseline says Active PoC; vault says Closed and tracks the live PoC as DISCOVERY_PatternGenerationPoC. "
      "Vault used.\n\n"
      "PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0: baseline says Merchandising / Shared; vault domain is Internal Chatbot & AI Platforms. "
      "Vault used."),
-    ("gap-3", "DATA / GOVERNANCE GAP 3 - Systems inventory\n\n"
+    ("gap-3", "## GAP 3 - Systems inventory\n\n"
      "Source: owner's operating-systems diagram. GTAS has 16 applications, not 15: GTAS Costing was missing from the list "
      "in circulation.\n\n"
      "MMSx (diagram) vs MMX (2026-09-18 ecosystem note): treated as one system, name unconfirmed.\n\n"
      "The Finance AI canvas also names GTAS Factory, Quantity, Efficiency and ID. None is on the diagram; alias or "
      "separate application is unconfirmed.\n\n"
      "The red star on GTAS Costing and the green highlight on Production Planning are shown but their meaning is not stated."),
-    ("gap-4", "DATA / GOVERNANCE GAP 4 - Relationship evidence\n\n"
+    ("gap-4", "## GAP 4 - Relationship evidence\n\n"
      "No document confirms an integration at WFX-module or GTAS-application level. Those links are AFFINITY.\n\n"
      "Exceptions drawn stronger: PUR_MaterialAllocation validated flow into WFX (INTEGRATION, validated flow only); "
      "FIN_InvoiceDownloader to VNPT (INTEGRATION); PUR_GDIAutomation WFX API, ADMIN_ExpenseManagement E-office and "
@@ -655,67 +739,36 @@ GAPS = [
      "Status counts: baseline buckets and the recomputed buckets differ (e.g. UAT and Analysis are one bucket here), so the "
      "two rows are not directly comparable."),
 ]
-group("grp-gap", QX, gap_y, QW, HDR + len(GAPS) * 540, f"DATA / GOVERNANCE GAP (curated notes, written {RECONCILED})")
+GAP_H = 640
+group("grp-gap", QX, gap_y, QW, HDR + len(GAPS) * (GAP_H + 40), f"DATA / GOVERNANCE GAP (curated notes, written {RECONCILED})",
+      title="DATA / GOVERNANCE GAPS")
 for i, (gid, body) in enumerate(GAPS):
-    text(gid, QX + 100, gap_y + HDR + i * 540, QW - 200, 500, body)
+    text(gid, QX + 100, gap_y + HDR + i * (GAP_H + 40), QW - 200, GAP_H, body)
 
 # ====================================================================== EDGES
-S = pid
-# --- Merchandising (left col -> centre-left)
-edge(S("MER_CostingAgenticPlatform_v1.1.0"), "wfx-budgeting-costing", "C", "costing capability", "right", "left")
-edge(S("MER_CostingAgenticPlatform_v1.1.0"), "wfx-bill-of-material", "C", "BOM input", "right", "left")
-edge(S("MER_CostingAgenticPlatform_v1.1.0"), "gtas-ied", "B", "GTAS/IED integration contract to be confirmed", "right", "left")
-edge(S("MER_CostingAgenticPlatform_v1.1.0"), "gtas-costing", "C", "costing capability", "right", "left")
-edge(S("TD_TechnicalKnowledgePlatform_v2.1.0"), S("MER_CostingAgenticPlatform_v1.1.0"), "D", "technical knowledge input",
-     "left", "left", curve=True)
-edge(S("MER_MarketIntelligence_v1.1.0"), "wfx-buyer-order-management", "C", "sales / PO history", "right", "left")
-edge(S("MER_InvoiceDataRecheck_v1.1.0"), "wfx-budgeting-costing", "C", "costing and commercial data", "right", "left")
-edge(S("MER_POCommit_v1.1.0"), "wfx-buyer-order-management", "C", "historical PO commit", "right", "left")
-# --- Sourcing / Purchasing
-edge(S("SCP_SourcingChatbot_v2.3.0"), "tp-mmsx", "C", "material / sourcing knowledge", "right", "left")
-edge(S("SCP_SourcingChatbot_v2.3.0"), "wfx-raw-material-planning", "C", "material requirement", "right", "left")
-edge(S("PUR_AdhocIndentSouth_v1.0.0"), "wfx-purchase-order-management", "C", "purchasing transaction process", "right", "left")
-edge(S("PUR_HMLabelProcessing_v1.0.0"), "wfx-purchase-order-management", "C", "PO / material workflow", "right", "left")
-edge(S("PUR_InventoryReport_v2.1.0"), "wfx-inventory-control", "C", "inventory visibility", "right", "left")
-edge(S("PUR_InventoryReport_v2.1.0"), S("PUR_MaterialAllocation_v1.1.0"), "D", "inventory visibility feeds allocation", "bottom", "top")
-edge(S("PUR_InventoryReport_v2.1.0"), S("PUR_GDIAutomation_v1.0.0"), "D", "inventory visibility feeds dispatch", "right", "right", curve=True)
-edge(S("PUR_MaterialAllocation_v1.1.0"), "wfx-inventory-control", "A", "validated flow only; WFX transaction", "right", "left")
-edge(S("PUR_MaterialAllocation_v1.1.0"), "wfx-raw-material-planning", "C", "material requirement", "right", "left")
-edge(S("PUR_GDIAutomation_v1.0.0"), "wfx-purchase-order-management", "B", "WFX GET / POST API in development; WFX is SoR", "right", "left")
-edge(S("PUR_GDIAutomation_v1.0.0"), "wfx-logistics-in-bound", "C", "dispatch process", "right", "left")
-# --- Warehouse / Logistics
-edge(S("WH_AWBExtraction_v1.1.0"), "wfx-logistics-in-bound", "C", "shipment / AWB process", "right", "left")
-edge(S("WH_AWBExtraction_v1.1.0"), "gtas-transportation", "C", "shipment process", "right", "left")
-edge(S("LOG_ExpenseInvoiceProcessing_v1.2.2"), "grp-wfx", "C", "WFX template / additional charge rules (module not named)", "right", "left")
-# --- Right column
-edge(S("HR_EmployeeDataPlatform_v1.1.0"), "tp-hris", "C", "employee master data", "left", "right")
-edge(S("ADMIN_ExpenseManagement_v1.1.0"), "tp-e-office", "B", "E-office integration in scope, not confirmed delivered", "left", "right")
-edge(S("ADMIN_ExpenseManagement_v1.1.0"), "tp-hris", "C", "HR / master data", "left", "right")
-edge(S("FIN_FinanceManagement_v1.2.0"), "wfx-finance", "D", "WFX Finance data", "left", "right")
-edge(S("FIN_FinanceManagement_v1.2.0"), "data-dwh", "D", "DWH / Databricks source", "left", "right")
-edge(S("FIN_FinanceManagement_v1.2.0"), "tp-power-bi", "D", "Power BI reporting source", "left", "right")
-edge(S("FIN_FinanceManagement_v1.2.0"), "gtas-bi-report", "D", "GTAS BI source", "left", "right")
-edge(S("FIN_FinanceManagement_v1.2.0"), "gtas-financial-statements", "D", "financial statements source", "left", "right")
-edge(S("FIN_InvoiceDownloader_v1.2.0"), "tp-vnpt-e-invoice", "A", "VNPT portal download", "left", "right")
-edge(S("ACC_GRNSupplierInvoiceBot_v2.3.0"), "wfx-finance", "C", "accounting posting", "left", "right")
-edge(S("QC_DefectDetection_v1.0.0"), "wfx-qc", "C", "quality inspection", "left", "right")
-edge(S("QC_DefectDetection_v1.0.0"), "wfx-qa", "C", "quality assurance", "left", "right")
-edge(S("QC_DefectDetection_v1.0.0"), "wfx-production-management", "C", "production output", "left", "right")
-edge(S("PROD_HangingLineIoT_v1.0.0"), "wfx-production-management", "C", "production line", "left", "right")
-edge(S("PROD_HangingLineIoT_v1.0.0"), "wfx-production-planning", "C", "target / WIP", "left", "right")
-edge(S("PROD_HangingLineIoT_v1.0.0"), "tp-iot-wiser-ina", "D", "machine / line data", "left", "right")
-edge(S("WASH_SamplingManagement_v1.1.0"), "wfx-sampling", "C", "sampling process", "left", "right")
-edge(S("WASH_SamplingManagement_v1.1.0"), "wfx-production-management", "C", "wash production", "left", "right")
-edge(S("WASH_COWASH_v2.0.0"), "wfx-production-management", "C", "wash production", "left", "right")
-edge(S("WASH_COWASH_v2.0.0"), "wfx-qc", "C", "wash quality", "left", "right")
-# --- shared / data / fabric
-edge(S("PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0"), "tp-glpi", "C", "GLPI helpdesk knowledge", "right", "right", curve=True)
-edge("wfx-core", "data-dwh", "D", "operational transactions ingested", "bottom", "top")
-edge(S("FAB_FabricDatamart_v2.2.0"), S("TD_TechnicalKnowledgePlatform_v2.1.0"), "D", "fabric data", "left", "right")
-edge(S("CPD_VisualSampleDatamart_v1.1.0"), S("TD_TechnicalKnowledgePlatform_v2.1.0"), "D", "visual sample data", "top", "bottom")
-edge(S("TD_TechnicalKnowledgePlatform_v2.1.0"), "data-technical-knowledge", "D", "same capability", "top", "bottom")
+PREFIX = {"A": "INTEGRATION", "B": "PLANNED", "C": "AFFINITY", "D": "DATA"}
+COLOUR = {"A": "4", "B": "2", "D": "5"}
+affinity_seen: set[str] = set()
+for f, t, cat, qualifier, fs, ts in EDGE_SPEC:
+    # A curated line whose endpoint has gone (a project was renamed or removed) is skipped, not fatal.
+    if f not in ids or t not in ids:
+        notices.append(f"skipped line {f} -> {t}: endpoint not on the canvas (renamed or removed?)")
+        continue
+    if cat == "C":
+        if f in affinity_seen:
+            notices.append(f"second AFFINITY line from {f} dropped (one per project)")
+            continue
+        affinity_seen.add(f)
+    e = {"id": f"e{len(edges)+1:03d}-{f[:18]}-{t[:18]}", "fromNode": f, "fromSide": fs, "toNode": t, "toSide": ts,
+         "label": PREFIX[cat] + (f" | {qualifier}" if qualifier else "")}
+    if cat in COLOUR:
+        e["color"] = COLOUR[cat]
+    edges.append(e)
 if "poc-discovery-patterngenerationpoc" in ids and candidates:
-    edge("poc-cand-" + slug(candidates[0]["code"]), "poc-discovery-patterngenerationpoc", "D", "internal benchmark", "top", "bottom")
+    cid = "poc-cand-" + slug(candidates[0]["code"])
+    edges.append({"id": f"e{len(edges)+1:03d}-{cid[:18]}-poc-discovery-pat", "fromNode": cid, "fromSide": "left",
+                  "toNode": "poc-discovery-patterngenerationpoc", "toSide": "right", "label": "DATA | benchmark",
+                  "color": "5"})
 
 
 # ================================================================= VALIDATION
@@ -746,6 +799,26 @@ def seg_hits_rect(p, q, r, pad=6):
     return t0 <= t1
 
 
+def straight_lines():
+    for e in edges:
+        if (e["fromNode"], e["toNode"]) not in CURVED:
+            yield e, sock(e["fromNode"], e["fromSide"]), sock(e["toNode"], e["toSide"])
+
+
+# Group headings sit left, centre or right in their group's top band - whichever no line runs through.
+by_id = {n["id"]: n for n in nodes}
+for hid in sorted(i for i in ids if i.startswith("hdr-")):
+    gx, gy, gw, _ = rect[hid[4:]]
+    hx, hy, hwid, hh = rect[hid]
+    best = None
+    for cx_ in (gx + 30, gx + (gw - hwid) // 2, gx + gw - 30 - hwid):
+        hits = sum(1 for e, p, q in straight_lines()
+                   if hid not in (e["fromNode"], e["toNode"]) and seg_hits_rect(p, q, (cx_, hy, hwid, hh)))
+        if best is None or hits < best[0]:
+            best = (hits, cx_)
+    by_id[hid]["x"] = int(best[1])
+    rect[hid] = (int(best[1]), hy, hwid, hh)
+
 for e in edges:
     for k in ("fromNode", "toNode"):
         if e[k] not in ids:
@@ -775,16 +848,14 @@ for i, a in enumerate(groups):
         bx, by, bw, bh = rect[b]
         if ax < bx + bw and bx < ax + aw and ay < by + bh and by < ay + ah:
             problems.append(f"group overlap {a} / {b}")
-for e in edges:                       # an edge running behind a card misleads, but it should not stop the sync
-    if e.get("_curve"):
+for e in edges:                       # a line running behind a card misleads, but it should not stop the sync
+    if (e["fromNode"], e["toNode"]) in CURVED:
         continue
     p, q = sock(e["fromNode"], e["fromSide"]), sock(e["toNode"], e["toSide"])
     for n in leafs:
         if n not in (e["fromNode"], e["toNode"]) and seg_hits_rect(p, q, rect[n]):
-            notices.append(f"edge {e['fromNode']} -> {e['toNode']} crosses {n}")
+            notices.append(f"line {e['fromNode']} -> {e['toNode']} crosses {n}")
             break
-for e in edges:
-    e.pop("_curve", None)
 
 ordered = [n for n in nodes if n["type"] == "group"] + [n for n in nodes if n["type"] != "group"]
 payload = json.dumps({"nodes": ordered, "edges": edges, "metadata": {"version": "1.0-1.0", "frontmatter": {}}},
@@ -823,7 +894,8 @@ else:
     report["result"] = "dry run - would write" if not OUT.exists() or OUT.read_bytes() != payload.encode("utf-8") \
         else "dry run - up to date"
 if "--layout-json" in sys.argv:   # optional: geometry dump for a layout preview
-    Path(_arg("--layout-json")).write_text(json.dumps({"rect": rect, "kind": kind, "edges": edges}), "utf-8")
+    Path(_arg("--layout-json")).write_text(
+        json.dumps({"rect": rect, "kind": kind, "edges": edges}), "utf-8")
 
 if "--quiet" in sys.argv:
     tail = f"; {len(problems)} problem(s): {'; '.join(problems[:3])}" if problems else ""
