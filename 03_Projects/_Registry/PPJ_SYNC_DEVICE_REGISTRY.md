@@ -21,8 +21,14 @@ retired - it is part of the normal sync commit, not a separate step.
   the fix.
 - **Sync engine (Linux):** `scripts/sync_vault_git.py` - a behaviour-exact
   port of `Sync-VaultGit.ps1` (same order, lock, log path, conflict marker and
-  `Vault sync from <HOST> - <date>` commit message; `notify-send` instead of a
-  toast). Change the two scripts together so the fleet keeps one behaviour.
+  commit message format; `notify-send` instead of a toast). Change the two
+  scripts together so the fleet keeps one behaviour.
+- **Commit messages are self-tracing** (2026-09-24): subject stays `Vault sync
+  from <HOST> - <date>`, but the body lists every changed file (git's own
+  `--stat`, capped at 30 lines) plus a one-line added/modified/deleted count
+  and total data volume touched, e.g. `2 file(s) changed (2 modified) | ~25.9
+  KB touched`. `git log` alone now answers "what changed and how much" without
+  a separate `git show --stat`.
 - **Registration:** `scripts/Register-PPJVaultSyncTask.ps1 -StartTime "HH:mm"`
   (Windows Task Scheduler, per-user, no admin needed; `-StartTime` picks this
   device's offset - see Devices below before choosing one). Re-run after
