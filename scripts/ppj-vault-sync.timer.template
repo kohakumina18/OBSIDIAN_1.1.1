@@ -1,9 +1,10 @@
 [Unit]
-Description=PPJ Obsidian vault sync every 8 hours (see 03_Projects/_Registry/PPJ_SYNC_DEVICE_REGISTRY.md)
+Description=PPJ Obsidian vault sync every 3 hours (see 03_Projects/_Registry/PPJ_SYNC_DEVICE_REGISTRY.md)
 
 [Timer]
-# :20 past HAKU's 00:00/08:00/16:00 so the two never push at the same instant.
-OnCalendar=*-*-* 00,08,16:20:00
+# :20 past every 3rd hour (00,03,06,...,21) so this never lands on the same
+# minute as HAKU's or YOGHAAKU's own offset within the fleet's shared grid.
+OnCalendar=*-*-* 00/3:20:00
 # Catch up at next boot/login if the machine was off at a trigger time.
 Persistent=true
 

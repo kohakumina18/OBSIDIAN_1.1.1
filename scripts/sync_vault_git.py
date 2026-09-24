@@ -11,6 +11,14 @@ Order is deliberate: local changes are committed BEFORE any merge, so nothing
 in the working tree can be lost by an incoming change. Remote changes are
 merged, never rebased - several machines share this history.
 
+Commit messages are self-tracing: subject line stays "Vault sync from <HOST> -
+<date>" for a familiar `git log --oneline`, but the body lists every changed
+file (git's own --stat, capped at 30 lines so a bulk changeset doesn't blow
+the message up) plus a one-line summary of added/modified/deleted counts and
+total data volume touched - so `git log` alone answers "what changed and how
+much" without a separate `git show`. Windows counterpart:
+Get-PPJSyncCommitMessage in Sync-VaultGit.ps1 - keep both in step.
+
 On a merge conflict the script aborts the merge, leaves the working tree
 exactly as it was, drops a SYNC-CONFLICT-README.md marker in the vault root
 and exits non-zero. Conflicts are resolved by hand, never automatically.
@@ -84,6 +92,91 @@ def git(*args: str) -> tuple[int, str]:
     return proc.returncode, proc.stdout.strip()
 
 
+def format_byte_size(num_bytes: float) -> str:
+    if num_bytes < 1024:
+        return f"{int(num_bytes)} B"
+    if num_bytes < 1024**2:
+        return f"{num_bytes / 1024:.1f} KB"
+    if num_bytes < 1024**3:
+        return f"{num_bytes / 1024**2:.1f} MB"
+    return f"{num_bytes / 1024**3:.2f} GB"
+
+
+# Builds a commit message that traces which files changed and how much data
+# moved, instead of the bare "Vault sync from <HOST>" subject that gave no way
+# to tell what a sync actually touched without a separate `git show --stat`.
+#
+# Byte totals are summed from working-tree/HEAD file sizes, not from git's
+# line-based --stat (meaningless for binary files beyond its own per-file
+# "Bin X -> Y bytes" note) - computed once here so the header states one plain
+# total instead of making the reader add up every binary line by hand.
+def build_commit_message(subject: str) -> str:
+    _, name_status = git("diff", "--cached", "--name-status")
+    entries = [line for line in name_status.splitlines() if line.strip()]
+
+    added = modified = deleted = renamed = 0
+    total_bytes = 0
+    # A changeset this large is a bulk operation (import, mass rename), not a
+    # normal editing session - walking every file's size would be slow and the
+    # per-file stat table below is already capped, so the byte total is
+    # skipped rather than silently wrong for only part of the changeset.
+    skip_byte_count = len(entries) > 500
+
+    for entry in entries:
+        parts = entry.split("\t")
+        status = parts[0]
+        path = parts[-1]
+        if status.startswith("A"):
+            added += 1
+        elif status.startswith("M"):
+            modified += 1
+        elif status.startswith("D"):
+            deleted += 1
+        elif status.startswith("R"):
+            renamed += 1
+        else:
+            modified += 1
+
+        if skip_byte_count:
+            continue
+        if status.startswith("D"):
+            code, size_text = git("cat-file", "-s", f"HEAD:{path}")
+            if code == 0 and size_text.strip().isdigit():
+                total_bytes += int(size_text.strip())
+        else:
+            fp = VAULT / path
+            if fp.exists():
+                total_bytes += fp.stat().st_size
+
+    breakdown = ", ".join(
+        part
+        for part in (
+            f"{added} added" if added else "",
+            f"{modified} modified" if modified else "",
+            f"{deleted} deleted" if deleted else "",
+            f"{renamed} renamed" if renamed else "",
+        )
+        if part
+    )
+    volume_text = "" if skip_byte_count else f" | ~{format_byte_size(total_bytes)} touched"
+
+    # width=200,name-width=88,count=30: wide enough that long/Vietnamese paths
+    # don't get ellipsis-truncated in the middle (git's default width would),
+    # capped at 30 files so a bulk changeset doesn't blow the message up -
+    # git appends its own "...and N more files" line past the cap.
+    _, stat_table = git("diff", "--cached", "--stat=200,88,30")
+
+    return "\n".join(
+        [
+            subject,
+            "",
+            f"{len(entries)} file(s) changed ({breakdown}){volume_text}",
+            "",
+            stat_table.rstrip(),
+        ]
+    )
+
+
 def conflict_readme(branch: str, detail: str) -> str:
     return f"""# Vault sync conflict
 
@@ -148,17 +241,20 @@ def sync() -> int:
     # --- 1. commit local work -------------------------------------------------
     _, status = git("status", "--porcelain")
     if status:
-        count = len([l for l in status.splitlines() if l.strip()])
         code, out = git("add", "-A")
         if code != 0:
             log("ERROR", f"git add failed: {out}")
             return 1
-        msg = f"Vault sync from {HOST} - {datetime.now():%Y-%m-%d %H:%M}"
+        subject = f"Vault sync from {HOST} - {datetime.now():%Y-%m-%d %H:%M}"
+        msg = build_commit_message(subject)
         code, out = git("commit", "-m", msg)
         if code != 0:
             log("ERROR", f"git commit failed: {out}")
             return 1
-        log("INFO", f"Committed {count} local change(s).")
+        # Log only the traceable summary line, not the full per-file table -
+        # that stays in the commit itself (`git show --stat`), one place, not two.
+        summary_line = msg.splitlines()[2]
+        log("INFO", f"Committed: {summary_line}")
     else:
         log("INFO", "No local changes to commit.")
 

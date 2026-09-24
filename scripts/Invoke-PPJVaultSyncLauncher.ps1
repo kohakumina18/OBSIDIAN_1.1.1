@@ -1,21 +1,27 @@
 <#
 .SYNOPSIS
-    Task Scheduler entry point for the daily vault sync, on machines where the
-    vault lives on a removable USB drive.
+    Task Scheduler entry point for the vault sync, shared by every Windows
+    machine in the fleet - whether the vault sits on a fixed internal drive or
+    a removable USB drive.
 
 .DESCRIPTION
     This file's canonical, version-controlled copy is here in the vault, but the
     copy Task Scheduler actually runs is deployed to a fixed path on the C: drive
-    by Register-PPJVaultSyncTask.ps1. It has to live off the USB drive: its whole
-    job is to notice when that drive is *not* plugged in and say so, which it
-    obviously cannot do from a script sitting on the drive it is checking for.
+    by Register-PPJVaultSyncTask.ps1. It has to live off the vault's own drive:
+    on a USB machine its whole job is to notice when that drive is *not* plugged
+    in and say so, which it obviously cannot do from a script sitting on the
+    drive it is checking for. Fixed-drive machines inherit the same deployment
+    for one reason: it is the one behaviour every host in the fleet shares.
 
     Resolution order for the vault path:
       1. $env:PPJ_VAULT_PATH, if set (manual override, no code change needed).
-      2. $LastKnownPath below (fast path - updated by Register-PPJVaultSyncTask.ps1
-         to whatever drive letter the vault was on at registration time).
-      3. Scan every mounted drive's root for the same relative folder structure,
-         in case the USB drive got reassigned a different letter.
+      2. $KnownHostPaths below, keyed by $env:COMPUTERNAME - the fast path for
+         a machine whose vault sits on a fixed drive with a stable path. Add a
+         line here for a new fixed-drive machine; do not add a USB machine here
+         (step 3 exists for those).
+      3. For a USB-style vault (HAKU today), scan every mounted drive's root for
+         $RelativeVaultPath, in case the drive got reassigned a different
+         letter. $LastKnownUsbPath is tried first as a shortcut.
 
     If none of those resolve to a real vault (folder + .git present), this raises
     a Windows toast, drops a marker file on the Desktop, and exits - it never
@@ -33,10 +39,17 @@ param([switch]$Quiet)
 
 $ErrorActionPreference = 'Stop'
 
-# Relative path from a drive root down to the vault folder, used both as the
-# fast-path guess and as the marker Step 3 scans other drives for.
+# Fixed-drive machines: hostname -> vault path. Checked before the USB scan
+# because it is exact and does not touch every drive letter on the machine.
+$KnownHostPaths = @{
+    'YOGHAAKU' = 'D:\PPJ\syncing'
+}
+
+# USB-style machines (HAKU today): relative path from a drive root down to the
+# vault folder, used both as the fast-path guess and as the marker the scan
+# looks for on every other drive.
 $RelativeVaultPath = 'DATA\USB-VAULT\BA_Obsidian_Vault_FULL_LINUX_20260918\USB_BA_Obsidian_Vault'
-$LastKnownPath     = 'E:\DATA\USB-VAULT\BA_Obsidian_Vault_FULL_LINUX_20260918\USB_BA_Obsidian_Vault'
+$LastKnownUsbPath  = 'E:\DATA\USB-VAULT\BA_Obsidian_Vault_FULL_LINUX_20260918\USB_BA_Obsidian_Vault'
 
 $AlertPath = Join-Path $env:USERPROFILE 'Desktop\PPJ_VAULT_SYNC_ALERT.txt'
 
@@ -65,11 +78,15 @@ function Resolve-PPJVaultPath {
     if ($env:PPJ_VAULT_PATH -and (Test-PPJVaultAt $env:PPJ_VAULT_PATH)) {
         return $env:PPJ_VAULT_PATH
     }
-    if (Test-PPJVaultAt $LastKnownPath) {
-        return $LastKnownPath
+    $known = $KnownHostPaths[$env:COMPUTERNAME]
+    if ($known -and (Test-PPJVaultAt $known)) {
+        return $known
+    }
+    if (Test-PPJVaultAt $LastKnownUsbPath) {
+        return $LastKnownUsbPath
     }
     $drives = Get-PSDrive -PSProvider FileSystem -ErrorAction SilentlyContinue |
-        Where-Object { $_.Root -ne (Split-Path $LastKnownPath -Qualifier) + '\' }
+        Where-Object { $_.Root -ne (Split-Path $LastKnownUsbPath -Qualifier) + '\' }
     foreach ($drive in $drives) {
         $candidate = Join-Path $drive.Root $RelativeVaultPath
         if (Test-PPJVaultAt $candidate) { return $candidate }
@@ -80,7 +97,7 @@ function Resolve-PPJVaultPath {
 $VaultPath = Resolve-PPJVaultPath
 
 if (-not $VaultPath) {
-    $message = "USB vault drive not connected. Plug it in - the next scheduled run (or 'schtasks /run /tn `"PPJ Obsidian Vault Daily Sync`"') will sync normally."
+    $message = "Vault not found at its known path, and no USB vault drive is connected either. If this machine's vault moved, update `$KnownHostPaths in Invoke-PPJVaultSyncLauncher.ps1. If it's on a USB drive, plug it in - the next scheduled run (or 'schtasks /run /tn `"PPJ Obsidian Vault Sync`"') will sync normally."
     Show-PPJToast -Title 'PPJ Vault sync skipped' -Message $message
     "PPJ Vault sync skipped - $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')`r`n`r`n$message`r`n`r`nDeleted automatically once a sync succeeds." |
         Set-Content -Encoding UTF8 $AlertPath
