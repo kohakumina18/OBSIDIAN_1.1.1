@@ -8,6 +8,13 @@
     Order is deliberate: local changes are committed BEFORE any merge, so nothing
     in the working tree can be lost by an incoming change.
 
+    Commit messages are self-tracing: subject line stays "Vault sync from
+    <HOST> - <date>" for a familiar `git log --oneline`, but the body lists
+    every changed file (git's own --stat, capped at 30 lines so a bulk
+    changeset doesn't blow the message up) plus a one-line summary of
+    added/modified/deleted counts and total data volume touched - so `git log`
+    alone answers "what changed and how much" without a separate `git show`.
+
     On a merge conflict the script aborts the merge, leaves the working tree
     exactly as it was, drops a SYNC-CONFLICT-README.md marker in the vault root
     and exits non-zero. Conflicts are resolved by hand, never automatically.
@@ -104,6 +111,80 @@ function Invoke-Git {
     return [pscustomobject]@{ Code = $code; Text = $text }
 }
 
+function Format-PPJByteSize {
+    param([double]$Bytes)
+    if ($Bytes -lt 1KB) { return "$([int]$Bytes) B" }
+    if ($Bytes -lt 1MB) { return "{0:N1} KB" -f ($Bytes / 1KB) }
+    if ($Bytes -lt 1GB) { return "{0:N1} MB" -f ($Bytes / 1MB) }
+    return "{0:N2} GB" -f ($Bytes / 1GB)
+}
+
+# Builds a commit message that traces which files changed and how much data
+# moved, instead of the bare "Vault sync from <HOST>" subject that gave no way
+# to tell what a sync actually touched without a separate `git show --stat`.
+#
+# Byte totals are summed from working-tree/HEAD file sizes, not from git's
+# line-based --stat (meaningless for binary files beyond its own per-file
+# "Bin X -> Y bytes" note) - computed once here so the header states one plain
+# total instead of making the reader add up every binary line by hand.
+function Get-PPJSyncCommitMessage {
+    param([string]$Subject)
+
+    $nameStatus = (Invoke-Git @('diff', '--cached', '--name-status')).Text
+    $entries = @($nameStatus -split "`n" | Where-Object { $_.Trim() })
+
+    $added = 0; $modified = 0; $deleted = 0; $renamed = 0
+    $totalBytes = 0
+    # A changeset this large is a bulk operation (import, mass rename), not a
+    # normal editing session - walking every file's size would be slow and the
+    # per-file stat table below is already capped, so the byte total is
+    # skipped rather than silently wrong for only part of the changeset.
+    $skipByteCount = $entries.Count -gt 500
+
+    foreach ($entry in $entries) {
+        $parts = $entry -split "`t"
+        $status = $parts[0]
+        $path = $parts[-1]
+        switch -Regex ($status) {
+            '^A' { $added++ }
+            '^M' { $modified++ }
+            '^D' { $deleted++ }
+            '^R' { $renamed++ }
+            default { $modified++ }
+        }
+        if ($skipByteCount) { continue }
+        if ($status.StartsWith('D')) {
+            $sizeText = (Invoke-Git @('cat-file', '-s', "HEAD:$path")).Text.Trim()
+            if ($sizeText -match '^\d+$') { $totalBytes += [int64]$sizeText }
+        } else {
+            $fp = Join-Path $VaultPath $path
+            if (Test-Path -LiteralPath $fp) { $totalBytes += (Get-Item -LiteralPath $fp).Length }
+        }
+    }
+
+    $breakdown = @(
+        if ($added)    { "$added added" }
+        if ($modified) { "$modified modified" }
+        if ($deleted)  { "$deleted deleted" }
+        if ($renamed)  { "$renamed renamed" }
+    ) -join ', '
+    $volumeText = if ($skipByteCount) { '' } else { " | ~$(Format-PPJByteSize $totalBytes) touched" }
+
+    # width=200,name-width=88,count=30: wide enough that Vietnamese/long paths
+    # don't get ellipsis-truncated in the middle (git's default width would),
+    # capped at 30 files so a bulk changeset doesn't blow the message up -
+    # git appends its own "...and N more files" line past the cap.
+    $statTable = (Invoke-Git @('diff', '--cached', '--stat=200,88,30')).Text.TrimEnd()
+
+    return (@(
+        $Subject,
+        '',
+        "$($entries.Count) file(s) changed ($breakdown)$volumeText",
+        '',
+        $statTable
+    ) -join "`n")
+}
+
 # --- log rotation -----------------------------------------------------------
 try {
     if ((Test-Path -LiteralPath $LogFile) -and ((Get-Item -LiteralPath $LogFile).Length -gt 1MB)) {
@@ -159,19 +240,22 @@ try {
     # --- 1. commit local work -----------------------------------------------
     $status = (Invoke-Git @('status', '--porcelain')).Text
     if ($status.Trim()) {
-        $count = @($status -split "`n" | Where-Object { $_.Trim() }).Count
         $add = Invoke-Git @('add', '-A')
         if ($add.Code -ne 0) {
             Write-Log 'ERROR' "git add failed: $($add.Text)"
             exit 1
         }
-        $msg = 'Vault sync from {0} - {1}' -f $env:COMPUTERNAME, (Get-Date -Format 'yyyy-MM-dd HH:mm')
+        $subject = 'Vault sync from {0} - {1}' -f $env:COMPUTERNAME, (Get-Date -Format 'yyyy-MM-dd HH:mm')
+        $msg = Get-PPJSyncCommitMessage -Subject $subject
         $commit = Invoke-Git @('commit', '-m', $msg)
         if ($commit.Code -ne 0) {
             Write-Log 'ERROR' "git commit failed: $($commit.Text)"
             exit 1
         }
-        Write-Log 'INFO' "Committed $count local change(s)."
+        # Log only the traceable summary line, not the full per-file table -
+        # that stays in the commit itself (`git show --stat`), one place, not two.
+        $summaryLine = ($msg -split "`n")[2]
+        Write-Log 'INFO' "Committed: $summaryLine"
     } else {
         Write-Log 'INFO' 'No local changes to commit.'
     }
