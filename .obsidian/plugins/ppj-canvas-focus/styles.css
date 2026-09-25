@@ -1,0 +1,111 @@
+/*
+ * PPJ Canvas Focus - every rule is scoped to .ppj-focus-canvas, which main.js sets only on the wrapper of
+ * PPJ_Digital_Application_AI_Automation_Ecosystem.canvas. Other canvases are never affected.
+ */
+
+/* ------------------------------------------------------------------ typography
+ * Canvas px, sized for ~40% zoom on a 1080p screen (75px -> 30px on screen).
+ * Keep in step with ROLE_TYPE / ROLE_PAD_X in scripts/build_ppj_ecosystem_canvas.py (card heights use them). */
+.ppj-focus-canvas .ppj-n:is(.ppj-r-project, .ppj-r-wfx, .ppj-r-gtas, .ppj-r-system, .ppj-r-core, .ppj-r-title)
+	.canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view {
+	padding: 0 28px;
+}
+.ppj-focus-canvas .ppj-n:is(.ppj-r-project, .ppj-r-wfx, .ppj-r-gtas, .ppj-r-system, .ppj-r-core, .ppj-r-title)
+	.markdown-rendered :is(h1, h2, h3, p) {
+	margin: 0 0 0.15em 0;
+	color: var(--text-normal);
+}
+
+.ppj-focus-canvas .ppj-r-title .markdown-rendered h1 {
+	font-size: 80px; line-height: 1.1; font-weight: 800; letter-spacing: 0.01em;
+}
+
+.ppj-focus-canvas .ppj-r-project .markdown-rendered h1 { font-size: 75px; line-height: 1.12; font-weight: 800; }
+.ppj-focus-canvas .ppj-r-project .markdown-rendered h2 { font-size: 42px; line-height: 1.2; font-weight: 600; }
+.ppj-focus-canvas .ppj-r-project .markdown-rendered h3 { font-size: 52px; line-height: 1.15; font-weight: 700; }
+.ppj-focus-canvas .ppj-r-project .markdown-rendered p { font-size: 46px; line-height: 1.3; }
+.ppj-focus-canvas .ppj-r-project .markdown-rendered strong { letter-spacing: 0.02em; }
+
+.ppj-focus-canvas .ppj-r-wfx .markdown-rendered h1 { font-size: 70px; line-height: 1.12; font-weight: 800; }
+.ppj-focus-canvas .ppj-r-gtas .markdown-rendered h1 { font-size: 64px; line-height: 1.12; font-weight: 800; }
+.ppj-focus-canvas :is(.ppj-r-wfx, .ppj-r-gtas, .ppj-r-system, .ppj-r-core) .markdown-rendered p { font-size: 34px; line-height: 1.3; }
+
+.ppj-focus-canvas .ppj-r-system .markdown-rendered h2 { font-size: 56px; line-height: 1.15; font-weight: 700; }
+
+.ppj-focus-canvas .ppj-r-core .markdown-rendered h1 { font-size: 88px; line-height: 1.1; font-weight: 800; }
+.ppj-focus-canvas .ppj-r-core .markdown-rendered h2 { font-size: 60px; line-height: 1.15; font-weight: 700; }
+.ppj-focus-canvas .ppj-r-core .markdown-rendered h3 { font-size: 50px; line-height: 1.15; font-weight: 700; }
+
+/* ------------------------------------------------------------------ transitions */
+.ppj-focus-canvas .canvas-node.ppj-n,
+.ppj-focus-canvas .ppj-e {
+	transition: opacity 150ms ease, box-shadow 150ms ease;
+}
+
+/* On Hold / Closed project cards read as faded at rest */
+.ppj-focus-canvas .canvas-node.ppj-muted:not(.ppj-self):not(.ppj-related) { opacity: 0.72; }
+
+/* ------------------------------------------------------------------ lines at rest
+ * ppj-rel = a project line (hidden until focused); ppj-found = a foundation line between systems. */
+.ppj-focus-canvas.ppj-mode-presentation .ppj-e.ppj-rel { opacity: 0; }
+.ppj-focus-canvas.ppj-mode-presentation .ppj-e.ppj-rel:not(.ppj-on),
+.ppj-focus-canvas.ppj-mode-presentation .ppj-e.ppj-rel:not(.ppj-on) * { pointer-events: none; }
+.ppj-focus-canvas.ppj-mode-presentation .ppj-e.ppj-found { opacity: 0.3; }
+
+.ppj-focus-canvas.ppj-mode-editing .ppj-e.ppj-rel { opacity: 0.15; }
+.ppj-focus-canvas.ppj-mode-editing .ppj-e.ppj-found { opacity: 0.55; }
+.ppj-focus-canvas .canvas-path-label-wrapper.ppj-e:not(.ppj-on) { opacity: 0; }
+
+/* line type, readable without colour: solid / dashed / dotted */
+.ppj-focus-canvas .ppj-t-planned path.canvas-display-path { stroke-dasharray: calc(9px * var(--zoom-multiplier)) calc(6px * var(--zoom-multiplier)); }
+.ppj-focus-canvas .ppj-t-data path.canvas-display-path { stroke-dasharray: calc(5px * var(--zoom-multiplier)) calc(5px * var(--zoom-multiplier)); }
+.ppj-focus-canvas .ppj-t-knowledge path.canvas-display-path,
+.ppj-focus-canvas .ppj-t-affinity path.canvas-display-path {
+	stroke-linecap: round;
+	stroke-dasharray: calc(0.1px * var(--zoom-multiplier)) calc(6px * var(--zoom-multiplier));
+}
+
+/* ------------------------------------------------------------------ focus */
+.ppj-focus-canvas .ppj-e.ppj-on { opacity: 1 !important; }
+.ppj-focus-canvas .ppj-on path.canvas-display-path { stroke-width: calc(5px * var(--zoom-multiplier)); }
+.ppj-focus-canvas .ppj-t-knowledge.ppj-on path.canvas-display-path,
+.ppj-focus-canvas .ppj-t-affinity.ppj-on path.canvas-display-path { stroke-width: calc(6px * var(--zoom-multiplier)); }
+.ppj-focus-canvas .canvas-path-label-wrapper.ppj-on .canvas-path-label {
+	font-weight: 700;
+	font-size: calc(var(--font-ui-large) * 1.25 * var(--zoom-multiplier));
+	border: calc(2px * var(--zoom-multiplier)) solid rgb(var(--canvas-color, 140, 140, 140));
+}
+.ppj-focus-canvas.ppj-focus-active .ppj-e.ppj-found:not(.ppj-on) { opacity: 0.06; }
+
+/* Everything that is not the focus or directly related fades (stronger in presentation mode). */
+.ppj-focus-canvas.ppj-focus-active .canvas-node.ppj-n:is(.ppj-r-project, .ppj-r-wfx, .ppj-r-gtas, .ppj-r-system, .ppj-r-core):not(.ppj-self):not(.ppj-related) {
+	opacity: 0.25;
+}
+.ppj-focus-canvas.ppj-mode-presentation.ppj-focus-active .canvas-node.ppj-n:is(.ppj-r-project, .ppj-r-wfx, .ppj-r-gtas, .ppj-r-system, .ppj-r-core):not(.ppj-self):not(.ppj-related) {
+	opacity: 0.16;
+}
+.ppj-focus-canvas .canvas-node.ppj-self > .canvas-node-container {
+	box-shadow: 0 0 0 calc(5px * var(--zoom-multiplier)) var(--text-accent);
+}
+.ppj-focus-canvas .canvas-node.ppj-related > .canvas-node-container {
+	box-shadow: 0 0 0 calc(4px * var(--zoom-multiplier)) rgb(var(--canvas-color, 140, 140, 140));
+}
+.ppj-focus-canvas.ppj-focus-pinned .canvas-node.ppj-self > .canvas-node-container {
+	box-shadow: 0 0 0 calc(7px * var(--zoom-multiplier)) var(--text-accent);
+}
+
+/* ------------------------------------------------------------------ coverage badges
+ * The builder writes the badge as the first character of a module name; style it so it looks the same on every
+ * device (symbol font) and carries the status colour: green live, blue in development, grey evaluation / historical. */
+.ppj-focus-canvas :is(.ppj-r-wfx, .ppj-r-gtas):is(.ppj-cov-1, .ppj-cov-2, .ppj-cov-3) .markdown-rendered h1::first-letter,
+.ppj-focus-canvas .ppj-r-core:is(.ppj-cov-1, .ppj-cov-2, .ppj-cov-3) .markdown-rendered h2::first-letter {
+	font-family: "Segoe UI Symbol", "DejaVu Sans", "Noto Sans Symbols 2", "Apple Symbols", sans-serif;
+	font-size: 0.8em;
+	font-weight: 400;
+}
+.ppj-focus-canvas :is(.ppj-r-wfx, .ppj-r-gtas).ppj-cov-3 .markdown-rendered h1::first-letter,
+.ppj-focus-canvas .ppj-r-core.ppj-cov-3 .markdown-rendered h2::first-letter { color: var(--color-green, #08b94e); }
+.ppj-focus-canvas :is(.ppj-r-wfx, .ppj-r-gtas).ppj-cov-2 .markdown-rendered h1::first-letter,
+.ppj-focus-canvas .ppj-r-core.ppj-cov-2 .markdown-rendered h2::first-letter { color: var(--color-cyan, #00a6c7); }
+.ppj-focus-canvas :is(.ppj-r-wfx, .ppj-r-gtas).ppj-cov-1 .markdown-rendered h1::first-letter,
+.ppj-focus-canvas .ppj-r-core.ppj-cov-1 .markdown-rendered h2::first-letter { color: var(--text-faint, #9a9a9a); }

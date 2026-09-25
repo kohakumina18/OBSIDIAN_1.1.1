@@ -207,7 +207,7 @@ PPJ_Enterprise_Application_AI_Automation_Ecosystem.canvas
 → five-layer enterprise architecture: business, WFX, third-party, PPJ apps, Data/AI/Automation
 
 PPJ_Digital_Application_AI_Automation_Ecosystem.canvas
-→ executive ecosystem view: WFX (16 modules), third-party, GTAS (16 applications), data foundation and all registered AI / Automation projects by business domain; every line labelled INTEGRATION / PLANNED / DATA / AFFINITY. Systems inventory source: 02_BA_Knowledge/Enterprise_Architecture/PPJ_Operational_Systems_Landscape.md. Generated from the portfolio snapshot and kept in sync automatically (see "Ecosystem Canvas auto-sync" in section 5); do not hand-edit it, the next run overwrites the file.
+→ executive ecosystem view: WFX (16 modules), third-party, GTAS (16 applications), data foundation and all registered AI / Automation projects by business domain; module coverage badges; every line labelled INTEGRATION / PLANNED / DATA / KNOWLEDGE / AFFINITY and shown on hover / click by the local plugin .obsidian/plugins/ppj-canvas-focus (this Canvas only). Connection matrix: EDGE_SPEC in the builder, re-checked by scripts/validate_ppj_ecosystem_canvas.py; history in 03_Projects/Canvas/CONNECTION_CHANGELOG.md. Systems inventory source: 02_BA_Knowledge/Enterprise_Architecture/PPJ_Operational_Systems_Landscape.md. Generated from the portfolio snapshot and kept in sync automatically (see "Ecosystem Canvas auto-sync" in section 5); do not hand-edit it, the next run overwrites the file.
 
 PPJ_Project_Process_Map.canvas
 → one process card per registered project: input/trigger, processing steps, human control and final output

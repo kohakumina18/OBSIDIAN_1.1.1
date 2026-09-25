@@ -35,14 +35,19 @@ Business-domain groups sit left and right of that column. Vendor evaluations are
 
 ## Relationship Semantics
 
-Every line label starts with its strength, because a Canvas edge cannot be dashed or thinned:
+Two reading levels, from the BOD review of 24/09/2026: zoomed out the Canvas shows **coverage** (a badge on every WFX / GTAS module that AI / automation already touches: ● live, ◐ in development / planned, ○ evaluation / historical); hover or click shows the **exact relationships**. Project lines are hidden until a node is hovered or clicked, by the local plugin `.obsidian/plugins/ppj-canvas-focus` (PPJ Canvas Focus), which only acts on this Canvas. Without the plugin every line is visible at once.
 
-| Prefix | Meaning | Lines drawn |
-| --- | --- | --- |
-| INTEGRATION | Implemented / validated | 2 |
-| PLANNED | In scope or in development, not delivered | 3 |
-| DATA | Data / knowledge dependency | 14 |
-| AFFINITY | Same business capability; no technical integration confirmed | 29 |
+Every line label starts with its type; `PRIMARY` marks a project's main module:
+
+| Type | Meaning | Style | Lines drawn |
+| --- | --- | --- | --- |
+| INTEGRATION | Confirmed / validated integration | green, solid | 2 |
+| PLANNED | In scope or in development, not delivered | orange, dashed | 3 |
+| DATA | Data dependency / source | blue, dashed | 47 |
+| KNOWLEDGE | Knowledge / RAG / reference | cyan, dotted | 6 |
+| AFFINITY | Business relationship; no technical integration | grey, dotted | 23 |
+
+By BOD decision, QC, Production Planning and Production Management carry no badge yet, and GTAS Transportation has no line. The full matrix and every change are in [[03_Projects/Canvas/CONNECTION_CHANGELOG|CONNECTION_CHANGELOG]]; checks in [[03_Projects/Canvas/CANVAS_VALIDATION_REPORT|CANVAS_VALIDATION_REPORT]].
 
 ## Portfolio Snapshot
 
@@ -62,10 +67,10 @@ Baseline 19/09/2026 holds 35 initiatives. The vault registry holds 36 records: t
 
 Recorded on the Canvas under DATA / GOVERNANCE GAP:
 
-- expense-invoice projects merged in the vault but separate in the baseline;
+- expense-invoice projects: one application in the vault and in the BOD recording, two names in the baseline (one card, both names);
 - three canonical-code or status differences between the baseline and the vault (GRN bot, Stratova, GLPI chatbot domain);
 - MMSx vs MMX naming, GTAS Factory / Quantity / Efficiency / ID names, and the unexplained highlights on the source diagram;
-- no integration is documented at WFX-module or GTAS-application level.
+- only two integrations are confirmed (Material Allocation, Invoice Downloader); everything else is PLANNED, DATA, KNOWLEDGE or AFFINITY.
 
 ## Canvas
 

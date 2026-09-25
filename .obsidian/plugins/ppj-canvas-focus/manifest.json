@@ -1,0 +1,9 @@
+{
+	"id": "ppj-canvas-focus",
+	"name": "PPJ Canvas Focus",
+	"version": "1.0.0",
+	"minAppVersion": "1.5.0",
+	"description": "Hover / click focus, hover-only relationship lines and executive typography for PPJ_Digital_Application_AI_Automation_Ecosystem.canvas only.",
+	"author": "PPJ AI & Automation",
+	"isDesktopOnly": false
+}

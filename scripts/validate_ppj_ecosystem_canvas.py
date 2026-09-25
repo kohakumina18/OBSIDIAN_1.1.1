@@ -27,12 +27,19 @@ check("edge keys are spec keys", all(set(e) <= allowed_edge_keys for e in edges)
 check("sides valid", all(e["fromSide"] in ("top", "bottom", "left", "right") and e["toSide"] in ("top", "bottom", "left", "right") for e in edges))
 check("all coordinates integers", all(isinstance(n[k], int) for n in nodes for k in ("x", "y", "width", "height")))
 check("every edge label starts with its category",
-      all(re.match(r"^(INTEGRATION|PLANNED|AFFINITY|DATA)( \| .+)?$", e.get("label", "")) for e in edges))
-aff = Counter(e["fromNode"] for e in edges if e["label"].startswith("AFFINITY"))
-check("at most one AFFINITY line per project", all(v == 1 for v in aff.values()), str({k: v for k, v in aff.items() if v > 1}))
-check("edge labels stay short (<= 32 chars)", all(len(e["label"]) <= 32 for e in edges),
-      str([e["label"] for e in edges if len(e["label"]) > 32]))
-check("ASCII only (vault canvas-label rule)", raw.isascii(), "" if raw.isascii() else "non-ascii present")
+      all(re.match(r"^(INTEGRATION|PLANNED|AFFINITY|DATA|KNOWLEDGE)( \| [^|]+)*$", e.get("label", "")) for e in edges),
+      str([e.get("label") for e in edges if not re.match(r"^(INTEGRATION|PLANNED|AFFINITY|DATA|KNOWLEDGE)( \| [^|]+)*$", e.get("label", ""))]))
+# Lines are hover-only (PPJ Canvas Focus plugin) since the 24/09 BOD review, so the old one-AFFINITY-line-per-project
+# limit is gone; labels only show on hover and may carry "PRIMARY" plus a short qualifier.
+check("edge labels stay short (<= 40 chars)", all(len(e["label"]) <= 40 for e in edges),
+      str([e["label"] for e in edges if len(e["label"]) > 40]))
+check("no line attaches to a whole group", all(byid[e[k]]["type"] != "group" for e in edges for k in ("fromNode", "toNode")))
+# Vault canvas-label rule: ASCII only, except the three module-coverage badges inside text nodes.
+BADGES = set("\u25cf\u25d0\u25cb")
+non_ascii = {c for c in raw if ord(c) > 127} - BADGES
+check("ASCII only apart from coverage badges (vault canvas-label rule)", not non_ascii, str(sorted(non_ascii)))
+check("group labels and edge labels are pure ASCII",
+      all(n.get("label", "").isascii() for n in nodes) and all(e.get("label", "").isascii() for e in edges))
 
 # CHECK 1 / 2 : the 35 baseline initiatives + canonical codes
 snap = json.loads((V / "03_Projects/_Registry/Portfolio_Snapshots/PPJ_PORTFOLIO_SNAPSHOT_20260918.json").read_text("utf-8-sig"))
@@ -118,9 +125,94 @@ check("every wikilink resolves to a real file", not bad_links, str(bad_links))
 resolved = sum(len(re.findall(r"\[\[", n.get("text", ""))) for n in proj_nodes)
 check("project links resolved", resolved == len(regs), f"{resolved}/{len(regs)}")
 
+# CHECK 14 : the BOD connection matrix (24/09/2026 review, corrected against the recording - see
+# 03_Projects/Canvas/CONNECTION_CHANGELOG.md). Kept here independently of the builder: every project line on the
+# canvas must be in this table, and every entry in the table must be drawn. Type letters: A INTEGRATION,
+# B PLANNED, D DATA, K KNOWLEDGE, C AFFINITY.
+MATRIX = """
+mer-pocommit: C wfx-buyer-order-management, C wfx-purchase-order-management, D wfx-style-library, D wfx-production-planning
+mer-costingagenticplatform: C wfx-budgeting-costing, D wfx-style-library, D wfx-bill-of-material, D gtas-costing, B gtas-ied, D gtas-consumption
+mer-invoicedatarecheck: C wfx-budgeting-costing, C wfx-buyer-order-management, D wfx-finance
+mer-marketintelligence: D data-dwh, D wfx-buyer-order-management, D wfx-style-library
+ppj-glpi-helpdesk: C tp-glpi, K wfx-buyer-order-management, K wfx-budgeting-costing, K wfx-style-library, K wfx-purchase-order-management
+scp-sourcingchatbot: K wfx-inventory-control, K wfx-raw-material-planning
+pur-inventoryreport: D wfx-inventory-control, D tp-mmsx, D proj-pur-materialallocation, D proj-pur-gdiautomation
+pur-materialallocation: A wfx-inventory-control, D wfx-raw-material-planning, D wfx-purchase-order-management, D wfx-buyer-order-management
+pur-gdiautomation: B wfx-logistics-out-bound, D wfx-inventory-control, D wfx-purchase-order-management, D wfx-buyer-order-management
+pur-adhocindentsouth: C wfx-purchase-order-management, C wfx-raw-material-planning, C wfx-inventory-control
+pur-hmlabelprocessing: C wfx-purchase-order-management
+fin-financemanagement: D wfx-finance, D wfx-buyer-order-management, D wfx-budgeting-costing, D wfx-inventory-control, D wfx-production-management, D data-dwh, D tp-power-bi, D gtas-bi-report, D gtas-financial-statements, D gtas-salary, D gtas-production
+acc-grnsupplierinvoicebot: C wfx-logistics-in-bound, C wfx-finance, D wfx-purchase-order-management, D wfx-inventory-control
+fin-invoicedownloader: A tp-vnpt-e-invoice
+log-expenseinvoiceprocessing: C wfx-finance, C wfx-logistics-in-bound
+wh-awbextraction: C wfx-logistics-in-bound
+admin-expensemanagement: B tp-e-office, D tp-hris, C wfx-finance
+td-technicalknowledgeplatform: D proj-mer-costingagenticplatform, D wfx-style-library, D wfx-bill-of-material, D gtas-ied, D gtas-consumption, D data-technical-knowledge
+fab-fabricdatamart: D proj-td-technicalknowledgeplatform
+cpd-visualsampledatamart: D proj-td-technicalknowledgeplatform
+poc-discovery-patterngenerationpoc: C proj-td-technicalknowledgeplatform, C wfx-style-library, C proj-mer-costingagenticplatform
+prod-hanginglineiot: C wfx-core, D wfx-production-planning, D wfx-production-management, D tp-iot-wiser-ina
+wash-samplingmanagement: C wfx-sampling
+wash-cowash: C wfx-production-management
+hr-employeedataplatform: C tp-hris
+poc-cand-cpd-in-house-pattern-generation: D poc-discovery-patterngenerationpoc
+wfx-core: D data-dwh
+"""
+LETTER = {"A": "INTEGRATION", "B": "PLANNED", "D": "DATA", "K": "KNOWLEDGE", "C": "AFFINITY"}
+
+
+def node_for(fragment):
+    hits = [i for i in byid if i == fragment or i.startswith(fragment + "-") or i.startswith("proj-" + fragment + "-")
+            or i == "proj-" + fragment]
+    return hits[0] if len(hits) == 1 else None
+
+
+expected, unresolved = set(), []
+for row in MATRIX.strip().splitlines():
+    src, rest = row.split(": ")
+    for item in rest.split(", "):
+        letter, dst = item.split(" ")
+        f, t = node_for(src), node_for(dst)
+        if not f or not t:
+            unresolved.append(f"{src} -> {dst}")
+            continue
+        expected.add((f, t, LETTER[letter]))
+drawn = {(e["fromNode"], e["toNode"], e["label"].split(" |")[0]) for e in edges}
+check("every matrix entry resolves to a node", not unresolved, str(unresolved))
+check("no connection outside the BOD matrix", not (drawn - expected), str(sorted(drawn - expected)))
+check("every BOD matrix connection is drawn", not (expected - drawn), str(sorted(expected - drawn)))
+shared = [i for i in byid if i.startswith(("proj-ai-perriplatform", "proj-ai-applicationhub"))]
+check("PERRI and AI Hub are not attached to modules", not [e for e in edges if e["fromNode"] in shared or e["toNode"] in shared])
+check("GDI's primary line is Logistics Out-bound, not Purchase Order Management",
+      any(e["fromNode"].startswith("proj-pur-gdiautomation") and e["toNode"] == "wfx-logistics-out-bound"
+          and "PRIMARY" in e["label"] for e in edges)
+      and not any(e["fromNode"].startswith("proj-pur-gdiautomation") and e["toNode"] == "wfx-purchase-order-management"
+                  and "PRIMARY" in e["label"] for e in edges))
+check("Market Intelligence has DATA lines only",
+      all(e["label"].startswith("DATA") for e in edges if e["fromNode"].startswith("proj-mer-marketintelligence")))
+
+# Module coverage badges (BOD 24/09): badge on modules a project touches; none on QC / Production / unused modules.
+def badge(nid):
+    first = byid[nid]["text"].split("\n")[0]
+    return next((c for c in first if c in BADGES), None)
+
+
+BADGED = ["wfx-buyer-order-management", "wfx-budgeting-costing", "wfx-bill-of-material", "wfx-purchase-order-management",
+          "wfx-style-library", "wfx-inventory-control", "wfx-raw-material-planning", "wfx-finance", "wfx-logistics-in-bound",
+          "wfx-logistics-out-bound", "wfx-sampling", "gtas-costing", "gtas-ied", "gtas-consumption", "gtas-bi-report",
+          "gtas-financial-statements", "gtas-salary", "gtas-production"]
+UNBADGED = ["wfx-qc", "wfx-qa", "wfx-brandplm", "wfx-production-planning", "wfx-production-management",
+            "gtas-transportation", "gtas-compliance"]
+check("coverage badge on every module with a project relationship", all(badge(i) for i in BADGED),
+      str([i for i in BADGED if not badge(i)]))
+check("no badge on QC / QA / BrandPLM / Production modules / GTAS Transportation", not any(badge(i) for i in UNBADGED),
+      str([i for i in UNBADGED if badge(i)]))
+check("GTAS Transportation has no line", not [e for e in edges if "gtas-transportation" in (e["fromNode"], e["toNode"])])
+
 fail = [r for r in res if not r[1]]
 for name, ok, d in res:
     print(("PASS  " if ok else "FAIL  ") + name + (f"   [{d}]" if d and not ok else ""))
 print(f"\nnodes={len(nodes)} edges={len(edges)} project_nodes={len(proj_nodes)} links_resolved={resolved} "
-      f"kinds={dict(Counter(e['label'].split(' |')[0] for e in edges))}")
+      f"kinds={dict(Counter(e['label'].split(' |')[0] for e in edges))} "
+      f"badges={sum(1 for n in nodes if n['id'].startswith(('wfx-', 'gtas-')) and badge(n['id']))}")
 print("VALIDATION:", "PASS" if not fail else f"FAIL ({len(fail)})")
