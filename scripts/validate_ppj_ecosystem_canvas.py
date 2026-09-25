@@ -29,7 +29,9 @@ check("all coordinates integers", all(isinstance(n[k], int) for n in nodes for k
 check("every edge label starts with its category",
       all(re.match(r"^(INTEGRATION|PLANNED|AFFINITY|DATA)( \| .+)?$", e.get("label", "")) for e in edges))
 aff = Counter(e["fromNode"] for e in edges if e["label"].startswith("AFFINITY"))
-check("at most one AFFINITY line per project", all(v == 1 for v in aff.values()), str({k: v for k, v in aff.items() if v > 1}))
+allowed_two = {"proj-prod-hangingline-iot-v1-0-0", "proj-prod-hanginglineiot-v1-0-0"}   # owner decision 2026-09-25
+check("at most one AFFINITY line per project (hanging-line IoT: two)",
+      all(v <= (2 if k in allowed_two else 1) for k, v in aff.items()), str({k: v for k, v in aff.items() if v > 1}))
 check("edge labels stay short (<= 32 chars)", all(len(e["label"]) <= 32 for e in edges),
       str([e["label"] for e in edges if len(e["label"]) > 32]))
 check("ASCII only (vault canvas-label rule)", raw.isascii(), "" if raw.isascii() else "non-ascii present")
@@ -101,7 +103,10 @@ check("On Hold items are orange", all(color_of(f) == "2" for f in ("qc-defectdet
 
 # structure counts
 count = lambda p: sum(1 for n in nodes if n["id"].startswith(p))
-check("16 WFX modules", sum(1 for n in nodes if n["id"].startswith("wfx-") and n["id"] != "wfx-core") == 16)
+not_modules = {"wfx-core", "wfx-reporting-analysis", "wfx-time-action-tracking"}   # centre descriptors of the source diagram
+check("16 WFX modules (+2 centre descriptors)",
+      sum(1 for n in nodes if n["id"].startswith("wfx-") and n["id"] not in not_modules) == 16
+      and {"wfx-reporting-analysis", "wfx-time-action-tracking"} <= {n["id"] for n in nodes})
 check("16 GTAS applications", count("gtas-") == 16)
 check("10 third-party nodes (+1 note)", sum(1 for n in nodes if n["id"].startswith("tp-") and n["id"] != "tp-note") == 10)
 check("all domain zones labelled", all(any(z in n.get("label", "") for n in nodes) for z in

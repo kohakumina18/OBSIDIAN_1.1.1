@@ -201,10 +201,12 @@ P = {
         "Employee data collection, validation and standardization into an Employee Master; applicant extraction / prefill.", None, None),
     "ADMIN_ExpenseManagement_v1.1.0": ("ADMIN", "Business Travel & Expense Management", "WORKFLOW",
         "Request, approval, trip, advance, expense, settlement; multi-traveler requests. E-office integration is in scope.", None,
-        "Also relates to: HRIS / master data, Finance."),
+        "E-office service has lapsed: reopening needs a paid contract and the vendor is re-quoting (BOD review 24/09) - "
+        "integration blocked. Also relates to: HRIS, Finance."),
     "SCP_SourcingChatbot_v2.3.0": ("SRC", "Sourcing AI Chatbot", "AI APPLICATION (RAG / chatbot)",
         "Supplier, material and sample search, comparison and sourcing knowledge retrieval.", None,
-        "Also relates to: WFX Raw Material Planning."),
+        "Attached to WFX Inventory Control - supplier data sits in Inventory (owner decision 2026-09-25). "
+        "Also relates to: MMSx, Raw Material Planning."),
     "PUR_AdhocIndentSouth_v1.0.0": ("SRC", "Adhoc Indent Automation (South)", "AUTOMATION (rule-based)",
         "Repeated Adhoc Indent processing for the South region; WFX compatibility.", None, None),
     "PUR_HMLabelProcessing_v1.0.0": ("SRC", "H&M Label-O Processing", "AUTOMATION (rule-based)",
@@ -232,14 +234,16 @@ P = {
         "Legacy EXIM expense-invoice automation, replaced by LOG_ExpenseInvoiceProcessing_v1.2.2.", None,
         "Not in the 35-item baseline; present in the vault registry."),
     "LOG_ExpenseInvoiceProcessing_v1.2.2": ("WHL", "Expense Invoice Processing", "AUTOMATION (regional invoice)",
-        "Logistics / EXIM expense invoices: regional and tax rules, validation, exceptions. Regions: HCM, Da Nang, Nha Trang, Ha Noi.", None,
-        "Merged in the vault registry - see gap note 1."),
+        "Expense invoices: regional and tax rules, validation, exceptions. Used by Finance, Logistics in-bound, export / import and "
+        "other units. Regions: HCM, Da Nang, Nha Trang, Ha Noi.", None,
+        "One project - confirmed by the owner 2026-09-25 (see gap note 1)."),
     "WH_AWBExtraction_v1.1.0": ("WHL", "AWB Document Intelligence", "AI APPLICATION (document intelligence)",
         "AWB image OCR and DHL email parsing into one validated canonical AWB record; human validation.", None,
-        "Also relates to: GTAS Transportation."),
+        "Also relates to: Logistics In-bound. Nothing is attached to GTAS Transportation (BOD review 24/09)."),
     "PROD_HangingLineIoT_v1.0.0": ("PROD", "Hanging Line IoT", "IOT",
         "Production hanging-line digitalization and monitoring. IoT / operational, not an LLM application.", None,
-        "Also relates to: WFX Production Planning."),
+        "Attached to WFX Production Management AND Reporting & Analysis (owner decision 2026-09-25). "
+        "Also relates to: Production Planning."),
     "WASH_SamplingManagement_v1.1.0": ("PROD", "Wash Sampling Management Portal", "WORKFLOW",
         "Wash sample request, planning, result and approval in the PPJ Group Portal.", None,
         "Also relates to: WFX Production Management."),
@@ -297,7 +301,7 @@ BASELINE = {
     "FIN_InvoiceDownloader_v1.2.0": "PPJ.InvoiceDownloader.v1.2",
     "ACC_GRNSupplierInvoiceBot_v2.3.0": "ACC.GRNInvoiceMatching.v2.3 (vault calls this name misleading)",
     "ACC_InventoryReport_v1.0.0": "ACC.Inventory.Report.v1.0",
-    "LOG_ExpenseInvoiceProcessing_v1.2.2": "PPJ.ExpenseInvoices.v1.1 + LOG.EXPENSE.INVOICES.V1.2 (one project in the vault)",
+    "LOG_ExpenseInvoiceProcessing_v1.2.2": "PPJ.ExpenseInvoices.v1.1 + LOG.EXPENSE.INVOICES.V1.2 (one project, confirmed 2026-09-25)",
     "WH_AWBExtraction_v1.1.0": "WH.AWB.EXTRACTION.v1.1",
     "PROD_HangingLineIoT_v1.0.0": "PROD.IOT.CHuyenTreo.v1.0",
     "WASH_SamplingManagement_v1.1.0": "WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1",
@@ -451,7 +455,7 @@ EDGE_SPEC = [
     (S("FIN_InvoiceDownloader_v1.2.0"), "tp-vnpt-e-invoice", "A", "VNPT download", "left", "right"),
     (S("MER_CostingAgenticPlatform_v1.1.0"), "gtas-ied", "B", "GTAS/IED contract", "right", "left"),
     (S("PUR_GDIAutomation_v1.0.0"), "wfx-purchase-order-management", "B", "WFX API", "right", "left"),
-    (S("ADMIN_ExpenseManagement_v1.1.0"), "tp-e-office", "B", "E-office", "left", "right"),
+    (S("ADMIN_ExpenseManagement_v1.1.0"), "tp-e-office", "B", "E-office, blocked", "left", "right"),
     # --- data dependencies: always drawn
     (S("TD_TechnicalKnowledgePlatform_v2.1.0"), S("MER_CostingAgenticPlatform_v1.1.0"), "D", "", "left", "left"),
     (S("PUR_InventoryReport_v2.1.0"), S("PUR_MaterialAllocation_v1.1.0"), "D", "", "top", "bottom"),
@@ -469,7 +473,7 @@ EDGE_SPEC = [
     (S("MER_CostingAgenticPlatform_v1.1.0"), "wfx-budgeting-costing", "C", "", "right", "left"),
     (S("MER_MarketIntelligence_v1.1.0"), "wfx-buyer-order-management", "C", "", "right", "left"),
     (S("MER_InvoiceDataRecheck_v1.1.0"), "wfx-budgeting-costing", "C", "", "right", "left"),
-    (S("SCP_SourcingChatbot_v2.3.0"), "tp-mmsx", "C", "", "right", "left"),
+    (S("SCP_SourcingChatbot_v2.3.0"), "wfx-inventory-control", "C", "", "right", "left"),
     (S("PUR_AdhocIndentSouth_v1.0.0"), "wfx-purchase-order-management", "C", "", "right", "left"),
     (S("PUR_HMLabelProcessing_v1.0.0"), "wfx-purchase-order-management", "C", "", "right", "left"),
     (S("WH_AWBExtraction_v1.1.0"), "wfx-logistics-in-bound", "C", "", "left", "right"),
@@ -478,6 +482,7 @@ EDGE_SPEC = [
     (S("ACC_GRNSupplierInvoiceBot_v2.3.0"), "wfx-finance", "C", "", "left", "right"),
     (S("QC_DefectDetection_v1.0.0"), "wfx-qc", "C", "", "left", "right"),
     (S("PROD_HangingLineIoT_v1.0.0"), "wfx-production-management", "C", "", "left", "right"),
+    (S("PROD_HangingLineIoT_v1.0.0"), "wfx-reporting-analysis", "C", "", "left", "right"),
     (S("WASH_SamplingManagement_v1.1.0"), "wfx-sampling", "C", "", "left", "right"),
     (S("WASH_COWASH_v2.0.0"), "wfx-production-management", "C", "", "left", "right"),
     (S("PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0"), "tp-glpi", "C", "", "right", "right"),
@@ -533,8 +538,11 @@ group("grp-gtas", CX, y_gtas, CW, gh, "03 GTAS INTERNAL APPLICATIONS - Legacy In
 for c, col in enumerate(gtas_layout):
     for r, name in enumerate(col):
         body = f"## {name}"
-        if name == "GTAS Costing":
-            body += "\nstarred in the source diagram"
+        note = {"GTAS Costing": "starred in the source diagram",
+                "GTAS Compliance": "BOD review: no user, dropped from the BOD slide",
+                "GTAS Transportation": "BOD review: nothing attached"}.get(name)
+        if note:
+            body += "\n" + note
         text("gtas-" + slug(name.replace("GTAS ", "")), xs4[c], y_gtas + HDR + r * NP, NW, NH, body, C_GTAS)
 y_3p = y_gtas + gh + GAP
 
@@ -571,21 +579,32 @@ wfx_left = ["Buyer Order Management", "Budgeting & Costing", "Bill of Material",
             "Raw Material Planning", "Purchase Order Management", "Inventory Control"]
 wfx_right = ["Finance", "Sampling", "QC", "QA", "Production Planning", "Production Management",
              "Logistics In-bound", "Logistics Out-bound"]
-slots = [y_wfx + HDR + i * MP + MH / 2 for i in range(8)]
-wfx_left = ordered_modules(wfx_left, slots)
-wfx_right = ordered_modules(wfx_right, slots)
-wh = HDR + 8 * MP - (MP - MH) + 40
+# The two descriptors printed at the centre of the owner's WFX diagram. They are not modules, but a project can be
+# attached to them (the hanging-line IoT feeds Reporting & Analysis), so they get a node each. One per column keeps
+# both columns nine rows tall.
+wfx_descriptor_left = ["Time & Action Tracking"]
+wfx_descriptor_right = ["Reporting & Analysis"]
+slots = [y_wfx + HDR + i * MP + MH / 2 for i in range(9)]
+wfx_left = ordered_modules(wfx_left + wfx_descriptor_left, slots)
+wfx_right = ordered_modules(wfx_right + wfx_descriptor_right, slots)
+WFX_ROWS = 9
+wh = HDR + WFX_ROWS * MP - (MP - MH) + 40
 group("grp-wfx", CX, y_wfx, CW, wh, "01 WFX ERP CORE - Core Enterprise Transaction System", C_WFX)
 lx, rx_ = CX + 100, CX + CW - 100 - MW
+def wfx_body(name: str) -> str:
+    if name in wfx_descriptor_left + wfx_descriptor_right:
+        return f"## {name}\ncentre descriptor in the source diagram"
+    return f"## {name}" + ("\nhighlighted in the source diagram" if name == "Production Planning" else "")
+
+
 for i, name in enumerate(wfx_left):
-    text("wfx-" + slug(name), lx, y_wfx + HDR + i * MP, MW, MH, f"## {name}", C_WFX)
+    text("wfx-" + slug(name), lx, y_wfx + HDR + i * MP, MW, MH, wfx_body(name), C_WFX)
 for i, name in enumerate(wfx_right):
-    body = f"## {name}" + ("\nhighlighted in the source diagram" if name == "Production Planning" else "")
-    text("wfx-" + slug(name), rx_, y_wfx + HDR + i * MP, MW, MH, body, C_WFX)
+    text("wfx-" + slug(name), rx_, y_wfx + HDR + i * MP, MW, MH, wfx_body(name), C_WFX)
 hx = lx + MW + 100
-text("wfx-core", hx, y_wfx + HDR, rx_ - 100 - hx, 8 * MP - (MP - MH),
+text("wfx-core", hx, y_wfx + HDR, rx_ - 100 - hx, WFX_ROWS * MP - (MP - MH),
      "# WFX ERP\n## Core Enterprise Transaction System\n\n"
-     "### Reporting & Analysis\n### Time & Action Tracking\n### Textiles / Garments\n\n"
+     "### Textiles / Garments\n\n"
      "16 modules, named from the owner's operating-systems diagram. WFX is the system of record for orders, purchasing, "
      "material, inventory and operational transactions. AI and automation augment WFX; they do not replace it. "
      "Not every AI use case writes back to WFX.", C_WFX)
@@ -711,12 +730,12 @@ text("guide", QX, guide_y, QW, 1300,
      "a validated flow exists.")
 gap_y = guide_y + 1300 + GAP
 GAPS = [
-    ("gap-1", "## GAP 1 - Expense invoices merged\n\n"
-     "The 35-item baseline lists PPJ.ExpenseInvoices.v1.1 and LOG.EXPENSE.INVOICES.V1.2 as two projects. The vault registry "
-     "(PPJ_PORTFOLIO_SNAPSHOT_20260918) already maps both to ONE project, LOG_ExpenseInvoiceProcessing_v1.2.2, and lists a "
-     "decision still open: confirm the mapping and whether the earlier Export exclusion applies.\n\n"
-     "Drawn as one node (vault registry outranks the baseline). Both baseline names are kept on the card.\n\n"
-     "Vault also holds two closed records outside the baseline: EXIM.ExpenseInvoices.Automation.v1.1 and "
+    ("gap-1", "## GAP 1 - Expense invoices: RESOLVED\n\n"
+     "The 35-item baseline lists PPJ.ExpenseInvoices.v1.1 and LOG.EXPENSE.INVOICES.V1.2 as two projects. On 2026-09-25 the "
+     "owner confirmed they are ONE project, recorded as LOG_ExpenseInvoiceProcessing_v1.2.2 "
+     "(DEC-20260925-EXPENSE-INVOICE-ONE-PROJECT). Both baseline names stay on the card as aliases.\n\n"
+     "Still open: whether the earlier Export exclusion applies.\n\n"
+     "The vault also holds two closed records outside the baseline: EXIM.ExpenseInvoices.Automation.v1.1 and "
      "AI.Automation.Workshop.Analysis.202606 - hence 36 records at the time of writing."),
     ("gap-2", "## GAP 2 - Canonical codes and status\n\n"
      "ACC.GRNInvoiceMatching.v2.3 (baseline) vs ACC_GRNSupplierInvoiceBot_v2.3.0 (vault canonical). The vault says the "
@@ -731,7 +750,9 @@ GAPS = [
      "MMSx (diagram) vs MMX (2026-09-18 ecosystem note): treated as one system, name unconfirmed.\n\n"
      "The Finance AI canvas also names GTAS Factory, Quantity, Efficiency and ID. None is on the diagram; alias or "
      "separate application is unconfirmed.\n\n"
-     "The red star on GTAS Costing and the green highlight on Production Planning are shown but their meaning is not stated."),
+     "The red star on GTAS Costing and the green highlight on Production Planning are shown but their meaning is not stated.\n\n"
+     "BOD review 24/09: GTAS Compliance has no user and is dropped from the BOD slide; nothing is attached to GTAS "
+     "Transportation. Both stay here because this canvas records the whole landscape."),
     ("gap-4", "## GAP 4 - Relationship evidence\n\n"
      "No document confirms an integration at WFX-module or GTAS-application level. Those links are AFFINITY.\n\n"
      "Exceptions drawn stronger: PUR_MaterialAllocation validated flow into WFX (INTEGRATION, validated flow only); "
@@ -749,17 +770,19 @@ for i, (gid, body) in enumerate(GAPS):
 # ====================================================================== EDGES
 PREFIX = {"A": "INTEGRATION", "B": "PLANNED", "C": "AFFINITY", "D": "DATA"}
 COLOUR = {"A": "4", "B": "2", "D": "5"}
-affinity_seen: set[str] = set()
+# One AFFINITY line per project keeps the canvas readable; the owner can allow more for a project.
+AFFINITY_MAX = {S("PROD_HangingLineIoT_v1.0.0"): 2}      # Production AND Reporting & Analysis - owner decision 2026-09-25
+affinity_seen: dict[str, int] = {}
 for f, t, cat, qualifier, fs, ts in EDGE_SPEC:
     # A curated line whose endpoint has gone (a project was renamed or removed) is skipped, not fatal.
     if f not in ids or t not in ids:
         notices.append(f"skipped line {f} -> {t}: endpoint not on the canvas (renamed or removed?)")
         continue
     if cat == "C":
-        if f in affinity_seen:
-            notices.append(f"second AFFINITY line from {f} dropped (one per project)")
+        if affinity_seen.get(f, 0) >= AFFINITY_MAX.get(f, 1):
+            notices.append(f"extra AFFINITY line from {f} dropped (limit {AFFINITY_MAX.get(f, 1)} per project)")
             continue
-        affinity_seen.add(f)
+        affinity_seen[f] = affinity_seen.get(f, 0) + 1
     e = {"id": f"e{len(edges)+1:03d}-{f[:18]}-{t[:18]}", "fromNode": f, "fromSide": fs, "toNode": t, "toSide": ts,
          "label": PREFIX[cat] + (f" | {qualifier}" if qualifier else "")}
     if cat in COLOUR:
@@ -901,7 +924,8 @@ def write_if_changed(path: Path, data: str) -> str:
 
 report = {
     "nodes": len(ordered), "edges": len(edges), "project_nodes": len(proj_nodes),
-    "wfx_modules": len(wfx_left) + len(wfx_right), "third_party": len(tp_nodes),
+    "wfx_modules": len(wfx_left) + len(wfx_right) - len(wfx_descriptor_left + wfx_descriptor_right),
+    "third_party": len(tp_nodes),
     "gtas": sum(len(c) for c in gtas_layout),
     "links_missing": [c for c in P if resolve_link(projects[c]) is None],
     "notices": notices, "problems": problems, "classes": cur,
