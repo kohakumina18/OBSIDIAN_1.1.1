@@ -18,5 +18,6 @@
 | DEC-WEEKLY-20260801-NUNOX | NUNOX Visit and Digital Library Direction | 2026-08-01 | Leadership | PPJxNUNOX.ScanTrial | [[DEC-WEEKLY-20260801-NUNOX]] |
 | DEC-WEEKLY-20260801-STRATOVA | Stratova Funding and Commercial Direction | 2026-08-01 | Leadership | PPJxStratova.AI | [[DEC-WEEKLY-20260801-STRATOVA]] |
 | DEC-WEEKLY-20260801-QSEE | QSee Hold and Reactivation Criteria | 2026-08-01 | QC / TQM | PPJxQSee.AI | [[DEC-WEEKLY-20260801-QSEE]] |
+| DEC-20260925-EXPENSE-INVOICE-ONE-PROJECT | Expense invoices are one project | 2026-09-25 | Owner | LOG_ExpenseInvoiceProcessing_v1.2.2 | [[DEC-20260925-EXPENSE-INVOICE-ONE-PROJECT]] |
 
 
