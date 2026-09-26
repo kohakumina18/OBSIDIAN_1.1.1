@@ -23,7 +23,7 @@
     {
       "id": "ppj-management-attention",
       "type": "text",
-      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Mapping completeness\n- Real-data defects\n- Regional / tax-rule variation\n\nDecisions Needed\n- Confirm LOG_ExpenseInvoiceProcessing_v1.2.2 is the renamed successor of PPJ.ExpenseInvoices.v1.1 and whether the earlier Export exclusion still applies\n\nExternal Dependencies\n- None recorded",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Mapping completeness\n- Real-data defects\n- Regional / tax-rule variation\n\nDecisions Needed\n- Confirm whether the earlier Export exclusion still applies (the mapping of PPJ.ExpenseInvoices.v1.1 and LOG.EXPENSE.INVOICES.V1.2 to LOG_ExpenseInvoiceProcessing_v1.2.2 was confirmed by the owner on 2026-09-25)\n\nExternal Dependencies\n- None recorded",
       "x": 810,
       "y": -90,
       "width": 500,

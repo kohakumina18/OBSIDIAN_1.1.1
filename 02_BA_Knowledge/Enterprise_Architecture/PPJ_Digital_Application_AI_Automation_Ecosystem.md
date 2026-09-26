@@ -51,7 +51,9 @@ By BOD decision, QC, Production Planning and Production Management carry no badg
 
 ## Portfolio Snapshot
 
-Baseline 19/09/2026 holds 35 initiatives. The vault registry holds 36 records: the baseline's two expense-invoice projects are one project in the vault, and it also carries two closed records outside the baseline. Both count sets are shown on the Canvas, neither overwriting the other.
+Baseline 19/09/2026 holds 35 initiatives. The vault registry holds 36 records: the baseline's two expense-invoice projects are one project (confirmed by the owner 2026-09-25), and it also carries two closed records outside the baseline. Both count sets are shown on the Canvas, neither overwriting the other.
+
+Latest review input: [[BOD_REVIEW_20260924_Madame_Phuong]].
 
 ## Architecture Principles
 
@@ -67,7 +69,7 @@ Baseline 19/09/2026 holds 35 initiatives. The vault registry holds 36 records: t
 
 Recorded on the Canvas under DATA / GOVERNANCE GAP:
 
-- expense-invoice projects: one application in the vault and in the BOD recording, two names in the baseline (one card, both names);
+- expense-invoice projects: baseline listed two, the owner confirmed one on 2026-09-25 (resolved; the Export exclusion is still open);
 - three canonical-code or status differences between the baseline and the vault (GRN bot, Stratova, GLPI chatbot domain);
 - MMSx vs MMX naming, GTAS Factory / Quantity / Efficiency / ID names, and the unexplained highlights on the source diagram;
 - only two integrations are confirmed (Material Allocation, Invoice Downloader); everything else is PLANNED, DATA, KNOWLEDGE or AFFINITY.

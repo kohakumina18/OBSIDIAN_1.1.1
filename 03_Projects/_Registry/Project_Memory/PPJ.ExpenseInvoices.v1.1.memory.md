@@ -20,7 +20,7 @@ status: "Active"
 current_outcome: "Process Logistics / Import-Export expense invoices with regional and tax rules, invoice validation, user workflow and exception management."
 latest_update_summary: "Current Logistics / Import-Export expense-invoice project (Active Regional Rollout / UAT). Focus: regional rollout, tax rules, invoice validation, user workflow and exception management. Replaces the ambiguity created by older EXIM expense-invoice names. Prior guidance (departments/factories except Export; EXIM-first historical) is preserved in project history."
 known_risks: "Mapping completeness | Real-data defects | Regional / tax-rule variation | Go-live support readiness"
-decisions_needed: "Confirm LOG_ExpenseInvoiceProcessing_v1.2.2 is the renamed successor of PPJ.ExpenseInvoices.v1.1 and whether the earlier Export exclusion still applies"
+decisions_needed: "Confirm whether the earlier Export exclusion still applies (the mapping of PPJ.ExpenseInvoices.v1.1 and LOG.EXPENSE.INVOICES.V1.2 to LOG_ExpenseInvoiceProcessing_v1.2.2 was confirmed by the owner on 2026-09-25)"
 next_actions: "Close remaining defects and retest | Confirm mapping and frequent-supplier readiness | Complete production-readiness review and go-live decision | Confirm regional and tax rules for each rollout region"
 priority: "P4"
 recent_update_events: ["PPJ-PORTFOLIO-SNAPSHOT-20260918"]
@@ -92,7 +92,7 @@ Current Logistics / Import-Export expense-invoice project (Active Regional Rollo
 
 ## Decisions Needed
 
-- Confirm LOG_ExpenseInvoiceProcessing_v1.2.2 is the renamed successor of PPJ.ExpenseInvoices.v1.1 and whether the earlier Export exclusion still applies
+- Confirm whether the earlier Export exclusion still applies (the mapping of PPJ.ExpenseInvoices.v1.1 and LOG.EXPENSE.INVOICES.V1.2 to LOG_ExpenseInvoiceProcessing_v1.2.2 was confirmed by the owner on 2026-09-25)
 
 ## Dependencies
 

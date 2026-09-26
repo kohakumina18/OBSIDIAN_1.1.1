@@ -108,7 +108,10 @@ check("On Hold items are orange", all(color_of(f) == "2" for f in ("qc-defectdet
 
 # structure counts
 count = lambda p: sum(1 for n in nodes if n["id"].startswith(p))
-check("16 WFX modules", sum(1 for n in nodes if n["id"].startswith("wfx-") and n["id"] != "wfx-core") == 16)
+not_modules = {"wfx-core", "wfx-reporting-analysis", "wfx-time-action-tracking"}   # centre descriptors of the source diagram
+check("16 WFX modules (+2 centre descriptors)",
+      sum(1 for n in nodes if n["id"].startswith("wfx-") and n["id"] not in not_modules) == 16
+      and {"wfx-reporting-analysis", "wfx-time-action-tracking"} <= {n["id"] for n in nodes})
 check("16 GTAS applications", count("gtas-") == 16)
 check("10 third-party nodes (+1 note)", sum(1 for n in nodes if n["id"].startswith("tp-") and n["id"] != "tp-note") == 10)
 check("all domain zones labelled", all(any(z in n.get("label", "") for n in nodes) for z in
@@ -151,7 +154,7 @@ td-technicalknowledgeplatform: D proj-mer-costingagenticplatform, D wfx-style-li
 fab-fabricdatamart: D proj-td-technicalknowledgeplatform
 cpd-visualsampledatamart: D proj-td-technicalknowledgeplatform
 poc-discovery-patterngenerationpoc: C proj-td-technicalknowledgeplatform, C wfx-style-library, C proj-mer-costingagenticplatform
-prod-hanginglineiot: C wfx-core, D wfx-production-planning, D wfx-production-management, D tp-iot-wiser-ina
+prod-hanginglineiot: C wfx-reporting-analysis, C wfx-production-management, D wfx-production-planning, D tp-iot-wiser-ina
 wash-samplingmanagement: C wfx-sampling
 wash-cowash: C wfx-production-management
 hr-employeedataplatform: C tp-hris
@@ -199,7 +202,7 @@ def badge(nid):
 
 BADGED = ["wfx-buyer-order-management", "wfx-budgeting-costing", "wfx-bill-of-material", "wfx-purchase-order-management",
           "wfx-style-library", "wfx-inventory-control", "wfx-raw-material-planning", "wfx-finance", "wfx-logistics-in-bound",
-          "wfx-logistics-out-bound", "wfx-sampling", "gtas-costing", "gtas-ied", "gtas-consumption", "gtas-bi-report",
+          "wfx-logistics-out-bound", "wfx-sampling", "wfx-reporting-analysis", "gtas-costing", "gtas-ied", "gtas-consumption", "gtas-bi-report",
           "gtas-financial-statements", "gtas-salary", "gtas-production"]
 UNBADGED = ["wfx-qc", "wfx-qa", "wfx-brandplm", "wfx-production-planning", "wfx-production-management",
             "gtas-transportation", "gtas-compliance"]

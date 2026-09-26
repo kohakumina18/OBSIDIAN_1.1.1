@@ -363,7 +363,7 @@ Current Logistics / Import-Export expense-invoice project (Active Regional Rollo
 
 ## Decisions Needed
 
-- Confirm LOG_ExpenseInvoiceProcessing_v1.2.2 is the renamed successor of PPJ.ExpenseInvoices.v1.1 and whether the earlier Export exclusion still applies
+- Confirm whether the earlier Export exclusion still applies (the mapping of PPJ.ExpenseInvoices.v1.1 and LOG.EXPENSE.INVOICES.V1.2 to LOG_ExpenseInvoiceProcessing_v1.2.2 was confirmed by the owner on 2026-09-25)
 
 ## Dependencies
 

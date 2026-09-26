@@ -645,6 +645,26 @@
 			"y":-18560,
 			"width":260,
 			"height":180
+		},
+		{
+			"id":"c6c15430b5fdf540",
+			"type":"text",
+			"text":"threshold đánh 10%\nthêm rasing : sort top / bottom 10 OC pp variance \n- trading: loại type: là purchasing \n  BẢNG COGS: TÊN CỘT: OCType - có mô tả về loại ",
+			"styleAttributes":{},
+			"x":5060,
+			"y":23860,
+			"width":480,
+			"height":280
+		},
+		{
+			"id":"dc3f7131fe133fd9",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":5280,
+			"y":30440,
+			"width":260,
+			"height":60
 		}
 	],
 	"edges":[

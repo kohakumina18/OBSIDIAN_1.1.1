@@ -305,11 +305,11 @@ P = {
         "AWB image OCR and DHL shipment email in one project: parse, normalize, match by AWB number, validate, "
         "human review."),
     "LOG_ExpenseInvoiceProcessing_v1.2.2": ("WHL", "Expense Invoice Processing", "AUTOMATION - expense invoices",
-        "One application used by several units: shared expense invoices and Logistics / EXIM. Regional tax "
-        "templates and charge rules; UAT / rollout in HCM, Da Nang, Nha Trang, Ha Noi."),
+        "One project (owner decision 25/09) used by Finance, Logistics in-bound, export / import and other units. "
+        "Regional tax templates and charge rules; UAT / rollout in HCM, Da Nang, Nha Trang, Ha Noi."),
     "PROD_HangingLineIoT_v1.0.0": ("PROD", "Hanging Line IoT", "IOT",
-        "Hanging-line digitization and production visibility, read through WFX Reporting & Analysis; a future data "
-        "source for Smart Factory analytics."),
+        "Hanging-line digitization and production visibility for Production Management and WFX Reporting & "
+        "Analysis; a future data source for Smart Factory analytics."),
     "WASH_SamplingManagement_v1.1.0": ("PROD", "Wash Sampling Management Portal", "WORKFLOW",
         "Wash sample request, planning, result and approval in the PPJ Group Portal."),
     "WASH_COWASH_v2.0.0": ("PROD", "COWASH Wash Operations", "SYSTEM - wash production (vendor)",
@@ -361,7 +361,7 @@ BASELINE = {
     "FIN_InvoiceDownloader_v1.2.0": "PPJ.InvoiceDownloader.v1.2",
     "ACC_GRNSupplierInvoiceBot_v2.3.0": "ACC.GRNInvoiceMatching.v2.3",
     "ACC_InventoryReport_v1.0.0": "ACC.Inventory.Report.v1.0",
-    "LOG_ExpenseInvoiceProcessing_v1.2.2": "PPJ.ExpenseInvoices.v1.1 + LOG.EXPENSE.INVOICES.V1.2 (one application)",
+    "LOG_ExpenseInvoiceProcessing_v1.2.2": "PPJ.ExpenseInvoices.v1.1 + LOG.EXPENSE.INVOICES.V1.2 (one project, confirmed 2026-09-25)",
     "WH_AWBExtraction_v1.1.0": "WH.AWB.EXTRACTION.v1.1",
     "PROD_HangingLineIoT_v1.0.0": "PROD.IOT.CHuyenTreo.v1.0",
     "WASH_SamplingManagement_v1.1.0": "WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1",
@@ -596,7 +596,7 @@ EDGE_SPEC = [
     # --- WAREHOUSE / LOGISTICS (GTAS Transportation deliberately has no line: no confirmed application)
     (S("WH_AWBExtraction_v1.1.0"), "wfx-logistics-in-bound", "C", "", PRIMARY),
     # --- ADMINISTRATION (the project is itself the Admin application; it sits outside WFX)
-    (S("ADMIN_ExpenseManagement_v1.1.0"), "tp-e-office", "B", "E-office (fee blocked)", False),
+    (S("ADMIN_ExpenseManagement_v1.1.0"), "tp-e-office", "B", "E-office, blocked", False),
     (S("ADMIN_ExpenseManagement_v1.1.0"), "tp-hris", "D", "master data", False),
     (S("ADMIN_ExpenseManagement_v1.1.0"), "wfx-finance", "C", "downstream", False),
     # --- TECHNICAL / FABRIC: one Technical -> Costing capability story
@@ -611,10 +611,11 @@ EDGE_SPEC = [
     (PATTERN_POC, S("TD_TechnicalKnowledgePlatform_v2.1.0"), "C", "pattern", PRIMARY),
     (PATTERN_POC, "wfx-style-library", "C", "", False),
     (PATTERN_POC, S("MER_CostingAgenticPlatform_v1.1.0"), "C", "", False),
-    # --- PRODUCTION / WASH (BOD: IoT hanger reads through Reporting & Analysis, the centre of WFX)
-    (S("PROD_HangingLineIoT_v1.0.0"), "wfx-core", "C", "Reporting/Analysis", PRIMARY),
+    # --- PRODUCTION / WASH (owner decision 25/09: IoT hanger attaches to Reporting & Analysis AND Production
+    #     Management - BOD review note; Production Management still carries no badge)
+    (S("PROD_HangingLineIoT_v1.0.0"), "wfx-reporting-analysis", "C", "", PRIMARY),
+    (S("PROD_HangingLineIoT_v1.0.0"), "wfx-production-management", "C", "", False),
     (S("PROD_HangingLineIoT_v1.0.0"), "wfx-production-planning", "D", "", False),
-    (S("PROD_HangingLineIoT_v1.0.0"), "wfx-production-management", "D", "", False),
     (S("PROD_HangingLineIoT_v1.0.0"), "tp-iot-wiser-ina", "D", "", False),
     (S("WASH_SamplingManagement_v1.1.0"), "wfx-sampling", "C", "", PRIMARY),
     (S("WASH_COWASH_v2.0.0"), "wfx-production-management", "C", "", PRIMARY),
@@ -761,12 +762,18 @@ wfx_left = ["Buyer Order Management", "Budgeting & Costing", "Bill of Material",
             "Raw Material Planning", "Purchase Order Management", "Inventory Control"]
 wfx_right = ["Finance", "Sampling", "QC", "QA", "Production Planning", "Production Management",
              "Logistics In-bound", "Logistics Out-bound"]
+# The two descriptors printed at the centre of the owner's WFX diagram. They are not modules, but a project can be
+# attached to them (the hanging-line IoT feeds Reporting & Analysis), so they get a node each. One per column keeps
+# both columns nine rows tall.
+wfx_descriptor_left = ["Time & Action Tracking"]
+wfx_descriptor_right = ["Reporting & Analysis"]
+WFX_ROWS = 9
 wfx_title = "01 WFX ERP CORE"
 wband = band("01 WFX ERP CORE - Core Enterprise Transaction System", CW, wfx_title)
-slots = [y_wfx + wband + i * MP + MH / 2 for i in range(8)]
-wfx_left = ordered_modules(wfx_left, slots)
-wfx_right = ordered_modules(wfx_right, slots)
-wh = wband + 8 * MP - (MP - MH) + 40
+slots = [y_wfx + wband + i * MP + MH / 2 for i in range(WFX_ROWS)]
+wfx_left = ordered_modules(wfx_left + wfx_descriptor_left, slots)
+wfx_right = ordered_modules(wfx_right + wfx_descriptor_right, slots)
+wh = wband + WFX_ROWS * MP - (MP - MH) + 40
 group("grp-wfx", CX, y_wfx, CW, wh, "01 WFX ERP CORE - Core Enterprise Transaction System", C_WFX, wfx_title)
 lx, rx_ = CX + 100, CX + CW - 100 - MW
 for i, name in enumerate(wfx_left):
@@ -776,16 +783,11 @@ for i, name in enumerate(wfx_right):
     nid = "wfx-" + slug(name)
     text(nid, rx_, y_wfx + wband + i * MP, MW, MH, "# " + badged(nid, name), C_WFX)
 hx = lx + MW + 100
-core_cov = max([coverage_level(f) for f, t, *_ in EDGE_SPEC if t == "wfx-core" and f.startswith(("proj-", "poc-"))]
-               or [0])
-# Reporting & Analysis is the core's only h2: the plugin styles the badge as the first letter of that heading.
-text("wfx-core", hx, y_wfx + wband, rx_ - 100 - hx, 8 * MP - (MP - MH),
-     "# WFX ERP\n### Core Enterprise Transaction System\n\n"
-     f"## {(BADGE[core_cov] + ' ') if core_cov else ''}Reporting & Analysis\n### Time & Action Tracking\n"
-     "### Textiles / Garments\n\n"
-     "16 modules, named from the owner's operating-systems diagram. WFX is the system of record for orders, "
-     "purchasing, material, inventory and operational transactions. AI and automation augment WFX; they do not "
-     "replace it.", C_WFX)
+text("wfx-core", hx, y_wfx + wband, rx_ - 100 - hx, WFX_ROWS * MP - (MP - MH),
+     "# WFX ERP\n## Core Enterprise Transaction System\n\n### Textiles / Garments\n\n"
+     "16 modules, named from the owner's operating-systems diagram. Reporting & Analysis and Time & Action Tracking "
+     "are the diagram's centre descriptors, not modules. WFX is the system of record for orders, purchasing, "
+     "material, inventory and operational transactions. AI and automation augment WFX; they do not replace it.", C_WFX)
 y_data = y_wfx + wh + GAP
 
 # --- data foundation
@@ -924,13 +926,12 @@ text("guide", QX, guide_y, QW, 1750,
      "relationship is documented. Interaction needs the PPJ Canvas Focus plugin (enabled in this vault).")
 gap_y = guide_y + 1750 + GAP
 GAPS = [
-    ("gap-1", "## GAP 1 - Expense invoices\n\n"
-     "The 35-item baseline lists PPJ.ExpenseInvoices.v1.1 and LOG.EXPENSE.INVOICES.V1.2 as two projects. The vault "
-     "registry maps both to ONE project, LOG_ExpenseInvoiceProcessing_v1.2.2, and the BOD review recording "
-     "(24/09, T 03:09-04:39) describes one application extended to several units.\n\n"
-     "Drawn as one card carrying both baseline names; primary line to WFX Finance.\n\n"
-     "Vault also holds two closed records outside the baseline: EXIM.ExpenseInvoices.Automation.v1.1 and "
-     "AI.Automation.Workshop.Analysis.202606."),
+    ("gap-1", "## GAP 1 - Expense invoices: RESOLVED\n\n"
+     "The 35-item baseline lists PPJ.ExpenseInvoices.v1.1 and LOG.EXPENSE.INVOICES.V1.2 as two projects. On 2026-09-25 the "
+     "owner confirmed they are ONE project, recorded as LOG_ExpenseInvoiceProcessing_v1.2.2 "
+     "(DEC-20260925-EXPENSE-INVOICE-ONE-PROJECT), matching the BOD recording (T 03:09-04:39). Both baseline names stay "
+     "on the card as aliases; primary line to WFX Finance.\n\n"
+     "Still open: whether the earlier Export exclusion applies."),
     ("gap-2", "## GAP 2 - Canonical codes and status\n\n"
      "ACC.GRNInvoiceMatching.v2.3 (baseline) vs ACC_GRNSupplierInvoiceBot_v2.3.0 (vault canonical); canonical used.\n\n"
      "Stratova: one active PoC representation - Pattern Generation PoC (zone 06, discovery register). The closed "
@@ -941,14 +942,16 @@ GAPS = [
      "Source: owner's operating-systems diagram. GTAS has 16 applications, not 15: GTAS Costing was missing from the list "
      "in circulation.\n\n"
      "MMSx (diagram) vs MMX (2026-09-18 ecosystem note): treated as one system, name unconfirmed.\n\n"
-     "The diagram stars GTAS Costing and highlights Production Planning without stating why. BOD 24/09 suggested "
-     "dropping GTAS Compliance from the BOD view (unused); it is still shown."),
+     "The diagram stars GTAS Costing and highlights Production Planning without stating why. BOD 24/09: GTAS "
+     "Compliance has no user and is dropped from the BOD slide; nothing is attached to GTAS Transportation. Both stay "
+     "here because this canvas records the whole landscape."),
     ("gap-4", "## GAP 4 - Relationship evidence\n\n"
      "INTEGRATION only where validated: Material Allocation to WFX Inventory Control, Invoice Downloader to VNPT. "
      "PLANNED: GDI via WFX API, Costing via the GTAS/IED contract, Admin to E-office (blocked by the reopening fee). "
      "Everything else is DATA, KNOWLEDGE or AFFINITY.\n\n"
-     "Recording over analysis (24/09): Sourcing chatbot reads Inventory Control, not MMSx; the IoT hanger reads "
-     "through Reporting & Analysis; no badge on QC / Production modules; no line to GTAS Transportation. "
+     "Owner decisions 25/09 after the recording: Sourcing chatbot reads Inventory Control, not MMSx; the IoT hanger "
+     "attaches to Reporting & Analysis and Production Management; no badge on QC / Production modules; no line to "
+     "GTAS Transportation. "
      "QSee to WFX QC dropped (vendor evaluation, not in the matrix)."),
 ]
 GAP_H = 640
@@ -1136,7 +1139,8 @@ def write_if_changed(path: Path, data: str) -> str:
 
 report = {
     "nodes": len(ordered), "edges": len(edges), "project_nodes": len(proj_nodes),
-    "wfx_modules": len(wfx_left) + len(wfx_right), "third_party": len(tp_nodes),
+    "wfx_modules": len(wfx_left) + len(wfx_right) - len(wfx_descriptor_left + wfx_descriptor_right),
+    "third_party": len(tp_nodes),
     "gtas": sum(len(c) for c in gtas_layout),
     "coverage": {k: BADGE[v] for k, v in sorted(coverage.items())},
     "links_missing": [c for c in P if resolve_link(projects[c]) is None],

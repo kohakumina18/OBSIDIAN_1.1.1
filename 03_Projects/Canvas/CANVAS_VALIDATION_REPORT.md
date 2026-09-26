@@ -13,14 +13,14 @@ Backup of the previous file: `99_Attachments/Canvas_Backup/PPJ_Digital_Applicati
 
 | | Before | After |
 | --- | --- | --- |
-| Nodes | 146 | 147 |
+| Nodes | 146 | 149 |
 | Edges | 33 | 81 |
 | Project cards | 36 | 36 (one per registered record) |
-| Modules with a coverage badge | 0 | 18 WFX / GTAS + Reporting & Analysis |
+| Modules with a coverage badge | 0 | 19: 11 WFX modules, Reporting & Analysis, 7 GTAS applications |
 
-- **Changed nodes:** 142 - text 102 (concise executive cards, badges, legend, guide, gap notes), geometry 141 (cards re-sized to fit the larger type; Fabric / Technical moved directly under Merchandising). Added: `legend-coverage`. Removed: none. No project note or canonical link was removed; all 36 links resolve.
+- **Changed nodes:** 142 - text 102 (concise executive cards, badges, legend, guide, gap notes), geometry 141 (cards re-sized to fit the larger type; Fabric / Technical moved directly under Merchandising). Added: `legend-coverage`, and the WFX centre descriptors `wfx-reporting-analysis`, `wfx-time-action-tracking` (from the YOGHAAKU edition of 25/09). Removed: none. No project note or canonical link was removed; all 36 links resolve.
 - **Changed edges:** 51 added, 18 relabelled (PRIMARY / qualifiers / type), 3 removed as incorrect: Sourcing -> MMSx, Expense Invoice -> whole WFX group, QSee -> WFX QC.
-- **Line types after:** INTEGRATION 2, PLANNED 3, DATA 47, KNOWLEDGE 6, AFFINITY 23.
+- **Line types after:** INTEGRATION 2, PLANNED 3, DATA 46, KNOWLEDGE 6, AFFINITY 24.
 
 ## JSON / structure validation
 
@@ -54,7 +54,7 @@ Backup of the previous file: `99_Attachments/Canvas_Backup/PPJ_Digital_Applicati
 - PASS  Closed items are grey
 - PASS  PoC / evaluation items are not green
 - PASS  On Hold items are orange
-- PASS  16 WFX modules
+- PASS  16 WFX modules (+2 centre descriptors)
 - PASS  16 GTAS applications
 - PASS  10 third-party nodes (+1 note)
 - PASS  all domain zones labelled
@@ -70,7 +70,7 @@ Backup of the previous file: `99_Attachments/Canvas_Backup/PPJ_Digital_Applicati
 - PASS  no badge on QC / QA / BrandPLM / Production modules / GTAS Transportation
 - PASS  GTAS Transportation has no line
 
-`nodes=147 edges=81 project_nodes=36 links_resolved=36 kinds={'AFFINITY': 23, 'DATA': 47, 'PLANNED': 3, 'KNOWLEDGE': 6, 'INTEGRATION': 2} badges=18`
+`nodes=149 edges=81 project_nodes=36 links_resolved=36 kinds={'AFFINITY': 24, 'DATA': 46, 'PLANNED': 3, 'KNOWLEDGE': 6, 'INTEGRATION': 2} badges=19`
 
 The builder also refuses to write on duplicate ids, orphan edges, a line to a whole group, overlapping cards or a
 missing project, and a second run reports "up to date" (deterministic, so every device's watcher writes the same bytes).
@@ -108,7 +108,7 @@ Rendered in headless Chrome at 40% zoom on a 1920 x 1080 viewport with the plugi
 | Project status | 52 | 21 px |
 | Type / capability | 46 | 18 px |
 
-Overflow: all 110 enlarged nodes measured in DejaVu Sans (wide) and Noto Sans - no overflow, no wrapped module or
+Overflow: all 112 enlarged nodes measured in DejaVu Sans (wide) and Noto Sans - no overflow, no wrapped module or
 group title. Project cards carry 6-8 short lines (was up to 10). Without the plugin the same Markdown headings render
 at Obsidian's default sizes (smaller, never overflowing).
 
@@ -122,8 +122,8 @@ at Obsidian's default sizes (smaller, never overflowing).
 | GRN bot -> Logistics In-bound / Finance | AFFINITY, PRIMARY | Transaction bot, but no document confirms a WFX integration |
 | PO Commit -> Buyer Order / PO Management | AFFINITY, historical | May have been a real integration; no document says so |
 | Admin Expense -> WFX Finance | AFFINITY, downstream | The brief says "-> Finance"; the WFX Finance module is assumed |
-| Hanging Line IoT -> Production Planning / Management | DATA | Follows from the owner's Reporting & Analysis decision; exact data flow unconfirmed |
+| Hanging Line IoT -> Production Management | AFFINITY (no badge) | Owner gave two answers on 25/09 (Reporting & Analysis only / both); the recorded one - both - is used |
 | Adhoc Indent -> Raw Material Planning / Inventory Control | AFFINITY | "Secondary" in the brief, type not stated |
-| Expense invoices merged | one card | Registry still lists the mapping decision as open |
+| Expense invoices | one card | Decided 25/09; the Export exclusion question is still open |
 | GTAS Compliance | shown, no line | BOD suggested dropping it from the BOD view [T 22:18-22:42]; not removed |
 | Capability cluster "smart mining" | not used | Probably "Smart Merchandising"; name unconfirmed |

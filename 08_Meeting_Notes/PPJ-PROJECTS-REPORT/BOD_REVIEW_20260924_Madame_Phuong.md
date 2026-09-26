@@ -76,16 +76,25 @@ Transcript là chữ nhận dạng giọng nói: tên riêng và thuật ngữ b
 
 Cần nghe nốt phần sau 1:14:54 hoặc gửi phần transcript còn lại trước khi đưa các mục này vào registry.
 
-## Việc tiếp theo (đề xuất, chưa thực hiện)
+## Quyết định của chủ hệ thống (2026-09-25)
 
-1. Xác nhận tên thật của cụm "smart mining".
-2. Chốt: Sourcing chatbot gắn vào **Inventory** hay **MMX**.
-3. Chốt: chuyền treo gắn vào **Production** hay **Reporting & Analysis**.
-4. Bỏ dòng "GTAS Transportation" khỏi thẻ AWB; cân nhắc ẩn GTAS Compliance trên bản trình BOD.
-5. Ghi trên canvas: E-office **bị chặn bởi phí mở lại**.
-6. Tính lại số đường "AFFINITY" tới QC / Production Management, vì BOD đọc module có nối là "đã có tự động".
-7. Quyết định việc gộp hai dự án expense invoice - transcript nghiêng về **một** ứng dụng mở rộng cho nhiều đơn vị.
-8. Cập nhật ghi nhớ dự án Finance AI với các điểm đã xác nhận ở phần trên (ngưỡng chưa chốt, OC đã xuất, lệch kỳ, Division / Sales Group).
+| Điểm | Quyết định | Đã áp dụng |
+| --- | --- | --- |
+| Sourcing chatbot | Gắn vào **Inventory** (WFX Inventory Control) | Canvas: đường AFFINITY đổi từ MMSx sang Inventory Control; MMSx còn trong "Also relates to" |
+| Chuyền treo (IoT) | Gắn vào **Production VÀ Reporting & Analysis** | Canvas: hai đường AFFINITY (Production Management, Reporting & Analysis). Thêm hai ô "Reporting & Analysis" và "Time & Action Tracking" - hai dòng chữ ở tâm sơ đồ WFX của bạn, không phải module. Đây là dự án duy nhất được phép có hai đường AFFINITY |
+| Hai dự án expense invoice | **Gộp thành một** | Snapshot, alias, ghi nhớ dự án, note gốc, Project Home, board, ledger và [[DEC-20260925-EXPENSE-INVOICE-ONE-PROJECT]]. Vẫn mở: quy định loại trừ Export còn hiệu lực không |
+
+Áp dụng thêm, vì transcript nói rõ:
+- Bỏ dòng "GTAS Transportation" khỏi thẻ AWB; ô GTAS Compliance và GTAS Transportation ghi chú theo BOD (không ẩn, vì canvas ghi lại toàn bộ hệ thống).
+- E-office ghi **bị chặn** (phí mở lại, chờ báo giá): nhãn đường là `PLANNED | E-office, blocked`.
+- Ghi nhớ Finance AI: OC đã xuất trong kỳ, 177 OC lệch kỳ, ngưỡng 5% chưa thay, bộ lọc Division / Sales Group.
+
+## Còn mở
+
+1. Tên thật của cụm "smart mining" (có thể là Smart Merchandising).
+2. Các đường AFFINITY tới QC và Production Management: BOD đọc "module có nối" là "đã có tự động". Hiện QC chỉ có QC_DefectDetection (đang On Hold) - cần xem có nên giữ.
+3. Quy định loại trừ Export của dự án expense invoice.
+4. Phần transcript sau 1:14:54 và các mục [A] ở trên.
 
 ## Liên kết
 

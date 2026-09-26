@@ -1,6 +1,6 @@
 {
-  "source_event": "PPJ-EXECUTIVE-CANVAS-SYNC-20260924_203816",
-  "last_verified": "2026-09-24",
+  "source_event": "PPJ-BOD-REVIEW-20260924-UPDATE",
+  "last_verified": "2026-09-25",
   "portfolio_maturity": "Stage 3 - Controlled Delivery / Early Scale",
   "naming_standard": "<DEPARTMENT>_<APPLICATION>_v<MAJOR>.<MINOR>.<PATCH>",
   "strategic_direction": [
@@ -12,7 +12,7 @@
   "governance_exceptions": [
     "`CPD In-house Pattern Generation`: internal prototype/evaluation and benchmark for the Stratova PoC; canonical code is not confirmed; no canonical root project was created.",
     "`WH_AWBExtraction_v1.1.0` and `ADMIN_ExpenseManagement_v1.1.0`: registered by the 2026-09-18 baseline (domains Warehouse and Administration added to the domain model); root notes, memory cards and workspaces were created through `register_ppj_project.py` with owners, technical members and dates still Needs Confirmation.",
-    "`LOG_ExpenseInvoiceProcessing_v1.2.2`: mapped as the renamed successor of `PPJ.ExpenseInvoices.v1.1` under Logistics / EXIM; confirm the mapping and whether the earlier Export exclusion still applies.",
+    "`LOG_ExpenseInvoiceProcessing_v1.2.2`: one project - `PPJ.ExpenseInvoices.v1.1` and `LOG.EXPENSE.INVOICES.V1.2` are the same application under Logistics / EXIM (confirmed by the owner on 2026-09-25); whether the earlier Export exclusion still applies remains open.",
     "`PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0` and `PPJxNUNOX.ScanTrial`: not listed in the 2026-09-18 baseline; legacy canonical codes retained until they are named and confirmed."
   ],
   "discovery": [
@@ -69,23 +69,28 @@
       "gate": "WS2 OC / Cost Control and WS3 Factory Performance",
       "priority": "P1",
       "outcome": "Centralized Finance Control Platform for completeness, correct OC/period, actual versus plan, missing cost, profitability, drill-down, factory performance and exception ownership.",
-      "latest": "No longer merely an AI chatbot. WS1 Finance Q&A (Balance Sheet, P&L, management Q&A) is the foundation; WS2 OC / Cost Control remains the main focus (missing cost, incorrect period, BOM/material, overhead, subcontracting, abnormal margin, duplicate/missing transactions, actual vs plan, invoice/posting completeness); WS3 Factory Performance has now started (Group -> Company -> Region -> Factory -> Production -> Labor -> Cost -> Efficiency). Databricks / DWH access and validated sources remain the key dependency.",
+      "latest": "No longer merely an AI chatbot. WS1 Finance Q&A (Balance Sheet, P&L, management Q&A) is the foundation; WS2 OC / Cost Control remains the main focus (missing cost, incorrect period, BOM/material, overhead, subcontracting, abnormal margin, duplicate/missing transactions, actual vs plan, invoice/posting completeness); WS3 Factory Performance has now started (Group -> Company -> Region -> Factory -> Production -> Labor -> Cost -> Efficiency). Databricks / DWH access and validated sources remain the key dependency. BOD review 2026-09-24 (confirmed in the recording): OC profitability is compared only for OCs shipped in the period; 177 OCs show cost and revenue in different periods; the 5% variance threshold is too tight (5.01-5.3% is flagged and the dashboard is almost all red) and no replacement value has been chosen; variance is to be explained as material, processing (subcontract) or overhead, and overhead exists only per month; a Company filter exists, Division and Sales Group filters are requested.",
       "next_actions": [
         "Finalize the WS2 Rule Catalogue and thresholds",
         "Obtain read-only Databricks access and confirm catalog/schema/table lineage",
         "Select a Golden OC and run the rules",
         "Reconcile results with Accounting and finalize exception severity",
-        "Advance WS3 factory-performance source discovery and dimensions (headcount, labor cost, overtime, output, capacity, budget vs actual)"
+        "Advance WS3 factory-performance source discovery and dimensions (headcount, labor cost, overtime, output, capacity, budget vs actual)",
+        "Add Division and Sales Group filters to the OC dashboard (Company filter already exists)",
+        "Recalibrate the variance threshold once Finance / Control choose a value (7-15% was discussed; none chosen)",
+        "Ask Merchandising to align export declaration and stock-issue period so cost and revenue fall in the same period"
       ],
       "risks": [
         "Databricks / DWH access",
         "Source ownership and lineage",
         "Rule and threshold approval",
-        "Incorrect OC linkage"
+        "Incorrect OC linkage",
+        "Variance threshold too tight - most OCs are flagged"
       ],
       "decisions": [
         "Approve WS2 thresholds and exception severity",
-        "Confirm governed sources of truth"
+        "Confirm governed sources of truth",
+        "Choose the variance threshold that replaces 5% (Finance / Control)"
       ],
       "dependencies": [
         "WFX / Databricks / DWH -> Finance source control -> Rule Engine -> OC control -> Factory performance -> Power BI / AI"
@@ -108,7 +113,9 @@
         "FIN.AI.FINANCE.MANAGEMENT.v1.2",
         "FIN.AI.FINANCE.MANAGEMENT.v1.1"
       ],
-      "link_target": ""
+      "link_target": "",
+      "last_verified": "2026-09-25",
+      "source_event": "PPJ-BOD-REVIEW-20260924-UPDATE"
     },
     {
       "code": "MER_CostingAgenticPlatform_v1.1.0",
@@ -290,7 +297,7 @@
       "gate": "Regional rollout, tax rules and invoice validation",
       "priority": "P4",
       "outcome": "Process Logistics / Import-Export expense invoices with regional and tax rules, invoice validation, user workflow and exception management.",
-      "latest": "Current Logistics / Import-Export expense-invoice project (Active Regional Rollout / UAT). Focus: regional rollout, tax rules, invoice validation, user workflow and exception management. Replaces the ambiguity created by older EXIM expense-invoice names. Prior guidance (departments/factories except Export; EXIM-first historical) is preserved in project history.",
+      "latest": "Current Logistics / Import-Export expense-invoice project (Active Regional Rollout / UAT). Focus: regional rollout, tax rules, invoice validation, user workflow and exception management. Replaces the ambiguity created by older EXIM expense-invoice names. Prior guidance (departments/factories except Export; EXIM-first historical) is preserved in project history. 2026-09-25: the owner confirmed that PPJ.ExpenseInvoices.v1.1 and LOG.EXPENSE.INVOICES.V1.2 are one project. The 2026-09-24 BOD review describes one expense-invoice application expanded to Finance, Logistics inbound, export / import and other units, not two projects.",
       "next_actions": [
         "Close remaining defects and retest",
         "Confirm mapping and frequent-supplier readiness",
@@ -304,7 +311,7 @@
         "Go-live support readiness"
       ],
       "decisions": [
-        "Confirm LOG_ExpenseInvoiceProcessing_v1.2.2 is the renamed successor of PPJ.ExpenseInvoices.v1.1 and whether the earlier Export exclusion still applies"
+        "Confirm whether the earlier Export exclusion still applies (the mapping of PPJ.ExpenseInvoices.v1.1 and LOG.EXPENSE.INVOICES.V1.2 to LOG_ExpenseInvoiceProcessing_v1.2.2 was confirmed by the owner on 2026-09-25)"
       ],
       "dependencies": [],
       "capability": "Expense-invoice intake, mapping, validation, tax/regional rules and exception handling for Logistics / EXIM and regional rollout.",
@@ -324,11 +331,12 @@
       "legacy": [
         "PPJ.ExpenseInvoices.v1.1",
         "PPJ. Expense-Invoices.v1.1",
-        "Accounting Expense Invoices"
+        "Accounting Expense Invoices",
+        "LOG.EXPENSE.INVOICES.V1.2"
       ],
       "link_target": "",
-      "last_verified": "2026-09-23",
-      "source_event": "PPJ-EXECUTIVE-CANVAS-SYNC-20260923_134955"
+      "last_verified": "2026-09-25",
+      "source_event": "PPJ-BOD-REVIEW-20260924-UPDATE"
     },
     {
       "code": "PUR_MaterialAllocation_v1.1.0",
