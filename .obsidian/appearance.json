@@ -1,6 +1,6 @@
 {
-  "theme": "moonstone",
-  "accentColor": "#692fee",
+  "theme": "obsidian",
+  "accentColor": "#b8cd18",
   "interfaceFontFamily": "Inter,Berlin Sans FB",
   "textFontFamily": "Bahnschrift,Comic Sans MS",
   "baseFontSizeAction": true,
