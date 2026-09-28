@@ -24,7 +24,7 @@ The owner's matrix followed one of the two AI-written analyses of the 24/09 revi
 | Expense invoices | Two separate projects, create PPJ.ExpenseInvoices.v1.1 | One application extended to several units [T 03:09-04:39] | One project (DEC-20260925-EXPENSE-INVOICE-ONE-PROJECT); one card, both baseline names |
 | Production Planning / Management, QC stars | Production modules badged | No star: no automation yet [T 21:29-22:18, 28:32-29:20] | No badge; lines still shown on hover |
 | Sourcing chatbot source | MMSx primary | Supplier data is in Inventory [T 14:41] | Inventory Control + Raw Material Planning only, no MMSx |
-| Hanging-line IoT | Production Management primary | Reporting & Analysis in the WFX centre [T 27:59-28:32] | Reporting & Analysis (primary) AND Production Management, as recorded in the BOD note on 25/09 |
+| Hanging-line IoT | Production Management primary | Reporting & Analysis in the WFX centre [T 27:59-28:32] | Reporting & Analysis only (owner, final 28/09); Production modules DATA only |
 
 ## Line types
 
@@ -58,7 +58,7 @@ Totals: 33 lines before, 81 after - 51 added, 18 relabelled (mostly PRIMARY), 3 
 | Business Travel & Expense Management | E-office (PLANNED \| E-office) | E-office (PLANNED \| E-office, blocked)<br>HRIS (DATA \| master data)<br>WFX Finance (AFFINITY \| downstream) | AFFINITY, DATA, fee blocked | Matrix R: E-office stays PLANNED, labelled blocked (recording T 24:31-25:07: service stopped, reopening fee); HRIS master data; Finance as business downstream. |
 | Technical Knowledge Platform | Agentic Costing Platform (DATA)<br>Technical Knowledge (DATA) | Agentic Costing Platform (DATA \| foundation)<br>WFX Style Library (DATA)<br>WFX Bill of Material (DATA)<br>GTAS IED (DATA)<br>GTAS Consumption (DATA)<br>Technical Knowledge (DATA) | DATA | Matrix S: technical data sources added; one Technical -> Costing story. |
 | PatternGenerationPoC | - | Technical Knowledge Platform (AFFINITY \| PRIMARY \| pattern)<br>WFX Style Library (AFFINITY)<br>Agentic Costing Platform (AFFINITY) | AFFINITY | Matrix T: the one active PoC representation (Stratova alias on the card); AFFINITY only, no production claim. |
-| Hanging Line IoT | WFX Production Management (AFFINITY)<br>IoT / WISER / INA (DATA) | WFX Reporting & Analysis (AFFINITY \| PRIMARY)<br>WFX Production Management (AFFINITY)<br>WFX Production Planning (DATA)<br>IoT / WISER / INA (DATA) | AFFINITY, DATA | Owner decision 25/09 (BOD note): Reporting & Analysis - now its own descriptor node in WFX - and Production Management; Production modules still carry no badge. |
+| Hanging Line IoT | WFX Production Management (AFFINITY)<br>IoT / WISER / INA (DATA) | WFX Reporting & Analysis (AFFINITY \| PRIMARY)<br>WFX Production Planning (DATA)<br>WFX Production Management (DATA)<br>IoT / WISER / INA (DATA) | AFFINITY, DATA | Owner decision, final 28/09: Reporting & Analysis only - its own descriptor node in WFX; Production Planning / Management are DATA with no badge. Replaces the 25/09 'both' record from YOGHAAKU. |
 | Wash Sampling Management Portal | WFX Sampling (AFFINITY) | WFX Sampling (AFFINITY \| PRIMARY) | AFFINITY | Matrix V: unchanged, marked PRIMARY. |
 | COWASH Wash Operations | WFX Production Management (AFFINITY) | WFX Production Management (AFFINITY \| PRIMARY \| on hold) | AFFINITY | Matrix W: unchanged, marked PRIMARY and on hold. |
 | HR Employee Data Platform | HRIS (AFFINITY) | HRIS (AFFINITY \| PRIMARY) | AFFINITY | Matrix X: unchanged; WS3 salary / production data is carried by Finance AI, not HR. |

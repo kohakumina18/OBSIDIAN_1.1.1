@@ -20,7 +20,7 @@ Backup of the previous file: `99_Attachments/Canvas_Backup/PPJ_Digital_Applicati
 
 - **Changed nodes:** 142 - text 102 (concise executive cards, badges, legend, guide, gap notes), geometry 141 (cards re-sized to fit the larger type; Fabric / Technical moved directly under Merchandising). Added: `legend-coverage`, and the WFX centre descriptors `wfx-reporting-analysis`, `wfx-time-action-tracking` (from the YOGHAAKU edition of 25/09). Removed: none. No project note or canonical link was removed; all 36 links resolve.
 - **Changed edges:** 51 added, 18 relabelled (PRIMARY / qualifiers / type), 3 removed as incorrect: Sourcing -> MMSx, Expense Invoice -> whole WFX group, QSee -> WFX QC.
-- **Line types after:** INTEGRATION 2, PLANNED 3, DATA 46, KNOWLEDGE 6, AFFINITY 24.
+- **Line types after:** INTEGRATION 2, PLANNED 3, DATA 47, KNOWLEDGE 6, AFFINITY 23.
 
 ## JSON / structure validation
 
@@ -70,7 +70,7 @@ Backup of the previous file: `99_Attachments/Canvas_Backup/PPJ_Digital_Applicati
 - PASS  no badge on QC / QA / BrandPLM / Production modules / GTAS Transportation
 - PASS  GTAS Transportation has no line
 
-`nodes=149 edges=81 project_nodes=36 links_resolved=36 kinds={'AFFINITY': 24, 'DATA': 46, 'PLANNED': 3, 'KNOWLEDGE': 6, 'INTEGRATION': 2} badges=19`
+`nodes=149 edges=81 project_nodes=36 links_resolved=36 kinds={'AFFINITY': 23, 'DATA': 47, 'PLANNED': 3, 'KNOWLEDGE': 6, 'INTEGRATION': 2} badges=19`
 
 The builder also refuses to write on duplicate ids, orphan edges, a line to a whole group, overlapping cards or a
 missing project, and a second run reports "up to date" (deterministic, so every device's watcher writes the same bytes).
@@ -122,7 +122,7 @@ at Obsidian's default sizes (smaller, never overflowing).
 | GRN bot -> Logistics In-bound / Finance | AFFINITY, PRIMARY | Transaction bot, but no document confirms a WFX integration |
 | PO Commit -> Buyer Order / PO Management | AFFINITY, historical | May have been a real integration; no document says so |
 | Admin Expense -> WFX Finance | AFFINITY, downstream | The brief says "-> Finance"; the WFX Finance module is assumed |
-| Hanging Line IoT -> Production Management | AFFINITY (no badge) | Owner gave two answers on 25/09 (Reporting & Analysis only / both); the recorded one - both - is used |
+| Hanging Line IoT -> Production Planning / Management | DATA (no badge) | Owner decision (final 28/09): Reporting & Analysis only; the exact data flow to the Production modules is unconfirmed |
 | Adhoc Indent -> Raw Material Planning / Inventory Control | AFFINITY | "Secondary" in the brief, type not stated |
 | Expense invoices | one card | Decided 25/09; the Export exclusion question is still open |
 | GTAS Compliance | shown, no line | BOD suggested dropping it from the BOD view [T 22:18-22:42]; not removed |

@@ -154,7 +154,7 @@ td-technicalknowledgeplatform: D proj-mer-costingagenticplatform, D wfx-style-li
 fab-fabricdatamart: D proj-td-technicalknowledgeplatform
 cpd-visualsampledatamart: D proj-td-technicalknowledgeplatform
 poc-discovery-patterngenerationpoc: C proj-td-technicalknowledgeplatform, C wfx-style-library, C proj-mer-costingagenticplatform
-prod-hanginglineiot: C wfx-reporting-analysis, C wfx-production-management, D wfx-production-planning, D tp-iot-wiser-ina
+prod-hanginglineiot: C wfx-reporting-analysis, D wfx-production-planning, D wfx-production-management, D tp-iot-wiser-ina
 wash-samplingmanagement: C wfx-sampling
 wash-cowash: C wfx-production-management
 hr-employeedataplatform: C tp-hris

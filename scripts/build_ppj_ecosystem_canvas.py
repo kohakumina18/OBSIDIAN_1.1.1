@@ -308,8 +308,8 @@ P = {
         "One project (owner decision 25/09) used by Finance, Logistics in-bound, export / import and other units. "
         "Regional tax templates and charge rules; UAT / rollout in HCM, Da Nang, Nha Trang, Ha Noi."),
     "PROD_HangingLineIoT_v1.0.0": ("PROD", "Hanging Line IoT", "IOT",
-        "Hanging-line digitization and production visibility for Production Management and WFX Reporting & "
-        "Analysis; a future data source for Smart Factory analytics."),
+        "Hanging-line digitization and production visibility, read through WFX Reporting & Analysis; a future data "
+        "source for Smart Factory analytics."),
     "WASH_SamplingManagement_v1.1.0": ("PROD", "Wash Sampling Management Portal", "WORKFLOW",
         "Wash sample request, planning, result and approval in the PPJ Group Portal."),
     "WASH_COWASH_v2.0.0": ("PROD", "COWASH Wash Operations", "SYSTEM - wash production (vendor)",
@@ -611,11 +611,11 @@ EDGE_SPEC = [
     (PATTERN_POC, S("TD_TechnicalKnowledgePlatform_v2.1.0"), "C", "pattern", PRIMARY),
     (PATTERN_POC, "wfx-style-library", "C", "", False),
     (PATTERN_POC, S("MER_CostingAgenticPlatform_v1.1.0"), "C", "", False),
-    # --- PRODUCTION / WASH (owner decision 25/09: IoT hanger attaches to Reporting & Analysis AND Production
-    #     Management - BOD review note; Production Management still carries no badge)
+    # --- PRODUCTION / WASH (owner decision, final 28/09: IoT hanger attaches to Reporting & Analysis only;
+    #     Production Planning / Management are data only and carry no badge - BOD review note)
     (S("PROD_HangingLineIoT_v1.0.0"), "wfx-reporting-analysis", "C", "", PRIMARY),
-    (S("PROD_HangingLineIoT_v1.0.0"), "wfx-production-management", "C", "", False),
     (S("PROD_HangingLineIoT_v1.0.0"), "wfx-production-planning", "D", "", False),
+    (S("PROD_HangingLineIoT_v1.0.0"), "wfx-production-management", "D", "", False),
     (S("PROD_HangingLineIoT_v1.0.0"), "tp-iot-wiser-ina", "D", "", False),
     (S("WASH_SamplingManagement_v1.1.0"), "wfx-sampling", "C", "", PRIMARY),
     (S("WASH_COWASH_v2.0.0"), "wfx-production-management", "C", "", PRIMARY),
@@ -949,9 +949,9 @@ GAPS = [
      "INTEGRATION only where validated: Material Allocation to WFX Inventory Control, Invoice Downloader to VNPT. "
      "PLANNED: GDI via WFX API, Costing via the GTAS/IED contract, Admin to E-office (blocked by the reopening fee). "
      "Everything else is DATA, KNOWLEDGE or AFFINITY.\n\n"
-     "Owner decisions 25/09 after the recording: Sourcing chatbot reads Inventory Control, not MMSx; the IoT hanger "
-     "attaches to Reporting & Analysis and Production Management; no badge on QC / Production modules; no line to "
-     "GTAS Transportation. "
+     "Owner decisions (final 28/09) after the recording: Sourcing chatbot reads Inventory Control and Raw Material "
+     "Planning, not MMSx; the IoT hanger attaches to Reporting & Analysis only; no badge on QC / Production modules; "
+     "no line to GTAS Transportation. "
      "QSee to WFX QC dropped (vendor evaluation, not in the matrix)."),
 ]
 GAP_H = 640

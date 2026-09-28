@@ -80,8 +80,8 @@ Cần nghe nốt phần sau 1:14:54 hoặc gửi phần transcript còn lại tr
 
 | Điểm | Quyết định | Đã áp dụng |
 | --- | --- | --- |
-| Sourcing chatbot | Gắn vào **Inventory** (WFX Inventory Control) | Canvas: đường AFFINITY đổi từ MMSx sang Inventory Control; MMSx còn trong "Also relates to" |
-| Chuyền treo (IoT) | Gắn vào **Production VÀ Reporting & Analysis** | Canvas: hai đường AFFINITY (Production Management, Reporting & Analysis). Thêm hai ô "Reporting & Analysis" và "Time & Action Tracking" - hai dòng chữ ở tâm sơ đồ WFX của bạn, không phải module. Đây là dự án duy nhất được phép có hai đường AFFINITY |
+| Sourcing chatbot | Gắn vào **Inventory Control và Raw Material Planning**, **không MMSx** (chốt lại 28/09) | Canvas: hai đường KNOWLEDGE (Inventory Control là chính, Raw Material Planning); không còn MMSx trên thẻ hay đường nào |
+| Chuyền treo (IoT) | Gắn vào **Reporting & Analysis** (chốt lại 28/09, thay cho "Production VÀ Reporting & Analysis" ghi ngày 25/09) | Canvas: một đường AFFINITY chính tới ô "Reporting & Analysis" (ô riêng ở tâm WFX, cùng ô "Time & Action Tracking" - hai dòng chữ ở tâm sơ đồ WFX, không phải module). Production Planning / Production Management chỉ là đường DATA, không gắn sao |
 | Hai dự án expense invoice | **Gộp thành một** | Snapshot, alias, ghi nhớ dự án, note gốc, Project Home, board, ledger và [[DEC-20260925-EXPENSE-INVOICE-ONE-PROJECT]]. Vẫn mở: quy định loại trừ Export còn hiệu lực không |
 
 Áp dụng thêm, vì transcript nói rõ:
