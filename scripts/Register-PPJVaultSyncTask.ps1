@@ -26,6 +26,9 @@
     Check the registry before picking a new one.
     - Runs only when you are logged on (needed for git/SSH and for the
       Windows toast notification to be visible).
+    - Also runs 2 minutes after you log on (owner decision 2026-09-29): every
+      machine compares with GitHub and updates as soon as it is switched on,
+      instead of working on a stale vault until the next 3-hourly slot.
     - "Start the task as soon as possible after a scheduled start is missed"
       is on, so if the laptop is asleep/off at a trigger time it catches up
       the next time you log in - it does not wake the machine.
@@ -74,6 +77,9 @@ $action = New-ScheduledTaskAction -Execute "powershell.exe" `
 
 $trigger = New-ScheduledTaskTrigger -Once -At $StartTime `
     -RepetitionInterval (New-TimeSpan -Hours $IntervalHours) -RepetitionDuration (New-TimeSpan -Days 3650)
+# Sync at logon too, two minutes in so the network and the USB drive are up first.
+$logonTrigger = New-ScheduledTaskTrigger -AtLogOn -User "$env:USERDOMAIN\$env:USERNAME"
+$logonTrigger.Delay = 'PT2M'
 
 $settings = New-ScheduledTaskSettingsSet `
     -StartWhenAvailable `
@@ -89,11 +95,11 @@ $principal = New-ScheduledTaskPrincipal -UserId "$env:USERDOMAIN\$env:USERNAME" 
 Unregister-ScheduledTask -TaskName $TaskName -Confirm:$false -ErrorAction SilentlyContinue
 Unregister-ScheduledTask -TaskName $OldTaskName -Confirm:$false -ErrorAction SilentlyContinue
 
-Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $trigger `
+Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger @($trigger, $logonTrigger) `
     -Settings $settings -Principal $principal `
-    -Description "Vault -> GitHub sync (every ${IntervalHours}h, starting $StartTime) for the PPJ Obsidian vault, https://github.com/kohakumina18/OBSIDIAN_1.1.1. Entry point: $DeployedPath (deployed copy of scripts\Invoke-PPJVaultSyncLauncher.ps1), which finds the vault and hands off to scripts\Sync-VaultGit.ps1 on it. See 03_Projects/_Registry/PPJ_SYNC_DEVICE_REGISTRY.md." |
+    -Description "Vault -> GitHub sync (every ${IntervalHours}h, starting $StartTime, and 2 min after logon) for the PPJ Obsidian vault, https://github.com/kohakumina18/OBSIDIAN_1.1.1. Entry point: $DeployedPath (deployed copy of scripts\Invoke-PPJVaultSyncLauncher.ps1), which finds the vault and hands off to scripts\Sync-VaultGit.ps1 on it. See 03_Projects/_Registry/PPJ_SYNC_DEVICE_REGISTRY.md." |
     Out-Null
 
-Write-Host "Registered scheduled task '$TaskName' (every ${IntervalHours}h, starting $StartTime):"
+Write-Host "Registered scheduled task '$TaskName' (every ${IntervalHours}h, starting $StartTime, and 2 min after logon):"
 Get-ScheduledTaskInfo -TaskName $TaskName | Format-List NextRunTime, LastRunTime, LastTaskResult
 Write-Host "Run it once by hand to test: Start-ScheduledTask -TaskName '$TaskName'"

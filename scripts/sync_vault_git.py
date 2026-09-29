@@ -19,9 +19,19 @@ total data volume touched - so `git log` alone answers "what changed and how
 much" without a separate `git show`. Windows counterpart:
 Get-PPJSyncCommitMessage in Sync-VaultGit.ps1 - keep both in step.
 
-On a merge conflict the script aborts the merge, leaves the working tree
-exactly as it was, drops a SYNC-CONFLICT-README.md marker in the vault root
-and exits non-zero. Conflicts are resolved by hand, never automatically.
+GitHub wins conflicts (owner decision 2026-09-29 - a blocked machine stopped
+syncing for days). On a merge conflict the script:
+  1. saves this machine's version as branch sync-backup/<HOST>-<yyyymmdd-HHMM>
+     and pushes that branch to GitHub, so nothing is lost for good;
+  2. merges again with GitHub's side taking every conflicting hunk
+     (-X theirs) and every edit/delete clash; local edits to other files
+     are kept;
+  3. if that merge still fails, or leaves a .canvas / .json file that no
+     longer parses, resets the vault to GitHub's version outright
+     (ignored files such as local credentials are never touched);
+  4. pushes, logs a WARN and shows a desktop notification.
+A merge / rebase / cherry-pick left half-finished by an earlier run is aborted
+at the start instead of blocking every later run.
 
 Log:  <vault>/.git/vault-sync.log   (inside .git, so it is never committed)
 
@@ -32,6 +42,7 @@ Any ERROR-level log line also raises a desktop notification via notify-send
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import shutil
 import socket
@@ -46,6 +57,8 @@ LOG_FILE = VAULT / ".git" / "vault-sync.log"
 LOCK_FILE = VAULT / ".git" / "vault-sync.lock"
 CONFLICT_FILE = VAULT / "SYNC-CONFLICT-README.md"
 HOST = socket.gethostname().upper()
+BACKUP_PREFIX = "sync-backup"
+PUSH_ATTEMPTS = 3
 
 LOG_ROTATE_BYTES = 1024 * 1024
 LOCK_STALE_SECONDS = 3600
@@ -180,11 +193,9 @@ def build_commit_message(subject: str) -> str:
 def conflict_readme(branch: str, detail: str) -> str:
     return f"""# Vault sync conflict
 
-The scheduled sync on **{HOST}** could not merge changes from GitHub
-because the same file was edited on two devices.
-
-**Nothing was lost.** The merge was aborted and your files are untouched.
-Automatic syncing stays blocked until this is resolved.
+The scheduled sync on **{HOST}** could not merge changes from GitHub, and
+could not fall back to GitHub's version either (see the log). This machine's
+version is on a `{BACKUP_PREFIX}/{HOST}-...` branch.
 
 Detected: {datetime.now():%Y-%m-%d %H:%M}
 
@@ -212,6 +223,61 @@ Delete this file once resolved - the next successful sync removes it anyway.
 """
 
 
+def broken_json_since(before: str) -> list[str]:
+    """.canvas / .json files changed since `before` that no longer parse (a line-level merge can break them)."""
+    _, names = git("diff", "--name-only", "--diff-filter=AM", before, "HEAD", "--", "*.canvas", "*.json")
+    bad = []
+    for name in names.splitlines():
+        fp = VAULT / name
+        try:
+            if fp.is_file():
+                json.loads(fp.read_text(encoding="utf-8-sig"))
+        except (ValueError, OSError):
+            bad.append(name)
+    return bad
+
+
+def github_wins(branch: str, merge_output: str) -> bool:
+    """Resolve a failed merge in GitHub's favour, keeping this machine's version on a backup branch."""
+    conflicted = [ln.split("Merge conflict in ", 1)[1] for ln in merge_output.splitlines() if "Merge conflict in " in ln]
+    backup = f"{BACKUP_PREFIX}/{HOST}-{datetime.now():%Y%m%d-%H%M%S}"
+    git("branch", "-f", backup, "HEAD")
+    code, out = git("push", "--quiet", "origin", f"{backup}:refs/heads/{backup}")
+    where = "on GitHub and locally" if code == 0 else f"locally only (push failed: {out})"
+    log("WARN", f"Merge conflict in {len(conflicted) or 'some'} file(s): {', '.join(conflicted) or merge_output}. "
+                f"This machine's version is saved as branch {backup} {where}.")
+
+    _, before = git("rev-parse", "HEAD")
+    code, out = git("merge", "--no-edit", "-X", "theirs", f"origin/{branch}")
+    if code != 0:
+        # -X theirs settles content conflicts only. For the rest (edited here, deleted on GitHub, or the reverse)
+        # take GitHub's side path by path, so local edits to other files still survive.
+        _, unmerged = git("diff", "--name-only", "--diff-filter=U")
+        for path in [p for p in unmerged.splitlines() if p]:
+            if git("checkout", "--theirs", "--", path)[0] == 0:
+                git("add", "--", path)
+            else:                                   # no GitHub side: GitHub deleted it
+                git("rm", "-q", "--cached", "--ignore-unmatch", "--", path)
+                (VAULT / path).unlink(missing_ok=True)
+        code, out = git("commit", "--no-edit")
+    bad = broken_json_since(before) if code == 0 else []
+    if code == 0 and not bad:
+        how = "GitHub's version kept for the conflicting parts; other local edits kept"
+    else:
+        if code != 0:
+            git("merge", "--abort")
+        code, out = git("reset", "--hard", f"origin/{branch}")
+        if code != 0:
+            log("ERROR", f"Could not reset to origin/{branch}: {out}")
+            return False
+        reason = f"invalid JSON after merge: {', '.join(bad)}" if bad else "the merge could not complete"
+        how = f"vault reset to GitHub's version ({reason})"
+    log("WARN", f"GitHub wins: {how}. Recover anything needed from branch {backup}.")
+    notify(f"Vault sync on {HOST}: GitHub version kept",
+           f"{how}. Your version is saved as branch {backup}.")
+    return True
+
+
 def clear_conflict_marker() -> None:
     try:
         CONFLICT_FILE.unlink(missing_ok=True)
@@ -227,16 +293,19 @@ def sync() -> int:
         log("ERROR", "Detached HEAD or no branch - resolve by hand.")
         return 1
 
-    # A merge/rebase left half-finished by an earlier run must be cleared by a
-    # human; continuing would build on a broken state.
+    # A merge / rebase / cherry-pick left half-finished (a killed run, or by hand) would block every later run;
+    # abort it and carry on - GitHub-wins below settles whatever conflict caused it.
     _, git_dir = git("rev-parse", "--git-dir")
     git_dir_path = Path(git_dir)
     if not git_dir_path.is_absolute():
         git_dir_path = VAULT / git_dir_path
-    for marker in ("MERGE_HEAD", "REBASE_HEAD", "CHERRY_PICK_HEAD"):
+    for marker, command in (("MERGE_HEAD", "merge"), ("REBASE_HEAD", "rebase"), ("CHERRY_PICK_HEAD", "cherry-pick")):
         if (git_dir_path / marker).exists():
-            log("ERROR", f"Unfinished {marker} in the repository - resolve it before syncing again.")
-            return 1
+            log("WARN", f"Unfinished {marker} left in the repository - aborting it.")
+            git(command, "--abort")
+            if (git_dir_path / marker).exists():
+                log("ERROR", f"Could not abort the unfinished {command} - resolve it by hand.")
+                return 1
 
     # --- 1. commit local work -------------------------------------------------
     _, status = git("status", "--porcelain")
@@ -258,43 +327,46 @@ def sync() -> int:
     else:
         log("INFO", "No local changes to commit.")
 
-    # --- 2. fetch ---------------------------------------------------------------
-    code, out = git("fetch", "origin", "--quiet")
-    if code != 0:
-        log("ERROR", f"git fetch failed (offline or auth expired): {out}")
-        return 1
-
-    _, local = git("rev-parse", branch)
-    _, remote = git("rev-parse", f"origin/{branch}")
-
-    if local == remote:
-        log("INFO", "Already in sync - nothing to do.")
-        clear_conflict_marker()
-        log("INFO", "=== Sync end (no-op) ===")
-        return 0
-
-    # --- 3. merge remote --------------------------------------------------------
-    _, behind = git("rev-list", "--count", f"{branch}..origin/{branch}")
-    if behind != "0":
-        log("INFO", f"Remote is {behind} commit(s) ahead - merging.")
-        code, out = git("merge", "--no-edit", f"origin/{branch}")
+    # --- 2-4. fetch, merge, push - retried when another device pushed in between (push rejected) ------------
+    for attempt in range(1, PUSH_ATTEMPTS + 1):
+        code, out = git("fetch", "origin", "--quiet")
         if code != 0:
-            log("ERROR", f"MERGE CONFLICT - aborting, working tree left untouched.\n{out}")
-            git("merge", "--abort")
-            CONFLICT_FILE.write_text(conflict_readme(branch, out), encoding="utf-8")
+            log("ERROR", f"git fetch failed (offline or auth expired): {out}")
             return 1
-        log("INFO", "Merge OK.")
 
-    # --- 4. push ----------------------------------------------------------------
-    _, ahead = git("rev-list", "--count", f"origin/{branch}..{branch}")
-    if ahead != "0":
+        _, local = git("rev-parse", branch)
+        _, remote = git("rev-parse", f"origin/{branch}")
+        if local == remote:
+            log("INFO", "Already in sync - nothing to do.")
+            clear_conflict_marker()
+            log("INFO", "=== Sync end (no-op) ===")
+            return 0
+
+        _, behind = git("rev-list", "--count", f"{branch}..origin/{branch}")
+        if behind != "0":
+            log("INFO", f"Remote is {behind} commit(s) ahead - merging.")
+            code, out = git("merge", "--no-edit", f"origin/{branch}")
+            if code != 0:
+                git("merge", "--abort")
+                if not github_wins(branch, out):
+                    CONFLICT_FILE.write_text(conflict_readme(branch, out), encoding="utf-8")
+                    return 1
+            else:
+                log("INFO", "Merge OK.")
+
+        _, ahead = git("rev-list", "--count", f"origin/{branch}..{branch}")
+        if ahead == "0":
+            log("INFO", "Nothing to push.")
+            break
         code, out = git("push", "origin", branch)
-        if code != 0:
-            log("ERROR", f"git push failed: {out}")
-            return 1
-        log("INFO", f"Pushed {ahead} commit(s) to origin/{branch}.")
-    else:
-        log("INFO", "Nothing to push.")
+        if code == 0:
+            log("INFO", f"Pushed {ahead} commit(s) to origin/{branch}.")
+            break
+        if attempt < PUSH_ATTEMPTS and ("rejected" in out or "fetch first" in out or "non-fast-forward" in out):
+            log("WARN", f"Push rejected - another device pushed first; fetching again (attempt {attempt + 1}).")
+            continue
+        log("ERROR", f"git push failed: {out}")
+        return 1
 
     clear_conflict_marker()
     log("INFO", "=== Sync end (OK) ===")

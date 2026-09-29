@@ -1,6 +1,6 @@
 ---
 type: sync_device_registry
-last_verified: 2026-09-24
+last_verified: 2026-09-29
 device_count: 3
 ---
 
@@ -48,11 +48,26 @@ retired - it is part of the normal sync commit, not a separate step.
   Linux's `ppj-vault-sync.timer.template` is `OnCalendar=*-*-* 00/3:20:00`.
   Stagger each device's start time by 10-15 min from the others on the shared
   grid (00, 03, 06, ... 21) to avoid simultaneous pushes - see Devices below
-  for the current offsets, not all of which have been re-applied yet.
-- **Conflict handling:** never automatic. A real conflict aborts the merge,
-  leaves the working tree untouched, and drops `SYNC-CONFLICT-README.md` in
-  the vault root (gitignored, local only) - resolve by hand, then it
-  self-clears on the next successful sync.
+  for the current offsets. **Plus a run 2 minutes after logon / boot**
+  (decided 2026-09-29): a machine that was off compares with GitHub and
+  updates as soon as it is switched on. Linux: `OnStartupSec=2min` in the
+  timer; Windows: an `-AtLogOn` trigger (2 min delay) added by
+  `Register-PPJVaultSyncTask.ps1` - re-run it once on each Windows machine.
+- **Conflict handling: GitHub wins** (decided 2026-09-29, replacing "never
+  automatic" - one unresolved conflict had stopped a machine from syncing for
+  days). Both engines (`Sync-VaultGit.ps1`, `sync_vault_git.py`) now:
+  save the machine's version as branch `sync-backup/<HOST>-<yyyymmdd-HHmmss>`
+  and push it to GitHub; re-merge with GitHub's side winning every conflicting
+  hunk and every edit/delete clash (local edits to other files survive); if
+  that fails or leaves a `.canvas` / `.json` that no longer parses, reset the
+  vault to `origin/main` (gitignored files such as local credentials are never
+  touched); push; WARN in the log plus a toast / desktop notification. A
+  half-finished merge / rebase / cherry-pick is aborted at the start instead of
+  blocking; a push rejected because another device pushed first is retried up
+  to 3 times. `SYNC-CONFLICT-README.md` now appears only if even the reset
+  fails. Recover lost work from the backup branch
+  (`git log sync-backup/<HOST>-...`, `git checkout <branch> -- <file>`); delete
+  old backup branches from GitHub once they are no longer needed.
 - **Do not run two sync systems on the same folder.** This vault previously
   used Obsidian Self-hosted LiveSync, then Syncthing, before git (see
   `99_Attachments/Legacy_Syncthing_Import/README.md`). If Syncthing or
@@ -75,9 +90,9 @@ retired - it is part of the normal sync commit, not a separate step.
 
 | Host | OS | Vault path | Sync engine | Schedule | Syncthing/LiveSync status | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| HAKU | Windows 11 (ideapad3 gaming laptop) | USB drive, currently `E:\DATA\USB-VAULT\BA_Obsidian_Vault_FULL_LINUX_20260918\USB_BA_Obsidian_Vault` (letter may change - do not hard-code) | `Sync-VaultGit.ps1` via launcher + Task Scheduler | **Stale: still 8h at 00:00/08:00/16:00.** Target grid: every 3h at 00:00/03:00/06:00/.../21:00 - re-run `Register-PPJVaultSyncTask.ps1 -StartTime "00:00"` there (now defaults to `-IntervalHours 3`) after pulling the 2026-09-24 change. | Confirmed off (no local process) - 2026-09-23 | Vault is portable/USB; drive-letter resolution is handled by the launcher. |
-| YOGHAAKU (hostname `YOGHAAKU`, Yoga ThinkPad laptop) | Windows 11 Pro 10.0.26200 | `D:\PPJ\syncing` - fixed internal drive, not USB/removable | `Sync-VaultGit.ps1` via `Invoke-PPJVaultSyncLauncher.ps1` (registered in `$KnownHostPaths`) + Task Scheduler (`Register-PPJVaultSyncTask.ps1 -StartTime "00:15"`) | Every 3h at 00:15 / 03:15 / 06:15 / 09:15 / 12:15 / 15:15 / 18:15 / 21:15 (moved off 8h 2026-09-24) | Confirmed off - 2026-09-24: no `syncthing`/`syncthingtray` process, no install under `%LOCALAPPDATA%\Programs`, no autostart entry in `HKCU\...\Run`, no Syncthing scheduled task. `.stfolder` already archived under `99_Attachments/Legacy_Syncthing_Import/` (not at the vault root). | Also runs `PPJ Executive Canvas Watcher` (Task Scheduler port of the systemd Canvas watcher, registered by `scripts/Register-PPJCanvasWatcherTask.ps1`: `scripts/Start-PPJCanvasWatcher.ps1` -> `watch_ppj_executive_canvas.py --apply`, log `.git/canvas-watcher.log`). Self-healing via a 5-minute supervisor trigger, not just at-logon - Task Scheduler can't detect an externally-killed long-running process the way systemd's `Restart=always` can, so a repeating tick re-runs the idempotent launcher instead; verified 2026-09-24 by killing the watcher and confirming a re-run of the task revived it. Added card-text-drives-vault to `sync_ppj_executive_canvas_state.py` (Domain/Lifecycle/Status/Progress/Priority/Gate/Outcome editable from a card; canonical-code rename via `--approve-rename`, `PPJ_CARD_SIG` fingerprint tells a hand edit from a stale card). This row previously appeared twice, as "YOGHAAKU" and "Yoga ThinkPad" - same physical device, same vault path; merged 2026-09-24. |
-| NVAKHOA-THINKPAD-E14-GEN-7 (hostname `nvakhoa-ThinkPad-E14-Gen-7`) | Ubuntu | `/home/nvakhoa/Documents/BA_Obsidian_Vault` - ordinary folder on the internal disk (ext4, `/dev/nvme0n1p2`); not a symlink, not the USB drive, an independent clone | `sync_vault_git.py` via systemd user timer `ppj-vault-sync.timer` (joined 2026-09-24) | **Stale: still 8h at 00:20/08:20/16:20.** Target grid: every 3h at 00:20/03:20/06:20/.../21:20 - the template already reads `OnCalendar=*-*-* 00/3:20:00`; re-run `install_ppj_vault_sync_timer.sh` there after pulling the 2026-09-24 change to redeploy it. `Persistent=true` - catches up after downtime. | Syncthing **was active** (share `obsidian-vault` = `~/Documents`, send-receive with device `obsidian-storage`); stopped, config deleted and package purged 2026-09-24. LiveSync plugin not installed in this vault. The LiveSync CouchDB server (`~/services/obsidian-livesync`, Docker `obsidian-couchdb` + nightly backup timer) still runs here but does not touch this folder. | Also runs `ppj-executive-canvas-watcher.service` (local Canvas-state only). First sync took origin/main for everything except 2 locally newer canvases - the local copy was the stale Aug 24 portfolio state. A local credentials file is excluded via `.git/info/exclude` (never pushed). |
+| HAKU | Windows 11 (ideapad3 gaming laptop) | USB drive, currently `E:\DATA\USB-VAULT\BA_Obsidian_Vault_FULL_LINUX_20260918\USB_BA_Obsidian_Vault` (letter may change - do not hard-code) | `Sync-VaultGit.ps1` via launcher + Task Scheduler | **Stale: still 8h at 00:00/08:00/16:00.** Target: every 3h at 00:00 / 03:00 / ... / 21:00 plus 2 min after logon - run the one-time recovery below. | Confirmed off (no local process) - 2026-09-23 | Vault is portable/USB; drive-letter resolution is handled by the launcher. |
+| YOGHAAKU (hostname `YOGHAAKU`, Yoga ThinkPad laptop) | Windows 11 Pro 10.0.26200 | `D:\PPJ\syncing` - fixed internal drive, not USB/removable | `Sync-VaultGit.ps1` via `Invoke-PPJVaultSyncLauncher.ps1` (registered in `$KnownHostPaths`) + Task Scheduler (`Register-PPJVaultSyncTask.ps1 -StartTime "00:15"`) | Every 3h at 00:15 / 03:15 / ... / 21:15 (moved off 8h 2026-09-24). **Needs the one-time recovery below** to pick up GitHub-wins and the logon trigger. | Confirmed off - 2026-09-24: no `syncthing`/`syncthingtray` process, no install under `%LOCALAPPDATA%\Programs`, no autostart entry in `HKCU\...\Run`, no Syncthing scheduled task. `.stfolder` already archived under `99_Attachments/Legacy_Syncthing_Import/` (not at the vault root). | Also runs `PPJ Executive Canvas Watcher` (Task Scheduler port of the systemd Canvas watcher, registered by `scripts/Register-PPJCanvasWatcherTask.ps1`: `scripts/Start-PPJCanvasWatcher.ps1` -> `watch_ppj_executive_canvas.py --apply`, log `.git/canvas-watcher.log`). Self-healing via a 5-minute supervisor trigger, not just at-logon - Task Scheduler can't detect an externally-killed long-running process the way systemd's `Restart=always` can, so a repeating tick re-runs the idempotent launcher instead; verified 2026-09-24 by killing the watcher and confirming a re-run of the task revived it. Added card-text-drives-vault to `sync_ppj_executive_canvas_state.py` (Domain/Lifecycle/Status/Progress/Priority/Gate/Outcome editable from a card; canonical-code rename via `--approve-rename`, `PPJ_CARD_SIG` fingerprint tells a hand edit from a stale card). This row previously appeared twice, as "YOGHAAKU" and "Yoga ThinkPad" - same physical device, same vault path; merged 2026-09-24. |
+| NVAKHOA-THINKPAD-E14-GEN-7 (hostname `nvakhoa-ThinkPad-E14-Gen-7`) | Ubuntu | `/home/nvakhoa/Documents/BA_Obsidian_Vault` - ordinary folder on the internal disk (ext4, `/dev/nvme0n1p2`); not a symlink, not the USB drive, an independent clone | `sync_vault_git.py` via systemd user timer `ppj-vault-sync.timer` (joined 2026-09-24) | Every 3h at 00:20 / 03:20 / 06:20 / ... / 21:20 and 2 min after login (`OnStartupSec=2min`, installed 2026-09-29). `Persistent=true` - catches up after downtime. | Syncthing **was active** (share `obsidian-vault` = `~/Documents`, send-receive with device `obsidian-storage`); stopped, config deleted and package purged 2026-09-24. LiveSync plugin not installed in this vault. The LiveSync CouchDB server (`~/services/obsidian-livesync`, Docker `obsidian-couchdb` + nightly backup timer) still runs here but does not touch this folder. | Also runs `ppj-executive-canvas-watcher.service` (local Canvas-state only). First sync took origin/main for everything except 2 locally newer canvases - the local copy was the stale Aug 24 portfolio state. A local credentials file is excluded via `.git/info/exclude` (never pushed). |
 
 ## Legacy / reference-only (not part of the sync topology)
 
@@ -89,6 +104,16 @@ retired - it is part of the normal sync commit, not a separate step.
 ## Open items
 
 - Device `obsidian-storage` (the former Syncthing peer of the Ubuntu machine) still has its own copy of `~/Documents`; retire that share there, and decide whether the LiveSync CouchDB server on the Ubuntu machine is still used by any device.
-- **HAKU is on the stale 8h schedule** - re-run `Register-PPJVaultSyncTask.ps1 -StartTime "00:00"` there (no `-IntervalHours` needed, the default is now 3) to pick up both the 2026-09-24 `$KnownHostPaths` generalization and the move to a 3h cadence. The deployed copy at `%LOCALAPPDATA%\PPJVaultSync\` does not update itself.
+- **One-time recovery on each Windows machine (YOGHAAKU, HAKU)** - a machine stuck on an old conflict cannot pull the new GitHub-wins script by itself. In PowerShell, from the vault root (YOGHAAKU `D:\PPJ\syncing`; HAKU the USB vault):
+
+  ```powershell
+  git merge --abort 2>$null
+  git add -A; git commit -q -m "Pre-recovery snapshot from $env:COMPUTERNAME"
+  $b = "sync-backup/$env:COMPUTERNAME-$(Get-Date -Format yyyyMMdd-HHmmss)"
+  git branch $b; git push origin "${b}:refs/heads/$b"
+  git fetch origin; git reset --hard origin/main
+  powershell -ExecutionPolicy Bypass -File .\scripts\Register-PPJVaultSyncTask.ps1 -StartTime "00:15"   # HAKU: "00:00"
+  ```
+
+  This keeps the machine's version on a backup branch, takes GitHub's version, and re-registers the task (3h grid plus logon trigger; also redeploys the launcher copy in `%LOCALAPPDATA%\PPJVaultSync\`).
 - **Ubuntu: restart the Canvas watcher after pulling 2026-09-24** - `systemctl --user restart ppj-executive-canvas-watcher.service`. The new `watch_ppj_executive_canvas.py` also regenerates the ecosystem Canvas whenever the portfolio snapshot changes (see `AGENTS.md`, "Ecosystem Canvas auto-sync"); a running service keeps the old code until restarted. YOGHAAKU already runs it. Both devices produce byte-identical output, so they cannot conflict.
-- **Ubuntu is on the stale 8h schedule** - re-run `install_ppj_vault_sync_timer.sh` there to pick up the 2026-09-24 timer template change (`OnCalendar=*-*-* 00,08,16:20:00` -> `00/3:20:00`).
