@@ -1,6 +1,6 @@
 {
-  "source_event": "PPJ-BOD-REVIEW-20260924-UPDATE",
-  "last_verified": "2026-09-25",
+  "source_event": "PPJ-EXECUTIVE-CANVAS-SYNC-20260928_235837",
+  "last_verified": "2026-09-28",
   "portfolio_maturity": "Stage 3 - Controlled Delivery / Early Scale",
   "naming_standard": "<DEPARTMENT>_<APPLICATION>_v<MAJOR>.<MINOR>.<PATCH>",
   "strategic_direction": [
@@ -324,9 +324,9 @@
       "lane": "ACTIVE DELIVERY / UAT",
       "candidate": false,
       "registration": "Registered",
-      "delivery_stage": "UAT / PRE-GO-LIVE",
+      "delivery_stage": "GO-LIVE / PRODUCTION / SUPPORT",
       "status": "Active",
-      "stage_entered_date": "Needs Confirmation",
+      "stage_entered_date": "2026-09-28",
       "delivery_stream": "INTERNAL DEVELOPMENT",
       "legacy": [
         "PPJ.ExpenseInvoices.v1.1",
@@ -335,13 +335,13 @@
         "LOG.EXPENSE.INVOICES.V1.2"
       ],
       "link_target": "",
-      "last_verified": "2026-09-25",
-      "source_event": "PPJ-BOD-REVIEW-20260924-UPDATE"
+      "last_verified": "2026-09-28",
+      "source_event": "PPJ-EXECUTIVE-CANVAS-SYNC-20260928_235728"
     },
     {
       "code": "PUR_MaterialAllocation_v1.1.0",
       "domain": "Sourcing / Purchasing",
-      "lifecycle": "Validation / Stabilization",
+      "lifecycle": "Development",
       "gate": "Transaction reliability and exception control",
       "priority": "P7",
       "outcome": "Validate controlled reallocation of surplus material across eligible OCs: Material Requirement -> Availability -> Allocation -> Validation -> WFX Transaction.",
@@ -368,16 +368,18 @@
       "lane": "ACTIVE DELIVERY / UAT",
       "candidate": false,
       "registration": "Registered",
-      "delivery_stage": "UAT / PRE-GO-LIVE",
+      "delivery_stage": "DEVELOPMENT",
       "status": "Active",
-      "stage_entered_date": "Needs Confirmation",
+      "stage_entered_date": "2026-09-28",
       "delivery_stream": "INTERNAL DEVELOPMENT",
       "legacy": [
         "PUR.Material.Allocation.v1.1",
         "PUR.Material.Allocation.v1.2",
         "Material Allocation"
       ],
-      "link_target": ""
+      "link_target": "",
+      "last_verified": "2026-09-28",
+      "source_event": "PPJ-EXECUTIVE-CANVAS-SYNC-20260928_235837"
     },
     {
       "code": "MER_MarketIntelligence_v1.1.0",

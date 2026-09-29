@@ -2,12 +2,33 @@
 type: "milestones"
 project: "PUR.Material.Allocation.v1.1"
 source_project: "PUR.Material.Allocation.v1.2.md"
-source_event: "PPJ-WEEKLY-20260713-20260718"
-last_verified: "2026-07-18"
+source_event: "PPJ-EXECUTIVE-CANVAS-SYNC-20260928_235837"
+last_verified: "2026-09-28"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
+phase: "DEVELOPMENT"
+delivery_stream: "INTERNAL DEVELOPMENT"
+delivery_stage: "DEVELOPMENT"
+lifecycle: "Development"
+status: "Active"
+current_gate: "Transaction reliability and exception control"
+stage_entered_date: "2026-09-28"
 ---
+
+<!-- PPJ_EXECUTIVE_DELIVERY_STAGE_START -->
+## Executive Delivery State
+
+| Field | Current |
+|---|---|
+| Delivery Stream | INTERNAL DEVELOPMENT |
+| Delivery Stage | DEVELOPMENT |
+| Detailed Lifecycle | Development |
+| Status | Active |
+| Current Gate | Transaction reliability and exception control |
+| Stage Entered | 2026-09-28 |
+| Last Verified | 2026-09-28 |
+<!-- PPJ_EXECUTIVE_DELIVERY_STAGE_END -->
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
 ## Current State - 2026-09-18

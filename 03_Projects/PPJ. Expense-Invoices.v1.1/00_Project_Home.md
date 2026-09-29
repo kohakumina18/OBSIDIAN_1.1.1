@@ -2,19 +2,19 @@
 type: "project_home"
 project: "LOG_ExpenseInvoiceProcessing_v1.2.2"
 source_project: "PPJ. Expense-Invoices.v1.1.md"
-source_event: "PPJ-EXECUTIVE-CANVAS-SYNC-20260923_134955"
-last_verified: "2026-09-23"
+source_event: "PPJ-EXECUTIVE-CANVAS-SYNC-20260928_235728"
+last_verified: "2026-09-28"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
 lifecycle: "Regional Rollout / UAT"
 current_gate: "Regional rollout, tax rules and invoice validation"
 priority: "P4"
-delivery_stage: "UAT / PRE-GO-LIVE"
+delivery_stage: "GO-LIVE / PRODUCTION / SUPPORT"
 status: "Active"
-stage_entered_date: "Needs Confirmation"
+stage_entered_date: "2026-09-28"
 delivery_stream: "INTERNAL DEVELOPMENT"
-phase: "UAT / PRE-GO-LIVE"
+phase: "GO-LIVE / PRODUCTION / SUPPORT"
 ---
 
 <!-- PPJ_EXECUTIVE_DELIVERY_STAGE_START -->
@@ -23,12 +23,12 @@ phase: "UAT / PRE-GO-LIVE"
 | Field | Current |
 |---|---|
 | Delivery Stream | INTERNAL DEVELOPMENT |
-| Delivery Stage | UAT / PRE-GO-LIVE |
+| Delivery Stage | GO-LIVE / PRODUCTION / SUPPORT |
 | Detailed Lifecycle | Regional Rollout / UAT |
 | Status | Active |
 | Current Gate | Regional rollout, tax rules and invoice validation |
-| Stage Entered | Needs Confirmation |
-| Last Verified | 2026-09-23 |
+| Stage Entered | 2026-09-28 |
+| Last Verified | 2026-09-28 |
 <!-- PPJ_EXECUTIVE_DELIVERY_STAGE_END -->
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
