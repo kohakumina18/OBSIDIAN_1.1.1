@@ -158,6 +158,56 @@
 			"y":3280,
 			"width":1040,
 			"height":21334
+		},
+		{
+			"id":"1981924321ab5824",
+			"type":"text",
+			"text":"sourcing: standardize du lieu\ncosting ",
+			"styleAttributes":{},
+			"x":-7880,
+			"y":21840,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"4d1447d814771486",
+			"type":"text",
+			"text":"PRODUCTION:\n- KHOI LUONG WORKLOAD CUA AI + PRODUCTION: LON \n- CAC PHAN MEM DANG SU DUNG: HRIS / GTAS SAL / GTAS PRODUCTION:\n\t- **CAN CAI THIEN THEM: KET NOI DUOC TOT HON** \n\t- GTAS TNA + GTAS QC: TRONG DIEM DOI VOI SOFTWARE - NHUNG CHUA CONNECTING TOT",
+			"styleAttributes":{},
+			"x":-7920,
+			"y":22240,
+			"width":660,
+			"height":360
+		},
+		{
+			"id":"06c8f441d57a6f26",
+			"type":"text",
+			"text":"SALES: lien ket AC - OC -> THE HIEN DUOC BIEN LOI NHUAN \n",
+			"styleAttributes":{},
+			"x":-7810,
+			"y":22000,
+			"width":440,
+			"height":80
+		},
+		{
+			"id":"90293dc2b9c63eae",
+			"type":"text",
+			"text":"MERCHANDISING AGENT - ",
+			"styleAttributes":{},
+			"x":-8220,
+			"y":22760,
+			"width":540,
+			"height":60
+		},
+		{
+			"id":"ceb5628d6e80fba1",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":-8220,
+			"y":22860,
+			"width":260,
+			"height":60
 		}
 	],
 	"edges":[
@@ -241,7 +291,16 @@
 		{"id":"e078-proj-wash-cowash-v-wfx-production-man","fromNode":"proj-wash-cowash-v2-0-0","fromSide":"left","toNode":"wfx-production-management","toSide":"right","label":"AFFINITY | PRIMARY | on hold"},
 		{"id":"e079-proj-hr-employeeda-tp-hris","fromNode":"proj-hr-employeedataplatform-v1-1-0","fromSide":"left","toNode":"tp-hris","toSide":"right","label":"AFFINITY | PRIMARY"},
 		{"id":"e080-wfx-core-data-dwh","fromNode":"wfx-core","fromSide":"bottom","toNode":"data-dwh","toSide":"top","color":"#1e88e5","label":"DATA"},
-		{"id":"e081-poc-cand-cpd-in-ho-poc-discovery-pat","fromNode":"poc-cand-cpd-in-house-pattern-generation","fromSide":"left","toNode":"poc-discovery-patterngenerationpoc","toSide":"right","color":"#1e88e5","label":"DATA | benchmark"}
+		{"id":"e081-poc-cand-cpd-in-ho-poc-discovery-pat","fromNode":"poc-cand-cpd-in-house-pattern-generation","fromSide":"left","toNode":"poc-discovery-patterngenerationpoc","toSide":"right","color":"#1e88e5","label":"DATA | benchmark"},
+		{
+			"id":"987b5bd99aaeee25",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"1981924321ab5824",
+			"fromSide":"bottom",
+			"toNode":"06c8f441d57a6f26",
+			"toSide":"top"
+		}
 	],
 	"metadata":{
 		"version":"1.0-1.0",
