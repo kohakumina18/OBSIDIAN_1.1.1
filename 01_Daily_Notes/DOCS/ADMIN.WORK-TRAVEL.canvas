@@ -141,6 +141,127 @@
 			"y":240,
 			"width":280,
 			"height":200
+		},
+		{
+			"id":"80ba2ae7ca658deb",
+			"type":"text",
+			"text":"# BTE – BUSINESS TRAVEL\n\n## V1 RELEASE CLOSURE REPORT & NEXT-PHASE PROPOSAL\n\n**Ngày báo cáo:** 30/09/2026  \n**Sản phẩm:** BTE – Business Travel Management  \n**Release đề xuất:** V1.0.0  \n**Trạng thái:** Release Candidate – đề xuất đóng V1 sau khi hoàn tất Release Gate  \n**Giai đoạn phát triển:** 18/08/2026 – 30/09/2026\n\n## 1. Executive Summary\n\nBTE – Business Travel được xây dựng nhằm số hóa và tập trung quy trình công tác của PPJ trên một hệ thống thống nhất, bao gồm:\n\n**Tạo tờ trình → Phê duyệt → Booking → Tạo chuyến công tác → Khai chi phí thực tế → Review → Thanh toán → Báo cáo.**\n\nSau khoảng **6 tuần phát triển**, hệ thống hiện có khoảng **9 màn hình nghiệp vụ, 5 extension, khoảng 100 commit và khoảng 14.600 dòng code ở phần pages/API**, hỗ trợ giao diện song ngữ Việt/Anh.\n\nV1 đã hình thành được luồng nghiệp vụ end-to-end cho bốn nhóm người dùng chính:\n\n- Nhân viên / Traveler\n    \n- HCQT / Approver\n    \n- Kế toán\n    \n- Super Admin\n    \n\nCác khả năng trọng tâm đã hoàn thiện bao gồm:\n\n- Tạo và duyệt yêu cầu công tác.\n    \n- Quản lý nhiều traveler và hành trình riêng theo từng người.\n    \n- Tự động tính định mức công tác.\n    \n- Quản lý Domestic, International và Hybrid Trip.\n    \n- Booking vé máy bay và khách sạn.\n    \n- Quản lý tạm ứng / No Advance.\n    \n- Khai và review chi phí thực tế.\n    \n- Reopen chuyến và quản lý chi phí bổ sung.\n    \n- Thanh toán.\n    \n- Dashboard và báo cáo.\n    \n- Xuất Word/Excel theo mẫu nghiệp vụ.\n    \n- QR Code.\n    \n- Phân quyền theo vai trò.\n    \n- Song ngữ EN/VI.\n    \n\nHệ thống hiện đã đủ capability để chuyển từ giai đoạn development sang **controlled production rollout**, với điều kiện các Release Gate về database migration, permission và UAT được xác nhận trước khi đóng chính thức V1.\n\n---\n\n# 2. Business Problem\n\nTrước BTE, thông tin công tác có nguy cơ phân tán giữa nhiều bước xử lý, file, biểu mẫu và người phụ trách, gây khó khăn trong:\n\n- Theo dõi trạng thái của một chuyến công tác.\n    \n- Đồng bộ thông tin giữa người đề nghị, HCQT và kế toán.\n    \n- Tính toán và kiểm tra định mức.\n    \n- Theo dõi chứng từ và chi phí thực tế.\n    \n- Đối chiếu request với trip và settlement.\n    \n- Tổng hợp dữ liệu phục vụ quản trị.\n    \n- Traceability khi cần kiểm tra lại một hồ sơ.\n    \n\nBTE V1 giải quyết bài toán bằng việc đưa lifecycle của một Business Trip vào một workflow thống nhất.\n\n---\n\n# 3. V1 Business Objective\n\n| Objective                    | Kết quả V1                                                    |\n| ---------------------------- | ------------------------------------------------------------- |\n| Số hóa quy trình công tác    | Hoàn thành flow end-to-end                                    |\n| Chuẩn hóa request            | Có form và workflow chung                                     |\n| Chuẩn hóa định mức           | Tự động tính theo rule/danh mục                               |\n| Giảm nhập liệu lặp lại       | Dữ liệu được tái sử dụng xuyên suốt request → trip → expenses |\n| Tăng traceability            | Một mã `TRIP-<year>-<number>` xuyên suốt hồ sơ                |\n| Kiểm soát chứng từ           | Upload PDF, review, reopen và phân tách added-later expenses  |\n| Chuẩn hóa báo cáo            | Word/Excel export và Dashboard                                |\n| Hỗ trợ nhiều nhóm người dùng | Role-based workflow                                           |\n| Hỗ trợ môi trường song ngữ   | EN / VI                                                       |\n\nMã phiếu hiện được cấp ngay khi Submit và được sử dụng lại cho trip tương ứng, giúp request và trip có chung một identifier xuyên suốt quy trình.\n\n---\n\n# 4. V1 End-to-End Process\n![[mermaid-diagram 1.png]]\n\nLuồng gốc của hệ thống hiện đi từ Create Request → Approve Request → Expenses → Payment, đồng thời hỗ trợ tạo trip, review/close/reopen và reporting.\n\n---\n\n# 5. Scope Delivered in V1\n\n## 5.1 Request Management\n\nUser có thể:\n\n- Tạo Business Travel Request.\n    \n- Chọn traveler.\n    \n- Khai hành trình.\n    \n- Khai mục đích công tác.\n    \n- Chọn Domestic / International / Hybrid.\n    \n- Chọn No Advance khi không yêu cầu tạm ứng.\n    \n- Xem định mức hệ thống tự tính.\n    \n- Submit request.\n    \n- Theo dõi request của mình.\n    \n\nHệ thống tự:\n\n- Tính allowance/per-diem.\n    \n- Tính định mức khách sạn.\n    \n- Xử lý định mức theo từng traveler/chặng.\n    \n- Cấp mã `TRIP-YYYY-XXXX`.\n    \n- Lưu hành trình riêng cho từng traveler.\n    \n\n---\n\n## 5.2 HCQT / Approval & Booking\n\nHCQT có thể:\n\n- Nhận request được phân công.\n    \n- Review thông tin request.\n    \n- Xử lý flight booking.\n    \n- Xử lý hotel booking.\n    \n- Cập nhật booking cost.\n    \n- Approve / Confirm request.\n    \n- Review expense.\n    \n- Reopen trip.\n    \n- Quản lý user theo quyền được cấp.\n    \n\nAuto-save đã được bổ sung tại màn hình xử lý của Admin để hạn chế mất dữ liệu trong quá trình thao tác.\n\n---\n\n## 5.3 Trip Management\n\nSau khi request được xử lý:\n\n- Trip được tạo từ request.\n    \n- Trip sử dụng cùng mã với request.\n    \n- Traveler tiếp tục sử dụng trip để khai chi phí.\n    \n- Trip hỗ trợ status lifecycle.\n    \n- Có cơ chế Close và Reopen.\n    \n\n---\n\n## 5.4 Expense Management\n\nTraveler có thể:\n\n- Khai Actual Expenses.\n    \n- Upload chứng từ.\n    \n- Gửi expense để review.\n    \n\nHệ thống:\n\n- Chỉ chấp nhận chứng từ PDF.\n    \n- Có trạng thái Modify / Ready for Review.\n    \n- Cho phép Reopen khi phát sinh bổ sung.\n    \n- Tách chi phí bổ sung sau Reopen thành báo cáo riêng, tránh thay đổi báo cáo đã được xuất trước đó.\n    \n\n---\n\n## 5.5 Payment\n\nAccountant có quyền:\n\n- Theo dõi hồ sơ cần thanh toán.\n    \n- Đánh dấu trạng thái **Paid**.\n    \n\nViệc phân quyền được tách giữa BTE User, HCQT Admin, Super Admin và Accountant.\n\n---\n\n# 6. Key Functional Enhancements Delivered\n\n## Hybrid Business Trip\n\nV1 hỗ trợ chuyến có đồng thời:\n\n- Domestic leg\n    \n- International leg\n    \n\nVới Hybrid Trip:\n\n- Domestic và International Flight được quản lý riêng.\n    \n- VND và USD được tách riêng.\n    \n- Không cộng lẫn hai đơn vị tiền tệ trên các output liên quan.\n    \n\n  \n\n## Airport / IATA Management\n\n- Airport Code được tích hợp vào Travel Plan.\n    \n- Có cơ chế lọc airport phù hợp.\n    \n- Có `is_active` để HCQT quản lý danh sách airport sử dụng thường xuyên.\n    \n\n## Multiple Travelers\n\nMỗi traveler có thể có:\n\n- Hành trình riêng.\n    \n- Khoảng thời gian riêng.\n    \n- Allowance riêng.\n    \n- Expense riêng.\n    \n\n## Room Sharing\n\nHệ thống hỗ trợ logic nhiều traveler ở chung phòng và áp dụng tính toán EAC tương ứng.\n\n---\n\n# 7. Reporting & Document Automation\n\nBTE V1 hiện hỗ trợ tự động xuất:\n\n- Business Travel Request / tờ trình.\n    \n- International template.\n    \n- Domestic template.\n    \n- Hybrid template.\n    \n- Advance Payment Request.\n    \n- User Slip.\n    \n- Actual Expense Report.\n    \n- Dashboard Excel.\n    \n\nOutput có hỗ trợ QR Code.\n\nĐiểm quan trọng của V1 không chỉ là tạo form điện tử, mà là **tái sử dụng cùng một bộ dữ liệu nghiệp vụ để tạo các output khác nhau**, giảm việc nhập lại cùng thông tin nhiều lần.\n\n---\n\n# 8. Role & Access Model\n\n|Role|Trách nhiệm chính|\n|---|---|\n|BTE User|Tạo request, theo dõi trip, khai expense|\n|HCQT Admin / Approver|Review request, booking, approve, expense review, reopen|\n|Accountant|Payment|\n|Super Admin|Cross-admin visibility và administration|\n\nNgoài role trong BTE, hệ thống đã bổ sung cơ chế đồng bộ assigned role với Directus role.\n\nViệc gán role trong hồ sơ BTE có thể:\n\n- Đồng bộ Directus role.\n    \n- Liên kết account với BTE profile.\n    \n- Tự xác lập Approver cho HCQT Admin.\n    \n\n  \n\n---\n\n# 9. V1 Business Value\n\n## 9.1 Standardization\n\nMột workflow thống nhất thay cho việc xử lý từng bước như các hoạt động rời rạc.\n\n## 9.2 Data Reuse\n\nThông tin từ request được sử dụng tiếp cho:\n\n- Approval\n    \n- Trip\n    \n- Expense\n    \n- Payment\n    \n- Reporting\n    \n\n## 9.3 Control\n\nCó:\n\n- Status.\n    \n- Role.\n    \n- Request owner.\n    \n- Approver.\n    \n- Trip number.\n    \n- Expense review.\n    \n- Reopen mechanism.\n    \n- Payment status.\n    \n\n## 9.4 Traceability\n\nMột mã TRIP thống nhất giúp truy ngược toàn bộ lifecycle của Business Trip.\n\n## 9.5 Management Visibility\n\nDashboard cho phép tổng hợp và drill-down dữ liệu, đồng thời hỗ trợ xuất Excel.\n\n---\n\n# 10. V1 Release Gate\n\nKhông nên xem V1 là “Closed” chỉ vì development đã hoàn tất.\n\nĐề xuất chỉ ký Release Closure sau khi đạt đủ 4 gate sau.\n\n|Gate|Yêu cầu|Trạng thái|\n|---|---|---|\n|G1 – Database|Production schema/migration hoàn tất|Pending confirmation|\n|G2 – Security|Directus Access Policies được kiểm tra|Pending final check|\n|G3 – UAT|Key users chạy end-to-end scenario|Required|\n|G4 – Training|User/Admin được training trước rollout|Planned|\n\n## Critical pre-release checks\n\nFile kỹ thuật hiện vẫn ghi nhận một số migration cần được xác nhận trên live database, bao gồm Hybrid fields, trip-number counter và Airport Code. Nếu migration chưa được áp dụng đúng, một số màn hình có thể gặp lỗi truy cập.\n\nNgoài ra:\n\n- Hiện chưa có automated test.\n    \n- Validation chủ yếu dựa trên build và manual test.\n    \n- Auto-close +7 ngày hiện chạy ở UI, không phải server cron.\n    \n- UI restriction không thay thế Directus Access Policies.\n    \n\n  \n\n### Release recommendation\n\n**Đề xuất trạng thái: CONDITIONAL GO-LIVE**\n\nV1 có thể được release cho controlled user group sau khi:\n\n1. Production migration được xác nhận.\n    \n2. Role & Access Policy được kiểm tra.\n    \n3. Smoke Test hoàn thành.\n    \n4. UAT Business sign-off.\n    \n5. Training hoàn thành cho key users.\n    \n\nSau đó có thể chính thức:\n\n> **Close BTE V1.0.0 – Functional Baseline**\n\nCác enhancement mới sẽ được quản lý từ V1.1 trở đi, tránh tiếp tục mở rộng scope V1.\n\n---\n\n# 11. V1 Acceptance / Closure Criteria\n\nBTE V1 được xem là đóng khi:\n\n- User tạo được request.\n    \n- Hệ thống cấp Trip Number.\n    \n- HCQT nhận và xử lý request.\n    \n- Booking được lưu.\n    \n- Request được approve.\n    \n- Trip được tạo.\n    \n- Traveler khai được expense.\n    \n- Chứng từ PDF được upload.\n    \n- HCQT review được expense.\n    \n- Reopen hoạt động đúng.\n    \n- Accountant xử lý được Payment.\n    \n- Export Word/Excel đúng.\n    \n- Hybrid VND/USD đúng.\n    \n- Role hoạt động đúng.\n    \n- Dashboard hiển thị đúng dữ liệu.\n    \n- Không còn Severity 1 / Blocker defect.\n    \n- Key users ký xác nhận UAT.\n    \n\n---\n\n# 12. Scope Freeze sau V1\n\nSau Release Closure:\n\n### V1.0.x\n\nChỉ xử lý:\n\n- Production bug.\n    \n- Security issue.\n    \n- Incorrect calculation.\n    \n- Data integrity.\n    \n- Critical usability issue.\n    \n\n### V1.1+\n\nCác yêu cầu enhancement mới sẽ được đưa vào backlog, estimate và approve riêng.\n\nĐiều này giúp tránh tình trạng **V1 liên tục thay đổi và không có baseline chính thức**.\n\n---\n\n# 13. Phase tiếp theo: eOffice Integration\n\n## 13.1 Business Objective\n\nMục tiêu của integration là nối BTE với hệ thống eOffice để giảm bước tạo hồ sơ/phê duyệt thủ công giữa hai hệ thống.\n\nTarget flow:\n\n```\nsequenceDiagram\n    actor User\n    participant BTE\n    participant eOffice\n    participant Approver\n\n    User->>BTE: Submit Business Travel Request\n    BTE->>BTE: Validate & generate Trip No.\n    BTE->>eOffice: Create approval memo / submission\n    eOffice-->>BTE: Return eOffice reference ID\n    Approver->>eOffice: Review / Approve / Reject\n    eOffice-->>BTE: Send status update / webhook\n    BTE->>BTE: Update request status\n    BTE-->>User: Show latest approval status\n```\n\n## 13.2 Proposed Integration Scope\n\n### Outbound: BTE → eOffice\n\nBTE gửi tối thiểu:\n\n- Trip Number.\n    \n- Requester.\n    \n- Department.\n    \n- Travelers.\n    \n- Travel dates.\n    \n- Destination.\n    \n- Purpose.\n    \n- Estimated cost / advance information.\n    \n- Generated document.\n    \n- Supporting attachment where applicable.\n    \n\n### Inbound: eOffice → BTE\n\nBTE nhận:\n\n- eOffice Document ID.\n    \n- Current workflow status.\n    \n- Approval / rejection result.\n    \n- Timestamp.\n    \n- Approver information nếu API hỗ trợ.\n    \n- Reference URL hoặc document reference nếu được phép.\n    \n\n## 13.3 Integration Boundary\n\nBTE vẫn là:\n\n**Business Travel operational system / source of transaction detail.**\n\neOffice đóng vai trò:\n\n**Enterprise approval / electronic document workflow.**\n\nKhông nên duplicate toàn bộ business logic của BTE sang eOffice.\n\n---\n\n# 14. Hồ sơ đề xuất kinh phí eOffice Integration\n\n## Proposed Cost Structure\n\n|Cost Group|Nội dung|Estimate|\n|---|---|---|\n|API / integration service|Kết nối BTE ↔ eOffice|TBD|\n|eOffice vendor development|API/configuration phía eOffice nếu có|TBD|\n|BTE development|Connector, mapping, status handling|TBD|\n|Security / authentication|Token, service account, permission|TBD|\n|SIT|Integration testing|TBD|\n|UAT|Business testing|Internal|\n|Production deployment|Config + monitoring|TBD|\n|Contingency|Thay đổi API / workflow|TBD|\n\n**Total requested budget: TBD sau khi nhận technical quotation / API scope chính thức từ eOffice vendor.**\n\nKhông nên xin một con số tổng trước khi có:\n\n1. API specification.\n    \n2. Authentication method.\n    \n3. Create Memo API confirmation.\n    \n4. Status/Webhook capability.\n    \n5. Attachment limitation.\n    \n6. Vendor development charge.\n    \n7. Production/Sandbox availability.\n    \n\n---\n\n# 15. Information Required from eOffice Vendor\n\nTrước khi chốt kinh phí, cần yêu cầu vendor xác nhận:\n\n|#|Question|\n|---|---|\n|1|Có API tạo tờ trình/memo không?|\n|2|Có API upload attachment không?|\n|3|Có webhook khi trạng thái phê duyệt thay đổi không?|\n|4|Nếu không có webhook, có API query status không?|\n|5|Authentication sử dụng gì?|\n|6|Có sandbox/UAT environment không?|\n|7|Có API rate limit không?|\n|8|Có trả eOffice document ID không?|\n|9|Có URL/deep link mở trực tiếp hồ sơ không?|\n|10|Có lấy được approver/action history không?|\n|11|Có hỗ trợ callback retry không?|\n|12|Vendor tính phí integration như thế nào?|\n|13|Có phí license/API bổ sung không?|\n|14|SLA cho integration support là bao nhiêu?|\n\n---\n\n# 16. User Training V1\n\nTraining nên được xem là một deliverable của release, không chỉ là hoạt động hướng dẫn sử dụng.\n\n## Training Audience\n\n|Group|Training focus|\n|---|---|\n|End User / Traveler|Create Request, My Requests, Expenses|\n|HCQT Admin|Approval, booking, trip, expense review, reopen|\n|Accountant|Payment|\n|Super Admin / IT Support|User, role, troubleshooting|\n\n---\n\n# 17. Training Plan\n\n## Session 1 – End User\n\n**Duration:** 60–90 phút\n\nNội dung:\n\n1. Login.\n    \n2. Create Request.\n    \n3. Add traveler.\n    \n4. Travel Plan.\n    \n5. Advance / No Advance.\n    \n6. Submit.\n    \n7. Track status.\n    \n8. My Trips.\n    \n9. Declare Expenses.\n    \n10. Upload documents.\n    \n11. Modify expense.\n    \n12. Request Reopen.\n    \n\n### Hands-on scenario\n\nUser tự thực hiện:\n\n> Create → Submit → Trip → Expense.\n\n---\n\n## Session 2 – HCQT Admin\n\n**Duration:** 90–120 phút\n\nNội dung:\n\n1. Receive Request.\n    \n2. Review Request.\n    \n3. Flight Booking.\n    \n4. Hotel Booking.\n    \n5. Allowance / Cost Review.\n    \n6. Confirm / Approve.\n    \n7. Expense Review.\n    \n8. Modify.\n    \n9. Reopen.\n    \n10. User / Role handling.\n    \n11. Common exception cases.\n    \n\n---\n\n## Session 3 – Accounting / Super Admin\n\n**Duration:** 45–60 phút\n\nNội dung:\n\n- Payment queue.\n    \n- Paid status.\n    \n- Dashboard.\n    \n- Export.\n    \n- Cross-request visibility.\n    \n- Support escalation.\n    \n\n---\n\n# 18. Training Deliverables\n\nĐề xuất bộ hồ sơ training gồm:\n\n- User Manual V1.\n    \n- HCQT Admin Manual.\n    \n- Accounting Quick Guide.\n    \n- 1-page Quick Start.\n    \n- Common Error / FAQ.\n    \n- Training slide.\n    \n- Training attendance.\n    \n- UAT/Training feedback form.\n    \n- Support contact.\n    \n- Release Notes V1.0.0.\n    \n\n---\n\n# 19. Training Budget Proposal\n\n|Item|Basis|Budget|\n|---|---|---|\n|Training preparation|Manual + slide + scenario|TBD|\n|User training|Number of sessions × trainer cost|TBD|\n|Admin training|Dedicated admin session|TBD|\n|Training support|Go-live support|TBD|\n|Materials|Digital/printed if required|TBD|\n|Contingency|Additional department session|TBD|\n\nNếu training do team nội bộ thực hiện hoàn toàn, có thể trình phần này dưới dạng:\n\n**Internal implementation cost / man-day allocation**\n\nthay vì external vendor cost.\n\n---\n\n# 20. Rollout Proposal\n\nĐề xuất rollout theo 3 bước:\n\n### Step 1 – Key User\n\nHCQT + Accounting + một số user đại diện.\n\nMục tiêu:\n\n- Xác nhận process thực tế.\n    \n- Phát hiện production issue.\n    \n- Xác nhận master data.\n    \n\n### Step 2 – Controlled Rollout\n\nMở thêm một số phòng ban.\n\nTheo dõi:\n\n- Number of requests.\n    \n- Failed submissions.\n    \n- Returned requests.\n    \n- Expense issues.\n    \n- Support tickets.\n    \n\n### Step 3 – General Rollout\n\nMở cho toàn bộ user thuộc scope Business Travel.\n\n---\n\n# 21. Post-Go-Live KPI\n\n|KPI|Mục đích|\n|---|---|\n|% request tạo qua BTE|Adoption|\n|Request processing time|Process efficiency|\n|% request phải trả về sửa|Data/process quality|\n|% expense submitted on time|Compliance|\n|Number of support tickets|Usability/stability|\n|Number of calculation corrections|Rule accuracy|\n|Export failure rate|System reliability|\n|Integration success rate|eOffice phase|\n|Active users|Adoption|\n|Manual intervention count|Automation effectiveness|\n\nBaseline cần được thu thập trong những tuần đầu sau go-live trước khi đặt target chính thức.\n\n---\n\n# 22. Risks & Mitigation\n\n|Risk|Impact|Action|\n|---|---|---|\n|DB migration chưa hoàn chỉnh|High|Pre-release migration checklist|\n|Access Policy cấu hình sai|High|Role-by-role permission test|\n|Chưa có automated test|Medium|Regression checklist cho V1|\n|Auto-close phụ thuộc UI|Medium|Đưa server scheduler vào backlog|\n|User chưa quen workflow|Medium|Training + Quick Guide|\n|Master data sai|Medium|Assign business owner|\n|eOffice API thay đổi|High|API contract + versioning|\n|Không có webhook|Medium|Polling/reconciliation design|\n|Enhancement tiếp tục chen vào V1|Medium|Scope freeze sau V1|\n\n---\n\n# 23. Decision Required from Management\n\nĐề nghị management xác nhận 4 quyết định:\n\n### Decision 1 – Close V1\n\nCho phép đóng scope development của BTE V1 sau UAT và Release Gate.\n\n### Decision 2 – Controlled Go-Live\n\nCho phép triển khai theo nhóm key user trước khi rollout rộng.\n\n### Decision 3 – Training\n\nPhê duyệt tổ chức Training V1 cho:\n\n- BTE Users.\n    \n- HCQT.\n    \n- Accounting.\n    \n- System Admin.\n    \n\n### Decision 4 – eOffice Integration\n\nCho phép team:\n\n- Làm việc với eOffice vendor.\n    \n- Lấy API specification.\n    \n- Chốt solution design.\n    \n- Nhận quotation.\n    \n- Lập budget chính thức.\n    \n- Triển khai integration trong phase tiếp theo sau approval.\n    \n\n---\n\n# 24. Proposed Roadmap\n\n```\nflowchart LR\n    A[BTE V1<br/>Functional Development]\n    B[Release Gate]\n    C[UAT]\n    D[Training V1]\n    E[Controlled Go-Live]\n    F[V1 Closure]\n    G[eOffice Analysis]\n    H[Quotation & Budget Approval]\n    I[eOffice Integration]\n    J[V1.1 / Phase 2]\n\n    A --> B --> C --> D --> E --> F\n    F --> G --> H --> I --> J\n```\n\n---\n\n# 25. Management Summary\n\nBTE V1 đã chuyển từ một tập hợp các bước xử lý Business Travel thành một workflow có cấu trúc, có ownership, status, dữ liệu xuyên suốt và khả năng báo cáo.\n\n**V1 nên được đóng tại thời điểm này**, sau khi hoàn thành các Release Gate cuối cùng, thay vì tiếp tục bổ sung enhancement vào cùng baseline.\n\nTrọng tâm tiếp theo nên chuyển sang:\n\n1. Ổn định production.\n    \n2. Training và adoption.\n    \n3. Đo hiệu quả sử dụng.\n    \n4. Tích hợp eOffice.\n    \n5. Xử lý backlog V1.1 theo mức độ ưu tiên.\n    \n\n### Proposed management approval\n\n> **Approve BTE V1.0.0 for controlled production release subject to final migration, access-control and UAT verification.**\n> \n> **Approve preparation of the eOffice Integration proposal and quotation.**\n> \n> **Approve BTE V1 user training and controlled rollout plan.**\n\n---\n\n# 26. Release Statement\n\n**BTE V1.0.0 establishes the functional baseline for PPJ Business Travel Management.**\n\nTừ thời điểm ký closure:\n\n- V1 được xem là baseline chính thức.\n    \n- Bug sẽ xử lý theo maintenance V1.0.x.\n    \n- Enhancement chuyển sang backlog V1.1+.\n    \n- eOffice Integration được quản lý như một scope riêng, có estimate, budget và approval riêng.",
+			"styleAttributes":{},
+			"x":5840,
+			"y":740,
+			"width":940,
+			"height":19045
+		},
+		{
+			"id":"b6ca58d15c78644e",
+			"type":"text",
+			"text":"ban giam doc ",
+			"styleAttributes":{},
+			"x":4980,
+			"y":2720,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"47ab84e03a101a4c",
+			"type":"text",
+			"text":"COMPANY",
+			"styleAttributes":{},
+			"x":4620,
+			"y":2400,
+			"width":140,
+			"height":60
+		},
+		{
+			"id":"98ae4c86e8fafae9",
+			"type":"text",
+			"text":"DIVISION",
+			"styleAttributes":{},
+			"x":4860,
+			"y":2500,
+			"width":120,
+			"height":60
+		},
+		{
+			"id":"ba98582dd623b064",
+			"type":"text",
+			"text":"|Bước|Người thực hiện|User Action|System Response|Kết quả|\n|---|---|---|---|---|\n|**1. Tạo yêu cầu công tác**|Nhân viên / Phòng ban|Nhập traveler, thời gian, nơi đi/đến, purpose, travel plan, advance|Kiểm tra dữ liệu và lấy master data|Request Draft|\n|**2. Lập kế hoạch chuyến đi**|User + System|Khai hành trình từng traveler|Tính allowance, hotel limit và các định mức áp dụng|Estimated Trip Cost|\n|**3. Submit Request**|Nhân viên|Submit yêu cầu|Cấp mã `TRIP-YYYY-XXXX`, khóa baseline cần thiết|Submitted Request|\n|**4. Review Request**|HCQT / Approver|Kiểm tra traveler, itinerary, purpose, chi phí|Hiển thị toàn bộ request và định mức|Request được xác nhận hoặc trả lại|\n|**5. Booking & Cost Planning**|HCQT|Nhập vé, khách sạn, dịch vụ và giá booking|Auto-save, tổng hợp chi phí|Booking Plan|\n|**6. Approve / Confirm**|Approver|Approve hoặc yêu cầu chỉnh sửa|Cập nhật trạng thái|Approved Request|\n|**7. Tạo Trip**|System|Không cần nhập lại hồ sơ|Tạo Trip từ Request và dùng lại Trip No.|Active Trip|\n|**8. Thực hiện công tác**|Traveler|Thực hiện chuyến đi|Trip tiếp tục được theo dõi trong hệ thống|Trip in Progress|\n|**9. Khai Actual Expense**|Traveler|Khai khoản chi và upload chứng từ PDF|Gắn expense vào đúng Trip|Expense Submission|\n|**10. Expense Review**|HCQT|Kiểm tra expense và chứng từ|Accept / Modify / Reopen|Reviewed Expenses|\n|**11. Close Trip**|HCQT|Xác nhận hồ sơ hoàn tất|Đóng Trip|Closed Trip|\n|**12. Payment**|Accounting|Xử lý và xác nhận thanh toán|Cập nhật Paid|Settled Trip|\n|**13. Reporting**|HCQT / Management|Xem Dashboard / Export|Tổng hợp dữ liệu Word/Excel|Management Report|",
+			"styleAttributes":{},
+			"x":7040,
+			"y":2720,
+			"width":1120,
+			"height":740
+		},
+		{
+			"id":"92b4dcc2e1c24a1c",
+			"type":"text",
+			"text":"TESTING",
+			"styleAttributes":{},
+			"x":5300,
+			"y":2840,
+			"width":120,
+			"height":60
+		},
+		{
+			"id":"0ef426cc2a7ff276",
+			"type":"text",
+			"text":"DOCUMENTS UPLOADING -TRACKING",
+			"styleAttributes":{},
+			"x":4220,
+			"y":2900,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"7ba2543a5b248955",
+			"type":"text",
+			"text":"MOBILE APPLICATION",
+			"styleAttributes":{},
+			"x":4260,
+			"y":3100,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"3e80f640ad0c40f3",
+			"type":"text",
+			"text":"QA/QC - KY THUAT - PMC/PNC - SALES - CPD - FD+ ...",
+			"styleAttributes":{},
+			"x":4820,
+			"y":3060,
+			"width":200,
+			"height":120
+		},
+		{
+			"id":"cad304c1cd791447",
+			"type":"text",
+			"text":"HANOI\nDANANG\nHCM",
+			"styleAttributes":{},
+			"x":5540,
+			"y":3040,
+			"width":120,
+			"height":80
+		},
+		{
+			"id":"666d37b52fd177d9",
+			"type":"text",
+			"text":"TRINH BAY VOI PPJ HOME TEXTILES\nVE ERP: - **MUNG 10.10**\n- THEM VE SOI DET MAY \n- VE \n\t- GTAS MIXBALE\n\t- GTAS PRODUCTION + PLANNING:\n\t\t- SAN XUAT SOI -> *VAI (NHUOM)* -> MAY (MAY AO CHOANG TAM + MAY KHAN) \n\t\t- **NHA MAY VAI CHINH: NINH THUAN** ",
+			"styleAttributes":{},
+			"x":4960,
+			"y":3360,
+			"width":740,
+			"height":300,
+			"color":"2"
+		},
+		{
+			"id":"2ea1b50db2ea09a9",
+			"type":"text",
+			"text":"BUSINESS GROWTH: \n\t- IT DEPT -> ",
+			"styleAttributes":{},
+			"x":4360,
+			"y":3680,
+			"width":260,
+			"height":60
 		}
 	],
 	"edges":[
@@ -208,6 +329,42 @@
 			"toNode":"32c2da65f66891c3",
 			"toSide":"top",
 			"color":"5"
+		},
+		{
+			"id":"157ee91e65d11aaa",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"47ab84e03a101a4c",
+			"fromSide":"right",
+			"toNode":"98ae4c86e8fafae9",
+			"toSide":"left"
+		},
+		{
+			"id":"5c1cb050590cde0e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"92b4dcc2e1c24a1c",
+			"fromSide":"bottom",
+			"toNode":"3e80f640ad0c40f3",
+			"toSide":"top"
+		},
+		{
+			"id":"b9d81d716d6ab2c0",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0ef426cc2a7ff276",
+			"fromSide":"bottom",
+			"toNode":"7ba2543a5b248955",
+			"toSide":"top"
+		},
+		{
+			"id":"a000e25efcc5123b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"92b4dcc2e1c24a1c",
+			"fromSide":"bottom",
+			"toNode":"cad304c1cd791447",
+			"toSide":"top"
 		}
 	],
 	"metadata":{
