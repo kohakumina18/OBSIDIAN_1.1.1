@@ -6,4 +6,5 @@ After=network-online.target
 [Service]
 Type=oneshot
 WorkingDirectory=@@VAULT_ROOT@@
+TimeoutStartSec=20min
 ExecStart=@@PYTHON@@ @@VAULT_ROOT@@/scripts/sync_vault_git.py --quiet

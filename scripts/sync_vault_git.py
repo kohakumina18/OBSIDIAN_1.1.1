@@ -94,14 +94,23 @@ def log(level: str, message: str) -> None:
 
 # Runs git and returns (code, combined output) instead of raising, so one
 # failed git call can be logged with its stderr rather than killing the run.
+# Network calls (fetch / push) get a time limit: a stalled connection to GitHub would otherwise hang the run
+# forever, and systemd skips every later timer slot while the service is still "running".
+NETWORK_TIMEOUT_SECONDS = 300
+
+
 def git(*args: str) -> tuple[int, str]:
-    proc = subprocess.run(
-        [GIT, "-C", str(VAULT), *args],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT,
-        text=True,
-        errors="replace",
-    )
+    try:
+        proc = subprocess.run(
+            [GIT, "-C", str(VAULT), *args],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            errors="replace",
+            timeout=NETWORK_TIMEOUT_SECONDS if args and args[0] in ("fetch", "push") else None,
+        )
+    except subprocess.TimeoutExpired:
+        return 124, f"git {args[0]} timed out after {NETWORK_TIMEOUT_SECONDS}s (network or GitHub unreachable)"
     return proc.returncode, proc.stdout.strip()
 
 
