@@ -5,17 +5,17 @@ project_file: "PUR.Material.Allocation.v1.1.md"
 project_code: "PUR_MaterialAllocation_v1.1.0"
 department: "Purchasing"
 cluster: "Purchasing Workflow"
-phase: "UAT / PRE-GO-LIVE"
+phase: "DEVELOPMENT"
 technical_members: ["Uyen", "Khoa"]
 progress: "TBD"
-last_verified: "2026-09-18"
+last_verified: "2026-09-28"
 confidence: "Strong"
 canonical_code: "PUR_MaterialAllocation_v1.1.0"
 current_file: "PUR.Material.Allocation.v1.2.md"
 primary_domain: "Sourcing / Purchasing"
 primary_capability: "Purchasing transaction: allocation, validation, review"
 secondary_domains: "WFX, Inventory, Production"
-lifecycle: "Validation / Stabilization"
+lifecycle: "Development"
 current_gate: "Transaction reliability and exception control"
 status: "Active"
 current_outcome: "Validate controlled reallocation of surplus material across eligible OCs: Material Requirement -> Availability -> Allocation -> Validation -> WFX Transaction."
@@ -31,12 +31,26 @@ project_board: "03_Projects/PUR.Material.Allocation.v1.2/Project_Executive_Board
 task_folder: "03_Projects/PUR.Material.Allocation.v1.2/Tasks"
 documentation_status: "Workspace Created"
 dependencies: "None recorded"
-source_event: "PPJ-PORTFOLIO-SNAPSHOT-20260918"
+source_event: "PPJ-EXECUTIVE-CANVAS-SYNC-20260928_235837"
 known_blockers: "Partial-allocation correctness | Rollback and duplicate safety | WFX transaction consistency"
-delivery_stage: "UAT / PRE-GO-LIVE"
-stage_entered_date: "Needs Confirmation"
+delivery_stage: "DEVELOPMENT"
+stage_entered_date: "2026-09-28"
 delivery_stream: "INTERNAL DEVELOPMENT"
 ---
+
+<!-- PPJ_EXECUTIVE_DELIVERY_STAGE_START -->
+## Executive Delivery State
+
+| Field | Current |
+|---|---|
+| Delivery Stream | INTERNAL DEVELOPMENT |
+| Delivery Stage | DEVELOPMENT |
+| Detailed Lifecycle | Development |
+| Status | Active |
+| Current Gate | Transaction reliability and exception control |
+| Stage Entered | 2026-09-28 |
+| Last Verified | 2026-09-28 |
+<!-- PPJ_EXECUTIVE_DELIVERY_STAGE_END -->
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
 ## Current Portfolio State

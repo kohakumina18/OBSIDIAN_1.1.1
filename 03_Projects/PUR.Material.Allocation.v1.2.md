@@ -9,7 +9,7 @@ department: "Purchasing / Sourcing"
 object: "Inferred from filename"
 project_characteristic: "workflow automation"
 version: "v1.1"
-phase: "UAT / PRE-GO-LIVE"
+phase: "DEVELOPMENT"
 owner: "TBD"
 business_owner: "TBD"
 technical_owner: "TBD"
@@ -27,14 +27,28 @@ source_files: []
 canonical_code: "PUR_MaterialAllocation_v1.1.0"
 current_file: "PUR.Material.Allocation.v1.2.md"
 primary_domain: "Sourcing / Purchasing"
-lifecycle: "Validation / Stabilization"
+lifecycle: "Development"
 current_gate: "Transaction reliability and exception control"
-last_verified: "2026-09-18"
-source_event: "PPJ-PORTFOLIO-SNAPSHOT-20260918"
-delivery_stage: "UAT / PRE-GO-LIVE"
-stage_entered_date: "Needs Confirmation"
+last_verified: "2026-09-28"
+source_event: "PPJ-EXECUTIVE-CANVAS-SYNC-20260928_235837"
+delivery_stage: "DEVELOPMENT"
+stage_entered_date: "2026-09-28"
 delivery_stream: "INTERNAL DEVELOPMENT"
 ---
+
+<!-- PPJ_EXECUTIVE_DELIVERY_STAGE_START -->
+## Executive Delivery State
+
+| Field | Current |
+|---|---|
+| Delivery Stream | INTERNAL DEVELOPMENT |
+| Delivery Stage | DEVELOPMENT |
+| Detailed Lifecycle | Development |
+| Status | Active |
+| Current Gate | Transaction reliability and exception control |
+| Stage Entered | 2026-09-28 |
+| Last Verified | 2026-09-28 |
+<!-- PPJ_EXECUTIVE_DELIVERY_STAGE_END -->
 
 # Material Allocation
 

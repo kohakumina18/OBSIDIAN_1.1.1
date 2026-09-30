@@ -2,19 +2,34 @@
 type: "project_home"
 project: "PUR_MaterialAllocation_v1.1.0"
 source_project: "PUR.Material.Allocation.v1.2.md"
-source_event: "PPJ-PORTFOLIO-SNAPSHOT-20260918"
-last_verified: "2026-09-18"
+source_event: "PPJ-EXECUTIVE-CANVAS-SYNC-20260928_235837"
+last_verified: "2026-09-28"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
-lifecycle: "Validation / Stabilization"
+lifecycle: "Development"
 current_gate: "Transaction reliability and exception control"
 priority: "P7"
-delivery_stage: "UAT / PRE-GO-LIVE"
+delivery_stage: "DEVELOPMENT"
 status: "Active"
-stage_entered_date: "Needs Confirmation"
+stage_entered_date: "2026-09-28"
 delivery_stream: "INTERNAL DEVELOPMENT"
+phase: "DEVELOPMENT"
 ---
+
+<!-- PPJ_EXECUTIVE_DELIVERY_STAGE_START -->
+## Executive Delivery State
+
+| Field | Current |
+|---|---|
+| Delivery Stream | INTERNAL DEVELOPMENT |
+| Delivery Stage | DEVELOPMENT |
+| Detailed Lifecycle | Development |
+| Status | Active |
+| Current Gate | Transaction reliability and exception control |
+| Stage Entered | 2026-09-28 |
+| Last Verified | 2026-09-28 |
+<!-- PPJ_EXECUTIVE_DELIVERY_STAGE_END -->
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
 ## Current Portfolio State
