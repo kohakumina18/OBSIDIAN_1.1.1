@@ -104,6 +104,7 @@ retired - it is part of the normal sync commit, not a separate step.
 ## Open items
 
 - Device `obsidian-storage` (the former Syncthing peer of the Ubuntu machine) still has its own copy of `~/Documents`; retire that share there, and decide whether the LiveSync CouchDB server on the Ubuntu machine is still used by any device.
+- **NVAKHOA-THINKPAD-E14-GEN-7 syncs over HTTPS, not SSH** (since 2026-09-30). The "Sinnika Office" Wi-Fi silently drops the SSH protocol to GitHub (on port 22 and 443 alike - GitHub's banner arrives, but anything after the client's own `SSH-2.0-...` line is dropped), while HTTPS passes. Remote is `https://github.com/kohakumina18/OBSIDIAN_1.1.1.git`; credentials via GitHub CLI (`~/.local/bin/gh`, logged in as kohakumina18, `gh auth setup-git`). If a Windows machine is used on that network, it needs an HTTPS remote too (YOGHAAKU already has one).
 - **One-time recovery on each Windows machine (YOGHAAKU, HAKU)** - a machine stuck on an old conflict cannot pull the new GitHub-wins script by itself. In PowerShell, from the vault root (YOGHAAKU `D:\PPJ\syncing`; HAKU the USB vault):
 
   ```powershell
