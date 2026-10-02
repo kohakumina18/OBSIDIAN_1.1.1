@@ -645,17 +645,6 @@
 			"width":400,
 			"height":460
 		},
-		{"id":"31735c1ae669f5af","type":"file","file":"ADMIN_EXPENSE-RECAP-UAT-3.md","x":12300,"y":29500,"width":1420,"height":10097},
-		{
-			"id":"2f6c697f5437195f",
-			"type":"text",
-			"text":"21.9.2026\n   \n- FOLLOW UP GDI\n- ~~FOLLOW UP MATERIAL ALLOC~~\n- FOLLOW UP LOG.EXPENSE.INVOICES - DANANG + NHATRANG\n- FOLLOW UP ADMIN EXPENSE\n\t- meet up MONDAY AFTERNOON - ADMIN DEPT\n- FOLLOW UP AWB.OCR\n\t- UPDATE / COMMIT TO GITLAB\n- FOLLOW UP AWB.MAIL\n- FOLLOW UP FINANCE-AI: WORKSTREAM 2 \n\t- SET UP MEETING W MRS VIOLET - FABRIC OC\n- FOLLOW UP FINANCE-AI: WORKSTREAM 3\n\t- \n\n\n",
-			"styleAttributes":{},
-			"x":9540,
-			"y":31660,
-			"width":620,
-			"height":540
-		},
 		{
 			"id":"5d4e315a99a0aa7d",
 			"type":"text",
@@ -665,6 +654,28 @@
 			"y":46580,
 			"width":1200,
 			"height":5180
+		},
+		{"id":"31735c1ae669f5af","type":"file","file":"ADMIN_EXPENSE-RECAP-UAT-3.md","x":15760,"y":31000,"width":1420,"height":10097},
+		{
+			"id":"2f6c697f5437195f",
+			"type":"text",
+			"text":"21.9.2026\n   \n- FOLLOW UP GDI\n- ~~FOLLOW UP MATERIAL ALLOC~~\n- FOLLOW UP LOG.EXPENSE.INVOICES - DANANG + NHATRANG\n- FOLLOW UP ADMIN EXPENSE\n\t- meet up MONDAY AFTERNOON - ADMIN DEPT\n- FOLLOW UP AWB.OCR\n\t- UPDATE / COMMIT TO GITLAB\n- FOLLOW UP AWB.MAIL\n- FOLLOW UP FINANCE-AI: WORKSTREAM 2 \n\t- SET UP MEETING W MRS VIOLET - FABRIC OC\n- FOLLOW UP FINANCE-AI: WORKSTREAM 3\n\t- \n\n\n",
+			"styleAttributes":{},
+			"x":12800,
+			"y":39520,
+			"width":620,
+			"height":540
+		},
+		{
+			"id":"60e25d5e4a25d5e6",
+			"type":"text",
+			"text":"2.10\n- ~~SEND INVOICES TO MRS DUNG~~\n- FOLLOW UP GRN-SUIN\n- FOLLOW UP FIN AI - WORKSTREAM 2\n\t- check up DATA\n- FOLLOW UP FIN AI - WORKSTREAM 3\n- FOLLOW UP FIN AI - WORKSTREAM 4\n\t- CRAFT SURVEY\n- FOLLOW UP FIN AI - WORKSTREAM 5\n- FOLLOW UP MATERIAL ALLOCATION\n- FOLLOW UP GDI\n- FOLLOW UP AWB\n- FOLLOW UP ADMIN EXPENSES",
+			"styleAttributes":{},
+			"x":13520,
+			"y":42460,
+			"width":460,
+			"height":480,
+			"color":"2"
 		}
 	],
 	"edges":[
@@ -1179,6 +1190,15 @@
 			"fromNode":"9c3712fbb7d17026",
 			"fromSide":"bottom",
 			"toNode":"2f6c697f5437195f",
+			"toSide":"top"
+		},
+		{
+			"id":"9738c306a74d68ef",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"2f6c697f5437195f",
+			"fromSide":"bottom",
+			"toNode":"60e25d5e4a25d5e6",
 			"toSide":"top"
 		}
 	],
