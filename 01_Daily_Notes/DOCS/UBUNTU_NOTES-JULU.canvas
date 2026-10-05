@@ -701,11 +701,11 @@
 		{
 			"id":"fa46282f36e3f8d9",
 			"type":"text",
-			"text":"5.10.2026\n\n- ~~SEND INVOICES TO MRS DUNG~~\n- FOLLOW UP GRN-SUIN ---\n- FOLLOW UP FIN AI - WORKSTREAM 2\n\t- ~~check up DATA~~\n- FOLLOW UP FIN AI - WORKSTREAM 3\n- FOLLOW UP FIN AI - WORKSTREAM 4\n\t- ~~CRAFT SURVEY~~\n- FOLLOW UP FIN AI - WORKSTREAM 5\n- FOLLOW UP MATERIAL ALLOCATION\n\t- ~~set up meeting releasing again~~\n\t- TRAINING USAGE\n- FOLLOW UP GDI\n- ~~FOLLOW UP AWB~~\n- FOLLOW UP ADMIN EXPENSES\n- ~~ADD UP ZALOAOA~~\n- UPDATE RAVEMUS",
+			"text":"5.10.2026\n\n- ~~SEND INVOICES TO MRS DUNG~~\n- ~~FOLLOW UP GRN-SUIN ---~~\n- FOLLOW UP FIN AI - WORKSTREAM 2\n\t- ~~check up DATA~~\n- FOLLOW UP FIN AI - WORKSTREAM 3\n- FOLLOW UP FIN AI - WORKSTREAM 4\n\t- ~~CRAFT SURVEY~~\n- FOLLOW UP FIN AI - WORKSTREAM 5\n- FOLLOW UP MATERIAL ALLOCATION\n\t- ~~set up meeting releasing again~~\n\t- TRAINING USAGE\n- FOLLOW UP GDI\n- ~~FOLLOW UP AWB~~\n- ~~FOLLOW UP ADMIN EXPENSES~~\n- ~~ADD UP ZALOAOA~~\n- UPDATE RAVEMUS",
 			"styleAttributes":{},
-			"x":15140,
+			"x":15120,
 			"y":48080,
-			"width":420,
+			"width":440,
 			"height":560
 		},
 		{
