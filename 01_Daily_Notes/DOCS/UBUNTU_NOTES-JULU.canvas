@@ -667,17 +667,6 @@
 			"height":540
 		},
 		{
-			"id":"60e25d5e4a25d5e6",
-			"type":"text",
-			"text":"2.10\n- ~~SEND INVOICES TO MRS DUNG~~\n- FOLLOW UP GRN-SUIN\n- FOLLOW UP FIN AI - WORKSTREAM 2\n\t- check up DATA\n- FOLLOW UP FIN AI - WORKSTREAM 3\n- FOLLOW UP FIN AI - WORKSTREAM 4\n\t- CRAFT SURVEY\n- FOLLOW UP FIN AI - WORKSTREAM 5\n- FOLLOW UP MATERIAL ALLOCATION\n- FOLLOW UP GDI\n- FOLLOW UP AWB\n- FOLLOW UP ADMIN EXPENSES",
-			"styleAttributes":{},
-			"x":13520,
-			"y":42460,
-			"width":460,
-			"height":480,
-			"color":"2"
-		},
-		{
 			"id":"726360598c695163",
 			"type":"text",
 			"text":"Scheduled **PPJ Portfolio Weekly Update** for **every Friday afternoon at approximately 3:00 PM Vietnam time**.\n\nIt covers:\n\n- Goals and tangible outputs\n- Current status and latest confirmed progress\n- Milestone movement\n- Next actions\n- Risks, blockers, and dependencies\n- Decisions required from management\n- All active PPJ AI, automation, data, WFX/integration, and internal application projects\n\nIt will distinguish confirmed updates from proposals and gaps, without inventing progress or dates.\n\n**Refined prompt:** “Every Friday, prepare a concise, management-ready portfolio update covering all active PPJ projects under development, testing, or awaiting decisions. Include each project’s goal, outputs, current status, latest progress, milestone movement, next actions, risks, dependencies, and decisions required.”\n\n# PPJ AI, Automation & Digital Portfolio — Weekly Status\n\n**As of:** 2 October 2026  \n**Source freshness:** Portfolio register and delivery trackers through 28 September; Business Travel report through 30 September; Finance Fabric OC requirement work through 1 October. Projects without newer evidence are marked **No new confirmed update**.\n\n## 1. Executive summary\n\n- The strongest movement this week was in **Business Travel & Expense** and **Finance Fabric OC analysis**.\n- Business Travel has reached release-closure preparation with major workflow, bilingual, export, role, Hybrid-trip and expense-control functions implemented. Go-live still depends on database migration verification, access-policy testing and UAT sign-off.\n- Finance scope is now structured into five workstreams. Fabric OC analysis moved from workshop findings into a formal requirement questionnaire, but the OC lineage, thresholds, source fields and golden cases remain unresolved.\n- GDI Automation remains highly dependent on WFX APIs. The latest readable tracker shows **29 To Do and 16 In Progress**, with no items yet marked In Review or Done.\n- Most portfolio risk now comes from **business-rule approval, source-data ownership, APIs, access governance and deployment readiness**, rather than AI-model capability.\n- Several vendor initiatives are still at PoC, discovery or assessment stage. They need explicit business owners, KPIs, commercial boundaries and production-readiness gates before entering the delivery portfolio.\n\n## 2. Project status\n\n|Project / Workstream|Goal and tangible outputs|Current status|Latest progress and milestone movement|Next actions|Risks / blockers|Decision needed|Owner|Due date|\n|---|---|---|---|---|---|---|---|---|\n|**Finance WS1 — Finance Chatbot & Q&A**|Controlled Finance Q&A using approved reports, definitions and management data|Foundation reported complete; enhancement pending|**No new confirmed update.** No fresh evidence of user adoption, accuracy results or production release this week|Confirm supported question catalogue, access rules, answer evidence, feedback log and user test results|Data access, answer traceability and unclear production acceptance|Confirm whether WS1 is ready for controlled pilot or still requires data/knowledge work|Finance sponsor: Ms. Minh; program lead: Lê Hoàng Tuấn; AI/Data team|November 2026 remains the historical program target; reconfirm|\n|**Finance WS2–WS5 — Consolidated Reporting, OC Control and Factory Performance**|Consolidated Finance reporting; garment and Fabric OC performance; factory RCA; trusted factory reporting|Strategic active; requirements and rule definition|Fabric OC moved from workshop findings to a structured 20-question requirement questionnaire. WS4 and WS5 are now defined in the two-year scope. WS3 has started, but no fresh implementation evidence|Obtain 5–6 golden Fabric OC cases; confirm Open versus Closed logic, Weaving–Dyeing lineage, Consumption Variance source, thresholds, labor/OH mapping and factory master mapping|Missing source fields, unapproved rules, cross-system lineage, posting delays and business ownership|Approve workstream priority, Finance rule owners, threshold-calibration method and data owners|Finance, Data/DWH, AI/Automation; sponsor/lead as above|TBC by workstream|\n|**ADMIN_ExpenseManagement / Business Travel V1**|Request → approval → booking → advance → trip → expense → settlement, with exports and dashboards|Release preparation / UAT|Hybrid trips now separate VND/USD; traveler-specific routes, airport codes, automatic role sync and unified trip numbering implemented. Release report, new-process documentation, training preparation and eOffice budget proposal initiated|Verify all pending DB migrations; execute role/access UAT; confirm settlement rules; finalize training, support and release checklist|Pending DB migrations may cause 403 errors; no automated tests; auto-close currently UI-triggered; hidden menus do not replace access policies|Go-live approval; eOffice integration budget; training scope; UAT sign-off authority|HCQT/Admin, IT/Dev, Accounting, approvers|Release date not confirmed|\n|**PUR_GDIAutomation**|Create controlled GDI transactions while WFX remains the system of record|Active / WFX API development|API-first direction retained. Tracker evidence: 29 To Do, 16 In Progress, 0 In Review/Done|Freeze GET/POST API contract; run sandbox create/read/error tests; define idempotency, rollback, audit and UAT cases|Heavy WFX API dependency; transaction safety; unclear error/rollback behavior|Confirm WFX delivery commitment, API priority and UAT ownership|WFX API team, Purchasing, PPJ AI/Automation, Dev, Infra and QA|TBC|\n|**PUR_MaterialAllocation**|Unreserve surplus and reallocate materials under controlled eligibility rules|Active / first flow validated|Backlog v2.3 available; first allocation flow remains validated. **No newer execution update confirmed**|Close eligibility, partial allocation, conflict handling, duplicate prevention, rollback and UAT|Incorrect allocation, concurrent updates and incomplete WFX data|Approve allocation rules and transaction-control requirements|Purchasing/Material Planning, WFX, AI/Automation|TBC|\n|**MER_CostingAgenticPlatform + TD_TechnicalKnowledgePlatform**|Support costing through Sew, Wash, BOM/Consumption and technical knowledge with expert review|Enhancement and stabilization|Sew/Wash updates and initial knowledge sync were previously demonstrated. **No new confirmed update**|Benchmark against expert-approved cases; complete incremental sync, reconciliation, versioning and evidence traceability|Accuracy, inconsistent technical master data and unclear knowledge ownership|Approve acceptance metrics and accountable technical reviewers|Merchandising, Technical/IED, Costing experts, AI/Automation|TBC|\n|**WH_AWBExtraction**|Convert AWB images and DHL emails into validated shipment records|Active development|OCR and DHL email extraction are consolidated into one project. **No new confirmed update** after workflow and field normalization definition|Improve sender/recipient and weight-unit reliability; merge records by AWB; complete human-review workflow and operational UAT|Low accuracy on some address fields, glare, unit ambiguity and workflow ownership|Confirm minimum field-level accuracy and auto-confirm threshold|Warehouse/Logistics, AI/Automation|TBC|\n|**FIN_ExpenseInvoiceProcessing**|Shared expense-invoice intake, validation and WFX entry|UAT / pre-go-live|Separated from the regional Logistics invoice project. **No new confirmed update**|Complete exception ownership, UAT and production-readiness checklist|Rule exceptions and unclear operational ownership|Approve UAT exit criteria and support owner|Finance/Accounting, Dev/Automation|TBC|\n|**LOG_ExpenseInvoiceProcessing**|Regional expense-invoice automation for HCM, Da Nang, Nha Trang and Hanoi|Active regional rollout|Regional tax/additional-charge differences remain documented. **No new confirmed update**|Resolve Hanoi double-entry, leading-zero rule and regional mappings; execute UAT|Region-specific rules and vendor/WFX validation behaviour|Approve final regional rule set|Logistics/Import-Export, Accounting, Automation, WFX|TBC|\n|**ACC_GRNSupplierInvoiceBot + FIN_InvoiceDownloader**|Automate GRN/invoice processing and retrieve VNPT invoice files|Production support / monitoring|Both remain operational. **No new confirmed update**|Monitor exceptions, session expiry, VNPT protection changes and WFX process changes|External-session changes and silent transaction errors|Confirm operational SLA and exception owner|Accounting/AP, IT/Automation|Ongoing|\n|**Sourcing Chatbot + Purchasing Inventory Report**|Supplier/material knowledge retrieval and stock visibility|Production / data-quality improvement|**No new confirmed update**|Clean supplier/material masters; review failed questions; improve retrieval; maintain inventory DQ|Weak master data and unmeasured adoption|Confirm data owner and production KPIs|Sourcing, Purchasing, Data, AI/Automation|Ongoing|\n|**MER_InvoiceDataRecheck + Market Intelligence**|Multi-customer invoice audit and upstream market/customer opportunity analysis|Active|Recheck scope expanded beyond Chico’s; Market Intelligence remains an upstream capability. **No fresh weekly update**|Build reusable audit engine and customer rule packs; confirm intelligence sources, outputs and feedback loop|Scope growth, customer-specific rules and unclear success metrics|Prioritize customer rollout and approve source set|Merchandising, Sales/Commercial, AI/Data|TBC|\n|**Production IoT / Hanging Line + Wash Sampling**|Production visibility and structured sampling workflow|Development / analysis|**No new confirmed update**|Confirm data frequency, integration, operational KPIs and Wash Sampling MVP|Batch data may prevent near-real-time use; source fields and owner unclear|Select measurable pilot use cases and business owners|Production, Wash, IT/AI, WISER/INA stakeholders|TBC|\n|**PERRI, AI Hub, GLPI Helpdesk, HR Data and Datamarts**|Shared AI services, governed knowledge, employee data and reusable data foundations|Production, internal platform or maintenance|Platforms remain operational. **No new confirmed feature or adoption update**|Track adoption, failed queries, access logs, DQ, ownership and downstream consumers|Governance fragmentation and weak service metrics|Approve platform KPIs, ownership and access model|AI/Automation, IT, HR and domain data owners|Ongoing|\n|**Stratova Pattern Generation PoC**|Test AI-assisted pattern generation against approved technical cases|Active PoC / scope and data definition|Commercial and success-criteria questions remain open|Freeze test set, tolerance, POE, token costs, DAF handling, responsibility clauses and human acceptance|USD 10,000 exposure if DAF fails; vague “blocked for any reason” clause; unclear token inclusion|Approve commercial boundary and measurable acceptance criteria before proceeding|Technical/Pattern/CPD, AI/Automation, Procurement/Legal|Before PoC commitment|\n|**Emerging pilots: Faceworks, Quansolution, QuanRobotics, Wizcore, NUNOX, Primo1D and UIT collaboration**|Evaluate selected maintenance, predictability, robotics, Smart Factory, scanning, RFID and academic opportunities|Pilot / discovery / assessment|**No new confirmed update** beyond the existing discovery and due-diligence stages|Assign owners, define one measurable use case per initiative, confirm data/security/IP/SLA and stop/go criteria|Too many parallel initiatives; unclear production path and resource dilution|Decide which initiatives enter the formal delivery portfolio|Management, relevant business owners, IT/AI, Procurement/Legal|Quansolution working session previously targeted for 12–22 October; others TBC|\n\n## 3. Cross-project dependencies and resource conflicts\n\n|Dependency|Affected projects|Management implication|\n|---|---|---|\n|WFX APIs and transaction controls|GDI, Material Allocation, invoice automation|WFX API capacity is a shared delivery bottleneck|\n|Finance and operational source-field ownership|Finance WS2–WS5, Costing, HR/factory analysis|Business owners must confirm definitions before Data/AI can finalize rules|\n|DWH/Databricks access and reconciliation|Finance, Market Intelligence, dashboards|Analytics cannot be accepted without lineage and reconciliation|\n|Role and access governance|Business Travel, PERRI, AI Hub, GLPI|Access design and audit logging need one common governance approach|\n|Technical experts and golden cases|Costing, Stratova, AWB, Finance OC|The same expert-review capacity is required across several high-priority projects|\n|BA, QA and UAT capacity|Business Travel, GDI, Allocation, invoices|Parallel UAT cycles may exceed available business-user and QA capacity|\n\n## 4. Milestone movement\n\n**Moved forward**\n\n- Finance Fabric OC: workshop output progressed into structured requirement collection.\n- Finance portfolio: WS4 and WS5 are now explicitly included in the long-term program.\n- Business Travel: core V1 functionality and release documentation materially advanced.\n- Business Travel: Hybrid currency handling, trip numbering, airport-code management and role synchronization were implemented.\n\n**At risk**\n\n- Business Travel go-live due to unverified migrations, access policies and manual testing.\n- GDI due to unfinished WFX API and transaction-control requirements.\n- Finance OC analysis due to unresolved lineage, fields, thresholds and golden cases.\n- Stratova due to commercial and acceptance-criteria ambiguity.\n- AWB operational rollout due to field-level accuracy and weight-unit handling.\n\n**No new confirmed movement**\n\n- Costing and Technical Knowledge stabilization.\n- Material Allocation after first-flow validation.\n- Sourcing Chatbot, Market Intelligence, Production IoT, Wash Sampling and shared AI platforms.\n- Regional Expense Invoice, GRN bot and Invoice Downloader beyond support/monitoring.\n\n## 5. Top five actions for next week\n\n1. **Finance + Data:** close the Fabric OC questionnaire, select 5–6 golden cases and document unresolved source fields and lineage rules.\n2. **Admin + IT + Accounting:** run the Business Travel release gate covering migrations, role/access tests, settlement rules, eOffice evidence and training readiness.\n3. **WFX + PPJ:** freeze the GDI API contract and schedule sandbox transaction scenarios with named UAT owners.\n4. **Technical experts + AI team:** define measurable acceptance datasets for Costing, Stratova and AWB instead of continuing open-ended refinement.\n5. **Management:** reduce vendor/discovery concurrency by selecting the initiatives that have a confirmed owner, KPI, data source and production path.\n\n## 6. Decisions required\n\n|Priority|Decision|Why it is needed now|\n|---|---|---|\n|**P0**|Approve the Business Travel V1 release gate, UAT authority, eOffice budget and training scope|The product has reached release preparation, but technical and governance checks remain open|\n|**P0**|Confirm Finance WS1–WS5 priority and named business/data owners|The expanded program risks progressing without approved rules and accountable source owners|\n|**P0**|Escalate and prioritize WFX API delivery for GDI|GDI cannot safely enter UAT without stable GET/POST contracts and rollback controls|\n|**P1**|Approve Finance OC calibration and golden-case method|Thresholds should be validated against real cases before automation|\n|**P1**|Accept, renegotiate or pause Stratova commercial terms|Cost responsibility and success criteria remain unclear|\n|**P1**|Select the vendor pilots that should enter formal delivery|Parallel discoveries are competing for the same BA, data, technical and management capacity|\n\n**Refined prompt:** “Prepare a concise weekly management report covering every active PPJ AI, automation, data, ERP-integration and internal-application project. Show confirmed progress, milestone movement, next actions, dependencies, risks and decisions required, while clearly marking stale information and unresolved gaps.”",
@@ -685,7 +674,50 @@
 			"x":13240,
 			"y":43340,
 			"width":2240,
-			"height":6738
+			"height":4340
+		},
+		{
+			"id":"fa46282f36e3f8d9",
+			"type":"text",
+			"text":"5.10.2026\n\n- ~~SEND INVOICES TO MRS DUNG~~\n- FOLLOW UP GRN-SUIN ---\n- FOLLOW UP FIN AI - WORKSTREAM 2\n\t- ~~check up DATA~~\n- FOLLOW UP FIN AI - WORKSTREAM 3\n- FOLLOW UP FIN AI - WORKSTREAM 4\n\t- ~~CRAFT SURVEY~~\n- FOLLOW UP FIN AI - WORKSTREAM 5\n- FOLLOW UP MATERIAL ALLOCATION\n\t- set up meeting releasing again\n- FOLLOW UP GDI\n- ~~FOLLOW UP AWB~~\n- FOLLOW UP ADMIN EXPENSES",
+			"styleAttributes":{},
+			"x":15060,
+			"y":48160,
+			"width":420,
+			"height":500
+		},
+		{
+			"id":"60e25d5e4a25d5e6",
+			"type":"text",
+			"text":"2.10\n- ~~SEND INVOICES TO MRS DUNG~~\n- FOLLOW UP GRN-SUIN\n- FOLLOW UP FIN AI - WORKSTREAM 2\n\t- check up DATA\n- FOLLOW UP FIN AI - WORKSTREAM 3\n- FOLLOW UP FIN AI - WORKSTREAM 4\n\t- CRAFT SURVEY\n- FOLLOW UP FIN AI - WORKSTREAM 5\n- FOLLOW UP MATERIAL ALLOCATION\n- FOLLOW UP GDI\n- FOLLOW UP AWB\n- FOLLOW UP ADMIN EXPENSES",
+			"styleAttributes":{},
+			"x":13640,
+			"y":42040,
+			"width":460,
+			"height":480,
+			"color":"2"
+		},
+		{
+			"id":"255d87ec9ce9299c",
+			"type":"text",
+			"text":"- TÁCH PROFILE -> TÁCH SESS -> MODULARIZE INFO CỦA 1 SESSION -> LUÔN KILL SESSION -> OPTIMIZE TRANSACTION CREATION",
+			"styleAttributes":{},
+			"x":15880,
+			"y":48015,
+			"width":200,
+			"height":290,
+			"color":"3"
+		},
+		{
+			"id":"f405401a188f9b47",
+			"type":"text",
+			"text":"ENV - PẨM : TÁCH RA THEO MOL \n-> LUÔN TÁCH MỖI RUN 1 SESSION RIÊNG BIỆT",
+			"styleAttributes":{},
+			"x":16380,
+			"y":47880,
+			"width":200,
+			"height":135,
+			"color":"1"
 		}
 	],
 	"edges":[
@@ -1197,6 +1229,7 @@
 			"id":"02c4626b1d44196e",
 			"styleAttributes":{},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"9c3712fbb7d17026",
 			"fromSide":"bottom",
 			"toNode":"2f6c697f5437195f",
@@ -1219,6 +1252,34 @@
 			"fromSide":"bottom",
 			"toNode":"726360598c695163",
 			"toSide":"top"
+		},
+		{
+			"id":"ec1e1115c716e14d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"726360598c695163",
+			"fromSide":"bottom",
+			"toNode":"fa46282f36e3f8d9",
+			"toSide":"top"
+		},
+		{
+			"id":"590a75f28dfeff8e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"fa46282f36e3f8d9",
+			"fromSide":"right",
+			"toNode":"255d87ec9ce9299c",
+			"toSide":"left"
+		},
+		{
+			"id":"57286b5c1710d203",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f405401a188f9b47",
+			"fromSide":"left",
+			"toNode":"255d87ec9ce9299c",
+			"toSide":"right",
+			"color":"1"
 		}
 	],
 	"metadata":{
