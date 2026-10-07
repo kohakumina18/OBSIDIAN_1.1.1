@@ -101,6 +101,16 @@
 			"y":8280,
 			"width":1080,
 			"height":60
+		},
+		{
+			"id":"0d8d85a7612b2928",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":-2740,
+			"y":13520,
+			"width":260,
+			"height":60
 		}
 	],
 	"edges":[
