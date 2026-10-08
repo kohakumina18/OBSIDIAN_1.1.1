@@ -111,6 +111,16 @@
 			"y":13520,
 			"width":260,
 			"height":60
+		},
+		{
+			"id":"2b5571d50188bffd",
+			"type":"text",
+			"text":"- DỰ BÁO SẢN LƯỢNG --- \n\t- AS-IS: VIA POWER BI AS COLLECTIVE SPACE FOR DATA - TIME SERIES ANAlYSIS -> MACHINE LEARNING + DEEP LEARNING  \n\t\t\t- *CHALL: NOT ENOUGH RESOURCES / CANNOT CAPTURE ENOUGH DIMENSION + FEATURES ENGINEERING - TO RUN TRAINING AND ANALYSIS *\n\t  - INPUT:\n\t  - OUTPUT:\n\t  - METHOD: \n\t\t  - DESCRIPTIVE\n\t\t  - FORECASTING",
+			"styleAttributes":{},
+			"x":-700,
+			"y":36040,
+			"width":760,
+			"height":320
 		}
 	],
 	"edges":[
@@ -139,6 +149,15 @@
 			"fromNode":"aaefa746a017e731",
 			"fromSide":"bottom",
 			"toNode":"7e6fdfcdf04dc2bc",
+			"toSide":"top"
+		},
+		{
+			"id":"f0191e786c374b77",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"dc4889bc6793d5e1",
+			"fromSide":"bottom",
+			"toNode":"2b5571d50188bffd",
 			"toSide":"top"
 		}
 	],
