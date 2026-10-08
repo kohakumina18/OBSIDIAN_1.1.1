@@ -688,17 +688,6 @@
 			"height":4340
 		},
 		{
-			"id":"255d87ec9ce9299c",
-			"type":"text",
-			"text":"- TÁCH PROFILE -> TÁCH SESS -> MODULARIZE INFO CỦA 1 SESSION -> LUÔN KILL SESSION -> OPTIMIZE TRANSACTION CREATION",
-			"styleAttributes":{},
-			"x":15760,
-			"y":47850,
-			"width":200,
-			"height":290,
-			"color":"3"
-		},
-		{
 			"id":"fa46282f36e3f8d9",
 			"type":"text",
 			"text":"5.10.2026\n\n- ~~SEND INVOICES TO MRS DUNG~~\n- ~~FOLLOW UP GRN-SUIN ---~~\n- FOLLOW UP FIN AI - WORKSTREAM 2\n\t- ~~check up DATA~~\n- FOLLOW UP FIN AI - WORKSTREAM 3\n- FOLLOW UP FIN AI - WORKSTREAM 4\n\t- ~~CRAFT SURVEY~~\n- FOLLOW UP FIN AI - WORKSTREAM 5\n- FOLLOW UP MATERIAL ALLOCATION\n\t- ~~set up meeting releasing again~~\n\t- TRAINING USAGE\n- FOLLOW UP GDI\n- ~~FOLLOW UP AWB~~\n- ~~FOLLOW UP ADMIN EXPENSES~~\n- ~~ADD UP ZALOAOA~~\n- UPDATE RAVEMUS",
@@ -713,11 +702,22 @@
 			"type":"text",
 			"text":"ENV - PẨM : TÁCH RA THEO MOL \n-> LUÔN TÁCH MỖI RUN 1 SESSION RIÊNG BIỆT",
 			"styleAttributes":{},
-			"x":16040,
+			"x":16100,
 			"y":48160,
 			"width":200,
 			"height":135,
 			"color":"1"
+		},
+		{
+			"id":"255d87ec9ce9299c",
+			"type":"text",
+			"text":"- TÁCH PROFILE -> TÁCH SESS -> MODULARIZE INFO CỦA 1 SESSION -> LUÔN KILL SESSION -> OPTIMIZE TRANSACTION CREATION",
+			"styleAttributes":{},
+			"x":15760,
+			"y":47920,
+			"width":200,
+			"height":290,
+			"color":"3"
 		}
 	],
 	"edges":[
