@@ -727,7 +727,8 @@
 			"x":15970,
 			"y":48640,
 			"width":710,
-			"height":260
+			"height":260,
+			"color":"3"
 		},
 		{
 			"id":"f14f1cad05f4e636",
@@ -1438,7 +1439,8 @@
 			"fromNode":"d5fce89bf7e0dfa7",
 			"fromSide":"right",
 			"toNode":"f14f1cad05f4e636",
-			"toSide":"left"
+			"toSide":"left",
+			"color":"3"
 		},
 		{
 			"id":"2e6e72ad87e0e200",
