@@ -55,8 +55,7 @@ The main goal of this Obsidian system is:
 
 ```text
 Meeting / request / issue
-→ structured note
-→ linked project
+  → linked project
 → canvas task
 → phase tracking
 → weekly report

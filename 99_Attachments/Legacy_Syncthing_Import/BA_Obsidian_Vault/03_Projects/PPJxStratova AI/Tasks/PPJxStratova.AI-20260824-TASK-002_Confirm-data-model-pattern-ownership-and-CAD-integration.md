@@ -1,3 +1,4 @@
+
 ---
 type: project_task
 project: "PPJxStratova.AI"
