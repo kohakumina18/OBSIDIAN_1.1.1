@@ -196,9 +196,9 @@
 			"height":80
 		},
 		{"id":"2c67a9f90ef0c118","type":"file","file":"Pasted image 20261010003417.png","x":9700,"y":37745,"width":400,"height":227},
-		{"id":"a93d353efdab7e12","type":"file","file":"Pasted image 20261010003401.png","x":9740,"y":37378,"width":400,"height":221},
-		{"id":"3763e054a41d9ac2","type":"file","file":"Pasted image 20261010003318.png","x":9700,"y":36964,"width":440,"height":246},
-		{"id":"b0bc53ab883232b2","type":"file","file":"Pasted image 20261010003511.png","x":10040,"y":38160,"width":400,"height":213},
+		{"id":"a93d353efdab7e12","type":"file","file":"Pasted image 20261010003401.png","x":9740,"y":37378,"width":399,"height":221},
+		{"id":"3763e054a41d9ac2","type":"file","file":"Pasted image 20261010003318.png","x":9700,"y":36964,"width":439,"height":246},
+		{"id":"b0bc53ab883232b2","type":"file","file":"Pasted image 20261010003511.png","x":10040,"y":38160,"width":399,"height":213},
 		{"id":"46a70c7ec7820dfd","type":"file","file":"Pasted image 20261010003428.png","x":10600,"y":37378,"width":400,"height":221},
 		{
 			"id":"9085e57cc740d4a8",
@@ -223,12 +223,13 @@
 		{
 			"id":"10b2e193db4bcbaf",
 			"type":"text",
-			"text":"12/10/2026\n- FOLLOW UP MATERIAL ALLOC\n- RECAP WORKSHOP PPH X PPJ \n- FOLLOW UP GDI \n- FOLLOW UP FIN AI - WK STREAM 2\n-  FOLLOW UP FIN AI - WK STREAM 3\n-  FOLLOW UP FIN AI - WK STREAM 4\n- FOLLOW UP GRN - SUP-IN \n- FOLLOW UP LOG.EXPENSE_INVOICE\n- FOLLOW UP PPJ.EXPENSE_INVOICE",
+			"text":"12/10/2026\n- FOLLOW UP MATERIAL ALLOC\n- RECAP WORKSHOP PPH X PPJ \n- ~~FOLLOW UP GDI~~ \n- FOLLOW UP FIN AI - WK STREAM 2\n-  FOLLOW UP FIN AI - WK STREAM 3\n-  FOLLOW UP FIN AI - WK STREAM 4\n- ~~FOLLOW UP GRN - SUP-IN~~ \n- ~~FOLLOW UP LOG.EXPENSE_INVOICE~~\n- ~~FOLLOW UP PPJ.EXPENSE_INVOICE~~\n- ~~WRAP UP DOCUMENTS~~ \n- SET UP EDITOR FOR MRS TRANG - ADMIN EXPENSES",
 			"styleAttributes":{},
 			"x":3080,
 			"y":53460,
-			"width":480,
-			"height":340
+			"width":520,
+			"height":460,
+			"color":"3"
 		}
 	],
 	"edges":[
