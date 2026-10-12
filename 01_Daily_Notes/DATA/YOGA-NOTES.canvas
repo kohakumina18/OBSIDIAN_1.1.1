@@ -219,6 +219,16 @@
 			"y":37280,
 			"width":1260,
 			"height":13742
+		},
+		{
+			"id":"10b2e193db4bcbaf",
+			"type":"text",
+			"text":"12/10/2026\n- FOLLOW UP MATERIAL ALLOC\n- RECAP WORKSHOP PPH X PPJ \n- FOLLOW UP GDI \n- FOLLOW UP FIN AI - WK STREAM 2\n-  FOLLOW UP FIN AI - WK STREAM 3\n-  FOLLOW UP FIN AI - WK STREAM 4\n- FOLLOW UP GRN - SUP-IN \n- FOLLOW UP LOG.EXPENSE_INVOICE\n- FOLLOW UP PPJ.EXPENSE_INVOICE",
+			"styleAttributes":{},
+			"x":3080,
+			"y":53460,
+			"width":480,
+			"height":340
 		}
 	],
 	"edges":[
@@ -409,6 +419,15 @@
 			"fromNode":"0d7c6f92c57f71ac",
 			"fromSide":"bottom",
 			"toNode":"fe76eb53197a2faf",
+			"toSide":"top"
+		},
+		{
+			"id":"145dcae6ff94bd2c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"1ad848a53d3e569c",
+			"fromSide":"bottom",
+			"toNode":"10b2e193db4bcbaf",
 			"toSide":"top"
 		}
 	],
