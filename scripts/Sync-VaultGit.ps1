@@ -387,6 +387,8 @@ try {
         if ($local -eq $remote) {
             Write-Log 'INFO' 'Already in sync - nothing to do.'
             if (Test-Path -LiteralPath $ConflictFile) { Remove-Item -LiteralPath $ConflictFile -Force }
+            $reloadNotice = Join-Path $VaultPath 'OBSIDIAN-RELOAD-NEEDED.md'
+            if (Test-Path -LiteralPath $reloadNotice) { Remove-Item -LiteralPath $reloadNotice -Force }
             Write-Log 'INFO' '=== Sync end (no-op) ==='
             exit 0
         }
@@ -442,6 +444,8 @@ $($merge.Text)
     }
 
     if (Test-Path -LiteralPath $ConflictFile) { Remove-Item -LiteralPath $ConflictFile -Force }
+    $reloadNotice = Join-Path $VaultPath 'OBSIDIAN-RELOAD-NEEDED.md'
+    if (Test-Path -LiteralPath $reloadNotice) { Remove-Item -LiteralPath $reloadNotice -Force }
     Write-Log 'INFO' '=== Sync end (OK) ==='
     exit 0
 }
