@@ -1,0 +1,239 @@
+{
+  "nodes": [
+    {
+      "id": "g-8e0cefab5875",
+      "type": "group",
+      "label": "04 TO-BE TARGET PROCESS",
+      "x": -120,
+      "y": -160,
+      "width": 3320,
+      "height": 2100,
+      "color": "4"
+    },
+    {
+      "id": "n-9793b0d71003",
+      "type": "text",
+      "text": "# 04 TO-BE Target Process\n\nProposed business process; actors, inputs, rules and exceptions require validation.\n\n**Status labels are part of the content; color is not the only status signal.**",
+      "x": 0,
+      "y": 0,
+      "width": 3000,
+      "height": 250,
+      "color": "4"
+    },
+    {
+      "id": "n-09d5a0f99d6f",
+      "type": "text",
+      "text": "## 01. SOP / Process\n\nActor / input / output / rule / exception: **TO VERIFY**\n\nStatus: **PROPOSED**",
+      "x": 50,
+      "y": 390,
+      "width": 520,
+      "height": 310,
+      "color": "4"
+    },
+    {
+      "id": "n-9d4b564bae00",
+      "type": "text",
+      "text": "## 02. JD / Responsibility\n\nActor / input / output / rule / exception: **TO VERIFY**\n\nStatus: **PROPOSED**",
+      "x": 670,
+      "y": 390,
+      "width": 520,
+      "height": 310,
+      "color": "4"
+    },
+    {
+      "id": "n-a40005dd8c4c",
+      "type": "text",
+      "text": "## 03. KPI Definition\n\nActor / input / output / rule / exception: **TO VERIFY**\n\nStatus: **PROPOSED**",
+      "x": 1290,
+      "y": 390,
+      "width": 520,
+      "height": 310,
+      "color": "4"
+    },
+    {
+      "id": "n-629496b52226",
+      "type": "text",
+      "text": "## 04. Work Assignment\n\nActor / input / output / rule / exception: **TO VERIFY**\n\nStatus: **PROPOSED**",
+      "x": 1910,
+      "y": 390,
+      "width": 520,
+      "height": 310,
+      "color": "4"
+    },
+    {
+      "id": "n-39e4a07e65c0",
+      "type": "text",
+      "text": "## 05. Task Execution\n\nActor / input / output / rule / exception: **TO VERIFY**\n\nStatus: **PROPOSED**",
+      "x": 2530,
+      "y": 390,
+      "width": 520,
+      "height": 310,
+      "color": "4"
+    },
+    {
+      "id": "n-0f7c84669b83",
+      "type": "text",
+      "text": "## 06. Evidence Validation\n\nActor / input / output / rule / exception: **TO VERIFY**\n\nStatus: **PROPOSED**",
+      "x": 50,
+      "y": 950,
+      "width": 520,
+      "height": 310,
+      "color": "4"
+    },
+    {
+      "id": "n-fd1e46d07493",
+      "type": "text",
+      "text": "## 07. KPI Measurement\n\nActor / input / output / rule / exception: **TO VERIFY**\n\nStatus: **PROPOSED**",
+      "x": 670,
+      "y": 950,
+      "width": 520,
+      "height": 310,
+      "color": "4"
+    },
+    {
+      "id": "n-520ab49d68b6",
+      "type": "text",
+      "text": "## 08. Performance Review\n\nActor / input / output / rule / exception: **TO VERIFY**\n\nStatus: **PROPOSED**",
+      "x": 1290,
+      "y": 950,
+      "width": 520,
+      "height": 310,
+      "color": "4"
+    },
+    {
+      "id": "n-51811aca431b",
+      "type": "text",
+      "text": "## 09. Organizational Roll-up\n\nActor / input / output / rule / exception: **TO VERIFY**\n\nStatus: **PROPOSED**",
+      "x": 1910,
+      "y": 950,
+      "width": 520,
+      "height": 310,
+      "color": "4"
+    },
+    {
+      "id": "n-892dc708d666",
+      "type": "text",
+      "text": "## 10. Management Reporting\n\nActor / input / output / rule / exception: **TO VERIFY**\n\nStatus: **PROPOSED**",
+      "x": 2530,
+      "y": 950,
+      "width": 520,
+      "height": 310,
+      "color": "4"
+    },
+    {
+      "id": "f-18c1feeaf390",
+      "type": "file",
+      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/06_TOBE_Target_Process.md",
+      "x": 50,
+      "y": 1500,
+      "width": 760,
+      "height": 150,
+      "color": "4"
+    },
+    {
+      "id": "f-fc8402a4d11a",
+      "type": "file",
+      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Business_Rule_Candidates.md",
+      "x": 910,
+      "y": 1500,
+      "width": 760,
+      "height": 150,
+      "color": "3"
+    },
+    {
+      "id": "f-6bc33bcd395e",
+      "type": "file",
+      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Decision_Log.md",
+      "x": 1770,
+      "y": 1500,
+      "width": 760,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "f-64fe8f9d34f3",
+      "type": "file",
+      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/BSC_KPI_Enterprise_Master_Mindmap_v1_0.canvas",
+      "x": 0,
+      "y": 1720,
+      "width": 850,
+      "height": 140,
+      "color": "5"
+    },
+    {
+      "id": "f-417165a0f21d",
+      "type": "file",
+      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/00_INDEX.md",
+      "x": 950,
+      "y": 1720,
+      "width": 850,
+      "height": 140,
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-ac702d075d41",
+      "fromNode": "n-09d5a0f99d6f",
+      "toNode": "n-9d4b564bae00",
+      "label": "proposed sequence",
+      "color": "4"
+    },
+    {
+      "id": "e-fe4f17939743",
+      "fromNode": "n-9d4b564bae00",
+      "toNode": "n-a40005dd8c4c",
+      "label": "proposed sequence",
+      "color": "4"
+    },
+    {
+      "id": "e-fa2c3340ae30",
+      "fromNode": "n-a40005dd8c4c",
+      "toNode": "n-629496b52226",
+      "label": "proposed sequence",
+      "color": "4"
+    },
+    {
+      "id": "e-4252f9028f32",
+      "fromNode": "n-629496b52226",
+      "toNode": "n-39e4a07e65c0",
+      "label": "proposed sequence",
+      "color": "4"
+    },
+    {
+      "id": "e-204edf6f25f7",
+      "fromNode": "n-39e4a07e65c0",
+      "toNode": "n-0f7c84669b83",
+      "label": "proposed sequence",
+      "color": "4"
+    },
+    {
+      "id": "e-f9da76c0a176",
+      "fromNode": "n-0f7c84669b83",
+      "toNode": "n-fd1e46d07493",
+      "label": "proposed sequence",
+      "color": "4"
+    },
+    {
+      "id": "e-95c70d4eacab",
+      "fromNode": "n-fd1e46d07493",
+      "toNode": "n-520ab49d68b6",
+      "label": "proposed sequence",
+      "color": "4"
+    },
+    {
+      "id": "e-b5a5817b71a1",
+      "fromNode": "n-520ab49d68b6",
+      "toNode": "n-51811aca431b",
+      "label": "proposed sequence",
+      "color": "4"
+    },
+    {
+      "id": "e-c08e78cecdbe",
+      "fromNode": "n-51811aca431b",
+      "toNode": "n-892dc708d666",
+      "label": "proposed sequence",
+      "color": "4"
+    }
+  ]
+}

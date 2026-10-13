@@ -1,0 +1,171 @@
+{
+  "nodes": [
+    {
+      "id": "g-9f74590638f3",
+      "type": "group",
+      "label": "06 PERFORMANCE HIERARCHY",
+      "x": -120,
+      "y": -160,
+      "width": 3320,
+      "height": 2100,
+      "color": "6"
+    },
+    {
+      "id": "n-494bdafb6b39",
+      "type": "text",
+      "text": "# 06 Performance Hierarchy\n\nProposed organizational roll-up model with responsibility and attribution controls.\n\n**Status labels are part of the content; color is not the only status signal.**",
+      "x": 0,
+      "y": 0,
+      "width": 3000,
+      "height": 250,
+      "color": "6"
+    },
+    {
+      "id": "n-1a458aad743d",
+      "type": "text",
+      "text": "## Member\nAssigned tasks and accepted work done\n\nOwnership / units / normalization: **TO VERIFY**",
+      "x": 220,
+      "y": 480,
+      "width": 400,
+      "height": 340,
+      "color": "6"
+    },
+    {
+      "id": "n-b5216f2705cb",
+      "type": "text",
+      "text": "## Team\nComparable workload, delivery and quality\n\nOwnership / units / normalization: **TO VERIFY**",
+      "x": 680,
+      "y": 480,
+      "width": 400,
+      "height": 340,
+      "color": "6"
+    },
+    {
+      "id": "n-ded7e4cb4f7e",
+      "type": "text",
+      "text": "## Department\nObjectives and team contribution\n\nOwnership / units / normalization: **TO VERIFY**",
+      "x": 1140,
+      "y": 480,
+      "width": 400,
+      "height": 340,
+      "color": "6"
+    },
+    {
+      "id": "n-dccf6520eb7e",
+      "type": "text",
+      "text": "## Division\nConsolidated department performance\n\nOwnership / units / normalization: **TO VERIFY**",
+      "x": 1600,
+      "y": 480,
+      "width": 400,
+      "height": 340,
+      "color": "6"
+    },
+    {
+      "id": "n-308ad23d7bb6",
+      "type": "text",
+      "text": "## Echelon / Corporate\nStrategic performance\n\nOwnership / units / normalization: **TO VERIFY**",
+      "x": 2060,
+      "y": 480,
+      "width": 400,
+      "height": 340,
+      "color": "6"
+    },
+    {
+      "id": "n-be86919c5999",
+      "type": "text",
+      "text": "### Keep separate\n\nWork Completion | Accepted Work Done | KPI Achievement | Competency Assessment\n\nDo not average incompatible percentages. Do not double count cross-functional work.",
+      "x": 400,
+      "y": 1020,
+      "width": 2200,
+      "height": 330,
+      "color": "1"
+    },
+    {
+      "id": "f-71c931846354",
+      "type": "file",
+      "file": "Pasted image 20261012154322.png",
+      "x": 2600,
+      "y": 420,
+      "width": 520,
+      "height": 900
+    },
+    {
+      "id": "f-49bfab4ea957",
+      "type": "file",
+      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/08_Performance_Hierarchy.md",
+      "x": 60,
+      "y": 1500,
+      "width": 850,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "f-6ee1c82f78ed",
+      "type": "file",
+      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Risk_Register.md",
+      "x": 1010,
+      "y": 1500,
+      "width": 850,
+      "height": 150,
+      "color": "1"
+    },
+    {
+      "id": "f-533a4a91e756",
+      "type": "file",
+      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/BSC_KPI_Enterprise_Master_Mindmap_v1_0.canvas",
+      "x": 0,
+      "y": 1720,
+      "width": 850,
+      "height": 140,
+      "color": "5"
+    },
+    {
+      "id": "f-4b002f28d713",
+      "type": "file",
+      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/00_INDEX.md",
+      "x": 950,
+      "y": 1720,
+      "width": 850,
+      "height": 140,
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-9d2d2e6169a2",
+      "fromNode": "n-1a458aad743d",
+      "toNode": "n-b5216f2705cb",
+      "label": "rolls up to",
+      "color": "6",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e-849e164f1d63",
+      "fromNode": "n-b5216f2705cb",
+      "toNode": "n-ded7e4cb4f7e",
+      "label": "rolls up to",
+      "color": "6",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e-a2fb80b818be",
+      "fromNode": "n-ded7e4cb4f7e",
+      "toNode": "n-dccf6520eb7e",
+      "label": "rolls up to",
+      "color": "6",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e-93d207c6dc91",
+      "fromNode": "n-dccf6520eb7e",
+      "toNode": "n-308ad23d7bb6",
+      "label": "rolls up to",
+      "color": "6",
+      "fromSide": "right",
+      "toSide": "left"
+    }
+  ]
+}

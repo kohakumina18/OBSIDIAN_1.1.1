@@ -1,0 +1,157 @@
+{
+  "nodes": [
+    {
+      "id": "g-74b131b3ebc2",
+      "type": "group",
+      "label": "09 DISCOVERY PLAN",
+      "x": -120,
+      "y": -160,
+      "width": 3320,
+      "height": 2100,
+      "color": "3"
+    },
+    {
+      "id": "n-edb708d71331",
+      "type": "text",
+      "text": "# 09 Discovery Plan\n\nSix work packages are PROPOSED / NOT APPROVED. Owners and dates remain unassigned until confirmed.\n\n**Status labels are part of the content; color is not the only status signal.**",
+      "x": 0,
+      "y": 0,
+      "width": 3000,
+      "height": 250,
+      "color": "3"
+    },
+    {
+      "id": "n-7787626466c1",
+      "type": "text",
+      "text": "## WP01 - TOP System Review\n\n**Evidence**\nScreens, configuration, modules, reports\n\n**Deliverable**\nAS-IS capability matrix\n\nOwner/date: **TO IDENTIFY**",
+      "x": 80,
+      "y": 380,
+      "width": 900,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n-a656345ab675",
+      "type": "text",
+      "text": "## WP02 - SOP / JD Review\n\n**Evidence**\nRepresentative controlled documents\n\n**Deliverable**\nResponsibility map\n\nOwner/date: **TO IDENTIFY**",
+      "x": 1090,
+      "y": 380,
+      "width": 900,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n-d7792fde74aa",
+      "type": "text",
+      "text": "## WP03 - KPI Definition Assessment\n\n**Evidence**\nCatalogue, formulas, sources, approvals\n\n**Deliverable**\nKPI gap report\n\nOwner/date: **TO IDENTIFY**",
+      "x": 2100,
+      "y": 380,
+      "width": 900,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n-63633e1898dc",
+      "type": "text",
+      "text": "## WP04 - Work Done & Data Discovery\n\n**Evidence**\nTask/evidence/source/history samples\n\n**Deliverable**\nMeasurement feasibility\n\nOwner/date: **TO IDENTIFY**",
+      "x": 80,
+      "y": 950,
+      "width": 900,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n-4103d4e1c89a",
+      "type": "text",
+      "text": "## WP05 - TO-BE Validation\n\n**Evidence**\nWorkshops and golden cases\n\n**Deliverable**\nValidated process/rules\n\nOwner/date: **TO IDENTIFY**",
+      "x": 1090,
+      "y": 950,
+      "width": 900,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n-3aff48699bd8",
+      "type": "text",
+      "text": "## WP06 - Solution Feasibility\n\n**Evidence**\nTOP/architecture/cost/security evidence\n\n**Deliverable**\nOption recommendation\n\nOwner/date: **TO IDENTIFY**",
+      "x": 2100,
+      "y": 950,
+      "width": 900,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "f-534f3848fb28",
+      "type": "file",
+      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/12_Discovery_and_Validation.md",
+      "x": 80,
+      "y": 1480,
+      "width": 860,
+      "height": 150,
+      "color": "3"
+    },
+    {
+      "id": "f-d3fcaf89624e",
+      "type": "file",
+      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Open_Question_Register.md",
+      "x": 1040,
+      "y": 1480,
+      "width": 860,
+      "height": 150,
+      "color": "2"
+    },
+    {
+      "id": "f-740681d8f6e8",
+      "type": "file",
+      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Stakeholder_Map.md",
+      "x": 2000,
+      "y": 1480,
+      "width": 860,
+      "height": 150,
+      "color": "5"
+    },
+    {
+      "id": "f-fae056eeece4",
+      "type": "file",
+      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/BSC_KPI_Enterprise_Master_Mindmap_v1_0.canvas",
+      "x": 0,
+      "y": 1720,
+      "width": 850,
+      "height": 140,
+      "color": "5"
+    },
+    {
+      "id": "f-d43e697e7dc8",
+      "type": "file",
+      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/00_INDEX.md",
+      "x": 950,
+      "y": 1720,
+      "width": 850,
+      "height": 140,
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-b8ba3d75b106",
+      "fromNode": "n-7787626466c1",
+      "toNode": "n-63633e1898dc",
+      "label": "informs",
+      "color": "3"
+    },
+    {
+      "id": "e-59e704f2e671",
+      "fromNode": "n-a656345ab675",
+      "toNode": "n-4103d4e1c89a",
+      "label": "informs",
+      "color": "3"
+    },
+    {
+      "id": "e-692a802f42b8",
+      "fromNode": "n-d7792fde74aa",
+      "toNode": "n-3aff48699bd8",
+      "label": "informs",
+      "color": "3"
+    }
+  ]
+}
