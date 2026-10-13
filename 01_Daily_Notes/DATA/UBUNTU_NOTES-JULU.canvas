@@ -869,6 +869,47 @@
 			"y":47340,
 			"width":260,
 			"height":60
+		},
+		{
+			"id":"af8273e1790b7f1b",
+			"type":"text",
+			"text":"ACTUAL:\n\ntotal material \nactual consumption \n",
+			"styleAttributes":{},
+			"x":16120,
+			"y":49210,
+			"width":260,
+			"height":180
+		},
+		{
+			"id":"989b62e7d08200bc",
+			"type":"text",
+			"text":"PLANNED:\n",
+			"styleAttributes":{},
+			"x":16800,
+			"y":49140,
+			"width":260,
+			"height":320
+		},
+		{
+			"id":"41519d1695be6d71",
+			"type":"text",
+			"text":"TOTAL MATERIAL COST VS PLANNED CONSUMPTION",
+			"styleAttributes":{},
+			"x":16160,
+			"y":49500,
+			"width":520,
+			"height":120
+		},
+		{
+			"id":"a081e05a25d099fd",
+			"type":"text",
+			"text":"Dạ, em xin phép tổng hợp và nhờ các chị xác nhận lại 2 nội dung liên quan đến nguồn dữ liệu và logic kiểm tra chi phí, hiệu quả OC như sau ạ:\n\n**1. Nguồn dữ liệu GRN – Overhead Report OC Wise**\n\n- Báo cáo **Overhead – OC Wise** thể hiện chi tiết các phiếu GRN theo từng OC, được phân chia theo từng công đoạn như Sewing, Packing,...\n    \n- Dữ liệu từ báo cáo này sẽ được sử dụng để đối chiếu, bổ sung các phiếu GRN phục vụ tổng hợp chi phí thực tế của OC.\n    \n\n**Trường hợp đối chiếu:** OC `SINVN/CAB/26/262.1`\n\n- Phiếu **GRN 901** đã tồn tại nhưng không xuất hiện khi thực hiện Run trên hệ thống.\n    \n- Theo trao đổi, khi lấy thêm dữ liệu từ **Overhead – OC Wise**, có thể tổng hợp đủ **3 phiếu GRN** liên quan đến OC, tương ứng với các công đoạn khác nhau.\n    \n\n→ Nhờ các chị xác nhận giúp em: Có đúng là cần kết hợp kết quả Run hiện tại với báo cáo Overhead – OC Wise để lấy đầy đủ các phiếu GRN theo từng OC/công đoạn, tránh bỏ sót chi phí không ạ?\n\n**2. Logic kiểm tra chi phí và hiệu quả OC**\n\n**a. Kiểm tra hằng ngày – Kiểm soát tiêu hao NPL**\n\n- So sánh **Total_Material_Cost** (chi phí NPL thực tế phát sinh) với **Planned_Consumption** (tiêu hao NPL theo kế hoạch).\n    \n- Mục tiêu: Phát hiện OC có mức tiêu hao vượt kế hoạch để cảnh báo và kiểm tra nguyên nhân.\n    \n\n**b. Kiểm tra cuối kỳ – Đánh giá hiệu quả OC**\n\n- So sánh **Actual Consumption** (giá trị chi phí NPL thực tế, tương ứng Total_Material_Cost tại thời điểm chốt kỳ) với **Costing của MER**.\n    \n- Quy đổi về cùng đơn giá và đơn vị tính để xác định chênh lệch giữa thực tế và costing ban đầu.\n    \n- Mục tiêu: Đánh giá hiệu quả thực tế của OC so với dự toán.\n    \n\n→ Nhờ các chị xác nhận giúp em **hai logic kiểm tra trên đã đúng với nghiệp vụ chưa**, đồng thời xác nhận các giá trị so sánh đã cùng đơn vị tính hay cần quy đổi thêm ạ.\n\nEm cảm ơn các chị. Sau khi được xác nhận, team em sẽ thống nhất nguồn dữ liệu và quy tắc kiểm tra để triển khai chính xác ạ.",
+			"styleAttributes":{},
+			"x":15200,
+			"y":49460,
+			"width":820,
+			"height":980,
+			"color":"5"
 		}
 	],
 	"edges":[
@@ -1548,6 +1589,24 @@
 			"fromNode":"7c897cfa62a61555",
 			"fromSide":"right",
 			"toNode":"24d03eb7f496cef2",
+			"toSide":"left"
+		},
+		{
+			"id":"d25cf5e96262c5cb",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"fa46282f36e3f8d9",
+			"fromSide":"bottom",
+			"toNode":"a081e05a25d099fd",
+			"toSide":"top"
+		},
+		{
+			"id":"dda2f431e9b0523f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"af8273e1790b7f1b",
+			"fromSide":"right",
+			"toNode":"989b62e7d08200bc",
 			"toSide":"left"
 		}
 	],
