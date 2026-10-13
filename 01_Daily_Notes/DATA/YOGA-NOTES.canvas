@@ -205,8 +205,8 @@
 			"type":"text",
 			"text":"12/10/2026\n- FOLLOW UP MATERIAL ALLOC\n- RECAP WORKSHOP PPH X PPJ \n- ~~FOLLOW UP GDI~~ \n- FOLLOW UP FIN AI - WK STREAM 2\n-  FOLLOW UP FIN AI - WK STREAM 3\n-  FOLLOW UP FIN AI - WK STREAM 4\n- ~~FOLLOW UP GRN - SUP-IN~~ \n- ~~FOLLOW UP LOG.EXPENSE_INVOICE~~\n- ~~FOLLOW UP PPJ.EXPENSE_INVOICE~~\n- ~~WRAP UP DOCUMENTS~~ \n- SET UP EDITOR FOR MRS TRANG - ADMIN EXPENSES",
 			"styleAttributes":{},
-			"x":-120,
-			"y":37320,
+			"x":640,
+			"y":37080,
 			"width":520,
 			"height":460,
 			"color":"3"
@@ -413,22 +413,13 @@
 			"toSide":"top"
 		},
 		{
-			"id":"ac9f14d076cfba39",
+			"id":"5bf11aef49216186",
 			"styleAttributes":{},
 			"toFloating":false,
 			"fromNode":"2b5571d50188bffd",
 			"fromSide":"bottom",
 			"toNode":"10b2e193db4bcbaf",
 			"toSide":"top"
-		},
-		{
-			"id":"02811f8edd2c9a08",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"10b2e193db4bcbaf",
-			"fromSide":"right",
-			"toNode":"926b7d21c6181ff7",
-			"toSide":"left"
 		}
 	],
 	"metadata":{

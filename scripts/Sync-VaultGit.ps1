@@ -15,12 +15,13 @@
     added/modified/deleted counts and total data volume touched - so `git log`
     alone answers "what changed and how much" without a separate `git show`.
 
-    GitHub wins conflicts (owner decision 2026-09-29 - a blocked machine stopped
-    syncing for days). On a merge conflict the script:
+    Conflict resolution: YOGHAAKU (primary device / source of truth) wins; all
+    other machines defer to GitHub (which reflects YOGHAAKU's last push).
+    On a merge conflict the script:
       1. saves this machine's version as branch sync-backup/<HOST>-<yyyyMMdd-HHmmss>
          and pushes that branch to GitHub, so nothing is lost for good;
-      2. merges again with GitHub's side taking every conflicting hunk
-         (-X theirs) and every edit/delete clash; local edits to other files
+      2. merges again with the winning side taking every conflicting hunk and
+         every edit/delete clash; local edits to other files
          are kept;
       3. if that merge still fails, or leaves a .canvas / .json file that no
          longer parses, resets the vault to GitHub's version outright
@@ -60,6 +61,9 @@ $LockFile     = Join-Path $VaultPath '.git\vault-sync.lock'
 $ConflictFile = Join-Path $VaultPath 'SYNC-CONFLICT-README.md'
 $BackupPrefix = 'sync-backup'
 $PushAttempts = 3
+# YOGHAAKU is the primary editing device; its local state wins merge conflicts.
+# Every other machine defers to GitHub (which reflects YOGHAAKU's last push).
+$LocalWins = $env:COMPUTERNAME -ieq 'YOGHAAKU'
 
 # Best-effort Windows toast so an unattended failure (fetch offline, push
 # rejected, conflict) is actually seen instead of sitting quietly in the log.
@@ -246,17 +250,23 @@ function Invoke-PPJGitHubWins {
     Write-Log 'WARN' "Merge conflict in $what. This machine's version is saved as branch $backup $where."
 
     $before = (Invoke-Git @('rev-parse', 'HEAD')).Text.Trim()
-    $merge = Invoke-Git @('merge', '--no-edit', '-X', 'theirs', "origin/$Branch")
+    $xStrategy = if ($LocalWins) { '-X', 'ours' } else { '-X', 'theirs' }
+    $merge = Invoke-Git @('merge', '--no-edit') + $xStrategy + @("origin/$Branch")
     $code = $merge.Code
     if ($code -ne 0) {
-        # -X theirs settles content conflicts only. For the rest (edited here, deleted on GitHub, or the reverse)
-        # take GitHub's side path by path, so local edits to other files still survive.
+        # -X ours/-X theirs settles content conflicts only. For edit/delete clashes,
+        # take the winning side path by path.
+        $checkoutSide = if ($LocalWins) { '--ours' } else { '--theirs' }
         $unmerged = (Invoke-Git @('diff', '--name-only', '--diff-filter=U')).Text
         foreach ($p in ($unmerged -split "`n" | Where-Object { $_.Trim() })) {
             $p = $p.Trim()
-            if ((Invoke-Git @('checkout', '--theirs', '--', $p)).Code -eq 0) {
+            if ((Invoke-Git @('checkout', $checkoutSide, '--', $p)).Code -eq 0) {
                 Invoke-Git @('add', '--', $p) | Out-Null
-            } else {                                  # no GitHub side: GitHub deleted it
+            } elseif ($LocalWins) {                  # no local side: file deleted locally, keep that deletion
+                Invoke-Git @('rm', '-q', '--cached', '--ignore-unmatch', '--', $p) | Out-Null
+                $full = Join-Path $VaultPath $p
+                if (Test-Path -LiteralPath $full) { Remove-Item -LiteralPath $full -Force -ErrorAction SilentlyContinue }
+            } else {                                  # no GitHub side: GitHub deleted it, honour that
                 Invoke-Git @('rm', '-q', '--cached', '--ignore-unmatch', '--', $p) | Out-Null
                 $full = Join-Path $VaultPath $p
                 if (Test-Path -LiteralPath $full) { Remove-Item -LiteralPath $full -Force -ErrorAction SilentlyContinue }
@@ -265,20 +275,22 @@ function Invoke-PPJGitHubWins {
         $code = (Invoke-Git @('commit', '--no-edit')).Code
     }
     $bad = if ($code -eq 0) { Get-PPJBrokenJson -Before $before } else { @() }
+    $winner = if ($LocalWins) { 'local' } else { 'GitHub' }
     if ($code -eq 0 -and $bad.Count -eq 0) {
-        $how = "GitHub's version kept for the conflicting parts; other local edits kept"
+        $how = "${winner}'s version kept for the conflicting parts; other changes merged"
     } else {
         if ($code -ne 0) { Invoke-Git @('merge', '--abort') | Out-Null }
-        $reset = Invoke-Git @('reset', '--hard', "origin/$Branch")
+        $resetTarget = if ($LocalWins) { 'HEAD' } else { "origin/$Branch" }
+        $reset = Invoke-Git @('reset', '--hard', $resetTarget)
         if ($reset.Code -ne 0) {
-            Write-Log 'ERROR' "Could not reset to origin/${Branch}: $($reset.Text)"
+            Write-Log 'ERROR' "Could not reset to ${resetTarget}: $($reset.Text)"
             return $false
         }
         $reason = if ($bad.Count) { "invalid JSON after merge: $($bad -join ', ')" } else { 'the merge could not complete' }
-        $how = "vault reset to GitHub's version ($reason)"
+        $how = "vault reset to ${winner}'s version ($reason)"
     }
-    Write-Log 'WARN' "GitHub wins: $how. Recover anything needed from branch $backup."
-    Show-PPJToast -Title "Vault sync on ${env:COMPUTERNAME}: GitHub version kept" -Message "$how. Your version is saved as branch $backup."
+    Write-Log 'WARN' "${winner} wins: $how. Recover anything needed from branch $backup."
+    Show-PPJToast -Title "Vault sync on ${env:COMPUTERNAME}: ${winner} version kept" -Message "$how. The other version is saved as branch $backup."
     return $true
 }
 
@@ -375,6 +387,8 @@ try {
         if ($local -eq $remote) {
             Write-Log 'INFO' 'Already in sync - nothing to do.'
             if (Test-Path -LiteralPath $ConflictFile) { Remove-Item -LiteralPath $ConflictFile -Force }
+            $reloadNotice = Join-Path $VaultPath 'OBSIDIAN-RELOAD-NEEDED.md'
+            if (Test-Path -LiteralPath $reloadNotice) { Remove-Item -LiteralPath $reloadNotice -Force }
             Write-Log 'INFO' '=== Sync end (no-op) ==='
             exit 0
         }
@@ -430,6 +444,8 @@ $($merge.Text)
     }
 
     if (Test-Path -LiteralPath $ConflictFile) { Remove-Item -LiteralPath $ConflictFile -Force }
+    $reloadNotice = Join-Path $VaultPath 'OBSIDIAN-RELOAD-NEEDED.md'
+    if (Test-Path -LiteralPath $reloadNotice) { Remove-Item -LiteralPath $reloadNotice -Force }
     Write-Log 'INFO' '=== Sync end (OK) ==='
     exit 0
 }
