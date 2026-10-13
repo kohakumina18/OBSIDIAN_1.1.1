@@ -90,7 +90,7 @@
 			"x":-2530,
 			"y":8640,
 			"width":3200,
-			"height":26040
+			"height":25360
 		},
 		{
 			"id":"7e6fdfcdf04dc2bc",
@@ -119,8 +119,8 @@
 			"styleAttributes":{},
 			"x":-700,
 			"y":36040,
-			"width":760,
-			"height":320
+			"width":820,
+			"height":360
 		},
 		{
 			"id":"a4f4ceb5c5f2a472",
@@ -215,8 +215,8 @@
 			"type":"text",
 			"text":"12/10/2026\n- FOLLOW UP MATERIAL ALLOC\n- RECAP WORKSHOP PPH X PPJ \n- ~~FOLLOW UP GDI~~ \n- FOLLOW UP FIN AI - WK STREAM 2\n-  FOLLOW UP FIN AI - WK STREAM 3\n-  FOLLOW UP FIN AI - WK STREAM 4\n- ~~FOLLOW UP GRN - SUP-IN~~ \n- ~~FOLLOW UP LOG.EXPENSE_INVOICE~~\n- ~~FOLLOW UP PPJ.EXPENSE_INVOICE~~\n- ~~WRAP UP DOCUMENTS~~ \n- SET UP EDITOR FOR MRS TRANG - ADMIN EXPENSES",
 			"styleAttributes":{},
-			"x":240,
-			"y":37280,
+			"x":200,
+			"y":37460,
 			"width":520,
 			"height":460,
 			"color":"3"
@@ -226,9 +226,9 @@
 			"type":"text",
 			"text":"# SEW AGENT V2 — BUSINESS REQUIREMENTS DISCOVERY\n\nMục tiêu: Khảo sát với phòng Công nghệ May / IE để đánh giá Version 1, xác định các nhu cầu phát triển Version 2 và thu thập đủ thông tin xây dựng BRD, Use Cases, Business Rules và UAT Test Cases.\n\nTheo tài liệu dự án trước đây, V1 đã tập trung vào việc nhận mô tả sản phẩm, bóc tách công đoạn may và chuẩn hóa danh sách công đoạn. Các hướng nâng cấp từng được đề cập gồm cải thiện SAM, machine mapping, historical style matching, expert review và kết nối GTAS/IED. Đây là những ứng viên khảo sát, chưa mặc định là phạm vi V2 được business phê duyệt.\n\nPasted markdown(10).md\n\nWORKSHOP PROPOSAL\n\n# 90 phút\n\nThời lượng đề xuất\n\n# 40\n\nCâu hỏi khảo sát\n\n# 5\n\nĐầu ra cần chốt\n\nThành phần: SEW/IE Experts, Costing/Merchandising Representative, BA, AI/Development Team và GTAS/IED Owner nếu có nội dung tích hợp.\n\n## 1. Questionnaire dùng trực tiếp trong meeting\n\nWorkshop checklist\n\nĐánh dấu khi đã có câu trả lời đủ rõ và có bằng chứng hoặc ví dụ cần thiết.\n\n0/41\n\nA (0/6)B (0/4)C (0/5)D (0/6)E (0/5)F (0/4)G (0/4)H (0/4)I (0/3)\n\nA. Đánh giá Version 1\n\n10 phút\n\nXác định điểm hiệu quả, vấn đề tồn đọng và những bước vẫn phải làm thủ công.\n\nA01\n\nWorkflow thực tế\n\nAnh/chị hiện sử dụng SEW Agent V1 để thực hiện những công việc cụ thể nào?\n\nA02\n\nKeep requirements\n\nNhững tính năng nào đang hoạt động tốt và cần giữ nguyên?\n\nA03\n\nIssues / defects\n\nKết quả nào của Agent hiện chưa chính xác, chưa đủ hoặc chưa sử dụng được? Cho ví dụ cụ thể.\n\nA04\n\nAutomation gaps\n\nSau khi Agent trả kết quả, anh/chị còn phải chỉnh sửa hoặc làm thủ công những bước gì?\n\nA05\n\nBaseline KPI\n\nThời gian thực hiện một case bằng Agent so với quy trình cũ là bao lâu?\n\nA06\n\nTop priorities\n\nNếu chỉ được cải thiện ba điểm trong V2, anh/chị sẽ chọn những điểm nào?\n\nTrướcTiếp theo\n\n## 2. Bắt buộc yêu cầu business demo trên case thực tế\n\nKhông nên chỉ hỏi về mong muốn tính năng. Phần quan trọng nhất là cho chuyên gia sử dụng V1 và chỉ ra chính xác họ cần V2 làm khác đi ở đâu.\n\nQuy trình xác minh một Golden Case\n\n1. Business cung cấp đầu vào thực tế\n\nDescription / Style / Techpack / Existing Process\n\n2. Chạy case trên SEW Agent V1\n\nGhi nhận output, thời gian và lỗi phát sinh\n\n3. Chuyên gia đối chiếu kết quả chuẩn\n\nĐúng / thiếu / thừa / sai thứ tự / sai thời gian\n\n4. BA ghi nhận yêu cầu V2\n\nExpected behavior + Business Rule + Acceptance Criteria\n\nĐề xuất xin tối thiểu 5 bộ test case:\n\n|Test case|Tình huống|\n|---|---|\n|TC01|Sản phẩm phổ biến, description đầy đủ|\n|TC02|Sản phẩm mới có historical style tương đồng|\n|TC03|Description thiếu hoặc chưa rõ yêu cầu kỹ thuật|\n|TC04|Sản phẩm có construction hoặc operation đặc biệt|\n|TC05|Khách hàng thay đổi specification/revision, cần cập nhật quy trình|\n\nMỗi case cần có Input thực tế + Expected Operation List do chuyên gia xác nhận + kết quả V1 + thay đổi mong muốn ở V2. Nếu V2 có SAM hoặc Costing, cần thêm kết quả chuẩn tương ứng.\n\n## 3. Biểu mẫu ghi nhận requirement ngay trong meeting\n\nRequirement ID\n\nPriorityMust Have\n\nCurrent problem / Pain point\n\nExpected system behavior\n\nBusiness rules / Exceptions\n\nRequired data / Source\n\nHuman review / Fallback\n\nBusiness owner\n\nAcceptance scenario\n\nCopy requirement\n\n## 4. Năm đầu ra phải chốt sau workshop\n\n|Deliverable|Nội dung cần có|\n|---|---|\n|01. V1 Gap & Feedback Log|Những gì hoạt động tốt, lỗi thực tế và bước thủ công còn tồn tại|\n|02. V2 Requirement Backlog|Tính năng mới, expected behavior, priority, business owner|\n|03. Business Rules & Exceptions|Cách xác định operation, similar style, SAM và cơ chế xử lý ngoại lệ theo scope đã chốt|\n|04. Input/Output & Data Requirements|Dữ liệu đầu vào, nguồn nghiệp vụ, đầu ra, điểm tích hợp và quyền xác nhận|\n|05. UAT & Acceptance Criteria|Golden Cases, expected results, KPI, điều kiện nghiệm thu và người duyệt|\n\nĐiểm cần kiểm soát: Không gộp lỗi của V1, cải thiện accuracy và tính năng mới vào cùng một nhóm. Những nội dung này cần được tách thành Defect, Enhancement và New Feature để dev có thể estimate và business có thể ưu tiên rõ ràng.\n\n## 5. Câu hỏi kết thúc buổi họp\n\n> “Nếu SEW Agent V2 chỉ giải quyết được một vấn đề lớn nhất cho phòng mình, anh/chị muốn đó là vấn đề gì? Và với một case thực tế, kết quả phải đạt mức nào để anh/chị có thể sử dụng Agent thay cho cách làm thủ công hiện nay?”\n\nCâu hỏi này giúp chốt giá trị nghiệp vụ của V2, tránh biến buổi khảo sát thành danh sách yêu cầu tính năng không có thứ tự ưu tiên.\n\nPrompt được tối ưu:\n\nĐóng vai Senior Business Analyst cho dự án SEW Agent tại PPJ Group. V1 đã hoàn thành; hãy xây dựng bộ questionnaire phục vụ workshop 90 phút với phòng Công nghệ May/IE để khảo sát V2. Tập trung vào phản hồi V1, workflow thực tế, yêu cầu chức năng mới, operation extraction, operation normalization, machine mapping, SAM, similar styles, expert review, tích hợp GTAS/IED, dữ liệu, ngoại lệ và tiêu chí nghiệm thu. Mỗi câu hỏi phải giúp hình thành requirement, business rule, use case, data requirement hoặc UAT test case. Phân biệt V1 defects, enhancements và new features. Cung cấp agenda, câu hỏi khảo sát, golden cases và biểu mẫu ghi nhận yêu cầu. Không mặc định các hướng nâng cấp đã được business phê duyệt.",
 			"styleAttributes":{},
-			"x":-1160,
-			"y":38940,
-			"width":1280,
+			"x":-1040,
+			"y":38920,
+			"width":1200,
 			"height":3688
 		}
 	],
