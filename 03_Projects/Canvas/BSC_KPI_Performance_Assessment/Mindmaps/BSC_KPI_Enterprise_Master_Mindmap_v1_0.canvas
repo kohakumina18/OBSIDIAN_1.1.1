@@ -19,12 +19,12 @@
 		{"id":"f-e17be3a26c3a","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/01_ASIS_Current_State.canvas","x":-2140,"y":-320,"width":780,"height":150,"color":"4"},
 		{"id":"n-399810b78a65","type":"text","text":"## E. TO-BE PROCESS\n\nSOP to reporting; proposed and unapproved\n\n**Open linked detail**","x":1960,"y":-1440,"width":780,"height":280,"color":"4"},
 		{"id":"f-a7e5fd999870","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/04_TOBE_Target_Process.canvas","x":1960,"y":-1120,"width":780,"height":150,"color":"4"},
-		{"id":"n-f9014a222138","type":"text","text":"## STATUS LEGEND\n\n**CONFIRMED** source/reference verified\n**REPORTED** supplied but not independently verified\n**TO VERIFY** discovery required\n**PROPOSED** BA design direction\n**NOT APPROVED** management/process-owner decision required","x":-450,"y":-820,"width":900,"height":520,"color":"3"},
 		{"id":"n-ab0ac2bce5fb","type":"text","text":"## C. PAIN POINTS\n\nPP-001 to PP-005 with impact and verification\n\n**Open linked detail**","x":-2140,"y":160,"width":780,"height":280,"color":"1"},
 		{"id":"f-78a76558f870","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/02_Pain_Points_Impact.canvas","x":-2140,"y":480,"width":780,"height":150,"color":"1"},
 		{"id":"n-64da1f32399e","type":"text","text":"## F. SOP / JD / KPI\n\nConceptual many-to-many responsibility model\n\n**Open linked detail**","x":1960,"y":-640,"width":780,"height":280,"color":"4"},
 		{"id":"f-729ef44c0b47","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/05_SOP_JD_KPI_Relationships.canvas","x":1960,"y":-320,"width":780,"height":150,"color":"4"},
 		{"id":"n-100da1c06883","type":"text","text":"## G. PERFORMANCE HIERARCHY\n\nMember to Echelon; contribution and roll-up\n\n**Open linked detail**","x":1960,"y":160,"width":780,"height":280,"color":"6"},
+		{"id":"f-8af55a1a129f","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/10_Requirements_Traceability.canvas","x":-450,"y":1020,"width":900,"height":240,"color":"6"},
 		{"id":"n-9b6e6421316e","type":"text","text":"## D. ROOT CAUSES\n\nPeople, Process, Data, System, Governance hypotheses\n\n**Open linked detail**","x":-2140,"y":960,"width":780,"height":280,"color":"2"},
 		{"id":"f-b25c236aa7b2","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/03_Root_Cause_Analysis.canvas","x":-2140,"y":1280,"width":780,"height":150,"color":"2"},
 		{"id":"f-192ac70f3613","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/06_Performance_Hierarchy.canvas","x":1960,"y":480,"width":780,"height":150,"color":"6"},
@@ -38,7 +38,7 @@
 		{"id":"f-742387227ff0","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/09_Discovery_Plan.canvas","x":560,"y":2280,"width":780,"height":150,"color":"3"},
 		{"id":"n-73fbd1230d85","type":"text","text":"## L. MANAGEMENT DECISIONS\n\nPending decisions and evidence gates\n\n**Open linked detail**","x":1560,"y":1960,"width":780,"height":280,"color":"6"},
 		{"id":"f-8e2bbd9e67af","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/11_Management_Decisions.canvas","x":1560,"y":2280,"width":780,"height":150,"color":"6"},
-		{"id":"f-8af55a1a129f","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/10_Requirements_Traceability.canvas","x":-920,"y":860,"width":580,"height":400,"color":"6"}
+		{"id":"n-f9014a222138","type":"text","text":"## STATUS LEGEND\n\n**CONFIRMED** source/reference verified\n**REPORTED** supplied but not independently verified\n**TO VERIFY** discovery required\n**PROPOSED** BA design direction\n**NOT APPROVED** management/process-owner decision required","x":0,"y":-1160,"width":900,"height":520,"color":"3"}
 	],
 	"edges":[
 		{"id":"e-c25a405d7e51","fromNode":"n-445227e297f8","fromSide":"top","toNode":"n-564e53d66633","toSide":"bottom","color":"5","label":"contains"},

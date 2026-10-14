@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"g-dec12f8db39b","type":"group","label":"02 PAIN POINTS AND IMPACT","x":-120,"y":-160,"width":3320,"height":2100,"color":"1"},
+		{"id":"g-dec12f8db39b","type":"group","x":-120,"y":-160,"width":3320,"height":2100,"color":"1","label":"02 PAIN POINTS AND IMPACT"},
 		{"id":"n-416a557a146d","type":"text","text":"# 02 Pain Points and Impact\n\nEach reported pain point links to impact, hypothesis, question, discovery and requirement candidate.\n\n**Status labels are part of the content; color is not the only status signal.**","x":0,"y":0,"width":3000,"height":250,"color":"1"},
 		{"id":"n-6eb0753b79b1","type":"text","text":"## PP-001\nKPI Definition\nInconsistency\n\n**REPORTED / TO VERIFY**","x":60,"y":380,"width":520,"height":280,"color":"1"},
 		{"id":"n-bf5a92af07da","type":"text","text":"**Potential impact**\nIncomparable results\n\n**Hypothesis** RC-001/002/005\n**Discovery** OQ-006 / WP03\n**Candidate** REQ-001","x":60,"y":750,"width":520,"height":340,"color":"2"},
@@ -24,16 +24,16 @@
 		{"id":"f-8b940a7fb405","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/00_INDEX.md","x":950,"y":1730,"width":850,"height":140,"color":"5"}
 	],
 	"edges":[
-		{"id":"e-3627b53bf254","fromNode":"n-6eb0753b79b1","toNode":"n-bf5a92af07da","label":"may impact","color":"1","fromSide":"bottom","toSide":"top"},
-		{"id":"e-a5d389b7b6dd","fromNode":"n-bf5a92af07da","toNode":"f-f5ccc6afe13a","label":"inspect card","color":"5","fromSide":"bottom","toSide":"top"},
-		{"id":"e-a30bd264a7f3","fromNode":"n-b5223078f26a","toNode":"n-62cf756b50d5","label":"may impact","color":"1","fromSide":"bottom","toSide":"top"},
-		{"id":"e-133561911eba","fromNode":"n-62cf756b50d5","toNode":"f-59ff66467a94","label":"inspect card","color":"5","fromSide":"bottom","toSide":"top"},
-		{"id":"e-ccac49c4a037","fromNode":"n-92fcef0c8264","toNode":"n-eff33326fa22","label":"may impact","color":"1","fromSide":"bottom","toSide":"top"},
-		{"id":"e-339672a841f6","fromNode":"n-eff33326fa22","toNode":"f-ef669d1b2e03","label":"inspect card","color":"5","fromSide":"bottom","toSide":"top"},
-		{"id":"e-cfc4abe03180","fromNode":"n-7d7385314114","toNode":"n-aebb7ba211ef","label":"may impact","color":"1","fromSide":"bottom","toSide":"top"},
-		{"id":"e-3534e1c46fd2","fromNode":"n-aebb7ba211ef","toNode":"f-61ae614aa73c","label":"inspect card","color":"5","fromSide":"bottom","toSide":"top"},
-		{"id":"e-a4dd601cea64","fromNode":"n-0a976c90fd81","toNode":"n-b00e7122ca1e","label":"may impact","color":"1","fromSide":"bottom","toSide":"top"},
-		{"id":"e-3f56b8dd1bd3","fromNode":"n-b00e7122ca1e","toNode":"f-4f08806fa651","label":"inspect card","color":"5","fromSide":"bottom","toSide":"top"}
+		{"id":"e-3627b53bf254","toFloating":false,"fromNode":"n-6eb0753b79b1","fromSide":"bottom","toNode":"n-bf5a92af07da","toSide":"top","color":"1","label":"may impact"},
+		{"id":"e-a5d389b7b6dd","fromNode":"n-bf5a92af07da","fromSide":"bottom","toNode":"f-f5ccc6afe13a","toSide":"top","color":"5","label":"inspect card"},
+		{"id":"e-a30bd264a7f3","fromNode":"n-b5223078f26a","fromSide":"bottom","toNode":"n-62cf756b50d5","toSide":"top","color":"1","label":"may impact"},
+		{"id":"e-133561911eba","fromNode":"n-62cf756b50d5","fromSide":"bottom","toNode":"f-59ff66467a94","toSide":"top","color":"5","label":"inspect card"},
+		{"id":"e-ccac49c4a037","fromNode":"n-92fcef0c8264","fromSide":"bottom","toNode":"n-eff33326fa22","toSide":"top","color":"1","label":"may impact"},
+		{"id":"e-339672a841f6","fromNode":"n-eff33326fa22","fromSide":"bottom","toNode":"f-ef669d1b2e03","toSide":"top","color":"5","label":"inspect card"},
+		{"id":"e-cfc4abe03180","fromNode":"n-7d7385314114","fromSide":"bottom","toNode":"n-aebb7ba211ef","toSide":"top","color":"1","label":"may impact"},
+		{"id":"e-3534e1c46fd2","fromNode":"n-aebb7ba211ef","fromSide":"bottom","toNode":"f-61ae614aa73c","toSide":"top","color":"5","label":"inspect card"},
+		{"id":"e-a4dd601cea64","fromNode":"n-0a976c90fd81","fromSide":"bottom","toNode":"n-b00e7122ca1e","toSide":"top","color":"1","label":"may impact"},
+		{"id":"e-3f56b8dd1bd3","fromNode":"n-b00e7122ca1e","fromSide":"bottom","toNode":"f-4f08806fa651","toSide":"top","color":"5","label":"inspect card"}
 	],
 	"metadata":{
 		"version":"1.0-1.0",
