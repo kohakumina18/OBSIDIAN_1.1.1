@@ -1,221 +1,32 @@
 {
-  "nodes": [
-    {
-      "id": "g-30172847344b",
-      "type": "group",
-      "label": "10 REQUIREMENTS TRACEABILITY",
-      "x": -120,
-      "y": -160,
-      "width": 3320,
-      "height": 2100,
-      "color": "6"
-    },
-    {
-      "id": "n-e584602131d6",
-      "type": "text",
-      "text": "# 10 Requirements Traceability\n\nEvidence-to-decision graph with stable IDs and explicit hypothesis status.\n\n**Status labels are part of the content; color is not the only status signal.**",
-      "x": 0,
-      "y": 0,
-      "width": 3000,
-      "height": 250,
-      "color": "6"
-    },
-    {
-      "id": "n-612a4898a684",
-      "type": "text",
-      "text": "## SRC\nEvidence Source\n\nSRC-001..010",
-      "x": 80,
-      "y": 430,
-      "width": 420,
-      "height": 250,
-      "color": "5"
-    },
-    {
-      "id": "n-f59c3fee2e2b",
-      "type": "text",
-      "text": "## PP\nPain Point\n\nPP-001..005",
-      "x": 580,
-      "y": 430,
-      "width": 420,
-      "height": 250,
-      "color": "1"
-    },
-    {
-      "id": "n-f2e1ade29305",
-      "type": "text",
-      "text": "## RC/GAP\nHypothesis / Gap\n\nRC-001..006 / GAP-001..010",
-      "x": 1080,
-      "y": 430,
-      "width": 420,
-      "height": 250,
-      "color": "2"
-    },
-    {
-      "id": "n-e69e0e4f9bfd",
-      "type": "text",
-      "text": "## OQ/WP\nQuestion / Discovery\n\nOQ-001..015 / WP01..06",
-      "x": 1580,
-      "y": 430,
-      "width": 420,
-      "height": 250,
-      "color": "3"
-    },
-    {
-      "id": "n-3b5508b1d794",
-      "type": "text",
-      "text": "## REQ/BR\nRequirement / Rule\n\nREQ-001..012 / BR-001..010",
-      "x": 2080,
-      "y": 430,
-      "width": 420,
-      "height": 250,
-      "color": "4"
-    },
-    {
-      "id": "n-27a615fcfc60",
-      "type": "text",
-      "text": "## DEC\nDecision\n\nDEC-001..009",
-      "x": 2580,
-      "y": 430,
-      "width": 420,
-      "height": 250,
-      "color": "6"
-    },
-    {
-      "id": "n-d71e7035548c",
-      "type": "text",
-      "text": "### Worked example: PP-003\n\nSRC-003 -> PP-003 -> RC-002/RC-004 -> OQ-003/WP01 -> REQ-003 -> DEC-008\n\nEvery link remains inspectable; PP-003 and causes stay **TO VERIFY** until system evidence exists.",
-      "x": 420,
-      "y": 900,
-      "width": 2200,
-      "height": 360,
-      "color": "3"
-    },
-    {
-      "id": "f-0f33976c4b20",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Evidence_Register.md",
-      "x": 80,
-      "y": 1380,
-      "width": 520,
-      "height": 150,
-      "color": "6"
-    },
-    {
-      "id": "f-a193ce19d2c2",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Pain_Point_Register.md",
-      "x": 670,
-      "y": 1380,
-      "width": 520,
-      "height": 150,
-      "color": "6"
-    },
-    {
-      "id": "f-1ead05be4ac0",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Gap_Register.md",
-      "x": 1260,
-      "y": 1380,
-      "width": 520,
-      "height": 150,
-      "color": "6"
-    },
-    {
-      "id": "f-ef1b31623995",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Requirement_Register.md",
-      "x": 1850,
-      "y": 1380,
-      "width": 520,
-      "height": 150,
-      "color": "6"
-    },
-    {
-      "id": "f-3ccf54d9e6d3",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Decision_Log.md",
-      "x": 2440,
-      "y": 1380,
-      "width": 520,
-      "height": 150,
-      "color": "6"
-    },
-    {
-      "id": "f-864dd476de37",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/14_Traceability_Model.md",
-      "x": 80,
-      "y": 1600,
-      "width": 850,
-      "height": 140,
-      "color": "6"
-    },
-    {
-      "id": "f-ce2124dac0e7",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/BSC_KPI_Enterprise_Master_Mindmap_v1_0.canvas",
-      "x": 0,
-      "y": 1790,
-      "width": 850,
-      "height": 140,
-      "color": "5"
-    },
-    {
-      "id": "f-216c2a8b5cab",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/00_INDEX.md",
-      "x": 950,
-      "y": 1790,
-      "width": 850,
-      "height": 140,
-      "color": "5"
-    }
-  ],
-  "edges": [
-    {
-      "id": "e-d32147f38861",
-      "fromNode": "n-612a4898a684",
-      "toNode": "n-f59c3fee2e2b",
-      "label": "traces to",
-      "color": "1",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e-ce5c90c76a53",
-      "fromNode": "n-f59c3fee2e2b",
-      "toNode": "n-f2e1ade29305",
-      "label": "traces to",
-      "color": "2",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e-cde40ebfb29b",
-      "fromNode": "n-f2e1ade29305",
-      "toNode": "n-e69e0e4f9bfd",
-      "label": "traces to",
-      "color": "3",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e-c03fcffdaa5c",
-      "fromNode": "n-e69e0e4f9bfd",
-      "toNode": "n-3b5508b1d794",
-      "label": "traces to",
-      "color": "4",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e-c5375a049a97",
-      "fromNode": "n-3b5508b1d794",
-      "toNode": "n-27a615fcfc60",
-      "label": "traces to",
-      "color": "6",
-      "fromSide": "right",
-      "toSide": "left"
-    }
-  ]
+	"nodes":[
+		{"id":"g-30172847344b","type":"group","x":-120,"y":-160,"width":3320,"height":2100,"color":"6","label":"10 REQUIREMENTS TRACEABILITY"},
+		{"id":"n-e584602131d6","type":"text","text":"# 10 Requirements Traceability\n\nEvidence-to-decision graph with stable IDs and explicit hypothesis status.\n\n**Status labels are part of the content; color is not the only status signal.**","x":0,"y":0,"width":3000,"height":250,"color":"6"},
+		{"id":"n-612a4898a684","type":"text","text":"## SRC\nEvidence Source\n\nSRC-001..010","x":80,"y":430,"width":420,"height":250,"color":"5"},
+		{"id":"n-f59c3fee2e2b","type":"text","text":"## PP\nPain Point\n\nPP-001..005","x":580,"y":430,"width":420,"height":250,"color":"1"},
+		{"id":"n-f2e1ade29305","type":"text","text":"## RC/GAP\nHypothesis / Gap\n\nRC-001..006 / GAP-001..010","x":1080,"y":430,"width":420,"height":250,"color":"2"},
+		{"id":"n-e69e0e4f9bfd","type":"text","text":"## OQ/WP\nQuestion / Discovery\n\nOQ-001..015 / WP01..06","x":1580,"y":430,"width":420,"height":250,"color":"3"},
+		{"id":"n-3b5508b1d794","type":"text","text":"## REQ/BR\nRequirement / Rule\n\nREQ-001..012 / BR-001..010","x":2080,"y":430,"width":420,"height":250,"color":"4"},
+		{"id":"n-27a615fcfc60","type":"text","text":"## DEC\nDecision\n\nDEC-001..009","x":2580,"y":430,"width":420,"height":250,"color":"6"},
+		{"id":"n-d71e7035548c","type":"text","text":"### Worked example: PP-003\n\nSRC-003 -> PP-003 -> RC-002/RC-004 -> OQ-003/WP01 -> REQ-003 -> DEC-008\n\nEvery link remains inspectable; PP-003 and causes stay **TO VERIFY** until system evidence exists.","x":420,"y":900,"width":2200,"height":360,"color":"3"},
+		{"id":"f-0f33976c4b20","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Evidence_Register.md","x":80,"y":1380,"width":520,"height":150,"color":"6"},
+		{"id":"f-a193ce19d2c2","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Pain_Point_Register.md","x":670,"y":1380,"width":520,"height":150,"color":"6"},
+		{"id":"f-1ead05be4ac0","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Gap_Register.md","x":1260,"y":1380,"width":520,"height":150,"color":"6"},
+		{"id":"f-ef1b31623995","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Requirement_Register.md","x":1850,"y":1380,"width":520,"height":150,"color":"6"},
+		{"id":"f-3ccf54d9e6d3","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Decision_Log.md","x":2440,"y":1380,"width":520,"height":150,"color":"6"},
+		{"id":"f-864dd476de37","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/14_Traceability_Model.md","x":80,"y":1600,"width":850,"height":140,"color":"6"},
+		{"id":"f-ce2124dac0e7","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/BSC_KPI_Enterprise_Master_Mindmap_v1_0.canvas","x":0,"y":1790,"width":850,"height":140,"color":"5"},
+		{"id":"f-216c2a8b5cab","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/00_INDEX.md","x":950,"y":1790,"width":850,"height":140,"color":"5"}
+	],
+	"edges":[
+		{"id":"e-d32147f38861","fromNode":"n-612a4898a684","fromSide":"right","toNode":"n-f59c3fee2e2b","toSide":"left","color":"1","label":"traces to"},
+		{"id":"e-ce5c90c76a53","fromNode":"n-f59c3fee2e2b","fromSide":"right","toNode":"n-f2e1ade29305","toSide":"left","color":"2","label":"traces to"},
+		{"id":"e-cde40ebfb29b","fromNode":"n-f2e1ade29305","fromSide":"right","toNode":"n-e69e0e4f9bfd","toSide":"left","color":"3","label":"traces to"},
+		{"id":"e-c03fcffdaa5c","fromNode":"n-e69e0e4f9bfd","fromSide":"right","toNode":"n-3b5508b1d794","toSide":"left","color":"4","label":"traces to"},
+		{"id":"e-c5375a049a97","fromNode":"n-3b5508b1d794","fromSide":"right","toNode":"n-27a615fcfc60","toSide":"left","color":"6","label":"traces to"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }

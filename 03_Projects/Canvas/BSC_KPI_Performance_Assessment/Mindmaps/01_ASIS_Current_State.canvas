@@ -1,249 +1,36 @@
 {
-  "nodes": [
-    {
-      "id": "g-64e6f6026ea4",
-      "type": "group",
-      "label": "01 AS-IS CURRENT STATE",
-      "x": -120,
-      "y": -160,
-      "width": 3320,
-      "height": 2100,
-      "color": "4"
-    },
-    {
-      "id": "n-11d02c38c004",
-      "type": "text",
-      "text": "# 01 AS-IS Current State\n\nReported workflow and explicit evidence gaps. Direct TOP observation is still required.\n\n**Status labels are part of the content; color is not the only status signal.**",
-      "x": 0,
-      "y": 0,
-      "width": 3000,
-      "height": 250,
-      "color": "4"
-    },
-    {
-      "id": "n-b08471a2d4ba",
-      "type": "text",
-      "text": "## 01\nDepartment / Manager\nidentifies KPI\n\n**REPORTED / TO VERIFY**",
-      "x": 80,
-      "y": 430,
-      "width": 400,
-      "height": 300,
-      "color": "4"
-    },
-    {
-      "id": "n-af249fb16e58",
-      "type": "text",
-      "text": "## 02\nConfigure KPI tree\nin TOP\n\n**REPORTED / TO VERIFY**",
-      "x": 570,
-      "y": 430,
-      "width": 400,
-      "height": 300,
-      "color": "4"
-    },
-    {
-      "id": "n-33d7bea6f859",
-      "type": "text",
-      "text": "## 03\nConfigure criteria\nfor each employee\n\n**REPORTED / TO VERIFY**",
-      "x": 1060,
-      "y": 430,
-      "width": 400,
-      "height": 300,
-      "color": "4"
-    },
-    {
-      "id": "n-ada7aab149d2",
-      "type": "text",
-      "text": "## 04\nUpdate evaluation\nresult\n\n**REPORTED / TO VERIFY**",
-      "x": 1550,
-      "y": 430,
-      "width": 400,
-      "height": 300,
-      "color": "4"
-    },
-    {
-      "id": "n-b7b8a5618670",
-      "type": "text",
-      "text": "## 05\nConsolidate KPI\nby hierarchy\n\n**REPORTED / TO VERIFY**",
-      "x": 2040,
-      "y": 430,
-      "width": 400,
-      "height": 300,
-      "color": "4"
-    },
-    {
-      "id": "n-b26fed8d08a5",
-      "type": "text",
-      "text": "## 06\nReport results\n\n**REPORTED / TO VERIFY**",
-      "x": 2530,
-      "y": 430,
-      "width": 400,
-      "height": 300,
-      "color": "4"
-    },
-    {
-      "id": "n-11ef215557ad",
-      "type": "text",
-      "text": "### SOP / JD / real process link\n\n**GAP-003 - TO VERIFY**",
-      "x": 80,
-      "y": 920,
-      "width": 660,
-      "height": 260,
-      "color": "2"
-    },
-    {
-      "id": "n-2b566b5a35e3",
-      "type": "text",
-      "text": "### KPI definition, formula, target, approval\n\n**GAP-004 - TO VERIFY**",
-      "x": 820,
-      "y": 920,
-      "width": 660,
-      "height": 260,
-      "color": "2"
-    },
-    {
-      "id": "n-9375a5c45040",
-      "type": "text",
-      "text": "### Work Done evidence and acceptance\n\n**GAP-005/GAP-007 - TO VERIFY**",
-      "x": 1560,
-      "y": 920,
-      "width": 660,
-      "height": 260,
-      "color": "2"
-    },
-    {
-      "id": "n-4619b112be6b",
-      "type": "text",
-      "text": "### TOP capability, template and integration\n\n**GAP-002/GAP-008 - TO VERIFY**",
-      "x": 2300,
-      "y": 920,
-      "width": 660,
-      "height": 260,
-      "color": "2"
-    },
-    {
-      "id": "f-89b579d72715",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/03_ASIS_Current_State.md",
-      "x": 80,
-      "y": 1320,
-      "width": 820,
-      "height": 160,
-      "color": "4"
-    },
-    {
-      "id": "f-c14d4fea3083",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/15_Source_Assessment_2026-10-13.md",
-      "x": 1000,
-      "y": 1320,
-      "width": 820,
-      "height": 160,
-      "color": "3"
-    },
-    {
-      "id": "f-cec8c766915e",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Open_Question_Register.md",
-      "x": 1920,
-      "y": 1320,
-      "width": 820,
-      "height": 160,
-      "color": "2"
-    },
-    {
-      "id": "f-698faac4b369",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/BSC_KPI_Enterprise_Master_Mindmap_v1_0.canvas",
-      "x": 0,
-      "y": 1700,
-      "width": 850,
-      "height": 140,
-      "color": "5"
-    },
-    {
-      "id": "f-30894180bbfa",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/00_INDEX.md",
-      "x": 950,
-      "y": 1700,
-      "width": 850,
-      "height": 140,
-      "color": "5"
-    }
-  ],
-  "edges": [
-    {
-      "id": "e-710f1f9d9495",
-      "fromNode": "n-b08471a2d4ba",
-      "toNode": "n-af249fb16e58",
-      "label": "reported flow",
-      "color": "4",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e-40fdf0d385bf",
-      "fromNode": "n-af249fb16e58",
-      "toNode": "n-33d7bea6f859",
-      "label": "reported flow",
-      "color": "4",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e-05d444833a66",
-      "fromNode": "n-33d7bea6f859",
-      "toNode": "n-ada7aab149d2",
-      "label": "reported flow",
-      "color": "4",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e-81c4392792f9",
-      "fromNode": "n-ada7aab149d2",
-      "toNode": "n-b7b8a5618670",
-      "label": "reported flow",
-      "color": "4",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e-316c7292b335",
-      "fromNode": "n-b7b8a5618670",
-      "toNode": "n-b26fed8d08a5",
-      "label": "reported flow",
-      "color": "4",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e-fc5226187270",
-      "fromNode": "n-11d02c38c004",
-      "toNode": "n-11ef215557ad",
-      "label": "requires validation",
-      "color": "2"
-    },
-    {
-      "id": "e-e9b6bfa23d17",
-      "fromNode": "n-11d02c38c004",
-      "toNode": "n-2b566b5a35e3",
-      "label": "requires validation",
-      "color": "2"
-    },
-    {
-      "id": "e-2cfa98bdcaaf",
-      "fromNode": "n-11d02c38c004",
-      "toNode": "n-9375a5c45040",
-      "label": "requires validation",
-      "color": "2"
-    },
-    {
-      "id": "e-10bf1736a11f",
-      "fromNode": "n-11d02c38c004",
-      "toNode": "n-4619b112be6b",
-      "label": "requires validation",
-      "color": "2"
-    }
-  ]
+	"nodes":[
+		{"id":"g-64e6f6026ea4","type":"group","x":-120,"y":-160,"width":3320,"height":2100,"color":"4","label":"01 AS-IS CURRENT STATE"},
+		{"id":"n-11d02c38c004","type":"text","text":"# 01 AS-IS Current State\n\nReported workflow and explicit evidence gaps. Direct TOP observation is still required.\n\n**Status labels are part of the content; color is not the only status signal.**","x":0,"y":0,"width":3000,"height":250,"color":"4"},
+		{"id":"n-b08471a2d4ba","type":"text","text":"## 01\nDepartment / Manager\nidentifies KPI\n\n**REPORTED / TO VERIFY**","x":80,"y":430,"width":400,"height":300,"color":"4"},
+		{"id":"n-af249fb16e58","type":"text","text":"## 02\nConfigure KPI tree\nin TOP\n\n**REPORTED / TO VERIFY**","x":570,"y":430,"width":400,"height":300,"color":"4"},
+		{"id":"n-33d7bea6f859","type":"text","text":"## 03\nConfigure criteria\nfor each employee\n\n**REPORTED / TO VERIFY**","x":1060,"y":430,"width":400,"height":300,"color":"4"},
+		{"id":"n-ada7aab149d2","type":"text","text":"## 04\nUpdate evaluation\nresult\n\n**REPORTED / TO VERIFY**","x":1550,"y":430,"width":400,"height":300,"color":"4"},
+		{"id":"n-11ef215557ad","type":"text","text":"### SOP / JD / real process link\n\n**GAP-003 - TO VERIFY**","x":80,"y":920,"width":660,"height":260,"color":"2"},
+		{"id":"f-89b579d72715","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/03_ASIS_Current_State.md","x":80,"y":1320,"width":820,"height":160,"color":"4"},
+		{"id":"f-698faac4b369","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/BSC_KPI_Enterprise_Master_Mindmap_v1_0.canvas","x":0,"y":1700,"width":850,"height":140,"color":"5"},
+		{"id":"f-30894180bbfa","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/00_INDEX.md","x":950,"y":1700,"width":850,"height":140,"color":"5"},
+		{"id":"n-b7b8a5618670","type":"text","text":"## 05\nConsolidate KPI\nby hierarchy\n\n**REPORTED / TO VERIFY**","x":2040,"y":430,"width":400,"height":300,"color":"4"},
+		{"id":"n-b26fed8d08a5","type":"text","text":"## 06\nReport results\n\n**REPORTED / TO VERIFY**","x":2530,"y":430,"width":400,"height":300,"color":"4"},
+		{"id":"n-2b566b5a35e3","type":"text","text":"### KPI definition, formula, target, approval\n\n**GAP-004 - TO VERIFY**","x":820,"y":920,"width":660,"height":260,"color":"2"},
+		{"id":"n-9375a5c45040","type":"text","text":"### Work Done evidence and acceptance\n\n**GAP-005/GAP-007 - TO VERIFY**","x":1560,"y":920,"width":660,"height":260,"color":"2"},
+		{"id":"n-4619b112be6b","type":"text","text":"### TOP capability, template and integration\n\n**GAP-002/GAP-008 - TO VERIFY**","x":2300,"y":920,"width":660,"height":260,"color":"2"},
+		{"id":"f-c14d4fea3083","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/15_Source_Assessment_2026-10-13.md","x":1000,"y":1320,"width":820,"height":160,"color":"3"},
+		{"id":"f-cec8c766915e","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Open_Question_Register.md","x":1920,"y":1320,"width":820,"height":160,"color":"2"}
+	],
+	"edges":[
+		{"id":"e-710f1f9d9495","toFloating":false,"fromNode":"n-b08471a2d4ba","fromSide":"right","toNode":"n-af249fb16e58","toSide":"left","color":"4","label":"reported flow"},
+		{"id":"e-40fdf0d385bf","fromNode":"n-af249fb16e58","fromSide":"right","toNode":"n-33d7bea6f859","toSide":"left","color":"4","label":"reported flow"},
+		{"id":"e-05d444833a66","fromNode":"n-33d7bea6f859","fromSide":"right","toNode":"n-ada7aab149d2","toSide":"left","color":"4","label":"reported flow"},
+		{"id":"e-81c4392792f9","fromNode":"n-ada7aab149d2","fromSide":"right","toNode":"n-b7b8a5618670","toSide":"left","color":"4","label":"reported flow"},
+		{"id":"e-316c7292b335","fromNode":"n-b7b8a5618670","fromSide":"right","toNode":"n-b26fed8d08a5","toSide":"left","color":"4","label":"reported flow"},
+		{"id":"e-fc5226187270","fromNode":"n-11d02c38c004","fromSide":"bottom","toNode":"n-11ef215557ad","toSide":"top","color":"2","label":"requires validation"},
+		{"id":"e-e9b6bfa23d17","fromNode":"n-11d02c38c004","fromSide":"bottom","toNode":"n-2b566b5a35e3","toSide":"top","color":"2","label":"requires validation"},
+		{"id":"e-2cfa98bdcaaf","fromNode":"n-11d02c38c004","fromSide":"bottom","toNode":"n-9375a5c45040","toSide":"top","color":"2","label":"requires validation"},
+		{"id":"e-10bf1736a11f","fromNode":"n-11d02c38c004","fromSide":"bottom","toNode":"n-4619b112be6b","toSide":"top","color":"2","label":"requires validation"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }

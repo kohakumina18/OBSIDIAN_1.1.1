@@ -1,489 +1,62 @@
 {
-  "nodes": [
-    {
-      "id": "n-445227e297f8",
-      "type": "text",
-      "text": "# PPJ GROUP\n## BSC, KPI & WORK PERFORMANCE MANAGEMENT\n\n**Business Discovery / Pre-BRD**\n\nCONFIRMED source presence | REPORTED AS-IS | TO VERIFY gaps | PROPOSED design | NOT APPROVED decisions",
-      "x": 0,
-      "y": 0,
-      "width": 900,
-      "height": 520,
-      "color": "5"
-    },
-    {
-      "id": "g-094b0bc62e22",
-      "type": "group",
-      "label": "BRANCH A - BUSINESS CONTEXT",
-      "x": -2200,
-      "y": -1500,
-      "width": 900,
-      "height": 620,
-      "color": "5"
-    },
-    {
-      "id": "n-564e53d66633",
-      "type": "text",
-      "text": "## A. BUSINESS CONTEXT\n\nPurpose, scope, stakeholders, evidence boundary\n\n**Open linked detail**",
-      "x": -2140,
-      "y": -1440,
-      "width": 780,
-      "height": 280,
-      "color": "5"
-    },
-    {
-      "id": "f-e4dbdc921439",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/01_Business_Context.md",
-      "x": -2140,
-      "y": -1120,
-      "width": 780,
-      "height": 150,
-      "color": "5"
-    },
-    {
-      "id": "g-6669ed6a1714",
-      "type": "group",
-      "label": "BRANCH B - AS-IS CURRENT STATE",
-      "x": -2200,
-      "y": -700,
-      "width": 900,
-      "height": 620,
-      "color": "4"
-    },
-    {
-      "id": "n-c5545b68de3d",
-      "type": "text",
-      "text": "## B. AS-IS CURRENT STATE\n\nTOP process, SOP/JD, configuration and missing facts\n\n**Open linked detail**",
-      "x": -2140,
-      "y": -640,
-      "width": 780,
-      "height": 280,
-      "color": "4"
-    },
-    {
-      "id": "f-e17be3a26c3a",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/01_ASIS_Current_State.canvas",
-      "x": -2140,
-      "y": -320,
-      "width": 780,
-      "height": 150,
-      "color": "4"
-    },
-    {
-      "id": "g-f4cd6443c7aa",
-      "type": "group",
-      "label": "BRANCH C - PAIN POINTS",
-      "x": -2200,
-      "y": 100,
-      "width": 900,
-      "height": 620,
-      "color": "1"
-    },
-    {
-      "id": "n-ab0ac2bce5fb",
-      "type": "text",
-      "text": "## C. PAIN POINTS\n\nPP-001 to PP-005 with impact and verification\n\n**Open linked detail**",
-      "x": -2140,
-      "y": 160,
-      "width": 780,
-      "height": 280,
-      "color": "1"
-    },
-    {
-      "id": "f-78a76558f870",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/02_Pain_Points_Impact.canvas",
-      "x": -2140,
-      "y": 480,
-      "width": 780,
-      "height": 150,
-      "color": "1"
-    },
-    {
-      "id": "g-ce9535bfe89f",
-      "type": "group",
-      "label": "BRANCH D - ROOT CAUSES",
-      "x": -2200,
-      "y": 900,
-      "width": 900,
-      "height": 620,
-      "color": "2"
-    },
-    {
-      "id": "n-9b6e6421316e",
-      "type": "text",
-      "text": "## D. ROOT CAUSES\n\nPeople, Process, Data, System, Governance hypotheses\n\n**Open linked detail**",
-      "x": -2140,
-      "y": 960,
-      "width": 780,
-      "height": 280,
-      "color": "2"
-    },
-    {
-      "id": "f-b25c236aa7b2",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/03_Root_Cause_Analysis.canvas",
-      "x": -2140,
-      "y": 1280,
-      "width": 780,
-      "height": 150,
-      "color": "2"
-    },
-    {
-      "id": "g-ba487cc12285",
-      "type": "group",
-      "label": "BRANCH E - TO-BE PROCESS",
-      "x": 1900,
-      "y": -1500,
-      "width": 900,
-      "height": 620,
-      "color": "4"
-    },
-    {
-      "id": "n-399810b78a65",
-      "type": "text",
-      "text": "## E. TO-BE PROCESS\n\nSOP to reporting; proposed and unapproved\n\n**Open linked detail**",
-      "x": 1960,
-      "y": -1440,
-      "width": 780,
-      "height": 280,
-      "color": "4"
-    },
-    {
-      "id": "f-a7e5fd999870",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/04_TOBE_Target_Process.canvas",
-      "x": 1960,
-      "y": -1120,
-      "width": 780,
-      "height": 150,
-      "color": "4"
-    },
-    {
-      "id": "g-e67dcbb9372b",
-      "type": "group",
-      "label": "BRANCH F - SOP / JD / KPI",
-      "x": 1900,
-      "y": -700,
-      "width": 900,
-      "height": 620,
-      "color": "4"
-    },
-    {
-      "id": "n-64da1f32399e",
-      "type": "text",
-      "text": "## F. SOP / JD / KPI\n\nConceptual many-to-many responsibility model\n\n**Open linked detail**",
-      "x": 1960,
-      "y": -640,
-      "width": 780,
-      "height": 280,
-      "color": "4"
-    },
-    {
-      "id": "f-729ef44c0b47",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/05_SOP_JD_KPI_Relationships.canvas",
-      "x": 1960,
-      "y": -320,
-      "width": 780,
-      "height": 150,
-      "color": "4"
-    },
-    {
-      "id": "g-2eb07cb3ee8c",
-      "type": "group",
-      "label": "BRANCH G - PERFORMANCE HIERARCHY",
-      "x": 1900,
-      "y": 100,
-      "width": 900,
-      "height": 620,
-      "color": "6"
-    },
-    {
-      "id": "n-100da1c06883",
-      "type": "text",
-      "text": "## G. PERFORMANCE HIERARCHY\n\nMember to Echelon; contribution and roll-up\n\n**Open linked detail**",
-      "x": 1960,
-      "y": 160,
-      "width": 780,
-      "height": 280,
-      "color": "6"
-    },
-    {
-      "id": "f-192ac70f3613",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/06_Performance_Hierarchy.canvas",
-      "x": 1960,
-      "y": 480,
-      "width": 780,
-      "height": 150,
-      "color": "6"
-    },
-    {
-      "id": "g-ca82f7a64c4e",
-      "type": "group",
-      "label": "BRANCH H - WORK DONE",
-      "x": 1900,
-      "y": 900,
-      "width": 900,
-      "height": 620,
-      "color": "3"
-    },
-    {
-      "id": "n-dccec54ecc40",
-      "type": "text",
-      "text": "## H. WORK DONE\n\nLifecycle, evidence, acceptance and measurement\n\n**Open linked detail**",
-      "x": 1960,
-      "y": 960,
-      "width": 780,
-      "height": 280,
-      "color": "3"
-    },
-    {
-      "id": "f-e8fb2bb6c8c0",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/07_Work_Done_Measurement.canvas",
-      "x": 1960,
-      "y": 1280,
-      "width": 780,
-      "height": 150,
-      "color": "3"
-    },
-    {
-      "id": "g-0ab81e670091",
-      "type": "group",
-      "label": "BRANCH I - DATA AND SYSTEMS",
-      "x": -1500,
-      "y": 1900,
-      "width": 900,
-      "height": 620,
-      "color": "5"
-    },
-    {
-      "id": "n-960217e3ef73",
-      "type": "text",
-      "text": "## I. DATA AND SYSTEMS\n\nTOP, SOP/JD, HR, Jira, WFX, DWH, target system\n\n**Open linked detail**",
-      "x": -1440,
-      "y": 1960,
-      "width": 780,
-      "height": 280,
-      "color": "5"
-    },
-    {
-      "id": "f-ae0e0d497083",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/10_Data_System_Landscape.md",
-      "x": -1440,
-      "y": 2280,
-      "width": 780,
-      "height": 150,
-      "color": "5"
-    },
-    {
-      "id": "g-a843bcb5adb3",
-      "type": "group",
-      "label": "BRANCH J - CHALLENGES AND RISKS",
-      "x": -500,
-      "y": 1900,
-      "width": 900,
-      "height": 620,
-      "color": "1"
-    },
-    {
-      "id": "n-9a052d6d685c",
-      "type": "text",
-      "text": "## J. CHALLENGES AND RISKS\n\nImpact, risk, verification and mitigation\n\n**Open linked detail**",
-      "x": -440,
-      "y": 1960,
-      "width": 780,
-      "height": 280,
-      "color": "1"
-    },
-    {
-      "id": "f-c35b4be7e846",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/08_Challenges_Gap_Analysis.canvas",
-      "x": -440,
-      "y": 2280,
-      "width": 780,
-      "height": 150,
-      "color": "1"
-    },
-    {
-      "id": "g-bf9f27f90f6b",
-      "type": "group",
-      "label": "BRANCH K - DISCOVERY",
-      "x": 500,
-      "y": 1900,
-      "width": 900,
-      "height": 620,
-      "color": "3"
-    },
-    {
-      "id": "n-38dd1181046a",
-      "type": "text",
-      "text": "## K. DISCOVERY\n\nWP01-WP06; no invented owners/dates\n\n**Open linked detail**",
-      "x": 560,
-      "y": 1960,
-      "width": 780,
-      "height": 280,
-      "color": "3"
-    },
-    {
-      "id": "f-742387227ff0",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/09_Discovery_Plan.canvas",
-      "x": 560,
-      "y": 2280,
-      "width": 780,
-      "height": 150,
-      "color": "3"
-    },
-    {
-      "id": "g-69df6a88a391",
-      "type": "group",
-      "label": "BRANCH L - MANAGEMENT DECISIONS",
-      "x": 1500,
-      "y": 1900,
-      "width": 900,
-      "height": 620,
-      "color": "6"
-    },
-    {
-      "id": "n-73fbd1230d85",
-      "type": "text",
-      "text": "## L. MANAGEMENT DECISIONS\n\nPending decisions and evidence gates\n\n**Open linked detail**",
-      "x": 1560,
-      "y": 1960,
-      "width": 780,
-      "height": 280,
-      "color": "6"
-    },
-    {
-      "id": "f-8e2bbd9e67af",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/11_Management_Decisions.canvas",
-      "x": 1560,
-      "y": 2280,
-      "width": 780,
-      "height": 150,
-      "color": "6"
-    },
-    {
-      "id": "f-8af55a1a129f",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/10_Requirements_Traceability.canvas",
-      "x": -450,
-      "y": 1020,
-      "width": 900,
-      "height": 240,
-      "color": "6"
-    },
-    {
-      "id": "n-f9014a222138",
-      "type": "text",
-      "text": "## STATUS LEGEND\n\n**CONFIRMED** source/reference verified\n**REPORTED** supplied but not independently verified\n**TO VERIFY** discovery required\n**PROPOSED** BA design direction\n**NOT APPROVED** management/process-owner decision required",
-      "x": -450,
-      "y": -820,
-      "width": 900,
-      "height": 520,
-      "color": "3"
-    }
-  ],
-  "edges": [
-    {
-      "id": "e-c25a405d7e51",
-      "fromNode": "n-445227e297f8",
-      "toNode": "n-564e53d66633",
-      "label": "contains",
-      "color": "5"
-    },
-    {
-      "id": "e-1cdeee4beda9",
-      "fromNode": "n-445227e297f8",
-      "toNode": "n-c5545b68de3d",
-      "label": "contains",
-      "color": "4"
-    },
-    {
-      "id": "e-12527165b6eb",
-      "fromNode": "n-445227e297f8",
-      "toNode": "n-ab0ac2bce5fb",
-      "label": "contains",
-      "color": "1"
-    },
-    {
-      "id": "e-826c1025f9ce",
-      "fromNode": "n-445227e297f8",
-      "toNode": "n-9b6e6421316e",
-      "label": "contains",
-      "color": "2"
-    },
-    {
-      "id": "e-4ce2dd87ff63",
-      "fromNode": "n-445227e297f8",
-      "toNode": "n-399810b78a65",
-      "label": "contains",
-      "color": "4"
-    },
-    {
-      "id": "e-3d232fa158c1",
-      "fromNode": "n-445227e297f8",
-      "toNode": "n-64da1f32399e",
-      "label": "contains",
-      "color": "4"
-    },
-    {
-      "id": "e-44175c2e0787",
-      "fromNode": "n-445227e297f8",
-      "toNode": "n-100da1c06883",
-      "label": "contains",
-      "color": "6"
-    },
-    {
-      "id": "e-6acef4f64e85",
-      "fromNode": "n-445227e297f8",
-      "toNode": "n-dccec54ecc40",
-      "label": "contains",
-      "color": "3"
-    },
-    {
-      "id": "e-293841d9cbd5",
-      "fromNode": "n-445227e297f8",
-      "toNode": "n-960217e3ef73",
-      "label": "contains",
-      "color": "5"
-    },
-    {
-      "id": "e-7befb55da9f0",
-      "fromNode": "n-445227e297f8",
-      "toNode": "n-9a052d6d685c",
-      "label": "contains",
-      "color": "1"
-    },
-    {
-      "id": "e-b125bd344914",
-      "fromNode": "n-445227e297f8",
-      "toNode": "n-38dd1181046a",
-      "label": "contains",
-      "color": "3"
-    },
-    {
-      "id": "e-ab95d166c1f0",
-      "fromNode": "n-445227e297f8",
-      "toNode": "n-73fbd1230d85",
-      "label": "contains",
-      "color": "6"
-    },
-    {
-      "id": "e-83149ed74dd1",
-      "fromNode": "n-445227e297f8",
-      "toNode": "f-8af55a1a129f",
-      "label": "source-to-decision trace",
-      "color": "6",
-      "fromSide": "bottom",
-      "toSide": "top"
-    }
-  ]
+	"nodes":[
+		{"id":"g-094b0bc62e22","type":"group","x":-2200,"y":-1500,"width":900,"height":620,"color":"5","label":"BRANCH A - BUSINESS CONTEXT"},
+		{"id":"g-6669ed6a1714","type":"group","x":-2200,"y":-700,"width":900,"height":620,"color":"4","label":"BRANCH B - AS-IS CURRENT STATE"},
+		{"id":"g-f4cd6443c7aa","type":"group","x":-2200,"y":100,"width":900,"height":620,"color":"1","label":"BRANCH C - PAIN POINTS"},
+		{"id":"g-ce9535bfe89f","type":"group","x":-2200,"y":900,"width":900,"height":620,"color":"2","label":"BRANCH D - ROOT CAUSES"},
+		{"id":"g-ba487cc12285","type":"group","x":1900,"y":-1500,"width":900,"height":620,"color":"4","label":"BRANCH E - TO-BE PROCESS"},
+		{"id":"g-e67dcbb9372b","type":"group","x":1900,"y":-700,"width":900,"height":620,"color":"4","label":"BRANCH F - SOP / JD / KPI"},
+		{"id":"g-2eb07cb3ee8c","type":"group","x":1900,"y":100,"width":900,"height":620,"color":"6","label":"BRANCH G - PERFORMANCE HIERARCHY"},
+		{"id":"g-ca82f7a64c4e","type":"group","x":1900,"y":900,"width":900,"height":620,"color":"3","label":"BRANCH H - WORK DONE"},
+		{"id":"g-0ab81e670091","type":"group","x":-1500,"y":1900,"width":900,"height":620,"color":"5","label":"BRANCH I - DATA AND SYSTEMS"},
+		{"id":"g-a843bcb5adb3","type":"group","x":-500,"y":1900,"width":900,"height":620,"color":"1","label":"BRANCH J - CHALLENGES AND RISKS"},
+		{"id":"g-bf9f27f90f6b","type":"group","x":500,"y":1900,"width":900,"height":620,"color":"3","label":"BRANCH K - DISCOVERY"},
+		{"id":"g-69df6a88a391","type":"group","x":1500,"y":1900,"width":900,"height":620,"color":"6","label":"BRANCH L - MANAGEMENT DECISIONS"},
+		{"id":"n-445227e297f8","type":"text","text":"# PPJ GROUP\n## BSC, KPI & WORK PERFORMANCE MANAGEMENT\n\n**Business Discovery / Pre-BRD**\n\nCONFIRMED source presence | REPORTED AS-IS | TO VERIFY gaps | PROPOSED design | NOT APPROVED decisions","x":0,"y":0,"width":900,"height":520,"color":"5"},
+		{"id":"n-564e53d66633","type":"text","text":"## A. BUSINESS CONTEXT\n\nPurpose, scope, stakeholders, evidence boundary\n\n**Open linked detail**","x":-2140,"y":-1440,"width":780,"height":280,"color":"5"},
+		{"id":"f-e4dbdc921439","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/01_Business_Context.md","x":-2140,"y":-1120,"width":780,"height":150,"color":"5"},
+		{"id":"n-c5545b68de3d","type":"text","text":"## B. AS-IS CURRENT STATE\n\nTOP process, SOP/JD, configuration and missing facts\n\n**Open linked detail**","x":-2140,"y":-640,"width":780,"height":280,"color":"4"},
+		{"id":"f-e17be3a26c3a","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/01_ASIS_Current_State.canvas","x":-2140,"y":-320,"width":780,"height":150,"color":"4"},
+		{"id":"n-399810b78a65","type":"text","text":"## E. TO-BE PROCESS\n\nSOP to reporting; proposed and unapproved\n\n**Open linked detail**","x":1960,"y":-1440,"width":780,"height":280,"color":"4"},
+		{"id":"f-a7e5fd999870","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/04_TOBE_Target_Process.canvas","x":1960,"y":-1120,"width":780,"height":150,"color":"4"},
+		{"id":"n-f9014a222138","type":"text","text":"## STATUS LEGEND\n\n**CONFIRMED** source/reference verified\n**REPORTED** supplied but not independently verified\n**TO VERIFY** discovery required\n**PROPOSED** BA design direction\n**NOT APPROVED** management/process-owner decision required","x":-450,"y":-820,"width":900,"height":520,"color":"3"},
+		{"id":"n-ab0ac2bce5fb","type":"text","text":"## C. PAIN POINTS\n\nPP-001 to PP-005 with impact and verification\n\n**Open linked detail**","x":-2140,"y":160,"width":780,"height":280,"color":"1"},
+		{"id":"f-78a76558f870","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/02_Pain_Points_Impact.canvas","x":-2140,"y":480,"width":780,"height":150,"color":"1"},
+		{"id":"n-64da1f32399e","type":"text","text":"## F. SOP / JD / KPI\n\nConceptual many-to-many responsibility model\n\n**Open linked detail**","x":1960,"y":-640,"width":780,"height":280,"color":"4"},
+		{"id":"f-729ef44c0b47","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/05_SOP_JD_KPI_Relationships.canvas","x":1960,"y":-320,"width":780,"height":150,"color":"4"},
+		{"id":"n-100da1c06883","type":"text","text":"## G. PERFORMANCE HIERARCHY\n\nMember to Echelon; contribution and roll-up\n\n**Open linked detail**","x":1960,"y":160,"width":780,"height":280,"color":"6"},
+		{"id":"n-9b6e6421316e","type":"text","text":"## D. ROOT CAUSES\n\nPeople, Process, Data, System, Governance hypotheses\n\n**Open linked detail**","x":-2140,"y":960,"width":780,"height":280,"color":"2"},
+		{"id":"f-b25c236aa7b2","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/03_Root_Cause_Analysis.canvas","x":-2140,"y":1280,"width":780,"height":150,"color":"2"},
+		{"id":"f-192ac70f3613","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/06_Performance_Hierarchy.canvas","x":1960,"y":480,"width":780,"height":150,"color":"6"},
+		{"id":"n-dccec54ecc40","type":"text","text":"## H. WORK DONE\n\nLifecycle, evidence, acceptance and measurement\n\n**Open linked detail**","x":1960,"y":960,"width":780,"height":280,"color":"3"},
+		{"id":"f-e8fb2bb6c8c0","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/07_Work_Done_Measurement.canvas","x":1960,"y":1280,"width":780,"height":150,"color":"3"},
+		{"id":"n-960217e3ef73","type":"text","text":"## I. DATA AND SYSTEMS\n\nTOP, SOP/JD, HR, Jira, WFX, DWH, target system\n\n**Open linked detail**","x":-1440,"y":1960,"width":780,"height":280,"color":"5"},
+		{"id":"f-ae0e0d497083","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/10_Data_System_Landscape.md","x":-1440,"y":2280,"width":780,"height":150,"color":"5"},
+		{"id":"n-9a052d6d685c","type":"text","text":"## J. CHALLENGES AND RISKS\n\nImpact, risk, verification and mitigation\n\n**Open linked detail**","x":-440,"y":1960,"width":780,"height":280,"color":"1"},
+		{"id":"f-c35b4be7e846","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/08_Challenges_Gap_Analysis.canvas","x":-440,"y":2280,"width":780,"height":150,"color":"1"},
+		{"id":"n-38dd1181046a","type":"text","text":"## K. DISCOVERY\n\nWP01-WP06; no invented owners/dates\n\n**Open linked detail**","x":560,"y":1960,"width":780,"height":280,"color":"3"},
+		{"id":"f-742387227ff0","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/09_Discovery_Plan.canvas","x":560,"y":2280,"width":780,"height":150,"color":"3"},
+		{"id":"n-73fbd1230d85","type":"text","text":"## L. MANAGEMENT DECISIONS\n\nPending decisions and evidence gates\n\n**Open linked detail**","x":1560,"y":1960,"width":780,"height":280,"color":"6"},
+		{"id":"f-8e2bbd9e67af","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/11_Management_Decisions.canvas","x":1560,"y":2280,"width":780,"height":150,"color":"6"},
+		{"id":"f-8af55a1a129f","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/10_Requirements_Traceability.canvas","x":-920,"y":860,"width":580,"height":400,"color":"6"}
+	],
+	"edges":[
+		{"id":"e-c25a405d7e51","fromNode":"n-445227e297f8","fromSide":"top","toNode":"n-564e53d66633","toSide":"bottom","color":"5","label":"contains"},
+		{"id":"e-1cdeee4beda9","fromNode":"n-445227e297f8","fromSide":"left","toNode":"n-c5545b68de3d","toSide":"right","color":"4","label":"contains"},
+		{"id":"e-12527165b6eb","fromNode":"n-445227e297f8","fromSide":"left","toNode":"n-ab0ac2bce5fb","toSide":"right","color":"1","label":"contains"},
+		{"id":"e-826c1025f9ce","fromNode":"n-445227e297f8","fromSide":"left","toNode":"n-9b6e6421316e","toSide":"top","color":"2","label":"contains"},
+		{"id":"e-4ce2dd87ff63","fromNode":"n-445227e297f8","fromSide":"top","toNode":"n-399810b78a65","toSide":"bottom","color":"4","label":"contains"},
+		{"id":"e-3d232fa158c1","fromNode":"n-445227e297f8","fromSide":"right","toNode":"n-64da1f32399e","toSide":"bottom","color":"4","label":"contains"},
+		{"id":"e-44175c2e0787","fromNode":"n-445227e297f8","fromSide":"right","toNode":"n-100da1c06883","toSide":"left","color":"6","label":"contains"},
+		{"id":"e-6acef4f64e85","fromNode":"n-445227e297f8","fromSide":"right","toNode":"n-dccec54ecc40","toSide":"top","color":"3","label":"contains"},
+		{"id":"e-293841d9cbd5","fromNode":"n-445227e297f8","fromSide":"bottom","toNode":"n-960217e3ef73","toSide":"top","color":"5","label":"contains"},
+		{"id":"e-7befb55da9f0","fromNode":"n-445227e297f8","fromSide":"bottom","toNode":"n-9a052d6d685c","toSide":"top","color":"1","label":"contains"},
+		{"id":"e-b125bd344914","fromNode":"n-445227e297f8","fromSide":"bottom","toNode":"n-38dd1181046a","toSide":"top","color":"3","label":"contains"},
+		{"id":"e-ab95d166c1f0","fromNode":"n-445227e297f8","fromSide":"bottom","toNode":"n-73fbd1230d85","toSide":"top","color":"6","label":"contains"},
+		{"id":"e-83149ed74dd1","fromNode":"n-445227e297f8","fromSide":"bottom","toNode":"f-8af55a1a129f","toSide":"top","color":"6","label":"source-to-decision trace"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }

@@ -1,509 +1,62 @@
 {
-  "nodes": [
-    {
-      "id": "g-5a41522b2cdf",
-      "type": "group",
-      "label": "01 - PROJECT CONTEXT",
-      "x": 0,
-      "y": 0,
-      "width": 1800,
-      "height": 1080,
-      "color": "5"
-    },
-    {
-      "id": "n-506e273ea8f8",
-      "type": "text",
-      "text": "# 01. Project Context\n\n**Status:** Business Discovery / Pre-BRD\n\nConnect strategy, responsibility, KPI, accepted work, evidence and reporting.\n\n**Boundary:** no registered canonical project; sponsor and Primary Domain TO VERIFY.",
-      "x": 80,
-      "y": 80,
-      "width": 1640,
-      "height": 720,
-      "color": "5"
-    },
-    {
-      "id": "f-d116f39b6be5",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/01_Business_Context.md",
-      "x": 80,
-      "y": 850,
-      "width": 760,
-      "height": 150
-    },
-    {
-      "id": "g-7c30dcc04c99",
-      "type": "group",
-      "label": "02 - EXECUTIVE FINDINGS",
-      "x": 1960,
-      "y": 0,
-      "width": 1800,
-      "height": 1080,
-      "color": "6"
-    },
-    {
-      "id": "n-c1bc87413e0d",
-      "type": "text",
-      "text": "# 02. Executive Findings\n\n1. Validate AS-IS\n2. Standardize definitions\n3. Verify measurement feasibility\n4. Evaluate solution options\n5. Approve scope after evidence\n\n**BA assessment - NOT APPROVED**",
-      "x": 2040,
-      "y": 80,
-      "width": 1020,
-      "height": 720,
-      "color": "6"
-    },
-    {
-      "id": "f-7433af6d0972",
-      "type": "file",
-      "file": "Pasted image 20261012103026.png",
-      "x": 3120,
-      "y": 90,
-      "width": 560,
-      "height": 700
-    },
-    {
-      "id": "f-1c3c66206097",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/02_Executive_Findings.md",
-      "x": 2040,
-      "y": 850,
-      "width": 760,
-      "height": 150
-    },
-    {
-      "id": "g-ab6b733d2ee1",
-      "type": "group",
-      "label": "03 - AS-IS BUSINESS PROCESS",
-      "x": 3920,
-      "y": 0,
-      "width": 1800,
-      "height": 1080,
-      "color": "4"
-    },
-    {
-      "id": "n-fbc2547b1927",
-      "type": "text",
-      "text": "# 03. AS-IS Business Process\n\nDepartment/Manager defines KPI\n-> TOP KPI tree\n-> Employee criteria\n-> Update evaluation result\n-> Hierarchical consolidation\n-> Report\n\n**REPORTED / TO VERIFY**",
-      "x": 4000,
-      "y": 80,
-      "width": 1640,
-      "height": 720,
-      "color": "4"
-    },
-    {
-      "id": "f-f74c3f05ac55",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/03_ASIS_Current_State.md",
-      "x": 4000,
-      "y": 850,
-      "width": 760,
-      "height": 150
-    },
-    {
-      "id": "f-c21245b671ce",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/01_ASIS_Current_State.canvas",
-      "x": 4820,
-      "y": 850,
-      "width": 820,
-      "height": 150,
-      "color": "4"
-    },
-    {
-      "id": "g-d486d19469cf",
-      "type": "group",
-      "label": "04 - CURRENT SYSTEM LANDSCAPE",
-      "x": 5880,
-      "y": 0,
-      "width": 1800,
-      "height": 1080,
-      "color": "5"
-    },
-    {
-      "id": "n-c29acc63dc58",
-      "type": "text",
-      "text": "# 04. Current System Landscape\n\nBusiness sources: TOP, SOP/JD, HR, task systems, Jira, WFX\n\nData layer: DWH / history / identity\n\nTarget: management, rules, approval, dashboard\n\nAll integrations **TO VERIFY**",
-      "x": 5960,
-      "y": 80,
-      "width": 1020,
-      "height": 720,
-      "color": "5"
-    },
-    {
-      "id": "f-58532fc565d9",
-      "type": "file",
-      "file": "Pasted image 20261012103312.png",
-      "x": 7040,
-      "y": 90,
-      "width": 560,
-      "height": 700
-    },
-    {
-      "id": "f-04995a7c5c4e",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/10_Data_System_Landscape.md",
-      "x": 5960,
-      "y": 850,
-      "width": 760,
-      "height": 150
-    },
-    {
-      "id": "f-800ffeb978e1",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/10_Requirements_Traceability.canvas",
-      "x": 6780,
-      "y": 850,
-      "width": 820,
-      "height": 150,
-      "color": "5"
-    },
-    {
-      "id": "g-69c4f6a75891",
-      "type": "group",
-      "label": "05 - PAIN POINTS AND IMPACT",
-      "x": 0,
-      "y": 1260,
-      "width": 1800,
-      "height": 1080,
-      "color": "1"
-    },
-    {
-      "id": "n-6f40d4ec9e3f",
-      "type": "text",
-      "text": "# 05. Pain Points & Impact\n\nPP-001 KPI inconsistency\nPP-002 Evidence traceability\nPP-003 Repetitive configuration\nPP-004 SOP/JD/KPI mapping\nPP-005 Work Done measurement\n\n**REPORTED / TO VERIFY**",
-      "x": 80,
-      "y": 1340,
-      "width": 1640,
-      "height": 720,
-      "color": "1"
-    },
-    {
-      "id": "f-1986e74a4418",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/04_Pain_Points_and_Impact.md",
-      "x": 80,
-      "y": 2110,
-      "width": 760,
-      "height": 150
-    },
-    {
-      "id": "f-84a939033894",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/02_Pain_Points_Impact.canvas",
-      "x": 900,
-      "y": 2110,
-      "width": 820,
-      "height": 150,
-      "color": "1"
-    },
-    {
-      "id": "g-30db60e7b1b6",
-      "type": "group",
-      "label": "06 - ROOT CAUSE HYPOTHESES",
-      "x": 1960,
-      "y": 1260,
-      "width": 1800,
-      "height": 1080,
-      "color": "2"
-    },
-    {
-      "id": "n-93b7b45dabf9",
-      "type": "text",
-      "text": "# 06. Root Cause Hypotheses\n\n**People:** ownership\n**Process:** lifecycle\n**Data:** source/evidence\n**System:** capability/integration\n**Governance:** baseline/roll-up\n\nHypotheses require verification.",
-      "x": 2040,
-      "y": 1340,
-      "width": 1640,
-      "height": 720,
-      "color": "2"
-    },
-    {
-      "id": "f-147c49c9a5d9",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/05_Root_Cause_Hypotheses.md",
-      "x": 2040,
-      "y": 2110,
-      "width": 760,
-      "height": 150
-    },
-    {
-      "id": "f-3dcb497336bc",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/03_Root_Cause_Analysis.canvas",
-      "x": 2860,
-      "y": 2110,
-      "width": 820,
-      "height": 150,
-      "color": "2"
-    },
-    {
-      "id": "g-254ba2ce22ff",
-      "type": "group",
-      "label": "07 - AS-IS VS TO-BE",
-      "x": 3920,
-      "y": 1260,
-      "width": 1800,
-      "height": 1080,
-      "color": "3"
-    },
-    {
-      "id": "n-e221781f5e5b",
-      "type": "text",
-      "text": "# 07. AS-IS vs TO-BE\n\n| Reported AS-IS | Proposed TO-BE |\n| --- | --- |\n| Manual configuration | Governed templates |\n| Unclear evidence | Source-to-result trace |\n| KPI tree/report | Separate execution and effectiveness |\n| Unknown integrations | Validated source ownership |",
-      "x": 4000,
-      "y": 1340,
-      "width": 1640,
-      "height": 720,
-      "color": "3"
-    },
-    {
-      "id": "f-d6eabb94626c",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/06_TOBE_Target_Process.md",
-      "x": 4000,
-      "y": 2110,
-      "width": 760,
-      "height": 150
-    },
-    {
-      "id": "f-98973dc22f43",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/10_Requirements_Traceability.canvas",
-      "x": 4820,
-      "y": 2110,
-      "width": 820,
-      "height": 150,
-      "color": "3"
-    },
-    {
-      "id": "g-dccd30bab8cd",
-      "type": "group",
-      "label": "08 - PROPOSED TO-BE WORKFLOW",
-      "x": 5880,
-      "y": 1260,
-      "width": 1800,
-      "height": 1080,
-      "color": "4"
-    },
-    {
-      "id": "n-7b6a2e24f375",
-      "type": "text",
-      "text": "# 08. Proposed TO-BE Workflow\n\nSOP -> JD/Responsibility -> KPI -> Work Assignment -> Execution -> Evidence -> Measurement -> Review -> Roll-up -> Reporting\n\n**PROPOSED / NOT APPROVED**",
-      "x": 5960,
-      "y": 1340,
-      "width": 1020,
-      "height": 720,
-      "color": "4"
-    },
-    {
-      "id": "f-00e1ac953d71",
-      "type": "file",
-      "file": "Pasted image 20261012103244.png",
-      "x": 7040,
-      "y": 1350,
-      "width": 560,
-      "height": 700
-    },
-    {
-      "id": "f-450529c8e666",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/06_TOBE_Target_Process.md",
-      "x": 5960,
-      "y": 2110,
-      "width": 760,
-      "height": 150
-    },
-    {
-      "id": "f-69b0c8ed7378",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/04_TOBE_Target_Process.canvas",
-      "x": 6780,
-      "y": 2110,
-      "width": 820,
-      "height": 150,
-      "color": "4"
-    },
-    {
-      "id": "g-78cee324a02f",
-      "type": "group",
-      "label": "09 - PERFORMANCE HIERARCHY",
-      "x": 0,
-      "y": 2520,
-      "width": 1800,
-      "height": 1080,
-      "color": "6"
-    },
-    {
-      "id": "n-9fb1c36f9816",
-      "type": "text",
-      "text": "# 09. Organizational Performance Hierarchy\n\nMember -> Team -> Department -> Division -> Echelon / Corporate\n\nDo not average incompatible percentages. Do not double count contribution.\n\n**PROPOSED / TO VERIFY**",
-      "x": 80,
-      "y": 2600,
-      "width": 1020,
-      "height": 720,
-      "color": "6"
-    },
-    {
-      "id": "f-c8e25fa50724",
-      "type": "file",
-      "file": "Pasted image 20261012154322.png",
-      "x": 1160,
-      "y": 2610,
-      "width": 560,
-      "height": 700
-    },
-    {
-      "id": "f-27fd767c5917",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/08_Performance_Hierarchy.md",
-      "x": 80,
-      "y": 3370,
-      "width": 760,
-      "height": 150
-    },
-    {
-      "id": "f-33f3d849bc83",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/06_Performance_Hierarchy.canvas",
-      "x": 900,
-      "y": 3370,
-      "width": 820,
-      "height": 150,
-      "color": "6"
-    },
-    {
-      "id": "g-c14119f9c466",
-      "type": "group",
-      "label": "10 - CHALLENGES AND RISKS",
-      "x": 1960,
-      "y": 2520,
-      "width": 1800,
-      "height": 1080,
-      "color": "1"
-    },
-    {
-      "id": "n-2f4886cecb21",
-      "type": "text",
-      "text": "# 10. Challenges & Risks\n\nPeople | Process | Data | System | Governance\n\nP0 themes: incompatible roll-up, double count, unaccepted work, baseline drift, privacy.\n\nPriority is a BA assessment.",
-      "x": 2040,
-      "y": 2600,
-      "width": 1640,
-      "height": 720,
-      "color": "1"
-    },
-    {
-      "id": "f-3054996ab8d4",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/11_Challenges_and_Risks.md",
-      "x": 2040,
-      "y": 3370,
-      "width": 760,
-      "height": 150
-    },
-    {
-      "id": "f-95aad26c7132",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/08_Challenges_Gap_Analysis.canvas",
-      "x": 2860,
-      "y": 3370,
-      "width": 820,
-      "height": 150,
-      "color": "1"
-    },
-    {
-      "id": "g-f5faa683144a",
-      "type": "group",
-      "label": "11 - DISCOVERY AND VALIDATION",
-      "x": 3920,
-      "y": 2520,
-      "width": 1800,
-      "height": 1080,
-      "color": "3"
-    },
-    {
-      "id": "n-41bc818e7deb",
-      "type": "text",
-      "text": "# 11. Discovery & Validation Plan\n\nWP01 TOP review\nWP02 SOP/JD review\nWP03 KPI assessment\nWP04 Work Done/data\nWP05 TO-BE validation\nWP06 Solution feasibility\n\nNo invented owner or deadline.",
-      "x": 4000,
-      "y": 2600,
-      "width": 1640,
-      "height": 720,
-      "color": "3"
-    },
-    {
-      "id": "f-a685b59fb544",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/12_Discovery_and_Validation.md",
-      "x": 4000,
-      "y": 3370,
-      "width": 760,
-      "height": 150
-    },
-    {
-      "id": "f-f4f80455580c",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/09_Discovery_Plan.canvas",
-      "x": 4820,
-      "y": 3370,
-      "width": 820,
-      "height": 150,
-      "color": "3"
-    },
-    {
-      "id": "g-e6b5d4f3565a",
-      "type": "group",
-      "label": "12 - MANAGEMENT DECISIONS",
-      "x": 5880,
-      "y": 2520,
-      "width": 1800,
-      "height": 1080,
-      "color": "6"
-    },
-    {
-      "id": "n-9b97a1ee60ca",
-      "type": "text",
-      "text": "# 12. Management Decisions\n\nSponsor | Governance owner | Discovery scope | Measurement scope | SOP/JD responsibility | TOP assessment | Integration | Improve/Extend/Build | Proceed to design\n\n**All PENDING / NOT APPROVED**",
-      "x": 5960,
-      "y": 2600,
-      "width": 1640,
-      "height": 720,
-      "color": "6"
-    },
-    {
-      "id": "f-79d94a78a141",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/13_Management_Decisions.md",
-      "x": 5960,
-      "y": 3370,
-      "width": 760,
-      "height": 150
-    },
-    {
-      "id": "f-b1ec52d50c69",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/11_Management_Decisions.canvas",
-      "x": 6780,
-      "y": 3370,
-      "width": 820,
-      "height": 150,
-      "color": "6"
-    },
-    {
-      "id": "f-7aafd59ba0d2",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/BSC_KPI_Enterprise_Master_Mindmap_v1_0.canvas",
-      "x": 900,
-      "y": 850,
-      "width": 820,
-      "height": 150,
-      "color": "5"
-    }
-  ],
-  "edges": [
-    {
-      "id": "e-8081899b782d",
-      "fromNode": "n-506e273ea8f8",
-      "toNode": "f-7aafd59ba0d2",
-      "label": "open master analysis",
-      "color": "5",
-      "fromSide": "bottom",
-      "toSide": "top"
-    }
-  ]
+	"nodes":[
+		{"id":"g-5a41522b2cdf","type":"group","x":0,"y":0,"width":1800,"height":1080,"color":"5","label":"01 - PROJECT CONTEXT"},
+		{"id":"g-7c30dcc04c99","type":"group","x":1960,"y":0,"width":1800,"height":1080,"color":"6","label":"02 - EXECUTIVE FINDINGS"},
+		{"id":"g-ab6b733d2ee1","type":"group","x":3920,"y":0,"width":1800,"height":1080,"color":"4","label":"03 - AS-IS BUSINESS PROCESS"},
+		{"id":"g-d486d19469cf","type":"group","x":5880,"y":0,"width":1800,"height":1080,"color":"5","label":"04 - CURRENT SYSTEM LANDSCAPE"},
+		{"id":"g-69c4f6a75891","type":"group","x":0,"y":1260,"width":1800,"height":1080,"color":"1","label":"05 - PAIN POINTS AND IMPACT"},
+		{"id":"g-30db60e7b1b6","type":"group","x":1960,"y":1260,"width":1800,"height":1080,"color":"2","label":"06 - ROOT CAUSE HYPOTHESES"},
+		{"id":"g-254ba2ce22ff","type":"group","x":3920,"y":1260,"width":1800,"height":1080,"color":"3","label":"07 - AS-IS VS TO-BE"},
+		{"id":"g-dccd30bab8cd","type":"group","x":5880,"y":1260,"width":1800,"height":1080,"color":"4","label":"08 - PROPOSED TO-BE WORKFLOW"},
+		{"id":"g-78cee324a02f","type":"group","x":0,"y":2520,"width":1800,"height":1080,"color":"6","label":"09 - PERFORMANCE HIERARCHY"},
+		{"id":"g-c14119f9c466","type":"group","x":1960,"y":2520,"width":1800,"height":1080,"color":"1","label":"10 - CHALLENGES AND RISKS"},
+		{"id":"g-f5faa683144a","type":"group","x":3920,"y":2520,"width":1800,"height":1080,"color":"3","label":"11 - DISCOVERY AND VALIDATION"},
+		{"id":"g-e6b5d4f3565a","type":"group","x":5880,"y":2520,"width":1800,"height":1080,"color":"6","label":"12 - MANAGEMENT DECISIONS"},
+		{"id":"n-506e273ea8f8","type":"text","text":"# 01. Project Context\n\n**Status:** Business Discovery / Pre-BRD\n\nConnect strategy, responsibility, KPI, accepted work, evidence and reporting.\n\n**Boundary:** no registered canonical project; sponsor and Primary Domain TO VERIFY.","x":80,"y":80,"width":1640,"height":720,"color":"5"},
+		{"id":"f-d116f39b6be5","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/01_Business_Context.md","x":80,"y":850,"width":760,"height":150},
+		{"id":"n-c1bc87413e0d","type":"text","text":"# 02. Executive Findings\n\n1. Validate AS-IS\n2. Standardize definitions\n3. Verify measurement feasibility\n4. Evaluate solution options\n5. Approve scope after evidence\n\n**BA assessment - NOT APPROVED**","x":2040,"y":80,"width":1020,"height":720,"color":"6"},
+		{"id":"f-7433af6d0972","type":"file","file":"Pasted image 20261012103026.png","x":3120,"y":90,"width":560,"height":419},
+		{"id":"f-1c3c66206097","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/02_Executive_Findings.md","x":2040,"y":850,"width":760,"height":150},
+		{"id":"f-7aafd59ba0d2","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/BSC_KPI_Enterprise_Master_Mindmap_v1_0.canvas","x":900,"y":850,"width":820,"height":150,"color":"5"},
+		{"id":"n-fbc2547b1927","type":"text","text":"# 03. AS-IS Business Process\n\nDepartment/Manager defines KPI\n-> TOP KPI tree\n-> Employee criteria\n-> Update evaluation result\n-> Hierarchical consolidation\n-> Report\n\n**REPORTED / TO VERIFY**","x":4000,"y":80,"width":1640,"height":720,"color":"4"},
+		{"id":"f-f74c3f05ac55","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/03_ASIS_Current_State.md","x":4000,"y":850,"width":760,"height":150},
+		{"id":"f-c21245b671ce","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/01_ASIS_Current_State.canvas","x":4820,"y":850,"width":820,"height":150,"color":"4"},
+		{"id":"n-c29acc63dc58","type":"text","text":"# 04. Current System Landscape\n\nBusiness sources: TOP, SOP/JD, HR, task systems, Jira, WFX\n\nData layer: DWH / history / identity\n\nTarget: management, rules, approval, dashboard\n\nAll integrations **TO VERIFY**","x":5960,"y":80,"width":1020,"height":720,"color":"5"},
+		{"id":"f-58532fc565d9","type":"file","file":"Pasted image 20261012103312.png","x":7040,"y":90,"width":560,"height":692},
+		{"id":"f-04995a7c5c4e","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/10_Data_System_Landscape.md","x":5960,"y":850,"width":760,"height":150},
+		{"id":"f-800ffeb978e1","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/10_Requirements_Traceability.canvas","x":6780,"y":850,"width":820,"height":150,"color":"5"},
+		{"id":"n-6f40d4ec9e3f","type":"text","text":"# 05. Pain Points & Impact\n\nPP-001 KPI inconsistency\nPP-002 Evidence traceability\nPP-003 Repetitive configuration\nPP-004 SOP/JD/KPI mapping\nPP-005 Work Done measurement\n\n**REPORTED / TO VERIFY**","x":80,"y":1340,"width":1640,"height":720,"color":"1"},
+		{"id":"f-1986e74a4418","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/04_Pain_Points_and_Impact.md","x":80,"y":2110,"width":760,"height":150},
+		{"id":"f-84a939033894","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/02_Pain_Points_Impact.canvas","x":900,"y":2110,"width":820,"height":150,"color":"1"},
+		{"id":"n-9fb1c36f9816","type":"text","text":"# 09. Organizational Performance Hierarchy\n\nMember -> Team -> Department -> Division -> Echelon / Corporate\n\nDo not average incompatible percentages. Do not double count contribution.\n\n**PROPOSED / TO VERIFY**","x":80,"y":2600,"width":1020,"height":720,"color":"6"},
+		{"id":"f-c8e25fa50724","type":"file","file":"Pasted image 20261012154322.png","x":1160,"y":2610,"width":560,"height":658},
+		{"id":"f-27fd767c5917","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/08_Performance_Hierarchy.md","x":80,"y":3370,"width":760,"height":150},
+		{"id":"f-33f3d849bc83","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/06_Performance_Hierarchy.canvas","x":900,"y":3370,"width":820,"height":150,"color":"6"},
+		{"id":"n-e221781f5e5b","type":"text","text":"# 07. AS-IS vs TO-BE\n\n| Reported AS-IS | Proposed TO-BE |\n| --- | --- |\n| Manual configuration | Governed templates |\n| Unclear evidence | Source-to-result trace |\n| KPI tree/report | Separate execution and effectiveness |\n| Unknown integrations | Validated source ownership |","x":4000,"y":1340,"width":1640,"height":720,"color":"3"},
+		{"id":"f-d6eabb94626c","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/06_TOBE_Target_Process.md","x":4000,"y":2110,"width":760,"height":150},
+		{"id":"n-93b7b45dabf9","type":"text","text":"# 06. Root Cause Hypotheses\n\n**People:** ownership\n**Process:** lifecycle\n**Data:** source/evidence\n**System:** capability/integration\n**Governance:** baseline/roll-up\n\nHypotheses require verification.","x":2040,"y":1340,"width":1640,"height":720,"color":"2"},
+		{"id":"f-147c49c9a5d9","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/05_Root_Cause_Hypotheses.md","x":2040,"y":2110,"width":760,"height":150},
+		{"id":"f-98973dc22f43","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/10_Requirements_Traceability.canvas","x":4820,"y":2110,"width":820,"height":150,"color":"3"},
+		{"id":"n-2f4886cecb21","type":"text","text":"# 10. Challenges & Risks\n\nPeople | Process | Data | System | Governance\n\nP0 themes: incompatible roll-up, double count, unaccepted work, baseline drift, privacy.\n\nPriority is a BA assessment.","x":2040,"y":2600,"width":1640,"height":720,"color":"1"},
+		{"id":"f-3054996ab8d4","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/11_Challenges_and_Risks.md","x":2040,"y":3370,"width":760,"height":150},
+		{"id":"n-41bc818e7deb","type":"text","text":"# 11. Discovery & Validation Plan\n\nWP01 TOP review\nWP02 SOP/JD review\nWP03 KPI assessment\nWP04 Work Done/data\nWP05 TO-BE validation\nWP06 Solution feasibility\n\nNo invented owner or deadline.","x":4000,"y":2600,"width":1640,"height":720,"color":"3"},
+		{"id":"f-a685b59fb544","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/12_Discovery_and_Validation.md","x":4000,"y":3370,"width":760,"height":150},
+		{"id":"f-f4f80455580c","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/09_Discovery_Plan.canvas","x":4820,"y":3370,"width":820,"height":150,"color":"3"},
+		{"id":"n-7b6a2e24f375","type":"text","text":"# 08. Proposed TO-BE Workflow\n\nSOP -> JD/Responsibility -> KPI -> Work Assignment -> Execution -> Evidence -> Measurement -> Review -> Roll-up -> Reporting\n\n**PROPOSED / NOT APPROVED**","x":5960,"y":1340,"width":1020,"height":720,"color":"4"},
+		{"id":"f-00e1ac953d71","type":"file","file":"Pasted image 20261012103244.png","x":7040,"y":1350,"width":560,"height":288},
+		{"id":"f-450529c8e666","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/06_TOBE_Target_Process.md","x":5960,"y":2110,"width":760,"height":150},
+		{"id":"f-3dcb497336bc","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/03_Root_Cause_Analysis.canvas","x":2860,"y":2110,"width":820,"height":150,"color":"2"},
+		{"id":"f-69b0c8ed7378","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/04_TOBE_Target_Process.canvas","x":6780,"y":2110,"width":820,"height":150,"color":"4"},
+		{"id":"f-95aad26c7132","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/08_Challenges_Gap_Analysis.canvas","x":2860,"y":3370,"width":820,"height":150,"color":"1"},
+		{"id":"n-9b97a1ee60ca","type":"text","text":"# 12. Management Decisions\n\nSponsor | Governance owner | Discovery scope | Measurement scope | SOP/JD responsibility | TOP assessment | Integration | Improve/Extend/Build | Proceed to design\n\n**All PENDING / NOT APPROVED**","x":5960,"y":2600,"width":1640,"height":720,"color":"6"},
+		{"id":"f-79d94a78a141","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/13_Management_Decisions.md","x":5960,"y":3370,"width":760,"height":150},
+		{"id":"f-b1ec52d50c69","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/11_Management_Decisions.canvas","x":6780,"y":3370,"width":820,"height":150,"color":"6"}
+	],
+	"edges":[
+		{"id":"e-8081899b782d","fromNode":"n-506e273ea8f8","fromSide":"bottom","toNode":"f-7aafd59ba0d2","toSide":"top","color":"5","label":"open master analysis"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }
