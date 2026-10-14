@@ -1,145 +1,23 @@
 {
-  "nodes": [
-    {
-      "id": "g-150afd09ec2c",
-      "type": "group",
-      "label": "08 CHALLENGES AND GAP ANALYSIS",
-      "x": -120,
-      "y": -160,
-      "width": 3320,
-      "height": 2100,
-      "color": "1"
-    },
-    {
-      "id": "n-90b94ec50e74",
-      "type": "text",
-      "text": "# 08 Challenges and Gap Analysis\n\nRisk chain from challenge to impact, verification, mitigation and decision.\n\n**Status labels are part of the content; color is not the only status signal.**",
-      "x": 0,
-      "y": 0,
-      "width": 3000,
-      "height": 250,
-      "color": "1"
-    },
-    {
-      "id": "n-33e3dae7fd3f",
-      "type": "text",
-      "text": "## People\n\n**Challenge**\nOwnership unclear\n\n**Potential impact**\nDisputed results\n\n**Verify** RACI interview\n**Mitigate** Governance role\n\n**BA ASSESSMENT / TO VERIFY**",
-      "x": 50,
-      "y": 380,
-      "width": 520,
-      "height": 560,
-      "color": "1"
-    },
-    {
-      "id": "n-d8074197670c",
-      "type": "text",
-      "text": "## Process\n\n**Challenge**\nLifecycle inconsistent\n\n**Potential impact**\nDrift / rework\n\n**Verify** Walkthrough\n**Mitigate** Controlled catalogue\n\n**BA ASSESSMENT / TO VERIFY**",
-      "x": 670,
-      "y": 380,
-      "width": 520,
-      "height": 560,
-      "color": "1"
-    },
-    {
-      "id": "n-b9f971f4d2ea",
-      "type": "text",
-      "text": "## Data\n\n**Challenge**\nEvidence/source unclear\n\n**Potential impact**\nNon-auditable score\n\n**Verify** Source trace\n**Mitigate** Ownership / lineage\n\n**BA ASSESSMENT / TO VERIFY**",
-      "x": 1290,
-      "y": 380,
-      "width": 520,
-      "height": 560,
-      "color": "1"
-    },
-    {
-      "id": "n-4bc96384627d",
-      "type": "text",
-      "text": "## System\n\n**Challenge**\nTOP capability unknown\n\n**Potential impact**\nWrong solution choice\n\n**Verify** WP01/WP06\n**Mitigate** Options analysis\n\n**BA ASSESSMENT / TO VERIFY**",
-      "x": 1910,
-      "y": 380,
-      "width": 520,
-      "height": 560,
-      "color": "1"
-    },
-    {
-      "id": "n-03a8bf163622",
-      "type": "text",
-      "text": "## Governance\n\n**Challenge**\nRoll-up rules unapproved\n\n**Potential impact**\nBias / double count\n\n**Verify** Golden cases\n**Mitigate** Approved controls\n\n**BA ASSESSMENT / TO VERIFY**",
-      "x": 2530,
-      "y": 380,
-      "width": 520,
-      "height": 560,
-      "color": "1"
-    },
-    {
-      "id": "f-83d7272224df",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/11_Challenges_and_Risks.md",
-      "x": 50,
-      "y": 1080,
-      "width": 760,
-      "height": 150,
-      "color": "1"
-    },
-    {
-      "id": "f-7cd4007f124b",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Gap_Register.md",
-      "x": 910,
-      "y": 1080,
-      "width": 760,
-      "height": 150,
-      "color": "2"
-    },
-    {
-      "id": "f-daefce4b2d5a",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Risk_Register.md",
-      "x": 1770,
-      "y": 1080,
-      "width": 760,
-      "height": 150,
-      "color": "1"
-    },
-    {
-      "id": "f-f7f5fd14d938",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Requirement_Register.md",
-      "x": 50,
-      "y": 1350,
-      "width": 760,
-      "height": 150,
-      "color": "3"
-    },
-    {
-      "id": "f-d8d1feb518c3",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Decision_Log.md",
-      "x": 910,
-      "y": 1350,
-      "width": 760,
-      "height": 150,
-      "color": "6"
-    },
-    {
-      "id": "f-331ee46c335f",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/BSC_KPI_Enterprise_Master_Mindmap_v1_0.canvas",
-      "x": 0,
-      "y": 1660,
-      "width": 850,
-      "height": 140,
-      "color": "5"
-    },
-    {
-      "id": "f-0ef9e5e444b3",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/00_INDEX.md",
-      "x": 950,
-      "y": 1660,
-      "width": 850,
-      "height": 140,
-      "color": "5"
-    }
-  ],
-  "edges": []
+	"nodes":[
+		{"id":"g-150afd09ec2c","type":"group","label":"08 CHALLENGES AND GAP ANALYSIS","x":-120,"y":-160,"width":3320,"height":2100,"color":"1"},
+		{"id":"n-90b94ec50e74","type":"text","text":"# 08 Challenges and Gap Analysis\n\nRisk chain from challenge to impact, verification, mitigation and decision.\n\n**Status labels are part of the content; color is not the only status signal.**","x":0,"y":0,"width":3000,"height":250,"color":"1"},
+		{"id":"n-33e3dae7fd3f","type":"text","text":"## People\n\n**Challenge**\nOwnership unclear\n\n**Potential impact**\nDisputed results\n\n**Verify** RACI interview\n**Mitigate** Governance role\n\n**BA ASSESSMENT / TO VERIFY**","x":50,"y":380,"width":520,"height":560,"color":"1"},
+		{"id":"n-d8074197670c","type":"text","text":"## Process\n\n**Challenge**\nLifecycle inconsistent\n\n**Potential impact**\nDrift / rework\n\n**Verify** Walkthrough\n**Mitigate** Controlled catalogue\n\n**BA ASSESSMENT / TO VERIFY**","x":670,"y":380,"width":520,"height":560,"color":"1"},
+		{"id":"n-b9f971f4d2ea","type":"text","text":"## Data\n\n**Challenge**\nEvidence/source unclear\n\n**Potential impact**\nNon-auditable score\n\n**Verify** Source trace\n**Mitigate** Ownership / lineage\n\n**BA ASSESSMENT / TO VERIFY**","x":1290,"y":380,"width":520,"height":560,"color":"1"},
+		{"id":"n-4bc96384627d","type":"text","text":"## System\n\n**Challenge**\nTOP capability unknown\n\n**Potential impact**\nWrong solution choice\n\n**Verify** WP01/WP06\n**Mitigate** Options analysis\n\n**BA ASSESSMENT / TO VERIFY**","x":1910,"y":380,"width":520,"height":560,"color":"1"},
+		{"id":"n-03a8bf163622","type":"text","text":"## Governance\n\n**Challenge**\nRoll-up rules unapproved\n\n**Potential impact**\nBias / double count\n\n**Verify** Golden cases\n**Mitigate** Approved controls\n\n**BA ASSESSMENT / TO VERIFY**","x":2530,"y":380,"width":520,"height":560,"color":"1"},
+		{"id":"f-83d7272224df","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/11_Challenges_and_Risks.md","x":50,"y":1080,"width":760,"height":150,"color":"1"},
+		{"id":"f-7cd4007f124b","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Gap_Register.md","x":910,"y":1080,"width":760,"height":150,"color":"2"},
+		{"id":"f-daefce4b2d5a","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Risk_Register.md","x":1770,"y":1080,"width":760,"height":150,"color":"1"},
+		{"id":"f-f7f5fd14d938","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Requirement_Register.md","x":50,"y":1350,"width":760,"height":150,"color":"3"},
+		{"id":"f-d8d1feb518c3","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Decision_Log.md","x":910,"y":1350,"width":760,"height":150,"color":"6"},
+		{"id":"f-331ee46c335f","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/BSC_KPI_Enterprise_Master_Mindmap_v1_0.canvas","x":0,"y":1660,"width":850,"height":140,"color":"5"},
+		{"id":"f-0ef9e5e444b3","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/00_INDEX.md","x":950,"y":1660,"width":850,"height":140,"color":"5"}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }
