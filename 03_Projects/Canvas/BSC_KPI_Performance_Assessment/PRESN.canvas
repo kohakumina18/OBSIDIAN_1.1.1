@@ -1,49 +1,110 @@
 {
 	"nodes":[
+		{"id":"05da75daf3d5fcf7","type":"file","file":"Pasted image 20261014091038.png","x":15840,"y":20,"width":1267,"height":1121},
+		{"id":"63870ec248db025b","type":"file","file":"Pasted image 20261014090812.png","x":16425,"y":-3220,"width":998,"height":300},
+		{"id":"cfd142a8b2629876","type":"file","file":"Pasted image 20261014090844.png","x":16482,"y":-1440,"width":883,"height":680},
+		{"id":"06e85a928f6cf489","type":"file","file":"Pasted image 20261014090911.png","x":18760,"y":-1440,"width":963,"height":980},
+		{
+			"id":"aba2ad2bb613499c",
+			"type":"text",
+			"text":"## 4. Challenges Assessment\n\nMức độ ưu tiên là đề xuất của BA dựa trên ảnh hưởng tới tính khả thi. Chưa phải đánh giá chính thức của PPJ.\n\n| Category   | Challenge                                              | Risk                                                  | Priority |\n| ---------- | ------------------------------------------------------ | ----------------------------------------------------- | -------- |\n| People     | Manager có cách diễn giải KPI khác nhau                | Đánh giá thiếu nhất quán                              | High     |\n| People     | Công việc hỗ trợ khó lượng hóa bằng output đơn giản    | Tiêu chí không phản ánh đúng đóng góp                 | High     |\n| Process    | SOP – JD – KPI thiếu mapping đã được kiểm chứng        | Sai lệch giữa trách nhiệm và tiêu chí đánh giá        | Critical |\n| Process    | Chưa có Work Done Acceptance Standard                  | Task Done có thể không đồng nghĩa kết quả đạt yêu cầu | Critical |\n| Data       | Thiếu source of truth cho từng KPI                     | Không tự động hóa hoặc kiểm toán kết quả đáng tin cậy | Critical |\n| Data       | Khó so sánh output khác đơn vị đo                      | Roll-up thiếu ý nghĩa                                 | High     |\n| System     | Cấu hình lặp lại theo cá nhân                          | Chi phí quản trị và sai sót tăng                      | High     |\n| System     | Chưa rõ khả năng tích hợp và tái sử dụng chức năng TOP | Nguy cơ đầu tư trùng lặp                              | High     |\n| Governance | Chưa xác định owner phê duyệt KPI và quy chuẩn đo      | Thiếu trách nhiệm về tính đúng của tiêu chí           | Critical |\n| Governance | Chưa thống nhất phạm vi dự án                          | Dễ mở rộng scope trước khi hoàn tất discovery         | High     |\n\n### Critical Dependencies\n\nCó ba điều kiện tiên quyết cần xác minh trước khi chuyển sang thiết kế giải pháp:\n\n1. Business ownership: Các phòng ban xác nhận quy trình, trách nhiệm và kết quả cần đo.\n    \n2. Measurement validity: Mỗi chỉ số có định nghĩa, nguồn dữ liệu và nguyên tắc xác nhận.\n    \n3. System fit: Xác định chính xác TOP đang làm được gì, phần nào chưa khai thác và phần nào thật sự thiếu.",
+			"styleAttributes":{},
+			"x":7120,
+			"y":-1655,
+			"width":920,
+			"height":875,
+			"color":"2"
+		},
 		{
 			"id":"a90b92b73878c420",
 			"type":"text",
-			"text":"\n    \n\n\n\n## 3. TO-BE – Target Business Model\n\n### 3.1. Target Objective\n\nHướng đến mô hình đánh giá mà mỗi kết quả KPI có thể được giải thích bằng trách nhiệm công việc, tiêu chí đo lường, nguồn dữ liệu và kết quả đã được xác nhận.\n\n### TO-BE – Standardized Performance Management\n\n![[Pasted image 20261014091200.png|1101]]\n\nMô hình nghiệp vụ mục tiêu đề xuất, chưa phải giải pháp kỹ thuật hoặc phạm vi chức năng đã được phê duyệt.\n\n### 3.2. Target Capabilities\n\n|Capability|AS-IS|TO-BE Expected|\n|---|---|---|\n|KPI Standardization|Tiêu chí có thể khác giữa các nhóm|KPI Dictionary với định nghĩa và ownership thống nhất|\n|SOP–JD–KPI Mapping|Quan hệ chưa rõ|Truy vết KPI đến quy trình, trách nhiệm và công việc liên quan|\n|Role-based Configuration|Thiết lập lặp theo nhân viên|Template dùng chung, có version và ngoại lệ được duyệt|\n|Work Measurement|Cơ sở dữ liệu đánh giá chưa rõ|Chỉ số có nguồn, công thức và tiêu chí xác nhận|\n|Performance Review|Chưa xác minh đầy đủ quy trình xét duyệt|Có bằng chứng, người đánh giá và lịch sử điều chỉnh|\n|Hierarchical Reporting|TOP có cây KPI và roll-up|Tổng hợp đúng phạm vi tổ chức, có drill-down và kiểm soát tính trùng|\n\n### 3.3. Proposed Organizational Performance Hierarchy\n\n![[Pasted image 20261014091217.png|1101]]\n    \n\nMột team hoàn thành 100% task không có nghĩa KPI của team đạt 100%. Phương pháp tổng hợp điểm giữa các cấp cần được thiết kế riêng sau khi xác nhận các loại công việc và đơn vị đo.\n\n## 4. Challenges Assessment\n\nMức độ ưu tiên là đề xuất của BA dựa trên ảnh hưởng tới tính khả thi. Chưa phải đánh giá chính thức của PPJ.\n\n|Category|Challenge|Risk|Priority|\n|---|---|---|---|\n|People|Manager có cách diễn giải KPI khác nhau|Đánh giá thiếu nhất quán|High|\n|People|Công việc hỗ trợ khó lượng hóa bằng output đơn giản|Tiêu chí không phản ánh đúng đóng góp|High|\n|Process|SOP – JD – KPI thiếu mapping đã được kiểm chứng|Sai lệch giữa trách nhiệm và tiêu chí đánh giá|Critical|\n|Process|Chưa có Work Done Acceptance Standard|Task Done có thể không đồng nghĩa kết quả đạt yêu cầu|Critical|\n|Data|Thiếu source of truth cho từng KPI|Không tự động hóa hoặc kiểm toán kết quả đáng tin cậy|Critical|\n|Data|Khó so sánh output khác đơn vị đo|Roll-up thiếu ý nghĩa|High|\n|System|Cấu hình lặp lại theo cá nhân|Chi phí quản trị và sai sót tăng|High|\n|System|Chưa rõ khả năng tích hợp và tái sử dụng chức năng TOP|Nguy cơ đầu tư trùng lặp|High|\n|Governance|Chưa xác định owner phê duyệt KPI và quy chuẩn đo|Thiếu trách nhiệm về tính đúng của tiêu chí|Critical|\n|Governance|Chưa thống nhất phạm vi dự án|Dễ mở rộng scope trước khi hoàn tất discovery|High|\n\n### Critical Dependencies\n\nCó ba điều kiện tiên quyết cần xác minh trước khi chuyển sang thiết kế giải pháp:\n\n1. Business ownership: Các phòng ban xác nhận quy trình, trách nhiệm và kết quả cần đo.\n    \n2. Measurement validity: Mỗi chỉ số có định nghĩa, nguồn dữ liệu và nguyên tắc xác nhận.\n    \n3. System fit: Xác định chính xác TOP đang làm được gì, phần nào chưa khai thác và phần nào thật sự thiếu.\n    \n\n## 5. Gap Analysis – Confirmed vs. Unverified\n\n|Topic|Confirmed / Raised in Discussion|Gap / Assumption|Proposed Direction|\n|---|---|---|---|\n|Existing KPI System|PPJ sử dụng TOP để xây dựng cây KPI|Chưa có full functional assessment|Current System Review|\n|KPI Consistency|Có lo ngại KPI thiếu thống nhất|Chưa có mẫu KPI cùng chức danh để đối chiếu|Cross-department KPI Audit|\n|Performance Evidence|Nhóm yêu cầu có cơ sở số liệu khi đánh giá|Chưa xác định tỷ lệ KPI đang có bằng chứng|Data Source Assessment|\n|SOP & JD|Có đề cập lưu SOP và quan hệ với KPI|Chưa rõ cấu trúc, owner và cách sử dụng|SOP–JD Mapping|\n|Reusable KPI Setup|Cấu hình lặp theo người được phản ánh|Chưa kiểm tra chức năng template/bulk update của TOP|Configuration Review|\n|Work Done Tracking|Mong muốn phản ánh công việc thực tế vào đánh giá|Chưa có chuẩn completion/acceptance|Work Measurement Discovery|\n|Multi-level Roll-up|TOP có KPI Tree tổng hợp lên trên|Chưa chứng minh cách roll-up đáp ứng yêu cầu mới|Hierarchy & Rule Assessment|\n|Custom Software|Có định hướng nghiên cứu giải pháp|Chưa có quyết định phê duyệt xây mới|Option Assessment|\n\n### Phân loại trạng thái yêu cầu\n\nĐã được phản ánh trong cuộc họp: Cấu hình KPI lặp lại, khó xác định sự thống nhất, thiếu liên kết rõ giữa SOP/JD/KPI và nhu cầu có căn cứ khi đánh giá.\n\nCần kiểm chứng: Mức độ thiếu công bằng của điểm số; khả năng TOP không hỗ trợ tính năng cụ thể; tính sẵn có của dữ liệu; hiệu quả vận hành theo từng phòng ban.\n\nChưa phê duyệt: Tự xây phần mềm mới, thay TOP, scoring engine, dashboard đa cấp, tích hợp tự động và timeline triển khai.\n\n## 6. Discovery Plan – Work Packages\n\nKhông ấn định thời lượng khi chưa thống nhất lịch làm việc, danh sách đơn vị khảo sát và mức độ sẵn sàng của dữ liệu.\n\n|WP|Hoạt động|Stakeholders cần xác nhận|Required Evidence|Deliverable|\n|---|---|---|---|---|\n|01|Review TOP & Current KPI Process|TOP Admin, HR, Key Users|Screenshots, KPI tree, role permissions, workflow demo|AS-IS Process & System Assessment|\n|02|Review SOP–JD–Role Structure|HR, Department Heads, Process Owners|SOP/JD hiện hành, mẫu phân công công việc|SOP–JD Mapping Inventory|\n|03|KPI Definition Assessment|HR, Managers, KPI Owners|KPI sheets, công thức, target, lịch sử đánh giá|KPI Gap Matrix|\n|04|Work Done & Data Discovery|Team Leaders, Key Users, IT/Data|Task samples, work logs, acceptance records|Work Measurement & Source Inventory|\n|05|Target Process Validation|HR, Business Owners, BA, IT|Kết quả WP01–04|TO-BE Process & Requirements|\n|06|Feasibility & Option Review|Sponsor, Management, HR, IT|Gap Analysis, solution options, constraints|Solution Assessment & Next-step Proposal|\n\n### 6.1. Key Discovery Questions\n\n|Đối tượng|Câu hỏi trọng tâm|\n|---|---|\n|HR / KPI Owners|Hiện ai sở hữu KPI Catalogue? Có chuẩn KPI theo chức danh chưa? Tiêu chí nào là chung và tiêu chí nào riêng?|\n|Department Heads|Công việc nào phản ánh hiệu suất thực tế? Hiện quản lý đang dùng nguồn gì để chấm điểm?|\n|TOP Admin|Có template, bulk configuration, KPI formula, approval history, API/export hay không?|\n|Team Leaders|Nhân viên báo cáo work done như thế nào? Ai xác nhận và xử lý task bị trả lại?|\n|IT / Data|Dữ liệu nguồn ở hệ thống nào? Có đủ lịch sử, định danh nhân viên và dữ liệu nghiệm thu không?|\n|Sponsor / BOD|Ưu tiên cải thiện KPI Governance, theo dõi Work Done hay xây hệ thống quản trị thực thi mới?|\n\nMỗi câu trả lời cần đi kèm một mẫu thực tế hoặc thao tác hệ thống để tránh biến nhận định thành requirement chưa có cơ sở.\n\n## 7. Recommended Action & Management Decision\n\n### Các hành động ưu tiên\n\n01\n\nValidate AS-IS\n\nKhảo sát tối thiểu các nhóm công việc có tính chất khác nhau và kiểm tra thực tế hệ thống TOP\n\n02\n\nStandardize Business Definitions\n\nXác định SOP, JD, KPI và Work Done liên quan thế nào; làm rõ owner và quy tắc dùng chung\n\n03\n\nVerify Measurement Feasibility\n\nKiểm tra dữ liệu, bằng chứng, nghiệm thu và khả năng tính toán từng KPI\n\n04\n\nEvaluate Solution Options\n\nSo sánh cải tiến TOP, bổ sung module tích hợp hoặc xây nền tảng mới\n\n05\n\nApprove Scope\n\nSau khi business xác nhận quy chuẩn và gap mới chốt phạm vi BRD, roadmap, nguồn lực\n\n### Decisions Required from Management\n\n|Decision|Recommendation|\n|---|---|\n|Business Sponsor|Chỉ định owner chịu trách nhiệm về quy chuẩn KPI và tính đúng của đánh giá|\n|Discovery Scope|Chọn các phòng ban đại diện để khảo sát trước khi mở rộng toàn PPJ|\n|System Direction|Chưa quyết định thay thế hoặc tự xây mới khi chưa đánh giá TOP|\n|Project Gate|Chỉ chuyển sang solution design sau khi KPI, SOP/JD, dữ liệu nguồn và business rules được xác nhận|\n\n## 8. Management Conclusion\n\nCurrent State\n\nPPJ đã có nền tảng BSC–KPI nhưng còn các vấn đề được phản ánh về tính thống nhất của tiêu chí, thao tác cấu hình, liên kết quy trình và cơ sở dữ liệu đánh giá.\n\nTarget State\n\nHướng đến mô hình quản trị hiệu suất có cấu trúc từ SOP – JD – KPI đến Work Done, có khả năng xác minh kết quả và tổng hợp phù hợp theo cấp Member → Team → Department → Division → Echelon.\n\nKey Challenges\n\nKhó khăn lớn nhất trước mắt là chuẩn hóa nghiệp vụ, xác định cơ sở đo lường và phân định trách nhiệm dữ liệu giữa các đơn vị, không phải lựa chọn công nghệ.\n\nRecommendation\n\nTiếp tục Business Discovery, chuẩn hóa KPI và Work Measurement Framework; sau đó đánh giá tính khả thi và quyết định giải pháp hệ thống.\n\nProject status đề xuất: Discovery / AS-IS Validation. Chưa đủ cơ sở xác nhận development scope, delivery effort hoặc ngày triển khai.\n\n## Prompt chuẩn hóa cho bước tiếp theo\n\nDựa trên Business Analysis Assessment BSC–KPI tại PPJ, hãy xây dựng Discovery Package để khảo sát HR, Department Heads, Team Leaders và TOP System Admin.\n\nTập trung xác minh các pain points đã được thảo luận, kiểm tra chức năng hệ thống TOP hiện tại, chuẩn hóa quan hệ SOP–JD–KPI–Work Done và xác định nguồn dữ liệu đánh giá.\n\nDeliverables gồm:\n\n1. AS-IS validation questionnaire theo từng stakeholder.\n    \n2. Current Process & System Gap Checklist.\n    \n3. SOP–JD–KPI Mapping Template.\n    \n4. KPI Definition & Data Evidence Matrix.\n    \n5. Business Rules và Acceptance Criteria cần làm rõ.\n    \n6. Decision Matrix: cải tiến TOP, tích hợp bổ sung hoặc xây mới.\n    \n\nMỗi câu hỏi phải tạo ra một thông tin có thể sử dụng trực tiếp cho requirement, business rule, data specification hoặc feasibility assessment. Phân biệt rõ Fact, Assumption, Gap và Proposed Requirement. Không tự xác định giải pháp hoặc timeline trước khi có bằng chứng.",
+			"text":"\n    \n\n\n\n    \n\n## 5. Gap Analysis – Confirmed vs. Unverified\n\n| Topic                | Confirmed / Raised in Discussion                  | Gap / Assumption                                     | Proposed Direction          |\n| -------------------- | ------------------------------------------------- | ---------------------------------------------------- | --------------------------- |\n| Existing KPI System  | PPJ sử dụng TOPION để xây dựng cây KPI            | Chưa có full functional assessment                   | Current System Review       |\n| KPI Consistency      | Có lo ngại KPI thiếu thống nhất                   | Chưa có mẫu KPI cùng chức danh để đối chiếu          | Cross-department KPI Audit  |\n| Performance Evidence | Nhóm yêu cầu có cơ sở số liệu khi đánh giá        | Chưa xác định tỷ lệ KPI đang có bằng chứng           | Data Source Assessment      |\n| SOP & JD             | Có đề cập lưu SOP và quan hệ với KPI              | Chưa rõ cấu trúc, owner và cách sử dụng              | SOP–JD Mapping              |\n| Reusable KPI Setup   | Cấu hình lặp theo người được phản ánh             | Chưa kiểm tra chức năng template/bulk update của TOP | Configuration Review        |\n| Work Done Tracking   | Mong muốn phản ánh công việc thực tế vào đánh giá | Chưa có chuẩn completion/acceptance                  | Work Measurement Discovery  |\n| Multi-level Roll-up  | TOPION có KPI Tree tổng hợp lên trên              | Chưa chứng minh cách roll-up đáp ứng yêu cầu mới     | Hierarchy & Rule Assessment |\n| Custom Software      | Có định hướng nghiên cứu giải pháp                | Chưa có quyết định phê duyệt xây mới                 | Option Assessment           |\n\n### Phân loại trạng thái yêu cầu\n\nĐã được phản ánh trong cuộc họp: Cấu hình KPI lặp lại, khó xác định sự thống nhất, thiếu liên kết rõ giữa SOP/JD/KPI và nhu cầu có căn cứ khi đánh giá.\n\nCần kiểm chứng: Mức độ thiếu công bằng của điểm số; khả năng TOPION không hỗ trợ tính năng cụ thể; tính sẵn có của dữ liệu; hiệu quả vận hành theo từng phòng ban.\n\nChưa phê duyệt: Tự xây phần mềm mới, thay TOP, scoring engine, dashboard đa cấp, tích hợp tự động và timeline triển khai.\n\n## 6. Discovery Plan – Work Packages\n\nKhông ấn định thời lượng khi chưa thống nhất lịch làm việc, danh sách đơn vị khảo sát và mức độ sẵn sàng của dữ liệu.\n\n| WP  | Hoạt động                           | Stakeholders cần xác nhận            | Required Evidence                                      | Deliverable                              |\n| --- | ----------------------------------- | ------------------------------------ | ------------------------------------------------------ | ---------------------------------------- |\n| 01  | Review TOPION & Current KPI Process | TOPION Admin, HR, Key Users          | Screenshots, KPI tree, role permissions, workflow demo | AS-IS Process & System Assessment        |\n| 02  | Review SOP–JD–Role Structure        | HR, Department Heads, Process Owners | SOP/JD hiện hành, mẫu phân công công việc              | SOP–JD Mapping Inventory                 |\n| 03  | KPI Definition Assessment           | HR, Managers, KPI Owners             | KPI sheets, công thức, target, lịch sử đánh giá        | KPI Gap Matrix                           |\n| 04  | Work Done & Data Discovery          | Team Leaders, Key Users, IT/Data     | Task samples, work logs, acceptance records            | Work Measurement & Source Inventory      |\n| 05  | Target Process Validation           | HR, Business Owners, BA, IT          | Kết quả WP01–04                                        | TO-BE Process & Requirements             |\n| 06  | Feasibility & Option Review         | Sponsor, Management, HR, IT          | Gap Analysis, solution options, constraints            | Solution Assessment & Next-step Proposal |\n\n### 6.1. Key Discovery Questions\n\n|Đối tượng|Câu hỏi trọng tâm|\n|---|---|\n|HR / KPI Owners|Hiện ai sở hữu KPI Catalogue? Có chuẩn KPI theo chức danh chưa? Tiêu chí nào là chung và tiêu chí nào riêng?|\n|Department Heads|Công việc nào phản ánh hiệu suất thực tế? Hiện quản lý đang dùng nguồn gì để chấm điểm?|\n|TOP Admin|Có template, bulk configuration, KPI formula, approval history, API/export hay không?|\n|Team Leaders|Nhân viên báo cáo work done như thế nào? Ai xác nhận và xử lý task bị trả lại?|\n|IT / Data|Dữ liệu nguồn ở hệ thống nào? Có đủ lịch sử, định danh nhân viên và dữ liệu nghiệm thu không?|\n|Sponsor / BOD|Ưu tiên cải thiện KPI Governance, theo dõi Work Done hay xây hệ thống quản trị thực thi mới?|\n\nMỗi câu trả lời cần đi kèm một mẫu thực tế hoặc thao tác hệ thống để tránh biến nhận định thành requirement chưa có cơ sở.\n\n\n",
 			"styleAttributes":{},
-			"x":-220,
-			"y":-60,
-			"width":1140,
-			"height":10421
+			"x":9240,
+			"y":-1977,
+			"width":1460,
+			"height":1600,
+			"color":"1"
 		},
-		{"id":"06e85a928f6cf489","type":"file","file":"Pasted image 20261014090911.png","x":14760,"y":980,"width":963,"height":980},
-		{"id":"cfd142a8b2629876","type":"file","file":"Pasted image 20261014090844.png","x":12482,"y":980,"width":883,"height":680},
-		{"id":"05da75daf3d5fcf7","type":"file","file":"Pasted image 20261014091038.png","x":11840,"y":2440,"width":1267,"height":1121},
-		{"id":"63870ec248db025b","type":"file","file":"Pasted image 20261014090812.png","x":12425,"y":-800,"width":998,"height":300},
 		{
-			"id":"96241a8edb1caa72",
+			"id":"87c3f7b89b94cd22",
 			"type":"text",
-			"text":"\n## 1. Executive Summary\n\nPPJ hiện đang sử dụng hệ thống BSC–KPI bên thứ ba (được gọi là TOP trong buổi thảo luận) để xây dựng cây chỉ tiêu, phân bổ và tổng hợp kết quả đánh giá.\n\nTuy nhiên, cuộc thảo luận cho thấy những vấn đề cần làm rõ nằm ở tính thống nhất của tiêu chí, mối liên hệ giữa công việc và KPI, dữ liệu chứng minh kết quả, cũng như khả năng tái sử dụng cấu hình đánh giá.\n\n### Management Key Findings\n\n![[Pasted image 20261014091117.png|1104]]\n\nCác vấn đề trọng tâm:\n\n1. Tiêu chí đánh giá có nguy cơ thiếu thống nhất giữa các nhóm cùng chức năng.\n    \n2. Kết quả đánh giá chưa chứng minh rõ mối liên hệ với dữ liệu và kết quả công việc thực tế.\n    \n3. Cấu hình KPI của các nhân viên cùng vai trò còn lặp lại thủ công.\n    \n4. SOP, JD và KPI chưa được liên kết thành cấu trúc thống nhất có thể sử dụng và truy vết.",
+			"text":"\n\n## 2. AS-IS – Current State Assessment\n\n### 2.1. Current Process\n\n![[Pasted image 20261014091131.png]]\n\n### 2.2. Current Systems & Business Artifacts\n\n| Thành phần         | Hiện trạng theo thảo luận                                                          | Gap                                                               |\n| ------------------ | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------- |\n| TOPION – BSC/KPI   | Có cây KPI, phân cấp và tổng hợp kết quả                                           | Chưa kiểm chứng các chức năng quản lý mẫu, dữ liệu, workflow, API |\n| SOP                | Có chức năng lưu thông tin trên hệ thống, nhưng cách lưu và sử dụng chưa đồng nhất | Chưa rõ cấu trúc, phiên bản và liên kết KPI                       |\n| JD                 | Được nhắc đến như căn cứ mô tả trách nhiệm                                         | Chưa rõ kho lưu, chủ sở hữu và mapping                            |\n| KPI Definition     | Các nhóm có thể khác nhau về cách định nghĩa chỉ tiêu                              | Chưa có ví dụ đối chiếu thực tế đã xác nhận                       |\n| Work Done Evidence | Cần có số liệu làm cơ sở đánh giá                                                  | Chưa xác định source of truth cho từng loại công việc             |\n\n\n\n### 2.3. Pain Points & Business Impact\n\n|ID|Pain Point|Business Impact|Mức độ bằng chứng|\n|---|---|---|---|\n|P01|KPI có thể được định nghĩa khác nhau giữa các nhóm cùng chức năng|Khó so sánh hiệu suất và chuẩn hóa việc đánh giá|Ví dụ giả định, cần xác minh|\n|P02|Thiếu cơ sở dữ liệu rõ ràng để giải thích điểm KPI|Khó kiểm chứng, dễ phát sinh đánh giá chủ quan|Được thảo luận|\n|P03|Cấu hình và cập nhật KPI lặp lại theo từng nhân viên|Tốn thời gian, tăng rủi ro sai sót hoặc bỏ sót|Phản ánh trực tiếp|\n|P04|SOP/JD và KPI chưa mapping rõ ràng|Khó chứng minh tiêu chí phản ánh đúng trách nhiệm thực tế|Được thảo luận|\n|P05|Cách đo hiệu quả khác nhau giữa Sales, sản xuất và các bộ phận hỗ trợ|Khó dùng một phương pháp đánh giá đồng nhất|Được thảo luận|\n\n\n\nLưu ý: Chưa có dữ liệu định lượng về thời gian xử lý, số trường hợp sai, số KPI thiếu bằng chứng hoặc tỷ lệ đánh giá thiếu nhất quán. Business Impact hiện là rủi ro nghiệp vụ, chưa phải tổn thất đã đo lường.",
 			"styleAttributes":{},
-			"x":2160,
-			"y":-840,
-			"width":840,
-			"height":720
+			"x":4680,
+			"y":-3282,
+			"width":1060,
+			"height":1820,
+			"color":"3"
 		},
+		{
+			"id":"d9d07c0f24125a01",
+			"type":"text",
+			"text":"\n\n## 3. TO-BE – Target Business Model\n\n### 3.1. Target Objective\n\nHướng đến mô hình đánh giá mà mỗi kết quả KPI có thể được giải thích bằng trách nhiệm công việc, tiêu chí đo lường, nguồn dữ liệu và kết quả đã được xác nhận.\n\n### TO-BE – Standardized Performance Management\n\n![[Pasted image 20261014091200.png|1101]]\n\nMô hình nghiệp vụ mục tiêu đề xuất, chưa phải giải pháp kỹ thuật hoặc phạm vi chức năng đã được phê duyệt.\n\n### 3.2. Target Capabilities\n\n|Capability|AS-IS|TO-BE Expected|\n|---|---|---|\n|KPI Standardization|Tiêu chí có thể khác giữa các nhóm|KPI Dictionary với định nghĩa và ownership thống nhất|\n|SOP–JD–KPI Mapping|Quan hệ chưa rõ|Truy vết KPI đến quy trình, trách nhiệm và công việc liên quan|\n|Role-based Configuration|Thiết lập lặp theo nhân viên|Template dùng chung, có version và ngoại lệ được duyệt|\n|Work Measurement|Cơ sở dữ liệu đánh giá chưa rõ|Chỉ số có nguồn, công thức và tiêu chí xác nhận|\n|Performance Review|Chưa xác minh đầy đủ quy trình xét duyệt|Có bằng chứng, người đánh giá và lịch sử điều chỉnh|\n|Hierarchical Reporting|TOP có cây KPI và roll-up|Tổng hợp đúng phạm vi tổ chức, có drill-down và kiểm soát tính trùng|\n\n### 3.3. Proposed Organizational Performance Hierarchy\n\n![[Pasted image 20261014091217.png|1101]]\n    \n\nMột team hoàn thành 100% task không có nghĩa KPI của team đạt 100%. Phương pháp tổng hợp điểm giữa các cấp cần được thiết kế riêng sau khi xác nhận các loại công việc và đơn vị đo.\n",
+			"styleAttributes":{},
+			"x":4690,
+			"y":-1042,
+			"width":1040,
+			"height":2760,
+			"color":"4"
+		},
+		{"id":"e64ff91f88ef3172","type":"file","file":"Pasted image 20261014092649.png","x":2317,"y":-440,"width":852,"height":1204},
+		{"id":"56a20574453e7164","type":"file","file":"Pasted image 20261014091117.png","x":1540,"y":-1357,"width":400,"height":120},
 		{
 			"id":"7803cc076fe47fb3",
 			"type":"text",
 			"text":"# BUSINESS ANALYSIS ASSESSMENT\n\nPPJ Group | BSC – KPI & Work Performance Management\n\nDiscovery / Pre-BRD\n\nNgày báo cáo: 13/10/2026\n\nNguồn: Thảo luận nội bộ ngày 12/10/2026\n",
 			"styleAttributes":{},
-			"x":560,
-			"y":-1440,
-			"width":600,
-			"height":260
+			"x":660,
+			"y":-1427,
+			"width":640,
+			"height":261,
+			"color":"2"
 		},
 		{
-			"id":"87c3f7b89b94cd22",
+			"id":"96241a8edb1caa72",
 			"type":"text",
-			"text":"\n\n## 2. AS-IS – Current State Assessment\n\n### 2.1. Current Process\n\n![[Pasted image 20261014091131.png]]\n\n### 2.2. Current Systems & Business Artifacts\n\n|Thành phần|Hiện trạng theo thảo luận|Gap|\n|---|---|---|\n|TOP – BSC/KPI|Có cây KPI, phân cấp và tổng hợp kết quả|Chưa kiểm chứng các chức năng quản lý mẫu, dữ liệu, workflow, API|\n|SOP|Có chức năng lưu thông tin trên hệ thống, nhưng cách lưu và sử dụng chưa đồng nhất|Chưa rõ cấu trúc, phiên bản và liên kết KPI|\n|JD|Được nhắc đến như căn cứ mô tả trách nhiệm|Chưa rõ kho lưu, chủ sở hữu và mapping|\n|KPI Definition|Các nhóm có thể khác nhau về cách định nghĩa chỉ tiêu|Chưa có ví dụ đối chiếu thực tế đã xác nhận|\n|Work Done Evidence|Cần có số liệu làm cơ sở đánh giá|Chưa xác định source of truth cho từng loại công việc|\n\nWFX, Jira và DWH là những hệ thống cần xem xét trong bối cảnh PPJ, nhưng transcript chưa xác nhận chúng đang cung cấp dữ liệu trực tiếp cho TOP.\n\n### 2.3. Pain Points & Business Impact\n\n|ID|Pain Point|Business Impact|Mức độ bằng chứng|\n|---|---|---|---|\n|P01|KPI có thể được định nghĩa khác nhau giữa các nhóm cùng chức năng|Khó so sánh hiệu suất và chuẩn hóa việc đánh giá|Ví dụ giả định, cần xác minh|\n|P02|Thiếu cơ sở dữ liệu rõ ràng để giải thích điểm KPI|Khó kiểm chứng, dễ phát sinh đánh giá chủ quan|Được thảo luận|\n|P03|Cấu hình và cập nhật KPI lặp lại theo từng nhân viên|Tốn thời gian, tăng rủi ro sai sót hoặc bỏ sót|Phản ánh trực tiếp|\n|P04|SOP/JD và KPI chưa mapping rõ ràng|Khó chứng minh tiêu chí phản ánh đúng trách nhiệm thực tế|Được thảo luận|\n|P05|Cách đo hiệu quả khác nhau giữa Sales, sản xuất và các bộ phận hỗ trợ|Khó dùng một phương pháp đánh giá đồng nhất|Được thảo luận|\n\nNguồn: các phần thảo luận về sự khác biệt trong KPI, thao tác copy cấu hình và dữ liệu làm cơ sở đánh giá.\n\nPasted text.txt\n\nPasted text.txt\n\nLưu ý: Chưa có dữ liệu định lượng về thời gian xử lý, số trường hợp sai, số KPI thiếu bằng chứng hoặc tỷ lệ đánh giá thiếu nhất quán. Business Impact hiện là rủi ro nghiệp vụ, chưa phải tổn thất đã đo lường.",
+			"text":"\n## 1. Executive Summary\n\nPPJ hiện đang sử dụng hệ thống BSC–KPI bên thứ ba (được gọi là TOPION trong buổi thảo luận) để xây dựng cây chỉ tiêu, phân bổ và tổng hợp kết quả đánh giá.\n\nTuy nhiên, cuộc thảo luận cho thấy những vấn đề cần làm rõ nằm ở tính thống nhất của tiêu chí, mối liên hệ giữa công việc và KPI, dữ liệu chứng minh kết quả, cũng như khả năng tái sử dụng cấu hình đánh giá.\n\n### Management Key Findings\n\n![[Pasted image 20261014091117.png|1124]]\n\n##### Các vấn đề trọng tâm:\n\n- ##### **1. Tiêu chí đánh giá có nguy cơ thiếu thống nhất giữa các nhóm cùng chức năng.**\n    \n- ##### **2. Kết quả đánh giá chưa chứng minh rõ mối liên hệ với dữ liệu và kết quả công việc thực tế.**\n    \n- ##### **3. Cấu hình KPI của các nhân viên cùng vai trò còn lặp lại thủ công.**\n    \n- ##### **4. SOP, JD và KPI chưa được liên kết thành cấu trúc thống nhất có thể sử dụng và truy vết.**",
 			"styleAttributes":{},
-			"x":2200,
-			"y":320,
-			"width":1060,
-			"height":1926
-		}
+			"x":1500,
+			"y":-1480,
+			"width":1160,
+			"height":845,
+			"color":"2"
+		},
+		{
+			"id":"6c7290d4225add3b",
+			"type":"text",
+			"text":"KPI",
+			"styleAttributes":{},
+			"x":10280,
+			"y":-160,
+			"width":80,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"ffd36e89672c8463",
+			"type":"text",
+			"text":"QUANTITATIVE",
+			"styleAttributes":{},
+			"x":10560,
+			"y":-190,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"bb286b1463ae683c",
+			"type":"text",
+			"text":"QUALI'",
+			"styleAttributes":{},
+			"x":10570,
+			"y":-40,
+			"width":260,
+			"height":60
+		},
+		{"id":"e9d8e94fa89af970","type":"text","text":"JD","x":11000,"y":-377,"width":60,"height":60,"color":"3"},
+		{"id":"86a19dd685c4d553","type":"text","text":"","x":11260,"y":-477,"width":200,"height":100}
 	],
 	"edges":[
 		{
@@ -54,7 +115,103 @@
 			"fromSide":"right",
 			"toNode":"96241a8edb1caa72",
 			"toSide":"left"
-		}
+		},
+		{
+			"id":"3b5d079d002df28f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"96241a8edb1caa72",
+			"fromSide":"right",
+			"toNode":"87c3f7b89b94cd22",
+			"toSide":"left",
+			"label":"2"
+		},
+		{
+			"id":"1b2e838c49621d87",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"96241a8edb1caa72",
+			"fromSide":"right",
+			"toNode":"d9d07c0f24125a01",
+			"toSide":"left",
+			"label":"3"
+		},
+		{
+			"id":"0e7edb58a48a06f3",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"87c3f7b89b94cd22",
+			"fromSide":"bottom",
+			"toNode":"d9d07c0f24125a01",
+			"toSide":"top"
+		},
+		{
+			"id":"a5ef292295b5e7eb",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"87c3f7b89b94cd22",
+			"fromSide":"right",
+			"toNode":"aba2ad2bb613499c",
+			"toSide":"left"
+		},
+		{
+			"id":"5492751c71a68fea",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"d9d07c0f24125a01",
+			"fromSide":"right",
+			"toNode":"aba2ad2bb613499c",
+			"toSide":"left"
+		},
+		{
+			"id":"824b2a99784bdd12",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"aba2ad2bb613499c",
+			"fromSide":"right",
+			"toNode":"a90b92b73878c420",
+			"toSide":"left"
+		},
+		{
+			"id":"c863d00822647fde",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e64ff91f88ef3172",
+			"fromSide":"top",
+			"toNode":"96241a8edb1caa72",
+			"toSide":"bottom"
+		},
+		{
+			"id":"7a89060af3c79ba1",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"a90b92b73878c420",
+			"fromSide":"bottom",
+			"toNode":"6c7290d4225add3b",
+			"toSide":"top"
+		},
+		{
+			"id":"56c325b8469f43bc",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6c7290d4225add3b",
+			"fromSide":"right",
+			"toNode":"ffd36e89672c8463",
+			"toSide":"left"
+		},
+		{
+			"id":"c12ddab745bfe92d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6c7290d4225add3b",
+			"fromSide":"right",
+			"toNode":"bb286b1463ae683c",
+			"toSide":"left"
+		},
+		{"id":"f97d61d9d4880bfe","fromNode":"ffd36e89672c8463","fromSide":"right","toNode":"e9d8e94fa89af970","toSide":"left"},
+		{"id":"5cdeca5eee2058e8","fromNode":"e9d8e94fa89af970","fromSide":"right","toNode":"86a19dd685c4d553","toSide":"left"}
 	],
 	"metadata":{
 		"version":"1.0-1.0",
