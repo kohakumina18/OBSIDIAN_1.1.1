@@ -230,6 +230,27 @@
 			"y":48900,
 			"width":840,
 			"height":100
+		},
+		{"id":"f35ca277c2868c48","type":"file","file":"Pasted image 20261015095651.png","x":-1100,"y":43900,"width":1335,"height":1999},
+		{
+			"id":"501ce8655f5ee2e6",
+			"type":"text",
+			"text":"\n\n## Workstream 4 – OC Fabric Efficiency: Recap cập nhật\n\n|#|Hạng mục|Nội dung đã chốt / cập nhật|Trạng thái|\n|---|---|---|---|\n|1|**Phạm vi**|Phân tích hiệu suất OC Fabric, trước mắt tập trung luồng **Dệt → Mộc → Nhuộm → Vải thành phẩm**.|Confirmed|\n|2|**OC Dệt / Mộc**|**NPL Dệt + OVH xưởng Dệt + Chi phí gia công nếu có = Chi phí Mộc**. Lấy tổng giá trị / số lượng để ra **đơn giá Mộc**.|Confirmed|\n|3|**Vai trò của Mộc**|**Hiện tại:** Mộc chỉ được chuyển sang làm NPL cho Nhuộm. **Tương lai:** Mộc có thể được bán ra ngoài; khi đó giá thành Mộc sẽ trở thành **COGS/giá vốn của hàng bán Mộc**.|**Updated**|\n|4|**OC Nhuộm**|**Giá thành Mộc + hóa chất/NPL Nhuộm + OVH xưởng Nhuộm + chi phí gia công nếu có = Chi phí Fabric thành phẩm**.|Confirmed|\n|5|**Daily NPL Check**|Với NPL chưa ghi nhận đầy đủ/OC đang chạy, **Tolerance chính thức sửa từ 20% xuống 10%**. Vượt ngưỡng thì Raise Warning.|**Updated: 10%**|\n|6|**Final NPL & Close Warning**|Khi NPL đã đủ: có chênh lệch thì Raise để kiểm tra. Đồng thời kiểm **Order Qty vs Produced Qty**, hiện working threshold **10%** để cảnh báo OC gần đủ điều kiện Close.|Confirmed / cần validate bằng case|\n|7|**Kiểm hiệu quả cuối kỳ**|Sau khi có đầy đủ Overhead, dự kiến **sau ngày 10**, chạy Full Efficiency. So **Costsheet vs Actual Efficiency**, working threshold **5%**.|Confirmed ở mức working rule|\n|8|**Điểm cần xử lý tiếp**|Xác nhận mapping OC Dệt ↔ OC Nhuộm; cách phân biệt hai loại OC trong data; allocation khi 1 OC Dệt cấp nhiều OC Nhuộm; kiểm thử 10% NPL tolerance bằng Golden Cases; chuẩn bị khả năng Mộc trở thành hàng bán trong tương lai.|Open / Next analysis|\n\n### Rule set cập nhật\n\n```\nFAB-NPL-01\nOpen / Running OC NPL Tolerance = 10%\n\nFAB-NPL-02\nFinal NPL:\nCó chênh lệch → Raise Review\n\nFAB-CLOSE-01\nOrder Qty vs Produced Qty\nRemaining ≈ 10% → Raise Close Warning\n\nFAB-EFF-01\nCuối kỳ / sau khi có đầy đủ Overhead\nCostsheet vs Actual Efficiency\nThreshold = 5%\n\nFAB-KNT-01\nNPL Dệt + OVH Dệt + Gia công\n→ Giá thành Mộc\n→ Unit Cost Mộc\n\nFAB-DYE-01\nGiá thành Mộc + Hóa chất/NPL + OVH Nhuộm + Gia công\n→ Giá thành Fabric\n\nFAB-GREIGE-01\nCurrent:\nMộc → NPL của Nhuộm\n\nFuture:\nMộc → nếu bán ngoài → trở thành Finished Goods / COGS\n```\n\nĐiểm đáng chú ý nhất là **không nên thiết kế Mộc chỉ như một bán thành phẩm cố định**. Data model/rule engine nên cho phép Mộc có hai downstream path:\n\n#chatgpt-mermaid-_r_2au_{font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,\"Segoe UI\",Helvetica,\"Apple Color Emoji\",Arial,sans-serif,\"Segoe UI Emoji\",\"Segoe UI Symbol\";font-size:17px;fill:rgb(211, 198, 170);}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#chatgpt-mermaid-_r_2au_ .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#chatgpt-mermaid-_r_2au_ .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#chatgpt-mermaid-_r_2au_ .error-icon{fill:rgba(211, 198, 170, 0.03);}#chatgpt-mermaid-_r_2au_ .error-text{fill:rgb(211, 198, 170);stroke:rgb(211, 198, 170);}#chatgpt-mermaid-_r_2au_ .edge-thickness-normal{stroke-width:1px;}#chatgpt-mermaid-_r_2au_ .edge-thickness-thick{stroke-width:3.5px;}#chatgpt-mermaid-_r_2au_ .edge-pattern-solid{stroke-dasharray:0;}#chatgpt-mermaid-_r_2au_ .edge-thickness-invisible{stroke-width:0;fill:none;}#chatgpt-mermaid-_r_2au_ .edge-pattern-dashed{stroke-dasharray:3;}#chatgpt-mermaid-_r_2au_ .edge-pattern-dotted{stroke-dasharray:2;}#chatgpt-mermaid-_r_2au_ .marker{fill:rgba(211, 198, 170, 0.498);stroke:rgba(211, 198, 170, 0.498);}#chatgpt-mermaid-_r_2au_ .marker.cross{stroke:rgba(211, 198, 170, 0.498);}#chatgpt-mermaid-_r_2au_ svg{font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,\"Segoe UI\",Helvetica,\"Apple Color Emoji\",Arial,sans-serif,\"Segoe UI Emoji\",\"Segoe UI Symbol\";font-size:17px;}#chatgpt-mermaid-_r_2au_ p{margin:0;}#chatgpt-mermaid-_r_2au_ .label{font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,\"Segoe UI\",Helvetica,\"Apple Color Emoji\",Arial,sans-serif,\"Segoe UI Emoji\",\"Segoe UI Symbol\";color:rgb(211, 198, 170);}#chatgpt-mermaid-_r_2au_ .cluster-label text{fill:rgb(211, 198, 170);}#chatgpt-mermaid-_r_2au_ .cluster-label span{color:rgb(211, 198, 170);}#chatgpt-mermaid-_r_2au_ .cluster-label span p{background-color:transparent;}#chatgpt-mermaid-_r_2au_ .label text,#chatgpt-mermaid-_r_2au_ span{fill:rgb(211, 198, 170);color:rgb(211, 198, 170);}#chatgpt-mermaid-_r_2au_ .node rect,#chatgpt-mermaid-_r_2au_ .node circle,#chatgpt-mermaid-_r_2au_ .node ellipse,#chatgpt-mermaid-_r_2au_ .node polygon,#chatgpt-mermaid-_r_2au_ .node path{fill:rgb(41, 48, 32);stroke:rgb(201, 217, 178);stroke-width:1px;}#chatgpt-mermaid-_r_2au_ .rough-node .label text,#chatgpt-mermaid-_r_2au_ .node .label text,#chatgpt-mermaid-_r_2au_ .image-shape .label,#chatgpt-mermaid-_r_2au_ .icon-shape .label{text-anchor:middle;}#chatgpt-mermaid-_r_2au_ .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#chatgpt-mermaid-_r_2au_ .rough-node .label,#chatgpt-mermaid-_r_2au_ .node .label,#chatgpt-mermaid-_r_2au_ .image-shape .label,#chatgpt-mermaid-_r_2au_ .icon-shape .label{text-align:center;}#chatgpt-mermaid-_r_2au_ .node.clickable{cursor:pointer;}#chatgpt-mermaid-_r_2au_ .root .anchor path{fill:rgba(211, 198, 170, 0.498)!important;stroke-width:0;stroke:rgba(211, 198, 170, 0.498);}#chatgpt-mermaid-_r_2au_ .arrowheadPath{fill:rgba(211, 198, 170, 0.498);}#chatgpt-mermaid-_r_2au_ .edgePath .path{stroke:rgba(211, 198, 170, 0.498);stroke-width:1px;}#chatgpt-mermaid-_r_2au_ .flowchart-link{stroke:rgba(211, 198, 170, 0.498);fill:none;}#chatgpt-mermaid-_r_2au_ .edgeLabel{background-color:rgb(45, 53, 59);text-align:center;}#chatgpt-mermaid-_r_2au_ .edgeLabel p{background-color:rgb(45, 53, 59);}#chatgpt-mermaid-_r_2au_ .edgeLabel rect{opacity:0.5;background-color:rgb(45, 53, 59);fill:rgb(45, 53, 59);}#chatgpt-mermaid-_r_2au_ .labelBkg{background-color:rgba(45, 53, 59, 0.5);}#chatgpt-mermaid-_r_2au_ .cluster rect{fill:rgba(211, 198, 170, 0.03);stroke:rgba(211, 198, 170, 0.082);stroke-width:1px;}#chatgpt-mermaid-_r_2au_ .cluster text{fill:rgb(211, 198, 170);}#chatgpt-mermaid-_r_2au_ .cluster span{color:rgb(211, 198, 170);}#chatgpt-mermaid-_r_2au_ div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,\"Segoe UI\",Helvetica,\"Apple Color Emoji\",Arial,sans-serif,\"Segoe UI Emoji\",\"Segoe UI Symbol\";font-size:12px;background:rgba(211, 198, 170, 0.03);border:1px solid rgba(211, 198, 170, 0.082);border-radius:2px;pointer-events:none;z-index:100;}#chatgpt-mermaid-_r_2au_ .flowchartTitleText{text-anchor:middle;font-size:18px;fill:rgb(211, 198, 170);}#chatgpt-mermaid-_r_2au_ rect.text{fill:none;stroke-width:0;}#chatgpt-mermaid-_r_2au_ .icon-shape,#chatgpt-mermaid-_r_2au_ .image-shape{background-color:rgb(45, 53, 59);text-align:center;}#chatgpt-mermaid-_r_2au_ .icon-shape p,#chatgpt-mermaid-_r_2au_ .image-shape p{background-color:rgb(45, 53, 59);padding:2px;}#chatgpt-mermaid-_r_2au_ .icon-shape .label rect,#chatgpt-mermaid-_r_2au_ .image-shape .label rect{opacity:0.5;background-color:rgb(45, 53, 59);fill:rgb(45, 53, 59);}#chatgpt-mermaid-_r_2au_ .label-icon{display:inline-block;height:1em;overflow:visible;vertical-align:-0.125em;}#chatgpt-mermaid-_r_2au_ .node .label-icon path{fill:currentColor;stroke:revert;stroke-width:revert;}#chatgpt-mermaid-_r_2au_ .node .neo-node{stroke:rgb(201, 217, 178);}#chatgpt-mermaid-_r_2au_ [data-look=\"neo\"].node rect,#chatgpt-mermaid-_r_2au_ [data-look=\"neo\"].cluster rect,#chatgpt-mermaid-_r_2au_ [data-look=\"neo\"].node polygon{stroke:url(#chatgpt-mermaid-_r_2au_-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_2au_ [data-look=\"neo\"].swimlane.cluster rect{filter:none;}#chatgpt-mermaid-_r_2au_ [data-look=\"neo\"].node path{stroke:url(#chatgpt-mermaid-_r_2au_-gradient);stroke-width:1px;}#chatgpt-mermaid-_r_2au_ [data-look=\"neo\"].node .outer-path{filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_2au_ [data-look=\"neo\"].node .neo-line path{stroke:rgb(201, 217, 178);filter:none;}#chatgpt-mermaid-_r_2au_ [data-look=\"neo\"].node circle{stroke:url(#chatgpt-mermaid-_r_2au_-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_2au_ [data-look=\"neo\"].node circle .state-start{fill:#000000;}#chatgpt-mermaid-_r_2au_ [data-look=\"neo\"].icon-shape .icon{fill:url(#chatgpt-mermaid-_r_2au_-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_2au_ [data-look=\"neo\"].icon-shape .icon-neo path{stroke:url(#chatgpt-mermaid-_r_2au_-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_2au_ .node text{font-size:14px;font-weight:600;letter-spacing:normal;fill:rgb(201, 217, 178);}#chatgpt-mermaid-_r_2au_ .edgeLabels text{font-size:13px;font-weight:600;letter-spacing:-0.08px;fill:rgb(201, 217, 178);}#chatgpt-mermaid-_r_2au_ .node tspan[font-weight=\"normal\"],#chatgpt-mermaid-_r_2au_ .edgeLabels tspan[font-weight=\"normal\"]{font-weight:600;}#chatgpt-mermaid-_r_2au_ .edgeLabel .label rect{opacity:1;rx:13px;ry:13px;fill:rgb(45, 53, 59);stroke:rgb(201, 217, 178);stroke-width:1px;}#chatgpt-mermaid-_r_2au_ .node rect,#chatgpt-mermaid-_r_2au_ .node circle,#chatgpt-mermaid-_r_2au_ .node ellipse,#chatgpt-mermaid-_r_2au_ .node polygon,#chatgpt-mermaid-_r_2au_ .node path{fill:rgb(41, 48, 32);stroke:rgba(255, 255, 255, 0.1);stroke-width:1px;}#chatgpt-mermaid-_r_2au_ .node rect{rx:16px;ry:16px;}#chatgpt-mermaid-_r_2au_ .node.mermaid-decision .label-container{fill:rgb(45, 53, 59);stroke:rgb(201, 217, 178);stroke-dasharray:2,2;}#chatgpt-mermaid-_r_2au_ .edgePaths .flowchart-link{stroke:rgba(211, 198, 170, 0.498);stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;}#chatgpt-mermaid-_r_2au_ .marker{fill:rgba(211, 198, 170, 0.498);stroke:rgba(211, 198, 170, 0.498);}#chatgpt-mermaid-_r_2au_ :root{--mermaid-font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,\"Segoe UI\",Helvetica,\"Apple Color Emoji\",Arial,sans-serif,\"Segoe UI Emoji\",\"Segoe UI Symbol\";}OC DệtMộcNPL OC NhuộmFabric thành phẩmBán MộcSalesCOGS MộcHiện tạiTương lai\n\nNhư vậy thiết kế hiện tại vẫn phục vụ đúng nghiệp vụ đang chạy, nhưng không khóa architecture khiến sau này phải làm lại khi PPJ bắt đầu bán Mộc.\n\n### Prompt của bạn – phiên bản rõ hơn\n\n> Cập nhật lại toàn bộ recap Workstream 4 – Phân tích hiệu suất OC Fabric theo feedback mới nhất của Finance. Sửa NPL tolerance của OC đang chạy từ 20% thành 10%. Đồng thời cập nhật business rule của Mộc: hiện tại Mộc chỉ được chuyển làm NPL đầu vào cho Nhuộm, nhưng trong tương lai Mộc có thể được bán trực tiếp; khi đó giá thành Mộc sẽ trở thành COGS của hàng bán Mộc. Giữ nguyên các rule đã thống nhất khác gồm Final NPL variance, Close Warning 10%, Final Efficiency threshold 5%, Cost build-up Dệt và Cost build-up Nhuộm. Trình bày thành một bảng recap 8 mục và chỉ rõ Confirmed / Updated / Open.",
+			"styleAttributes":{},
+			"x":960,
+			"y":43720,
+			"width":1480,
+			"height":2360
+		},
+		{
+			"id":"bad9abe4dbdb457e",
+			"type":"text",
+			"text":"GDI -> ***GDN -> GRN*** ",
+			"styleAttributes":{},
+			"x":-1360,
+			"y":44820,
+			"width":180,
+			"height":60
 		}
 	],
 	"edges":[
@@ -432,15 +453,6 @@
 			"toSide":"top"
 		},
 		{
-			"id":"a7acdc4c6a86ee97",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"10b2e193db4bcbaf",
-			"fromSide":"right",
-			"toNode":"926b7d21c6181ff7",
-			"toSide":"top"
-		},
-		{
 			"id":"ea25de64c99fa2c0",
 			"styleAttributes":{},
 			"toFloating":false,
@@ -448,6 +460,33 @@
 			"fromSide":"bottom",
 			"toNode":"168fd22d60d684d1",
 			"toSide":"top"
+		},
+		{
+			"id":"dea4137aee45dba0",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"168fd22d60d684d1",
+			"fromSide":"bottom",
+			"toNode":"f35ca277c2868c48",
+			"toSide":"top"
+		},
+		{
+			"id":"6c83621673601ae7",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f35ca277c2868c48",
+			"fromSide":"right",
+			"toNode":"501ce8655f5ee2e6",
+			"toSide":"left"
+		},
+		{
+			"id":"00e5db75328f334b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"bad9abe4dbdb457e",
+			"fromSide":"right",
+			"toNode":"f35ca277c2868c48",
+			"toSide":"left"
 		}
 	],
 	"metadata":{
