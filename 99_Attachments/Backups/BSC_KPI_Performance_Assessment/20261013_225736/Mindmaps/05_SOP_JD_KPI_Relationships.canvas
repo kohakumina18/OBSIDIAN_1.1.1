@@ -1,256 +1,34 @@
 {
-  "nodes": [
-    {
-      "id": "g-9d7edab6f860",
-      "type": "group",
-      "label": "05 SOP - JD - KPI RELATIONSHIPS",
-      "x": -120,
-      "y": -160,
-      "width": 3320,
-      "height": 2100,
-      "color": "4"
-    },
-    {
-      "id": "n-fb7d44d20bb5",
-      "type": "text",
-      "text": "# 05 SOP - JD - KPI Relationships\n\nConceptual relationship types only; not verified PPJ mappings.\n\n**Status labels are part of the content; color is not the only status signal.**",
-      "x": 0,
-      "y": 0,
-      "width": 3000,
-      "height": 250,
-      "color": "4"
-    },
-    {
-      "id": "n-632be19286af",
-      "type": "text",
-      "text": "## Business Process\n\nOwner / version / effective date: **TO VERIFY**",
-      "x": 40,
-      "y": 390,
-      "width": 430,
-      "height": 240,
-      "color": "4"
-    },
-    {
-      "id": "n-6051acd2998c",
-      "type": "text",
-      "text": "## SOP\n\nOwner / version / effective date: **TO VERIFY**",
-      "x": 560,
-      "y": 390,
-      "width": 430,
-      "height": 240,
-      "color": "4"
-    },
-    {
-      "id": "n-aaef868e0950",
-      "type": "text",
-      "text": "## Business Function\n\nOwner / version / effective date: **TO VERIFY**",
-      "x": 1080,
-      "y": 390,
-      "width": 430,
-      "height": 240,
-      "color": "4"
-    },
-    {
-      "id": "n-25a0c6e4da91",
-      "type": "text",
-      "text": "## Department\n\nOwner / version / effective date: **TO VERIFY**",
-      "x": 1600,
-      "y": 390,
-      "width": 430,
-      "height": 240,
-      "color": "4"
-    },
-    {
-      "id": "n-df10d3cc5dce",
-      "type": "text",
-      "text": "## Position / Role\n\nOwner / version / effective date: **TO VERIFY**",
-      "x": 2120,
-      "y": 390,
-      "width": 430,
-      "height": 240,
-      "color": "4"
-    },
-    {
-      "id": "n-407a8e318c30",
-      "type": "text",
-      "text": "## Job Description\n\nOwner / version / effective date: **TO VERIFY**",
-      "x": 2640,
-      "y": 390,
-      "width": 430,
-      "height": 240,
-      "color": "4"
-    },
-    {
-      "id": "n-279e0aa8dab1",
-      "type": "text",
-      "text": "## Responsibility\n\nOwner / version / effective date: **TO VERIFY**",
-      "x": 40,
-      "y": 950,
-      "width": 430,
-      "height": 240,
-      "color": "4"
-    },
-    {
-      "id": "n-79e1a2714334",
-      "type": "text",
-      "text": "## Expected Deliverable\n\nOwner / version / effective date: **TO VERIFY**",
-      "x": 560,
-      "y": 950,
-      "width": 430,
-      "height": 240,
-      "color": "4"
-    },
-    {
-      "id": "n-bf592cab61e6",
-      "type": "text",
-      "text": "## KPI\n\nOwner / version / effective date: **TO VERIFY**",
-      "x": 1080,
-      "y": 950,
-      "width": 430,
-      "height": 240,
-      "color": "3"
-    },
-    {
-      "id": "n-f79fce9694ed",
-      "type": "text",
-      "text": "## Measurement Source\n\nOwner / version / effective date: **TO VERIFY**",
-      "x": 1600,
-      "y": 950,
-      "width": 430,
-      "height": 240,
-      "color": "3"
-    },
-    {
-      "id": "n-47f88e5e9406",
-      "type": "text",
-      "text": "## Evaluation Result\n\nOwner / version / effective date: **TO VERIFY**",
-      "x": 2120,
-      "y": 950,
-      "width": 430,
-      "height": 240,
-      "color": "3"
-    },
-    {
-      "id": "n-f2fc4c257ee2",
-      "type": "text",
-      "text": "### Many-to-many relationships\n\nSOP <-> Role\nResponsibility <-> KPI\nKPI <-> Source\n\n**Conceptual, not actual PPJ records**",
-      "x": 2120,
-      "y": 960,
-      "width": 900,
-      "height": 380,
-      "color": "2"
-    },
-    {
-      "id": "f-66f215de31e0",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/07_SOP_JD_KPI_Conceptual_Model.md",
-      "x": 40,
-      "y": 1500,
-      "width": 860,
-      "height": 150,
-      "color": "4"
-    },
-    {
-      "id": "f-52a15e62d1f5",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Requirement_Register.md",
-      "x": 1000,
-      "y": 1500,
-      "width": 860,
-      "height": 150,
-      "color": "3"
-    },
-    {
-      "id": "f-4c7e4b2211f2",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/BSC_KPI_Enterprise_Master_Mindmap_v1_0.canvas",
-      "x": 0,
-      "y": 1720,
-      "width": 850,
-      "height": 140,
-      "color": "5"
-    },
-    {
-      "id": "f-72940e6e0096",
-      "type": "file",
-      "file": "03_Projects/Canvas/BSC_KPI_Performance_Assessment/00_INDEX.md",
-      "x": 950,
-      "y": 1720,
-      "width": 850,
-      "height": 140,
-      "color": "5"
-    }
-  ],
-  "edges": [
-    {
-      "id": "e-c6673c9fb116",
-      "fromNode": "n-632be19286af",
-      "toNode": "n-6051acd2998c",
-      "label": "conceptually relates to",
-      "color": "4"
-    },
-    {
-      "id": "e-4f49c0076e56",
-      "fromNode": "n-6051acd2998c",
-      "toNode": "n-aaef868e0950",
-      "label": "conceptually relates to",
-      "color": "4"
-    },
-    {
-      "id": "e-d53807d18500",
-      "fromNode": "n-aaef868e0950",
-      "toNode": "n-25a0c6e4da91",
-      "label": "conceptually relates to",
-      "color": "4"
-    },
-    {
-      "id": "e-8d2e249d0b6b",
-      "fromNode": "n-25a0c6e4da91",
-      "toNode": "n-df10d3cc5dce",
-      "label": "conceptually relates to",
-      "color": "4"
-    },
-    {
-      "id": "e-1858d8f0b651",
-      "fromNode": "n-df10d3cc5dce",
-      "toNode": "n-407a8e318c30",
-      "label": "conceptually relates to",
-      "color": "4"
-    },
-    {
-      "id": "e-bd41e6ad7bf9",
-      "fromNode": "n-407a8e318c30",
-      "toNode": "n-279e0aa8dab1",
-      "label": "conceptually relates to",
-      "color": "4"
-    },
-    {
-      "id": "e-6b6b2bb73dc4",
-      "fromNode": "n-279e0aa8dab1",
-      "toNode": "n-79e1a2714334",
-      "label": "conceptually relates to",
-      "color": "4"
-    },
-    {
-      "id": "e-743192dee50e",
-      "fromNode": "n-79e1a2714334",
-      "toNode": "n-bf592cab61e6",
-      "label": "conceptually relates to",
-      "color": "4"
-    },
-    {
-      "id": "e-95f635d4e896",
-      "fromNode": "n-bf592cab61e6",
-      "toNode": "n-f79fce9694ed",
-      "label": "conceptually relates to",
-      "color": "4"
-    },
-    {
-      "id": "e-a06acba3c5a1",
-      "fromNode": "n-f79fce9694ed",
-      "toNode": "n-47f88e5e9406",
-      "label": "conceptually relates to",
-      "color": "4"
-    }
-  ]
+	"nodes":[
+		{"id":"g-9d7edab6f860","type":"group","label":"05 SOP - JD - KPI RELATIONSHIPS","x":-120,"y":-160,"width":3320,"height":2100,"color":"4"},
+		{"id":"n-fb7d44d20bb5","type":"text","text":"# 05 SOP - JD - KPI Relationships\n\nConceptual relationship types only; not verified PPJ mappings.\n\n**Status labels are part of the content; color is not the only status signal.**","x":0,"y":0,"width":3000,"height":250,"color":"4"},
+		{"id":"n-632be19286af","type":"text","text":"## Business Process\n\nOwner / version / effective date: **TO VERIFY**","x":40,"y":390,"width":430,"height":240,"color":"4"},
+		{"id":"n-6051acd2998c","type":"text","text":"## SOP\n\nOwner / version / effective date: **TO VERIFY**","x":560,"y":390,"width":430,"height":240,"color":"4"},
+		{"id":"n-aaef868e0950","type":"text","text":"## Business Function\n\nOwner / version / effective date: **TO VERIFY**","x":1080,"y":390,"width":430,"height":240,"color":"4"},
+		{"id":"n-25a0c6e4da91","type":"text","text":"## Department\n\nOwner / version / effective date: **TO VERIFY**","x":1600,"y":390,"width":430,"height":240,"color":"4"},
+		{"id":"n-df10d3cc5dce","type":"text","text":"## Position / Role\n\nOwner / version / effective date: **TO VERIFY**","x":2120,"y":390,"width":430,"height":240,"color":"4"},
+		{"id":"n-407a8e318c30","type":"text","text":"## Job Description\n\nOwner / version / effective date: **TO VERIFY**","x":2640,"y":390,"width":430,"height":240,"color":"4"},
+		{"id":"n-279e0aa8dab1","type":"text","text":"## Responsibility\n\nOwner / version / effective date: **TO VERIFY**","x":40,"y":950,"width":430,"height":240,"color":"4"},
+		{"id":"n-79e1a2714334","type":"text","text":"## Expected Deliverable\n\nOwner / version / effective date: **TO VERIFY**","x":560,"y":950,"width":430,"height":240,"color":"4"},
+		{"id":"n-bf592cab61e6","type":"text","text":"## KPI\n\nOwner / version / effective date: **TO VERIFY**","x":1080,"y":950,"width":430,"height":240,"color":"3"},
+		{"id":"n-f79fce9694ed","type":"text","text":"## Measurement Source\n\nOwner / version / effective date: **TO VERIFY**","x":1600,"y":950,"width":430,"height":240,"color":"3"},
+		{"id":"n-47f88e5e9406","type":"text","text":"## Evaluation Result\n\nOwner / version / effective date: **TO VERIFY**","x":2120,"y":950,"width":430,"height":240,"color":"3"},
+		{"id":"n-f2fc4c257ee2","type":"text","text":"### Many-to-many relationships\n\nSOP <-> Role\nResponsibility <-> KPI\nKPI <-> Source\n\n**Conceptual, not actual PPJ records**","x":2120,"y":960,"width":900,"height":380,"color":"2"},
+		{"id":"f-66f215de31e0","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/07_SOP_JD_KPI_Conceptual_Model.md","x":40,"y":1500,"width":860,"height":150,"color":"4"},
+		{"id":"f-52a15e62d1f5","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Requirement_Register.md","x":1000,"y":1500,"width":860,"height":150,"color":"3"},
+		{"id":"f-4c7e4b2211f2","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/BSC_KPI_Enterprise_Master_Mindmap_v1_0.canvas","x":0,"y":1720,"width":850,"height":140,"color":"5"},
+		{"id":"f-72940e6e0096","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/00_INDEX.md","x":950,"y":1720,"width":850,"height":140,"color":"5"}
+	],
+	"edges":[
+		{"id":"e-c6673c9fb116","fromNode":"n-632be19286af","toNode":"n-6051acd2998c","label":"conceptually relates to","color":"4"},
+		{"id":"e-4f49c0076e56","fromNode":"n-6051acd2998c","toNode":"n-aaef868e0950","label":"conceptually relates to","color":"4"},
+		{"id":"e-d53807d18500","fromNode":"n-aaef868e0950","toNode":"n-25a0c6e4da91","label":"conceptually relates to","color":"4"},
+		{"id":"e-8d2e249d0b6b","fromNode":"n-25a0c6e4da91","toNode":"n-df10d3cc5dce","label":"conceptually relates to","color":"4"},
+		{"id":"e-1858d8f0b651","fromNode":"n-df10d3cc5dce","toNode":"n-407a8e318c30","label":"conceptually relates to","color":"4"},
+		{"id":"e-bd41e6ad7bf9","fromNode":"n-407a8e318c30","toNode":"n-279e0aa8dab1","label":"conceptually relates to","color":"4"},
+		{"id":"e-6b6b2bb73dc4","fromNode":"n-279e0aa8dab1","toNode":"n-79e1a2714334","label":"conceptually relates to","color":"4"},
+		{"id":"e-743192dee50e","fromNode":"n-79e1a2714334","toNode":"n-bf592cab61e6","label":"conceptually relates to","color":"4"},
+		{"id":"e-95f635d4e896","fromNode":"n-bf592cab61e6","toNode":"n-f79fce9694ed","label":"conceptually relates to","color":"4"},
+		{"id":"e-a06acba3c5a1","fromNode":"n-f79fce9694ed","toNode":"n-47f88e5e9406","label":"conceptually relates to","color":"4"}
+	]
 }

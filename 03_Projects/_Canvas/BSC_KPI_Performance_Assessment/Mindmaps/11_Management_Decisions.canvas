@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"g-e2b7cff859ed","type":"group","label":"11 MANAGEMENT DECISIONS","x":-120,"y":-160,"width":3320,"height":2100,"color":"6"},
+		{"id":"n-22b03baa50db","type":"text","text":"# 11 Management Decisions\n\nNo decision is confirmed in the available evidence; all topics remain pending or not approved.\n\n**Status labels are part of the content; color is not the only status signal.**","x":0,"y":0,"width":3000,"height":250,"color":"6"},
+		{"id":"n-b9e851ae59af","type":"text","text":"## DEC-001\nBusiness Sponsor\n\n**PENDING**\nEvidence gate required","x":80,"y":380,"width":900,"height":250,"color":"6"},
+		{"id":"n-5cd5609ad4c8","type":"text","text":"## DEC-002\nKPI Governance Owner\n\n**PENDING**\nEvidence gate required","x":1090,"y":380,"width":900,"height":250,"color":"6"},
+		{"id":"n-90f0d3a21395","type":"text","text":"## DEC-003\nDiscovery Scope\n\n**PENDING**\nEvidence gate required","x":2100,"y":380,"width":900,"height":250,"color":"6"},
+		{"id":"n-54b99fe3349e","type":"text","text":"## DEC-004\nMeasurement Scope\n\n**PENDING**\nEvidence gate required","x":80,"y":760,"width":900,"height":250,"color":"6"},
+		{"id":"n-d8b017330cd3","type":"text","text":"## DEC-005\nSOP/JD Responsibility\n\n**PENDING**\nEvidence gate required","x":1090,"y":760,"width":900,"height":250,"color":"6"},
+		{"id":"n-8389bc1aa547","type":"text","text":"## DEC-006\nTOP Assessment\n\n**PENDING**\nEvidence gate required","x":2100,"y":760,"width":900,"height":250,"color":"6"},
+		{"id":"n-9e20f905a1fc","type":"text","text":"## DEC-007\nIntegration Feasibility\n\n**PENDING**\nEvidence gate required","x":80,"y":1140,"width":900,"height":250,"color":"6"},
+		{"id":"n-9ac32377846f","type":"text","text":"## DEC-008\nImprove vs Extend vs Build\n\n**PENDING**\nEvidence gate required","x":1090,"y":1140,"width":900,"height":250,"color":"6"},
+		{"id":"n-c37b0fe0801a","type":"text","text":"## DEC-009\nProceed to Solution Design\n\n**NOT APPROVED**\nEvidence gate required","x":2100,"y":1140,"width":900,"height":250,"color":"6"},
+		{"id":"f-a09439943107","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Registers/Decision_Log.md","x":80,"y":1570,"width":850,"height":150,"color":"6"},
+		{"id":"f-6849118db515","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Knowledge/15_Source_Assessment_2026-10-13.md","x":1030,"y":1570,"width":850,"height":150,"color":"3"},
+		{"id":"f-fc3d68d397a3","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/09_Discovery_Plan.canvas","x":1980,"y":1570,"width":850,"height":150,"color":"3"},
+		{"id":"f-914a1cd0f56c","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/Mindmaps/BSC_KPI_Enterprise_Master_Mindmap_v1_0.canvas","x":0,"y":1790,"width":850,"height":140,"color":"5"},
+		{"id":"f-a49bdf238548","type":"file","file":"03_Projects/Canvas/BSC_KPI_Performance_Assessment/00_INDEX.md","x":950,"y":1790,"width":850,"height":140,"color":"5"}
+	],
+	"edges":[]
+}

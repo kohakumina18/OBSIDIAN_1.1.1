@@ -47,7 +47,7 @@ Every line label starts with its type; `PRIMARY` marks a project's main module:
 | KNOWLEDGE | Knowledge / RAG / reference | cyan, dotted | 6 |
 | AFFINITY | Business relationship; no technical integration | grey, dotted | 23 |
 
-By BOD decision, QC, Production Planning and Production Management carry no badge yet, and GTAS Transportation has no line. The full matrix and every change are in [[03_Projects/Canvas/CONNECTION_CHANGELOG|CONNECTION_CHANGELOG]]; checks in [[03_Projects/Canvas/CANVAS_VALIDATION_REPORT|CANVAS_VALIDATION_REPORT]].
+By BOD decision, QC, Production Planning and Production Management carry no badge yet, and GTAS Transportation has no line. The full matrix and every change are in [[CONNECTION_CHANGELOG|CONNECTION_CHANGELOG]]; checks in [[CANVAS_VALIDATION_REPORT|CANVAS_VALIDATION_REPORT]].
 
 ## Portfolio Snapshot
 
