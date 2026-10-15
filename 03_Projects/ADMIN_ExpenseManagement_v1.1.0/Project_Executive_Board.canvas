@@ -1,148 +1,34 @@
 {
-  "nodes": [
-    {
-      "id": "ppj-board-metadata",
-      "type": "text",
-      "text": "ADMIN_ExpenseManagement_v1.1.0 — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1",
-      "x": 0,
-      "y": -220,
-      "width": 760,
-      "height": 100,
-      "color": "6"
-    },
-    {
-      "id": "ppj-exec-summary",
-      "type": "text",
-      "text": "ADMIN_ExpenseManagement_v1.1.0\n\nDomain:\nAdministration\n\nLifecycle:\nActive / Requirement Refinement / UAT Preparation\n\nProgress:\n~90% (2026-09-15 meeting recap)\n\nGate:\nMulti-traveler request model, end-to-end lifecycle and UAT preparation\n\nOutcome:\nStandardize Administration business-travel and expense-management workflows: Request -> Approval -> Business Trip -> Advance -> Expense -> Settlement.\n\nTop Blocker:\nScope creep beyond Request -> Approval -> Trip -> Expense -> Settlement\n\nNext Milestone:\nValidate the booking workflow and status model\n\nLast Verified:\n2026-09-18",
-      "x": 0,
-      "y": -90,
-      "width": 760,
-      "height": 560,
-      "color": "4"
-    },
-    {
-      "id": "ppj-management-attention",
-      "type": "text",
-      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Scope creep beyond Request -> Approval -> Trip -> Expense -> Settlement\n- Approval/status rules need confirmation\n- Multi-traveler data model complexity\n\nDecisions Needed\n- None recorded\n\nExternal Dependencies\n- None recorded",
-      "x": 810,
-      "y": -90,
-      "width": 500,
-      "height": 560,
-      "color": "1"
-    },
-    {
-      "id": "ppj-lane-f3e573404df4",
-      "type": "group",
-      "x": 0,
-      "y": 560,
-      "width": 300,
-      "height": 1050,
-      "label": "BACKLOG",
-      "color": "1"
-    },
-    {
-      "id": "ppj-task-849f37cc8cea",
-      "type": "text",
-      "text": "[[Tasks/ADMIN-ExpenseManagement-v1.1.0-20260918-TASK-004_Define-vendor-catalogue-and-expense-categories]]\n\nDefine vendor catalogue and expense categories\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
-      "x": 20,
-      "y": 630,
-      "width": 260,
-      "height": 155
-    },
-    {
-      "id": "ppj-task-da593abf16a3",
-      "type": "text",
-      "text": "[[Tasks/ADMIN-ExpenseManagement-v1.1.0-20260918-TASK-003_Finalize-approval-matrix-advance-expense-submission-and-settlement]]\n\nFinalize approval matrix, advance, expense submission and settlement\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
-      "x": 20,
-      "y": 820,
-      "width": 260,
-      "height": 155
-    },
-    {
-      "id": "ppj-task-8b60965e4004",
-      "type": "text",
-      "text": "[[Tasks/ADMIN-ExpenseManagement-v1.1.0-20260918-TASK-002_Model-multi-traveler-requests-with-per-traveler-travel-plans]]\n\nModel multi-traveler requests with per-traveler travel plans\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
-      "x": 20,
-      "y": 1010,
-      "width": 260,
-      "height": 155
-    },
-    {
-      "id": "ppj-task-934b85b9cd99",
-      "type": "text",
-      "text": "[[Tasks/ADMIN-ExpenseManagement-v1.1.0-20260918-TASK-005_Prepare-UAT]]\n\nPrepare UAT\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
-      "x": 20,
-      "y": 1200,
-      "width": 260,
-      "height": 155
-    },
-    {
-      "id": "ppj-task-4f05dfc770b1",
-      "type": "text",
-      "text": "[[Tasks/ADMIN-ExpenseManagement-v1.1.0-20260918-TASK-001_Validate-the-booking-workflow-and-status-model]]\n\nValidate the booking workflow and status model\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
-      "x": 20,
-      "y": 1390,
-      "width": 260,
-      "height": 155
-    },
-    {
-      "id": "ppj-lane-8d767178b3a7",
-      "type": "group",
-      "x": 350,
-      "y": 560,
-      "width": 300,
-      "height": 500,
-      "label": "THIS WEEK",
-      "color": "2"
-    },
-    {
-      "id": "ppj-lane-bf81443bfcae",
-      "type": "group",
-      "x": 700,
-      "y": 560,
-      "width": 300,
-      "height": 500,
-      "label": "IN PROGRESS",
-      "color": "3"
-    },
-    {
-      "id": "ppj-lane-276d6ca3922f",
-      "type": "group",
-      "x": 1050,
-      "y": 560,
-      "width": 300,
-      "height": 500,
-      "label": "BLOCKED / WAITING",
-      "color": "4"
-    },
-    {
-      "id": "ppj-lane-a82db70f445e",
-      "type": "group",
-      "x": 1400,
-      "y": 560,
-      "width": 300,
-      "height": 500,
-      "label": "REVIEW / UAT",
-      "color": "5"
-    },
-    {
-      "id": "ppj-lane-e782e7728e49",
-      "type": "group",
-      "x": 1750,
-      "y": 560,
-      "width": 300,
-      "height": 500,
-      "label": "DONE",
-      "color": "6"
-    }
-  ],
-  "edges": [],
-  "metadata": {
-    "version": "1.0-1.0",
-    "frontmatter": {
-      "project": "ADMIN_ExpenseManagement_v1.1.0",
-      "board_type": "project_executive_kanban",
-      "last_verified": "2026-09-18"
-    }
-  }
+	"nodes":[
+		{"id":"ppj-lane-f3e573404df4","type":"group","x":0,"y":560,"width":300,"height":1050,"color":"1","label":"BACKLOG"},
+		{"id":"ppj-lane-8d767178b3a7","type":"group","x":350,"y":560,"width":300,"height":500,"color":"2","label":"THIS WEEK"},
+		{"id":"ppj-lane-bf81443bfcae","type":"group","x":700,"y":560,"width":300,"height":500,"color":"3","label":"IN PROGRESS"},
+		{"id":"ppj-lane-276d6ca3922f","type":"group","x":1050,"y":560,"width":300,"height":500,"color":"4","label":"BLOCKED / WAITING"},
+		{"id":"ppj-lane-a82db70f445e","type":"group","x":1400,"y":560,"width":300,"height":500,"color":"5","label":"REVIEW / UAT"},
+		{"id":"ppj-lane-e782e7728e49","type":"group","x":1750,"y":560,"width":300,"height":500,"color":"6","label":"DONE"},
+		{"id":"ppj-board-metadata","type":"text","text":"ADMIN_ExpenseManagement_v1.1.0 — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1","x":0,"y":-220,"width":760,"height":100,"color":"6"},
+		{"id":"ppj-exec-summary","type":"text","text":"ADMIN_ExpenseManagement_v1.1.0\n\nDomain:\nAdministration\n\nLifecycle:\nActive / Requirement Refinement / UAT Preparation\n\nProgress:\n~90% (2026-09-15 meeting recap)\n\nGate:\nMulti-traveler request model, end-to-end lifecycle and UAT preparation\n\nOutcome:\nStandardize Administration business-travel and expense-management workflows: Request -> Approval -> Business Trip -> Advance -> Expense -> Settlement.\n\nTop Blocker:\nScope creep beyond Request -> Approval -> Trip -> Expense -> Settlement\n\nNext Milestone:\nValidate the booking workflow and status model\n\nLast Verified:\n2026-09-18","x":0,"y":-90,"width":760,"height":560,"color":"4"},
+		{"id":"ppj-management-attention","type":"text","text":"KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Scope creep beyond Request -> Approval -> Trip -> Expense -> Settlement\n- Approval/status rules need confirmation\n- Multi-traveler data model complexity\n\nDecisions Needed\n- None recorded\n\nExternal Dependencies\n- None recorded","x":810,"y":-90,"width":500,"height":560,"color":"1"},
+		{"id":"ppj-task-849f37cc8cea","type":"text","text":"[[Tasks/ADMIN-ExpenseManagement-v1.1.0-20260918-TASK-004_Define-vendor-catalogue-and-expense-categories]]\n\nDefine vendor catalogue and expense categories\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.","x":20,"y":630,"width":260,"height":155},
+		{"id":"ppj-task-da593abf16a3","type":"text","text":"[[Tasks/ADMIN-ExpenseManagement-v1.1.0-20260918-TASK-003_Finalize-approval-matrix-advance-expense-submission-and-settlement]]\n\nFinalize approval matrix, advance, expense submission and settlement\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.","x":20,"y":820,"width":260,"height":155},
+		{"id":"ppj-task-8b60965e4004","type":"text","text":"[[Tasks/ADMIN-ExpenseManagement-v1.1.0-20260918-TASK-002_Model-multi-traveler-requests-with-per-traveler-travel-plans]]\n\nModel multi-traveler requests with per-traveler travel plans\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.","x":20,"y":1010,"width":260,"height":155},
+		{"id":"ppj-task-934b85b9cd99","type":"text","text":"[[Tasks/ADMIN-ExpenseManagement-v1.1.0-20260918-TASK-005_Prepare-UAT]]\n\nPrepare UAT\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.","x":20,"y":1200,"width":260,"height":155},
+		{"id":"ppj-task-4f05dfc770b1","type":"text","text":"[[Tasks/ADMIN-ExpenseManagement-v1.1.0-20260918-TASK-001_Validate-the-booking-workflow-and-status-model]]\n\nValidate the booking workflow and status model\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.","x":20,"y":1390,"width":260,"height":155},
+		{"id":"0a5bd847ed858b24","type":"file","file":"mermaid-diagram 2.png","x":520,"y":1960,"width":860,"height":2933},
+		{
+			"id":"e648e9b183eedba6",
+			"type":"text",
+			"text":"# WFX Ledger & Analysis Code — Master Data Specification\n\nADMIN.EXPENSE_MANAGEMENT v2.1.1 | Travel Expense | Accounting & HCQT Analytics\n\nDựa trên ảnh WFX Journal Import, file `quy trình TU-HU.xlsx`, `IMP VAT.xlsx` và xác nhận của Accounting, có thể tổng hợp thành hai nhóm master data:\n\n- Ledger / GL Account: xác định khoản chi được hạch toán vào tài khoản kế toán nào.\n    \n- Analysis Code / Cost Profit: xác định khoản chi thuộc đơn vị nào, loại chi phí gì và được phân bổ bao nhiêu.\n    \n\n## I. Ledger Master — Danh mục tài khoản kế toán\n\n|Ledger Code|Nhóm nghiệp vụ|Mục đích sử dụng|Nguồn xác nhận|\n|---|---|---|---|\n|642|Chi phí khối Văn phòng|Ghi nhận chi phí công tác thuộc khối Văn phòng|Accounting xác nhận|\n|6421|Tài khoản chi tiết nhóm 642|Xuất hiện trong 4 dòng DR của ảnh WFX Journal Import|Ảnh WFX|\n|627|Chi phí khối Nhà máy|Ghi nhận chi phí công tác thuộc khối Nhà máy|Accounting xác nhận|\n|141|Tạm ứng|Ghi nhận chi tạm ứng, hoàn ứng và khoản phải thu hồi/chi bổ sung theo quy trình|File TU-HU|\n|112|Tiền gửi ngân hàng|Chi tạm ứng, thu hồi tiền thừa, thanh toán bổ sung|File TU-HU|\n|13311|Thuế GTGT đầu vào|Xuất hiện ở bên Nợ của các Journal hoàn ứng mẫu|File TU-HU|\n\nLưu ý: `6421` là tài khoản được ghi trong ảnh mẫu, không chứng minh rằng mọi khoản chi phí Văn phòng đều phải hạch toán vào 6421. Cần Accounting cung cấp danh mục tài khoản chi tiết và quy tắc mapping chính thức.\n\n### Ledger Mapping Rule\n\n|Điều kiện nghiệp vụ|GL Group|Rule|\n|---|---|---|\n|Chi phí công tác thuộc khối Văn phòng|642|Mapping vào tài khoản con được Accounting duyệt|\n|Chi phí công tác thuộc khối Nhà máy|627|Mapping vào tài khoản con được Accounting duyệt|\n|Chi tạm ứng qua ngân hàng|141 / 112|DR 141 / CR 112|\n|Hoàn ứng|627, 642, 13311 / 141|Theo loại chi phí, VAT và giá trị cấn trừ|\n|Thu hồi tiền thừa|112 / 141|DR 112 / CR 141|\n|Chi bổ sung phần vượt|141 / 112|Theo quy trình TU-HU hiện có|\n\nĐối với trường hợp nhân viên Văn phòng đi công tác phục vụ Nhà máy, cần xác nhận đơn vị thực tế chịu phí thay vì chỉ dựa vào phòng ban của nhân viên.\n\n## II. Analysis Code Master — Danh mục phân tích chi phí\n\n### 1. Các code xác định được từ ảnh WFX\n\n|Analysis Code (Name3)|Loại chi phí|Ví dụ Narration|Trạng thái|\n|---|---|---|---|\n|`PCCTPHI`|Phụ cấp công tác|Công tác phí|Có trong ảnh|\n|`KS`|Khách sạn, nhà nghỉ|Chi phí khách sạn|Có trong ảnh|\n|`TKHACH`|Tiếp khách, quà biếu|Chi phí tiếp khách|Có trong ảnh|\n|`TAXICTP`|Taxi công tác|Chi phí taxi|Có trong ảnh|\n\nĐây là bốn mã quan sát được ở đầu các giá trị `Cost Profit Name3`. Phần diễn giải dài phía sau mã bị cắt trong ảnh, nên cần lấy tên đầy đủ từ WFX Master.\n\n### 2. Danh mục cần mở rộng cho HCQT\n\n|Travel Expense Category|Analysis Code WFX|Trạng thái mapping|\n|---|---|---|\n|Phụ cấp công tác|`PCCTPHI`|Có mẫu|\n|Khách sạn / nhà nghỉ|`KS`|Có mẫu|\n|Tiếp khách / quà biếu|`TKHACH`|Có mẫu|\n|Taxi công tác|`TAXICTP`|Có mẫu|\n|Vé máy bay|Chưa cung cấp|Pending|\n|Vé tàu / xe khách|Chưa cung cấp|Pending|\n|Visa|Chưa cung cấp|Pending|\n|Bảo hiểm công tác|Chưa cung cấp|Pending|\n|Ăn uống cá nhân|Chưa cung cấp|Pending|\n|eSIM / Viễn thông|Chưa cung cấp|Pending|\n|Phí hành lý|Chưa cung cấp|Pending|\n|Phí đổi/hủy vé|Chưa cung cấp|Pending|\n|Chi phí khác|Chưa cung cấp|Pending|\n\nCần tránh gộp toàn bộ chi phí `TRANSPORTATION` thành mã taxi, hoặc mọi chi phí `MEAL` thành tiếp khách. Danh mục nhập liệu Business Travel phải có chi tiết đủ để xác định đúng analysis code.\n\n### 3. Cost Profit Name2 — Danh mục đơn vị chịu phí\n\n|Cost Profit Name2 trong ảnh|Analysis Code Name3 tương ứng trong dòng mẫu|\n|---|---|\n|CQ Tổng giám đốc|`PCCTPHI`|\n|Hỗ Trợ|`KS`|\n|Vinatex Huế|`TKHACH`|\n|Bp Tài chính kế toán|`TAXICTP`|\n\nBốn cặp trên chỉ phản ánh những dòng dữ liệu mẫu. Đây không phải mapping cố định giữa phòng ban và loại chi phí.\n\nMột đơn vị có thể phát sinh nhiều loại chi phí; một loại chi phí cũng có thể được phân bổ cho nhiều đơn vị.\n\n## III. WFX Journal Import — Phân tích từng trường\n\nẢnh cung cấp 16 cột từ A đến P. Bảng dưới đây giữ nguyên tên trường khi đọc rõ; những header bị cắt được đánh dấu để xác minh.\n\n|Cột|WFX Field|Ý nghĩa / Quy tắc nhập liệu|Data Source|\n|---|---|---|---|\n|A|`SN`|Số thứ tự hoặc mã nhóm chứng từ; cần xác nhận cách WFX gom dòng|Import Generator|\n|B|`Doc Date`|Ngày chứng từ|Voucher/Transaction|\n|C|`GLDate`|Ngày ghi nhận vào kỳ kế toán|Accounting|\n|D|`Journal Type Name`|Loại chứng từ; mẫu là `JOURNAL`|Voucher Rule|\n|E|`Currency Code`|Đồng tiền hạch toán; mẫu `VND`|Expense/Accounting|\n|F|`Exchange Rate`|Tỷ giá; mẫu `1`|Accounting Rule|\n|G|`Credit Typ` (header bị cắt)|Chiều hạch toán; các dòng mẫu `DR`|Journal Rule|\n|H|`Ledger Name`|Mã tài khoản kế toán, ví dụ `6421`|GL Mapping|\n|I|`Narration`|Diễn giải chi phí|Expense Category + Description|\n|J|`DebitCreditAmt`|Số tiền ghi nhận trên dòng hạch toán|Approved Accounting Amount|\n|K|`Profit Name`|Chiều phân tích Profit; mẫu `NA`|WFX Master|\n|L|`Cost Profit Name2`|Đơn vị/bộ phận được phân bổ chi phí|Cost Allocation Master|\n|M|`Cost Profit Name3`|Loại khoản mục chi phí chi tiết|Analysis Code Master|\n|N|`Cost Profit Amt`|Giá trị phân bổ theo dimension|Allocation Calculation|\n|O|`Type Translated`|Chưa có dữ liệu mẫu; cần xác nhận ý nghĩa|WFX|\n|P|`Instrument N...` (header bị cắt)|Chưa xác định tên đầy đủ và quy tắc|WFX|\n\n### Bốn dòng dữ liệu WFX đã được cung cấp\n\n|Ledger|Narration|Cost Profit Name2|Analysis Code|DebitCreditAmt|Cost Profit Amt|\n|---|---|---|---|---|---|\n|6421|Công tác phí|CQ Tổng giám đốc|PCCTPHI|6.000.000|1.000.000|\n|6421|Chi phí khách sạn|Hỗ Trợ|KS|6.000.000|1.000.000|\n|6421|Chi phí tiếp khách|Vinatex Huế|TKHACH|6.000.000|1.000.000|\n|6421|Chi phí taxi|Bp Tài chính kế toán|TAXICTP|6.000.000|1.000.000|\n\nCác dòng trên đều có `Doc Date = GLDate = 30/06/2026`, `JOURNAL`, `VND`, tỷ giá `1`, `DR`, `Profit Name = NA`.\n\nĐiểm chưa rõ quan trọng nhất: Mỗi dòng đang có `DebitCreditAmt = 6.000.000` trong khi `Cost Profit Amt = 1.000.000`. Không được tự suy luận rằng đây là bốn chi phí độc lập hay bốn khoản phân bổ của cùng một bút toán.\n\nCần xác minh grain của file import (dòng Journal so với dòng Allocation), quy tắc lặp thông tin và điều kiện tổng `Cost Profit Amt` phải khớp với bút toán nào. Ảnh cũng chưa hiển thị các dòng `CR` đối ứng.\n\n## IV. WFX VAT Import — Phân tích 9 trường\n\nĐối chiếu trực tiếp `IMP VAT.xlsx`, sheet `VatImportFormat (2)`:\n\n|Cột|WFX Field|Ví dụ trong file|Cách xử lý / Nguồn dữ liệu|\n|---|---|---|---|\n|A|`Party Name`|Công ty CP Di chuyển Xanh và Thông minh GSM|Trích xuất bên bán từ XML, đối chiếu WFX Party Master|\n|B|`Invoice No`|14035968|Lấy số hóa đơn, lưu dạng text để tránh mất số 0 đầu|\n|C|`Invoice Date`|Ngày lưu bằng Excel serial|Chuyển sang định dạng ngày WFX yêu cầu|\n|D|`Serial No.`|C26MHD|Lấy ký hiệu hóa đơn từ XML|\n|E|`Remarks`|1|Cần Accounting xác nhận ý nghĩa và giá trị hợp lệ|\n|F|`Invoice Amount`|85.185|Trích xuất số tiền; xác nhận là giá trị trước hay sau thuế|\n|G|`Percentage`|8 hoặc 7,49|Tỷ lệ trong phép tính; chưa mặc định là thuế suất|\n|H|`Round Off`|Normal, Upper Round, Lower Round, No|Xử lý theo rounding rule|\n|I|`Allocation Amount`|6.815|Tính/kiểm tra theo tỷ lệ và chế độ làm tròn|\n\nTrong 22 dòng mẫu, giá trị `Allocation Amount` khớp với công thức:\n\n\\[ AllocationAmount=RoundByMode(InvoiceAmount\\times Percentage/100) \\]\n\nTuy nhiên, cần WFX xác nhận mục đích nghiệp vụ của phép tính trước khi áp dụng vào tất cả hóa đơn.\n\n## V. Mapping từ chứng từ sang Ledger & Analysis Code\n\n|Input|Xử lý của hệ thống|Output WFX|\n|---|---|---|\n|Hóa đơn / Bill|XML Parser hoặc OCR, user xác nhận dữ liệu thiếu|Thông tin chi phí|\n|Nhân viên / đơn vị chịu phí|Xác định Văn phòng / Nhà máy và rule phân bổ|GL Group 642 / 627|\n|Loại chi phí|Mapping theo Expense Category Master|Cost Profit Name3|\n|Bộ phận chịu phí|Mapping với WFX Organization Master|Cost Profit Name2|\n|Chi phí đã được phê duyệt|Xác định số tiền hạch toán|DebitCreditAmt|\n|Phân bổ chi phí|Áp dụng allocation rule đã xác nhận|Cost Profit Amt|\n|Thông tin hóa đơn VAT|Mapping 9 trường VAT|VAT Import File|\n\nVới Document Extraction, AI/OCR chỉ nên đề xuất loại chi phí khi thông tin chưa rõ. Việc lựa chọn tài khoản và analysis code cuối cùng phải dựa trên rule/master được duyệt; các trường hợp không khớp phải chuyển Accounting Review.\n\n## VI. File tổng hợp dùng cho BA, Accounting và Dev\n\nTải WFX Ledger & Analysis Code — Data Specification v2.1.1\n\nExcel · 8 sheets · Ledger Master, Analysis Codes, 16 Journal Fields, 4 Sample Rows, 9 VAT Fields, TU-HU Rules và Open Gaps.\n\n### Thông tin ưu tiên xin thêm từ Accounting\n\n1. Full WFX Ledger Master: mã tài khoản chi tiết thuộc nhóm 627 và 642.\n    \n2. Full Analysis Code Master: Cost Profit Name2, Name3, mã và tên đầy đủ.\n    \n3. Original WFX Journal Import Template: xác nhận toàn bộ cột, các dòng CR và quy tắc phân bổ `DebitCreditAmt`/`Cost Profit Amt`.\n    \n\nBa bộ thông tin này sẽ giúp hoàn thiện mapping chi phí công tác theo khoản mục, phòng ban và nhà máy mà không phải hardcode những giá trị chưa xác minh.\n\n### Prompt chuẩn hóa\n\n> Tổng hợp toàn bộ Ledger Account và Analysis Code liên quan đến công tác phí trong WFX thành Master Mapping Table. Phân tích chi tiết từng trường của WFX Journal Import và VAT Import, bao gồm Field Name, Business Meaning, Source, Transformation, Validation, Example, Owner và Mapping Status. Phân biệt thông tin đã xác nhận với các rule còn thiếu, đặc biệt nhóm tài khoản 642/627, Cost Profit Name2/Name3 và DebitCreditAmt/Cost Profit Amt. Xuất thành Excel Data Specification phục vụ BA, Accounting và Dev cho Admin Expense Management v2.1.1.",
+			"styleAttributes":{},
+			"x":2520,
+			"y":2700,
+			"width":1080,
+			"height":6046
+		}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{"project":"ADMIN_ExpenseManagement_v1.1.0","board_type":"project_executive_kanban","last_verified":"2026-09-18"}
+	}
 }
