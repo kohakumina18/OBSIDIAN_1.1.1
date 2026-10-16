@@ -1,0 +1,42 @@
+{
+	"nodes":[
+		{
+			"id":"2738ac82be4787e7",
+			"type":"text",
+			"text":"Ngày người đáp bước nơi triền bánh\nMảnh hồn tôi đã xuôi viễn hành\nHồi chuông vẫn cất ngân muôn trùng\nHoài vọng mêng mang\n\nĐại ngàn mạt hướng\nCách trăm dặm bước\nHải khơi hàn lương\nCách trăm dặm trường\nHồi mình chung tách chia tương phùng\nTự ngàn mênh mang\n\nMột hành cước\nĐôi nẻo vắng\nBa miền phương\nBốn trăm cách dặm\nNửa thiên ly cố hương vỡ lòng\nHàng dặm mênh mông\n\nFive hundred miles\nFive hundred miles\nFive hundred miles\nFive hundred miles\nLord, I'm 500 miles\nFrom my home",
+			"styleAttributes":{},
+			"x":-280,
+			"y":-200,
+			"width":420,
+			"height":527,
+			"color":"3"
+		},
+		{"id":"94b32d98975197ec","type":"file","file":"Pasted image 20261016122311.png","x":1400,"y":-580,"width":313,"height":400},
+		{"id":"fcb75ea2d5cbd64f","type":"file","file":"Pasted image 20261016122150.png","x":620,"y":-740,"width":307,"height":400},
+		{"id":"1bd4e0206f5cf49d","type":"file","file":"Pasted image 20261016122238.png","x":1020,"y":-660,"width":288,"height":400}
+	],
+	"edges":[
+		{
+			"id":"ea6e014a31cb4271",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"fcb75ea2d5cbd64f",
+			"fromSide":"right",
+			"toNode":"1bd4e0206f5cf49d",
+			"toSide":"left"
+		},
+		{
+			"id":"bbecef922fbb41e7",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"1bd4e0206f5cf49d",
+			"fromSide":"right",
+			"toNode":"94b32d98975197ec",
+			"toSide":"left"
+		}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
