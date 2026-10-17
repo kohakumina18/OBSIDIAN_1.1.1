@@ -1,0 +1,130 @@
+{
+  "provider": "chatgpt-oauth",
+  "apiKey": "",
+  "model": "gpt-5.6-terra",
+  "thinkingLevel": "medium",
+  "maxIterations": 20,
+  "enableWebSearch": true,
+  "enterSends": true,
+  "followEdits": true,
+  "debugLog": false,
+  "skillsFolder": "Skills",
+  "modelCatalog": {
+    "entries": [
+      {
+        "provider": "chatgpt-oauth",
+        "identity": "8576e0e549afb1a8ce756a7407cd58fa24931402dc46cfb1f408f10f8208e95b",
+        "fetchedAt": 1792231328522,
+        "models": [
+          {
+            "value": "gpt-6.1-sol",
+            "label": "GPT-6.1-Sol",
+            "reasoningEfforts": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max",
+              "ultra"
+            ],
+            "defaultReasoningEffort": "low",
+            "supportsReasoningSummary": true,
+            "supportsParallelTools": true
+          },
+          {
+            "value": "gpt-6-astra",
+            "label": "GPT-6-Astra",
+            "reasoningEfforts": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max",
+              "ultra"
+            ],
+            "defaultReasoningEffort": "low",
+            "supportsReasoningSummary": true,
+            "supportsParallelTools": true
+          },
+          {
+            "value": "gpt-6-sol",
+            "label": "GPT-6-Sol",
+            "reasoningEfforts": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max",
+              "ultra"
+            ],
+            "defaultReasoningEffort": "medium",
+            "supportsReasoningSummary": true,
+            "supportsParallelTools": true
+          },
+          {
+            "value": "gpt-6-luna",
+            "label": "GPT-6-Luna",
+            "reasoningEfforts": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ],
+            "defaultReasoningEffort": "medium",
+            "supportsReasoningSummary": true,
+            "supportsParallelTools": true
+          },
+          {
+            "value": "gpt-5.6-sol",
+            "label": "GPT-5.6-Sol",
+            "reasoningEfforts": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max",
+              "ultra"
+            ],
+            "defaultReasoningEffort": "low",
+            "supportsReasoningSummary": true,
+            "supportsParallelTools": true
+          },
+          {
+            "value": "gpt-5.6-terra",
+            "label": "GPT-5.6-Terra",
+            "reasoningEfforts": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max",
+              "ultra"
+            ],
+            "defaultReasoningEffort": "medium",
+            "supportsReasoningSummary": true,
+            "supportsParallelTools": true
+          },
+          {
+            "value": "gpt-5.6-luna",
+            "label": "GPT-5.6-Luna",
+            "reasoningEfforts": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ],
+            "defaultReasoningEffort": "medium",
+            "supportsReasoningSummary": true,
+            "supportsParallelTools": true
+          }
+        ]
+      }
+    ],
+    "clientVersion": {
+      "value": "0.163.0",
+      "checkedAt": 1792231327427
+    }
+  }
+}

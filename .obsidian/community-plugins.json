@@ -1,16 +1,19 @@
 [
   "calendar",
   "obsidian-kanban",
-  "copilot",
-  "obsidian-minimal-settings",
   "dataview",
   "templater-obsidian",
-  "githobs",
   "advanced-canvas",
   "excalidraw-extras",
   "ink",
   "obsidian-excalidraw-plugin",
   "canvas-export",
   "canvas-mindmap",
-  "ppj-canvas-focus"
+  "ppj-canvas-focus",
+  "draw-in-canvas",
+  "mermaid-flow",
+  "vault-graph",
+  "chatting-with-ai",
+  "quiz-generator",
+  "notebook-navigator"
 ]

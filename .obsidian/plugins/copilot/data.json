@@ -78,7 +78,7 @@
     {
       "name": "gpt-5.5",
       "provider": "openai",
-      "enabled": false,
+      "enabled": true,
       "isBuiltIn": true,
       "core": true,
       "capabilities": [
@@ -88,7 +88,7 @@
     {
       "name": "gpt-5.4-mini",
       "provider": "openai",
-      "enabled": false,
+      "enabled": true,
       "isBuiltIn": true,
       "core": true,
       "capabilities": [
@@ -96,29 +96,20 @@
       ]
     },
     {
-      "name": "gpt-5.4",
-      "provider": "openai",
-      "enabled": false,
+      "name": "google/gemini-3.5-flash",
+      "provider": "openrouterai",
+      "enabled": true,
       "isBuiltIn": true,
-      "core": true,
+      "projectEnabled": true,
       "capabilities": [
-        "vision"
-      ]
-    },
-    {
-      "name": "gpt-5-mini",
-      "provider": "openai",
-      "enabled": false,
-      "isBuiltIn": true,
-      "core": true,
-      "capabilities": [
+        "reasoning",
         "vision"
       ]
     },
     {
       "name": "claude-sonnet-4-6",
       "provider": "anthropic",
-      "enabled": false,
+      "enabled": true,
       "isBuiltIn": true,
       "capabilities": [
         "reasoning",
@@ -126,9 +117,20 @@
       ]
     },
     {
-      "name": "gemini-3.1-flash-lite-preview",
+      "name": "gemini-3.5-flash",
       "provider": "google",
-      "enabled": false,
+      "enabled": true,
+      "isBuiltIn": true,
+      "projectEnabled": true,
+      "capabilities": [
+        "reasoning",
+        "vision"
+      ]
+    },
+    {
+      "name": "gemini-3.1-flash-lite",
+      "provider": "google",
+      "enabled": true,
       "isBuiltIn": true,
       "projectEnabled": true,
       "capabilities": [
@@ -138,20 +140,10 @@
     {
       "name": "gemini-2.5-flash",
       "provider": "google",
-      "enabled": false,
+      "enabled": true,
       "isBuiltIn": true,
       "projectEnabled": true,
       "capabilities": [
-        "vision"
-      ]
-    },
-    {
-      "name": "google/gemini-3-flash-preview",
-      "provider": "openrouterai",
-      "enabled": false,
-      "isBuiltIn": true,
-      "capabilities": [
-        "reasoning",
         "vision"
       ]
     },
@@ -177,7 +169,7 @@
       ]
     },
     {
-      "name": "openai/gpt-5.4",
+      "name": "openai/gpt-5.5",
       "provider": "openrouterai",
       "enabled": false,
       "isBuiltIn": true,
@@ -188,7 +180,7 @@
       ]
     },
     {
-      "name": "openai/gpt-5-mini",
+      "name": "openai/gpt-5.4-mini",
       "provider": "openrouterai",
       "enabled": false,
       "isBuiltIn": true,
@@ -199,7 +191,7 @@
       ]
     },
     {
-      "name": "grok-4-1-fast",
+      "name": "grok-4.3",
       "provider": "xai",
       "enabled": false,
       "isBuiltIn": true,
@@ -210,7 +202,7 @@
       ]
     },
     {
-      "name": "x-ai/grok-4.1-fast",
+      "name": "x-ai/grok-4.3",
       "provider": "openrouterai",
       "enabled": false,
       "isBuiltIn": true,
@@ -243,7 +235,7 @@
       ]
     },
     {
-      "name": "claude-opus-4-6",
+      "name": "claude-opus-4-7",
       "provider": "anthropic",
       "enabled": false,
       "isBuiltIn": true,
@@ -253,8 +245,8 @@
       ]
     },
     {
-      "name": "gemini-3-flash-preview",
-      "provider": "google",
+      "name": "claude-haiku-4-5",
+      "provider": "anthropic",
       "enabled": false,
       "isBuiltIn": true,
       "capabilities": [
@@ -301,14 +293,14 @@
       "name": "deepseek-ai/DeepSeek-V3",
       "provider": "siliconflow",
       "enabled": false,
-      "isBuiltIn": false,
+      "isBuiltIn": true,
       "baseUrl": "https://api.siliconflow.com/v1"
     },
     {
       "name": "deepseek-ai/DeepSeek-R1",
       "provider": "siliconflow",
       "enabled": false,
-      "isBuiltIn": false,
+      "isBuiltIn": true,
       "baseUrl": "https://api.siliconflow.com/v1",
       "capabilities": [
         "reasoning"

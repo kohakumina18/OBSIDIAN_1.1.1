@@ -1,0 +1,125 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Chatting with AI — Global styles (outside Svelte component scope)
+   Component styles live in ChatContainer.svelte with scoped CSS.
+   All class names use the `ochatting-` prefix to avoid colliding with
+   upstream Obsidian Chat (`ochat-`) when both plugins are installed.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.ochatting-view-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Obsidian pads every side panel (12px at the sides and top, 32px at the
+   bottom) and scrolls it; full-height views such as Backlinks, Sync, PDF
+   and Canvas turn that off. The chat scrolls its own message list and pads
+   its own parts (header, messages, input), so the padding only left an
+   empty band around them. On desktop the status bar is fixed over the
+   bottom right corner of the window, and the bottom padding is what keeps
+   side panels clear of it: kept, except in the left sidebar, which the
+   status bar never covers. */
+body:not(.is-mobile) .workspace-leaf-content[data-type="ochatting-view"] .view-content {
+  padding: 0 0 var(--size-4-8);
+  overflow: hidden;
+}
+
+body:not(.is-mobile) .mod-left-split .workspace-leaf-content[data-type="ochatting-view"] .view-content {
+  padding-bottom: 0;
+}
+
+/* Phones and tablets: none at all. The sidebar's container already keeps
+   the safe area (the gesture bar) free below the view. */
+.is-mobile .workspace-leaf-content[data-type="ochatting-view"] .view-content {
+  padding: 0;
+  overflow: hidden;
+}
+
+/* On phones the sidebar's tab menu below the view fades the content above
+   it (Obsidian: box-shadow 0 -12px 12px in the sidebar colour, about 24px
+   high). It is drawn outside the view, and Obsidian isolates each view
+   (contain: strict; isolation: isolate), so nothing in the view can sit
+   above it: keep the input out of that band. Tablets have none.
+   With the keyboard open, Obsidian shrinks the main area but not the
+   sidebar (fixed to the screen); it only sets --keyboard-height. The chat
+   lifts itself by the part of the view the keyboard covers, measured in
+   chat-view.ts (--ochatting-lift). */
+.is-phone .workspace-drawer .workspace-leaf-content[data-type="ochatting-view"] .view-content {
+  padding-bottom: max(24px, var(--ochatting-lift, 0px));
+  transition: padding-bottom 150ms ease-out;
+}
+
+/* A line under the input row separates it from the tab menu below. */
+.is-phone .workspace-drawer .workspace-leaf-content[data-type="ochatting-view"] .ochatting-container {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* With the floating navigation Obsidian also fades the bottom 48px of every
+   sidebar view (a gradient on the view's own ::after). Under a list that
+   hints at more; here it would lie over the input, so not in the chat. */
+.is-mobile.is-floating-nav .workspace-drawer .workspace-leaf-content[data-type="ochatting-view"]::after {
+  display: none;
+}
+
+/* Desktop sidebar min-width */
+.workspace-leaf-content[data-type="ochatting-view"] {
+  min-width: 280px;
+}
+
+/* Settings rows with several controls (ChatGPT account, API key, Model):
+   on a phone the controls move below the description and wrap. Desktop
+   and tablet keep Obsidian's layout. */
+body.is-phone .ochatting-settings .setting-item {
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+
+body.is-phone .ochatting-settings .setting-item-control {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  row-gap: 6px;
+  max-width: 100%;
+}
+
+.ochatting-oauth-explainer {
+  padding: 0.75em;
+  margin-bottom: 0.75em;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  background: var(--background-secondary);
+}
+
+.ochatting-device-link-row {
+  margin: 0.4em 0 0.8em;
+}
+
+.ochatting-device-code-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin: 0.4em 0 1em;
+}
+
+.ochatting-device-code {
+  font-size: 1.4em;
+  padding: 0.3em 0.6em;
+  border-radius: 6px;
+  background: var(--background-secondary);
+  user-select: all;
+}
+
+.ochatting-device-status {
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.ochatting-device-status-error {
+  font-style: italic;
+  color: var(--text-error);
+}
+
+.ochatting-device-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5em;
+}
