@@ -67,34 +67,38 @@ Active / problem framing. Potential first technical topic: 2D Pattern Nesting ->
 
 # Weekly Status
 
-## Current Snapshot
+## Current Snapshot — 2026-10-16
 
-- Lifecycle: Partnership Follow-up / Confirmed Direction
-- Progress: TBD
-- Gate: Partnership Follow-up / Confirmed Direction
-- Priority: TBD
+- Lifecycle: AISC Event Coordination — Judge Preparation
+- Progress: Preliminary-round judge preparation underway; contract and docs pending
+- Gate: ⚡ **DEADLINE 22/10/2026** — Confirm panel; close UIT contract and PPJ documents
+- Priority: P1 (time-sensitive)
+- Source Event: PPJ-WEEKLY-20261010-20261016
 
 ## Latest Verified Update
 
-Backlog update
+PPJ × UIT / AISC preliminary-round judge preparation is underway.
+
+**Pending (both items block the 22/10 deadline):**
+1. UIT contract — not yet signed.
+2. Remaining PPJ documents — not yet confirmed.
 
 ## Current Blockers
 
-- Needs Confirmation
+- UIT contract signature pending.
+- PPJ document responsibilities not assigned.
+- Pre-read materials for judges not confirmed as obtained.
 
 ## Decisions Needed
 
-- Which PPJ topics are safe and suitable for UIT.
-- Whether PPJ joins AISC as sponsor/judge/mentor/problem provider.
-- Whether any PPJ-themed contest should be pursued.
+- **P1 — by 22/10:** Confirm panel composition and document responsibilities (contract + PPJ internal docs).
 
 ## Next Actions
 
-- Summarize PPJ problem topics suitable for UIT.
-- Classify topics by thesis, course project, AISC, mentoring/prototype, or internal-only.
-- Work with cô Phụng to confirm contact flow and collaboration format.
-- Review AISC sponsorship file if PPJ wants official participation.
-- Prepare a short topic list with business context, expected output, data sensitivity, and suggested academic format.
+- Obtain pre-read materials for judges.
+- Close UIT contract.
+- Confirm and assign remaining PPJ document responsibilities.
+- Deadline: **22 October 2026**.
 
 ## Update Protocol
 
@@ -104,6 +108,7 @@ Weekly updates should change only affected project memory, home, tasks, risks, d
 
 - Root project note: [[../PPJ.UIT.ACADEMIC.COLLABORATION.v1.1]]
 - Project memory: [[03_Projects/_Registry/Project_Memory/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1.memory]]
-- Source event: Backlog update
-- Last verified: 2026-07-13
+- Weekly report: [[08_Meeting_Notes/WEEKLY_REPORTS/WEEKLY-REPORT-10-16.10.2026]]
+- Source event: PPJ-WEEKLY-20261010-20261016
+- Last verified: 2026-10-16
 - Confidence: Strong

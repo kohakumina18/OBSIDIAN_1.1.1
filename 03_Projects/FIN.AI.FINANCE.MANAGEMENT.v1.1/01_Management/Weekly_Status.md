@@ -73,35 +73,39 @@ No longer merely an AI chatbot. WS1 Finance Q&A (Balance Sheet, P&L, management 
 
 # Weekly Status
 
-## Current Snapshot
+## Current Snapshot — 2026-10-16
 
-- Lifecycle: Analysis / Design
-- Progress: TBD
-- Gate: Data Discovery / Databricks Access Blocked / Rule Engine Design
+- Lifecycle: DESIGN — WS3 Fieldwork / WS4 Constraint
+- Progress: WS3 in survey collection; WS4 constrained; WS1/WS2 no new movement
+- Gate: WS3 survey responses by 22/10; WS4 lineage decision pending
 - Priority: P1
+- Source Event: PPJ-WEEKLY-20261010-20261016
 
 ## Latest Verified Update
 
-Workstream 2 source inventory is nearly complete and Workstream 3 factory drill-down is partially covered. Most required sources appear to exist in Databricks rather than the governed DWH. Rule Engine groups now cover materials and trims, subcontracting, and order effectiveness.
+**WS3 — Factory Performance:** Three 20-question role-based surveys created and sent (Accounting/Cost, HR/Payroll, Planning/Production/GTAS). Response collection underway; deadline **22 October 2026**. Next step: create data/rule/gap register from responses.
+
+**WS4 — Fabric OC:** ⚠️ Constraint confirmed. Separate Weaving OC and Dyeing OC do not have confirmed cross-OC lineage. Finance OVH report is at report-level, not OC-wise. The 10% NPL tolerance remains confirmed. End-to-end profitability and performance reporting are constrained until the lineage bridge decision is made.
+
+**WS1 / WS2:** No new confirmed update since 9 October baseline.
 
 ## Current Blockers
 
-- Approved Databricks account and read permission are not available.
-- Source table, schema, grain, linking key and source owner are not fully confirmed.
+- Databricks / DWH access — not yet resolved.
+- WS4: Cross-OC lineage bridge decision and OVH allocation driver not approved.
+- WS3 survey response quality and SME availability uncertain.
 
 ## Decisions Needed
 
+- **P0:** Approve Fabric OC cross-OC mapping approach and OVH allocation driver.
 - Define official Databricks access governance.
-- Approve Accounting rules and thresholds.
-- Confirm source owners and sources of truth.
+- Mandate WS3 survey participation; appoint requirements consolidation owner.
 
 ## Next Actions
 
-- Follow up Databricks account approval and confirm account, role, catalog, schema, table and read-only permission.
-- Complete Workstream 2 Source Inventory and profile each source.
-- Confirm OC linking keys and finalize the Rule Engine Catalogue.
-- Select 20-30 sample OCs and compare Rule Engine results with manual Accounting controls.
-- Do not expand Workstream 3 before Workstream 2 stabilizes.
+- Drive WS3 survey responses by 22 October; consolidate into data/rule/gap register.
+- Decide cross-OC lineage bridge approach and verify GRN and OVH allocation for WS4.
+- Continue WS2 rule catalogue and Databricks access follow-up (no new WS2 movement this period).
 
 ## Update Protocol
 
@@ -111,6 +115,7 @@ Weekly updates should change only affected project memory, home, tasks, risks, d
 
 - Root project note: [[../FIN.AI.FINANCE.MANAGEMENT.v1.1]]
 - Project memory: [[03_Projects/_Registry/Project_Memory/FIN.AI.FINANCE.MANAGEMENT.v1.1.memory]]
-- Source event: PPJ-WEEKLY-20260727-20260801
-- Last verified: 2026-08-01
+- Weekly report: [[08_Meeting_Notes/WEEKLY_REPORTS/WEEKLY-REPORT-10-16.10.2026]]
+- Source event: PPJ-WEEKLY-20261010-20261016
+- Last verified: 2026-10-16
 - Confidence: Strong

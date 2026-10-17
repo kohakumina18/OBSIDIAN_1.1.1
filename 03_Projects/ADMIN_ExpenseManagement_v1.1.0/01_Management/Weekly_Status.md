@@ -51,28 +51,42 @@ Evolved well beyond the initial Travel Request application. Modules: TravelReque
 
 # Weekly Status
 
-## Current Snapshot
+## Current Snapshot — 2026-10-16
 
-- Lifecycle: UAT Preparation
-- Progress: Not Started
-- Gate: Registration / Business Discovery
+- Lifecycle: Mapping Validation — 642x/627x confirmed; 641x open
+- Progress: Material progress on GL mapping; WFX Analysis Code and 641x gaps remain
+- Gate: Close 641x, Name3, organizational, VAT and posting rules; run golden cases
 - Priority: P6
+- Source Event: PPJ-WEEKLY-20261010-20261016
 
 ## Latest Verified Update
 
-Project registered; business discovery and source confirmation are pending.
+All 22 expense types now have confirmed **642x / 627x** GL mapping detail (Mrs. Violet — HCQT_WFX_AccountingMapping_v2.1.1_MrsViolet_641Update.xlsx). Four Name3 examples confirmed.
+
+**Open gaps:**
+- 641x details: none confirmed for any of the 22 expense types.
+- 18 of 22 WFX Analysis Code mappings remain open.
+- Conflicting evidence: 6421 vs 6427/6428 needs resolution.
+- Production import: not ready.
 
 ## Current Blockers
 
-- Needs Confirmation
+- 641x mapping authority not confirmed (who approves?).
+- WFX Analysis Code — 18/22 gaps block UAT posting golden cases.
+- Organizational mapping and VAT rules not confirmed.
+- No approved effective date for new rules.
 
 ## Decisions Needed
 
-- Confirm business rules, source of truth and delivery ownership.
+- **P0:** Approve mapping authority, exceptions, effective date and UAT gate (Accounting + HCQT + IT/WFX).
+- Resolve 6421 vs 6427/6428 conflict.
+- Confirm posting golden cases scope before production import.
 
 ## Next Actions
 
-- Validate booking workflow and status model, model multi-traveler requests, and prepare UAT
+- Close 641x, Name3, organizational, VAT and posting rules.
+- Run 641/642/627 golden cases with Mrs. Violet confirmation.
+- Confirm WFX production import readiness gate.
 
 ## Update Protocol
 
@@ -80,8 +94,10 @@ Weekly updates should change only affected project memory, home, tasks, risks, d
 
 ## Evidence Basis
 
-- Root project note: [[03_Projects/ADMIN_ExpenseManagement_v1.1.0]]
+- Root project note: [[00_Project_Home]]
 - Project memory: [[03_Projects/_Registry/Project_Memory/ADMIN_ExpenseManagement_v1.1.0.memory]]
-- Source event: PPJ-PROJECT-REGISTRATION-ADMIN_ExpenseManagement_v1.1.0-20260918
-- Last verified: 2026-09-18
-- Confidence: Needs Confirmation
+- Weekly report: [[08_Meeting_Notes/WEEKLY_REPORTS/WEEKLY-REPORT-10-16.10.2026]]
+- Source: HCQT_WFX_AccountingMapping_v2.1.1_MrsViolet_641Update.xlsx; PPJ_GL_COA_TT99_2026_Master_Research.xlsx
+- Source event: PPJ-WEEKLY-20261010-20261016
+- Last verified: 2026-10-16
+- Confidence: Strong

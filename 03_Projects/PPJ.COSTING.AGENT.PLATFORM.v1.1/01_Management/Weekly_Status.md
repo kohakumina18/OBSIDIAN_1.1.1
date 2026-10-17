@@ -51,34 +51,38 @@ One platform, not dozens of projects: SewAgent, WashAgent, BOMAgent, Consumption
 
 # Weekly Status
 
-## Current Snapshot
+## Current Snapshot — 2026-10-16
 
-- Lifecycle: Development
-- Progress: TBD
-- Gate: Sew Costing v1.1 Demo Completed / v1.2 Development
-- Priority: P3
+- Lifecycle: V1 Stabilization; V2 Discovery
+- Progress: Sew V1 done and defects confirmed fixed; V2 in structured evidence gathering
+- Gate: V2 golden case, dictionary, mandatory operations; V1 pilot feedback
+- Priority: P2
+- Source Event: PPJ-WEEKLY-20261010-20261016
 
 ## Latest Verified Update
 
-Sew Costing v1.1 demo completed, demonstrating description intake, operation extraction, operation-list standardization and an initial SAM/Sew Cost data foundation. v1.2 focuses on SAM accuracy, machine/standard-time mapping, incomplete descriptions, historical similarity, confidence, expert review and GTAS/IED transfer.
+**Sew V1:** ✅ Completion confirmed. Reported defects (search, ordering, SAM, QC-exclusion, export, operation-existence) documented as fixed.
+
+**Sew V2:** BA bridge transferred to **Nguyễn Vũ Ánh Khoa**. V2 evidence requirements defined. No committed V2 delivery date yet — six months is an estimate only.
+
+**Wash Agent:** No new confirmed update since 9 October baseline.
 
 ## Current Blockers
 
-- GTAS/IED data contract and integration format are not confirmed.
-- Technical data acceptance remains pending.
+- V2: Incomplete expert knowledge data and undefined scope boundary.
+- V2: No committed timeline; expert availability for golden-case collection not confirmed.
+- Wash Agent: No new confirmed update; Wash expert and denim dataset not confirmed.
 
 ## Decisions Needed
 
-- Approve Sew v1.2 accuracy and acceptance plan.
-- Confirm GTAS/IED data contract and expert-approval boundary.
+- **P1:** Approve V2 discovery boundaries, golden-case minimum and acceptance owner.
+- Confirm pilot criteria and controlled V1 feedback structure.
 
 ## Next Actions
 
-- Evaluate the v1.1 demo with Sew experts and establish an accuracy baseline.
-- Analyze extraction errors and improve SAM calculation.
-- Confirm GTAS/IED data contract and API/integration format.
-- Connect Technical consumption data.
-- Continue the Wash dataset workstream without creating a separate root project.
+- Collect complete golden case, operation dictionary and mandatory operations list for Sew V2.
+- Run structured controlled V1 pilot feedback collection.
+- Wash Agent: Confirm Wash expert availability and denim case dataset before restarting.
 
 ## Update Protocol
 
@@ -88,6 +92,8 @@ Weekly updates should change only affected project memory, home, tasks, risks, d
 
 - Root project note: [[../PPJ.COSTING.AGENT.PLATFORM.v1.1]]
 - Project memory: [[03_Projects/_Registry/Project_Memory/COSTING.AGENTIC.PLATFORM.v1.1.memory]]
-- Source event: PPJ-WEEKLY-20260727-20260801
-- Last verified: 2026-08-01
+- Weekly report: [[08_Meeting_Notes/WEEKLY_REPORTS/WEEKLY-REPORT-10-16.10.2026]]
+- Source: Cập nhật sửa lỗi Sew Agent.pdf; Summary_14102026.txt; Perri Chatbot Costing Book.pdf
+- Source event: PPJ-WEEKLY-20261010-20261016
+- Last verified: 2026-10-16
 - Confidence: Strong

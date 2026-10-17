@@ -72,33 +72,43 @@ Current Logistics / Import-Export expense-invoice project (Active Regional Rollo
 
 # Weekly Status
 
-## Current Snapshot
+## Current Snapshot — 2026-10-16
 
-- Lifecycle: UAT / Stabilization
-- Progress: TBD
-- Gate: Supplier and Mapping Expansion / Defect Closure
-- Priority: TBD
+- Lifecycle: GO-LIVE / PRODUCTION — Active Use with Active Defects
+- Progress: In use; 36 fuel invoices uploaded; critical defects unresolved
+- Gate: Defect triage and regression testing before stable production
+- Priority: P4 — 🔴 At Risk
+- Source Event: PPJ-WEEKLY-20261010-20261016
 
 ## Latest Verified Update
 
-UAT continued with mapping expansion, frequent-supplier additions, bot adjustments, real-data defect capture, fixes and retesting. The current approved scope remains protected; EXIM-first wording is historical only, not current scope.
+System is in active production use. 36 fuel invoices have been uploaded.
+
+**Active defects (unresolved):**
+1. **VAT reset** — VAT resets after Tax Template selection; requires manual re-entry.
+2. **PDF/XML attachment** — attachment handling issues.
+3. **Airport-invoice linking** — airport invoices not correctly linked.
+4. **Slow bulk processing** — bulk upload is significantly slow.
+
+Risk level: Manual re-entry creates incomplete evidence, duplicate risk and error risk.
 
 ## Current Blockers
 
-- Mapping ownership and go-live boundary are not confirmed.
-- Critical real-data defects and supplier-code inconsistencies remain open.
+- No hotfix owner or UAT owner assigned.
+- Defect prioritization and triage not yet structured.
+- Regression test scope not defined.
 
 ## Decisions Needed
 
-- Approve supplier and mapping ownership.
-- Confirm go-live boundary and production-support escalation.
+- **P0:** Assign hotfix owner and UAT owner immediately.
+- Approve defect triage priority and regression test scope.
 
 ## Next Actions
 
-- Finalize frequent-supplier list and standardize supplier codes.
-- Confirm mapping ownership and close critical defects.
-- Run regression testing.
-- Confirm go-live boundary, production monitoring and support escalation.
+- Triage the four active defects; rank by business impact.
+- Assign technical hotfix owner and UAT validation owner.
+- Run regression testing after hotfixes.
+- Monitor for new defects during bulk processing periods.
 
 ## Update Protocol
 
@@ -108,6 +118,7 @@ Weekly updates should change only affected project memory, home, tasks, risks, d
 
 - Root project note: [[../PPJ. Expense-Invoices.v1.1]]
 - Project memory: [[03_Projects/_Registry/Project_Memory/PPJ.ExpenseInvoices.v1.1.memory]]
-- Source event: PPJ-WEEKLY-20260727-20260801
-- Last verified: 2026-08-01
+- Weekly report: [[08_Meeting_Notes/WEEKLY_REPORTS/WEEKLY-REPORT-10-16.10.2026]]
+- Source event: PPJ-WEEKLY-20261010-20261016
+- Last verified: 2026-10-16
 - Confidence: Strong
