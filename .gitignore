@@ -33,3 +33,7 @@ SYNC-CONFLICT-README.md
 
 # Local credentials file - must never be committed on any machine
 01_Daily_Notes/DATA/PARAM.txt
+
+# Chatting with AI plugin - chat history (large, personal, machine-local)
+.obsidian/plugins/chatting-with-ai/chat-state.json
+.obsidian/plugins/chatting-with-ai/chat-state.next.json
