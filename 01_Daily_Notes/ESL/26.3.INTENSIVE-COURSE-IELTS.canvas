@@ -209,5 +209,24 @@
 	"metadata":{
 		"version":"1.0-1.0",
 		"frontmatter":{}
+	},
+	"drawInCanvas":{
+		"version":2,
+		"strokes":[
+			{
+				"id":"stroke-mvcbtvz0-vmnkzc",
+				"color":"#ff5a5f",
+				"width":4.646524048990466,
+				"hardness":100,
+				"opacity":66,
+				"handwriting":{"enabled":false,"thinning":0.5,"streamline":0.5,"smoothing":0.5,"taperStart":12.39073079730791,"taperEnd":12.39073079730791},
+				"points":[
+					{"x":6121.0835,"y":1667.9291},
+					{"x":6121.0935,"y":1667.9391}
+				],
+				"createdAt":1792237326876
+			}
+		],
+		"colorHistory":[]
 	}
 }
