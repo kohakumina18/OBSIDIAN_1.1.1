@@ -14,7 +14,6 @@
 		{"id":"94b32d98975197ec","type":"file","file":"Pasted image 20261016122311.png","x":1400,"y":-580,"width":313,"height":400},
 		{"id":"fcb75ea2d5cbd64f","type":"file","file":"Pasted image 20261016122150.png","x":620,"y":-740,"width":307,"height":400},
 		{"id":"1bd4e0206f5cf49d","type":"file","file":"Pasted image 20261016122238.png","x":1020,"y":-660,"width":288,"height":400},
-		{"id":"eea389014bc4cbb0","type":"file","file":"Pasted image 20261019174451.png","x":1440,"y":920,"width":286,"height":400},
 		{
 			"id":"81b2569b278f2da4",
 			"type":"text",
@@ -25,7 +24,9 @@
 			"width":260,
 			"height":60
 		},
-		{"id":"522e437af722e1c3","type":"file","file":"Pasted image 20261019174425.png","x":800,"y":920,"width":320,"height":577}
+		{"id":"eea389014bc4cbb0","type":"file","file":"Pasted image 20261019174451.png","x":560,"y":760,"width":286,"height":400},
+		{"id":"522e437af722e1c3","type":"file","file":"Pasted image 20261019174425.png","x":1140,"y":871,"width":320,"height":577},
+		{"id":"4acc999a8e640584","type":"file","file":"Pasted image 20261019183623.png","x":1780,"y":960,"width":400,"height":791}
 	],
 	"edges":[
 		{
@@ -47,31 +48,22 @@
 			"toSide":"left"
 		},
 		{
-			"id":"1d8a295aecf796b0",
+			"id":"2746c0cd04921e53",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"eea389014bc4cbb0",
+			"fromSide":"right",
+			"toNode":"522e437af722e1c3",
+			"toSide":"left"
+		},
+		{
+			"id":"fb7615bdaac6e3cc",
 			"styleAttributes":{},
 			"toFloating":false,
 			"fromNode":"522e437af722e1c3",
 			"fromSide":"right",
-			"toNode":"eea389014bc4cbb0",
+			"toNode":"4acc999a8e640584",
 			"toSide":"left"
-		},
-		{
-			"id":"82383acc9ef7f643",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"81b2569b278f2da4",
-			"fromSide":"bottom",
-			"toNode":"522e437af722e1c3",
-			"toSide":"top"
-		},
-		{
-			"id":"acdcbf80201d4475",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"81b2569b278f2da4",
-			"fromSide":"bottom",
-			"toNode":"eea389014bc4cbb0",
-			"toSide":"top"
 		}
 	],
 	"metadata":{
