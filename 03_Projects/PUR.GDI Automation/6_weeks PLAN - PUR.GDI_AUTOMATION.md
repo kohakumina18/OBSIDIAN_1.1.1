@@ -223,14 +223,14 @@ If this gate fails, do **not** proceed blindly with full UI.
 
 # 7. Recommended Jira Epic structure
 
-|Epic|Scope|Sprint|
-|---|---|---|
-|EPIC-01 WFX API Validation|GET / POST / mapping|S1|
-|EPIC-02 Integration Backend|API wrapper / normalization|S1–S2|
-|EPIC-03 GDI Automation UI|Search / grid / issue|S2|
-|EPIC-04 Security & Audit|secrets / logs / retry|S1–S3|
-|EPIC-05 QA & UAT|API + end-to-end validation|S1–S3|
-|EPIC-06 Release & Adoption|SOP / training / deploy|S3|
+| Epic                        | Scope                       | Sprint |
+| --------------------------- | --------------------------- | ------ |
+| EPIC-01 WFX API Validation  | GET / POST / mapping        | S1     |
+| EPIC-02 Integration Backend | API wrapper / normalization | S1–S2  |
+| EPIC-03 GDI Automation UI   | Search / grid / issue       | S2     |
+| EPIC-04 Security & Audit    | secrets / logs / retry      | S1–S3  |
+| EPIC-05 QA & UAT            | API + end-to-end validation | S1–S3  |
+| EPIC-06 Release & Adoption  | SOP / training / deploy     | S3     |
 
 # 8. Suggested sprint allocation by backlog
 
