@@ -910,6 +910,150 @@
 			"width":820,
 			"height":980,
 			"color":"5"
+		},
+		{
+			"id":"4b5e0ffed57c9676",
+			"type":"text",
+			"text":"DATA",
+			"styleAttributes":{},
+			"x":14680,
+			"y":51500,
+			"width":100,
+			"height":60
+		},
+		{
+			"id":"0940795c8bd252d3",
+			"type":"text",
+			"text":"PRODUCT PLANNING ENGINE\n- MÀU NÀO - FIT NÀO BÁN OKE NHẤT - GIÁ BAO NHIÊU LÀ ỔN",
+			"styleAttributes":{},
+			"x":14720,
+			"y":51850,
+			"width":240,
+			"height":200
+		},
+		{
+			"id":"e9d17110f3de5921",
+			"type":"text",
+			"text":"PROPOSAL",
+			"styleAttributes":{},
+			"x":15620,
+			"y":51800,
+			"width":140,
+			"height":60
+		},
+		{
+			"id":"399d6c3281aee0a6",
+			"type":"text",
+			"text":"HUMAN REVIEW: FD FIX UP XEM SẼ DÙNG VẢI GÌ THÌ UKIE",
+			"styleAttributes":{},
+			"x":16240,
+			"y":51600,
+			"width":260,
+			"height":120
+		},
+		{
+			"id":"85ae0e30218d8fee",
+			"type":"text",
+			"text":"TEXTURE VẢI - PRICING",
+			"styleAttributes":{},
+			"x":15880,
+			"y":51740,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"3bdeab892594d455",
+			"type":"text",
+			"text":"ẢNH: BẢN DESIGN 2D  OF GARMENTS / GRAPHICS",
+			"styleAttributes":{},
+			"x":15650,
+			"y":51950,
+			"width":260,
+			"height":60,
+			"color":"5"
+		},
+		{
+			"id":"8f1953d9716af963",
+			"type":"text",
+			"text":"details",
+			"styleAttributes":{},
+			"x":15780,
+			"y":52100,
+			"width":130,
+			"height":60
+		},
+		{
+			"id":"ae5d51b99ee8b8d7",
+			"type":"text",
+			"text":"- GOODFELLOW: OPEN UP CHINOS + (T - POLLO) KNIT + DENIM -> EXTENSIVE PULLING OUT PRICING\n    \n\n- 1 PAGE -> 1 DÒNG HÀNG : 1 BI THUỘC KNIT(SWEAT SHIRT,...) - 1 BI THUỘC DENIM\n    \n\n- ASSORTMENT RECOMMENDATION: RECOMMEND + MOCK UP STYLE SUITABLE DỰA VÀO INSIGHT ĐÃ ANALYSE RA\n    \n- ASORTMENT RECOMMENDATION -> BUILD PRODUCT PLANNING ENGINE: XAC DINH STYLE NAO SE SAN XUAT VA DAT HIEU QUA -> CO THE SALE TOT -> AUTOGENERATE RA BỘ COLLECTION ẢNH\n\n- 5/11/2026 - presentation day",
+			"styleAttributes":{},
+			"x":15200,
+			"y":51264,
+			"width":580,
+			"height":336,
+			"color":"4"
+		},
+		{
+			"id":"da13beb4796fcb5e",
+			"type":"text",
+			"text":"INSIGHT + ANALYSIS",
+			"styleAttributes":{},
+			"x":14730,
+			"y":51680,
+			"width":220,
+			"height":60
+		},
+		{
+			"id":"19058c295edfddc1",
+			"type":"text",
+			"text":"chino - pants",
+			"styleAttributes":{},
+			"x":14840,
+			"y":52230,
+			"width":160,
+			"height":60
+		},
+		{
+			"id":"420ea2a981d9472c",
+			"type":"text",
+			"text":"STYLE COLLECTION GENERATOR + TREND-DRIVEN GENERATORS ( GEN RA NHIỀU LOẠI  TƯƠNG TỰ ĐANG TREND )\n",
+			"styleAttributes":{},
+			"x":15200,
+			"y":51835,
+			"width":200,
+			"height":230
+		},
+		{
+			"id":"0bd80451c0643ae1",
+			"type":"text",
+			"text":"PRIORITY 0",
+			"styleAttributes":{},
+			"x":14540,
+			"y":52230,
+			"width":140,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"98a420150a8424f0",
+			"type":"text",
+			"text":"CÁC FEATURES CÓ THỂ THAY ĐỔI:\n- FIT \n- FREERANGE: (TÚI SAU - AND OTHER POCKET DETAILS)\n- chất liệu \n- màu sắc\n",
+			"styleAttributes":{},
+			"x":15160,
+			"y":52260,
+			"width":330,
+			"height":230,
+			"color":"4"
+		},
+		{
+			"id":"22809479ff9b1aba",
+			"type":"text",
+			"text":"TARGET ",
+			"styleAttributes":{},
+			"x":14480,
+			"y":52380,
+			"width":260,
+			"height":60
 		}
 	],
 	"edges":[
@@ -1608,6 +1752,97 @@
 			"fromSide":"right",
 			"toNode":"989b62e7d08200bc",
 			"toSide":"left"
+		},
+		{
+			"id":"8e48aeaf2b57043d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"4b5e0ffed57c9676",
+			"fromSide":"bottom",
+			"toNode":"da13beb4796fcb5e",
+			"toSide":"top"
+		},
+		{
+			"id":"316f2897a01d39a6",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"da13beb4796fcb5e",
+			"fromSide":"bottom",
+			"toNode":"0940795c8bd252d3",
+			"toSide":"top"
+		},
+		{
+			"id":"a82b0ce509699ec7",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0940795c8bd252d3",
+			"fromSide":"right",
+			"toNode":"420ea2a981d9472c",
+			"toSide":"left"
+		},
+		{
+			"id":"4423c673cbdc2d21",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"420ea2a981d9472c",
+			"fromSide":"right",
+			"toNode":"3bdeab892594d455",
+			"toSide":"left"
+		},
+		{
+			"id":"3119eee222579ac8",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"420ea2a981d9472c",
+			"fromSide":"right",
+			"toNode":"e9d17110f3de5921",
+			"toSide":"left"
+		},
+		{
+			"id":"ebb17d801e50b365",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e9d17110f3de5921",
+			"fromSide":"right",
+			"toNode":"85ae0e30218d8fee",
+			"toSide":"left"
+		},
+		{
+			"id":"b20443c0d3377891",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"85ae0e30218d8fee",
+			"fromSide":"right",
+			"toNode":"399d6c3281aee0a6",
+			"toSide":"left"
+		},
+		{
+			"id":"c622726f11b2c611",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3bdeab892594d455",
+			"fromSide":"bottom",
+			"toNode":"8f1953d9716af963",
+			"toSide":"top",
+			"color":"5"
+		},
+		{
+			"id":"55d9703073d9f53a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"19058c295edfddc1",
+			"fromSide":"right",
+			"toNode":"98a420150a8424f0",
+			"toSide":"left"
+		},
+		{
+			"id":"778112b70a0f886a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0bd80451c0643ae1",
+			"fromSide":"bottom",
+			"toNode":"22809479ff9b1aba",
+			"toSide":"top"
 		}
 	],
 	"metadata":{
