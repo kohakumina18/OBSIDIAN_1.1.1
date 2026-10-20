@@ -271,6 +271,28 @@
 			"y":48700,
 			"width":280,
 			"height":120
+		},
+		{
+			"id":"4f41c2b370259c9b",
+			"type":"text",
+			"text":"20.10.2026\n- ~~MEET UP AT PNC : ANH TỨ PLUS SEW TEAM~~ \n- ~~GET BACK AND BUY GIFT FOR 20.10~~ \n- FOLLOW UP GDI\n- FOLLOW UP EXPENSE INVOICE\n- FOLLOW UP GRN-SI\n- FOLLOW UP WS2 FIN AI \n- FOLLOW UP WS4 FIN AI - TRACING \n- PPJ.ESL.TCW-PL.SS1.PLACES.STORYTELLING\n- FOLLOW UP MO RONG NHAN SU",
+			"styleAttributes":{},
+			"x":-320,
+			"y":51640,
+			"width":460,
+			"height":560,
+			"color":"4"
+		},
+		{
+			"id":"d61f00b172502f28",
+			"type":"text",
+			"text":"nhom slae - loai hang / style - build chatbot so sanh hieu qua cac nhom sale ",
+			"styleAttributes":{},
+			"x":500,
+			"y":51590,
+			"width":400,
+			"height":100,
+			"color":"4"
 		}
 	],
 	"edges":[
@@ -515,6 +537,15 @@
 			"fromNode":"f35ca277c2868c48",
 			"fromSide":"bottom",
 			"toNode":"925f1d1815f4a977",
+			"toSide":"top"
+		},
+		{
+			"id":"29fb628cf003c6c8",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"925f1d1815f4a977",
+			"fromSide":"bottom",
+			"toNode":"4f41c2b370259c9b",
 			"toSide":"top"
 		}
 	],

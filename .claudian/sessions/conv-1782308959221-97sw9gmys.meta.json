@@ -1,11 +1,1 @@
-{
-  "id": "conv-1782308959221-97sw9gmys",
-  "providerId": "claude",
-  "title": "hi there, who are you",
-  "titleGenerationStatus": "failed",
-  "createdAt": 1782308959221,
-  "updatedAt": 1782310250908,
-  "lastResponseAt": 1782308959263,
-  "sessionId": null,
-  "providerState": {}
-}
+{"id":"conv-1782308959221-97sw9gmys","providerId":"claude","title":"hi there, who are you","titleGenerationStatus":"failed","createdAt":1782308959221,"lastActivityAt":1782308959263,"sessionId":null,"modelRecoverySource":{"sessionId":null}}
