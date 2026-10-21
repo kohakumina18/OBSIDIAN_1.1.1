@@ -273,27 +273,6 @@
 			"height":120
 		},
 		{
-			"id":"4f41c2b370259c9b",
-			"type":"text",
-			"text":"20.10.2026\n- ~~MEET UP AT PNC : ANH TỨ PLUS SEW TEAM~~ \n- ~~GET BACK AND BUY GIFT FOR 20.10~~ \n- FOLLOW UP GDI\n- FOLLOW UP EXPENSE INVOICE\n- FOLLOW UP GRN-SI\n- FOLLOW UP WS2 FIN AI \n- FOLLOW UP WS4 FIN AI - TRACING \n- PPJ.ESL.TCW-PL.SS1.PLACES.STORYTELLING\n- FOLLOW UP MO RONG NHAN SU",
-			"styleAttributes":{},
-			"x":-360,
-			"y":51360,
-			"width":460,
-			"height":560,
-			"color":"4"
-		},
-		{
-			"id":"985a15626fe26f3d",
-			"type":"text",
-			"text":"### 1. GRN-SI\n\nDạ các chị uiii, nhân ngày 20/10, em chúc các chị thật nhiều sức khỏe, niềm thương và niềm vui ạaa. Em cảm ơn các chị đã luôn kiên nhẫn đồng hành, hỗ trợ tụi em trong thời gian qua. Mong rằng công việc của mình ngày càng nhẹ nhàng, thuận lợi hơn nhenn.\n\n### 2. Expense Invoices\n\nDạ các chị uiii, chúc cả nhà mình một ngày 20/10 thật ấm áp, nhiều hoa và nhiều yêu thương ạaa. Cảm ơn các chị đã luôn nhiệt tình góp ý, test run tool, báo lỗi và hỗ trợ tụi em. Mong rằng những ngày tới, mọi việc sẽ suôn sẻ và các chị có thêm nhiều niềm vui nhenn.\n\n### 3. Sourcing\n\nDạ các chị Sourcing uiii, nhân ngày 20/10 em chúc cả nhà luôn rạng rỡ, hạnh phúc và tràn đầy năng lượng tích cực ạaa. Cảm ơn các chị đã luôn nhiệt tình chia sẻ, hỗ trợ tụi em. Chúc mọi người công việc thuận lợi, ngày nào cũng có thêm những điều đáng yêu để mỉm cười nhenn.\n\n### 4. FIN-AI\n\nDạ các cô, các chị nhà Finance uiii, chúc mọi người một ngày 20/10 thật nhiều niềm thương, niềm vui và bình an ạaa. Em cảm ơn các cô, các chị đã luôn kiên nhẫn chia sẻ nghiệp vụ, đồng hành cùng tụi em. Mong rằng mọi người luôn mạnh khỏe và công việc ngày càng nhẹ nhàng hơn nhenn.\n\n### 5. Sew Cost Team\n\nDạ các cô, các chị nhà Sew Cost uiii, em chúc cả nhà một ngày 20/10 thật rạng rỡ và ngập tràn yêu thương ạaa. Cảm ơn mọi người đã luôn tận tình chia sẻ những kinh nghiệm quý báu với tụi em. Chúc các cô, các chị luôn khỏe, vui và giữ mãi niềm yêu nghề nhenn.\n\n### 6. Wash Agent\n\nDạ các chị nhà Wash uiii, chúc các chị một ngày 20/10 thật xinh đẹp, nhiều niềm vui và thật nhiều yêu thương ạaa. Em cảm ơn các chị đã luôn nhiệt tình hướng dẫn, chia sẻ và đồng hành cùng team. Chúc mọi người luôn sáng tạo, hạnh phúc và có thêm nhiều ngày làm việc thật vui nhenn.\n\n### 7. PUR — Purchasing\n\nDạ các chị nhà Purchasing uiii, nhân ngày 20/10 em chúc các chị thật nhiều sức khỏe, bình an và hạnh phúc ạaa. Cảm ơn các chị đã luôn dành thời gian hỗ trợ, chia sẻ nghiệp vụ cùng tụi em. Mong rằng công việc của mình ngày càng thuận lợi, nhẹ nhàng và mỗi ngày đều đầy ắp niềm vui nhenn.\n\nPrompt cải thiện: Viết 7 lời chúc 20/10 riêng cho các nhóm GRN-SI, Expense Invoices, Sourcing, FIN-AI, Sew Cost, Wash Agent và Purchasing. Mỗi lời khoảng 60 chữ, giọng Zalo ấm áp, thân thiết, chân thành; có lời chúc, cảm ơn sự đồng hành và mong muốn tốt đẹp, không nhắc deadline hay thúc tiến độ.",
-			"styleAttributes":{},
-			"x":-1640,
-			"y":51425,
-			"width":520,
-			"height":430
-		},
-		{
 			"id":"d61f00b172502f28",
 			"type":"text",
 			"text":"nhom slae - loai hang / style - build chatbot so sanh hieu qua cac nhom sale ",
@@ -303,6 +282,38 @@
 			"width":400,
 			"height":100,
 			"color":"4"
+		},
+		{
+			"id":"4f41c2b370259c9b",
+			"type":"text",
+			"text":"20.10.2026\n- ~~MEET UP AT PNC : ANH TỨ PLUS SEW TEAM~~ \n- ~~GET BACK AND BUY GIFT FOR 20.10~~ \n- FOLLOW UP GDI\n- FOLLOW UP EXPENSE INVOICE\n- FOLLOW UP GRN-SI\n- FOLLOW UP WS2 FIN AI \n- FOLLOW UP WS4 FIN AI - TRACING \n- PPJ.ESL.TCW-PL.SS1.PLACES.STORYTELLING\n- FOLLOW UP MO RONG NHAN SU",
+			"styleAttributes":{},
+			"x":-630,
+			"y":51575,
+			"width":460,
+			"height":560,
+			"color":"4"
+		},
+		{
+			"id":"985a15626fe26f3d",
+			"type":"text",
+			"text":"### 1. GRN-SI\n\nDạ các chị uiii, nhân ngày 20/10, em chúc các chị thật nhiều sức khỏe, niềm thương và niềm vui ạaa. Em cảm ơn các chị đã luôn kiên nhẫn đồng hành, hỗ trợ tụi em trong thời gian qua. Mong rằng công việc của mình ngày càng nhẹ nhàng, thuận lợi hơn nhenn.\n\n### 2. Expense Invoices\n\nDạ các chị uiii, chúc cả nhà mình một ngày 20/10 thật ấm áp, nhiều hoa và nhiều yêu thương ạaa. Cảm ơn các chị đã luôn nhiệt tình góp ý, test run tool, báo lỗi và hỗ trợ tụi em. Mong rằng những ngày tới, mọi việc sẽ suôn sẻ và các chị có thêm nhiều niềm vui nhenn.\n\n### 3. Sourcing\n\nDạ các chị Sourcing uiii, nhân ngày 20/10 em chúc cả nhà luôn rạng rỡ, hạnh phúc và tràn đầy năng lượng tích cực ạaa. Cảm ơn các chị đã luôn nhiệt tình chia sẻ, hỗ trợ tụi em. Chúc mọi người công việc thuận lợi, ngày nào cũng có thêm những điều đáng yêu để mỉm cười nhenn.\n\n### 4. FIN-AI\n\nDạ các cô, các chị nhà Finance uiii, chúc mọi người một ngày 20/10 thật nhiều niềm thương, niềm vui và bình an ạaa. Em cảm ơn các cô, các chị đã luôn kiên nhẫn chia sẻ nghiệp vụ, đồng hành cùng tụi em. Mong rằng mọi người luôn mạnh khỏe và công việc ngày càng nhẹ nhàng hơn nhenn.\n\n### 5. Sew Cost Team\n\nDạ các cô, các chị nhà Sew Cost uiii, em chúc cả nhà một ngày 20/10 thật rạng rỡ và ngập tràn yêu thương ạaa. Cảm ơn mọi người đã luôn tận tình chia sẻ những kinh nghiệm quý báu với tụi em. Chúc các cô, các chị luôn khỏe, vui và giữ mãi niềm yêu nghề nhenn.\n\n### 6. Wash Agent\n\nDạ các chị nhà Wash uiii, chúc các chị một ngày 20/10 thật xinh đẹp, nhiều niềm vui và thật nhiều yêu thương ạaa. Em cảm ơn các chị đã luôn nhiệt tình hướng dẫn, chia sẻ và đồng hành cùng team. Chúc mọi người luôn sáng tạo, hạnh phúc và có thêm nhiều ngày làm việc thật vui nhenn.\n\n### 7. PUR — Purchasing\n\nDạ các chị nhà Purchasing uiii, nhân ngày 20/10 em chúc các chị thật nhiều sức khỏe, bình an và hạnh phúc ạaa. Cảm ơn các chị đã luôn dành thời gian hỗ trợ, chia sẻ nghiệp vụ cùng tụi em. Mong rằng công việc của mình ngày càng thuận lợi, nhẹ nhàng và mỗi ngày đều đầy ắp niềm vui nhenn.\n\nPrompt cải thiện: Viết 7 lời chúc 20/10 riêng cho các nhóm GRN-SI, Expense Invoices, Sourcing, FIN-AI, Sew Cost, Wash Agent và Purchasing. Mỗi lời khoảng 60 chữ, giọng Zalo ấm áp, thân thiết, chân thành; có lời chúc, cảm ơn sự đồng hành và mong muốn tốt đẹp, không nhắc deadline hay thúc tiến độ.",
+			"styleAttributes":{},
+			"x":-1800,
+			"y":51760,
+			"width":520,
+			"height":430
+		},
+		{
+			"id":"4258af5e96a5304e",
+			"type":"text",
+			"text":"21.10.2026\n- FOLLOW UP GDI\n- ~~FOLLOW UP EXPENSE INVOICE~~\n- FOLLOW UP GRN-SI\n- FOLLOW UP WS2 FIN AI \n- FOLLOW UP WS4 FIN AI - TRACING \n- FOLLOW UP MO RONG NHAN SU",
+			"styleAttributes":{},
+			"x":-120,
+			"y":53340,
+			"width":460,
+			"height":380,
+			"color":"5"
 		}
 	],
 	"edges":[
@@ -566,6 +577,15 @@
 			"fromSide":"left",
 			"toNode":"985a15626fe26f3d",
 			"toSide":"right"
+		},
+		{
+			"id":"baee20cf28553a63",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"4f41c2b370259c9b",
+			"fromSide":"bottom",
+			"toNode":"4258af5e96a5304e",
+			"toSide":"top"
 		}
 	],
 	"metadata":{
