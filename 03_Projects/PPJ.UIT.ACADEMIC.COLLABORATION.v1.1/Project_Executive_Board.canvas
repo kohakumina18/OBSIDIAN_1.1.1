@@ -1,166 +1,65 @@
 {
-  "nodes": [
-    {
-      "id": "ppj-board-metadata",
-      "type": "text",
-      "text": "EXT_AcademicCollaboration_v1.1.0 — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1",
-      "x": 0,
-      "y": -220,
-      "width": 760,
-      "height": 100,
-      "color": "6"
-    },
-    {
-      "id": "ppj-exec-summary",
-      "type": "text",
-      "text": "EXT_AcademicCollaboration_v1.1.0\n\nDomain:\nExternal Collaboration\n\nLifecycle:\nPartnership Follow-up / Confirmed Direction\n\nProgress:\nTBD\n\nGate:\nAcademic problem package\n\nOutcome:\nAcademic collaboration: UIT, thesis and student projects, competitions, research, prototype development and talent pipeline.\n\nTop Blocker:\nNone recorded\n\nNext Milestone:\nFinalize the academic problem package and dataset\n\nLast Verified:\n2026-09-18",
-      "x": 0,
-      "y": -90,
-      "width": 760,
-      "height": 560,
-      "color": "4"
-    },
-    {
-      "id": "ppj-management-attention",
-      "type": "text",
-      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- None recorded\n\nDecisions Needed\n- None recorded\n\nExternal Dependencies\n- None recorded",
-      "x": 810,
-      "y": -90,
-      "width": 500,
-      "height": 560,
-      "color": "1"
-    },
-    {
-      "id": "ppj-lane-f3e573404df4",
-      "type": "group",
-      "x": 0,
-      "y": 560,
-      "width": 300,
-      "height": 500,
-      "label": "BACKLOG",
-      "color": "1"
-    },
-    {
-      "id": "ppj-task-ffb9ce1f5623",
-      "type": "text",
-      "text": "[[Tasks/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1-20260824-TASK-002_Define-benchmark-and-prototype-evaluation-boundaries]]\n\nDefine benchmark and prototype evaluation boundaries\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
-      "x": 20,
-      "y": 630,
-      "width": 260,
-      "height": 155
-    },
-    {
-      "id": "ppj-task-db462264163b",
-      "type": "text",
-      "text": "[[Tasks/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1-20260824-TASK-001_Finalize-the-academic-problem-package-and-dataset]]\n\nFinalize the academic problem package and dataset\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
-      "x": 20,
-      "y": 820,
-      "width": 260,
-      "height": 155
-    },
-    {
-      "id": "ppj-lane-8d767178b3a7",
-      "type": "group",
-      "x": 350,
-      "y": 560,
-      "width": 300,
-      "height": 500,
-      "label": "THIS WEEK",
-      "color": "2"
-    },
-    {
-      "id": "ppj-lane-bf81443bfcae",
-      "type": "group",
-      "x": 700,
-      "y": 560,
-      "width": 300,
-      "height": 500,
-      "label": "IN PROGRESS",
-      "color": "3"
-    },
-    {
-      "id": "ppj-lane-276d6ca3922f",
-      "type": "group",
-      "x": 1050,
-      "y": 560,
-      "width": 300,
-      "height": 500,
-      "label": "BLOCKED / WAITING",
-      "color": "4"
-    },
-    {
-      "id": "ppj-lane-a82db70f445e",
-      "type": "group",
-      "x": 1400,
-      "y": 560,
-      "width": 300,
-      "height": 500,
-      "label": "REVIEW / UAT",
-      "color": "5"
-    },
-    {
-      "id": "ppj-lane-e782e7728e49",
-      "type": "group",
-      "x": 1750,
-      "y": 560,
-      "width": 300,
-      "height": 1050,
-      "label": "DONE",
-      "color": "6"
-    },
-    {
-      "id": "ppj-task-c2248f7fe3d1",
-      "type": "text",
-      "text": "[[Tasks/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1-TASK-002_Classify-topics-by-thesis-course-project-AISC-mentoring-prot]]\n\nClassify topics by thesis, course project, AISC, mentoring/prototype, or internal-only\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
-      "x": 1770,
-      "y": 630,
-      "width": 260,
-      "height": 155
-    },
-    {
-      "id": "ppj-task-c1c93d1ab347",
-      "type": "text",
-      "text": "[[Tasks/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1-TASK-005_Prepare-a-short-topic-list-with-business-context-expected-ou]]\n\nPrepare a short topic list with business context, expected output, data sensitivity, and suggested a\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
-      "x": 1770,
-      "y": 820,
-      "width": 260,
-      "height": 155
-    },
-    {
-      "id": "ppj-task-e10b3cbd3c18",
-      "type": "text",
-      "text": "[[Tasks/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1-TASK-004_Review-AISC-sponsorship-file-if-PPJ-wants-official-participa]]\n\nReview AISC sponsorship file if PPJ wants official participation\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
-      "x": 1770,
-      "y": 1010,
-      "width": 260,
-      "height": 155
-    },
-    {
-      "id": "ppj-task-3f77ba15e35a",
-      "type": "text",
-      "text": "[[Tasks/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1-TASK-001_Summarize-PPJ-problem-topics-suitable-for-UIT]]\n\nSummarize PPJ problem topics suitable for UIT\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
-      "x": 1770,
-      "y": 1200,
-      "width": 260,
-      "height": 155
-    },
-    {
-      "id": "ppj-task-01b5ee4a0059",
-      "type": "text",
-      "text": "[[Tasks/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1-TASK-003_Work-with-c-Ph-ng-to-confirm-contact-flow-and-collaboration-]]\n\nWork with cô Phụng to confirm contact flow and collaboration format\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.",
-      "x": 1770,
-      "y": 1390,
-      "width": 260,
-      "height": 155
-    }
-  ],
-  "edges": [],
-  "metadata": {
-    "version": "1.0-1.0",
-    "frontmatter": {
-      "project": "EXT_AcademicCollaboration_v1.1.0",
-      "board_type": "project_executive_kanban",
-      "last_verified": "2026-09-18"
-    }
-  }
+	"nodes":[
+		{"id":"ppj-lane-e782e7728e49","type":"group","x":1750,"y":560,"width":300,"height":1050,"color":"6","label":"DONE"},
+		{"id":"ppj-lane-f3e573404df4","type":"group","x":0,"y":560,"width":300,"height":500,"color":"1","label":"BACKLOG"},
+		{"id":"ppj-lane-8d767178b3a7","type":"group","x":350,"y":560,"width":300,"height":500,"color":"2","label":"THIS WEEK"},
+		{"id":"ppj-lane-bf81443bfcae","type":"group","x":700,"y":560,"width":300,"height":500,"color":"3","label":"IN PROGRESS"},
+		{"id":"ppj-lane-276d6ca3922f","type":"group","x":1050,"y":560,"width":300,"height":500,"color":"4","label":"BLOCKED / WAITING"},
+		{"id":"ppj-lane-a82db70f445e","type":"group","x":1400,"y":560,"width":300,"height":500,"color":"5","label":"REVIEW / UAT"},
+		{"id":"ppj-board-metadata","type":"text","text":"EXT_AcademicCollaboration_v1.1.0 — Executive Project Board\nBoard schema: PPJ_PROJECT_BOARD_V1","x":0,"y":-220,"width":760,"height":100,"color":"6"},
+		{"id":"ppj-exec-summary","type":"text","text":"EXT_AcademicCollaboration_v1.1.0\n\nDomain:\nExternal Collaboration\n\nLifecycle:\nPartnership Follow-up / Confirmed Direction\n\nProgress:\nTBD\n\nGate:\nAcademic problem package\n\nOutcome:\nAcademic collaboration: UIT, thesis and student projects, competitions, research, prototype development and talent pipeline.\n\nTop Blocker:\nNone recorded\n\nNext Milestone:\nFinalize the academic problem package and dataset\n\nLast Verified:\n2026-09-18","x":0,"y":-90,"width":760,"height":560,"color":"4"},
+		{"id":"ppj-management-attention","type":"text","text":"KEY MANAGEMENT ATTENTION\n\nTop Risks\n- None recorded\n\nDecisions Needed\n- None recorded\n\nExternal Dependencies\n- None recorded","x":810,"y":-90,"width":500,"height":560,"color":"1"},
+		{"id":"ppj-task-ffb9ce1f5623","type":"text","text":"[[Tasks/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1-20260824-TASK-002_Define-benchmark-and-prototype-evaluation-boundaries]]\n\nDefine benchmark and prototype evaluation boundaries\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.","x":20,"y":630,"width":260,"height":155},
+		{"id":"ppj-task-db462264163b","type":"text","text":"[[Tasks/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1-20260824-TASK-001_Finalize-the-academic-problem-package-and-dataset]]\n\nFinalize the academic problem package and dataset\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.","x":20,"y":820,"width":260,"height":155},
+		{"id":"ppj-task-c2248f7fe3d1","type":"text","text":"[[Tasks/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1-TASK-002_Classify-topics-by-thesis-course-project-AISC-mentoring-prot]]\n\nClassify topics by thesis, course project, AISC, mentoring/prototype, or internal-only\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.","x":1770,"y":630,"width":260,"height":155},
+		{"id":"ppj-task-c1c93d1ab347","type":"text","text":"[[Tasks/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1-TASK-005_Prepare-a-short-topic-list-with-business-context-expected-ou]]\n\nPrepare a short topic list with business context, expected output, data sensitivity, and suggested a\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.","x":1770,"y":820,"width":260,"height":155},
+		{"id":"ppj-task-e10b3cbd3c18","type":"text","text":"[[Tasks/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1-TASK-004_Review-AISC-sponsorship-file-if-PPJ-wants-official-participa]]\n\nReview AISC sponsorship file if PPJ wants official participation\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.","x":1770,"y":1010,"width":260,"height":155},
+		{"id":"ppj-task-3f77ba15e35a","type":"text","text":"[[Tasks/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1-TASK-001_Summarize-PPJ-problem-topics-suitable-for-UIT]]\n\nSummarize PPJ problem topics suitable for UIT\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.","x":1770,"y":1200,"width":260,"height":155},
+		{"id":"ppj-task-01b5ee4a0059","type":"text","text":"[[Tasks/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1-TASK-003_Work-with-c-Ph-ng-to-confirm-contact-flow-and-collaboration-]]\n\nWork with cô Phụng to confirm contact flow and collaboration format\n\nPriority: TBD\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible owner.","x":1770,"y":1390,"width":260,"height":155},
+		{
+			"id":"837e73413109a760",
+			"type":"text",
+			"text":"\n## QUESTION BANK 30 CÂU – AISC'26 × PPJ\n\n### Nhóm A — Hiểu đúng bài toán & Business Value\n\n**1. Nếu chỉ được mô tả một vấn đề duy nhất mà dự án đang giải quyết, đó là gì?**  \nA. Giảm thời gian thao tác  \nB. Giảm chi phí  \nC. Tăng doanh thu  \nD. Giảm rủi ro/sai sót  \nE. Cải thiện trải nghiệm người dùng  \nF. Khác: _______\n\n**2. Ai là người chịu “pain” lớn nhất trong quy trình hiện tại?**  \nA. End-user / khách hàng  \nB. Nhân viên vận hành  \nC. Manager  \nD. Doanh nghiệp/chủ hệ thống  \nE. Nhiều nhóm cùng lúc  \nF. Chưa xác định rõ\n\n**3. Nếu không có solution của nhóm, người dùng hiện xử lý vấn đề bằng cách nào?**  \nA. Excel / thủ công  \nB. Nhiều phần mềm rời rạc  \nC. Dựa vào kinh nghiệm  \nD. Thuê dịch vụ bên ngoài  \nE. Gần như không xử lý được  \nF. Khác: _______\n\n**4. Business KPI quan trọng nhất để chứng minh dự án thành công là gì?**  \nA. Time saving  \nB. Cost saving  \nC. Revenue / conversion  \nD. Accuracy / quality  \nE. User adoption / satisfaction  \nF. Một KPI khác: _______\n\n**5. Nếu phải bỏ 70% tính năng hiện tại, tính năng nào nhất định phải giữ lại?**  \nA. Core AI/model  \nB. Decision engine  \nC. Dashboard/UI  \nD. Data integration  \nE. Workflow automation  \nF. Khác: _______\n\n---\n\n# Nhóm B — Data, KPI & Ground Truth\n\n**6. Dữ liệu hiện tại của nhóm đến từ đâu?**  \nA. Public dataset  \nB. Crawl/web/API  \nC. Survey/user-generated data  \nD. Dữ liệu doanh nghiệp thực tế  \nE. Synthetic data  \nF. Kết hợp nhiều nguồn\n\n**7. Đâu là rủi ro dữ liệu lớn nhất của dự án?**  \nA. Thiếu dữ liệu  \nB. Dữ liệu không sạch  \nC. Label không đáng tin  \nD. Data bias  \nE. Data leakage / privacy  \nF. Chưa đánh giá\n\n**8. Ground truth của hệ thống được xác định bằng cách nào?**  \nA. Label có sẵn  \nB. Expert xác nhận  \nC. Kết quả thực tế sau vận hành  \nD. Consensus từ nhiều nguồn  \nE. Rule-based reference  \nF. Chưa có ground truth rõ\n\n**9. Metric nào quyết định model có thực sự tốt không?**  \nA. Accuracy  \nB. Precision / Recall / F1  \nC. MAE / MAPE / RMSE  \nD. Business KPI  \nE. Human evaluation  \nF. Combination\n\n**10. Nếu model đạt accuracy cao nhưng không tạo ra business value, nhóm sẽ làm gì?**  \nA. Giữ model vì technical result tốt  \nB. Đổi metric  \nC. Xem lại problem statement  \nD. Thiết kế lại decision/output layer  \nE. Thu thập thêm data  \nF. Kết hợp C + D + E\n\n> Câu 10 là câu rất tốt để nhận ra team có **product/business mindset** hay chỉ chạy model.\n\n---\n\n# Nhóm C — Solution Architecture & Technical Depth\n\n**11. Phần nào trong solution là “core intelligence” thực sự?**  \nA. ML/DL model  \nB. LLM  \nC. Rule engine  \nD. Optimization algorithm  \nE. Recommendation/decision engine  \nF. Combination\n\n**12. Nếu bỏ LLM/API AI bên ngoài, solution còn bao nhiêu giá trị?**  \nA. Gần như không còn  \nB. Còn dưới 30%  \nC. Còn khoảng 50%  \nD. Vẫn còn phần lớn core logic  \nE. Có thể vận hành hoàn toàn không cần LLM  \nF. Không áp dụng\n\n**13. Khi AI không chắc chắn, hệ thống hiện xử lý thế nào?**  \nA. Vẫn trả kết quả tốt nhất  \nB. Confidence score  \nC. Yêu cầu thêm dữ liệu  \nD. Rule-based fallback  \nE. Human review  \nF. Combination\n\n**14. Điểm nghẽn lớn nhất nếu scale solution lên 100 lần là gì?**  \nA. Compute/API cost  \nB. Database  \nC. Data quality  \nD. Latency  \nE. Human operation  \nF. Kiến trúc hiện chưa scale được\n\n**15. Thành phần nào do team tự xây nhiều nhất?**  \nA. Model/algorithm  \nB. Data pipeline  \nC. Backend/system architecture  \nD. Frontend/product  \nE. Business rules/workflow  \nF. Phân bổ tương đối đều\n\n---\n\n# Nhóm D — Product, Adoption & Business Feasibility\n\n**16. Người dùng có lý do gì để chuyển từ cách làm hiện tại sang solution của nhóm?**  \nA. Rẻ hơn  \nB. Nhanh hơn  \nC. Chính xác hơn  \nD. Ít thao tác hơn  \nE. Có insight/decision trước đây không có  \nF. Combination\n\n**17. Rào cản lớn nhất khi đưa solution vào doanh nghiệp thật là gì?**  \nA. Data integration  \nB. User adoption  \nC. Accuracy/trust  \nD. Cost  \nE. Security/compliance  \nF. Process change\n\n**18. Nếu doanh nghiệp yêu cầu pilot trong 30 ngày, nhóm sẽ ưu tiên làm gì?**  \nA. Hoàn thiện UI  \nB. Tích hợp toàn bộ hệ thống  \nC. Chọn một use case nhỏ có KPI rõ  \nD. Train model lớn hơn  \nE. Thêm nhiều tính năng  \nF. Thu thập thật nhiều data trước\n\n**19. Khi người dùng phản hồi rằng solution “đúng nhưng không dùng được”, nhóm sẽ ưu tiên xử lý gì?**  \nA. Model accuracy  \nB. UI  \nC. Workflow/business process  \nD. Performance  \nE. Training người dùng  \nF. Điều tra root cause trước\n\n**20. Nếu một feature được người dùng thích nhưng không tạo business value, team sẽ làm gì?**  \nA. Giữ vì user thích  \nB. Bỏ ngay  \nC. Đo usage và impact thêm  \nD. Thử redesign  \nE. Đưa xuống secondary feature  \nF. C + D + E\n\n---\n\n# Nhóm E — Khả năng chuyển sang Fashion / Textile / PPJ\n\nNhóm này mình khuyên **chỉ hỏi các team có khả năng transfer công nghệ**.\n\nCó thể mở đầu:\n\n> “PPJ đang có một số bài toán thực tế trong dệt may và sẵn sàng cân nhắc hỗ trợ dataset, domain knowledge, mentoring hoặc hạ tầng thử nghiệm cho những hướng phù hợp. Anh muốn thử đặt solution của nhóm vào một domain hoàn toàn mới.”\n\n---\n\n**21. Nếu áp dụng công nghệ hiện tại của nhóm vào dệt may/thời trang, nhóm thấy hướng nào gần nhất?**  \nA. Market / customer intelligence  \nB. Product development / design  \nC. Costing / optimization  \nD. Supply chain / inventory  \nE. Smart Factory / production  \nF. Quality / Computer Vision  \nG. Chưa thấy hướng phù hợp\n\n**22. Nếu PPJ cung cấp dataset thật nhưng domain hoàn toàn mới với team, bước đầu tiên nhóm sẽ làm gì?**  \nA. Train model ngay  \nB. Đọc toàn bộ dataset  \nC. Workshop với domain expert để hiểu process + KPI  \nD. Xây UI prototype  \nE. Tìm model SOTA  \nF. Benchmark solution hiện tại trước\n\n**Strong BA/product signal:** C → hiểu domain trước technology.\n\n---\n\n**23. Với một bài toán như giảm hao phí vải, nhận diện wash denim hoặc tối ưu lịch sản xuất, nhóm nghĩ phần nào của solution hiện tại có thể reuse?**  \nA. Data pipeline  \nB. AI/model  \nC. Optimization engine  \nD. Rule engine  \nE. Architecture/workflow  \nF. Nhiều thành phần  \nG. Không reuse trực tiếp được\n\n**24. Nếu PPJ cung cấp dataset + GPU/server + mentor nghiệp vụ, team có quan tâm tiếp tục phát triển một PoC trong 3–6 tháng không?**  \nA. Rất quan tâm  \nB. Có, nếu phù hợp lịch học  \nC. Quan tâm dưới dạng khóa luận/đồ án  \nD. Quan tâm internship/project  \nE. Cần biết thêm scope  \nF. Hiện chưa có nhu cầu\n\nCâu này rất hữu ích để tìm luôn **candidate pipeline**.\n\n---\n\n**25. Nếu solution được chuyển sang doanh nghiệp may mặc, team muốn nhận loại hỗ trợ nào nhất từ PPJ?**  \nA. Dataset thực tế  \nB. Domain expert  \nC. GPU/server/infrastructure  \nD. Business process & system access  \nE. Internship / project opportunity  \nF. Kết hợp các yếu tố trên\n\n---\n\n# Nhóm F — Phát hiện talent tốt cho Business Analyst\n\nĐây là 5 câu mình đánh giá cao nhất nếu Khoa muốn **spot BA talent ngay tại bàn giám khảo**.\n\n## 26. Một stakeholder nói: “Tôi muốn hệ thống AI dự báo chính xác nhất có thể.” Bạn sẽ hỏi câu nào đầu tiên?\n\nA. Muốn dùng model gì?  \nB. Có bao nhiêu dữ liệu?  \nC. “Dự báo cái gì, để đưa ra quyết định gì?”  \nD. Accuracy target bao nhiêu?  \nE. Budget bao nhiêu?  \nF. Deadline bao lâu?\n\n### BA signal mạnh:\n**C**\n\nBA tốt luôn đi từ:\n\n**Decision → Problem → Requirement → Data → Solution**\n\nkhông phải Model → Solution.\n\n---\n\n## 27. Hai stakeholder đưa ra requirement trái ngược nhau. Bạn xử lý thế nào?\n\nA. Làm theo người có chức vụ cao hơn  \nB. Chọn requirement dễ build hơn  \nC. Yêu cầu technical team quyết định  \nD. Làm rõ objective, impact, constraint rồi đưa ra options/trade-off  \nE. Implement cả hai  \nF. Hoãn requirement\n\n### BA signal mạnh:\n**D**\n\n---\n\n## 28. User nói “Hệ thống này không đúng nhu cầu của tôi”, nhưng requirement đã được sign-off. Bạn sẽ làm gì?\n\nA. Nói requirement đã được approve  \nB. Yêu cầu Change Request ngay  \nC. Hỏi user chỉ ra workflow/case thực tế chưa được cover  \nD. Báo Project Manager  \nE. Sửa UI  \nF. Rebuild toàn bộ\n\n### BA signal mạnh:\n**C**\n\nSau đó mới impact assessment/change request.\n\n---\n\n## 29. Bạn được giao một business problem nhưng không biết gì về domain đó. Bạn bắt đầu từ đâu?\n\nA. Google solution tương tự  \nB. Hỏi ChatGPT  \nC. Vẽ solution architecture  \nD. Shadow user + interview SME + walkthrough actual cases  \nE. Xin database trước  \nF. Đọc source code\n\n### BA signal mạnh:\n**D**\n\nCâu này rất hợp với PPJ vì textile domain có rất nhiều **tacit expert knowledge**.\n\n---\n\n# 30. Scenario BA tổng hợp — câu mình thích nhất\n\n> Doanh nghiệp nói:  \n> **“Chúng tôi muốn dùng AI để giảm hao phí vải.”**  \n> Bạn chỉ được hỏi **một câu đầu tiên**. Bạn hỏi gì?\n\nA. “Hiện công ty dùng AI nào?”  \nB. “Dataset có bao nhiêu dòng?”  \nC. “Hệ thống hiện tại dùng phần mềm gì?”  \nD. “Anh/chị có thể cho em xem một case thực tế từ input đến marker cuối cùng và chỉ ra ở đâu đang phát sinh hao phí không?”  \nE. “Mục tiêu giảm bao nhiêu %?”  \nF. “Budget của dự án là bao nhiêu?”\n\n### Strongest BA signal:\n**D**\n\nMột candidate BA rất tốt thường tự nhiên muốn:\n\n> **See the actual process before defining the system.**\n\nSau đó mới hỏi:\n\n**Baseline → pain point → KPI → rule → data → target.**\n\n---\n\n# Cách dùng trong 5 phút Q&A\n\nMình sẽ không random câu hỏi. Với mỗi team:\n\n| Thời gian | Loại câu hỏi |\n|---:|---|\n| ~1 phút | Problem / business value |\n| ~1 phút | Data + KPI |\n| ~1 phút | Technical depth |\n| ~1 phút | Stress-test / adoption |\n| ~1 phút | Textile transferability **hoặc BA talent** |\n\n### Combo mặc định rất mạnh\n\n**Q1 → Q8 → Q12 → Q18 → Q22**\n\nNếu thấy sinh viên có tố chất BA:\n\n**Q26 / Q27 / Q29 / Q30**\n\n---\n\n# PPJ Talent Radar\n\nTrong lúc các bạn trả lời, mình sẽ ngầm chấm mỗi người theo 5 dimension:\n\n| Dimension | Strong signal |\n|---|---|\n| **Problem Framing** | Phân biệt symptom và root cause |\n| **Requirement Thinking** | Hỏi input/output/rules/exception |\n| **Business Thinking** | Luôn liên kết solution với KPI |\n| **Stakeholder Thinking** | Biết xử lý conflict/trade-off |\n| **Communication** | Trả lời có structure, không lan man |\n\nMỗi yếu tố **1–5 điểm → tổng 25**.\n\n**20–25:** Candidate rất đáng tiếp cận cho BA/AI BA internship.  \n**16–19:** Có potential, nên interview thêm.  \n**≤15:** Có thể technical/product tốt nhưng chưa thể hiện rõ BA capability.\n\nĐặc biệt, nếu sinh viên phản xạ theo kiểu:\n\n> “Trước khi em đề xuất solution, em muốn hiểu current process và xem một case thật.”\n\nthì mình sẽ **đánh dấu ngay**, vì đây là dấu hiệu BA rất tốt cho môi trường dự án doanh nghiệp.",
+			"styleAttributes":{},
+			"x":4240,
+			"y":-100,
+			"width":840,
+			"height":1100
+		},
+		{
+			"id":"8ea475be4b00927f",
+			"type":"text",
+			"text":"# Nhóm D — Product, Adoption & Business Feasibility\n\n**16. Người dùng có lý do gì để chuyển từ cách làm hiện tại sang solution của nhóm?**  \nA. Rẻ hơn  \nB. Nhanh hơn  \nC. Chính xác hơn  \nD. Ít thao tác hơn  \nE. Có insight/decision trước đây không có  \nF. Combination\n\n**17. Rào cản lớn nhất khi đưa solution vào doanh nghiệp thật là gì?**  \nA. Data integration  \nB. User adoption  \nC. Accuracy/trust  \nD. Cost  \nE. Security/compliance  \nF. Process change\n\n**18. Nếu doanh nghiệp yêu cầu pilot trong 30 ngày, nhóm sẽ ưu tiên làm gì?**  \nA. Hoàn thiện UI  \nB. Tích hợp toàn bộ hệ thống  \nC. Chọn một use case nhỏ có KPI rõ  \nD. Train model lớn hơn  \nE. Thêm nhiều tính năng  \nF. Thu thập thật nhiều data trước\n\n**19. Khi người dùng phản hồi rằng solution “đúng nhưng không dùng được”, nhóm sẽ ưu tiên xử lý gì?**  \nA. Model accuracy  \nB. UI  \nC. Workflow/business process  \nD. Performance  \nE. Training người dùng  \nF. Điều tra root cause trước\n\n**20. Nếu một feature được người dùng thích nhưng không tạo business value, team sẽ làm gì?**  \nA. Giữ vì user thích  \nB. Bỏ ngay  \nC. Đo usage và impact thêm  \nD. Thử redesign  \nE. Đưa xuống secondary feature  \nF. C + D + E\n",
+			"styleAttributes":{},
+			"x":2680,
+			"y":113,
+			"width":600,
+			"height":327
+		},
+		{
+			"id":"289614b4842a93a7",
+			"type":"text",
+			"text":"**1. Nếu chỉ được mô tả một vấn đề duy nhất mà dự án đang giải quyết, đó là gì?**  \nA. Giảm thời gian thao tác  \nB. Giảm chi phí  \nC. Tăng doanh thu  \nD. Giảm rủi ro/sai sót  \nE. Cải thiện trải nghiệm người dùng  \nF. Khác: _______",
+			"styleAttributes":{},
+			"x":3420,
+			"y":113,
+			"width":560,
+			"height":280
+		},
+		{
+			"id":"2e2b151347d8b1f0",
+			"type":"text",
+			"text":"5. Nếu phải bỏ 70% tính năng hiện tại, tính năng nào nhất định phải giữ lại?**  \nA. Core AI/model  \nB. Decision engine  \nC. Dashboard/UI  \nD. Data integration  \nE. Workflow automation  \nF. Khác: _______",
+			"styleAttributes":{},
+			"x":3340,
+			"y":440,
+			"width":720,
+			"height":260
+		}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{"project":"EXT_AcademicCollaboration_v1.1.0","board_type":"project_executive_kanban","last_verified":"2026-09-18"}
+	}
 }
