@@ -195,5 +195,6 @@
   "parentFieldLabel": "Parents",
   "enableDnaTracking": false,
   "migratedCollectionNameToGroupName": true,
-  "migratedToChartedRoots": true
+  "migratedToChartedRoots": true,
+  "eventIconModeMigratedToBoth": true
 }
