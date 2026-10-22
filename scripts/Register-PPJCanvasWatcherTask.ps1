@@ -18,16 +18,18 @@
     Task Scheduler (a crash, a manual `Stop-Process`, a reboot mid-run) kills
     the process it launched.
 
-    The fix here is a second trigger: a supervisor tick every 5 minutes that
+    The fix here is a second trigger: a supervisor tick every 2 hours that
     just runs Start-PPJCanvasWatcher.ps1 again. The launcher is already
     idempotent - it checks for a running watcher process before starting one
     (see its own header) - so a tick either no-ops (watcher alive) or starts a
-    fresh watcher (watcher dead). This gives the same <=5-minute self-healing
-    as the Linux service without adding any state.
+    fresh watcher (watcher dead). This gives the same self-healing as the Linux
+    service without adding any state, just slower: a dead watcher comes back
+    within 2 hours. (Was 5 minutes until 2026-10-22, when the owner asked for
+    a looser tick - the watcher normally runs for the whole session anyway.)
 
     Two triggers:
       1. At logon (1 min delay) - the normal start.
-      2. Every 5 minutes, indefinitely - the self-healing supervisor tick.
+      2. Every 2 hours, indefinitely - the self-healing supervisor tick.
 #>
 
 $ErrorActionPreference = "Stop"
@@ -48,7 +50,7 @@ $logonTrigger = New-ScheduledTaskTrigger -AtLogOn -User "$env:USERDOMAIN\$env:US
 $logonTrigger.Delay = "PT1M"
 
 $supervisorTrigger = New-ScheduledTaskTrigger -Once -At (Get-Date) `
-    -RepetitionInterval (New-TimeSpan -Minutes 5) -RepetitionDuration (New-TimeSpan -Days 3650)
+    -RepetitionInterval (New-TimeSpan -Hours 2) -RepetitionDuration (New-TimeSpan -Days 3650)
 
 $settings = New-ScheduledTaskSettingsSet `
     -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries `
@@ -62,9 +64,9 @@ Unregister-ScheduledTask -TaskName $TaskName -Confirm:$false -ErrorAction Silent
 
 Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $logonTrigger, $supervisorTrigger `
     -Settings $settings -Principal $principal `
-    -Description "Watches 03_Projects/Canvas/PPJ_Executive_Board_v2.canvas and syncs card geometry and card text into the vault. Windows counterpart of ppj-executive-canvas-watcher.service. Self-healing: a 5-minute supervisor tick restarts the watcher if it died, since Task Scheduler cannot detect an externally-killed long-running process the way systemd's Restart=always can. Log: $VaultRoot\.git\canvas-watcher.log. See 03_Projects/_Registry/PPJ_SYNC_DEVICE_REGISTRY.md." |
+    -Description "Watches 03_Projects/Canvas/PPJ_Executive_Board_v2.canvas and syncs card geometry and card text into the vault. Windows counterpart of ppj-executive-canvas-watcher.service. Self-healing: a 2-hour supervisor tick restarts the watcher if it died, since Task Scheduler cannot detect an externally-killed long-running process the way systemd's Restart=always can. Log: $VaultRoot\.git\canvas-watcher.log. See 03_Projects/_Registry/PPJ_SYNC_DEVICE_REGISTRY.md." |
     Out-Null
 
-Write-Host "Registered scheduled task '$TaskName' (at logon + every 5 min self-healing tick):"
+Write-Host "Registered scheduled task '$TaskName' (at logon + every 2 h self-healing tick):"
 Get-ScheduledTaskInfo -TaskName $TaskName | Format-List NextRunTime, LastRunTime, LastTaskResult
 Write-Host "Run it once by hand to test: Start-ScheduledTask -TaskName '$TaskName'"

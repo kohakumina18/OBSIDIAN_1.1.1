@@ -289,7 +289,7 @@ On the Ubuntu vault, `ppj-executive-canvas-watcher.service` normally performs th
 
 On the Windows vault (`D:\PPJ\syncing`), the scheduled task **PPJ Executive Canvas Watcher** does the same job, registered by `scripts/Register-PPJCanvasWatcherTask.ps1`. It starts a minute after logon and runs `scripts/Start-PPJCanvasWatcher.ps1`, which launches the watcher in `--apply` mode and logs to `.git\canvas-watcher.log`. The launcher refuses to start if a watcher is already running, for the same reason the Ubuntu service does: two watchers would race on the same Canvas and snapshot.
 
-Task Scheduler has no equivalent to systemd's `Restart=always` for a process that dies outside its control (a crash, a manual kill, a reboot mid-run), so the task also carries a second trigger: a supervisor tick every 5 minutes that just runs the launcher again. Since the launcher is already idempotent, a tick either no-ops (watcher alive) or starts a fresh watcher (watcher dead) - the same self-healing as the Linux service, within 5 minutes instead of 5 seconds.
+Task Scheduler has no equivalent to systemd's `Restart=always` for a process that dies outside its control (a crash, a manual kill, a reboot mid-run), so the task also carries a second trigger: a supervisor tick every 2 hours that just runs the launcher again. Since the launcher is already idempotent, a tick either no-ops (watcher alive) or starts a fresh watcher (watcher dead) - the same self-healing as the Linux service, within 2 hours instead of 5 seconds (the tick was every 5 minutes until 2026-10-22).
 
 ## Ecosystem Canvas auto-sync
 
