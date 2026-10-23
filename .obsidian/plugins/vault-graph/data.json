@@ -1,4 +1,28 @@
 {
+  "ghosts": false,
+  "templates": false,
+  "flatMonths": false,
+  "words": true,
+  "folderColors": {},
+  "subfolderColors": {},
+  "tagColors": {},
+  "subtagColors": {},
+  "tagShown": {},
+  "folderShown": {},
+  "pinned": [
+    "\u0000vault-graph:pins:2",
+    "03_Projects/_Registry/Project_Memory/EXIM.ExpenseInvoices.Automation.v1.1.memory.md"
+  ],
+  "panEnabled": true,
+  "compactAxis": true,
+  "unlinkedByFolder": true,
+  "unlinkedTintByFolder": false,
+  "countBars": true,
+  "rootInOrder": false,
+  "devTools": false,
+  "fitCap": true,
+  "dim": "folder",
+  "liveRefresh": true,
   "lastSeenVersion": "2.9.0",
-  "lastSeen": 1792479625256
+  "lastSeen": 1792762263844
 }
