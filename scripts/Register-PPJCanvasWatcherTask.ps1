@@ -42,8 +42,11 @@ if (-not (Test-Path $Launcher)) {
     throw "Launcher not found at $Launcher - is this being run from the vault's scripts\ folder?"
 }
 
-$action = New-ScheduledTaskAction -Execute "powershell.exe" `
-    -Argument "-NoProfile -NonInteractive -WindowStyle Hidden -ExecutionPolicy Bypass -File `"$Launcher`"" `
+# conhost --headless runs powershell.exe without ever creating a console window.
+# -WindowStyle Hidden alone still flashes one for a moment on every run (owner
+# complaint 2026-10-24: a pop-up every few minutes from the supervisor tick).
+$action = New-ScheduledTaskAction -Execute "conhost.exe" `
+    -Argument "--headless powershell.exe -NoProfile -NonInteractive -WindowStyle Hidden -ExecutionPolicy Bypass -File `"$Launcher`"" `
     -WorkingDirectory $VaultRoot
 
 $logonTrigger = New-ScheduledTaskTrigger -AtLogOn -User "$env:USERDOMAIN\$env:USERNAME"

@@ -71,8 +71,11 @@ New-Item -ItemType Directory -Force -Path $DeployDir | Out-Null
 Copy-Item -Path $LauncherSrc -Destination $DeployedPath -Force
 Write-Host "Deployed launcher to $DeployedPath (this is the copy Task Scheduler runs; re-run this script after editing the vault-side original)."
 
-$action = New-ScheduledTaskAction -Execute "powershell.exe" `
-    -Argument "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File `"$DeployedPath`" -Quiet" `
+# conhost --headless runs powershell.exe without ever creating a console window.
+# -WindowStyle Hidden alone still flashes one for a moment on every run (owner
+# complaint 2026-10-24: a pop-up every few minutes from the supervisor tick).
+$action = New-ScheduledTaskAction -Execute "conhost.exe" `
+    -Argument "--headless powershell.exe -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File `"$DeployedPath`" -Quiet" `
     -WorkingDirectory $DeployDir
 
 $trigger = New-ScheduledTaskTrigger -Once -At $StartTime `
