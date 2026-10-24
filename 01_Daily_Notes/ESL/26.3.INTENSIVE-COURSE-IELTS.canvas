@@ -974,6 +974,19 @@
 					{"x":14243.5254,"y":-1076.174,"pressure":0.118}
 				],
 				"createdAt":1792831222049
+			},
+			{
+				"id":"stroke-mvm9arln-sgeap5",
+				"color":"#5aff7d",
+				"width":6,
+				"hardness":100,
+				"opacity":37,
+				"handwriting":{"enabled":false,"thinning":0.5,"streamline":0.5,"smoothing":0.5,"taperStart":16,"taperEnd":16},
+				"points":[
+					{"x":13454.5254,"y":-544.174},
+					{"x":13454.5354,"y":-544.164}
+				],
+				"createdAt":1792837737275
 			}
 		],
 		"colorHistory":[]
