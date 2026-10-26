@@ -340,12 +340,42 @@
 		{
 			"id":"0759ce13fdd3f411",
 			"type":"text",
-			"text":"26.10.2026\n- ~~FOLLOW UP GDI~~\n- FOLLOW UP MATERIAL ALLOC\n\t- CHECK UP ON DATA MAPPING\n- FOLLOW UP EXPENSE INVOICE\n\t- CHECK UP ON ERRORS\n- FOLLOW UP GRN-SI\n\t- CHECK UP ON ERRORS\n- FOLLOW UP WS2 FIN AI \n\t- WORK UP UI AND RECONFIRM\n- FOLLOW UP WS4 FIN AI - TRACING \n\t- RECONFIRM THE TRACING PROCESS W MRS KATHY\n- ~~FOLLOW UP ADMIN_TRAVEL_EXPENSE~~\n\t- ADD THEM UPLOADING FILES\n- ~~FOLLOW UP MO RONG NHAN SU~~\n- FOLLOW UP WASH AGENT\n\t- \n",
+			"text":"26.10.2026\n- ~~FOLLOW UP GDI~~\n\t-  INDENT PHAI ACTIVE -- VA DICH PHAI CO NHU CAU\n- FOLLOW UP MATERIAL ALLOC\n\t- CHECK UP ON DATA MAPPING\n- FOLLOW UP EXPENSE INVOICE\n\t- CHECK UP ON ERRORS\n- FOLLOW UP GRN-SI\n\t- CHECK UP ON ERRORS\n- FOLLOW UP WS2 FIN AI \n\t- WORK UP UI AND RECONFIRM\n- FOLLOW UP WS4 FIN AI - TRACING \n\t- RECONFIRM THE TRACING PROCESS W MRS KATHY\n- ~~FOLLOW UP ADMIN_TRAVEL_EXPENSE~~\n\t- ADD THEM UPLOADING FILES\n- ~~FOLLOW UP MO RONG NHAN SU~~\n- FOLLOW UP WASH AGENT\n\t- \n",
 			"styleAttributes":{},
 			"x":860,
 			"y":55900,
 			"width":560,
 			"height":680
+		},
+		{
+			"id":"d99b5e1cf4593526",
+			"type":"text",
+			"text":"\nFrom: Sumender Pathania <sumender.pathania@worldfashionexchange.com> \nSent: Monday, 26 October 2026 12:58 PM\nTo: Nguyen Vu Anh Khoa <nvakhoa@ppj-international.com>\nCc: tan ho <tan.ho@worldfashionexchange.com>; Niliyam Tripathi <niliyam.tripathi@worldfashionexchange.com>; Ankur Singh Bhandari <ankur.bhandari@worldfashionexchange.com>; Mohan <mohan@worldfashionexchange.com>; Anupam Jaiswal <anupam.jaiswal@worldfashionexchange.com>; Le Hoang Tuan <lhtuan@ppj-international.com>; Nguyen Minh Truong <nmtruong@ppj-international.com>; Nguyen Thi Hong Phuong <nthphuong@ppj-international.com>; Trinh Thi Tuyet <tttuyet@ppj-international.com>; Nguyen Thi Bich Hanh <ntbhanh@ppj-international.com>; Nguyen Phuc Minh Quan <npmquan@ppj-international.com>\nSubject: RE: [Meeting Recap – WFX APIs, Material Cost Treatment and Automation Collaboration]\n\nDear Mr. Khoa,\n\nWe are awaiting your feedback on the testing of the APIs deployed on the PPJ test instance.\n\nKindly share your observations and confirmation at your earliest convenience so that we can proceed with the deployment to the live environment.\n\nRegards,\nSumender\n-------\nwe need help in develope the APIs to extend it so we have the methods to get the FPO up as well ( if we havnt)\n\nINPUT: STYLE + ARTICLE \n-> FPO NUMBER PER USER\nOR DETAILS ON STORE PRODUCEDURE / TABLES RELATED  ",
+			"styleAttributes":{},
+			"x":1520,
+			"y":55960,
+			"width":260,
+			"height":300
+		},
+		{
+			"id":"0b8cdfc95e6cc4ad",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":1980,
+			"y":55860,
+			"width":260,
+			"height":140
+		},
+		{
+			"id":"36fe2d6279da94f9",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":1600,
+			"y":55580,
+			"width":340,
+			"height":200
 		}
 	],
 	"edges":[
@@ -645,6 +675,15 @@
 			"fromSide":"bottom",
 			"toNode":"0759ce13fdd3f411",
 			"toSide":"top"
+		},
+		{
+			"id":"0d03873f5dba6a9e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"d99b5e1cf4593526",
+			"fromSide":"right",
+			"toNode":"0b8cdfc95e6cc4ad",
+			"toSide":"left"
 		}
 	],
 	"metadata":{
