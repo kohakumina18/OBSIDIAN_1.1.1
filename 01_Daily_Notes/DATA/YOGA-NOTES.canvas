@@ -336,6 +336,16 @@
 			"width":520,
 			"height":540,
 			"color":"4"
+		},
+		{
+			"id":"0759ce13fdd3f411",
+			"type":"text",
+			"text":"26.10.2026\n- ~~FOLLOW UP GDI~~\n- FOLLOW UP MATERIAL ALLOC\n\t- CHECK UP ON DATA MAPPING\n- FOLLOW UP EXPENSE INVOICE\n\t- CHECK UP ON ERRORS\n- FOLLOW UP GRN-SI\n\t- CHECK UP ON ERRORS\n- FOLLOW UP WS2 FIN AI \n\t- WORK UP UI AND RECONFIRM\n- FOLLOW UP WS4 FIN AI - TRACING \n\t- RECONFIRM THE TRACING PROCESS W MRS KATHY\n- ~~FOLLOW UP ADMIN_TRAVEL_EXPENSE~~\n\t- ADD THEM UPLOADING FILES\n- ~~FOLLOW UP MO RONG NHAN SU~~\n- FOLLOW UP WASH AGENT\n\t- \n",
+			"styleAttributes":{},
+			"x":860,
+			"y":55900,
+			"width":560,
+			"height":680
 		}
 	],
 	"edges":[
@@ -625,6 +635,15 @@
 			"fromNode":"c4855ae4a50757d4",
 			"fromSide":"bottom",
 			"toNode":"53b02084ed669e12",
+			"toSide":"top"
+		},
+		{
+			"id":"39dbe6295b90f060",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"53b02084ed669e12",
+			"fromSide":"bottom",
+			"toNode":"0759ce13fdd3f411",
 			"toSide":"top"
 		}
 	],
