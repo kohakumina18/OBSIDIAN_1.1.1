@@ -58,7 +58,17 @@
 			"width":260,
 			"height":60
 		},
-		{"id":"5784a8fdb8fabe3f","type":"file","file":"Pasted image 20261027135711.png","x":6680,"y":4829,"width":460,"height":362}
+		{"id":"5784a8fdb8fabe3f","type":"file","file":"Pasted image 20261027135711.png","x":6680,"y":4829,"width":460,"height":362},
+		{
+			"id":"4a032afbe898906c",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":5180,
+			"y":4880,
+			"width":260,
+			"height":60
+		}
 	],
 	"edges":[
 		{
