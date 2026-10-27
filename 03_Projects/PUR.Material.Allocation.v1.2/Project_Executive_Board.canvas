@@ -37,9 +37,49 @@
 			"y":400,
 			"width":1060,
 			"height":9949
+		},
+		{
+			"id":"5dd385340c6571fb",
+			"type":"text",
+			"text":"KHONG TIM THAY STYLE DICH",
+			"styleAttributes":{},
+			"x":7400,
+			"y":4829,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"be84a17c0cf3e40c",
+			"type":"text",
+			"text":"LABEL_S",
+			"styleAttributes":{},
+			"x":7400,
+			"y":4960,
+			"width":260,
+			"height":60
+		},
+		{"id":"5784a8fdb8fabe3f","type":"file","file":"Pasted image 20261027135711.png","x":6680,"y":4829,"width":460,"height":362}
+	],
+	"edges":[
+		{
+			"id":"ab88290b39bb3b50",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"5784a8fdb8fabe3f",
+			"fromSide":"right",
+			"toNode":"5dd385340c6571fb",
+			"toSide":"left"
+		},
+		{
+			"id":"4aa12fb4edf16019",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"5dd385340c6571fb",
+			"fromSide":"bottom",
+			"toNode":"be84a17c0cf3e40c",
+			"toSide":"top"
 		}
 	],
-	"edges":[],
 	"metadata":{
 		"version":"1.0-1.0",
 		"frontmatter":{"project":"PUR_MaterialAllocation_v1.1.0","board_type":"project_executive_kanban","last_verified":"2026-09-18"}
