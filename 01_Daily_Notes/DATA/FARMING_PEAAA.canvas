@@ -3,19 +3,59 @@
 		{
 			"id":"a190943b670f5afe",
 			"type":"text",
-			"text":"STT\tHo va ten (Latin)\tHo\tTen\tGioi tinh / Quoc gia\n1\tSato Haruto\tSato\tHaruto\tNam / Nhat Ban - SatoHaruto1989@gmail.com - 1270744731@ ![[Pasted image 20261029093502.png|74]]\n2\tTanaka Kaito\tTanaka\tKaito\tNam / Nhat Ban - tanakakaito931@gmail.com - ![[Pasted image 20261029093547.png|79]]\n3\tKim Min-jun\tKim\tMin-jun\tNam / Han Quoc\n4\tPark Ji-hoon\tPark\tJi-hoon\tNam / Han Quoc\n5\tWang Wei\tWang\tWei\tNam / Trung Quoc\n6\tYamamoto Sakura\tYamamoto\tSakura\tNu / Nhat Ban\n7\tSuzuki Yui\tSuzuki\tYui\tNu / Nhat Ban\n8\tLee Seo-yeon\tLee\tSeo-yeon\tNu / Han Quoc\n9\tChoi Ji-eun\tChoi\tJi-eun\tNu / Han Quoc\n10\tNguyen Thanh Lam\tLam Thanh Nguyen\tNu / Vie - nguyenlamthanh345@gmail.com - ![[Pasted image 20261029105857.png|85]]\n11. Koha Nguyen - kchakumina621@gmail.com\n12. Thinan Tripathi - kohakumina621@gmail.com\n13. \n\nhttps://accounts.google.com/lifecycle/steps/signup/name?authuser=0&continue=https://myaccount.google.com/profile/about/add&dsh=S339065963:1793239643366412&ec=GAlAwAE&flowEntry=SignUp&flowName=GlifWebSignIn&hl=en&rip=1&TL=ADG-GRQR8MDh-KSq_FeEeXAtIcCZLFA7A6OAFO2-qLXayx7yBZIIS3WCWiZRJBSo",
+			"text":"STT\tHo va ten (Latin)\tHo\tTen\tGioi tinh / Quoc gia\n1\tCOMMENT.ACC: - Sato Haruto\tSato\tHaruto\tNam / Nhat Ban - SatoHaruto1989@gmail.com - 1270744731@ ![[Pasted image 20261029093502.png|74]]\n2\tTanaka Kaito\tTanaka\tKaito\tNam / Nhat Ban - tanakakaito931@gmail.com - ![[Pasted image 20261029093547.png|79]]\n3\tKim Min-jun\tKim\tMin-jun\tNam / Han Quoc\n4\tPark Ji-hoon\tPark\tJi-hoon\tNam / Han Quoc\n5\tWang Wei\tWang\tWei\tNam / Trung Quoc\n6\tYamamoto Sakura\tYamamoto\tSakura\tNu / Nhat Ban\n7\tSuzuki Yui\tSuzuki\tYui\tNu / Nhat Ban\n8\tLee Seo-yeon\tLee\tSeo-yeon\tNu / Han Quoc\n9\tChoi Ji-eun\tChoi\tJi-eun\tNu / Han Quoc\n10\tCOMMENT.ACC: - Nguyen Thanh Lam\tLam Thanh Nguyen\tNu / Vie - nguyenlamthanh345@gmail.com - ![[Pasted image 20261029105857.png|85]]\n11. Koha Nguyen - kchakumina621@gmail.com\n12. Thinan Tripathi - kohakumina621@gmail.com\n13. \n\nhttps://accounts.google.com/lifecycle/steps/signup/name?authuser=0&continue=https://myaccount.google.com/profile/about/add&dsh=S339065963:1793239643366412&ec=GAlAwAE&flowEntry=SignUp&flowName=GlifWebSignIn&hl=en&rip=1&TL=ADG-GRQR8MDh-KSq_FeEeXAtIcCZLFA7A6OAFO2-qLXayx7yBZIIS3WCWiZRJBSo",
 			"styleAttributes":{},
 			"x":460,
 			"y":-460,
-			"width":1300,
+			"width":980,
 			"height":1780
 		},
 		{"id":"113c6972f8264330","type":"link","url":"https://accounts.google.com/lifecycle/steps/signup/name?authuser=0&continue=https://myaccount.google.com/profile/about/add&dsh=S339065963:1793239643366412&ec=GAlAwAE&flowEntry=SignUp&flowName=GlifWebSignIn&hl=en&rip=1&TL=ADG-GRQR8MDh-KSq_FeEeXAtIcCZLFA7A6OAFO2-qLXayx7yBZIIS3WCWiZRJBSo","x":-160,"y":-740,"width":400,"height":400},
 		{"id":"7e39d9f0e70c9b6b","type":"file","file":"8020243_0a2984980ec44a02b6a2079423aa897a.jpg","x":-1640,"y":-740,"width":297,"height":400},
 		{"id":"c2a362c9c74c84e6","type":"file","file":"8040774_1cacaa50976f4c27811363a3aeaf3680.jpg","x":-1180,"y":-740,"width":298,"height":400},
-		{"id":"07b69d0666ed0879","type":"file","file":"8047361_e2703d77f9fd4c5a91ed0b91e49e15c8.jpg","x":-740,"y":-740,"width":298,"height":400}
+		{"id":"07b69d0666ed0879","type":"file","file":"8047361_e2703d77f9fd4c5a91ed0b91e49e15c8.jpg","x":-740,"y":-740,"width":298,"height":400},
+		{
+			"id":"268a8ce31820c55f",
+			"type":"text",
+			"text":"LU0OM THUOM",
+			"styleAttributes":{},
+			"x":160,
+			"y":-240,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"5491396751810165",
+			"type":"text",
+			"text":"TUYEN NGUOI MOI - NHAY VIEC",
+			"styleAttributes":{},
+			"x":-180,
+			"y":-140,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"b8472933041fcd85",
+			"type":"text",
+			"text":"KHONG CO THOI GIAN TRAINING",
+			"styleAttributes":{},
+			"x":-180,
+			"y":40,
+			"width":260,
+			"height":60
+		}
 	],
-	"edges":[],
+	"edges":[
+		{
+			"id":"36105dd81913609f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"5491396751810165",
+			"fromSide":"right",
+			"toNode":"268a8ce31820c55f",
+			"toSide":"left"
+		}
+	],
 	"metadata":{
 		"version":"1.0-1.0",
 		"frontmatter":{}
