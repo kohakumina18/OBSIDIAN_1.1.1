@@ -398,24 +398,144 @@
 			"height":60
 		},
 		{
-			"id":"fb9dfb5ddb16fdd3",
-			"type":"text",
-			"text":"coshare",
-			"styleAttributes":{},
-			"x":2420,
-			"y":57400,
-			"width":260,
-			"height":60
-		},
-		{
 			"id":"9d75d2d30c32a8bd",
 			"type":"text",
 			"text":"line supervising + training in managemnet and vision",
 			"styleAttributes":{},
-			"x":2980,
-			"y":57400,
+			"x":3160,
+			"y":57420,
 			"width":370,
 			"height":120
+		},
+		{
+			"id":"fb9dfb5ddb16fdd3",
+			"type":"text",
+			"text":"coshare",
+			"styleAttributes":{},
+			"x":2460,
+			"y":57390,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"83a7b45b1a276a49",
+			"type":"text",
+			"text":"he sinh thai an sinh xa hoi",
+			"styleAttributes":{},
+			"x":2840,
+			"y":57420,
+			"width":207,
+			"height":60
+		},
+		{
+			"id":"eb92f733d5b0d381",
+			"type":"text",
+			"text":"FACTORIES ",
+			"styleAttributes":{},
+			"x":3270,
+			"y":56540,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0afb0e1e5c83c23f",
+			"type":"text",
+			"text":"ATTENDANCE TRACKING",
+			"styleAttributes":{},
+			"x":3920,
+			"y":56920,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"fde6d40b57ba1eda",
+			"type":"text",
+			"text":"SECURITY CHECK - OUTSIDER ALERT",
+			"styleAttributes":{},
+			"x":3920,
+			"y":57040,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"396501eae2aed7a1",
+			"type":"text",
+			"text":"SAFTY CHECK",
+			"styleAttributes":{},
+			"x":3920,
+			"y":57160,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a541a55e9c2328cf",
+			"type":"text",
+			"text":"IMAGES ANALYSIS W DEEP LEARNING ? - WHAT MODELS BRUH - CALL UPON IT OR SELF-HOSTING",
+			"styleAttributes":{},
+			"x":3580,
+			"y":56700,
+			"width":320,
+			"height":100
+		},
+		{
+			"id":"c21fcb71fc14c501",
+			"type":"text",
+			"text":"BEEP BEEP BOOP BOOP",
+			"styleAttributes":{},
+			"x":3320,
+			"y":56980,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"65c67d8899de77c9",
+			"type":"text",
+			"text":"NONSTOP CHECKING - AI_TIMELOG",
+			"styleAttributes":{},
+			"x":4280,
+			"y":56860,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"f7bc51eb4db8201e",
+			"type":"text",
+			"text":"CONFIDENCE - ",
+			"styleAttributes":{},
+			"x":4640,
+			"y":56740,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"bd28c59fd66d3c9e",
+			"type":"text",
+			"text":"DEO KHAU TRANG VAN NHAN DIEN DUOC?",
+			"styleAttributes":{},
+			"x":4640,
+			"y":56880,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"ed9b75b4da97054d",
+			"type":"text",
+			"text":"IDENTIFCATION BASED ON SECTOR CLASSIFICATION",
+			"styleAttributes":{},
+			"x":4300,
+			"y":57060,
+			"width":260,
+			"height":59
+		},
+		{
+			"id":"749be83dacc68c32",
+			"type":"text",
+			"text":"SUM / CAL THE TOTAL AMOUNT OF WORK - KPI: NGOI TAI VI TRI (TAI XUONG / TAI NHA MAY + THOI GIAN MAY CHAY + SAN LUONH CUA CN )\n-> DRILL UP DUOC PHAN TICH VA HISTORICAL DATA CUA VIEC ",
+			"styleAttributes":{},
+			"x":3920,
+			"y":57340,
+			"width":360,
+			"height":264
 		}
 	],
 	"edges":[
@@ -732,6 +852,128 @@
 			"fromNode":"6677dfefa4509566",
 			"fromSide":"right",
 			"toNode":"c674879aa57a77ee",
+			"toSide":"left"
+		},
+		{
+			"id":"17262c16fa70d4f9",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"fb9dfb5ddb16fdd3",
+			"fromSide":"right",
+			"toNode":"83a7b45b1a276a49",
+			"toSide":"left"
+		},
+		{
+			"id":"2bdf41b4588f365d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"83a7b45b1a276a49",
+			"fromSide":"right",
+			"toNode":"9d75d2d30c32a8bd",
+			"toSide":"left"
+		},
+		{
+			"id":"e16332d8ebeb720d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"c674879aa57a77ee",
+			"fromSide":"right",
+			"toNode":"eb92f733d5b0d381",
+			"toSide":"left",
+			"label":"SCOPE"
+		},
+		{
+			"id":"4a7cda5f52502992",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"c674879aa57a77ee",
+			"fromSide":"right",
+			"toNode":"a541a55e9c2328cf",
+			"toSide":"left",
+			"label":"METHODOLOGY"
+		},
+		{
+			"id":"b7a35e9cf57d305e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c674879aa57a77ee",
+			"fromSide":"right",
+			"toNode":"c21fcb71fc14c501",
+			"toSide":"left",
+			"label":"FUNC"
+		},
+		{
+			"id":"dfe9ecd1c64217c9",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c21fcb71fc14c501",
+			"fromSide":"right",
+			"toNode":"0afb0e1e5c83c23f",
+			"toSide":"left"
+		},
+		{
+			"id":"95f4278c35c5008a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c21fcb71fc14c501",
+			"fromSide":"right",
+			"toNode":"fde6d40b57ba1eda",
+			"toSide":"left"
+		},
+		{
+			"id":"6f6e2b647a8a4475",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c21fcb71fc14c501",
+			"fromSide":"right",
+			"toNode":"396501eae2aed7a1",
+			"toSide":"left"
+		},
+		{
+			"id":"1dc3623e944f7764",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0afb0e1e5c83c23f",
+			"fromSide":"right",
+			"toNode":"65c67d8899de77c9",
+			"toSide":"left"
+		},
+		{
+			"id":"0e4885f06123ce12",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"65c67d8899de77c9",
+			"fromSide":"right",
+			"toNode":"f7bc51eb4db8201e",
+			"toSide":"left"
+		},
+		{
+			"id":"b943694caa152fe1",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"65c67d8899de77c9",
+			"fromSide":"right",
+			"toNode":"bd28c59fd66d3c9e",
+			"toSide":"left"
+		},
+		{
+			"id":"b9f384ce5cc3a29f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"fde6d40b57ba1eda",
+			"fromSide":"right",
+			"toNode":"ed9b75b4da97054d",
+			"toSide":"left"
+		},
+		{
+			"id":"049f869f9495b427",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c21fcb71fc14c501",
+			"fromSide":"right",
+			"toNode":"749be83dacc68c32",
 			"toSide":"left"
 		}
 	],
