@@ -8,19 +8,19 @@
 			"x":460,
 			"y":-460,
 			"width":980,
-			"height":1780
+			"height":900
 		},
-		{"id":"113c6972f8264330","type":"link","url":"https://accounts.google.com/lifecycle/steps/signup/name?authuser=0&continue=https://myaccount.google.com/profile/about/add&dsh=S339065963:1793239643366412&ec=GAlAwAE&flowEntry=SignUp&flowName=GlifWebSignIn&hl=en&rip=1&TL=ADG-GRQR8MDh-KSq_FeEeXAtIcCZLFA7A6OAFO2-qLXayx7yBZIIS3WCWiZRJBSo","x":-160,"y":-740,"width":400,"height":400},
-		{"id":"7e39d9f0e70c9b6b","type":"file","file":"8020243_0a2984980ec44a02b6a2079423aa897a.jpg","x":-1640,"y":-740,"width":297,"height":400},
-		{"id":"c2a362c9c74c84e6","type":"file","file":"8040774_1cacaa50976f4c27811363a3aeaf3680.jpg","x":-1180,"y":-740,"width":298,"height":400},
-		{"id":"07b69d0666ed0879","type":"file","file":"8047361_e2703d77f9fd4c5a91ed0b91e49e15c8.jpg","x":-740,"y":-740,"width":298,"height":400},
+		{"id":"113c6972f8264330","type":"link","url":"https://accounts.google.com/lifecycle/steps/signup/name?authuser=0&continue=https://myaccount.google.com/profile/about/add&dsh=S339065963:1793239643366412&ec=GAlAwAE&flowEntry=SignUp&flowName=GlifWebSignIn&hl=en&rip=1&TL=ADG-GRQR8MDh-KSq_FeEeXAtIcCZLFA7A6OAFO2-qLXayx7yBZIIS3WCWiZRJBSo","x":2240,"y":-920,"width":400,"height":400},
+		{"id":"7e39d9f0e70c9b6b","type":"file","file":"8020243_0a2984980ec44a02b6a2079423aa897a.jpg","x":341,"y":-1120,"width":297,"height":400},
+		{"id":"c2a362c9c74c84e6","type":"file","file":"8040774_1cacaa50976f4c27811363a3aeaf3680.jpg","x":801,"y":-1120,"width":298,"height":400},
+		{"id":"07b69d0666ed0879","type":"file","file":"8047361_e2703d77f9fd4c5a91ed0b91e49e15c8.jpg","x":1241,"y":-1120,"width":298,"height":400},
 		{
 			"id":"268a8ce31820c55f",
 			"type":"text",
 			"text":"LU0OM THUOM",
 			"styleAttributes":{},
-			"x":160,
-			"y":-240,
+			"x":-20,
+			"y":-800,
 			"width":260,
 			"height":60
 		},
@@ -29,8 +29,8 @@
 			"type":"text",
 			"text":"TUYEN NGUOI MOI - NHAY VIEC",
 			"styleAttributes":{},
-			"x":-180,
-			"y":-140,
+			"x":-360,
+			"y":-700,
 			"width":260,
 			"height":60
 		},
@@ -39,8 +39,8 @@
 			"type":"text",
 			"text":"KHONG CO THOI GIAN TRAINING",
 			"styleAttributes":{},
-			"x":-180,
-			"y":40,
+			"x":-360,
+			"y":-520,
 			"width":260,
 			"height":60
 		}
@@ -54,6 +54,33 @@
 			"fromSide":"right",
 			"toNode":"268a8ce31820c55f",
 			"toSide":"left"
+		},
+		{
+			"id":"6947be81b408846e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"7e39d9f0e70c9b6b",
+			"fromSide":"bottom",
+			"toNode":"a190943b670f5afe",
+			"toSide":"top"
+		},
+		{
+			"id":"87e97f2b973c0b3a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c2a362c9c74c84e6",
+			"fromSide":"bottom",
+			"toNode":"a190943b670f5afe",
+			"toSide":"top"
+		},
+		{
+			"id":"bf148f3f2c09726d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"07b69d0666ed0879",
+			"fromSide":"bottom",
+			"toNode":"a190943b670f5afe",
+			"toSide":"top"
 		}
 	],
 	"metadata":{
