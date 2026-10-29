@@ -366,6 +366,56 @@
 			"y":55580,
 			"width":340,
 			"height":200
+		},
+		{
+			"id":"2f7457a45cd432c2",
+			"type":"text",
+			"text":"26.10.2026\n- ~~FOLLOW UP GDI~~\n\t-  INDENT PHAI ACTIVE -- VA DICH PHAI CO NHU CAU\n- FOLLOW UP MATERIAL ALLOC\n\t- CHECK UP ON DATA MAPPING\n- FOLLOW UP EXPENSE INVOICE\n\t- CHECK UP ON ERRORS\n- FOLLOW UP GRN-SI\n\t- CHECK UP ON ERRORS\n- FOLLOW UP WS2 FIN AI \n\t- WORK UP UI AND RECONFIRM\n- FOLLOW UP WS4 FIN AI - TRACING \n\t- RECONFIRM THE TRACING PROCESS W MRS KATHY\n- ~~FOLLOW UP ADMIN_TRAVEL_EXPENSE~~\n\t- ADD THEM UPLOADING FILES\n- ~~FOLLOW UP MO RONG NHAN SU~~\n- FOLLOW UP WASH AGENT\n\t- \n",
+			"styleAttributes":{},
+			"x":1100,
+			"y":56840,
+			"width":700,
+			"height":640
+		},
+		{
+			"id":"c674879aa57a77ee",
+			"type":"text",
+			"text":"computer vision",
+			"styleAttributes":{},
+			"x":2820,
+			"y":56720,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"6677dfefa4509566",
+			"type":"text",
+			"text":"comisc",
+			"styleAttributes":{},
+			"x":2460,
+			"y":56720,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"fb9dfb5ddb16fdd3",
+			"type":"text",
+			"text":"coshare",
+			"styleAttributes":{},
+			"x":2420,
+			"y":57400,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"9d75d2d30c32a8bd",
+			"type":"text",
+			"text":"line supervising + training in managemnet and vision",
+			"styleAttributes":{},
+			"x":2980,
+			"y":57400,
+			"width":370,
+			"height":120
 		}
 	],
 	"edges":[
@@ -665,6 +715,24 @@
 			"fromSide":"bottom",
 			"toNode":"0759ce13fdd3f411",
 			"toSide":"top"
+		},
+		{
+			"id":"5910e3c0f53dcfb0",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0759ce13fdd3f411",
+			"fromSide":"bottom",
+			"toNode":"2f7457a45cd432c2",
+			"toSide":"top"
+		},
+		{
+			"id":"e6b2073eefa2a32d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6677dfefa4509566",
+			"fromSide":"right",
+			"toNode":"c674879aa57a77ee",
+			"toSide":"left"
 		}
 	],
 	"metadata":{
