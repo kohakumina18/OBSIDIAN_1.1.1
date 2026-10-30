@@ -1101,7 +1101,7 @@
   ],
   "showSplashscreen": true,
   "pdfSettings": {
-    "pageSize": "A4",
+    "pageSize": "MATCH IMAGE",
     "pageOrientation": "portrait",
     "fitToPage": 1,
     "paperColor": "white",
