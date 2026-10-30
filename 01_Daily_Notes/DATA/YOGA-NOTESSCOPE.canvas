@@ -1282,8 +1282,21 @@
 					{"x":-1556.2039,"y":48086.6623}
 				],
 				"createdAt":1792380748581
+			},
+			{
+				"id":"stroke-mvufwzha-xvbiwu",
+				"color":"#5aff95",
+				"width":2.6019231371682965,
+				"hardness":100,
+				"opacity":100,
+				"handwriting":{"enabled":false,"thinning":0.5,"streamline":0.5,"smoothing":0.5,"taperStart":6.938461699115458,"taperEnd":6.938461699115458},
+				"points":[
+					{"x":6902.2861,"y":38344.0586},
+					{"x":6902.2961,"y":38344.0686}
+				],
+				"createdAt":1793332581022
 			}
 		],
-		"colorHistory":["#5aff7d","#ff745a","#ffcc5a"]
+		"colorHistory":["#5aff95","#5aff7d","#ff745a","#ffcc5a"]
 	}
 }
