@@ -19,8 +19,8 @@
 			"type":"text",
 			"text":"LU0OM THUOM",
 			"styleAttributes":{},
-			"x":-20,
-			"y":-800,
+			"x":-260,
+			"y":-980,
 			"width":260,
 			"height":60
 		},
@@ -29,8 +29,8 @@
 			"type":"text",
 			"text":"TUYEN NGUOI MOI - NHAY VIEC",
 			"styleAttributes":{},
-			"x":-360,
-			"y":-700,
+			"x":-600,
+			"y":-880,
 			"width":260,
 			"height":60
 		},
@@ -39,8 +39,8 @@
 			"type":"text",
 			"text":"KHONG CO THOI GIAN TRAINING",
 			"styleAttributes":{},
-			"x":-360,
-			"y":-520,
+			"x":-600,
+			"y":-700,
 			"width":260,
 			"height":60
 		}
