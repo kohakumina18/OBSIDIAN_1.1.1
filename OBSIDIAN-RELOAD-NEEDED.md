@@ -1,6 +1,6 @@
 # Reload Obsidian before editing
 
-Sync pulled in changes to 1 file(s) at 2026-10-26 16:15:08.
+Sync pulled in changes to 1 file(s) at 2026-10-30 19:28:42.
 
 **Before editing anything in Obsidian, reload it:**
 - Windows: Ctrl+R inside Obsidian (Command palette → Reload app without saving)
