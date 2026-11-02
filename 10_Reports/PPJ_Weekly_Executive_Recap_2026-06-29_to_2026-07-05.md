@@ -1,4 +1,4 @@
-﻿---
+---
 type: weekly_report
 portfolio: "PPJ AI / Automation / Data"
 week: "2026-06-29 to 2026-07-05"

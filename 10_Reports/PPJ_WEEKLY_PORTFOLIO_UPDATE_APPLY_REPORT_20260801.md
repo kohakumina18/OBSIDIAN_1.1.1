@@ -1,4 +1,4 @@
-﻿# PPJ Weekly Portfolio Update Apply Report
+# PPJ Weekly Portfolio Update Apply Report
 
 - Source Event: PPJ-WEEKLY-20260727-20260801
 - Reporting Period: 2026-07-27 to 2026-08-01

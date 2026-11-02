@@ -21,7 +21,7 @@ progress: "TBD"
 blocked: "TBD"
 decision_needed: "TBD"
 next_action: "TBD"
-last_updated: "2026-07-06 08:53:49"
+last_updated: "2026-10-30"
 confidence: "Strong"
 source_files: []
 phase_canvas_group: "ANALYSIS"
@@ -31,9 +31,9 @@ canonical_code: "PUR_GDIAutomation_v1.0.0"
 current_file: "PUR.GDI Automation.md"
 primary_domain: "Sourcing / Purchasing"
 lifecycle: "Active Development / WFX API Integration"
-current_gate: "WFX API integration and GDI data-entry workflow"
-last_verified: "2026-09-18"
-source_event: "PPJ-PORTFOLIO-SNAPSHOT-20260918"
+current_gate: "WFX GET/POST delivery and transaction-control UAT ownership"
+last_verified: "2026-10-30"
+source_event: "PPJ-WEEKLY-20261023-20261030"
 dependencies: ["Confirmed Purchasing Workflow -> WFX API -> Controlled GDI Transaction -> Audit and Status"]
 delivery_stage: "DEVELOPMENT"
 stage_entered_date: "Needs Confirmation"
@@ -291,11 +291,11 @@ Deliverables
 | Lifecycle | Active Development / WFX API Integration |
 | Status | Active |
 | Progress | TBD |
-| Current Gate | WFX API integration and GDI data-entry workflow |
+| Current Gate | WFX GET/POST delivery and transaction-control UAT ownership |
 | Priority | P3 |
 | Business Owner | Needs Confirmation |
 | Registration | Registered |
-| Last Verified | 2026-09-18 |
+| Last Verified | 2026-10-30 |
 | Confidence | Strong |
 
 ## Executive Summary
@@ -308,17 +308,16 @@ PPJ GDI application using supported WFX APIs; never direct-write Databricks as a
 
 ## Latest Update
 
-Increasingly API-oriented rather than UI/RPA-oriented: Purchasing User -> GDI Application -> Validation -> WFX API -> GDI Transaction -> WFX. Two objectives stay separate: the business objective (GDI functionality to track package dispatch end-to-end) and the automation objective (WFX API capability for automated/assisted GDI entry). Critical path: WFX API specification -> Authentication -> GET/master-data APIs -> POST GDI -> Error handling -> UAT -> Production.
+No new confirmed API delivery or UAT result exists as of 30 October. The project remains in API/requirements development.
 
 ## Risks / Blockers
 
-- WFX API ownership and sandbox
-- Authentication and rate limits
-- Transaction integrity
+- WFX delivery, authentication and operation schemas remain unconfirmed.
+- Duplicate prevention, rollback, retry, timeout, audit and transaction confirmation require controlled testing.
 
 ## Decisions Needed
 
-- No current portfolio decision recorded.
+- Escalate GDI GET/POST delivery and appoint PPJ/WFX UAT owners.
 
 ## Dependencies
 
@@ -326,10 +325,8 @@ Increasingly API-oriented rather than UI/RPA-oriented: Purchasing User -> GDI Ap
 
 ## Next Actions
 
-- Obtain WFX API authentication and operation documentation
-- Confirm create/update/lookup/draft/submit/cancel/status schemas
-- Define validation, idempotency, duplicate, retry and timeout controls
-- Design audit logging and transaction confirmation
+- Freeze supported API operations and sandbox scenarios.
+- Assign PPJ and WFX UAT owners and execute controlled transaction tests.
 
 ## Do Not Drift Rules
 
@@ -346,9 +343,42 @@ Increasingly API-oriented rather than UI/RPA-oriented: Purchasing User -> GDI Ap
 
 ## Evidence and Confidence
 
-- Date: 2026-09-18
-- Source Event: PPJ-PORTFOLIO-SNAPSHOT-20260918
-- Source: User-approved portfolio current-state snapshot
+- Date: 2026-10-30
+- Source Event: PPJ-WEEKLY-20261023-20261030
+- Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
 - Confidence: Strong
 
 <!-- PPJ_PROJECT_KNOWLEDGE_END -->
+
+<!-- PPJ_WEEKLY_20261023_20261030_START -->
+## Weekly Synchronization Event: PPJ-WEEKLY-20261023-20261030
+
+### Verified movement
+
+No new confirmed API delivery or UAT result exists as of 30 October. The project remains in API/requirements development.
+
+### Current gate
+
+WFX GET/POST delivery and transaction-control UAT ownership
+
+### Risks / blockers
+
+- WFX delivery, authentication and operation schemas remain unconfirmed.
+- Duplicate prevention, rollback, retry, timeout, audit and transaction confirmation require controlled testing.
+
+### Decisions required
+
+- Escalate GDI GET/POST delivery and appoint PPJ/WFX UAT owners.
+
+### Next actions
+
+- Freeze supported API operations and sandbox scenarios.
+- Assign PPJ and WFX UAT owners and execute controlled transaction tests.
+
+### Traceability
+
+- Report: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
+- Decision gate: [[07_Decision_Log/DEC-WEEKLY-20261030-PORTFOLIO-GATES]]
+- Last verified: 2026-10-30
+- Confidence: Strong
+<!-- PPJ_WEEKLY_20261023_20261030_END -->

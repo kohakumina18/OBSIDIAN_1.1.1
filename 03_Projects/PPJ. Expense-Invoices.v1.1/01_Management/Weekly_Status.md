@@ -2,8 +2,8 @@
 type: "weekly_status"
 project: "PPJ.ExpenseInvoices.v1.1"
 source_project: "PPJ. Expense-Invoices.v1.1.md"
-source_event: "PPJ-EXECUTIVE-CANVAS-SYNC-20260928_235728"
-last_verified: "2026-09-28"
+source_event: "PPJ-WEEKLY-20261023-20261030"
+last_verified: "2026-10-30"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
@@ -12,7 +12,7 @@ delivery_stream: "INTERNAL DEVELOPMENT"
 delivery_stage: "GO-LIVE / PRODUCTION / SUPPORT"
 lifecycle: "Regional Rollout / UAT"
 status: "Active"
-current_gate: "Regional rollout, tax rules and invoice validation"
+current_gate: "Defect ownership, regression and production exit criteria"
 stage_entered_date: "2026-09-28"
 ---
 
@@ -122,3 +122,38 @@ Weekly updates should change only affected project memory, home, tasks, risks, d
 - Source event: PPJ-WEEKLY-20261010-20261016
 - Last verified: 2026-10-16
 - Confidence: Strong
+
+<!-- PPJ_WEEKLY_20261023_20261030_START -->
+## Weekly Status - 2026-10-30
+
+- **Canonical project:** LOG_ExpenseInvoiceProcessing_v1.2.2
+- **Current gate:** Defect ownership, regression and production exit criteria
+- **Stage change:** None confirmed
+
+### Latest verified update
+
+No confirmed defect fix exists as of 30 October. Active-use and defect-remediation evidence still points to VAT, attachment, regional-rule and duplicate/error risks.
+
+### Current blockers and risks
+
+- VAT, attachment and regional rules remain defect-prone.
+- Duplicate/error handling and regression evidence are incomplete.
+- Hotfix and production support ownership are not assigned.
+
+### Decisions needed
+
+- Assign Expense Invoice defect ownership and explicit exit criteria.
+
+### Next actions
+
+- Assign the hotfix owner and freeze the regression pack.
+- Run regression against VAT, attachments, regional rules and duplicate/error scenarios.
+- Record exit criteria and the production-support handoff.
+
+### Evidence basis
+
+- [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
+- Source event: PPJ-WEEKLY-20261023-20261030
+- Last verified: 2026-10-30
+- Confidence: Strong
+<!-- PPJ_WEEKLY_20261023_20261030_END -->

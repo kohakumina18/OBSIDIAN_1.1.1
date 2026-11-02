@@ -2,11 +2,12 @@
 type: "weekly_status"
 project: "ADMIN_ExpenseManagement_v1.1.0"
 source_project: "ADMIN_ExpenseManagement_v1.1.0.md"
-source_event: "PPJ-PROJECT-REGISTRATION-ADMIN_ExpenseManagement_v1.1.0-20260918"
-last_verified: "2026-09-18"
+source_event: "PPJ-WEEKLY-20261023-20261030"
+last_verified: "2026-10-30"
 confidence: "Needs Confirmation"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
+current_gate: "Formal Business Travel release decision"
 ---
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
@@ -101,3 +102,35 @@ Weekly updates should change only affected project memory, home, tasks, risks, d
 - Source event: PPJ-WEEKLY-20261010-20261016
 - Last verified: 2026-10-16
 - Confidence: Strong
+
+<!-- PPJ_WEEKLY_20261023_20261030_START -->
+## Weekly Status - 2026-10-30
+
+- **Canonical project:** ADMIN_ExpenseManagement_v1.1.0
+- **Current gate:** Formal Business Travel release decision
+- **Stage change:** None confirmed
+
+### Latest verified update
+
+No new confirmed release result exists as of 30 October. The project remains in release preparation; Accounting mappings, authorization, migrations, training, eOffice budget and release ownership remain open.
+
+### Current blockers and risks
+
+- Accounting mappings and authorization/access testing are not confirmed.
+- Migration, training, eOffice budget and release ownership remain unresolved.
+
+### Decisions needed
+
+- Approve release authority, accounting exceptions, access testing, training and eOffice budget.
+
+### Next actions
+
+- Run the formal release gate and record owners for every unresolved control.
+
+### Evidence basis
+
+- [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
+- Source event: PPJ-WEEKLY-20261023-20261030
+- Last verified: 2026-10-30
+- Confidence: Strong
+<!-- PPJ_WEEKLY_20261023_20261030_END -->

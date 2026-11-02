@@ -13,7 +13,7 @@
     {
       "id": "ppj-exec-summary",
       "type": "text",
-      "text": "MER_CostingAgenticPlatform_v1.1.0\n\nDomain:\nMerchandising\n\nLifecycle:\nDevelopment\n\nProgress:\nTBD\n\nGate:\nSew Agent fixes and Wash Agent development\n\nOutcome:\nGenerate a Costing / Quotation Package for Merchandising review and customer quotation through one platform.\n\nTop Blocker:\nSAM accuracy and expert acceptance\n\nNext Milestone:\nImprove SAM validation and benchmark with a Sew expert\n\nLast Verified:\n2026-09-18",
+      "text": "MER_CostingAgenticPlatform_v1.1.0\n\nDomain:\nMerchandising\n\nLifecycle:\nDevelopment\n\nProgress:\nTBD\n\nGate:\nWash/COMIT POC data-contract approval and expert-owned dataset\n\nOutcome:\nGenerate a Costing / Quotation Package for Merchandising review and customer quotation through one platform.\n\nTop Blocker:\nSAM accuracy and expert acceptance\n\nNext Milestone:\nImprove SAM validation and benchmark with a Sew expert\n\nLast Verified:\n2026-10-30",
       "x": 0,
       "y": -90,
       "width": 760,
@@ -23,7 +23,7 @@
     {
       "id": "ppj-management-attention",
       "type": "text",
-      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- SAM accuracy and expert acceptance\n- GTAS/IED integration contract\n- Technical Data dependency\n\nDecisions Needed\n- None recorded\n\nExternal Dependencies\n- TD_TechnicalKnowledgePlatform_v2.1.0 -> Pattern/BOM/Consumption -> Sew/Wash/Costing AI",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Taxonomy, metadata, annotation rules and expert-owned dataset are not frozen.\n- Proposed targets and the expert-review fallback are not approved.\n- A requirement document is not evidence of model training, accuracy or a successful POC.\n\nDecisions Needed\n- Approve Wash/COMIT POC scope, dataset ownership, proposed targets and mandatory expert-review fallback.\n\nExternal Dependencies\n- TD_TechnicalKnowledgePlatform_v2.1.0 -> Pattern/BOM/Consumption -> Sew/Wash/Costing AI",
       "x": 810,
       "y": -90,
       "width": 500,
@@ -46,16 +46,25 @@
       "x": 350,
       "y": 560,
       "width": 300,
-      "height": 1050,
+      "height": 1240,
       "label": "THIS WEEK",
       "color": "2"
+    },
+    {
+      "id": "ppj-task-5242be5d71b0",
+      "type": "text",
+      "text": "[[Tasks/MER_CostingAgenticPlatform_v1.1.0-TASK-001_Freeze-Wash-COMIT-POC-taxonomy-data-contract-and-dataset]]\n\nFreeze Wash COMIT POC taxonomy data contract and dataset\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Taxonomy, metadata, annotation guide, dataset owner, proposed targets and mandatory expert-review fallback are documented and approved.",
+      "x": 370,
+      "y": 630,
+      "width": 260,
+      "height": 155
     },
     {
       "id": "ppj-task-cd54744c9ad5",
       "type": "text",
       "text": "[[Tasks/COSTING.AGENTIC.PLATFORM.v1.1-20260824-TASK-005_Build-the-Wash-similarity-engine-with-mandatory-expert-review]]\n\nBuild the Wash similarity engine with mandatory expert review\n\nPriority: P2\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
       "x": 370,
-      "y": 630,
+      "y": 820,
       "width": 260,
       "height": 155
     },
@@ -64,7 +73,7 @@
       "type": "text",
       "text": "[[Tasks/COSTING.AGENTIC.PLATFORM.v1.1-20260824-TASK-004_Collect-Wash-cases]]\n\nCollect Wash cases\n\nPriority: P2\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
       "x": 370,
-      "y": 820,
+      "y": 1010,
       "width": 260,
       "height": 155
     },
@@ -73,7 +82,7 @@
       "type": "text",
       "text": "[[Tasks/COSTING.AGENTIC.PLATFORM.v1.1-20260824-TASK-002_Confirm-the-GTAS-IED-integration-contract]]\n\nConfirm the GTAS/IED integration contract\n\nPriority: P2\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
       "x": 370,
-      "y": 1010,
+      "y": 1200,
       "width": 260,
       "height": 155
     },
@@ -82,7 +91,7 @@
       "type": "text",
       "text": "[[Tasks/COSTING.AGENTIC.PLATFORM.v1.1-20260824-TASK-003_Connect-Technical-Data]]\n\nConnect Technical Data\n\nPriority: P2\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
       "x": 370,
-      "y": 1200,
+      "y": 1390,
       "width": 260,
       "height": 155
     },
@@ -91,7 +100,7 @@
       "type": "text",
       "text": "[[Tasks/COSTING.AGENTIC.PLATFORM.v1.1-20260824-TASK-001_Improve-SAM-validation-and-benchmark-with-a-Sew-expert]]\n\nImprove SAM validation and benchmark with a Sew expert\n\nPriority: P2\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
       "x": 370,
-      "y": 1390,
+      "y": 1580,
       "width": 260,
       "height": 155
     },
@@ -214,7 +223,7 @@
     "frontmatter": {
       "project": "MER_CostingAgenticPlatform_v1.1.0",
       "board_type": "project_executive_kanban",
-      "last_verified": "2026-09-18"
+      "last_verified": "2026-10-30"
     }
   }
 }

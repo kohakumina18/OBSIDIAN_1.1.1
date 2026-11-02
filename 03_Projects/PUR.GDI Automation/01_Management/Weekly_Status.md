@@ -2,11 +2,12 @@
 type: "weekly_status"
 project: "PUR.GDI.Automation.v1.0"
 source_project: "PUR.GDI Automation.md"
-source_event: "PPJ-WEEKLY-20260727-20260801"
-last_verified: "2026-08-01"
+source_event: "PPJ-WEEKLY-20261023-20261030"
+last_verified: "2026-10-30"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
+current_gate: "WFX GET/POST delivery and transaction-control UAT ownership"
 ---
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
@@ -90,3 +91,36 @@ Weekly updates should change only affected project memory, home, tasks, risks, d
 - Source event: PPJ-WEEKLY-20260727-20260801
 - Last verified: 2026-08-01
 - Confidence: Strong
+
+<!-- PPJ_WEEKLY_20261023_20261030_START -->
+## Weekly Status - 2026-10-30
+
+- **Canonical project:** PUR_GDIAutomation_v1.0.0
+- **Current gate:** WFX GET/POST delivery and transaction-control UAT ownership
+- **Stage change:** None confirmed
+
+### Latest verified update
+
+No new confirmed API delivery or UAT result exists as of 30 October. The project remains in API/requirements development.
+
+### Current blockers and risks
+
+- WFX delivery, authentication and operation schemas remain unconfirmed.
+- Duplicate prevention, rollback, retry, timeout, audit and transaction confirmation require controlled testing.
+
+### Decisions needed
+
+- Escalate GDI GET/POST delivery and appoint PPJ/WFX UAT owners.
+
+### Next actions
+
+- Freeze supported API operations and sandbox scenarios.
+- Assign PPJ and WFX UAT owners and execute controlled transaction tests.
+
+### Evidence basis
+
+- [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
+- Source event: PPJ-WEEKLY-20261023-20261030
+- Last verified: 2026-10-30
+- Confidence: Strong
+<!-- PPJ_WEEKLY_20261023_20261030_END -->

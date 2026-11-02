@@ -2,11 +2,12 @@
 type: "risks_issues"
 project: "PUR.GDI.Automation.v1.0"
 source_project: "PUR.GDI Automation.md"
-source_event: "PPJ-WEEKLY-20260727-20260801"
-last_verified: "2026-08-01"
+source_event: "PPJ-WEEKLY-20261023-20261030"
+last_verified: "2026-10-30"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
+current_gate: "WFX GET/POST delivery and transaction-control UAT ownership"
 ---
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
@@ -64,3 +65,12 @@ Increasingly API-oriented rather than UI/RPA-oriented: Purchasing User -> GDI Ap
 - Source event: PPJ-WEEKLY-20260727-20260801
 - Last verified: 2026-08-01
 - Confidence: Strong
+
+<!-- PPJ_WEEKLY_20261023_20261030_RISKS_START -->
+## Weekly Risk Update - 2026-10-30
+
+- WFX delivery, authentication and operation schemas remain unconfirmed.
+- Duplicate prevention, rollback, retry, timeout, audit and transaction confirmation require controlled testing.
+
+Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]] (PPJ-WEEKLY-20261023-20261030)
+<!-- PPJ_WEEKLY_20261023_20261030_RISKS_END -->

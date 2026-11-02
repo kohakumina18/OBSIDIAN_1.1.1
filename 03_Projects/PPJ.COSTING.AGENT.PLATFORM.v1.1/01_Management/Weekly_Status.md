@@ -2,11 +2,12 @@
 type: "weekly_status"
 project: "COSTING.AGENTIC.PLATFORM.v1.1"
 source_project: "PPJ.COSTING.AGENT.PLATFORM.v1.1.md"
-source_event: "PPJ-WEEKLY-20260727-20260801"
-last_verified: "2026-08-01"
+source_event: "PPJ-WEEKLY-20261023-20261030"
+last_verified: "2026-10-30"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
+current_gate: "Wash/COMIT POC data-contract approval and expert-owned dataset"
 ---
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
@@ -97,3 +98,38 @@ Weekly updates should change only affected project memory, home, tasks, risks, d
 - Source event: PPJ-WEEKLY-20261010-20261016
 - Last verified: 2026-10-16
 - Confidence: Strong
+
+<!-- PPJ_WEEKLY_20261023_20261030_START -->
+## Weekly Status - 2026-10-30
+
+- **Canonical project:** MER_CostingAgenticPlatform_v1.1.0
+- **Current gate:** Wash/COMIT POC data-contract approval and expert-owned dataset
+- **Stage change:** None confirmed
+
+### Latest verified update
+
+COMIT Wash Image Analysis Requirement v1.1 entered structured POC definition. Scope, responsibilities, data contract, expert review and proposed targets are documented. No trained model or POC result exists yet. Sew Agent has no new confirmed movement.
+
+### Current blockers and risks
+
+- Taxonomy, metadata, annotation rules and expert-owned dataset are not frozen.
+- Proposed targets and the expert-review fallback are not approved.
+- A requirement document is not evidence of model training, accuracy or a successful POC.
+
+### Decisions needed
+
+- Approve Wash/COMIT POC scope, dataset ownership, proposed targets and mandatory expert-review fallback.
+
+### Next actions
+
+- Freeze the Wash/COMIT taxonomy, metadata, annotation guide and data contract.
+- Assign the expert-owned POC dataset and acceptance review gate.
+- Keep all model targets labelled proposed until approved and tested.
+
+### Evidence basis
+
+- [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
+- Source event: PPJ-WEEKLY-20261023-20261030
+- Last verified: 2026-10-30
+- Confidence: Strong
+<!-- PPJ_WEEKLY_20261023_20261030_END -->

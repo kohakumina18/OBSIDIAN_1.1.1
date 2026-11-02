@@ -2,8 +2,8 @@
 type: "weekly_status"
 project: "FIN.AI.FINANCE.MANAGEMENT.v1.2"
 source_project: "FIN.AI.FINANCE.MANAGEMENT.v1.1.md"
-source_event: "PPJ-EXECUTIVE-CANVAS-SYNC-20260824_144054"
-last_verified: "2026-08-24"
+source_event: "PPJ-WEEKLY-20261023-20261030"
+last_verified: "2026-10-30"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
@@ -12,7 +12,7 @@ delivery_stream: "INTERNAL DEVELOPMENT"
 delivery_stage: "DESIGN"
 lifecycle: "Design"
 status: "Active"
-current_gate: "WS2 Rule Catalogue and Databricks access; then WS3 source discovery"
+current_gate: "WS4 v0.2 evidence review and WS3 input closure"
 stage_entered_date: "2026-08-24"
 ---
 
@@ -25,9 +25,9 @@ stage_entered_date: "2026-08-24"
 | Delivery Stage | DESIGN |
 | Detailed Lifecycle | Design |
 | Status | Active |
-| Current Gate | WS2 Rule Catalogue and Databricks access; then WS3 source discovery |
+| Current Gate | WS4 v0.2 evidence review and WS3 input closure |
 | Stage Entered | 2026-08-24 |
-| Last Verified | 2026-08-24 |
+| Last Verified | 2026-10-30 |
 <!-- PPJ_EXECUTIVE_DELIVERY_STAGE_END -->
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
@@ -119,3 +119,41 @@ Weekly updates should change only affected project memory, home, tasks, risks, d
 - Source event: PPJ-WEEKLY-20261010-20261016
 - Last verified: 2026-10-16
 - Confidence: Strong
+
+<!-- PPJ_WEEKLY_20261023_20261030_START -->
+## Weekly Status - 2026-10-30
+
+- **Canonical project:** FIN_FinanceManagement_v1.2.0
+- **Current gate:** WS4 v0.2 evidence review and WS3 input closure
+- **Stage change:** None confirmed
+
+### Latest verified update
+
+WS4 traced one Knit golden case, completed transaction-stage classification and prepared a v0.2 rule-change proposal. The evidence confirms 1-to-many and line-level Det-Nhuom mapping requirements, but does not prove production accuracy. WS3 received two HR/Payroll responses; broader Accounting and Planning/Production inputs remain incomplete, and HR-WFX/GTAS mappings and month-finalization practices are inconsistent. WS1, WS2 and WS5 have no new confirmed movement.
+
+### Current blockers and risks
+
+- WS4 evidence is limited to one golden-case package and a partial historical window.
+- Line-level lineage, metric definitions, history completeness and accounting interpretation remain unresolved.
+- WS3 survey closure is overdue; HR-WFX/GTAS mappings and month-finalization practices are inconsistent.
+- WS1 UAT ownership, WS2 BC-04 policies/source gaps and the WS3/WS5 boundary remain open.
+
+### Decisions needed
+
+- Approve WS4 line-level lineage, historical-window controls, provisional mapping review and golden-case method.
+- Mandate WS3 closure and confirm the WS3/WS5 boundary.
+- Approve the four open BC-04 policies and source-remediation plan.
+
+### Next actions
+
+- Review the WS4 v0.2 evidence model, provisional mappings, lineage method and priority accounting questions.
+- Collect remaining Accounting and Planning/Production WS3 inputs and consolidate the data/rule/gap register.
+- Define supported WS1 questions and pilot gate; preserve WS2 source-remediation and BC-04 policy actions.
+
+### Evidence basis
+
+- [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
+- Source event: PPJ-WEEKLY-20261023-20261030
+- Last verified: 2026-10-30
+- Confidence: Strong
+<!-- PPJ_WEEKLY_20261023_20261030_END -->

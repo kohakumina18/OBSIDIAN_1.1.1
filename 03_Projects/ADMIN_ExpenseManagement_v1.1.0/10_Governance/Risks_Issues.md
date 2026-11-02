@@ -2,11 +2,12 @@
 type: "risks_issues"
 project: "ADMIN_ExpenseManagement_v1.1.0"
 source_project: "ADMIN_ExpenseManagement_v1.1.0.md"
-source_event: "PPJ-PROJECT-REGISTRATION-ADMIN_ExpenseManagement_v1.1.0-20260918"
-last_verified: "2026-09-18"
+source_event: "PPJ-WEEKLY-20261023-20261030"
+last_verified: "2026-10-30"
 confidence: "Needs Confirmation"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
+current_gate: "Formal Business Travel release decision"
 ---
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
@@ -63,3 +64,12 @@ Evolved well beyond the initial Travel Request application. Modules: TravelReque
 - Source event: PPJ-PROJECT-REGISTRATION-ADMIN_ExpenseManagement_v1.1.0-20260918
 - Last verified: 2026-09-18
 - Confidence: Needs Confirmation
+
+<!-- PPJ_WEEKLY_20261023_20261030_RISKS_START -->
+## Weekly Risk Update - 2026-10-30
+
+- Accounting mappings and authorization/access testing are not confirmed.
+- Migration, training, eOffice budget and release ownership remain unresolved.
+
+Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]] (PPJ-WEEKLY-20261023-20261030)
+<!-- PPJ_WEEKLY_20261023_20261030_RISKS_END -->

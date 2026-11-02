@@ -2,11 +2,12 @@
 type: "risks_issues"
 project: "COSTING.AGENTIC.PLATFORM.v1.1"
 source_project: "PPJ.COSTING.AGENT.PLATFORM.v1.1.md"
-source_event: "PPJ-WEEKLY-20260727-20260801"
-last_verified: "2026-08-01"
+source_event: "PPJ-WEEKLY-20261023-20261030"
+last_verified: "2026-10-30"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
+current_gate: "Wash/COMIT POC data-contract approval and expert-owned dataset"
 ---
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
@@ -65,3 +66,13 @@ One platform, not dozens of projects: SewAgent, WashAgent, BOMAgent, Consumption
 - Source event: PPJ-WEEKLY-20260727-20260801
 - Last verified: 2026-08-01
 - Confidence: Strong
+
+<!-- PPJ_WEEKLY_20261023_20261030_RISKS_START -->
+## Weekly Risk Update - 2026-10-30
+
+- Taxonomy, metadata, annotation rules and expert-owned dataset are not frozen.
+- Proposed targets and the expert-review fallback are not approved.
+- A requirement document is not evidence of model training, accuracy or a successful POC.
+
+Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]] (PPJ-WEEKLY-20261023-20261030)
+<!-- PPJ_WEEKLY_20261023_20261030_RISKS_END -->

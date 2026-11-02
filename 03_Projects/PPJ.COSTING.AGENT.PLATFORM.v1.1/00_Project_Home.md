@@ -2,13 +2,13 @@
 type: "project_home"
 project: "MER_CostingAgenticPlatform_v1.1.0"
 source_project: "PPJ.COSTING.AGENT.PLATFORM.v1.1.md"
-source_event: "PPJ-PORTFOLIO-SNAPSHOT-20260918"
-last_verified: "2026-09-18"
+source_event: "PPJ-WEEKLY-20261023-20261030"
+last_verified: "2026-10-30"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
 lifecycle: "Active Development"
-current_gate: "Sew Agent fixes and Wash Agent development"
+current_gate: "Wash/COMIT POC data-contract approval and expert-owned dataset"
 priority: "P2"
 delivery_stage: "DEVELOPMENT"
 status: "Active"
@@ -29,11 +29,11 @@ delivery_stream: "INTERNAL DEVELOPMENT"
 | Lifecycle | Active Development |
 | Status | Active |
 | Progress | TBD |
-| Current Gate | Sew Agent fixes and Wash Agent development |
+| Current Gate | Wash/COMIT POC data-contract approval and expert-owned dataset |
 | Priority | P2 |
 | Business Owner | Needs Confirmation |
 | Registration | Registered |
-| Last Verified | 2026-09-18 |
+| Last Verified | 2026-10-30 |
 | Confidence | Strong |
 
 ## Executive Summary
@@ -46,17 +46,17 @@ Garment Requirement -> Operation Breakdown -> Operation Normalization -> Machine
 
 ## Latest Update
 
-One platform, not dozens of projects: SewAgent, WashAgent, BOMAgent, ConsumptionAgent, SimilarStyleAgent and CostingOrchestrator. Current focus: fixing Sew Agent issues, SAM accuracy, machine mapping, operation normalization, historical similar-style retrieval and GTAS/IED integration. Wash (especially Denim): the AI proposes, the Wash expert approves.
+COMIT Wash Image Analysis Requirement v1.1 entered structured POC definition. Scope, responsibilities, data contract, expert review and proposed targets are documented. No trained model or POC result exists yet. Sew Agent has no new confirmed movement.
 
 ## Risks / Blockers
 
-- SAM accuracy and expert acceptance
-- GTAS/IED integration contract
-- Technical Data dependency
+- Taxonomy, metadata, annotation rules and expert-owned dataset are not frozen.
+- Proposed targets and the expert-review fallback are not approved.
+- A requirement document is not evidence of model training, accuracy or a successful POC.
 
 ## Decisions Needed
 
-- No current portfolio decision recorded.
+- Approve Wash/COMIT POC scope, dataset ownership, proposed targets and mandatory expert-review fallback.
 
 ## Dependencies
 
@@ -64,11 +64,9 @@ One platform, not dozens of projects: SewAgent, WashAgent, BOMAgent, Consumption
 
 ## Next Actions
 
-- Improve SAM validation and benchmark with a Sew expert
-- Confirm the GTAS/IED integration contract
-- Connect Technical Data
-- Collect Wash cases
-- Build the Wash similarity engine with mandatory expert review
+- Freeze the Wash/COMIT taxonomy, metadata, annotation guide and data contract.
+- Assign the expert-owned POC dataset and acceptance review gate.
+- Keep all model targets labelled proposed until approved and tested.
 
 ## Do Not Drift Rules
 
@@ -85,10 +83,11 @@ One platform, not dozens of projects: SewAgent, WashAgent, BOMAgent, Consumption
 
 ## Evidence and Confidence
 
-- Date: 2026-09-18
-- Source Event: PPJ-PORTFOLIO-SNAPSHOT-20260918
-- Source: User-approved portfolio current-state snapshot
+- Date: 2026-10-30
+- Source Event: PPJ-WEEKLY-20261023-20261030
+- Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
 - Confidence: Strong
+
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_END -->
 
 # COSTING.AGENTIC.PLATFORM.v1.1
@@ -248,3 +247,38 @@ Memory Index:
 
 Command Center:
 [[../PROJECT_COMMAND_CENTER]]
+
+<!-- PPJ_WEEKLY_20261023_20261030_START -->
+## Weekly Synchronization Event: PPJ-WEEKLY-20261023-20261030
+
+### Verified movement
+
+COMIT Wash Image Analysis Requirement v1.1 entered structured POC definition. Scope, responsibilities, data contract, expert review and proposed targets are documented. No trained model or POC result exists yet. Sew Agent has no new confirmed movement.
+
+### Current gate
+
+Wash/COMIT POC data-contract approval and expert-owned dataset
+
+### Risks / blockers
+
+- Taxonomy, metadata, annotation rules and expert-owned dataset are not frozen.
+- Proposed targets and the expert-review fallback are not approved.
+- A requirement document is not evidence of model training, accuracy or a successful POC.
+
+### Decisions required
+
+- Approve Wash/COMIT POC scope, dataset ownership, proposed targets and mandatory expert-review fallback.
+
+### Next actions
+
+- Freeze the Wash/COMIT taxonomy, metadata, annotation guide and data contract.
+- Assign the expert-owned POC dataset and acceptance review gate.
+- Keep all model targets labelled proposed until approved and tested.
+
+### Traceability
+
+- Report: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
+- Decision gate: [[07_Decision_Log/DEC-WEEKLY-20261030-PORTFOLIO-GATES]]
+- Last verified: 2026-10-30
+- Confidence: Strong
+<!-- PPJ_WEEKLY_20261023_20261030_END -->

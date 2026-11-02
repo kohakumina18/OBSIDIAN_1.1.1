@@ -1,4 +1,4 @@
-﻿# Decision Log
+# Decision Log
 
 | Decision ID | Decision | Date | Owner | Impact | Link |
 |---|---|---|---|---|---|
@@ -19,5 +19,4 @@
 | DEC-WEEKLY-20260801-STRATOVA | Stratova Funding and Commercial Direction | 2026-08-01 | Leadership | PPJxStratova.AI | [[DEC-WEEKLY-20260801-STRATOVA]] |
 | DEC-WEEKLY-20260801-QSEE | QSee Hold and Reactivation Criteria | 2026-08-01 | QC / TQM | PPJxQSee.AI | [[DEC-WEEKLY-20260801-QSEE]] |
 | DEC-20260925-EXPENSE-INVOICE-ONE-PROJECT | Expense invoices are one project | 2026-09-25 | Owner | LOG_ExpenseInvoiceProcessing_v1.2.2 | [[DEC-20260925-EXPENSE-INVOICE-ONE-PROJECT]] |
-
-
+| DEC-WEEKLY-20261030-PORTFOLIO-GATES | Weekly portfolio management gates | 2026-10-30 | Needs Confirmation | Seven registered projects plus discovery governance | [[DEC-WEEKLY-20261030-PORTFOLIO-GATES]] |

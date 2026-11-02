@@ -2,13 +2,13 @@
 type: "project_home"
 project: "LOG_ExpenseInvoiceProcessing_v1.2.2"
 source_project: "PPJ. Expense-Invoices.v1.1.md"
-source_event: "PPJ-EXECUTIVE-CANVAS-SYNC-20260928_235728"
-last_verified: "2026-09-28"
+source_event: "PPJ-WEEKLY-20261023-20261030"
+last_verified: "2026-10-30"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
 lifecycle: "Regional Rollout / UAT"
-current_gate: "Regional rollout, tax rules and invoice validation"
+current_gate: "Defect ownership, regression and production exit criteria"
 priority: "P4"
 delivery_stage: "GO-LIVE / PRODUCTION / SUPPORT"
 status: "Active"
@@ -61,18 +61,17 @@ Expense-invoice intake, mapping, validation, tax/regional rules and exception ha
 
 ## Latest Update
 
-Current Logistics / Import-Export expense-invoice project (Active Regional Rollout / UAT). Focus: regional rollout, tax rules, invoice validation, user workflow and exception management. Replaces the ambiguity created by older EXIM expense-invoice names. Prior guidance (departments/factories except Export; EXIM-first historical) is preserved in project history.
+No confirmed defect fix exists as of 30 October. Active-use and defect-remediation evidence still points to VAT, attachment, regional-rule and duplicate/error risks.
 
 ## Risks / Blockers
 
-- Mapping completeness
-- Real-data defects
-- Regional / tax-rule variation
-- Go-live support readiness
+- VAT, attachment and regional rules remain defect-prone.
+- Duplicate/error handling and regression evidence are incomplete.
+- Hotfix and production support ownership are not assigned.
 
 ## Decisions Needed
 
-- Confirm whether the earlier Export exclusion still applies (the mapping of PPJ.ExpenseInvoices.v1.1 and LOG.EXPENSE.INVOICES.V1.2 to LOG_ExpenseInvoiceProcessing_v1.2.2 was confirmed by the owner on 2026-09-25)
+- Assign Expense Invoice defect ownership and explicit exit criteria.
 
 ## Dependencies
 
@@ -80,10 +79,9 @@ Current Logistics / Import-Export expense-invoice project (Active Regional Rollo
 
 ## Next Actions
 
-- Close remaining defects and retest
-- Confirm mapping and frequent-supplier readiness
-- Complete production-readiness review and go-live decision
-- Confirm regional and tax rules for each rollout region
+- Assign the hotfix owner and freeze the regression pack.
+- Run regression against VAT, attachments, regional rules and duplicate/error scenarios.
+- Record exit criteria and the production-support handoff.
 
 ## Do Not Drift Rules
 
@@ -100,10 +98,11 @@ Current Logistics / Import-Export expense-invoice project (Active Regional Rollo
 
 ## Evidence and Confidence
 
-- Date: 2026-09-18
-- Source Event: PPJ-PORTFOLIO-SNAPSHOT-20260918
-- Source: User-approved portfolio current-state snapshot
+- Date: 2026-10-30
+- Source Event: PPJ-WEEKLY-20261023-20261030
+- Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
 - Confidence: Strong
+
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_END -->
 
 # PPJ.ExpenseInvoices.v1.1
@@ -261,3 +260,38 @@ Memory Index:
 
 Command Center:
 [[../PROJECT_COMMAND_CENTER]]
+
+<!-- PPJ_WEEKLY_20261023_20261030_START -->
+## Weekly Synchronization Event: PPJ-WEEKLY-20261023-20261030
+
+### Verified movement
+
+No confirmed defect fix exists as of 30 October. Active-use and defect-remediation evidence still points to VAT, attachment, regional-rule and duplicate/error risks.
+
+### Current gate
+
+Defect ownership, regression and production exit criteria
+
+### Risks / blockers
+
+- VAT, attachment and regional rules remain defect-prone.
+- Duplicate/error handling and regression evidence are incomplete.
+- Hotfix and production support ownership are not assigned.
+
+### Decisions required
+
+- Assign Expense Invoice defect ownership and explicit exit criteria.
+
+### Next actions
+
+- Assign the hotfix owner and freeze the regression pack.
+- Run regression against VAT, attachments, regional rules and duplicate/error scenarios.
+- Record exit criteria and the production-support handoff.
+
+### Traceability
+
+- Report: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
+- Decision gate: [[07_Decision_Log/DEC-WEEKLY-20261030-PORTFOLIO-GATES]]
+- Last verified: 2026-10-30
+- Confidence: Strong
+<!-- PPJ_WEEKLY_20261023_20261030_END -->

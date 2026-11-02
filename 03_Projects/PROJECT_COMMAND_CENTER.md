@@ -11,7 +11,7 @@ last_verified: 2026-09-18
 |---|---|---|---|---|---|---|
 | ACC_GRNSupplierInvoiceBot_v2.3.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production Support | Support | Operational stability and exceptions |  |
 | ACC_InventoryReport_v1.0.0 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed / no active follow-up |  |
-| ADMIN_ExpenseManagement_v1.1.0 | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Active / Requirement Refinement / UAT Preparation | Active | Multi-traveler request model, end-to-end lifecycle and UAT preparation |  |
+| ADMIN_ExpenseManagement_v1.1.0 | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Active / Requirement Refinement / UAT Preparation | Active | Formal Business Travel release decision | 2026-10-30 |
 | AI.Automation.Workshop.202606 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed event |  |
 | AI.Automation.Workshop.Analysis.202606 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed analysis |  |
 | AI_ApplicationHub_v2.1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Internal Production Platform | Active | Platform operations |  |
@@ -20,23 +20,23 @@ last_verified: 2026-09-18
 | EXIM.ExpenseInvoices.Automation.v1.1 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.2 |  |
 | EXT_AcademicCollaboration_v1.1.0 | EXTERNAL DEVELOPMENT | DESIGN | Active / Problem Framing | External Collaboration | Academic problem package |  |
 | FAB_FabricDatamart_v2.2.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Support | Support | Operational support |  |
-| FIN_FinanceManagement_v1.2.0 | INTERNAL DEVELOPMENT | DESIGN | Strategic Active | Active | WS2 OC / Cost Control and WS3 Factory Performance | 2026-09-25 |
+| FIN_FinanceManagement_v1.2.0 | INTERNAL DEVELOPMENT | DESIGN | Strategic Active | Active | WS4 v0.2 evidence review and WS3 input closure | 2026-10-30 |
 | FIN_InvoiceDownloader_v1.2.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Operational reliability |  |
 | HR_EmployeeDataPlatform_v1.1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production / Expansion | Active | Production rollout and data-quality monitoring |  |
-| LOG_ExpenseInvoiceProcessing_v1.2.2 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Regional Rollout / UAT | Active | Regional rollout, tax rules and invoice validation | 2026-09-28 |
-| MER_CostingAgenticPlatform_v1.1.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development | Active | Sew Agent fixes and Wash Agent development |  |
+| LOG_ExpenseInvoiceProcessing_v1.2.2 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Regional Rollout / UAT | Active | Defect ownership, regression and production exit criteria | 2026-10-30 |
+| MER_CostingAgenticPlatform_v1.1.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development | Active | Wash/COMIT POC data-contract approval and expert-owned dataset | 2026-10-30 |
 | MER_InvoiceDataRecheck_v1.1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production / Support | Active | Multi-customer invoice, cost and data checking | 2026-09-24 |
-| MER_MarketIntelligence_v1.1.0 | INTERNAL DEVELOPMENT | ANALYSIS | Active Intelligence | Active | Market and customer intelligence delivery |  |
+| MER_MarketIntelligence_v1.1.0 | INTERNAL DEVELOPMENT | ANALYSIS | Active Intelligence | Active | 5 November Chino MVP demonstration readiness | 2026-10-30 |
 | MER_POCommit_v1.1.0 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed |  |
 | PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Maintenance | Support | IT helpdesk maintenance |  |
 | PPJxNUNOX.ScanTrial | EXTERNAL DEVELOPMENT | ANALYSIS | Partnership / Digital Library Evaluation | External Collaboration | Working-session outcome unconfirmed |  |
 | PPJxStratova.AI | EXTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Historical record; current Stratova PoC negotiation tracked as DISCOVERY_PatternGenerationPoC |  |
 | PROD_HangingLineIoT_v1.0.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Development | Active | Source and KPI reconciliation |  |
 | PUR_AdhocIndentSouth_v1.0.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Maintenance | Support | Operational maintenance |  |
-| PUR_GDIAutomation_v1.0.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development / WFX API Integration | Active | WFX API integration and GDI data-entry workflow |  |
+| PUR_GDIAutomation_v1.0.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development / WFX API Integration | Active | WFX GET/POST delivery and transaction-control UAT ownership | 2026-10-30 |
 | PUR_HMLabelProcessing_v1.0.0 | INTERNAL DEVELOPMENT | ANALYSIS | On Hold | On Hold | Business priority paused |  |
 | PUR_InventoryReport_v2.1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Post-enhancement support |  |
-| PUR_MaterialAllocation_v1.1.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Development | Active | Transaction reliability and exception control | 2026-09-28 |
+| PUR_MaterialAllocation_v1.1.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Development | Active | Confirm API implementation and controlled GET/POST transaction UAT | 2026-10-30 |
 | QC_DefectDetection_v1.0.0 | EXTERNAL DEVELOPMENT | ANALYSIS | On Hold | External Collaboration | Reactivation decision |  |
 | QC_ThreadTraceability_v1.0.0 | EXTERNAL DEVELOPMENT | ANALYSIS | Pre-PoC / Business Case | External Collaboration | Business/customer case decision |  |
 | SCP_SourcingChatbot_v2.3.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Production monitoring, data quality and retrieval quality |  |
@@ -101,19 +101,19 @@ last_verified: 2026-09-18
 
 | Project | Domain | Lifecycle | Priority | Gate | Outcome |
 | --- | --- | --- | --- | --- | --- |
-| FIN_FinanceManagement_v1.2.0 | Finance / Accounting | Strategic Active | P1 | WS2 OC / Cost Control and WS3 Factory Performance | Centralized Finance Control Platform for completeness, correct OC/period, actual versus plan, missing cost, profitability, drill-down, factory performance and exception ownership. |
-| MER_CostingAgenticPlatform_v1.1.0 | Merchandising | Active Development | P2 | Sew Agent fixes and Wash Agent development | Generate a Costing / Quotation Package for Merchandising review and customer quotation through one platform. |
-| PUR_GDIAutomation_v1.0.0 | Sourcing / Purchasing | Active Development / WFX API Integration | P3 | WFX API integration and GDI data-entry workflow | Give Purchasing end-to-end package-dispatch tracking through GDI and provide API capability for automated/assisted GDI data entry while preserving WFX transaction control, validation, confirmation and audit. |
+| FIN_FinanceManagement_v1.2.0 | Finance / Accounting | Strategic Active | P1 | WS4 v0.2 evidence review and WS3 input closure | Centralized Finance Control Platform for completeness, correct OC/period, actual versus plan, missing cost, profitability, drill-down, factory performance and exception ownership. |
+| MER_CostingAgenticPlatform_v1.1.0 | Merchandising | Active Development | P2 | Wash/COMIT POC data-contract approval and expert-owned dataset | Generate a Costing / Quotation Package for Merchandising review and customer quotation through one platform. |
+| PUR_GDIAutomation_v1.0.0 | Sourcing / Purchasing | Active Development / WFX API Integration | P3 | WFX GET/POST delivery and transaction-control UAT ownership | Give Purchasing end-to-end package-dispatch tracking through GDI and provide API capability for automated/assisted GDI data entry while preserving WFX transaction control, validation, confirmation and audit. |
 | TD_TechnicalKnowledgePlatform_v2.1.0 | Fabric / Textiles Technique | Sync Validation & Stabilization | P5 | Sync validation and canonical technical model | Technical Data Backbone for Pattern, BOM, Consumption, Construction, documents and historical records; upstream source for Costing, Sew Agent, BOM, Consumption, Pattern, Technical Search and Similar Style. |
-| ADMIN_ExpenseManagement_v1.1.0 | Administration | Active / Requirement Refinement / UAT Preparation | P6 | Multi-traveler request model, end-to-end lifecycle and UAT preparation | Standardize Administration business-travel and expense-management workflows: Request -> Approval -> Business Trip -> Advance -> Expense -> Settlement. |
+| ADMIN_ExpenseManagement_v1.1.0 | Administration | Active / Requirement Refinement / UAT Preparation | P6 | Formal Business Travel release decision | Standardize Administration business-travel and expense-management workflows: Request -> Approval -> Business Trip -> Advance -> Expense -> Settlement. |
 
 ## Active Delivery / Uat
 
 | Project | Domain | Lifecycle | Priority | Gate | Outcome |
 | --- | --- | --- | --- | --- | --- |
-| LOG_ExpenseInvoiceProcessing_v1.2.2 | Logistics / EXIM | Regional Rollout / UAT | P4 | Regional rollout, tax rules and invoice validation | Process Logistics / Import-Export expense invoices with regional and tax rules, invoice validation, user workflow and exception management. |
-| PUR_MaterialAllocation_v1.1.0 | Sourcing / Purchasing | Validation / Stabilization | P7 | Transaction reliability and exception control | Validate controlled reallocation of surplus material across eligible OCs: Material Requirement -> Availability -> Allocation -> Validation -> WFX Transaction. |
-| MER_MarketIntelligence_v1.1.0 | Merchandising | Active Intelligence | Medium | Market and customer intelligence delivery | Turn market, customer, competitor, trend and demand signals into business intelligence for Merchandising. |
+| LOG_ExpenseInvoiceProcessing_v1.2.2 | Logistics / EXIM | Regional Rollout / UAT | P4 | Defect ownership, regression and production exit criteria | Process Logistics / Import-Export expense invoices with regional and tax rules, invoice validation, user workflow and exception management. |
+| PUR_MaterialAllocation_v1.1.0 | Sourcing / Purchasing | Validation / Stabilization | P7 | Confirm API implementation and controlled GET/POST transaction UAT | Validate controlled reallocation of surplus material across eligible OCs: Material Requirement -> Availability -> Allocation -> Validation -> WFX Transaction. |
+| MER_MarketIntelligence_v1.1.0 | Merchandising | Active Intelligence | Medium | 5 November Chino MVP demonstration readiness | Turn market, customer, competitor, trend and demand signals into business intelligence for Merchandising. |
 | MER_InvoiceDataRecheck_v1.1.0 | Merchandising | Active | Medium | Multi-customer invoice, cost and data checking | Cross-check costing data, commercial cost, invoice data and customer rules, route exceptions to user review. |
 | WASH_SamplingManagement_v1.1.0 | Production + Wash | Analysis / Product Design | Medium | Sampling workflow and product design | Create a PPJ Group Portal workflow for Wash sample requests, planning, wash samples, results and approval. |
 | PROD_HangingLineIoT_v1.0.0 | Production + Wash | Development | Medium | Source and KPI reconciliation | Provide real-time production-line visibility: Production Line -> IoT / Machine Data -> WISER / INA -> Production Metrics -> Dashboard. |
@@ -187,3 +187,44 @@ last_verified: 2026-09-18
 
 - Governance exceptions and open naming/mapping decisions: see the Governance Exceptions section of [[03_Projects/_Registry/PPJ_PORTFOLIO_CURRENT_SNAPSHOT]].
 - Discovery / vendor assessments are tracked in [[03_Projects/_Registry/PPJ_DISCOVERY_REGISTER]] and are not registered projects.
+
+<!-- PPJ_PROJECT_WORKSPACES_START -->
+## Project Workspaces
+
+| Project | Lifecycle | Workspace | Executive Board | Open Tasks | Blocked | Last Sync |
+| --- | --- | --- | --- | ---: | ---: | --- |
+| [[ACC.GRN-SupplierInvoiceBot.v2.3|ACC_GRNSupplierInvoiceBot_v2.3.0]] | [[PRODUCTION / SUPPORT]] | [[ACC.GRN-SupplierInvoiceBot.v2.3/00_Project_Home|Workspace]] | [[ACC.GRN-SupplierInvoiceBot.v2.3/Project_Executive_Board|Board]] | 2 | 0 | 2026-11-02 |
+| [[ACC.Inventory.Report.v1.0|ACC_InventoryReport_v1.0.0]] | Backlog / Pending Resource | [[ACC.Inventory.Report.v1.0/00_Project_Home|Workspace]] | [[ACC.Inventory.Report.v1.0/Project_Executive_Board|Board]] | 0 | 0 | 2026-11-02 |
+| [[ADMIN_ExpenseManagement_v1.1.0|ADMIN_ExpenseManagement_v1.1.0]] | Active / Requirement Refinement / UAT Preparation | [[ADMIN_ExpenseManagement_v1.1.0/00_Project_Home|Workspace]] | [[ADMIN_ExpenseManagement_v1.1.0/Project_Executive_Board|Board]] | 6 | 0 | 2026-11-02 |
+| [[PPJ.AI.Hub.v2.1|AI_ApplicationHub_v2.1.0]] | Platform / Internal Hub | [[PPJ.AI.Hub.v2.1/00_Project_Home|Workspace]] | [[PPJ.AI.Hub.v2.1/Project_Executive_Board|Board]] | 2 | 0 | 2026-11-02 |
+| [[PPJ.PERRI.Chatbot|AI_PERRIPlatform_v3.2.0]] | Production | [[PPJ.PERRI.Chatbot/00_Project_Home|Workspace]] | [[PPJ.PERRI.Chatbot/Project_Executive_Board|Board]] | 2 | 0 | 2026-11-02 |
+| [[CPD.Datamart.v1.1|CPD_VisualSampleDatamart_v1.1.0]] | Maintenance | [[CPD.Datamart.v1.1/00_Project_Home|Workspace]] | [[CPD.Datamart.v1.1/Project_Executive_Board|Board]] | 1 | 0 | 2026-11-02 |
+| [[EXIM.ExpenseInvoices.Automation.v1.1|EXIM.ExpenseInvoices.Automation.v1.1]] | DONE / CLOSED | [[EXIM.ExpenseInvoices.Automation.v1.1/00_Project_Home|Workspace]] | [[EXIM.ExpenseInvoices.Automation.v1.1/Project_Executive_Board|Board]] | 0 | 0 | 2026-11-02 |
+| [[PPJ.UIT.ACADEMIC.COLLABORATION.v1.1|EXT_AcademicCollaboration_v1.1.0]] | Partnership Follow-up / Confirmed Direction | [[PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/00_Project_Home|Workspace]] | [[PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/Project_Executive_Board|Board]] | 2 | 0 | 2026-11-02 |
+| [[FD.Datamart.v2.2|FAB_FabricDatamart_v2.2.0]] | Maintenance | [[FD.Datamart.v2.2/00_Project_Home|Workspace]] | [[FD.Datamart.v2.2/Project_Executive_Board|Board]] | 2 | 0 | 2026-11-02 |
+| [[FIN.AI.FINANCE.MANAGEMENT.v1.1|FIN_FinanceManagement_v1.2.0]] | Analysis / Design | [[FIN.AI.FINANCE.MANAGEMENT.v1.1/00_Project_Home|Workspace]] | [[FIN.AI.FINANCE.MANAGEMENT.v1.1/Project_Executive_Board|Board]] | 6 | 0 | 2026-11-02 |
+| [[PPJ.Invoice Downloader.v1.2|FIN_InvoiceDownloader_v1.2.0]] | Production / Business Adoption | [[PPJ.Invoice Downloader.v1.2/00_Project_Home|Workspace]] | [[PPJ.Invoice Downloader.v1.2/Project_Executive_Board|Board]] | 3 | 0 | 2026-11-02 |
+| [[HR.SS&PFD.v1.1|HR_EmployeeDataPlatform_v1.1.0]] | Production Rollout / Stabilization | [[HR.SS&PFD.v1.1/00_Project_Home|Workspace]] | [[HR.SS&PFD.v1.1/Project_Executive_Board|Board]] | 3 | 0 | 2026-11-02 |
+| [[PPJ. Expense-Invoices.v1.1|LOG_ExpenseInvoiceProcessing_v1.2.2]] | UAT / Stabilization | [[PPJ. Expense-Invoices.v1.1/00_Project_Home|Workspace]] | [[PPJ. Expense-Invoices.v1.1/Project_Executive_Board|Board]] | 5 | 0 | 2026-11-02 |
+| [[PPJ.COSTING.AGENT.PLATFORM.v1.1|MER_CostingAgenticPlatform_v1.1.0]] | Development | [[PPJ.COSTING.AGENT.PLATFORM.v1.1/00_Project_Home|Workspace]] | [[PPJ.COSTING.AGENT.PLATFORM.v1.1/Project_Executive_Board|Board]] | 6 | 0 | 2026-11-02 |
+| [[MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1|MER_InvoiceDataRecheck_v1.1.0]] | STABILIZE | [[MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/00_Project_Home|Workspace]] | [[MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1/Project_Executive_Board|Board]] | 2 | 0 | 2026-11-02 |
+| [[E-commerce Market Intelligence v.2.3|MER_MarketIntelligence_v1.1.0]] | Active Intelligence | [[E-commerce Market Intelligence v.2.3/00_Project_Home|Workspace]] | [[E-commerce Market Intelligence v.2.3/Project_Executive_Board|Board]] | 3 | 0 | 2026-11-02 |
+| [[MER.PO-Commit|MER_POCommit_v1.1.0]] | DONE / CLOSED | [[MER.PO-Commit/00_Project_Home|Workspace]] | [[MER.PO-Commit/Project_Executive_Board|Board]] | 0 | 0 | 2026-11-02 |
+| [[PPJ.GLPI-Helpdesk-AI Chatbot|PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0]] | Maintenance | [[PPJ.GLPI-Helpdesk-AI Chatbot/00_Project_Home|Workspace]] | [[PPJ.GLPI-Helpdesk-AI Chatbot/Project_Executive_Board|Board]] | 1 | 0 | 2026-11-02 |
+| [[PPJxNUNOX|PPJxNUNOX.ScanTrial]] | Hardware Trial / Feasibility Assessment | [[PPJxNUNOX/00_Project_Home|Workspace]] | [[PPJxNUNOX/Project_Executive_Board|Board]] | 2 | 0 | 2026-11-02 |
+| [[PPJxStratova AI|PPJxStratova.AI]] | Closed | [[PPJxStratova AI/00_Project_Home|Workspace]] | [[PPJxStratova AI/Project_Executive_Board|Board]] | 0 | 0 | 2026-11-02 |
+| [[PROD.IOT.CHuyenTreo_1|PROD_HangingLineIoT_v1.0.0]] | DEVELOPMENT | [[PROD.IOT.CHuyenTreo_1/00_Project_Home|Workspace]] | [[PROD.IOT.CHuyenTreo_1/Project_Executive_Board|Board]] | 3 | 0 | 2026-11-02 |
+| [[PUR.Adhoc Indent mien Nam|PUR_AdhocIndentSouth_v1.0.0]] | Maintenance | [[PUR.Adhoc Indent mien Nam/00_Project_Home|Workspace]] | [[PUR.Adhoc Indent mien Nam/Project_Executive_Board|Board]] | 1 | 0 | 2026-11-02 |
+| [[PUR.GDI Automation|PUR_GDIAutomation_v1.0.0]] | Analysis / Solution Redesign | [[PUR.GDI Automation/00_Project_Home|Workspace]] | [[PUR.GDI Automation/Project_Executive_Board|Board]] | 5 | 0 | 2026-11-02 |
+| [[PUR.H&M Label-O Processing|PUR_HMLabelProcessing_v1.0.0]] | [[PENDING]] | [[PUR.H&M Label-O Processing/00_Project_Home|Workspace]] | [[PUR.H&M Label-O Processing/Project_Executive_Board|Board]] | 1 | 1 | 2026-11-02 |
+| [[PUR.Inventory Report|PUR_InventoryReport_v2.1.0]] | Production / Support | [[PUR.Inventory Report/00_Project_Home|Workspace]] | [[PUR.Inventory Report/Project_Executive_Board|Board]] | 2 | 0 | 2026-11-02 |
+| [[PUR.Material.Allocation.v1.2|PUR_MaterialAllocation_v1.1.0]] | Development | [[PUR.Material.Allocation.v1.2/00_Project_Home|Workspace]] | [[PUR.Material.Allocation.v1.2/Project_Executive_Board|Board]] | 4 | 0 | 2026-11-02 |
+| [[PPJxQSee.ai|QC_DefectDetection_v1.0.0]] | On Hold / Pending Decision | [[PPJxQSee.ai/00_Project_Home|Workspace]] | [[PPJxQSee.ai/Project_Executive_Board|Board]] | 3 | 3 | 2026-11-02 |
+| [[PPJ XPrimo1D RFID Thread|QC_ThreadTraceability_v1.0.0]] | Pre-contact / Internal Alignment | [[PPJ XPrimo1D RFID Thread/00_Project_Home|Workspace]] | [[PPJ XPrimo1D RFID Thread/Project_Executive_Board|Board]] | 3 | 0 | 2026-11-02 |
+| [[SCP.SOURCING.CHATBOT.v2.3|SCP_SourcingChatbot_v2.3.0]] | Closeout Preparation | [[SCP.SOURCING.CHATBOT.v2.3/00_Project_Home|Workspace]] | [[SCP.SOURCING.CHATBOT.v2.3/Project_Executive_Board|Board]] | 3 | 0 | 2026-11-02 |
+| [[TD.TechnicalPlatform_v2.1|TD_TechnicalKnowledgePlatform_v2.1.0]] | Development / Data Validation | [[TD.TechnicalPlatform_v2.1/00_Project_Home|Workspace]] | [[TD.TechnicalPlatform_v2.1/Project_Executive_Board|Board]] | 4 | 0 | 2026-11-02 |
+| [[VITAS Sharing|VITAS.Sharing.202606]] | DONE / CLOSED | [[VITAS Sharing/00_Project_Home|Workspace]] | [[VITAS Sharing/Project_Executive_Board|Board]] | 0 | 0 | 2026-11-02 |
+| [[PROD.COWASH|WASH_COWASH_v2.0.0]] | [[PENDING]] | [[PROD.COWASH/00_Project_Home|Workspace]] | [[PROD.COWASH/Project_Executive_Board|Board]] | 1 | 1 | 2026-11-02 |
+| [[WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1|WASH_SamplingManagement_v1.1.0]] | ANALYSIS | [[WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/00_Project_Home|Workspace]] | [[WASH.SAMPLING.MANAGEMENT.PORTAL.v1.1/Project_Executive_Board|Board]] | 2 | 0 | 2026-11-02 |
+| [[WH_AWBExtraction_v1.1.0|WH_AWBExtraction_v1.1.0]] | Active Development | [[WH_AWBExtraction_v1.1.0/00_Project_Home|Workspace]] | [[WH_AWBExtraction_v1.1.0/Project_Executive_Board|Board]] | 5 | 0 | 2026-11-02 |
+<!-- PPJ_PROJECT_WORKSPACES_END -->

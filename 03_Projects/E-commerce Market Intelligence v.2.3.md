@@ -21,7 +21,7 @@ progress: "TBD"
 blocked: "TBD"
 decision_needed: "TBD"
 next_action: "TBD"
-last_updated: "2026-07-06 08:53:49"
+last_updated: "2026-10-30"
 confidence: "Strong"
 source_files: []
 phase_canvas_group: "ANALYSIS"
@@ -31,9 +31,9 @@ canonical_code: "MER_MarketIntelligence_v1.1.0"
 current_file: "E-commerce Market Intelligence v.2.3.md"
 primary_domain: "Merchandising"
 lifecycle: "Active Intelligence"
-current_gate: "Market and customer intelligence delivery"
-last_verified: "2026-09-18"
-source_event: "PPJ-PORTFOLIO-SNAPSHOT-20260918"
+current_gate: "5 November Chino MVP demonstration readiness"
+last_verified: "2026-10-30"
+source_event: "PPJ-WEEKLY-20261023-20261030"
 delivery_stage: "ANALYSIS"
 stage_entered_date: "Needs Confirmation"
 delivery_stream: "INTERNAL DEVELOPMENT"
@@ -93,11 +93,11 @@ Source:
 | Lifecycle | Active Intelligence |
 | Status | Active |
 | Progress | TBD |
-| Current Gate | Market and customer intelligence delivery |
+| Current Gate | 5 November Chino MVP demonstration readiness |
 | Priority | Medium |
 | Business Owner | Needs Confirmation |
 | Registration | Registered |
-| Last Verified | 2026-09-18 |
+| Last Verified | 2026-10-30 |
 | Confidence | Strong |
 
 ## Executive Summary
@@ -110,15 +110,17 @@ Turn market, customer, competitor, trend and demand signals into business intell
 
 ## Latest Update
 
-Active. Current outputs cover product/fabric opportunities, commercial trends and customer-pitching support; external ratings/reviews are not sales evidence.
+No new delivery result is confirmed as of 30 October. The Chino MVP demonstration remains planned for 5 November 2026 and is not confirmed delivered; fresh readiness evidence is missing.
 
 ## Risks / Blockers
 
-- External signal interpretation
+- Demo readiness is not evidenced.
+- Scope expansion and inconsistent SKU/pricing data could weaken the Chino MVP.
+- Knit and Denim must remain staged follow-on scope unless separately approved.
 
 ## Decisions Needed
 
-- No current portfolio decision recorded.
+- Confirm Chino demo readiness and retain Knit/Denim as staged follow-on scope.
 
 ## Dependencies
 
@@ -126,8 +128,8 @@ Active. Current outputs cover product/fabric opportunities, commercial trends an
 
 ## Next Actions
 
-- Continue validated product/fabric opportunity analysis
-- Keep review/rating signals distinct from sales evidence
+- Run a readiness gate covering the Chino MVP scope, data quality, demo script and fallback.
+- Record a go/no-go result before treating the planned demo as deliverable evidence.
 
 ## Do Not Drift Rules
 
@@ -144,9 +146,9 @@ Active. Current outputs cover product/fabric opportunities, commercial trends an
 
 ## Evidence and Confidence
 
-- Date: 2026-09-18
-- Source Event: PPJ-PORTFOLIO-SNAPSHOT-20260918
-- Source: User-approved portfolio current-state snapshot
+- Date: 2026-10-30
+- Source Event: PPJ-WEEKLY-20261023-20261030
+- Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
 - Confidence: Strong
 
 <!-- PPJ_PROJECT_KNOWLEDGE_END -->
@@ -179,3 +181,37 @@ Deliverables
 [[User_Manual_Template]]
 
 <!-- PPJ_WEEKLY_UPDATE_20260629_20260705_END -->
+
+<!-- PPJ_WEEKLY_20261023_20261030_START -->
+## Weekly Synchronization Event: PPJ-WEEKLY-20261023-20261030
+
+### Verified movement
+
+No new delivery result is confirmed as of 30 October. The Chino MVP demonstration remains planned for 5 November 2026 and is not confirmed delivered; fresh readiness evidence is missing.
+
+### Current gate
+
+5 November Chino MVP demonstration readiness
+
+### Risks / blockers
+
+- Demo readiness is not evidenced.
+- Scope expansion and inconsistent SKU/pricing data could weaken the Chino MVP.
+- Knit and Denim must remain staged follow-on scope unless separately approved.
+
+### Decisions required
+
+- Confirm Chino demo readiness and retain Knit/Denim as staged follow-on scope.
+
+### Next actions
+
+- Run a readiness gate covering the Chino MVP scope, data quality, demo script and fallback.
+- Record a go/no-go result before treating the planned demo as deliverable evidence.
+
+### Traceability
+
+- Report: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
+- Decision gate: [[07_Decision_Log/DEC-WEEKLY-20261030-PORTFOLIO-GATES]]
+- Last verified: 2026-10-30
+- Confidence: Strong
+<!-- PPJ_WEEKLY_20261023_20261030_END -->

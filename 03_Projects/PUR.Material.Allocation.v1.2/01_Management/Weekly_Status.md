@@ -2,8 +2,8 @@
 type: "weekly_status"
 project: "PUR.Material.Allocation.v1.1"
 source_project: "PUR.Material.Allocation.v1.2.md"
-source_event: "PPJ-EXECUTIVE-CANVAS-SYNC-20260928_235837"
-last_verified: "2026-09-28"
+source_event: "PPJ-WEEKLY-20261023-20261030"
+last_verified: "2026-10-30"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
@@ -12,7 +12,7 @@ delivery_stream: "INTERNAL DEVELOPMENT"
 delivery_stage: "DEVELOPMENT"
 lifecycle: "Development"
 status: "Active"
-current_gate: "Transaction reliability and exception control"
+current_gate: "Confirm API implementation and controlled GET/POST transaction UAT"
 stage_entered_date: "2026-09-28"
 ---
 
@@ -109,3 +109,37 @@ Weekly updates should change only affected project memory, home, tasks, risks, d
 - Source event: PPJ-WEEKLY-20260713-20260718
 - Last verified: 2026-07-18
 - Confidence: Strong
+
+<!-- PPJ_WEEKLY_20261023_20261030_START -->
+## Weekly Status - 2026-10-30
+
+- **Canonical project:** PUR_MaterialAllocation_v1.1.0
+- **Current gate:** Confirm API implementation and controlled GET/POST transaction UAT
+- **Stage change:** None confirmed
+
+### Latest verified update
+
+WFX documented GET/POST behaviour and issued the Style/Article API enhancement specification dated 26-28 October, including partial Style/Article search. This is API-definition progress only; deployment and transaction-control testing are not confirmed.
+
+### Current blockers and risks
+
+- Deployment status, performance, concurrency and audit behaviour are unconfirmed.
+- Duplicate prevention, rollback, partial allocation and exception controls still require transaction UAT.
+
+### Decisions needed
+
+- Confirm API deployment ownership and the transaction-control UAT gate.
+
+### Next actions
+
+- Confirm the specified API is implemented in the controlled environment.
+- Execute controlled GET/POST tests for partial Style/Article search and allocation transactions.
+- Validate duplicate prevention, rollback, concurrency, audit and user confirmation.
+
+### Evidence basis
+
+- [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
+- Source event: PPJ-WEEKLY-20261023-20261030
+- Last verified: 2026-10-30
+- Confidence: Strong
+<!-- PPJ_WEEKLY_20261023_20261030_END -->

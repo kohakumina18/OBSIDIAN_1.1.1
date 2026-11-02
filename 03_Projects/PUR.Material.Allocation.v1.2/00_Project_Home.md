@@ -2,13 +2,13 @@
 type: "project_home"
 project: "PUR_MaterialAllocation_v1.1.0"
 source_project: "PUR.Material.Allocation.v1.2.md"
-source_event: "PPJ-EXECUTIVE-CANVAS-SYNC-20260928_235837"
-last_verified: "2026-09-28"
+source_event: "PPJ-WEEKLY-20261023-20261030"
+last_verified: "2026-10-30"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
 lifecycle: "Development"
-current_gate: "Transaction reliability and exception control"
+current_gate: "Confirm API implementation and controlled GET/POST transaction UAT"
 priority: "P7"
 delivery_stage: "DEVELOPMENT"
 status: "Active"
@@ -61,17 +61,16 @@ Validated for Sewing and Embroidery; broader material scope remains unconfirmed.
 
 ## Latest Update
 
-Validation / stabilization. The first Sewing/Embroidery flow was validated (surplus OC -> unreserve -> find same Style/Buyer Reference OC -> allocate); general automation is not fully validated. Current work focuses on duplicate prevention, allocation conflict, exception paths, rollback, transaction confirmation and audit trail.
+WFX documented GET/POST behaviour and issued the Style/Article API enhancement specification dated 26-28 October, including partial Style/Article search. This is API-definition progress only; deployment and transaction-control testing are not confirmed.
 
 ## Risks / Blockers
 
-- Partial-allocation correctness
-- Rollback and duplicate safety
-- WFX transaction consistency
+- Deployment status, performance, concurrency and audit behaviour are unconfirmed.
+- Duplicate prevention, rollback, partial allocation and exception controls still require transaction UAT.
 
 ## Decisions Needed
 
-- No current portfolio decision recorded.
+- Confirm API deployment ownership and the transaction-control UAT gate.
 
 ## Dependencies
 
@@ -79,9 +78,9 @@ Validation / stabilization. The first Sewing/Embroidery flow was validated (surp
 
 ## Next Actions
 
-- Test multiple OCs and partial allocation
-- Test insufficient stock, duplicates and failure paths
-- Validate rollback, audit and user confirmation
+- Confirm the specified API is implemented in the controlled environment.
+- Execute controlled GET/POST tests for partial Style/Article search and allocation transactions.
+- Validate duplicate prevention, rollback, concurrency, audit and user confirmation.
 
 ## Do Not Drift Rules
 
@@ -98,10 +97,11 @@ Validation / stabilization. The first Sewing/Embroidery flow was validated (surp
 
 ## Evidence and Confidence
 
-- Date: 2026-09-18
-- Source Event: PPJ-PORTFOLIO-SNAPSHOT-20260918
-- Source: User-approved portfolio current-state snapshot
+- Date: 2026-10-30
+- Source Event: PPJ-WEEKLY-20261023-20261030
+- Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
 - Confidence: Strong
+
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_END -->
 
 # PUR.Material.Allocation.v1.1
@@ -259,3 +259,37 @@ Memory Index:
 
 Command Center:
 [[../PROJECT_COMMAND_CENTER]]
+
+<!-- PPJ_WEEKLY_20261023_20261030_START -->
+## Weekly Synchronization Event: PPJ-WEEKLY-20261023-20261030
+
+### Verified movement
+
+WFX documented GET/POST behaviour and issued the Style/Article API enhancement specification dated 26-28 October, including partial Style/Article search. This is API-definition progress only; deployment and transaction-control testing are not confirmed.
+
+### Current gate
+
+Confirm API implementation and controlled GET/POST transaction UAT
+
+### Risks / blockers
+
+- Deployment status, performance, concurrency and audit behaviour are unconfirmed.
+- Duplicate prevention, rollback, partial allocation and exception controls still require transaction UAT.
+
+### Decisions required
+
+- Confirm API deployment ownership and the transaction-control UAT gate.
+
+### Next actions
+
+- Confirm the specified API is implemented in the controlled environment.
+- Execute controlled GET/POST tests for partial Style/Article search and allocation transactions.
+- Validate duplicate prevention, rollback, concurrency, audit and user confirmation.
+
+### Traceability
+
+- Report: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
+- Decision gate: [[07_Decision_Log/DEC-WEEKLY-20261030-PORTFOLIO-GATES]]
+- Last verified: 2026-10-30
+- Confidence: Strong
+<!-- PPJ_WEEKLY_20261023_20261030_END -->

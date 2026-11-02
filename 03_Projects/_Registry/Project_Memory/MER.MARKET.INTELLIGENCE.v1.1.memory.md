@@ -7,7 +7,7 @@ department: "MER"
 cluster: "Market / Product Intelligence"
 phase: "ANALYSIS"
 technical_members: ["Phat", "Nghia", "Khoa"]
-last_verified: "2026-09-18"
+last_verified: "2026-10-30"
 confidence: "Strong"
 canonical_code: "MER_MarketIntelligence_v1.1.0"
 current_file: "E-commerce Market Intelligence v.2.3.md"
@@ -16,7 +16,7 @@ primary_capability: "Costing, quotation, market intelligence, customer workflows
 secondary_domains: "External Data, Product, Fabric, Customer Signals"
 lifecycle: "Active Intelligence"
 progress: "TBD"
-current_gate: "Market and customer intelligence delivery"
+current_gate: "5 November Chino MVP demonstration readiness"
 workspace_path: "03_Projects/E-commerce Market Intelligence v.2.3"
 project_home: "03_Projects/E-commerce Market Intelligence v.2.3/00_Project_Home.md"
 project_board: "03_Projects/E-commerce Market Intelligence v.2.3/Project_Executive_Board.canvas"
@@ -24,12 +24,12 @@ task_folder: "03_Projects/E-commerce Market Intelligence v.2.3/Tasks"
 documentation_status: "Workspace Created"
 priority: "Medium"
 current_outcome: "Turn market, customer, competitor, trend and demand signals into business intelligence for Merchandising."
-latest_update_summary: "Active. Current outputs cover product/fabric opportunities, commercial trends and customer-pitching support; external ratings/reviews are not sales evidence."
+latest_update_summary: "No new delivery result is confirmed as of 30 October. The Chino MVP demonstration remains planned for 5 November 2026 and is not confirmed delivered; fresh readiness evidence is missing."
 known_risks: "External signal interpretation"
 decisions_needed: "None recorded"
-next_actions: "Continue validated product/fabric opportunity analysis | Keep review/rating signals distinct from sales evidence"
+next_actions: "Run a readiness gate covering the Chino MVP scope, data quality, demo script and fallback. | Record a go/no-go result before treating the planned demo as deliverable evidence."
 dependencies: "None recorded"
-source_event: "PPJ-PORTFOLIO-SNAPSHOT-20260918"
+source_event: "PPJ-WEEKLY-20261023-20261030"
 status: "Active"
 known_blockers: "External signal interpretation"
 recent_update_events: ["PPJ-PORTFOLIO-SNAPSHOT-20260918"]
@@ -51,11 +51,11 @@ delivery_stream: "INTERNAL DEVELOPMENT"
 | Lifecycle | Active Intelligence |
 | Status | Active |
 | Progress | TBD |
-| Current Gate | Market and customer intelligence delivery |
+| Current Gate | 5 November Chino MVP demonstration readiness |
 | Priority | Medium |
 | Business Owner | Needs Confirmation |
 | Registration | Registered |
-| Last Verified | 2026-09-18 |
+| Last Verified | 2026-10-30 |
 | Confidence | Strong |
 
 ## Executive Summary
@@ -68,15 +68,17 @@ Turn market, customer, competitor, trend and demand signals into business intell
 
 ## Latest Update
 
-Active. Current outputs cover product/fabric opportunities, commercial trends and customer-pitching support; external ratings/reviews are not sales evidence.
+No new delivery result is confirmed as of 30 October. The Chino MVP demonstration remains planned for 5 November 2026 and is not confirmed delivered; fresh readiness evidence is missing.
 
 ## Risks / Blockers
 
-- External signal interpretation
+- Demo readiness is not evidenced.
+- Scope expansion and inconsistent SKU/pricing data could weaken the Chino MVP.
+- Knit and Denim must remain staged follow-on scope unless separately approved.
 
 ## Decisions Needed
 
-- No current portfolio decision recorded.
+- Confirm Chino demo readiness and retain Knit/Denim as staged follow-on scope.
 
 ## Dependencies
 
@@ -84,8 +86,8 @@ Active. Current outputs cover product/fabric opportunities, commercial trends an
 
 ## Next Actions
 
-- Continue validated product/fabric opportunity analysis
-- Keep review/rating signals distinct from sales evidence
+- Run a readiness gate covering the Chino MVP scope, data quality, demo script and fallback.
+- Record a go/no-go result before treating the planned demo as deliverable evidence.
 
 ## Do Not Drift Rules
 
@@ -102,10 +104,11 @@ Active. Current outputs cover product/fabric opportunities, commercial trends an
 
 ## Evidence and Confidence
 
-- Date: 2026-09-18
-- Source Event: PPJ-PORTFOLIO-SNAPSHOT-20260918
-- Source: User-approved portfolio current-state snapshot
+- Date: 2026-10-30
+- Source Event: PPJ-WEEKLY-20261023-20261030
+- Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
 - Confidence: Strong
+
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_END -->
 
 # Project Memory: MER.MARKET.INTELLIGENCE.v1.1
@@ -170,3 +173,37 @@ Define data sources, signal rules, and opportunity output format.
 ## Domain Do Not Drift Rules
 - Use v1.1 as canonical, preserve v5.5 as alias only.
 <!-- PPJ_DOMAIN_GOVERNANCE_END -->
+
+<!-- PPJ_WEEKLY_20261023_20261030_START -->
+## Weekly Synchronization Event: PPJ-WEEKLY-20261023-20261030
+
+### Verified movement
+
+No new delivery result is confirmed as of 30 October. The Chino MVP demonstration remains planned for 5 November 2026 and is not confirmed delivered; fresh readiness evidence is missing.
+
+### Current gate
+
+5 November Chino MVP demonstration readiness
+
+### Risks / blockers
+
+- Demo readiness is not evidenced.
+- Scope expansion and inconsistent SKU/pricing data could weaken the Chino MVP.
+- Knit and Denim must remain staged follow-on scope unless separately approved.
+
+### Decisions required
+
+- Confirm Chino demo readiness and retain Knit/Denim as staged follow-on scope.
+
+### Next actions
+
+- Run a readiness gate covering the Chino MVP scope, data quality, demo script and fallback.
+- Record a go/no-go result before treating the planned demo as deliverable evidence.
+
+### Traceability
+
+- Report: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
+- Decision gate: [[07_Decision_Log/DEC-WEEKLY-20261030-PORTFOLIO-GATES]]
+- Last verified: 2026-10-30
+- Confidence: Strong
+<!-- PPJ_WEEKLY_20261023_20261030_END -->

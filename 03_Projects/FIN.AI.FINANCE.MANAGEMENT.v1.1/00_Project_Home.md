@@ -2,13 +2,13 @@
 type: "project_home"
 project: "FIN_FinanceManagement_v1.2.0"
 source_project: "FIN.AI.FINANCE.MANAGEMENT.v1.1.md"
-source_event: "PPJ-PORTFOLIO-SNAPSHOT-20260918"
-last_verified: "2026-09-18"
+source_event: "PPJ-WEEKLY-20261023-20261030"
+last_verified: "2026-10-30"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
 lifecycle: "Strategic Active"
-current_gate: "WS2 OC / Cost Control and WS3 Factory Performance"
+current_gate: "WS4 v0.2 evidence review and WS3 input closure"
 priority: "P1"
 delivery_stage: "DESIGN"
 status: "Active"
@@ -26,9 +26,9 @@ phase: "DESIGN"
 | Delivery Stage | DESIGN |
 | Detailed Lifecycle | Design |
 | Status | Active |
-| Current Gate | WS2 Rule Catalogue and Databricks access; then WS3 source discovery |
+| Current Gate | WS4 v0.2 evidence review and WS3 input closure |
 | Stage Entered | 2026-08-24 |
-| Last Verified | 2026-08-24 |
+| Last Verified | 2026-10-30 |
 <!-- PPJ_EXECUTIVE_DELIVERY_STAGE_END -->
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
@@ -44,11 +44,11 @@ phase: "DESIGN"
 | Lifecycle | Strategic Active |
 | Status | Active |
 | Progress | TBD |
-| Current Gate | WS2 OC / Cost Control and WS3 Factory Performance |
+| Current Gate | WS4 v0.2 evidence review and WS3 input closure |
 | Priority | P1 |
 | Business Owner | Accounting |
 | Registration | Registered |
-| Last Verified | 2026-09-18 |
+| Last Verified | 2026-10-30 |
 | Confidence | Strong |
 
 ## Executive Summary
@@ -61,19 +61,20 @@ WS1 Finance Q&A (foundation); WS2 OC & Cost Control (main focus); WS3 Factory Pe
 
 ## Latest Update
 
-No longer merely an AI chatbot. WS1 Finance Q&A (Balance Sheet, P&L, management Q&A) is the foundation; WS2 OC / Cost Control remains the main focus (missing cost, incorrect period, BOM/material, overhead, subcontracting, abnormal margin, duplicate/missing transactions, actual vs plan, invoice/posting completeness); WS3 Factory Performance has now started (Group -> Company -> Region -> Factory -> Production -> Labor -> Cost -> Efficiency). Databricks / DWH access and validated sources remain the key dependency.
+WS4 traced one Knit golden case, completed transaction-stage classification and prepared a v0.2 rule-change proposal. The evidence confirms 1-to-many and line-level Det-Nhuom mapping requirements, but does not prove production accuracy. WS3 received two HR/Payroll responses; broader Accounting and Planning/Production inputs remain incomplete, and HR-WFX/GTAS mappings and month-finalization practices are inconsistent. WS1, WS2 and WS5 have no new confirmed movement.
 
 ## Risks / Blockers
 
-- Databricks / DWH access
-- Source ownership and lineage
-- Rule and threshold approval
-- Incorrect OC linkage
+- WS4 evidence is limited to one golden-case package and a partial historical window.
+- Line-level lineage, metric definitions, history completeness and accounting interpretation remain unresolved.
+- WS3 survey closure is overdue; HR-WFX/GTAS mappings and month-finalization practices are inconsistent.
+- WS1 UAT ownership, WS2 BC-04 policies/source gaps and the WS3/WS5 boundary remain open.
 
 ## Decisions Needed
 
-- Approve WS2 thresholds and exception severity
-- Confirm governed sources of truth
+- Approve WS4 line-level lineage, historical-window controls, provisional mapping review and golden-case method.
+- Mandate WS3 closure and confirm the WS3/WS5 boundary.
+- Approve the four open BC-04 policies and source-remediation plan.
 
 ## Dependencies
 
@@ -81,11 +82,9 @@ No longer merely an AI chatbot. WS1 Finance Q&A (Balance Sheet, P&L, management 
 
 ## Next Actions
 
-- Finalize the WS2 Rule Catalogue and thresholds
-- Obtain read-only Databricks access and confirm catalog/schema/table lineage
-- Select a Golden OC and run the rules
-- Reconcile results with Accounting and finalize exception severity
-- Advance WS3 factory-performance source discovery and dimensions (headcount, labor cost, overtime, output, capacity, budget vs actual)
+- Review the WS4 v0.2 evidence model, provisional mappings, lineage method and priority accounting questions.
+- Collect remaining Accounting and Planning/Production WS3 inputs and consolidate the data/rule/gap register.
+- Define supported WS1 questions and pilot gate; preserve WS2 source-remediation and BC-04 policy actions.
 
 ## Do Not Drift Rules
 
@@ -102,10 +101,11 @@ No longer merely an AI chatbot. WS1 Finance Q&A (Balance Sheet, P&L, management 
 
 ## Evidence and Confidence
 
-- Date: 2026-09-18
-- Source Event: PPJ-PORTFOLIO-SNAPSHOT-20260918
-- Source: User-approved portfolio current-state snapshot
+- Date: 2026-10-30
+- Source Event: PPJ-WEEKLY-20261023-20261030
+- Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
 - Confidence: Strong
+
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_END -->
 
 # FIN.AI.FINANCE.MANAGEMENT.v1.2
@@ -269,3 +269,41 @@ Memory Index:
 
 Command Center:
 [[../PROJECT_COMMAND_CENTER]]
+
+<!-- PPJ_WEEKLY_20261023_20261030_START -->
+## Weekly Synchronization Event: PPJ-WEEKLY-20261023-20261030
+
+### Verified movement
+
+WS4 traced one Knit golden case, completed transaction-stage classification and prepared a v0.2 rule-change proposal. The evidence confirms 1-to-many and line-level Det-Nhuom mapping requirements, but does not prove production accuracy. WS3 received two HR/Payroll responses; broader Accounting and Planning/Production inputs remain incomplete, and HR-WFX/GTAS mappings and month-finalization practices are inconsistent. WS1, WS2 and WS5 have no new confirmed movement.
+
+### Current gate
+
+WS4 v0.2 evidence review and WS3 input closure
+
+### Risks / blockers
+
+- WS4 evidence is limited to one golden-case package and a partial historical window.
+- Line-level lineage, metric definitions, history completeness and accounting interpretation remain unresolved.
+- WS3 survey closure is overdue; HR-WFX/GTAS mappings and month-finalization practices are inconsistent.
+- WS1 UAT ownership, WS2 BC-04 policies/source gaps and the WS3/WS5 boundary remain open.
+
+### Decisions required
+
+- Approve WS4 line-level lineage, historical-window controls, provisional mapping review and golden-case method.
+- Mandate WS3 closure and confirm the WS3/WS5 boundary.
+- Approve the four open BC-04 policies and source-remediation plan.
+
+### Next actions
+
+- Review the WS4 v0.2 evidence model, provisional mappings, lineage method and priority accounting questions.
+- Collect remaining Accounting and Planning/Production WS3 inputs and consolidate the data/rule/gap register.
+- Define supported WS1 questions and pilot gate; preserve WS2 source-remediation and BC-04 policy actions.
+
+### Traceability
+
+- Report: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
+- Decision gate: [[07_Decision_Log/DEC-WEEKLY-20261030-PORTFOLIO-GATES]]
+- Last verified: 2026-10-30
+- Confidence: Strong
+<!-- PPJ_WEEKLY_20261023_20261030_END -->

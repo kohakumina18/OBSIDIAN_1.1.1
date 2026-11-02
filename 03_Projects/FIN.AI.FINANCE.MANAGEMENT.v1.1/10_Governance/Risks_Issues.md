@@ -2,11 +2,12 @@
 type: "risks_issues"
 project: "FIN.AI.FINANCE.MANAGEMENT.v1.2"
 source_project: "FIN.AI.FINANCE.MANAGEMENT.v1.1.md"
-source_event: "PPJ-WEEKLY-20260727-20260801"
-last_verified: "2026-08-01"
+source_event: "PPJ-WEEKLY-20261023-20261030"
+last_verified: "2026-10-30"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
+current_gate: "WS4 v0.2 evidence review and WS3 input closure"
 ---
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
@@ -68,3 +69,14 @@ No longer merely an AI chatbot. WS1 Finance Q&A (Balance Sheet, P&L, management 
 - Source event: PPJ-WEEKLY-20260727-20260801
 - Last verified: 2026-08-01
 - Confidence: Strong
+
+<!-- PPJ_WEEKLY_20261023_20261030_RISKS_START -->
+## Weekly Risk Update - 2026-10-30
+
+- WS4 evidence is limited to one golden-case package and a partial historical window.
+- Line-level lineage, metric definitions, history completeness and accounting interpretation remain unresolved.
+- WS3 survey closure is overdue; HR-WFX/GTAS mappings and month-finalization practices are inconsistent.
+- WS1 UAT ownership, WS2 BC-04 policies/source gaps and the WS3/WS5 boundary remain open.
+
+Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]] (PPJ-WEEKLY-20261023-20261030)
+<!-- PPJ_WEEKLY_20261023_20261030_RISKS_END -->

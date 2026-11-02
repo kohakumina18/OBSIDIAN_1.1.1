@@ -13,7 +13,7 @@
     {
       "id": "ppj-exec-summary",
       "type": "text",
-      "text": "LOG_ExpenseInvoiceProcessing_v1.2.2\n\nDomain:\nLogistics / EXIM\n\nLifecycle:\nUAT / Stabilization\n\nProgress:\nTBD\n\nGate:\nRegional rollout, tax rules and invoice validation\n\nOutcome:\nProcess Logistics / Import-Export expense invoices with regional and tax rules, invoice validation, user workflow and exception management.\n\nTop Blocker:\nMapping completeness\n\nNext Milestone:\nClose remaining defects and retest\n\nLast Verified:\n2026-09-18",
+      "text": "LOG_ExpenseInvoiceProcessing_v1.2.2\n\nDomain:\nLogistics / EXIM\n\nLifecycle:\nUAT / Stabilization\n\nProgress:\nTBD\n\nGate:\nDefect ownership, regression and production exit criteria\n\nOutcome:\nProcess Logistics / Import-Export expense invoices with regional and tax rules, invoice validation, user workflow and exception management.\n\nTop Blocker:\nMapping completeness\n\nNext Milestone:\nClose remaining defects and retest\n\nLast Verified:\n2026-10-30",
       "x": 0,
       "y": -90,
       "width": 760,
@@ -23,7 +23,7 @@
     {
       "id": "ppj-management-attention",
       "type": "text",
-      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Mapping completeness\n- Real-data defects\n- Regional / tax-rule variation\n\nDecisions Needed\n- Confirm whether the earlier Export exclusion still applies (the mapping of PPJ.ExpenseInvoices.v1.1 and LOG.EXPENSE.INVOICES.V1.2 to LOG_ExpenseInvoiceProcessing_v1.2.2 was confirmed by the owner on 2026-09-25)\n\nExternal Dependencies\n- None recorded",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- VAT, attachment and regional rules remain defect-prone.\n- Duplicate/error handling and regression evidence are incomplete.\n- Hotfix and production support ownership are not assigned.\n\nDecisions Needed\n- Assign Expense Invoice defect ownership and explicit exit criteria.\n\nExternal Dependencies\n- None recorded",
       "x": 810,
       "y": -90,
       "width": 500,
@@ -85,6 +85,15 @@
       "height": 500,
       "label": "THIS WEEK",
       "color": "2"
+    },
+    {
+      "id": "ppj-task-d9738d78ace6",
+      "type": "text",
+      "text": "[[Tasks/LOG_ExpenseInvoiceProcessing_v1.2.2-TASK-001_Assign-defect-owner-and-execute-Expense-Invoice-regression]]\n\nAssign defect owner and execute Expense Invoice regression\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- A named hotfix owner, frozen regression pack, VAT/attachment/regional/duplicate test evidence and exit criteria are recorded.",
+      "x": 370,
+      "y": 630,
+      "width": 260,
+      "height": 155
     },
     {
       "id": "ppj-lane-bf81443bfcae",
@@ -187,7 +196,7 @@
     "frontmatter": {
       "project": "LOG_ExpenseInvoiceProcessing_v1.2.2",
       "board_type": "project_executive_kanban",
-      "last_verified": "2026-09-18"
+      "last_verified": "2026-10-30"
     }
   }
 }

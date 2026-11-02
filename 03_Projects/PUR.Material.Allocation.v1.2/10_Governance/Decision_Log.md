@@ -2,11 +2,12 @@
 type: "decision_log"
 project: "PUR.Material.Allocation.v1.1"
 source_project: "PUR.Material.Allocation.v1.2.md"
-source_event: "PPJ-WEEKLY-20260713-20260718"
-last_verified: "2026-07-18"
+source_event: "PPJ-WEEKLY-20261023-20261030"
+last_verified: "2026-10-30"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
+current_gate: "Confirm API implementation and controlled GET/POST transaction UAT"
 ---
 # Decision Log
 
@@ -23,3 +24,11 @@ generated_by: "upgrade_ppj_project_workspaces.py"
 - Source event: PPJ-WEEKLY-20260713-20260718
 - Last verified: 2026-07-18
 - Confidence: Strong
+
+<!-- PPJ_WEEKLY_20261023_20261030_DECISIONS_START -->
+## Weekly Decision Gate - 2026-10-30
+
+- Confirm API deployment ownership and the transaction-control UAT gate.
+
+Portfolio decision record: [[07_Decision_Log/DEC-WEEKLY-20261030-PORTFOLIO-GATES]]
+<!-- PPJ_WEEKLY_20261023_20261030_DECISIONS_END -->

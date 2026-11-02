@@ -16,15 +16,15 @@ business_owner: "Administration"
 ba_coordination: "Khoa"
 technical_members: []
 status: "Active"
-last_updated: "2026-09-18"
-last_verified: "2026-09-18"
-source_event: "PPJ-PORTFOLIO-SNAPSHOT-20260918"
+last_updated: "2026-10-30"
+last_verified: "2026-10-30"
+source_event: "PPJ-WEEKLY-20261023-20261030"
 confidence: "Needs Confirmation"
 primary_domain: "Administration"
 delivery_stream: "INTERNAL DEVELOPMENT"
 delivery_stage: "UAT / PRE-GO-LIVE"
 progress: "~90% (2026-09-15 meeting recap)"
-current_gate: "Multi-traveler request model, end-to-end lifecycle and UAT preparation"
+current_gate: "Formal Business Travel release decision"
 stage_entered_date: "Needs Confirmation"
 ---
 
@@ -44,11 +44,11 @@ stage_entered_date: "Needs Confirmation"
 | Lifecycle | Active / Requirement Refinement / UAT Preparation |
 | Status | Active |
 | Progress | ~90% (2026-09-15 meeting recap) |
-| Current Gate | Multi-traveler request model, end-to-end lifecycle and UAT preparation |
+| Current Gate | Formal Business Travel release decision |
 | Priority | P6 |
 | Business Owner | Administration |
 | Registration | Registered |
-| Last Verified | 2026-09-18 |
+| Last Verified | 2026-10-30 |
 | Confidence | Strong |
 
 ## Executive Summary
@@ -61,17 +61,16 @@ TravelRequest / TravelApproval / TripManagement / Advance / Expense / Settlement
 
 ## Latest Update
 
-Evolved well beyond the initial Travel Request application. Modules: TravelRequest, TravelApproval, TripManagement, Advance, Expense, Settlement. Latest major change: one request can contain multiple travelers, each with a traveler-specific travel plan (origin, destination, stops, dates, flight, hotel/shared room, per diem, customer visit). Management concern: prevent scope creep; the core stays Request -> Approval -> Trip -> Expense -> Settlement.
+No new confirmed release result exists as of 30 October. The project remains in release preparation; Accounting mappings, authorization, migrations, training, eOffice budget and release ownership remain open.
 
 ## Risks / Blockers
 
-- Scope creep beyond Request -> Approval -> Trip -> Expense -> Settlement
-- Approval/status rules need confirmation
-- Multi-traveler data model complexity
+- Accounting mappings and authorization/access testing are not confirmed.
+- Migration, training, eOffice budget and release ownership remain unresolved.
 
 ## Decisions Needed
 
-- No current portfolio decision recorded.
+- Approve release authority, accounting exceptions, access testing, training and eOffice budget.
 
 ## Dependencies
 
@@ -79,11 +78,7 @@ Evolved well beyond the initial Travel Request application. Modules: TravelReque
 
 ## Next Actions
 
-- Validate the booking workflow and status model
-- Model multi-traveler requests with per-traveler travel plans
-- Finalize approval matrix, advance, expense submission and settlement
-- Define vendor catalogue and expense categories
-- Prepare UAT
+- Run the formal release gate and record owners for every unresolved control.
 
 ## Do Not Drift Rules
 
@@ -100,9 +95,41 @@ Evolved well beyond the initial Travel Request application. Modules: TravelReque
 
 ## Evidence and Confidence
 
-- Date: 2026-09-18
-- Source Event: PPJ-PORTFOLIO-SNAPSHOT-20260918
-- Source: User-approved portfolio current-state snapshot
+- Date: 2026-10-30
+- Source Event: PPJ-WEEKLY-20261023-20261030
+- Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
 - Confidence: Strong
 
 <!-- PPJ_PROJECT_KNOWLEDGE_END -->
+
+<!-- PPJ_WEEKLY_20261023_20261030_START -->
+## Weekly Synchronization Event: PPJ-WEEKLY-20261023-20261030
+
+### Verified movement
+
+No new confirmed release result exists as of 30 October. The project remains in release preparation; Accounting mappings, authorization, migrations, training, eOffice budget and release ownership remain open.
+
+### Current gate
+
+Formal Business Travel release decision
+
+### Risks / blockers
+
+- Accounting mappings and authorization/access testing are not confirmed.
+- Migration, training, eOffice budget and release ownership remain unresolved.
+
+### Decisions required
+
+- Approve release authority, accounting exceptions, access testing, training and eOffice budget.
+
+### Next actions
+
+- Run the formal release gate and record owners for every unresolved control.
+
+### Traceability
+
+- Report: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
+- Decision gate: [[07_Decision_Log/DEC-WEEKLY-20261030-PORTFOLIO-GATES]]
+- Last verified: 2026-10-30
+- Confidence: Strong
+<!-- PPJ_WEEKLY_20261023_20261030_END -->
