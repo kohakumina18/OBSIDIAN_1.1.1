@@ -536,6 +536,16 @@
 			"y":57340,
 			"width":360,
 			"height":200
+		},
+		{
+			"id":"e2cb799e6df4c848",
+			"type":"text",
+			"text":"2.11.2026\n- update FIN: \n\t- THÊM CHECKBOX ĐỂ CHỌN CÁC OBJECT CTY - BD -BUYER ,..\n\t- ADD CỘT STATUS CỦA OC ( CLOSED / PARTSHIP ,...) VÀO TRONG BẢNG + FILE EXCEL ĐÃ XUẤT RA",
+			"styleAttributes":{},
+			"x":1340,
+			"y":57940,
+			"width":600,
+			"height":340
 		}
 	],
 	"edges":[
@@ -975,6 +985,15 @@
 			"fromSide":"right",
 			"toNode":"749be83dacc68c32",
 			"toSide":"left"
+		},
+		{
+			"id":"a43b94c3e5dc5d85",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"2f7457a45cd432c2",
+			"fromSide":"bottom",
+			"toNode":"e2cb799e6df4c848",
+			"toSide":"top"
 		}
 	],
 	"metadata":{
