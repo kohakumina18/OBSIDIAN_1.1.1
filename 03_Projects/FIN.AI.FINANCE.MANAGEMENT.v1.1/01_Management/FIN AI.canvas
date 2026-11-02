@@ -344,46 +344,6 @@
 			"height":4726
 		},
 		{
-			"id":"cfb4bcb362921a09",
-			"type":"text",
-			"text":"MRS THUY - WISER: DANG GAP KHO KHAN VOI TONG HOP BAO CAO THANH KHOAN",
-			"styleAttributes":{},
-			"x":16220,
-			"y":-19860,
-			"width":260,
-			"height":140
-		},
-		{
-			"id":"6a5303d338f026d8",
-			"type":"text",
-			"text":"NHAN BAO CAO TU CAC NHA MAY",
-			"styleAttributes":{},
-			"x":16360,
-			"y":-20050,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"10e0ca2b519d9de9",
-			"type":"text",
-			"text":"TONG HOP, KIEM TRA LAI SO LUONG -> THANH FORMAT CHUAN",
-			"styleAttributes":{},
-			"x":16770,
-			"y":-20170,
-			"width":260,
-			"height":120
-		},
-		{
-			"id":"e8c0e8dfbe33a78c",
-			"type":"text",
-			"text":"CHUYEN QUA FORMAT DE CO THE UPLOAD LEN POWERBI ",
-			"styleAttributes":{},
-			"x":17190,
-			"y":-20210,
-			"width":260,
-			"height":120
-		},
-		{
 			"id":"e57a42ae6b8c7020",
 			"type":"text",
 			"text":"factory - hoat dong cua cac nha may - (gtas) ",
@@ -576,16 +536,6 @@
 			"color":"1"
 		},
 		{
-			"id":"60068094a7cb5b2f",
-			"type":"text",
-			"text":"LAY DU LIEU HRIS TRUOC -> PHAN TICH KHAO SAT\n- LUONG LA KHOAN LON NHAT\n- KHI PHAN TICH DEN HIEU QUA DON HANG : OC CAO -> PHAN TIHC VE NHA MAY -> BIET DUOC NHA MAY CO NHUNG BAT THUONG , CHUYEN KHAC NHAU VA CHENH LECH DU LIEU , \n- LUONG SAN PHAM TREN TUNG OC: LA HRIS CO",
-			"styleAttributes":{},
-			"x":19760,
-			"y":-19180,
-			"width":320,
-			"height":440
-		},
-		{
 			"id":"93c69ca7b14b720b",
 			"type":"text",
 			"text":"IED\n→ cung cấp dữ liệu đơn giá, SAM, tổng điểm, đồng điểm, công đoạn\n\nGTAS Production\n→ cung cấp sản lượng thực tế theo mã hàng/công đoạn/bộ phận\n\nGTAS Salary\n→ nhận dữ liệu từ IED và GTAS Production\n→ tính quỹ lương sản phẩm theo bộ phận/chuyền/xưởng\n\nHRIS\n→ nhận hoặc nhập tổng quỹ lương sản phẩm\n→ tính lương cá nhân\n→ cộng các khoản lương khác, phụ cấp, BHXH, khấu trừ\n→ xuất bảng lương/trình ký",
@@ -677,7 +627,59 @@
 			"width":480,
 			"height":180,
 			"color":"3"
-		}
+		},
+		{
+			"id":"60068094a7cb5b2f",
+			"type":"text",
+			"text":"LAY DU LIEU HRIS TRUOC -> PHAN TICH KHAO SAT\n- LUONG LA KHOAN LON NHAT\n- KHI PHAN TICH DEN HIEU QUA DON HANG : OC CAO -> PHAN TIHC VE NHA MAY -> BIET DUOC NHA MAY CO NHUNG BAT THUONG , CHUYEN KHAC NHAU VA CHENH LECH DU LIEU , \n- LUONG SAN PHAM TREN TUNG OC: LA HRIS CO",
+			"styleAttributes":{},
+			"x":19760,
+			"y":-19210,
+			"width":320,
+			"height":440,
+			"color":"4"
+		},
+		{
+			"id":"cfb4bcb362921a09",
+			"type":"text",
+			"text":"MRS THUY - WISER: DANG GAP KHO KHAN VOI TONG HOP BAO CAO THANH KHOAN",
+			"styleAttributes":{},
+			"x":16360,
+			"y":-19900,
+			"width":260,
+			"height":140
+		},
+		{
+			"id":"6a5303d338f026d8",
+			"type":"text",
+			"text":"NHAN BAO CAO TU CAC NHA MAY",
+			"styleAttributes":{},
+			"x":16440,
+			"y":-20080,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"10e0ca2b519d9de9",
+			"type":"text",
+			"text":"TONG HOP, KIEM TRA LAI SO LUONG -> THANH FORMAT CHUAN",
+			"styleAttributes":{},
+			"x":16800,
+			"y":-20140,
+			"width":260,
+			"height":120
+		},
+		{
+			"id":"e8c0e8dfbe33a78c",
+			"type":"text",
+			"text":"CHUYEN QUA FORMAT DE CO THE UPLOAD LEN POWERBI ",
+			"styleAttributes":{},
+			"x":17160,
+			"y":-20200,
+			"width":260,
+			"height":120
+		},
+		{"id":"1bc5dffec8a8d005","type":"file","file":"Pasted image 20261102151339.png","x":17040,"y":-19620,"width":194,"height":400}
 	],
 	"edges":[
 		{
