@@ -364,26 +364,6 @@
 			"height":60
 		},
 		{
-			"id":"d9a873ddf9aeaa05",
-			"type":"text",
-			"text":"ngay 9: la nhat dinh phai co - tru tuong hop bat dac di - toi ngay 10 - bat buoc phai co bao cao  ",
-			"styleAttributes":{},
-			"x":18240,
-			"y":-19995,
-			"width":260,
-			"height":140
-		},
-		{
-			"id":"a1c471b4e43a2117",
-			"type":"text",
-			"text":"theo quy dinh: phai co du lieu tu ngay 6-7 - neu la ngay le / ngay cn -> se co delay",
-			"styleAttributes":{},
-			"x":17880,
-			"y":-19975,
-			"width":260,
-			"height":120
-		},
-		{
 			"id":"8294a5d9036b715a",
 			"type":"text",
 			"text":"threshold so voi doanh thu ghi nhan (doanh thu thuc te)\n\n15% - chi phi co dinh \n- bat thuong khi co dau tu\n\nluong: 60% (barem chuan) -> 65%\n\nchi phi nguoi lao dong: 20%\nchi phi van hanh: 5% \n\t-dien 2%, nuoc 1%, cac chi phi khac 2%\n\n",
@@ -441,7 +421,7 @@
 			"x":18600,
 			"y":-20060,
 			"width":260,
-			"height":170
+			"height":200
 		},
 		{
 			"id":"dc896245f906ea04",
@@ -679,7 +659,27 @@
 			"width":260,
 			"height":120
 		},
-		{"id":"1bc5dffec8a8d005","type":"file","file":"Pasted image 20261102151339.png","x":17040,"y":-19620,"width":194,"height":400}
+		{"id":"1bc5dffec8a8d005","type":"file","file":"Pasted image 20261102151339.png","x":17040,"y":-19620,"width":194,"height":400},
+		{
+			"id":"a1c471b4e43a2117",
+			"type":"text",
+			"text":"theo quy dinh: phai co du lieu tu ngay 6-7 - neu la ngay le / ngay cn -> se co delay",
+			"styleAttributes":{},
+			"x":17840,
+			"y":-20055,
+			"width":260,
+			"height":140
+		},
+		{
+			"id":"d9a873ddf9aeaa05",
+			"type":"text",
+			"text":"ngay 9: la nhat dinh phai co - tru tuong hop bat dac di - toi ngay 10 - bat buoc phai co bao cao  ",
+			"styleAttributes":{},
+			"x":18240,
+			"y":-20055,
+			"width":260,
+			"height":140
+		}
 	],
 	"edges":[
 		{
