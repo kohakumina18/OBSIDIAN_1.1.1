@@ -474,26 +474,6 @@
 			"height":60
 		},
 		{
-			"id":"a9f112912994338a",
-			"type":"text",
-			"text":"BAT THUONG NPL",
-			"styleAttributes":{},
-			"x":19180,
-			"y":-19240,
-			"width":200,
-			"height":60
-		},
-		{
-			"id":"7f19aeeb21bd617d",
-			"type":"text",
-			"text":"BAT THUONG GIA CONG ",
-			"styleAttributes":{},
-			"x":19560,
-			"y":-19340,
-			"width":160,
-			"height":60
-		},
-		{
 			"id":"711ad8a606d03491",
 			"type":"text",
 			"text":"OVERHEAD ABONORMAL",
@@ -503,17 +483,6 @@
 			"width":260,
 			"height":60,
 			"color":"3"
-		},
-		{
-			"id":"3f9f6fbd6de1b231",
-			"type":"text",
-			"text":"PHAN TICH VE NHA MAY \n- LUONG *KET NANG*: KHONG CO DU DU LIEU VỀ RẤT NHIỀU HẠNG MỤC - OT, PHỤ CẤP, LƯƠNG CHỨC DANH,... \n- THUONG \n- CHI PHI QUAN TRI VA VAN HANH\n\t- DIEN \n\t- NUOC\n\t- CHI PHI KHAC: VAN CHUYEN, VAT TU,...",
-			"styleAttributes":{},
-			"x":19300,
-			"y":-18935,
-			"width":300,
-			"height":390,
-			"color":"1"
 		},
 		{
 			"id":"93c69ca7b14b720b",
@@ -598,28 +567,6 @@
 			"height":140
 		},
 		{
-			"id":"71daba8b94cb5c96",
-			"type":"text",
-			"text":"san luong thap -> LUONG THAP \n- LUONG SAN PHAM: DANG LA PHAN LUONG ",
-			"styleAttributes":{},
-			"x":19680,
-			"y":-18680,
-			"width":480,
-			"height":180,
-			"color":"3"
-		},
-		{
-			"id":"60068094a7cb5b2f",
-			"type":"text",
-			"text":"LAY DU LIEU HRIS TRUOC -> PHAN TICH KHAO SAT\n- LUONG LA KHOAN LON NHAT\n- KHI PHAN TICH DEN HIEU QUA DON HANG : OC CAO -> PHAN TIHC VE NHA MAY -> BIET DUOC NHA MAY CO NHUNG BAT THUONG , CHUYEN KHAC NHAU VA CHENH LECH DU LIEU , \n- LUONG SAN PHAM TREN TUNG OC: LA HRIS CO",
-			"styleAttributes":{},
-			"x":19760,
-			"y":-19210,
-			"width":320,
-			"height":440,
-			"color":"4"
-		},
-		{
 			"id":"cfb4bcb362921a09",
 			"type":"text",
 			"text":"MRS THUY - WISER: DANG GAP KHO KHAN VOI TONG HOP BAO CAO THANH KHOAN",
@@ -679,6 +626,59 @@
 			"y":-20055,
 			"width":260,
 			"height":140
+		},
+		{
+			"id":"a9f112912994338a",
+			"type":"text",
+			"text":"BAT THUONG NPL",
+			"styleAttributes":{},
+			"x":19180,
+			"y":-19270,
+			"width":200,
+			"height":60
+		},
+		{
+			"id":"7f19aeeb21bd617d",
+			"type":"text",
+			"text":"BAT THUONG GIA CONG ",
+			"styleAttributes":{},
+			"x":19580,
+			"y":-19330,
+			"width":160,
+			"height":60
+		},
+		{
+			"id":"60068094a7cb5b2f",
+			"type":"text",
+			"text":"LAY DU LIEU HRIS TRUOC -> PHAN TICH KHAO SAT\n- LUONG LA KHOAN LON NHAT\n- KHI PHAN TICH DEN HIEU QUA DON HANG : OC CAO -> PHAN TIHC VE NHA MAY -> BIET DUOC NHA MAY CO NHUNG BAT THUONG , CHUYEN KHAC NHAU VA CHENH LECH DU LIEU , \n- LUONG SAN PHAM TREN TUNG OC: LA HRIS CO",
+			"styleAttributes":{},
+			"x":19880,
+			"y":-19100,
+			"width":320,
+			"height":440,
+			"color":"4"
+		},
+		{
+			"id":"3f9f6fbd6de1b231",
+			"type":"text",
+			"text":"PHAN TICH VE NHA MAY \n- LUONG *KET NANG*: KHONG CO DU DU LIEU VỀ RẤT NHIỀU HẠNG MỤC - OT, PHỤ CẤP, LƯƠNG CHỨC DANH,... \n- THUONG \n- CHI PHI QUAN TRI VA VAN HANH\n\t- DIEN \n\t- NUOC\n\t- CHI PHI KHAC: VAN CHUYEN, VAT TU,...",
+			"styleAttributes":{},
+			"x":19130,
+			"y":-18855,
+			"width":300,
+			"height":390,
+			"color":"1"
+		},
+		{
+			"id":"71daba8b94cb5c96",
+			"type":"text",
+			"text":"san luong thap -> LUONG THAP \n- LUONG SAN PHAM: DANG LA PHAN LUONG ",
+			"styleAttributes":{},
+			"x":19520,
+			"y":-18420,
+			"width":480,
+			"height":180,
+			"color":"3"
 		}
 	],
 	"edges":[
@@ -1082,6 +1082,15 @@
 			"fromSide":"right",
 			"toNode":"db836232ce081684",
 			"toSide":"top"
+		},
+		{
+			"id":"0fe59ac685f2d37f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3f9f6fbd6de1b231",
+			"fromSide":"bottom",
+			"toNode":"71daba8b94cb5c96",
+			"toSide":"left"
 		}
 	],
 	"metadata":{
