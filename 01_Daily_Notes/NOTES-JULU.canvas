@@ -82,8 +82,60 @@
 			"styleAttributes":{},
 			"x":5440,
 			"y":1080,
-			"width":1000,
-			"height":21048
+			"width":1140,
+			"height":21048,
+			"color":"4"
+		},
+		{
+			"id":"4c4d5721c3982422",
+			"type":"text",
+			"text":"Mrs. Tanya:\n\none of my go-to places is my hometown, and visit my small old house, \nwhich has a huge / big yard \nwhere me and my friends hanged out every evening after dinner",
+			"styleAttributes":{},
+			"x":4960,
+			"y":2940,
+			"width":440,
+			"height":240,
+			"color":"4"
+		},
+		{
+			"id":"e2d42fd8f346f858",
+			"type":"text",
+			"text":"Mrs Luna:\n- one of my go-to places is the beach of Vung Tau, a small tourist city, where i can taste plenty of delicious seafood and swim in the clear water under the blue sky.",
+			"styleAttributes":{},
+			"x":4960,
+			"y":3240,
+			"width":440,
+			"height":200
+		},
+		{
+			"id":"3dd5a96605a8a0a7",
+			"type":"text",
+			"text":"Mr. Mike:\ni really like beach's atmosphere, so one place that immediately comes to my mind every summer is Cam Ranh beach. The beach there seems to be endless with yellow sand and clear water. ",
+			"styleAttributes":{},
+			"x":4960,
+			"y":3480,
+			"width":440,
+			"height":260
+		},
+		{
+			"id":"e3f53d5a943cf528",
+			"type":"text",
+			"text":"Mrs Sophia:\n- one place that immediately come to my mind is the big market near my house, there are people everywhere and vendors are constantly calling out. Even inside the market, I can still hear the sound of traffic outside ",
+			"styleAttributes":{},
+			"x":4960,
+			"y":3760,
+			"width":440,
+			"height":200
+		},
+		{
+			"id":"8d330cb571f52fb9",
+			"type":"text",
+			"text":"Mrs Lily:\n- when i want to travel, one place that immediately come to my mind is Phu Yen beach. There is this cafe' where we can see the train passing by. Besides that, the water there is clear and not so many people around. ",
+			"styleAttributes":{},
+			"x":4960,
+			"y":4000,
+			"width":440,
+			"height":200
 		}
 	],
 	"edges":[
