@@ -167,7 +167,7 @@
 		{
 			"id":"6805dbdf13d5eb82",
 			"type":"text",
-			"text":"báo cáo tồn kho -> cảnh báo tồn kho -> đưa ra wanring:\n- các sản phẩm ",
+			"text":"báo cáo tồn kho -> cảnh báo tồn kho -> đưa ra wanring:\n- các sản phẩm tồn lâu - mà chưa sản xuất - chưa thực hiện ",
 			"styleAttributes":{},
 			"x":4340,
 			"y":1300,
