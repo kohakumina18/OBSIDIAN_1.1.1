@@ -136,6 +136,16 @@
 			"y":4000,
 			"width":440,
 			"height":200
+		},
+		{
+			"id":"2e4a4460e7621365",
+			"type":"text",
+			"text":"Mrs Jenny:\n- the places that i think of first, is the park near my house. There are plenty of small trees and a large football field, where my children and their friends play football every afternoon. Kids in my neighbor really enjoy it. ",
+			"styleAttributes":{},
+			"x":4960,
+			"y":4240,
+			"width":440,
+			"height":240
 		}
 	],
 	"edges":[
