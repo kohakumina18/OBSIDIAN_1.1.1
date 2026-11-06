@@ -43,16 +43,6 @@
 			"height":100
 		},
 		{
-			"id":"936d00cec86507d9",
-			"type":"text",
-			"text":"CHI PHÍ - DOANH THU",
-			"styleAttributes":{},
-			"x":1000,
-			"y":1180,
-			"width":260,
-			"height":60
-		},
-		{
 			"id":"2a64b8724eeaf9a3",
 			"type":"text",
 			"text":"Question ID\tStakeholder\tCâu hỏi AS-IS\tKiểu chọn\tPhương án trả lời\tÝ nghĩa phân tích\tERP/BA Requirement phát sinh\tEvidence cần thu\tPriority\tCâu làm rõ / follow-up\nPL01\tHead of Planning\tKế hoạch sản xuất được lập ở mức nào?\tChọn nhiều\tA. Toàn công ty\nB. Theo nhà máy\nC. Theo dây chuyền\nD. Theo máy\nE. Theo ca\nF. Theo SKU\nG. Theo Production Order\tPlanning granularity\tMPS granularity\tMPS actual samples\tP0\tCung cấp một MPS tuần thực tế\nPL02\tHead of Planning\tChu kỳ lập MPS và lịch phát hành lệnh sản xuất?\tChọn 1\tA. Theo ngày\nB. Theo tuần\nC. Theo tháng\nD. Theo đợt/campaign\nE. Linh hoạt theo nhu cầu\tPlanning cadence\tMPS calendar\tPlan version log\tP0\tChỉ thời điểm freeze/release\nPL03\tHead of Planning\tMPS lấy đầu vào từ đâu?\tChọn nhiều\t\nA. Sales forecast\nB. SO\nC. Tồn thành phẩm\nD. Tồn WIP\nE. Tồn nguyên liệu\nF. Machine capacity\nG. Quyết định quản lý\tPlan integration\tMPS input model\tForecast; stock; capacity\tP0\tĐánh dấu nguồn chưa đáng tin\nPL04\tHead of Planning\tKế hoạch hiện được vận hành trên công cụ nào?\tChọn 1\t\nA. Excel cá nhân\nB. Excel dùng chung\nC. ERP/MRP\nD. MES\nE. Bảng giấy\nF. Họp/điện thoại\tCurrent system\tSystem inventory / replacement assessment\tScreenshots; workbook\tP0\tChỉ ra file master hiện hành\nPL05\tPlanning + Plant Manager\tKhi phát hành lệnh, có kiểm tra đủ nguyên liệu không?\tChọn 1\tA. Tự động\nB. Kiểm tra Excel\nC. Kho xác nhận thủ công\nD. Chỉ kiểm tra khi thiếu\nE. Không kiểm tra\tMaterial feasibility\tMaterial availability check\tMO; RM stock\tP0\tCase thiếu nguyên liệu khi đã chạy\nPL06\tPlanning\tMRP hiện tính nhu cầu bông/xơ theo cơ sở nào?\tChọn 1\tA. BOM định mức\nB. Recipe + yield\nC. Kinh nghiệm\nD. Giá trị lịch sử\nE. Chưa có MRP\tGross-to-net logic\tMRP and yield calculation\tMRP workbook; recipe\tP0\tLấy công thức thực tế và đơn vị\nPL07\tPlanning + Technical\tRouting sản xuất được phân theo sản phẩm thế nào?\tChọn 1\tA. Một routing chung\nB. Theo loại cotton/polyester\nC. Theo carded/combed/compact\nD. Theo máy cụ thể\nE. Chưa có routing chuẩn\tRouting structure\tAlternative routing\tMachine process charts\tP0\tXác nhận công đoạn thực tế từng SKU\nPL08\tPlant Manager\tCông suất kế hoạch tính bằng chỉ tiêu nào?\tChọn nhiều\tA. Kg/ngày\nB. Kg/ca\nC. Cọc sợi\nD. Spindle-hour\nE. Machine-hour\nF. Efficiency lịch sử\nG. Định mức theo chi số\tCapacity unit\tWork center capacity master\tMachine rates; shift logs\tP0\tNêu công suất theo chi số\nPL09\tPlant Manager\tCác yếu tố nào làm thay đổi công suất thực?\tChọn nhiều\tA. Chi số/loại sợi\nB. Tình trạng máy\nC. Tốc độ máy\nD. Nhân lực\nE. Điều kiện nhiệt/ẩm\nF. Thay đổi recipe\nG. Thiếu nguyên liệu\tCapacity drivers\tCapacity constraints\tRuntime; environment; staff\tP0\tXếp 3 yếu tố ảnh hưởng nhất\nPL10\tPlanning\tCó lập lịch hữu hạn theo máy và ca không?\tChọn 1\tA. Có phần mềm APS\nB. ERP giới hạn công suất\nC. Excel thủ công\nD. Quản đốc tự xếp\nE. Không\tFinite scheduling fit\tScheduling requirement\tSchedule file\tP1\tChụp lịch một ngày có đổi kế hoạch\nPL11\tPlanning\tThời gian chuyển đổi chi số/recipe được ghi nhận thế nào?\tChọn 1\tA. Định mức chuẩn\nB. Nhật ký máy\nC. Ước lượng kinh nghiệm\nD. Không ghi nhận\nE. Không áp dụng\tSetup time\tChangeover master\tChangeover log\tP1\tGhi thời gian theo case\nPL12\tPlanning\tQuyết định ưu tiên MO khi khan hiếm công suất theo tiêu chí nào?\tChọn nhiều\tA. Ngày giao\nB. Đơn hàng quan trọng\nC. Tồn kho tối thiểu\nD. Tối ưu changeover\nE. Biên lợi nhuận\nF. Quyết định quản đốc\tDispatch priority\tDispatch rules\tMO priorities\tP0\tRank top 3\nPL13\tPlanning\tCó thể chia một MO ra nhiều máy/ca không?\tChọn 1\tA. Có, theo rule\nB. Có nhưng thủ công\nC. Không\nD. Không rõ\tOrder splitting\tMO-to-machine allocation\tMO/shift examples\tP0\tNêu quy tắc gộp số lượng cuối\nPL14\tProduction Supervisor\tSản lượng thực tế được ghi nhận theo độ chi tiết nào?\tChọn nhiều\tA. Theo MO\nB. Theo công đoạn\nC. Theo máy\nD. Theo ca\nE. Theo người vận hành\nF. Theo mix batch\nG. Theo lô thành phẩm\tExecution detail\tMES collection grain\tProduction shift log\tP0\tLấy phiếu ca điển hình\nPL15\tProduction Supervisor\tKhối lượng WIP giữa công đoạn được quản lý như thế nào?\tChọn 1\tA. Có mã WIP và chuyển công đoạn\nB. Tổng hợp kg theo ngày\nC. Kiểm đếm cuối kỳ\nD. Chỉ quản lý tại xưởng\nE. Không theo dõi\tWIP model\tWIP transfer / valuation\tWIP slips; physical samples\tP0\tTheo dõi một batch qua 3 công đoạn\nPL16\tProduction Supervisor\tPhế, hao hụt, noil và bông hồi được phân loại ra sao?\tChọn 1\tA. Có danh mục/phân loại chuẩn\nB. Phân loại trên giấy\nC. Gộp chung phế\nD. Tùy ca/tổ\nE. Chưa theo dõi\tMass balance\tWaste classification\tWaste logs\tP0\tCân mẫu input/output/phế\nPL17\tProduction Supervisor\tKhi sai lệch sản lượng/hao hụt vượt định mức, ai xử lý?\tChọn 1\tA. Tổ trưởng\nB. Quản đốc\nC. Kỹ thuật\nD. QC\nE. Họp liên bộ phận\nF. Không có cảnh báo\tException ownership\tVariance workflow\tDeviation reports\tP0\tNêu ngưỡng cảnh báo nếu có\nPL18\tPlant Manager\tMáy dừng được ghi nhận nguyên nhân theo cách nào?\tChọn 1\tA. Cảm biến tự động\nB. MES chọn reason\nC. Nhật ký giấy\nD. Excel\nE. Không ghi\tDowntime tracking\tMachine event capture\tDowntime log\tP1\tGửi reason code hiện có\nPL19\tPlant Manager\tCó kiểm soát số lượng nhân lực/ca trước khi xếp lịch máy không?\tChọn 1\tA. Tự động từ HR/attendance\nB. Excel roster\nC. Quản đốc tự phân công\nD. Chỉ xử lý khi thiếu\nE. Không\tLabor capacity\tShift labor planning\tRoster, attendance\tP0\tNêu tình huống thiếu người\nPL20\tTechnical + Planning\tĐịnh mức output/yield đang quản lý theo mức nào?\tChọn nhiều\tA. Theo SKU\nB. Theo chi số\nC. Theo tuyến công nghệ\nD. Theo máy\nE. Theo mùa/độ ẩm\nF. Theo công nhân\nG. Chỉ một định mức chung\tStandard master grain\tStandard rate/yield version\tStandard sheets\tP0\tGửi 2 phiên bản thay đổi định mức\nPL21\tQC + Planning\tQC Hold có ảnh hưởng thế nào đến lịch giao/điều độ?\tChọn 1\tA. Tự động block\nB. Cảnh báo và duyệt\nC. Thông báo thủ công\nD. Chỉ biết khi đóng gói\nE. Không có liên kết\tQC-to-plan integration\tHold/ATP propagation\tQC incident, plan changes\tP0\tCho một case phải sản xuất lại\nPL22\tPlant Manager\tDữ liệu máy có thể thu tự động ở mức nào?\tChọn nhiều\tA. Running/stopped\nB. Counter/sản lượng\nC. Tốc độ\nD. Điện năng\nE. Cảnh báo lỗi\nF. Không có interface\nG. Chưa khảo sát\tConnectivity scope\tIoT/MES feasibility\tMachine list; protocol\tP1\tGhi model/year/protocol\nPL23\tPlanning + Finance\tKhi kết thúc MO, chốt sản lượng và tiêu hao khi nào?\tChọn 1\tA. Ngay cuối ca\nB. Cuối ngày\nC. Cuối MO\nD. Cuối tháng\nE. Sau khi kế toán rà soát\tClosing point\tMO close/control\tMO closure log\tP0\tAi có quyền reopen?\nPL24\tPlant Manager\tThực tế có chạy một mix batch cho nhiều MO hoặc nhiều SKU?\tChọn 1\tA. Một batch một MO\nB. Một batch nhiều MO cùng SKU\nC. Nhiều SKU\nD. Không định danh mix batch\nE. Tùy thời điểm\tGenealogy mapping\tMany-to-many lot association\tCampaign sheet\tP0\tVẽ một ví dụ thật\nPL25\tPlanning + Management\tVấn đề điều độ nào gây tổn thất lớn nhất?\tChọn nhiều\tA. Máy nhàn rỗi\nB. Thay đổi kế hoạch\nC. Thiếu bông\nD. Thiếu người\nE. Phế cao\nF. Chậm QC\nG. Tồn WIP cao\nH. Không biết năng lực thực\tPrioritization\tImprovement backlog\tLoss cases\tP0\tChọn 3 vấn đề và lượng hóa",
@@ -101,6 +91,47 @@
 			"y":20,
 			"width":580,
 			"height":320
+		},
+		{
+			"id":"5eb36c3e93ce1d3a",
+			"type":"text",
+			"text":"MRS ĐẢM:  PHỤ TRÁCH KINH DOANH\nTÂM: KẾ TOÁN TRƯỞNG \nTRANG: KẾ TOÁN TỔNG HỢP - kho giá thành đều đang là thủ công ",
+			"styleAttributes":{},
+			"x":1420,
+			"y":920,
+			"width":420,
+			"height":160
+		},
+		{
+			"id":"936d00cec86507d9",
+			"type":"text",
+			"text":"KẾ TOÁN - CHI PHÍ - DOANH THU",
+			"styleAttributes":{},
+			"x":960,
+			"y":1160,
+			"width":400,
+			"height":80
+		},
+		{
+			"id":"a0b7acf502365101",
+			"type":"text",
+			"text":"dữ liệu dưới xưởng cần phải nhập tay lên\n- hiện tại 33 máy: 18 tự động / 15 nhập tay\n- cần đẩy dữ liệu lên để tính giá thành : tuy nhiên cần KT tham gia vào quy trình mix bông - in bar/ QR code -> \n- cần chuyển dữ liệu của từng kiện vào quản lý -> phối hợp với kho: \n\t- sẽ có mức độ phân tích về chi phí nếu định danh được NPL \n- hiện tại đơn hàng: chưa có theo dõi kỹ: chưa chi tiết được về các giai đoạn của 1 mặt hàng: hầu nư do kinh doanh cấp số liệu cho kế toán ->\n- cần phần mềm mà nhận thông tin lưu trữ rõ về từng công đoạn - từng quy trình và thời gian hạn định ( thời gian LC - thời gian công nợ của ngân hàng - hợp đồng chủ yếu là kinh doanh nắm - lúc nào tiền về thì (kế hoạch theo tuần) mới bắt đầu chuyển thông tin cho kế toán --- chưa kết nối được với nhau \n-  nhập kho / sản xuất : hầu như là thủ công \n- cuối tháng sẽ có một báo cáo tổng hợp và cân đối quy trình \n\t- vật tư và thành phẩm: ",
+			"styleAttributes":{},
+			"x":1000,
+			"y":1460,
+			"width":680,
+			"height":1500,
+			"color":"5"
+		},
+		{
+			"id":"fed8ea5a0f498aa0",
+			"type":"text",
+			"text":"make to stock - ai xác định mức stock ",
+			"styleAttributes":{},
+			"x":1240,
+			"y":3220,
+			"width":480,
+			"height":60
 		}
 	],
 	"edges":[
@@ -121,6 +152,15 @@
 			"fromNode":"2eaf728ad543a6ed",
 			"fromSide":"bottom",
 			"toNode":"936d00cec86507d9",
+			"toSide":"top"
+		},
+		{
+			"id":"7e449822605bad54",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"936d00cec86507d9",
+			"fromSide":"bottom",
+			"toNode":"a0b7acf502365101",
 			"toSide":"top"
 		}
 	],
