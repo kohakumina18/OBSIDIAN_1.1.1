@@ -3,15 +3,67 @@
 		{
 			"id":"d4e7a3e49a522787",
 			"type":"text",
-			"text":"INVOICES:: LAY SO TIEN CHIA CONG NO -> THEO TI LE GIA TRI CUA TỪNG OC\n- PROB: SUPP-INVOICES: CÓ HOẶC KHÔNG CÓ OC\n\t- CÓ INVOICES CÓ GHI THẲNG OC---ĐÃ CÓ LIST TỔNG HỢP INVOICES CÓ VÀ CHƯA CÓ OC \n\t- STYLE -> (OC) -> PO :: MAPPING OC-INVOICES: KHÔNG KHỚP---\n\t- MAPPING RULES:: STANDARDIZE LẠI ---> TRUY VẾT INVOICES CỦA TỪNG OC ",
+			"text":"INVOICES:: LAY SO TIEN CHIA CONG NO -> THEO TI LE GIA TRI CUA TỪNG OC\n- PROB: SUPP-INVOICES: CÓ HOẶC KHÔNG CÓ OC\n\t- CÓ INVOICES CÓ GHI THẲNG OC---ĐÃ CÓ LIST TỔNG HỢP INVOICES CÓ VÀ CHƯA CÓ OC \n\t- STYLE -> (OC) -> PO :: MAPPING OC-INVOICES: KHÔNG KHỚP--- ĐÃ CÓ ID, TUY NHIÊN KHÔNG BIẾT MAP FAILED Ở ĐÂU ---\n\t- MAPPING RULES:: STANDARDIZE LẠI ---> TRUY VẾT INVOICES CỦA TỪNG OC ",
 			"styleAttributes":{},
 			"x":-300,
 			"y":-120,
 			"width":960,
-			"height":200
+			"height":200,
+			"color":"1"
+		},
+		{
+			"id":"23bda67020e2a84e",
+			"type":"text",
+			"text":"MÁ HẠNH\n",
+			"styleAttributes":{},
+			"x":-20,
+			"y":-440,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"7ad15be6acce2f17",
+			"type":"text",
+			"text":"MRS LUTI",
+			"styleAttributes":{},
+			"x":-340,
+			"y":-320,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"6cfaac48090e1f24",
+			"type":"text",
+			"text":"CONTACTS",
+			"styleAttributes":{},
+			"x":220,
+			"y":-260,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"3086459a5c66370b",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":700,
+			"y":-40,
+			"width":260,
+			"height":60
 		}
 	],
-	"edges":[],
+	"edges":[
+		{
+			"id":"2c36506256d08810",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"d4e7a3e49a522787",
+			"fromSide":"top",
+			"toNode":"6cfaac48090e1f24",
+			"toSide":"bottom"
+		}
+	],
 	"metadata":{
 		"version":"1.0-1.0",
 		"frontmatter":{}
