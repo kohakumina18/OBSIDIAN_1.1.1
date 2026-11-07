@@ -73,16 +73,6 @@
 			"height":4000
 		},
 		{
-			"id":"c3cef522618e18b4",
-			"type":"text",
-			"text":"MAT BANG KHONG CO KHẢ NĂNG ĐỂ PHÂN LOẠI CÁC KIỆN BÔNG - ĐỂ RIÊNG TỪNG CONT -> RÁP VÀO SƠ ĐỒ BÀN MĨ X+ CĂN CỨ VÀO HVI - DÁN ID VÀO TỪNG KIỆN - THÌ SẼ NẮM ĐƯỢC TỐT CÁC KIỆN \n-> MỚI CÓ KHẢ NĂNG TỐI ƯU NGUYÊN PHỤ LIỆU -> DỄ DÀNG HƠN KHI SỬ DỤNG CÁC KIỆN CÓ THỂ REACH - THAY VÌ PHẢI MÓC HẾT KHO LÊN - \nMIXBALE -> ĐẨY CÁC KIỆN ",
-			"styleAttributes":{},
-			"x":-1380,
-			"y":2500,
-			"width":760,
-			"height":360
-		},
-		{
 			"id":"0036082cfaa61290",
 			"type":"text",
 			"text":"HIEN TAI: QUY TRINHF SAN XUAT TU DONG BANG MAY - DA CO IOT - DA CO DATA GATHERING TOOL \n- TUY NHIEN VAN CHUA CO NEN TANG TONG HOP DU LIEU TAP TRUNG - \n",
@@ -132,6 +122,16 @@
 			"y":3220,
 			"width":480,
 			"height":60
+		},
+		{
+			"id":"c3cef522618e18b4",
+			"type":"text",
+			"text":"MAT BANG KHONG CO KHẢ NĂNG ĐỂ PHÂN LOẠI CÁC KIỆN BÔNG - ĐỂ RIÊNG TỪNG CONT -> RÁP VÀO SƠ ĐỒ BÀN MĨ X+ CĂN CỨ VÀO HVI - DÁN ID VÀO TỪNG KIỆN - THÌ SẼ NẮM ĐƯỢC TỐT CÁC KIỆN \n-> MỚI CÓ KHẢ NĂNG TỐI ƯU NGUYÊN PHỤ LIỆU -> DỄ DÀNG HƠN KHI SỬ DỤNG CÁC KIỆN CÓ THỂ REACH - THAY VÌ PHẢI MÓC HẾT KHO LÊN - \nMIXBALE -> ĐẨY CÁC KIỆN ",
+			"styleAttributes":{},
+			"x":0,
+			"y":1020,
+			"width":760,
+			"height":360
 		}
 	],
 	"edges":[
