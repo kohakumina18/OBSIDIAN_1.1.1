@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{
+			"id":"d4e7a3e49a522787",
+			"type":"text",
+			"text":"INVOICES:: LAY SO TIEN CHIA CONG NO -> THEO TI LE GIA TRI CUA TỪNG OC\n- PROB: SUPP-INVOICES: CÓ HOẶC KHÔNG CÓ OC\n\t- CÓ INVOICES CÓ GHI THẲNG OC---ĐÃ CÓ LIST TỔNG HỢP INVOICES CÓ VÀ CHƯA CÓ OC \n\t- STYLE -> (OC) -> PO :: MAPPING OC-INVOICES: KHÔNG KHỚP---\n\t- MAPPING RULES:: STANDARDIZE LẠI ---> TRUY VẾT INVOICES CỦA TỪNG OC ",
+			"styleAttributes":{},
+			"x":-300,
+			"y":-120,
+			"width":960,
+			"height":200
+		}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
