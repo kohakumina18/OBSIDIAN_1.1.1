@@ -10,7 +10,6 @@
 			"width":260,
 			"height":60
 		},
-		{"id":"3ba2d55612cd456d","type":"file","file":"Pasted image 20261010135140.png","x":3000,"y":-2400,"width":600,"height":1500},
 		{"id":"c5e807d6e4c11ad5","type":"file","file":"Pasted image 20261010135211.png","x":1370,"y":-5280,"width":1680,"height":840},
 		{"id":"68b2374874194800","type":"file","file":"Pasted image 20261010135111.png","x":3600,"y":-3550,"width":963,"height":680},
 		{
@@ -32,16 +31,6 @@
 			"y":-5120,
 			"width":260,
 			"height":140
-		},
-		{
-			"id":"b9aae71822636823",
-			"type":"text",
-			"text":"- ECONOMIC\n- TECHNOLOGY\n- EDUCATION\n- FAMILY \n- GOVERNMENT \n",
-			"styleAttributes":{},
-			"x":2600,
-			"y":-1780,
-			"width":260,
-			"height":340
 		},
 		{
 			"id":"c5553f842d85ec32",
@@ -350,7 +339,18 @@
 		{"id":"f99fd425a34102bd","type":"file","file":"Pasted image 20261107161659.png","x":24500,"y":580,"width":498,"height":280},
 		{"id":"e7422483ec4e338a","type":"file","file":"Pasted image 20261107162217.png","x":24520,"y":900,"width":400,"height":393},
 		{"id":"16919948220f75f9","type":"file","file":"Pasted image 20261107163744.png","x":26560,"y":-128,"width":443,"height":527},
-		{"id":"ec51ecfe1ca8e5f5","type":"file","file":"Pasted image 20261107163920.png","x":27060,"y":-128,"width":442,"height":527}
+		{"id":"ec51ecfe1ca8e5f5","type":"file","file":"Pasted image 20261107163920.png","x":27060,"y":-128,"width":442,"height":526},
+		{
+			"id":"b9aae71822636823",
+			"type":"text",
+			"text":"- ECONOMIC\n- TECHNOLOGY\n- EDUCATION\n- FAMILY \n- GOVERNMENT \n",
+			"styleAttributes":{},
+			"x":720,
+			"y":-2320,
+			"width":260,
+			"height":340
+		},
+		{"id":"3ba2d55612cd456d","type":"file","file":"Pasted image 20261010135140.png","x":2240,"y":-3000,"width":600,"height":1500}
 	],
 	"edges":[
 		{
