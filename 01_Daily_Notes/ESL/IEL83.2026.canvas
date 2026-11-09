@@ -8,7 +8,7 @@
 			"x":-2120,
 			"y":-760,
 			"width":1520,
-			"height":11713
+			"height":9800
 		},
 		{"id":"ba0e448d5f264a4a","type":"file","file":"Pasted image 20261109151610.png","x":1293,"y":-1370,"width":1183,"height":540},
 		{"id":"b627c5268237a8cf","type":"file","file":"Pasted image 20261109151535.png","x":0,"y":-1440,"width":974,"height":680},
@@ -17,13 +17,58 @@
 		{
 			"id":"824826e0d7e917b5",
 			"type":"text",
-			"text":"- ",
+			"text":"- TONY: GOOFY - LOVES CHESS / BUSH GAMES - LEARN BEST WITH GAMES / CHATTING / YOUTUBE / PROGRAMMING\n- HENRY: EXTROVERT - LOVE CHESS /- LEARN BEST WITH GAMES / READIN / CHATTING / DISCORD \n- SUNNY : CHATTY - LOVE MUSIC : US/UK - LEARN FROM SOCIAL MEDIA + YOUTUBES / READING - LOVES TO DANCE\n- LUNA: LOVES DRAWING / WRITING / READING NOVEL - LEARN BEST WITH READING FAN(MULTI FANDOM)-FICTION + MOVIES - \n- NGHI: LISTENING TO MUSIC - LEARN WITH SOCIAL MEDIA \n- MIA - THAO: LOVE RACING - LEARN BEST WITH CHATTING W FIRENDS /GAMES \n- HANNA: PLAY GAMES / LOVES TO EXPLORE NEW THINGS  ",
 			"styleAttributes":{},
-			"x":-4120,
+			"x":-4460,
 			"y":-1320,
+			"width":600,
+			"height":440
+		},
+		{
+			"id":"ad0496454a10a7ea",
+			"type":"text",
+			"text":"HAKU ",
+			"styleAttributes":{},
+			"x":-4420,
+			"y":-1420,
 			"width":260,
 			"height":60
-		}
+		},
+		{
+			"id":"8fb5e0eaacff61a3",
+			"type":"text",
+			"text":"HAKU",
+			"styleAttributes":{},
+			"x":-4280,
+			"y":-1700,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"d43ef4544e598ca7",
+			"type":"text",
+			"text":"KOHAKU",
+			"styleAttributes":{},
+			"x":-4560,
+			"y":-1700,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"20ae3717d07b20de",
+			"type":"text",
+			"text":"DJAKU\n- SCHRANZ \n- MELODIC TECH\n- PSYTRANCE\n- ACID \n- ",
+			"styleAttributes":{},
+			"x":-4380,
+			"y":-1620,
+			"width":260,
+			"height":160
+		},
+		{"id":"c8f1c70a3131af14","type":"file","file":"Pasted image 20261109205222.png","x":1960,"y":140,"width":283,"height":400},
+		{"id":"461f67eaad54cf43","type":"file","file":"Pasted image 20261109205756.png","x":2400,"y":440,"width":520,"height":358},
+		{"id":"6f24ee62d9b82dc0","type":"file","file":"Pasted image 20261109200938.png","x":5066,"y":-130,"width":1342,"height":760},
+		{"id":"6c76db8a782aaea1","type":"file","file":"Pasted image 20261109200943.png","x":5280,"y":-960,"width":1328,"height":640},
+		{"id":"90fe2fda47503546","type":"file","file":"Pasted image 20261109200934.png","x":3400,"y":-520,"width":1247,"height":620}
 	],
 	"edges":[
 		{
@@ -70,6 +115,33 @@
 			"fromSide":"top",
 			"toNode":"ba0e448d5f264a4a",
 			"toSide":"right"
+		},
+		{
+			"id":"966e85715a51df8c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6f24ee62d9b82dc0",
+			"fromSide":"top",
+			"toNode":"6c76db8a782aaea1",
+			"toSide":"bottom"
+		},
+		{
+			"id":"a10743979cb1abe4",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6c76db8a782aaea1",
+			"fromSide":"left",
+			"toNode":"90fe2fda47503546",
+			"toSide":"top"
+		},
+		{
+			"id":"0b945527fe5e0747",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6f24ee62d9b82dc0",
+			"fromSide":"left",
+			"toNode":"90fe2fda47503546",
+			"toSide":"bottom"
 		}
 	],
 	"metadata":{
