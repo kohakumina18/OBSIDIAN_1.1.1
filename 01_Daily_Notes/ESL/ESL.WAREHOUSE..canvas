@@ -19,9 +19,108 @@
 			"y":-920,
 			"width":1240,
 			"height":22628
+		},
+		{"id":"b22219effeeffe3e","type":"file","file":"Pasted image 20261110173834.png","x":-2380,"y":-1520,"width":400,"height":266},
+		{"id":"746df56e38d88576","type":"file","file":"Pasted image 20261110173851.png","x":-2880,"y":-1509,"width":437,"height":245},
+		{"id":"0d438ea09f44ba01","type":"file","file":"Pasted image 20261110173812.png","x":-2760,"y":-1120,"width":691,"height":360},
+		{
+			"id":"36c9dd397fde2828",
+			"type":"text",
+			"text":"ITS THE CITY WITH THE BEST **QUALITY OF LIFE** IN VIETNAM",
+			"styleAttributes":{},
+			"x":-1160,
+			"y":590,
+			"width":320,
+			"height":80,
+			"color":"5"
+		},
+		{
+			"id":"5d7d6654f2f772ea",
+			"type":"text",
+			"text":"N.1 - VUNG TAU\n- ITS A NOT TOO BIG CITY + ITS AN ISLAND WITH BRIDGE CONNECT IT TO THE MAINLAND - ITS SURROUND BY THE SEA (THE CITY)\n- THERE ARE MANY PEOPLE COME HERE EVERYWEEK \n- ITS FAR AWAY FROM HCM CITY - AROUND 100 KM + WE CAN GET THERE WITH MOTORCYCLE\n- VO THI SAU WAS BORN HERE ",
+			"styleAttributes":{},
+			"x":-3240,
+			"y":-50,
+			"width":480,
+			"height":260,
+			"color":"6"
+		},
+		{
+			"id":"f51a49e06dbb2bb6",
+			"type":"text",
+			"text":"N2. HA GIANG \n- IN THE NORTH OF VIETNAM, VERY FAMOUS FOR TOURIST \n- HAS BEAUTIFUL NATURAL LANDSCAPES \n- WE CAN SEE THE MAJESTIC MOUNTAINS - WITHOUT THE BEACHES \n- ITS FAMOUS RIVER HAS BLUE WATER - NHO QUE RIVER\n- HAS BEEN MERGED WITH TUYEN QUANG TO BECOME A BIGG PROVINCE  ",
+			"styleAttributes":{},
+			"x":-2654,
+			"y":-50,
+			"width":480,
+			"height":340,
+			"color":"4"
+		},
+		{
+			"id":"7399679cd375b74f",
+			"type":"text",
+			"text":"N3. CONG THUONG COLLEGE \n- NEAR OUR WORKPLACE WITH LIVELY ATMOSPHERE AND CROWED WITH PEOPLE EVERY MORNING\n- THE TRAFFIC IS AWFUL EVERY AFTERNOON \n- MR MIKE HAS TO PASS THROUGH EVERYDAY\n- THIS IS WHERE MRS JENNY STUDIED - FOR 3 YEARS ",
+			"styleAttributes":{},
+			"x":-2069,
+			"y":-50,
+			"width":490,
+			"height":300,
+			"color":"5"
+		},
+		{
+			"id":"50884b93ce614f45",
+			"type":"text",
+			"text":"N4. PHU YEN\n- IN THE CENTRAL REGION OF VIETNAM\n- THE DISTANCE FROM HCMC TO THIS PLACE IS AROUND 600 KM \n- THIS IS MY HOMETOWN WITH NGHINH PHONG TOWER AND CLOSE TO THE FAMOUS \"GÀNH ĐÁ ĐĨA\"  ",
+			"styleAttributes":{},
+			"x":-3240,
+			"y":360,
+			"width":480,
+			"height":260,
+			"color":"5"
+		},
+		{
+			"id":"8ba804793640e8da",
+			"type":"text",
+			"text":"N5. BA NA HILLS \n- THE DISTANCE FROM HCMC TO THIS PLACE IS AROUND 1.000KM \n- THIS PLACE HAS THE GOLDEN BRIDGE WITH HANGING CABIN SYSTEM \n- IT'S THE CITY WITH THE BEST **QUALITY OF LIFE** IN VIETNAM",
+			"styleAttributes":{},
+			"x":-2654,
+			"y":390,
+			"width":480,
+			"height":240,
+			"color":"3"
+		},
+		{
+			"id":"5df53822b7680f9e",
+			"type":"text",
+			"text":"N6. PHAN THIET\n- THIS IS ONE OF THE MOST FAMOUS TOURIST CITY IN VIETNAM \n- IT HAS BEAUTIFUL BEACHES - **JUST AROUND 176KM FORM HCMC** - AND THE **NEIGHBOR OF DONG NAI PROVINCE**  \n- WE USUALLY DO TEAM BUILDING HERE\n- WAREHOUSE USED TO HEAD THERE 3 YEARS AGO\n- WITH HON ROM RESORT ",
+			"styleAttributes":{},
+			"x":-2059,
+			"y":360,
+			"width":480,
+			"height":360,
+			"color":"5"
 		}
 	],
-	"edges":[],
+	"edges":[
+		{
+			"id":"42bc6d20de6391bf",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0d438ea09f44ba01",
+			"fromSide":"top",
+			"toNode":"746df56e38d88576",
+			"toSide":"bottom"
+		},
+		{
+			"id":"4c4e8d518a09af8b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0d438ea09f44ba01",
+			"fromSide":"top",
+			"toNode":"b22219effeeffe3e",
+			"toSide":"bottom"
+		}
+	],
 	"metadata":{
 		"version":"1.0-1.0",
 		"frontmatter":{}
