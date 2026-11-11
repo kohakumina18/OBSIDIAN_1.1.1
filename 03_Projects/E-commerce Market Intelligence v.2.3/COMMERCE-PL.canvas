@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{
+			"id":"b1f244172b9ae215",
+			"type":"text",
+			"text":"AVERY.DA\n- GOAL: DIGITALIZE LABELS (...)\n- ",
+			"styleAttributes":{},
+			"x":-340,
+			"y":-220,
+			"width":640,
+			"height":380
+		}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
