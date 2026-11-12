@@ -10,8 +10,9 @@ except Exception as e:
 codes=[p['code'] for p in data.get('projects',[]) if not p.get('candidate')]
 if len(codes)!=len(set(codes)): errors.append('duplicate canonical codes in snapshot')
 standard=re.compile(r'^[A-Z]+_[A-Za-z0-9]+_v\d+\.\d+\.\d+$')
+naming_exceptions={c for c in codes if any(f'`{c}`' in str(note) and 'exception' in str(note).lower() and 'naming' in str(note).lower() for note in data.get('governance_exceptions',[]))}
 for c in codes:
-    if '_' in c and not standard.match(c): errors.append(f'canonical code breaks naming standard: {c}')
+    if '_' in c and not standard.match(c) and c not in naming_exceptions: errors.append(f'canonical code breaks naming standard: {c}')
 seen={}
 for p in data.get('projects',[]):
     for alias in p.get('legacy',[]):
@@ -45,7 +46,7 @@ for path in ROOT.rglob('*.md'):
 fd=next((p for p in data.get('projects',[]) if p['code']=='FAB_FabricDatamart_v2.2.0'),{})
 cpd=next((p for p in data.get('projects',[]) if p['code']=='CPD_VisualSampleDatamart_v1.1.0'),{})
 if 'Hanger' not in fd.get('outcome','') or '3D' not in cpd.get('outcome',''): errors.append('FAB/CPD scope separation failed')
-canvas=ROOT/'03_Projects/Canvas/PPJ_Executive_Board_v2.canvas'
+canvas=ROOT/'03_Projects/_Canvas/PPJ_Executive_Board_v2.canvas'
 if canvas.exists():
     text=canvas.read_text(encoding='utf-8-sig')
     marks=re.findall(r'PPJ_PROJECT_CARD:([^ >]+(?: [^ >]+)*?) -->',text)
@@ -54,7 +55,7 @@ report=ROOT/'10_Reports/PPJ_PORTFOLIO_CONSISTENCY_AUDIT_20260918.md'
 report.write_text('# PPJ Portfolio Consistency Audit - 2026-09-18\n\n'
                   f'- Result: **{"PASS" if not errors else "FAIL"}**\n- Errors: {len(errors)}\n- Warnings: {len(warnings)}\n\n'
                   '## Errors\n\n'+('\n'.join(f'- {x}' for x in errors) or '- None')+'\n\n## Warnings\n\n'
-                  +('\n'.join(f'- {x}' for x in warnings[:200]) or '- None')+'\n',encoding='utf-8')
+                  +('\n'.join(f'- {x}' for x in warnings[:200]) or '- None')+'\n',encoding='utf-8',newline='\n')
 print(f"Audit {'PASS' if not errors else 'FAIL'}: {len(errors)} errors, {len(warnings)} warnings")
 print(report)
 sys.exit(1 if errors else 0)

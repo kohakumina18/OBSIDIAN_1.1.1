@@ -1,7 +1,7 @@
 ---
 type: portfolio_current_snapshot
-source_event: "PPJ-WEEKLY-20261030-20261106"
-last_verified: "2026-11-06"
+source_event: PPJ-PROJECT-REGISTRATION-PPJxDệt_Phú_Thọ-20261112
+last_verified: 2026-11-12
 portfolio_maturity: "Stage 3 - Controlled Delivery / Early Scale"
 ---
 
@@ -9,8 +9,8 @@ portfolio_maturity: "Stage 3 - Controlled Delivery / Early Scale"
 
 This is the fast current-state handoff for a new Codex session. Read it after `AGENTS.md` and before historical reports. Delivery Stream separates internal and external development; Delivery Stage is the shared eight-step position. Lifecycle and Status remain separate.
 
-- Source Event: PPJ-WEEKLY-20261030-20261106
-- Last Verified: 2026-11-06
+- Source Event: `PPJ-PROJECT-REGISTRATION-PPJxDệt_Phú_Thọ-20261112`
+- Last Verified: `2026-11-12`
 - Portfolio Maturity: **Stage 3 - Controlled Delivery / Early Scale**
 - Strategic direction: Standardize Data -> Standardize Rules -> Standardize APIs -> Scale Automation / AI Capabilities
 - Candidate/governance records are not canonical registrations.
@@ -45,6 +45,7 @@ This is the fast current-state handoff for a new Codex session. Read it after `A
 | PPJxStratova.AI | Fabric / Textiles Technique | EXTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Historical record; current Stratova PoC negotiation tracked as DISCOVERY_PatternGenerationPoC | Closed | Historical closed record of the earlier Stratova evaluation. Do not reuse this code for the current pattern-generation PoC. | Closed. The current Stratova pattern-generation PoC (DAF / commercial / technical scope negotiation) is a discovery initiative outside the canonical registry: see PPJ_DISCOVERY_REGISTER (DISCOVERY_PatternGenerationPoC). | No active action | Strong |
 | PPJxNUNOX.ScanTrial | Fabric / Textiles Technique | EXTERNAL DEVELOPMENT | ANALYSIS | Partnership / Digital Library Evaluation | External Collaboration | Working-session outcome unconfirmed | Decision | Evaluate fabric scanning and Fabric/Garment Digital Library potential. | NUNOX proposed a 17-18 August session, but attendance, demo result and agreement are not confirmed. Not listed in the 2026-09-18 naming baseline; legacy canonical code retained. | Confirm whether the proposed session occurred; Record evidence before any partnership or implementation decision | Needs Confirmation |
 | EXT_AcademicCollaboration_v1.1.0 | External Collaboration | EXTERNAL DEVELOPMENT | DESIGN | Active / Problem Framing | External Collaboration | Academic problem package | Medium | Academic collaboration: UIT, thesis and student projects, competitions, research, prototype development and talent pipeline. | Active / problem framing. Potential first technical topic: 2D Pattern Nesting -> Fabric Utilization -> Waste Reduction. Academic prototypes must not be confused with production CAD replacement. | Finalize the academic problem package and dataset; Define benchmark and prototype evaluation boundaries | Strong |
+| PPJxDệt_Phú_Thọ | External Collaboration | EXTERNAL DEVELOPMENT | ANALYSIS | Analysis | Active | Assign process owners and collect evidence; BRD / ERP fit-gap authorization remains pending | P1 | Establish an evidence-backed ERP fit-gap and BRD for Dệt Phú Thọ across Sales, Production, Labor and Cotton Blending before solution or implementation approval. | Registered by executive authorization on 12 November 2026. The 6 November evidence remains a 100-question questionnaire only; no answers, requirements, vendor, solution or implementation scope are confirmed. | Assign process owners for Sales, Production, Labor and Cotton Blending; Collect questionnaire responses and current-process, source-system and data-ownership evidence; Authorize the BRD / ERP fit-gap gate only after evidence review | Needs Confirmation |
 | WASH_COWASH_v2.0.0 | Production + Wash | EXTERNAL DEVELOPMENT | ANALYSIS | On Hold | External Collaboration | Delivery paused | Hold | Production wash operations platform (operational wash data, machine, output, delay, rework); distinct from WASH_SamplingManagement_v1.1.0. | On Hold; delivery paused. Owner, data source, KPI, access and technical direction remain insufficient. | Confirm owner, source, KPI, access and technical direction before reactivation | Strong |
 | PUR_HMLabelProcessing_v1.0.0 | Sourcing / Purchasing | INTERNAL DEVELOPMENT | ANALYSIS | On Hold | On Hold | Business priority paused | Hold | Hold H&M Label-O processing automation pending a scalable business case; name shortened to the actual process. | On Hold; business priority paused. Customer-specific hard-coding creates high maintenance and low scalability. Kept in INTERNAL DEVELOPMENT with On Hold status (not Closed). | Confirm whether a scalable rules model and sufficient value exist | Strong |
 | ACC_InventoryReport_v1.0.0 | Finance / Accounting | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed / no active follow-up | Closed | Preserve the completed Accounting inventory-report history with no active delivery. | Closed. Distinct from PUR_InventoryReport_v2.1.0. | No active action | Strong |
@@ -73,6 +74,7 @@ This is the fast current-state handoff for a new Codex session. Read it after `A
 
 ## Governance Exceptions
 
+- `PPJxDệt_Phú_Thọ`: exact canonical identity authorized on 2026-11-12; retained as an approved exception to the 2026-09-18 naming pattern. Initial External Collaboration domain and EXTERNAL DEVELOPMENT / ANALYSIS placement are governance classifications; owner, questionnaire answers, ERP requirements, vendor/solution and BRD fit-gap authorization remain unconfirmed.
 - `CPD In-house Pattern Generation`: internal prototype/evaluation and benchmark for the Stratova PoC; canonical code is not confirmed; no canonical root project was created.
 - `WH_AWBExtraction_v1.1.0` and `ADMIN_ExpenseManagement_v1.1.0`: registered by the 2026-09-18 baseline (domains Warehouse and Administration added to the domain model); root notes, memory cards and workspaces were created through `register_ppj_project.py` with owners, technical members and dates still Needs Confirmation.
 - `LOG_ExpenseInvoiceProcessing_v1.2.2`: one project - `PPJ.ExpenseInvoices.v1.1` and `LOG.EXPENSE.INVOICES.V1.2` are the same application under Logistics / EXIM (confirmed by the owner on 2026-09-25); whether the earlier Export exclusion still applies remains open.
@@ -115,6 +117,7 @@ This is the fast current-state handoff for a new Codex session. Read it after `A
 | PPJxStratova.AI | PPJxStratova AI; Stratova AI |
 | PPJxNUNOX.ScanTrial | PPJxNUNOX; NUNOX |
 | EXT_AcademicCollaboration_v1.1.0 | PPJ.UIT.ACADEMIC.COLLABORATION.v1.1 |
+| PPJxDệt_Phú_Thọ | DISCOVERY_DetPhuThoERP; Dệt Phú Thọ ERP |
 | WASH_COWASH_v2.0.0 | PROD.COWASH.v2.0; PROD.COWASH; COWASH |
 | PUR_HMLabelProcessing_v1.0.0 | PUR.HM.LabelO.Processing.Automation.v1.0; PUR.HM.LabelO.Processing.Automation; H&M Label-O Processing |
 | ACC_InventoryReport_v1.0.0 | ACC.Inventory.Report.v1.0 |

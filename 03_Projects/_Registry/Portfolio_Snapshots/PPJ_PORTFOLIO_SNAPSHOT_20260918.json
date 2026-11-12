@@ -1,6 +1,6 @@
 {
-  "source_event": "PPJ-EXECUTIVE-CANVAS-SYNC-20260928_235837",
-  "last_verified": "2026-09-28",
+  "source_event": "PPJ-PROJECT-REGISTRATION-PPJxDệt_Phú_Thọ-20261112",
+  "last_verified": "2026-11-12",
   "portfolio_maturity": "Stage 3 - Controlled Delivery / Early Scale",
   "naming_standard": "<DEPARTMENT>_<APPLICATION>_v<MAJOR>.<MINOR>.<PATCH>",
   "strategic_direction": [
@@ -10,6 +10,7 @@
     "Scale Automation / AI Capabilities"
   ],
   "governance_exceptions": [
+    "`PPJxDệt_Phú_Thọ`: exact canonical identity authorized on 2026-11-12; retained as an approved exception to the 2026-09-18 naming pattern. Initial External Collaboration domain and EXTERNAL DEVELOPMENT / ANALYSIS placement are governance classifications; owner, questionnaire answers, ERP requirements, vendor/solution and BRD fit-gap authorization remain unconfirmed.",
     "`CPD In-house Pattern Generation`: internal prototype/evaluation and benchmark for the Stratova PoC; canonical code is not confirmed; no canonical root project was created.",
     "`WH_AWBExtraction_v1.1.0` and `ADMIN_ExpenseManagement_v1.1.0`: registered by the 2026-09-18 baseline (domains Warehouse and Administration added to the domain model); root notes, memory cards and workspaces were created through `register_ppj_project.py` with owners, technical members and dates still Needs Confirmation.",
     "`LOG_ExpenseInvoiceProcessing_v1.2.2`: one project - `PPJ.ExpenseInvoices.v1.1` and `LOG.EXPENSE.INVOICES.V1.2` are the same application under Logistics / EXIM (confirmed by the owner on 2026-09-25); whether the earlier Export exclusion still applies remains open.",
@@ -66,19 +67,14 @@
       "code": "FIN_FinanceManagement_v1.2.0",
       "domain": "Finance / Accounting",
       "lifecycle": "Strategic Active",
-      "gate": "WS2 OC / Cost Control and WS3 Factory Performance",
+      "gate": "Approve WS4 lineage and accounting semantics; scope-gate four FIN-AI enhancements",
       "priority": "P1",
       "outcome": "Centralized Finance Control Platform for completeness, correct OC/period, actual versus plan, missing cost, profitability, drill-down, factory performance and exception ownership.",
-      "latest": "No longer merely an AI chatbot. WS1 Finance Q&A (Balance Sheet, P&L, management Q&A) is the foundation; WS2 OC / Cost Control remains the main focus (missing cost, incorrect period, BOM/material, overhead, subcontracting, abnormal margin, duplicate/missing transactions, actual vs plan, invoice/posting completeness); WS3 Factory Performance has now started (Group -> Company -> Region -> Factory -> Production -> Labor -> Cost -> Efficiency). Databricks / DWH access and validated sources remain the key dependency. BOD review 2026-09-24 (confirmed in the recording): OC profitability is compared only for OCs shipped in the period; 177 OCs show cost and revenue in different periods; the 5% variance threshold is too tight (5.01-5.3% is flagged and the dashboard is almost all red) and no replacement value has been chosen; variance is to be explained as material, processing (subcontract) or overhead, and overhead exists only per month; a Company filter exists, Division and Sales Group filters are requested.",
+      "latest": "WS4 Golden Cases 02-03 confirm many-to-one Dệt-to-Nhuộm lineage, line-level Pick List evidence, cross-year source lots and voucher-level cost bridges. Daily NPL and Final Efficiency remain blocked. Four new FIN-AI enhancement requests are proposed only: internal-subcontracting OC analysis, expense allocation to net profit, receivables alerts and buyer credit limits. WS1, WS2 delivery, WS3 and WS5 have no new confirmed movement.",
       "next_actions": [
-        "Finalize the WS2 Rule Catalogue and thresholds",
-        "Obtain read-only Databricks access and confirm catalog/schema/table lineage",
-        "Select a Golden OC and run the rules",
-        "Reconcile results with Accounting and finalize exception severity",
-        "Advance WS3 factory-performance source discovery and dimensions (headcount, labor cost, overtime, output, capacity, budget vs actual)",
-        "Add Division and Sales Group filters to the OC dashboard (Company filter already exists)",
-        "Recalibrate the variance threshold once Finance / Control choose a value (7-15% was discussed; none chosen)",
-        "Ask Merchandising to align export declaration and stock-issue period so cost and revenue fall in the same period"
+        "Freeze WS4 lineage join keys and voucher-level accounting semantics using the two selected Golden Transactions",
+        "Scope-gate the four FIN-AI enhancements before estimation or development",
+        "Close the WS3 evidence gap and confirm the WS3/WS5 boundary"
       ],
       "risks": [
         "Databricks / DWH access",
@@ -114,23 +110,21 @@
         "FIN.AI.FINANCE.MANAGEMENT.v1.1"
       ],
       "link_target": "",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-11-06",
       "source_event": "PPJ-BOD-REVIEW-20260924-UPDATE"
     },
     {
       "code": "MER_CostingAgenticPlatform_v1.1.0",
       "domain": "Merchandising",
       "lifecycle": "Active Development",
-      "gate": "Sew Agent fixes and Wash Agent development",
+      "gate": "Wash/COMIT POC data-contract approval and expert-owned dataset",
       "priority": "P2",
       "outcome": "Generate a Costing / Quotation Package for Merchandising review and customer quotation through one platform.",
-      "latest": "One platform, not dozens of projects: SewAgent, WashAgent, BOMAgent, ConsumptionAgent, SimilarStyleAgent and CostingOrchestrator. Current focus: fixing Sew Agent issues, SAM accuracy, machine mapping, operation normalization, historical similar-style retrieval and GTAS/IED integration. Wash (especially Denim): the AI proposes, the Wash expert approves.",
+      "latest": "COMIT Wash Image Analysis Requirement v1.1 entered structured POC definition. Scope, responsibilities, data contract, expert review and proposed targets are documented. No trained model or POC result exists yet. Sew Agent has no new confirmed movement.",
       "next_actions": [
-        "Improve SAM validation and benchmark with a Sew expert",
-        "Confirm the GTAS/IED integration contract",
-        "Connect Technical Data",
-        "Collect Wash cases",
-        "Build the Wash similarity engine with mandatory expert review"
+        "Freeze the Wash/COMIT taxonomy, metadata, annotation guide and data contract",
+        "Assign the expert-owned POC dataset and acceptance review gate",
+        "Keep all model targets labelled proposed until approved and tested"
       ],
       "risks": [
         "SAM accuracy and expert acceptance",
@@ -159,21 +153,20 @@
         "COSTING.AGENTIC.PLATFORM.v1.1",
         "PPJ.COSTING.AGENT.PLATFORM.v1.1"
       ],
-      "link_target": ""
+      "link_target": "",
+      "last_verified": "2026-11-06"
     },
     {
       "code": "PUR_GDIAutomation_v1.0.0",
       "domain": "Sourcing / Purchasing",
       "lifecycle": "Active Development / WFX API Integration",
-      "gate": "WFX API integration and GDI data-entry workflow",
+      "gate": "WFX GET/POST delivery and transaction-control UAT ownership",
       "priority": "P3",
       "outcome": "Give Purchasing end-to-end package-dispatch tracking through GDI and provide API capability for automated/assisted GDI data entry while preserving WFX transaction control, validation, confirmation and audit.",
-      "latest": "Increasingly API-oriented rather than UI/RPA-oriented: Purchasing User -> GDI Application -> Validation -> WFX API -> GDI Transaction -> WFX. Two objectives stay separate: the business objective (GDI functionality to track package dispatch end-to-end) and the automation objective (WFX API capability for automated/assisted GDI entry). Critical path: WFX API specification -> Authentication -> GET/master-data APIs -> POST GDI -> Error handling -> UAT -> Production.",
+      "latest": "No new confirmed API delivery or UAT result exists as of 30 October. The project remains in API/requirements development.",
       "next_actions": [
-        "Obtain WFX API authentication and operation documentation",
-        "Confirm create/update/lookup/draft/submit/cancel/status schemas",
-        "Define validation, idempotency, duplicate, retry and timeout controls",
-        "Design audit logging and transaction confirmation"
+        "Freeze supported API operations and sandbox scenarios",
+        "Assign PPJ and WFX UAT owners and execute controlled transaction tests"
       ],
       "risks": [
         "WFX API ownership and sandbox",
@@ -202,7 +195,8 @@
         "PUR.GDI.Automation.v1.0",
         "PPJ.PUR.GDI.API.AUTOMATION"
       ],
-      "link_target": ""
+      "link_target": "",
+      "last_verified": "2026-11-06"
     },
     {
       "code": "TD_TechnicalKnowledgePlatform_v2.1.0",
@@ -252,16 +246,13 @@
       "code": "ADMIN_ExpenseManagement_v1.1.0",
       "domain": "Administration",
       "lifecycle": "Active / Requirement Refinement / UAT Preparation",
-      "gate": "Multi-traveler request model, end-to-end lifecycle and UAT preparation",
+      "gate": "Formal UAT and release decision",
       "priority": "P6",
       "outcome": "Standardize Administration business-travel and expense-management workflows: Request -> Approval -> Business Trip -> Advance -> Expense -> Settlement.",
-      "latest": "Evolved well beyond the initial Travel Request application. Modules: TravelRequest, TravelApproval, TripManagement, Advance, Expense, Settlement. Latest major change: one request can contain multiple travelers, each with a traveler-specific travel plan (origin, destination, stops, dates, flight, hotel/shared room, per diem, customer visit). Management concern: prevent scope creep; the core stays Request -> Approval -> Trip -> Expense -> Settlement.",
+      "latest": "Employee and Admin operating guides are complete. This is release-enablement progress and does not confirm go-live. Access, accounting mappings, migrations, irreversible actions, release authority, UAT ownership and support remain unresolved.",
       "next_actions": [
-        "Validate the booking workflow and status model",
-        "Model multi-traveler requests with per-traveler travel plans",
-        "Finalize approval matrix, advance, expense submission and settlement",
-        "Define vendor catalogue and expense categories",
-        "Prepare UAT"
+        "Run the release gate covering access, accounting, migrations, irreversible actions, training and support",
+        "Record formal UAT outcomes and release authority before any go-live claim"
       ],
       "risks": [
         "Scope creep beyond Request -> Approval -> Trip -> Expense -> Settlement",
@@ -288,21 +279,21 @@
         "Admin Expense Management.v1.1",
         "Business Travel / Admin Expense Management"
       ],
-      "link_target": ""
+      "link_target": "",
+      "last_verified": "2026-11-06"
     },
     {
       "code": "LOG_ExpenseInvoiceProcessing_v1.2.2",
       "domain": "Logistics / EXIM",
       "lifecycle": "Regional Rollout / UAT",
-      "gate": "Regional rollout, tax rules and invoice validation",
+      "gate": "Defect ownership, regression and production exit criteria",
       "priority": "P4",
       "outcome": "Process Logistics / Import-Export expense invoices with regional and tax rules, invoice validation, user workflow and exception management.",
-      "latest": "Current Logistics / Import-Export expense-invoice project (Active Regional Rollout / UAT). Focus: regional rollout, tax rules, invoice validation, user workflow and exception management. Replaces the ambiguity created by older EXIM expense-invoice names. Prior guidance (departments/factories except Export; EXIM-first historical) is preserved in project history. 2026-09-25: the owner confirmed that PPJ.ExpenseInvoices.v1.1 and LOG.EXPENSE.INVOICES.V1.2 are one project. The 2026-09-24 BOD review describes one expense-invoice application expanded to Finance, Logistics inbound, export / import and other units, not two projects.",
+      "latest": "No confirmed defect fix exists as of 30 October. Active-use and defect-remediation evidence still points to VAT, attachment, regional-rule and duplicate/error risks.",
       "next_actions": [
-        "Close remaining defects and retest",
-        "Confirm mapping and frequent-supplier readiness",
-        "Complete production-readiness review and go-live decision",
-        "Confirm regional and tax rules for each rollout region"
+        "Assign the hotfix owner and freeze the regression pack",
+        "Run regression against VAT, attachments, regional rules and duplicate/error scenarios",
+        "Record exit criteria and the production-support handoff"
       ],
       "risks": [
         "Mapping completeness",
@@ -335,21 +326,21 @@
         "LOG.EXPENSE.INVOICES.V1.2"
       ],
       "link_target": "",
-      "last_verified": "2026-09-28",
+      "last_verified": "2026-11-06",
       "source_event": "PPJ-EXECUTIVE-CANVAS-SYNC-20260928_235728"
     },
     {
       "code": "PUR_MaterialAllocation_v1.1.0",
       "domain": "Sourcing / Purchasing",
       "lifecycle": "Development",
-      "gate": "Transaction reliability and exception control",
+      "gate": "Controlled WFX dry-run and Save testing",
       "priority": "P7",
       "outcome": "Validate controlled reallocation of surplus material across eligible OCs: Material Requirement -> Availability -> Allocation -> Validation -> WFX Transaction.",
-      "latest": "Validation / stabilization. The first Sewing/Embroidery flow was validated (surplus OC -> unreserve -> find same Style/Buyer Reference OC -> allocate); general automation is not fully validated. Current work focuses on duplicate prevention, allocation conflict, exception paths, rollback, transaction confirmation and audit trail.",
+      "latest": "The controlled-flow build is documented with preview, dry run, fingerprints, audit history, emergency stop and rerun controls. This is documentation and build-control progress, not evidence of successful real WFX transactions. Business rules and controlled Save testing remain open.",
       "next_actions": [
-        "Test multiple OCs and partial allocation",
-        "Test insufficient stock, duplicates and failure paths",
-        "Validate rollback, audit and user confirmation"
+        "Execute preview and dry-run tests against controlled WFX data",
+        "Execute controlled Save tests covering duplicates, concurrency, cross-division cases, partial allocation and emergency stop",
+        "Record fingerprints, audit history, rollback and rerun evidence"
       ],
       "risks": [
         "Partial-allocation correctness",
@@ -378,20 +369,20 @@
         "Material Allocation"
       ],
       "link_target": "",
-      "last_verified": "2026-09-28",
+      "last_verified": "2026-11-06",
       "source_event": "PPJ-EXECUTIVE-CANVAS-SYNC-20260928_235837"
     },
     {
       "code": "MER_MarketIntelligence_v1.1.0",
       "domain": "Merchandising",
       "lifecycle": "Active Intelligence",
-      "gate": "Market and customer intelligence delivery",
+      "gate": "Record Chino demo outcome and rebaseline",
       "priority": "Medium",
       "outcome": "Turn market, customer, competitor, trend and demand signals into business intelligence for Merchandising.",
-      "latest": "Active. Current outputs cover product/fabric opportunities, commercial trends and customer-pitching support; external ratings/reviews are not sales evidence.",
+      "latest": "The 5 November Chino demonstration target passed without confirmed outcome evidence. No delivery result is claimed. The current requirement is to record the actual outcome and accept, rework or rebaseline the Chino MVP.",
       "next_actions": [
-        "Continue validated product/fabric opportunity analysis",
-        "Keep review/rating signals distinct from sales evidence"
+        "Record the 5 November demonstration outcome and available evidence",
+        "Run an accept/rework/rebaseline decision and publish the revised gate"
       ],
       "risks": [
         "External signal interpretation"
@@ -416,7 +407,8 @@
         "MER.MARKET.INTELLIGENCE.v1.1",
         "E-commerce Market Intelligence"
       ],
-      "link_target": ""
+      "link_target": "",
+      "last_verified": "2026-11-06"
     },
     {
       "code": "MER_InvoiceDataRecheck_v1.1.0",
@@ -1161,6 +1153,54 @@
       "link_target": ""
     },
     {
+      "code": "PPJxDệt_Phú_Thọ",
+      "domain": "External Collaboration",
+      "lifecycle": "Analysis",
+      "gate": "Assign process owners and collect evidence; BRD / ERP fit-gap authorization remains pending",
+      "priority": "P1",
+      "outcome": "Establish an evidence-backed ERP fit-gap and BRD for Dệt Phú Thọ across Sales, Production, Labor and Cotton Blending before solution or implementation approval.",
+      "latest": "Registered by executive authorization on 12 November 2026. The 6 November evidence remains a 100-question questionnaire only; no answers, requirements, vendor, solution or implementation scope are confirmed.",
+      "next_actions": [
+        "Assign process owners for Sales, Production, Labor and Cotton Blending",
+        "Collect questionnaire responses and current-process, source-system and data-ownership evidence",
+        "Authorize the BRD / ERP fit-gap gate only after evidence review"
+      ],
+      "risks": [
+        "Business owner and process owners are not confirmed",
+        "Questionnaire answers and source evidence are not yet available",
+        "Unapproved discovery demand could displace P0 UAT capacity"
+      ],
+      "decisions": [
+        "Assign accountable process owners",
+        "Authorize the BRD / ERP fit-gap gate after evidence review"
+      ],
+      "dependencies": [
+        "100-question questionnaire responses",
+        "Current-process and source-system evidence",
+        "Capacity protection for P0 UAT work"
+      ],
+      "capability": "ERP discovery, fit-gap and cross-functional requirements governance",
+      "progress": "Questionnaire issued; responses pending",
+      "confidence": "Needs Confirmation",
+      "owner": "Needs Confirmation",
+      "root_file": "PPJxDệt_Phú_Thọ.md",
+      "memory_file": "PPJxDệt_Phú_Thọ.memory.md",
+      "workspace": "PPJxDệt_Phú_Thọ",
+      "lane": "ANALYSIS",
+      "candidate": false,
+      "registration": "Registered",
+      "delivery_stage": "ANALYSIS",
+      "status": "Active",
+      "stage_entered_date": "2026-11-12",
+      "delivery_stream": "EXTERNAL DEVELOPMENT",
+      "last_verified": "2026-11-12",
+      "legacy": [
+        "DISCOVERY_DetPhuThoERP",
+        "Dệt Phú Thọ ERP"
+      ],
+      "link_target": ""
+    },
+    {
       "code": "WASH_COWASH_v2.0.0",
       "domain": "Production + Wash",
       "lifecycle": "On Hold",
@@ -1450,12 +1490,13 @@
       "lane": "GOVERNANCE / CANDIDATE",
       "candidate": true,
       "registration": "Canonical Code Not Confirmed",
-      "delivery_stage": "",
+      "delivery_stage": "Candidate / Not Registered",
       "status": "Candidate",
       "stage_entered_date": "Needs Confirmation",
-      "delivery_stream": "",
+      "delivery_stream": "Candidate / Not Registered",
       "legacy": [],
-      "link_target": "03_Projects/_Registry/Project_Update_Proposals/CPD_IN_HOUSE_PATTERN_GENERATION_CURRENT_INITIATIVE"
+      "link_target": "03_Projects/_Registry/Project_Update_Proposals/CPD_IN_HOUSE_PATTERN_GENERATION_CURRENT_INITIATIVE",
+      "last_verified": "2026-11-06"
     }
   ]
 }

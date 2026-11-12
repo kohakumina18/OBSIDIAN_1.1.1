@@ -17,6 +17,9 @@ confidence: Strong
 
 [Management report source](https://chatgpt.com/library?file_id=libfile_b5fcb69a2b108191966ad873e0fc9303&account_id=personal)
 
+> [!note] Post-report governance update - 12 November 2026
+> Executive authorization registered the former `DISCOVERY_DetPhuThoERP` item as [[PPJxDệt_Phú_Thọ]]. This does not rewrite the 6 November evidence baseline: questionnaire answers, requirements, owner, ERP vendor/solution, implementation scope and BRD / ERP fit-gap authorization remain unconfirmed. See [[07_Decision_Log/DEC-20261112-REGISTER-PPJxDetPhuTho]].
+
 ## Evidence boundary
 
 Only the five reported areas above receive new evidence treatment. Guides, knowledge packs, re-analysis and questionnaires are deliverables, not proof of project completion, release or production readiness. Proposed FIN-AI enhancements are not approved scope. Dệt Phú Thọ remains a discovery item, not a registered project. No delivery-stage change is confirmed.
@@ -99,3 +102,4 @@ Only the five reported areas above receive new evidence treatment. Guides, knowl
 - Memory index: [[03_Projects/_Registry/PPJ_PROJECT_MEMORY_INDEX]]
 - Update ledger: [[03_Projects/_Registry/PPJ_PROJECT_UPDATE_LEDGER]]
 - Discovery register: [[03_Projects/_Registry/PPJ_DISCOVERY_REGISTER]]
+- Registered Dệt Phú Thọ project: [[PPJxDệt_Phú_Thọ]]

@@ -131,5 +131,6 @@ Source event: `PPJ-PORTFOLIO-SNAPSHOT-20260918`. This overlay supersedes older c
 ## Registered Projects
 
 - [[ADMIN_ExpenseManagement_v1.1.0]]
+- [[PPJxDệt_Phú_Thọ]]
 - [[WH_AWBExtraction_v1.1.0]]
 <!-- PPJ_REGISTERED_PROJECT_MODULES_END -->

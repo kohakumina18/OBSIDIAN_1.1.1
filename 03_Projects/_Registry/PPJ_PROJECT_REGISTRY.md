@@ -184,6 +184,7 @@ Last updated: 2026-07-13
 | MER_MarketIntelligence_v1.1.0 | E-commerce Market Intelligence v.2.3.md | 03_Projects/E-commerce Market Intelligence v.2.3 | 03_Projects/E-commerce Market Intelligence v.2.3/Project_Executive_Board.canvas | Workspace Created | 3 | 1 | 2026-11-12 |
 | MER_POCommit_v1.1.0 | MER.PO-Commit.md | 03_Projects/MER.PO-Commit | 03_Projects/MER.PO-Commit/Project_Executive_Board.canvas | Workspace Created | 0 | 0 | 2026-11-12 |
 | PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0 | PPJ.GLPI-Helpdesk-AI Chatbot.md | 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot | 03_Projects/PPJ.GLPI-Helpdesk-AI Chatbot/Project_Executive_Board.canvas | Workspace Created | 1 | 0 | 2026-11-12 |
+| PPJxDệt_Phú_Thọ | PPJxDệt_Phú_Thọ.md | 03_Projects/PPJxDệt_Phú_Thọ | 03_Projects/PPJxDệt_Phú_Thọ/Project_Executive_Board.canvas | Workspace Created | 3 | 0 | 2026-11-12 |
 | PPJxNUNOX.ScanTrial | PPJxNUNOX.md | 03_Projects/PPJxNUNOX | 03_Projects/PPJxNUNOX/Project_Executive_Board.canvas | Workspace Created | 2 | 0 | 2026-11-12 |
 | PPJxStratova.AI | PPJxStratova AI.md | 03_Projects/PPJxStratova AI | 03_Projects/PPJxStratova AI/Project_Executive_Board.canvas | Workspace Created | 0 | 0 | 2026-11-12 |
 | PROD_HangingLineIoT_v1.0.0 | PROD.IOT.CHuyenTreo_1.md | 03_Projects/PROD.IOT.CHuyenTreo_1 | 03_Projects/PROD.IOT.CHuyenTreo_1/Project_Executive_Board.canvas | Workspace Created | 3 | 0 | 2026-11-12 |
@@ -221,17 +222,18 @@ Last updated: 2026-07-13
 | FIN_FinanceManagement_v1.2.0 | INTERNAL DEVELOPMENT | DESIGN | Strategic Active | Active | Approve WS4 lineage and accounting semantics; scope-gate four FIN-AI enhancements | 2026-11-06 |
 | FIN_InvoiceDownloader_v1.2.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Operational reliability |  |
 | HR_EmployeeDataPlatform_v1.1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production / Expansion | Active | Production rollout and data-quality monitoring |  |
-| LOG_ExpenseInvoiceProcessing_v1.2.2 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Regional Rollout / UAT | Active | Defect ownership, regression and production exit criteria | 2026-10-30 |
-| MER_CostingAgenticPlatform_v1.1.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development | Active | Wash/COMIT POC data-contract approval and expert-owned dataset | 2026-10-30 |
+| LOG_ExpenseInvoiceProcessing_v1.2.2 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Regional Rollout / UAT | Active | Defect ownership, regression and production exit criteria | 2026-11-06 |
+| MER_CostingAgenticPlatform_v1.1.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development | Active | Wash/COMIT POC data-contract approval and expert-owned dataset | 2026-11-06 |
 | MER_InvoiceDataRecheck_v1.1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production / Support | Active | Multi-customer invoice, cost and data checking | 2026-09-24 |
 | MER_MarketIntelligence_v1.1.0 | INTERNAL DEVELOPMENT | ANALYSIS | Active Intelligence | Active | Record Chino demo outcome and rebaseline | 2026-11-06 |
 | MER_POCommit_v1.1.0 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed |  |
 | PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Maintenance | Support | IT helpdesk maintenance |  |
+| PPJxDệt_Phú_Thọ | EXTERNAL DEVELOPMENT | ANALYSIS | Analysis | Active | Assign process owners and collect evidence; BRD / ERP fit-gap authorization remains pending | 2026-11-12 |
 | PPJxNUNOX.ScanTrial | EXTERNAL DEVELOPMENT | ANALYSIS | Partnership / Digital Library Evaluation | External Collaboration | Working-session outcome unconfirmed |  |
 | PPJxStratova.AI | EXTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Historical record; current Stratova PoC negotiation tracked as DISCOVERY_PatternGenerationPoC |  |
 | PROD_HangingLineIoT_v1.0.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Development | Active | Source and KPI reconciliation |  |
 | PUR_AdhocIndentSouth_v1.0.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Maintenance | Support | Operational maintenance |  |
-| PUR_GDIAutomation_v1.0.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development / WFX API Integration | Active | WFX GET/POST delivery and transaction-control UAT ownership | 2026-10-30 |
+| PUR_GDIAutomation_v1.0.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development / WFX API Integration | Active | WFX GET/POST delivery and transaction-control UAT ownership | 2026-11-06 |
 | PUR_HMLabelProcessing_v1.0.0 | INTERNAL DEVELOPMENT | ANALYSIS | On Hold | On Hold | Business priority paused |  |
 | PUR_InventoryReport_v2.1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Post-enhancement support |  |
 | PUR_MaterialAllocation_v1.1.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Development | Active | Controlled WFX dry-run and Save testing | 2026-11-06 |
@@ -252,4 +254,5 @@ Last updated: 2026-07-13
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---: | --- |
 | WH_AWBExtraction_v1.1.0 | WH_AWBExtraction_v1.1.0.md | Development | Automation | Khoa | Needs Confirmation | Warehouse | Registered / Medium | Not Started | Needs Confirmation | Confirm business rules and source of truth | Improve table structure and cell-boundary understanding and weight/unit reliability | TBD | AWB images (OCR); DHL emails (email parsing) | WH_AWBExtraction_v1.1.0.md | 60 | Registered; discovery pending |
 | ADMIN_ExpenseManagement_v1.1.0 | ADMIN_ExpenseManagement_v1.1.0.md | UAT Preparation | Workflow | Khoa | Needs Confirmation | Administration | Registered / P6 | Not Started | Needs Confirmation | Confirm business rules and source of truth | Validate booking workflow and status model, model multi-traveler requests, and prepare UAT | TBD | ADMIN_EXPENSE-RECAP-UAT-3 (15/09/2026 meeting recap); travel/expense regulations and per-diem rates | ADMIN_ExpenseManagement_v1.1.0.md | 60 | Registered; discovery pending |
+| PPJxDệt_Phú_Thọ | PPJxDệt_Phú_Thọ.md | Analysis | External Collaboration / ERP Discovery | Khoa | Needs Confirmation | External Collaboration | Active / P1 | Questionnaire issued; responses pending | Needs Confirmation | Assign process owners and collect evidence; BRD / ERP fit-gap authorization remains pending | Assign process owners, collect questionnaire responses and evidence, then authorize the BRD / ERP fit-gap gate. | TBD | 100-question ERP discovery questionnaire and current-process/source-system evidence; responses pending | PPJxDệt_Phú_Thọ.md | 60 | Registered 2026-11-12; questionnaire issued, responses pending |
 <!-- PPJ_REGISTERED_PROJECTS_END -->

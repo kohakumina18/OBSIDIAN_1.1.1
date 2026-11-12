@@ -4,7 +4,7 @@ from collections import Counter
 from pathlib import Path
 
 V = Path(__file__).resolve().parents[1]
-CANVAS = V / "03_Projects/Canvas/PPJ_Digital_Application_AI_Automation_Ecosystem.canvas"
+CANVAS = V / "03_Projects/_Canvas/PPJ_Digital_Application_AI_Automation_Ecosystem.canvas"
 raw = CANVAS.read_text("utf-8")
 doc = json.loads(raw)
 nodes, edges = doc["nodes"], doc["edges"]
@@ -34,10 +34,16 @@ check("every edge label starts with its category",
 check("edge labels stay short (<= 40 chars)", all(len(e["label"]) <= 40 for e in edges),
       str([e["label"] for e in edges if len(e["label"]) > 40]))
 check("no line attaches to a whole group", all(byid[e[k]]["type"] != "group" for e in edges for k in ("fromNode", "toNode")))
-# Vault canvas-label rule: ASCII only, except the three module-coverage badges inside text nodes.
+# Vault canvas-label rule: structural labels and non-project explanatory text
+# are ASCII, except the three module-coverage badges. Project cards may keep an
+# explicitly approved Unicode canonical identity such as PPJxDệt_Phú_Thọ.
 BADGES = set("\u25cf\u25d0\u25cb")
-non_ascii = {c for c in raw if ord(c) > 127} - BADGES
-check("ASCII only apart from coverage badges (vault canvas-label rule)", not non_ascii, str(sorted(non_ascii)))
+governance_raw = json.dumps(
+    {"nodes": [n for n in nodes if not n["id"].startswith("proj-")], "edges": edges},
+    ensure_ascii=False,
+)
+non_ascii = {c for c in governance_raw if ord(c) > 127} - BADGES
+check("non-project text is ASCII apart from coverage badges", not non_ascii, str(sorted(non_ascii)))
 check("group labels and edge labels are pure ASCII",
       all(n.get("label", "").isascii() for n in nodes) and all(e.get("label", "").isascii() for e in edges))
 

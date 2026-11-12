@@ -408,8 +408,8 @@ def persist_transitions(
             node["text"] = lib.project_card_text(projects[code])
     stage(changes, lib.CANVAS_PATH, json_text(canvas))
     for name in ("PPJ_Portfolio.canvas", "PPJ_Domain_Encapsulation.canvas"):
-        update_view_canvas(lib.ROOT / "03_Projects/Canvas" / name, projects, changes)
-    stage(changes, lib.ROOT / "03_Projects/Canvas/PPJ_Roadmap_2026.canvas", roadmap_canvas(snapshot, config))
+        update_view_canvas(lib.ROOT / "03_Projects/_Canvas" / name, projects, changes)
+    stage(changes, lib.ROOT / "03_Projects/_Canvas/PPJ_Roadmap_2026.canvas", roadmap_canvas(snapshot, config))
 
     # Before the ledger rows are appended, so the "old -> new" record they carry
     # is not itself rewritten.

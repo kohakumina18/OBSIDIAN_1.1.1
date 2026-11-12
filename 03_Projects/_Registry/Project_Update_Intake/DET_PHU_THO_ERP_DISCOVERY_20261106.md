@@ -1,10 +1,11 @@
 ---
-type: discovery_intake
+type: promoted_discovery_intake
 label: DISCOVERY_DetPhuThoERP
-status: "Structured ERP Discovery"
-source_event: "PPJ-WEEKLY-20261030-20261106"
-last_verified: "2026-11-06"
-registration: "Not approved"
+canonical_project: "PPJxDệt_Phú_Thọ"
+status: "Promoted to registered project"
+source_event: "PPJ-PROJECT-REGISTRATION-PPJxDệt_Phú_Thọ-20261112"
+last_verified: "2026-11-12"
+registration: "Approved 2026-11-12"
 ---
 
 # Dệt Phú Thọ ERP Discovery - 6 November 2026
@@ -25,7 +26,8 @@ registration: "Not approved"
 
 ## Governance
 
-Keep this item in [[03_Projects/_Registry/PPJ_DISCOVERY_REGISTER]] until project registration is approved.
+Executive authorization on 12 November 2026 promoted this intake to [[PPJxDệt_Phú_Thọ]]. The original 6 November evidence boundary remains authoritative: registration does not confirm questionnaire answers, ERP requirements, vendor/solution, owner, implementation scope or the BRD / ERP fit-gap gate.
 
 Related report: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261106]]
 Decision gate: [[07_Decision_Log/DEC-WEEKLY-20261106-PORTFOLIO-GATES]]
+Registration decision: [[07_Decision_Log/DEC-20261112-REGISTER-PPJxDetPhuTho]]

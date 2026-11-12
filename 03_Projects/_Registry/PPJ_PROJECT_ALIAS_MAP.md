@@ -36,6 +36,7 @@ Source event: `PPJ-PORTFOLIO-SNAPSHOT-20260918`. This overlay supersedes older c
 | PPJxStratova.AI | PPJxStratova AI; Stratova AI | PPJxStratova AI.md | PPJxStratova AI | Registered |
 | PPJxNUNOX.ScanTrial | PPJxNUNOX; NUNOX | PPJxNUNOX.md | PPJxNUNOX | Registered |
 | EXT_AcademicCollaboration_v1.1.0 | PPJ.UIT.ACADEMIC.COLLABORATION.v1.1 | PPJ.UIT.ACADEMIC.COLLABORATION.v1.1.md | PPJ.UIT.ACADEMIC.COLLABORATION.v1.1 | Registered |
+| PPJxDệt_Phú_Thọ | DISCOVERY_DetPhuThoERP; Dệt Phú Thọ ERP | PPJxDệt_Phú_Thọ.md | PPJxDệt_Phú_Thọ | Registered 2026-11-12 |
 | WASH_COWASH_v2.0.0 | PROD.COWASH.v2.0; PROD.COWASH; COWASH | PROD.COWASH.md | PROD.COWASH | Registered |
 | PUR_HMLabelProcessing_v1.0.0 | PUR.HM.LabelO.Processing.Automation.v1.0; PUR.HM.LabelO.Processing.Automation; H&M Label-O Processing | PUR.H&M Label-O Processing.md | PUR.H&M Label-O Processing | Registered |
 | ACC_InventoryReport_v1.0.0 | ACC.Inventory.Report.v1.0 | ACC.Inventory.Report.v1.0.md | ACC.Inventory.Report.v1.0 | Registered |

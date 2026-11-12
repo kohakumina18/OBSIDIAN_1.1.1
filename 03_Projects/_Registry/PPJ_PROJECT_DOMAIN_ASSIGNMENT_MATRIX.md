@@ -36,6 +36,7 @@ Source event: `PPJ-PORTFOLIO-SNAPSHOT-20260918`. This overlay supersedes older c
 | PPJxStratova.AI | Fabric / Textiles Technique | EXTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Registered | 2026-09-18 |
 | PPJxNUNOX.ScanTrial | Fabric / Textiles Technique | EXTERNAL DEVELOPMENT | ANALYSIS | Partnership / Digital Library Evaluation | External Collaboration | Registered | 2026-09-18 |
 | EXT_AcademicCollaboration_v1.1.0 | External Collaboration | EXTERNAL DEVELOPMENT | DESIGN | Active / Problem Framing | External Collaboration | Registered | 2026-09-18 |
+| PPJxDệt_Phú_Thọ | External Collaboration | EXTERNAL DEVELOPMENT | ANALYSIS | Analysis | Active | Registered | 2026-11-12 |
 | WASH_COWASH_v2.0.0 | Production + Wash | EXTERNAL DEVELOPMENT | ANALYSIS | On Hold | External Collaboration | Registered | 2026-09-18 |
 | PUR_HMLabelProcessing_v1.0.0 | Sourcing / Purchasing | INTERNAL DEVELOPMENT | ANALYSIS | On Hold | On Hold | Registered | 2026-09-18 |
 | ACC_InventoryReport_v1.0.0 | Finance / Accounting | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Registered | 2026-09-18 |
@@ -101,17 +102,18 @@ Last updated: 2026-07-13
 | FIN_FinanceManagement_v1.2.0 | INTERNAL DEVELOPMENT | DESIGN | Strategic Active | Active | Approve WS4 lineage and accounting semantics; scope-gate four FIN-AI enhancements | 2026-11-06 |
 | FIN_InvoiceDownloader_v1.2.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Operational reliability |  |
 | HR_EmployeeDataPlatform_v1.1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production / Expansion | Active | Production rollout and data-quality monitoring |  |
-| LOG_ExpenseInvoiceProcessing_v1.2.2 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Regional Rollout / UAT | Active | Defect ownership, regression and production exit criteria | 2026-10-30 |
-| MER_CostingAgenticPlatform_v1.1.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development | Active | Wash/COMIT POC data-contract approval and expert-owned dataset | 2026-10-30 |
+| LOG_ExpenseInvoiceProcessing_v1.2.2 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Regional Rollout / UAT | Active | Defect ownership, regression and production exit criteria | 2026-11-06 |
+| MER_CostingAgenticPlatform_v1.1.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development | Active | Wash/COMIT POC data-contract approval and expert-owned dataset | 2026-11-06 |
 | MER_InvoiceDataRecheck_v1.1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production / Support | Active | Multi-customer invoice, cost and data checking | 2026-09-24 |
 | MER_MarketIntelligence_v1.1.0 | INTERNAL DEVELOPMENT | ANALYSIS | Active Intelligence | Active | Record Chino demo outcome and rebaseline | 2026-11-06 |
 | MER_POCommit_v1.1.0 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed |  |
 | PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Maintenance | Support | IT helpdesk maintenance |  |
+| PPJxDệt_Phú_Thọ | EXTERNAL DEVELOPMENT | ANALYSIS | Analysis | Active | Assign process owners and collect evidence; BRD / ERP fit-gap authorization remains pending | 2026-11-12 |
 | PPJxNUNOX.ScanTrial | EXTERNAL DEVELOPMENT | ANALYSIS | Partnership / Digital Library Evaluation | External Collaboration | Working-session outcome unconfirmed |  |
 | PPJxStratova.AI | EXTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Historical record; current Stratova PoC negotiation tracked as DISCOVERY_PatternGenerationPoC |  |
 | PROD_HangingLineIoT_v1.0.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Development | Active | Source and KPI reconciliation |  |
 | PUR_AdhocIndentSouth_v1.0.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Maintenance | Support | Operational maintenance |  |
-| PUR_GDIAutomation_v1.0.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development / WFX API Integration | Active | WFX GET/POST delivery and transaction-control UAT ownership | 2026-10-30 |
+| PUR_GDIAutomation_v1.0.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development / WFX API Integration | Active | WFX GET/POST delivery and transaction-control UAT ownership | 2026-11-06 |
 | PUR_HMLabelProcessing_v1.0.0 | INTERNAL DEVELOPMENT | ANALYSIS | On Hold | On Hold | Business priority paused |  |
 | PUR_InventoryReport_v2.1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Post-enhancement support |  |
 | PUR_MaterialAllocation_v1.1.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Development | Active | Controlled WFX dry-run and Save testing | 2026-11-06 |

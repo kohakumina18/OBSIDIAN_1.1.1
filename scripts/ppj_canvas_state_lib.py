@@ -15,7 +15,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "03_Projects/_Registry/PPJ_EXECUTIVE_CANVAS_STAGE_CONFIG.json"
 MANIFEST_PATH = ROOT / "03_Projects/_Registry/PPJ_EXECUTIVE_CANVAS_CONTROL_MANIFEST.md"
-CANVAS_PATH = ROOT / "03_Projects/Canvas/PPJ_Executive_Board_v2.canvas"
+CANVAS_PATH = ROOT / "03_Projects/_Canvas/PPJ_Executive_Board_v2.canvas"
 SNAPSHOT_JSON = ROOT / "03_Projects/_Registry/Portfolio_Snapshots/PPJ_PORTFOLIO_SNAPSHOT_20260918.json"
 SNAPSHOT_MD = ROOT / "03_Projects/_Registry/PPJ_PORTFOLIO_CURRENT_SNAPSHOT.md"
 AUDIT_ROOT = ROOT / "99_Attachments/Audit"

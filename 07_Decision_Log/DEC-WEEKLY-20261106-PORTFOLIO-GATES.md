@@ -19,7 +19,7 @@ source_event: PPJ-WEEKLY-20261030-20261106
 | P0 | Approve Material Allocation business rules and transaction-control UAT gate. | [[PUR.Material.Allocation.v1.2|PUR_MaterialAllocation_v1.1.0]] | Pending |
 | P1 | Accept, rework or rebaseline the Market Intelligence Chino MVP. | [[E-commerce Market Intelligence v.2.3|MER_MarketIntelligence_v1.1.0]] | Pending |
 | P1 | Confirm WS3/WS5 boundaries and mandate overdue WS3 closure. | [[FIN.AI.FINANCE.MANAGEMENT.v1.1|FIN_FinanceManagement_v1.2.0]] | Pending |
-| P1 | Authorize Dệt Phú Thọ discovery ownership and BRD/ERP-gap gate. | [[03_Projects/_Registry/PPJ_DISCOVERY_REGISTER|DISCOVERY_DetPhuThoERP]] | Pending |
+| P1 | Register Dệt Phú Thọ, assign discovery ownership and authorize the BRD/ERP-gap gate. | [[PPJxDệt_Phú_Thọ]] | Registration approved 2026-11-12; owners and BRD/ERP-gap gate pending |
 | P1 | Escalate GDI and assign Expense Invoice defect ownership. | [[PUR.GDI Automation|PUR_GDIAutomation_v1.0.0]] / [[PPJ. Expense-Invoices.v1.1|LOG_ExpenseInvoiceProcessing_v1.2.2]] | Pending |
 | P1 | Approve the Wash/COMIT POC dataset and expert-review model. | [[PPJ.COSTING.AGENT.PLATFORM.v1.1|MER_CostingAgenticPlatform_v1.1.0]] | Pending |
 | P2 | Pause vendor or research initiatives without an owner, KPI, dataset and production path. | [[03_Projects/_Registry/PPJ_DISCOVERY_REGISTER]] | Pending |
@@ -28,13 +28,14 @@ source_event: PPJ-WEEKLY-20261030-20261106
 
 - New evidence is applied only to Finance/WS4, Material Allocation, Business Travel, Market Intelligence and Dệt Phú Thọ discovery.
 - Proposed enhancements remain unapproved.
-- Dệt Phú Thọ remains outside the project registry.
+- Dệt Phú Thọ was outside the project registry as of the 6 November report; executive authorization registered it as [[PPJxDệt_Phú_Thọ]] on 12 November. Questionnaire answers, requirements and the BRD / ERP-fit-gap gate remain unconfirmed.
 - No delivery-stage change or project completion is claimed.
 
 ## Evidence
 
 - [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261106]]
 - Source event: PPJ-WEEKLY-20261030-20261106
+- Registration decision: [[DEC-20261112-REGISTER-PPJxDetPhuTho]]
 
 ## Exit condition
 

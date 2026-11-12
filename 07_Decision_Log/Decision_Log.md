@@ -21,3 +21,4 @@
 | DEC-20260925-EXPENSE-INVOICE-ONE-PROJECT | Expense invoices are one project | 2026-09-25 | Owner | LOG_ExpenseInvoiceProcessing_v1.2.2 | [[DEC-20260925-EXPENSE-INVOICE-ONE-PROJECT]] |
 | DEC-WEEKLY-20261030-PORTFOLIO-GATES | Weekly portfolio management gates | 2026-10-30 | Needs Confirmation | Seven registered projects plus discovery governance | [[DEC-WEEKLY-20261030-PORTFOLIO-GATES]] |
 | DEC-WEEKLY-20261106-PORTFOLIO-GATES | Weekly portfolio management gates | 2026-11-06 | Needs Confirmation | Four registered projects plus discovery governance | [[DEC-WEEKLY-20261106-PORTFOLIO-GATES]] |
+| DEC-20261112-REGISTER-PPJxDetPhuTho | Register PPJxDệt_Phú_Thọ as a canonical project | 2026-11-12 | Executive authorization provided by user | PPJxDệt_Phú_Thọ | [[DEC-20261112-REGISTER-PPJxDetPhuTho]] |

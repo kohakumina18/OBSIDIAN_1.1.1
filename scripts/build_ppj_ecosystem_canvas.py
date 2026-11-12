@@ -48,7 +48,7 @@ def _arg(name: str, default: str | None = None) -> str | None:
 
 VAULT = Path(_arg("--vault") or Path(__file__).resolve().parents[1])
 SNAP = VAULT / "03_Projects/_Registry/Portfolio_Snapshots/PPJ_PORTFOLIO_SNAPSHOT_20260918.json"
-OUT = VAULT / "03_Projects/Canvas/PPJ_Digital_Application_AI_Automation_Ecosystem.canvas"
+OUT = VAULT / "03_Projects/_Canvas/PPJ_Digital_Application_AI_Automation_Ecosystem.canvas"
 DIAGRAM = "99_Attachments/PPJ_Operational_Systems_Landscape_Diagram.png"
 
 snap = json.loads(SNAP.read_text("utf-8-sig"))

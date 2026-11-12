@@ -1,7 +1,7 @@
 ---
 type: discovery_register
-source_event: "PPJ-WEEKLY-20261030-20261106"
-last_verified: "2026-11-06"
+source_event: "PPJ-PROJECT-REGISTRATION-PPJxDệt_Phú_Thọ-20261112"
+last_verified: "2026-11-12"
 ---
 
 # PPJ Discovery Register
@@ -15,8 +15,6 @@ Vendor and technology discovery activity kept **outside** the canonical project 
 | Faceworks AI | Faceworks AI | Technology Assessment | Potential garment/textile AI capabilities under evaluation. | - |
 | Sortech | Sortech | Technology / SI Assessment | Potentially relevant to invoice automation, GRN workflows, WFX automation, reconciliation, approvals, agentic workflows and smart-factory integration. | - |
 | Quanskill | Quanskill | Vendor / Product Evaluation | Not yet an approved implementation project. | - |
-
-| DISCOVERY_DetPhuThoERP | ERP vendor / solution TBD | Structured ERP Discovery / Questionnaire Issued | Dệt Phú Thọ discovery covering Sales, Production, Labor and Cotton Blending through a 100-question questionnaire. No answers or requirements are confirmed. | Assign process owners; collect questionnaire evidence; identify source systems and gaps; authorize BRD / ERP-gap gate; protect P0 UAT capacity |
 
 ## Rules
 - Do not reuse the historical `PPJxStratova.AI` code for the current pattern-generation PoC; use the temporary label `DISCOVERY_PatternGenerationPoC`.
@@ -33,3 +31,9 @@ Vendor and technology discovery activity kept **outside** the canonical project 
 
 Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261106]] (PPJ-WEEKLY-20261030-20261106)
 <!-- PPJ_WEEKLY_20261030_20261106_DISCOVERY_END -->
+
+## Promoted Items
+
+| Former Discovery Label | Canonical Project | Registration Date | Authority | Evidence Boundary |
+| --- | --- | --- | --- | --- |
+| DISCOVERY_DetPhuThoERP | [[PPJxDệt_Phú_Thọ]] | 2026-11-12 | Executive authorization | Registration approved; owners, questionnaire answers, requirements, vendor/solution and BRD / ERP fit-gap authorization remain unconfirmed. |

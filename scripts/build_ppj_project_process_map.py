@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SNAPSHOT = ROOT / "03_Projects/_Registry/Portfolio_Snapshots/PPJ_PORTFOLIO_SNAPSHOT_20260918.json"
-CANVAS = ROOT / "03_Projects/Canvas/PPJ_Project_Process_Map.canvas"
+CANVAS = ROOT / "03_Projects/_Canvas/PPJ_Project_Process_Map.canvas"
 NOTE = ROOT / "02_BA_Knowledge/Enterprise_Architecture/PPJ_Project_Process_Map.md"
 REPORT = ROOT / "10_Reports/PPJ_PROJECT_PROCESS_MAP_BUILD_20260919.md"
 BACKUP_ROOT = ROOT / "99_Attachments/Audit/PPJ_Project_Process_Map_Backup"
@@ -63,7 +63,7 @@ PROCESS = {
         "Manager/Admin/Finance approvals control request, advance, expense and settlement stages.",
         "Traceable end-to-end business-travel and expense record.",
     ),
-    "LOG_ExpenseInvoiceProcessing_v1.2.0": (
+    "LOG_ExpenseInvoiceProcessing_v1.2.2": (
         "Expense invoice + supplier/region data -> intake/OCR -> mapping -> validation -> tax and regional rules -> exception review -> processing/posting -> audit",
         "Logistics/EXIM users resolve exceptions and approve region-specific treatment.",
         "Validated expense-invoice transaction with regional compliance evidence.",
@@ -178,6 +178,11 @@ PROCESS = {
         "PPJ owners approve scope, data boundaries, benchmark and production boundary.",
         "Evaluated academic prototype and talent/research collaboration outcome.",
     ),
+    "PPJxDệt_Phú_Thọ": (
+        "Sales + Production + Labor + Cotton Blending questionnaire -> assign process owners -> collect current-process, source-system and data-ownership evidence -> gap analysis -> BRD / ERP fit-gap review -> approve, rework or stop",
+        "Dệt Phú Thọ process owners and Portfolio Governance validate evidence and explicitly authorize the next gate.",
+        "Evidence-backed BRD / ERP fit-gap decision without implying vendor or implementation approval.",
+    ),
     "WASH_COWASH_v2.0.0": (
         "Wash operations + machine/output data -> capture -> standardize -> KPI/delay/rework calculation -> dashboard -> owner review -> operational action",
         "Wash/Production owners must confirm source, KPI, access and technical direction.",
@@ -200,7 +205,7 @@ PROCESS = {
     ),
     "EXIM.ExpenseInvoices.Automation.v1.1": (
         "Expense invoice -> extract/map -> validate -> automated system entry -> exception review -> audit -> historical close",
-        "EXIM/Accounting reviewed exceptions; successor scope moved to LOG_ExpenseInvoiceProcessing_v1.2.0.",
+        "EXIM/Accounting reviewed exceptions; successor scope moved to LOG_ExpenseInvoiceProcessing_v1.2.2.",
         "Closed predecessor history retained separately from the current project.",
     ),
     "AI.Automation.Workshop.202606": (
@@ -341,7 +346,14 @@ def build_canvas(projects: list[dict]) -> str:
                 f"{workspace_links(item)}"
             )
             nodes.append(node(stable_id("process", item["code"]), "text", cx, cy, card_width, card_height, text=text, color=card_color(item)))
-    return json.dumps({"nodes": nodes, "edges": edges}, ensure_ascii=False, separators=(",", ":")) + "\n"
+    one = lambda value: json.dumps(value, ensure_ascii=False, separators=(",", ":"))
+    return (
+        "{\n\t\"nodes\":[\n"
+        + ",\n".join("\t\t" + one(item) for item in nodes)
+        + "\n\t],\n\t\"edges\":[\n"
+        + ",\n".join("\t\t" + one(item) for item in edges)
+        + "\n\t]\n}\n"
+    )
 
 
 def build_note(projects: list[dict]) -> str:
@@ -360,7 +372,7 @@ def build_note(projects: list[dict]) -> str:
         "",
         "This note and its Canvas explain the end-to-end process of every registered PPJ portfolio project.",
         "",
-        "Canvas: [[03_Projects/Canvas/PPJ_Project_Process_Map]]",
+        "Canvas: [[03_Projects/_Canvas/PPJ_Project_Process_Map]]",
         "",
         "Reading model:",
         "",

@@ -1,7 +1,7 @@
 ---
 type: portfolio_project_process_map
 source_event: PPJ-PORTFOLIO-SNAPSHOT-20260918
-last_generated: 2026-09-19
+last_generated: 2026-11-12
 status: governed_view
 ---
 
@@ -9,7 +9,7 @@ status: governed_view
 
 This note and its Canvas explain the end-to-end process of every registered PPJ portfolio project.
 
-Canvas: [[03_Projects/Canvas/PPJ_Project_Process_Map]]
+Canvas: [[03_Projects/_Canvas/PPJ_Project_Process_Map]]
 
 Reading model:
 
@@ -32,7 +32,7 @@ Candidate and discovery items are excluded until canonical registration is appro
 
 ### [[03_Projects/MER.CHICOS.INVOICE.RECHECK-AUDIT.v1.1|MER_InvoiceDataRecheck_v1.1.0]]
 
-- Delivery: `INTERNAL DEVELOPMENT` / `UAT / PRE-GO-LIVE`
+- Delivery: `INTERNAL DEVELOPMENT` / `GO-LIVE / PRODUCTION / SUPPORT`
 - Status: `Active`
 - Process: Costing + commercial cost + invoice data + customer rules -> cross-check -> exception detection -> MER review -> correction / acceptance -> audit output
 - Human control: MER validates customer-specific rules and approves every material exception.
@@ -144,7 +144,7 @@ Candidate and discovery items are excluded until canonical registration is appro
 
 ### [[03_Projects/PUR.Material.Allocation.v1.2|PUR_MaterialAllocation_v1.1.0]]
 
-- Delivery: `INTERNAL DEVELOPMENT` / `UAT / PRE-GO-LIVE`
+- Delivery: `INTERNAL DEVELOPMENT` / `DEVELOPMENT`
 - Status: `Active`
 - Process: OC material demand + available stock -> eligibility check -> allocation proposal -> quantity validation -> user confirmation -> WFX transaction -> rollback/audit if required
 - Human control: Purchasing validates OC eligibility, partial allocation and exception handling before submit.
@@ -222,9 +222,9 @@ Candidate and discovery items are excluded until canonical registration is appro
 
 ## Logistics / EXIM
 
-### [[03_Projects/PPJ. Expense-Invoices.v1.1|LOG_ExpenseInvoiceProcessing_v1.2.0]]
+### [[03_Projects/PPJ. Expense-Invoices.v1.1|LOG_ExpenseInvoiceProcessing_v1.2.2]]
 
-- Delivery: `INTERNAL DEVELOPMENT` / `UAT / PRE-GO-LIVE`
+- Delivery: `INTERNAL DEVELOPMENT` / `GO-LIVE / PRODUCTION / SUPPORT`
 - Status: `Active`
 - Process: Expense invoice + supplier/region data -> intake/OCR -> mapping -> validation -> tax and regional rules -> exception review -> processing/posting -> audit
 - Human control: Logistics/EXIM users resolve exceptions and approve region-specific treatment.
@@ -274,7 +274,7 @@ Candidate and discovery items are excluded until canonical registration is appro
 - Delivery: `INTERNAL DEVELOPMENT` / `CLOSED`
 - Status: `Closed`
 - Process: Expense invoice -> extract/map -> validate -> automated system entry -> exception review -> audit -> historical close
-- Human control: EXIM/Accounting reviewed exceptions; successor scope moved to LOG_ExpenseInvoiceProcessing_v1.2.0.
+- Human control: EXIM/Accounting reviewed exceptions; successor scope moved to LOG_ExpenseInvoiceProcessing_v1.2.2.
 - Output: Closed predecessor history retained separately from the current project.
 - Workspace: [[03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/00_Project_Home|Home]] | [[03_Projects/EXIM.ExpenseInvoices.Automation.v1.1/03_Process/TO_BE_Process|TO-BE]]
 
@@ -339,6 +339,15 @@ Candidate and discovery items are excluded until canonical registration is appro
 - Human control: PPJ owners approve scope, data boundaries, benchmark and production boundary.
 - Output: Evaluated academic prototype and talent/research collaboration outcome.
 - Workspace: [[03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/00_Project_Home|Home]] | [[03_Projects/PPJ.UIT.ACADEMIC.COLLABORATION.v1.1/03_Process/TO_BE_Process|TO-BE]]
+
+### [[03_Projects/PPJxDệt_Phú_Thọ|PPJxDệt_Phú_Thọ]]
+
+- Delivery: `EXTERNAL DEVELOPMENT` / `ANALYSIS`
+- Status: `Active`
+- Process: Sales + Production + Labor + Cotton Blending questionnaire -> assign process owners -> collect current-process, source-system and data-ownership evidence -> gap analysis -> BRD / ERP fit-gap review -> approve, rework or stop
+- Human control: Dệt Phú Thọ process owners and Portfolio Governance validate evidence and explicitly authorize the next gate.
+- Output: Evidence-backed BRD / ERP fit-gap decision without implying vendor or implementation approval.
+- Workspace: [[03_Projects/PPJxDệt_Phú_Thọ/00_Project_Home|Home]] | [[03_Projects/PPJxDệt_Phú_Thọ/03_Process/TO_BE_Process|TO-BE]]
 
 ### [[03_Projects/AI Automation Workshop|AI.Automation.Workshop.202606]]
 
