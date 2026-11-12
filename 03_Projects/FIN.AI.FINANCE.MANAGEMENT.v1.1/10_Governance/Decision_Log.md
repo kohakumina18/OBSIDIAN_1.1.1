@@ -2,12 +2,12 @@
 type: "decision_log"
 project: "FIN.AI.FINANCE.MANAGEMENT.v1.2"
 source_project: "FIN.AI.FINANCE.MANAGEMENT.v1.1.md"
-source_event: "PPJ-WEEKLY-20261023-20261030"
-last_verified: "2026-10-30"
+source_event: "PPJ-WEEKLY-20261030-20261106"
+last_verified: "2026-11-06"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
-current_gate: "WS4 v0.2 evidence review and WS3 input closure"
+current_gate: "Approve WS4 lineage and accounting semantics; scope-gate four FIN-AI enhancements"
 ---
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
@@ -76,3 +76,13 @@ No longer merely an AI chatbot. WS1 Finance Q&A (Balance Sheet, P&L, management 
 
 Portfolio decision record: [[07_Decision_Log/DEC-WEEKLY-20261030-PORTFOLIO-GATES]]
 <!-- PPJ_WEEKLY_20261023_20261030_DECISIONS_END -->
+
+<!-- PPJ_WEEKLY_20261030_20261106_DECISIONS_START -->
+## Weekly Decision Gate - 2026-11-06
+
+- Approve WS4 lineage, accounting semantics, source extracts and acceptance method.
+- Approve, stage or reject each new FIN-AI enhancement and assign accountable owners.
+- Confirm WS3/WS5 boundaries and mandate overdue WS3 closure.
+
+Portfolio decision record: [[07_Decision_Log/DEC-WEEKLY-20261106-PORTFOLIO-GATES]]
+<!-- PPJ_WEEKLY_20261030_20261106_DECISIONS_END -->

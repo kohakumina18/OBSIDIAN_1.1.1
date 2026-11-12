@@ -16,15 +16,15 @@ business_owner: "Administration"
 ba_coordination: "Khoa"
 technical_members: []
 status: "Active"
-last_updated: "2026-10-30"
-last_verified: "2026-10-30"
-source_event: "PPJ-WEEKLY-20261023-20261030"
+last_updated: "2026-11-06"
+last_verified: "2026-11-06"
+source_event: "PPJ-WEEKLY-20261030-20261106"
 confidence: "Needs Confirmation"
 primary_domain: "Administration"
 delivery_stream: "INTERNAL DEVELOPMENT"
 delivery_stage: "UAT / PRE-GO-LIVE"
 progress: "~90% (2026-09-15 meeting recap)"
-current_gate: "Formal Business Travel release decision"
+current_gate: "Formal UAT and release decision"
 stage_entered_date: "Needs Confirmation"
 ---
 
@@ -44,11 +44,11 @@ stage_entered_date: "Needs Confirmation"
 | Lifecycle | Active / Requirement Refinement / UAT Preparation |
 | Status | Active |
 | Progress | ~90% (2026-09-15 meeting recap) |
-| Current Gate | Formal Business Travel release decision |
+| Current Gate | Formal UAT and release decision |
 | Priority | P6 |
 | Business Owner | Administration |
 | Registration | Registered |
-| Last Verified | 2026-10-30 |
+| Last Verified | 2026-11-06 |
 | Confidence | Strong |
 
 ## Executive Summary
@@ -61,16 +61,17 @@ TravelRequest / TravelApproval / TripManagement / Advance / Expense / Settlement
 
 ## Latest Update
 
-No new confirmed release result exists as of 30 October. The project remains in release preparation; Accounting mappings, authorization, migrations, training, eOffice budget and release ownership remain open.
+Employee and Admin operating guides are complete. This is release-enablement progress and does not confirm go-live. Access, accounting mappings, migrations, irreversible actions, release authority, UAT ownership and support remain unresolved.
 
 ## Risks / Blockers
 
-- Accounting mappings and authorization/access testing are not confirmed.
-- Migration, training, eOffice budget and release ownership remain unresolved.
+- Guide completion may be mistaken for release approval or production readiness.
+- Access, accounting mappings and migrations are not confirmed.
+- Irreversible actions, release authority, UAT ownership, training and support remain unresolved.
 
 ## Decisions Needed
 
-- Approve release authority, accounting exceptions, access testing, training and eOffice budget.
+- Approve Business Travel release authority, UAT ownership and support model.
 
 ## Dependencies
 
@@ -78,7 +79,8 @@ No new confirmed release result exists as of 30 October. The project remains in 
 
 ## Next Actions
 
-- Run the formal release gate and record owners for every unresolved control.
+- Run the release gate covering access, accounting, migrations, irreversible actions, training and support.
+- Record formal UAT outcomes and release authority before any go-live claim.
 
 ## Do Not Drift Rules
 
@@ -95,9 +97,9 @@ No new confirmed release result exists as of 30 October. The project remains in 
 
 ## Evidence and Confidence
 
-- Date: 2026-10-30
-- Source Event: PPJ-WEEKLY-20261023-20261030
-- Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
+- Date: 2026-11-06
+- Source Event: PPJ-WEEKLY-20261030-20261106
+- Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261106]]
 - Confidence: Strong
 
 <!-- PPJ_PROJECT_KNOWLEDGE_END -->
@@ -133,3 +135,37 @@ Formal Business Travel release decision
 - Last verified: 2026-10-30
 - Confidence: Strong
 <!-- PPJ_WEEKLY_20261023_20261030_END -->
+
+<!-- PPJ_WEEKLY_20261030_20261106_START -->
+## Weekly Synchronization Event: PPJ-WEEKLY-20261030-20261106
+
+### Verified movement
+
+Employee and Admin operating guides are complete. This is release-enablement progress and does not confirm go-live. Access, accounting mappings, migrations, irreversible actions, release authority, UAT ownership and support remain unresolved.
+
+### Current gate
+
+Formal UAT and release decision
+
+### Risks / blockers
+
+- Guide completion may be mistaken for release approval or production readiness.
+- Access, accounting mappings and migrations are not confirmed.
+- Irreversible actions, release authority, UAT ownership, training and support remain unresolved.
+
+### Decisions required
+
+- Approve Business Travel release authority, UAT ownership and support model.
+
+### Next actions
+
+- Run the release gate covering access, accounting, migrations, irreversible actions, training and support.
+- Record formal UAT outcomes and release authority before any go-live claim.
+
+### Traceability
+
+- Report: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261106]]
+- Decision gate: [[07_Decision_Log/DEC-WEEKLY-20261106-PORTFOLIO-GATES]]
+- Last verified: 2026-11-06
+- Confidence: Strong
+<!-- PPJ_WEEKLY_20261030_20261106_END -->

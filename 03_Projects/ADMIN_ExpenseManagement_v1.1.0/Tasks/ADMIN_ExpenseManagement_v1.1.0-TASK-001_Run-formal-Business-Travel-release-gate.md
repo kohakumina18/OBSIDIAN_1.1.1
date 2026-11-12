@@ -2,20 +2,20 @@
 type: project_task
 project: "ADMIN_ExpenseManagement_v1.1.0"
 task_id: "ADMIN_ExpenseManagement_v1.1.0-TASK-001"
-title: "Run formal Business Travel release gate"
+title: "Run formal Business Travel UAT and release gate"
 status: this_week
 priority: P0
 owner: "Needs Confirmation"
 due: ""
-source_event: "PPJ-WEEKLY-20261023-20261030"
+source_event: "PPJ-WEEKLY-20261030-20261106"
 created: 2026-11-02
-updated: 2026-11-02
+updated: 2026-11-06
 blocked_by: []
 depends_on: []
-acceptance: "Release authority, accounting exceptions, access testing, migrations, training, eOffice budget and release ownership have recorded outcomes."
+acceptance: "Formal outcomes cover access, accounting mappings, migrations, irreversible actions, training, release authority, UAT ownership and the support model."
 ---
 
-# Run formal Business Travel release gate
+# Run formal Business Travel UAT and release gate
 
 ## Project
 
@@ -23,12 +23,12 @@ acceptance: "Release authority, accounting exceptions, access testing, migration
 
 ## Acceptance
 
-Release authority, accounting exceptions, access testing, migrations, training, eOffice budget and release ownership have recorded outcomes.
+Formal outcomes cover access, accounting mappings, migrations, irreversible actions, training, release authority, UAT ownership and the support model.
 
 ## Source Event
 
-PPJ-WEEKLY-20261023-20261030
+PPJ-WEEKLY-20261030-20261106
 
 ## Notes
 
-TBD
+Updated from the 6 November 2026 executive weekly report. No delivery-stage change or completion is claimed.

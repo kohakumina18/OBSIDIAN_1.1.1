@@ -2,12 +2,12 @@
 type: "decision_log"
 project: "PUR.Material.Allocation.v1.1"
 source_project: "PUR.Material.Allocation.v1.2.md"
-source_event: "PPJ-WEEKLY-20261023-20261030"
-last_verified: "2026-10-30"
+source_event: "PPJ-WEEKLY-20261030-20261106"
+last_verified: "2026-11-06"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
-current_gate: "Confirm API implementation and controlled GET/POST transaction UAT"
+current_gate: "Controlled WFX dry-run and Save testing"
 ---
 # Decision Log
 
@@ -32,3 +32,11 @@ current_gate: "Confirm API implementation and controlled GET/POST transaction UA
 
 Portfolio decision record: [[07_Decision_Log/DEC-WEEKLY-20261030-PORTFOLIO-GATES]]
 <!-- PPJ_WEEKLY_20261023_20261030_DECISIONS_END -->
+
+<!-- PPJ_WEEKLY_20261030_20261106_DECISIONS_START -->
+## Weekly Decision Gate - 2026-11-06
+
+- Approve Material Allocation business rules and the transaction-control UAT gate.
+
+Portfolio decision record: [[07_Decision_Log/DEC-WEEKLY-20261106-PORTFOLIO-GATES]]
+<!-- PPJ_WEEKLY_20261030_20261106_DECISIONS_END -->

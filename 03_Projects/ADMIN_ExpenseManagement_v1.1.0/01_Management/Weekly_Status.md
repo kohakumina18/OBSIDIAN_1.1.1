@@ -2,12 +2,12 @@
 type: "weekly_status"
 project: "ADMIN_ExpenseManagement_v1.1.0"
 source_project: "ADMIN_ExpenseManagement_v1.1.0.md"
-source_event: "PPJ-WEEKLY-20261023-20261030"
-last_verified: "2026-10-30"
+source_event: "PPJ-WEEKLY-20261030-20261106"
+last_verified: "2026-11-06"
 confidence: "Needs Confirmation"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
-current_gate: "Formal Business Travel release decision"
+current_gate: "Formal UAT and release decision"
 ---
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
@@ -134,3 +134,37 @@ No new confirmed release result exists as of 30 October. The project remains in 
 - Last verified: 2026-10-30
 - Confidence: Strong
 <!-- PPJ_WEEKLY_20261023_20261030_END -->
+
+<!-- PPJ_WEEKLY_20261030_20261106_START -->
+## Weekly Status - 2026-11-06
+
+- **Canonical project:** ADMIN_ExpenseManagement_v1.1.0
+- **Current gate:** Formal UAT and release decision
+- **Stage change:** None confirmed
+
+### Latest verified update
+
+Employee and Admin operating guides are complete. This is release-enablement progress and does not confirm go-live. Access, accounting mappings, migrations, irreversible actions, release authority, UAT ownership and support remain unresolved.
+
+### Current blockers and risks
+
+- Guide completion may be mistaken for release approval or production readiness.
+- Access, accounting mappings and migrations are not confirmed.
+- Irreversible actions, release authority, UAT ownership, training and support remain unresolved.
+
+### Decisions needed
+
+- Approve Business Travel release authority, UAT ownership and support model.
+
+### Next actions
+
+- Run the release gate covering access, accounting, migrations, irreversible actions, training and support.
+- Record formal UAT outcomes and release authority before any go-live claim.
+
+### Evidence basis
+
+- [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261106]]
+- Source event: PPJ-WEEKLY-20261030-20261106
+- Last verified: 2026-11-06
+- Confidence: Strong
+<!-- PPJ_WEEKLY_20261030_20261106_END -->

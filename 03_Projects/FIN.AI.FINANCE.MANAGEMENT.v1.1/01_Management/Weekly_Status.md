@@ -2,8 +2,8 @@
 type: "weekly_status"
 project: "FIN.AI.FINANCE.MANAGEMENT.v1.2"
 source_project: "FIN.AI.FINANCE.MANAGEMENT.v1.1.md"
-source_event: "PPJ-WEEKLY-20261023-20261030"
-last_verified: "2026-10-30"
+source_event: "PPJ-WEEKLY-20261030-20261106"
+last_verified: "2026-11-06"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
@@ -12,7 +12,7 @@ delivery_stream: "INTERNAL DEVELOPMENT"
 delivery_stage: "DESIGN"
 lifecycle: "Design"
 status: "Active"
-current_gate: "WS4 v0.2 evidence review and WS3 input closure"
+current_gate: "Approve WS4 lineage and accounting semantics; scope-gate four FIN-AI enhancements"
 stage_entered_date: "2026-08-24"
 ---
 
@@ -25,9 +25,9 @@ stage_entered_date: "2026-08-24"
 | Delivery Stage | DESIGN |
 | Detailed Lifecycle | Design |
 | Status | Active |
-| Current Gate | WS4 v0.2 evidence review and WS3 input closure |
+| Current Gate | Approve WS4 lineage and accounting semantics; scope-gate four FIN-AI enhancements |
 | Stage Entered | 2026-08-24 |
-| Last Verified | 2026-10-30 |
+| Last Verified | 2026-11-06 |
 <!-- PPJ_EXECUTIVE_DELIVERY_STAGE_END -->
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
@@ -157,3 +157,41 @@ WS4 traced one Knit golden case, completed transaction-stage classification and 
 - Last verified: 2026-10-30
 - Confidence: Strong
 <!-- PPJ_WEEKLY_20261023_20261030_END -->
+
+<!-- PPJ_WEEKLY_20261030_20261106_START -->
+## Weekly Status - 2026-11-06
+
+- **Canonical project:** FIN_FinanceManagement_v1.2.0
+- **Current gate:** Approve WS4 lineage and accounting semantics; scope-gate four FIN-AI enhancements
+- **Stage change:** None confirmed
+
+### Latest verified update
+
+WS4 Golden Cases 02-03 confirm many-to-one Dệt-to-Nhuộm lineage, line-level Pick List evidence, cross-year source lots and voucher-level cost bridges. Daily NPL and Final Efficiency remain blocked. Four new FIN-AI enhancement requests are proposed only: internal-subcontracting OC analysis, expense allocation to net profit, receivables alerts and buyer credit limits. WS1, WS2 delivery, WS3 and WS5 have no new confirmed movement.
+
+### Current blockers and risks
+
+- Daily NPL and Final Efficiency evidence remains blocked.
+- Lineage join keys, voucher-level accounting semantics, source extracts, historical cutoff and version control are not approved.
+- The four FIN-AI enhancement requests have no approved scope, stage or accountable owner.
+- WS3 closure and the WS3/WS5 boundary remain unresolved.
+
+### Decisions needed
+
+- Approve WS4 lineage, accounting semantics, source extracts and acceptance method.
+- Approve, stage or reject each new FIN-AI enhancement and assign accountable owners.
+- Confirm WS3/WS5 boundaries and mandate overdue WS3 closure.
+
+### Next actions
+
+- Freeze WS4 lineage join keys and voucher-level accounting semantics using the two selected Golden Transactions.
+- Scope-gate the four FIN-AI enhancements before estimation or development.
+- Close the WS3 evidence gap and confirm the WS3/WS5 boundary.
+
+### Evidence basis
+
+- [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261106]]
+- Source event: PPJ-WEEKLY-20261030-20261106
+- Last verified: 2026-11-06
+- Confidence: Strong
+<!-- PPJ_WEEKLY_20261030_20261106_END -->

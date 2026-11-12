@@ -13,7 +13,7 @@
     {
       "id": "ppj-exec-summary",
       "type": "text",
-      "text": "FIN_FinanceManagement_v1.2.0\n\nDomain:\nFinance / Accounting\n\nLifecycle:\nAnalysis / Design\n\nProgress:\nTBD\n\nGate:\nWS4 v0.2 evidence review and WS3 input closure\n\nOutcome:\nCentralized Finance Control Platform for completeness, correct OC/period, actual versus plan, missing cost, profitability, drill-down, factory performance and exception ownership.\n\nTop Blocker:\nDatabricks / DWH access\n\nNext Milestone:\nFinalize the WS2 Rule Catalogue and thresholds\n\nLast Verified:\n2026-10-30",
+      "text": "FIN_FinanceManagement_v1.2.0\n\nDomain:\nFinance / Accounting\n\nLifecycle:\nAnalysis / Design\n\nProgress:\nTBD\n\nGate:\nApprove WS4 lineage and accounting semantics; scope-gate four FIN-AI enhancements\n\nOutcome:\nCentralized Finance Control Platform for completeness, correct OC/period, actual versus plan, missing cost, profitability, drill-down, factory performance and exception ownership.\n\nTop Blocker:\nDatabricks / DWH access\n\nNext Milestone:\nFinalize the WS2 Rule Catalogue and thresholds\n\nLast Verified:\n2026-11-06",
       "x": 0,
       "y": -90,
       "width": 760,
@@ -23,7 +23,7 @@
     {
       "id": "ppj-management-attention",
       "type": "text",
-      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- WS4 evidence is limited to one golden-case package and a partial historical window.\n- Line-level lineage, metric definitions, history completeness and accounting interpretation remain unresolved.\n- WS3 survey closure is overdue; HR-WFX/GTAS mappings and month-finalization practices are inconsistent.\n\nDecisions Needed\n- Approve WS4 line-level lineage, historical-window controls, provisional mapping review and golden-case method.\n- Mandate WS3 closure and confirm the WS3/WS5 boundary.\n- Approve the four open BC-04 policies and source-remediation plan.\n\nExternal Dependencies\n- WFX / Databricks / DWH -> Finance source control -> Rule Engine -> OC control -> Factory performance -> Power BI / AI",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Daily NPL and Final Efficiency evidence remains blocked.\n- Lineage join keys, voucher-level accounting semantics, source extracts, historical cutoff and version control are not approved.\n- The four FIN-AI enhancement requests have no approved scope, stage or accountable owner.\n- WS3 closure and the WS3/WS5 boundary remain unresolved.\n\nDecisions Needed\n- Approve WS4 lineage, accounting semantics, source extracts and acceptance method.\n- Approve, stage or reject each new FIN-AI enhancement and assign accountable owners.\n- Confirm WS3/WS5 boundaries and mandate overdue WS3 closure.\n\nExternal Dependencies\n- Finance and Accounting policy ownership.\n- WFX, DWH and source-system lineage evidence.\n- BA, Data, QA and Finance reviewer capacity.",
       "x": 810,
       "y": -90,
       "width": 500,
@@ -46,16 +46,25 @@
       "x": 350,
       "y": 560,
       "width": 300,
-      "height": 1240,
+      "height": 1430,
       "label": "THIS WEEK",
       "color": "2"
     },
     {
       "id": "ppj-task-28cba087d553",
       "type": "text",
-      "text": "[[Tasks/FIN_FinanceManagement_v1.2.0-TASK-001_Close-WS4-evidence-review-and-WS3-input-gates]]\n\nClose WS4 evidence review and WS3 input gates\n\nPriority: P0\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- WS4 lineage and provisional mappings have a recorded decision, and remaining WS3 Accounting and Planning/Production inputs are captured or explicitly escalated.",
+      "text": "[[Tasks/FIN_FinanceManagement_v1.2.0-TASK-001_Close-WS4-evidence-review-and-WS3-input-gates]]\n\nFreeze WS4 lineage and accounting semantics\n\nPriority: P0\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Approved evidence records the WS4 join keys, voucher-level accounting semantics, source extracts and acceptance method using the two selected Golden Transactions.",
       "x": 370,
       "y": 630,
+      "width": 260,
+      "height": 155
+    },
+    {
+      "id": "ppj-task-a6ae36f998f8",
+      "type": "text",
+      "text": "[[Tasks/FIN_FinanceManagement_v1.2.0-TASK-002_Scope-gate-four-FIN-AI-enhancement-requests]]\n\nScope-gate four FIN-AI enhancement requests\n\nPriority: P0\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Each enhancement request has an approve, stage or reject decision, an accountable owner and a bounded scope before estimation or development.",
+      "x": 370,
+      "y": 820,
       "width": 260,
       "height": 155
     },
@@ -64,7 +73,7 @@
       "type": "text",
       "text": "[[Tasks/FIN-FinanceManagement-v1.2.0-20260918-TASK-005_Advance-WS3-factory-performance-source-discovery-and-dimensions-headco]]\n\nAdvance WS3 factory-performance source discovery and dimensions (headcount, labor cost, overtime, output, capacity, budget vs actual)\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
       "x": 370,
-      "y": 820,
+      "y": 1010,
       "width": 260,
       "height": 155
     },
@@ -73,7 +82,7 @@
       "type": "text",
       "text": "[[Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-20260824-TASK-001_Finalize-the-WS2-Rule-Catalogue-and-thresholds]]\n\nFinalize the WS2 Rule Catalogue and thresholds\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
       "x": 370,
-      "y": 1010,
+      "y": 1200,
       "width": 260,
       "height": 155
     },
@@ -82,7 +91,7 @@
       "type": "text",
       "text": "[[Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-20260824-TASK-002_Obtain-read-only-Databricks-access-and-confirm-catalog-schema-table-li]]\n\nObtain read-only Databricks access and confirm catalog/schema/table lineage\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
       "x": 370,
-      "y": 1200,
+      "y": 1390,
       "width": 260,
       "height": 155
     },
@@ -91,7 +100,7 @@
       "type": "text",
       "text": "[[Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-20260824-TASK-004_Reconcile-results-with-Accounting-and-finalize-exception-severity]]\n\nReconcile results with Accounting and finalize exception severity\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
       "x": 370,
-      "y": 1390,
+      "y": 1580,
       "width": 260,
       "height": 155
     },
@@ -100,7 +109,7 @@
       "type": "text",
       "text": "[[Tasks/FIN.AI.FINANCE.MANAGEMENT.v1.2-20260824-TASK-003_Select-a-Golden-OC-and-run-the-rules]]\n\nSelect a Golden OC and run the rules\n\nPriority: P1\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Completion evidence is recorded and reviewed by the responsible business owner.",
       "x": 370,
-      "y": 1580,
+      "y": 1770,
       "width": 260,
       "height": 155
     },
@@ -214,7 +223,7 @@
     "frontmatter": {
       "project": "FIN_FinanceManagement_v1.2.0",
       "board_type": "project_executive_kanban",
-      "last_verified": "2026-10-30"
+      "last_verified": "2026-11-06"
     }
   }
 }

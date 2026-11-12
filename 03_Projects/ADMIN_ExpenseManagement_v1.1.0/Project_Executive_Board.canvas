@@ -13,7 +13,7 @@
     {
       "id": "ppj-exec-summary",
       "type": "text",
-      "text": "ADMIN_ExpenseManagement_v1.1.0\n\nDomain:\nAdministration\n\nLifecycle:\nActive / Requirement Refinement / UAT Preparation\n\nProgress:\n~90% (2026-09-15 meeting recap)\n\nGate:\nFormal Business Travel release decision\n\nOutcome:\nStandardize Administration business-travel and expense-management workflows: Request -> Approval -> Business Trip -> Advance -> Expense -> Settlement.\n\nTop Blocker:\nScope creep beyond Request -> Approval -> Trip -> Expense -> Settlement\n\nNext Milestone:\nValidate the booking workflow and status model\n\nLast Verified:\n2026-10-30",
+      "text": "ADMIN_ExpenseManagement_v1.1.0\n\nDomain:\nAdministration\n\nLifecycle:\nActive / Requirement Refinement / UAT Preparation\n\nProgress:\n~90% (2026-09-15 meeting recap)\n\nGate:\nFormal UAT and release decision\n\nOutcome:\nStandardize Administration business-travel and expense-management workflows: Request -> Approval -> Business Trip -> Advance -> Expense -> Settlement.\n\nTop Blocker:\nScope creep beyond Request -> Approval -> Trip -> Expense -> Settlement\n\nNext Milestone:\nValidate the booking workflow and status model\n\nLast Verified:\n2026-11-06",
       "x": 0,
       "y": -90,
       "width": 760,
@@ -23,7 +23,7 @@
     {
       "id": "ppj-management-attention",
       "type": "text",
-      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Accounting mappings and authorization/access testing are not confirmed.\n- Migration, training, eOffice budget and release ownership remain unresolved.\n\nDecisions Needed\n- Approve release authority, accounting exceptions, access testing, training and eOffice budget.\n\nExternal Dependencies\n- None recorded",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Guide completion may be mistaken for release approval or production readiness.\n- Access, accounting mappings and migrations are not confirmed.\n- Irreversible actions, release authority, UAT ownership, training and support remain unresolved.\n\nDecisions Needed\n- Approve Business Travel release authority, UAT ownership and support model.\n\nExternal Dependencies\n- Administration and Accounting process ownership.\n- eOffice/WFX access and migration controls.\n- Release, training and support capacity.",
       "x": 810,
       "y": -90,
       "width": 500,
@@ -98,7 +98,7 @@
     {
       "id": "ppj-task-4f84554d631c",
       "type": "text",
-      "text": "[[Tasks/ADMIN_ExpenseManagement_v1.1.0-TASK-001_Run-formal-Business-Travel-release-gate]]\n\nRun formal Business Travel release gate\n\nPriority: P0\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Release authority, accounting exceptions, access testing, migrations, training, eOffice budget and release ownership have recorded outcomes.",
+      "text": "[[Tasks/ADMIN_ExpenseManagement_v1.1.0-TASK-001_Run-formal-Business-Travel-release-gate]]\n\nRun formal Business Travel UAT and release gate\n\nPriority: P0\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Formal outcomes cover access, accounting mappings, migrations, irreversible actions, training, release authority, UAT ownership and the support model.",
       "x": 370,
       "y": 630,
       "width": 260,
@@ -151,7 +151,7 @@
     "frontmatter": {
       "project": "ADMIN_ExpenseManagement_v1.1.0",
       "board_type": "project_executive_kanban",
-      "last_verified": "2026-10-30"
+      "last_verified": "2026-11-06"
     }
   }
 }

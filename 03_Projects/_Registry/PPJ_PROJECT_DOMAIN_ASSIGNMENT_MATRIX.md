@@ -8,14 +8,14 @@ Source event: `PPJ-PORTFOLIO-SNAPSHOT-20260918`. This overlay supersedes older c
 
 | Canonical Project | Primary Domain | Delivery Stream | Delivery Stage | Lifecycle | Status | Registration | Last Verified |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| FIN_FinanceManagement_v1.2.0 | Finance / Accounting | INTERNAL DEVELOPMENT | DESIGN | Strategic Active | Active | Registered | 2026-10-30 |
+| FIN_FinanceManagement_v1.2.0 | Finance / Accounting | INTERNAL DEVELOPMENT | DESIGN | Strategic Active | Active | Registered | 2026-11-06 |
 | MER_CostingAgenticPlatform_v1.1.0 | Merchandising | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development | Active | Registered | 2026-10-30 |
 | PUR_GDIAutomation_v1.0.0 | Sourcing / Purchasing | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development / WFX API Integration | Active | Registered | 2026-10-30 |
 | TD_TechnicalKnowledgePlatform_v2.1.0 | Fabric / Textiles Technique | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Sync Validation & Stabilization | Active | Registered | 2026-09-18 |
-| ADMIN_ExpenseManagement_v1.1.0 | Administration | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Active / Requirement Refinement / UAT Preparation | Active | Registered | 2026-10-30 |
+| ADMIN_ExpenseManagement_v1.1.0 | Administration | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Active / Requirement Refinement / UAT Preparation | Active | Registered | 2026-11-06 |
 | LOG_ExpenseInvoiceProcessing_v1.2.2 | Logistics / EXIM | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Regional Rollout / UAT | Active | Registered | 2026-10-30 |
-| PUR_MaterialAllocation_v1.1.0 | Sourcing / Purchasing | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Validation / Stabilization | Active | Registered | 2026-10-30 |
-| MER_MarketIntelligence_v1.1.0 | Merchandising | INTERNAL DEVELOPMENT | ANALYSIS | Active Intelligence | Active | Registered | 2026-10-30 |
+| PUR_MaterialAllocation_v1.1.0 | Sourcing / Purchasing | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Validation / Stabilization | Active | Registered | 2026-11-06 |
+| MER_MarketIntelligence_v1.1.0 | Merchandising | INTERNAL DEVELOPMENT | ANALYSIS | Active Intelligence | Active | Registered | 2026-11-06 |
 | MER_InvoiceDataRecheck_v1.1.0 | Merchandising | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Active | Active | Registered | 2026-09-18 |
 | WASH_SamplingManagement_v1.1.0 | Production + Wash | INTERNAL DEVELOPMENT | DESIGN | Analysis / Product Design | Active | Registered | 2026-09-18 |
 | PROD_HangingLineIoT_v1.0.0 | Production + Wash | INTERNAL DEVELOPMENT | DEVELOPMENT | Development | Active | Registered | 2026-09-18 |
@@ -89,7 +89,7 @@ Last updated: 2026-07-13
 |---|---|---|---|---|---|---|
 | ACC_GRNSupplierInvoiceBot_v2.3.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production Support | Support | Operational stability and exceptions |  |
 | ACC_InventoryReport_v1.0.0 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed / no active follow-up |  |
-| ADMIN_ExpenseManagement_v1.1.0 | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Active / Requirement Refinement / UAT Preparation | Active | Formal Business Travel release decision | 2026-10-30 |
+| ADMIN_ExpenseManagement_v1.1.0 | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Active / Requirement Refinement / UAT Preparation | Active | Formal UAT and release decision | 2026-11-06 |
 | AI.Automation.Workshop.202606 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed event |  |
 | AI.Automation.Workshop.Analysis.202606 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed analysis |  |
 | AI_ApplicationHub_v2.1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Internal Production Platform | Active | Platform operations |  |
@@ -98,13 +98,13 @@ Last updated: 2026-07-13
 | EXIM.ExpenseInvoices.Automation.v1.1 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Replaced / Closed; succeeded by LOG_ExpenseInvoiceProcessing_v1.2.2 |  |
 | EXT_AcademicCollaboration_v1.1.0 | EXTERNAL DEVELOPMENT | DESIGN | Active / Problem Framing | External Collaboration | Academic problem package |  |
 | FAB_FabricDatamart_v2.2.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Support | Support | Operational support |  |
-| FIN_FinanceManagement_v1.2.0 | INTERNAL DEVELOPMENT | DESIGN | Strategic Active | Active | WS4 v0.2 evidence review and WS3 input closure | 2026-10-30 |
+| FIN_FinanceManagement_v1.2.0 | INTERNAL DEVELOPMENT | DESIGN | Strategic Active | Active | Approve WS4 lineage and accounting semantics; scope-gate four FIN-AI enhancements | 2026-11-06 |
 | FIN_InvoiceDownloader_v1.2.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Operational reliability |  |
 | HR_EmployeeDataPlatform_v1.1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production / Expansion | Active | Production rollout and data-quality monitoring |  |
 | LOG_ExpenseInvoiceProcessing_v1.2.2 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Regional Rollout / UAT | Active | Defect ownership, regression and production exit criteria | 2026-10-30 |
 | MER_CostingAgenticPlatform_v1.1.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development | Active | Wash/COMIT POC data-contract approval and expert-owned dataset | 2026-10-30 |
 | MER_InvoiceDataRecheck_v1.1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production / Support | Active | Multi-customer invoice, cost and data checking | 2026-09-24 |
-| MER_MarketIntelligence_v1.1.0 | INTERNAL DEVELOPMENT | ANALYSIS | Active Intelligence | Active | 5 November Chino MVP demonstration readiness | 2026-10-30 |
+| MER_MarketIntelligence_v1.1.0 | INTERNAL DEVELOPMENT | ANALYSIS | Active Intelligence | Active | Record Chino demo outcome and rebaseline | 2026-11-06 |
 | MER_POCommit_v1.1.0 | INTERNAL DEVELOPMENT | CLOSED | Closed | Closed | Closed |  |
 | PPJ.GLPI.Helpdesk.AI.Chatbot.v1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Maintenance | Support | IT helpdesk maintenance |  |
 | PPJxNUNOX.ScanTrial | EXTERNAL DEVELOPMENT | ANALYSIS | Partnership / Digital Library Evaluation | External Collaboration | Working-session outcome unconfirmed |  |
@@ -114,7 +114,7 @@ Last updated: 2026-07-13
 | PUR_GDIAutomation_v1.0.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development / WFX API Integration | Active | WFX GET/POST delivery and transaction-control UAT ownership | 2026-10-30 |
 | PUR_HMLabelProcessing_v1.0.0 | INTERNAL DEVELOPMENT | ANALYSIS | On Hold | On Hold | Business priority paused |  |
 | PUR_InventoryReport_v2.1.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Post-enhancement support |  |
-| PUR_MaterialAllocation_v1.1.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Development | Active | Confirm API implementation and controlled GET/POST transaction UAT | 2026-10-30 |
+| PUR_MaterialAllocation_v1.1.0 | INTERNAL DEVELOPMENT | DEVELOPMENT | Development | Active | Controlled WFX dry-run and Save testing | 2026-11-06 |
 | QC_DefectDetection_v1.0.0 | EXTERNAL DEVELOPMENT | ANALYSIS | On Hold | External Collaboration | Reactivation decision |  |
 | QC_ThreadTraceability_v1.0.0 | EXTERNAL DEVELOPMENT | ANALYSIS | Pre-PoC / Business Case | External Collaboration | Business/customer case decision |  |
 | SCP_SourcingChatbot_v2.3.0 | INTERNAL DEVELOPMENT | GO-LIVE / PRODUCTION / SUPPORT | Production | Active | Production monitoring, data quality and retrieval quality |  |

@@ -38,7 +38,13 @@ SYNC-CONFLICT-README.md
 .obsidian/plugins/chatting-with-ai/chat-state.json
 .obsidian/plugins/chatting-with-ai/chat-state.next.json
 
+# Local audio/video exports - never synchronize through Git
+*.mp3
+*.MP3
+*.mp4
+*.MP4
+
+# Explicit local-only vault artifacts
 /Recording_AISC_20261022193721.m4a
-/01_Daily_Notes/DATA/data-sec.canvas
-/01_Daily_Notes/DATA/data-sec.canvas
 /Recording 20261112111625.m4a
+/01_Daily_Notes/DATA/data-sec.canvas

@@ -2,12 +2,12 @@
 type: "risks_issues"
 project: "ADMIN_ExpenseManagement_v1.1.0"
 source_project: "ADMIN_ExpenseManagement_v1.1.0.md"
-source_event: "PPJ-WEEKLY-20261023-20261030"
-last_verified: "2026-10-30"
+source_event: "PPJ-WEEKLY-20261030-20261106"
+last_verified: "2026-11-06"
 confidence: "Needs Confirmation"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
-current_gate: "Formal Business Travel release decision"
+current_gate: "Formal UAT and release decision"
 ---
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
@@ -73,3 +73,13 @@ Evolved well beyond the initial Travel Request application. Modules: TravelReque
 
 Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]] (PPJ-WEEKLY-20261023-20261030)
 <!-- PPJ_WEEKLY_20261023_20261030_RISKS_END -->
+
+<!-- PPJ_WEEKLY_20261030_20261106_RISKS_START -->
+## Weekly Risk Update - 2026-11-06
+
+- Guide completion may be mistaken for release approval or production readiness.
+- Access, accounting mappings and migrations are not confirmed.
+- Irreversible actions, release authority, UAT ownership, training and support remain unresolved.
+
+Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261106]] (PPJ-WEEKLY-20261030-20261106)
+<!-- PPJ_WEEKLY_20261030_20261106_RISKS_END -->

@@ -2,20 +2,20 @@
 type: project_task
 project: "FIN_FinanceManagement_v1.2.0"
 task_id: "FIN_FinanceManagement_v1.2.0-TASK-001"
-title: "Close WS4 evidence review and WS3 input gates"
+title: "Freeze WS4 lineage and accounting semantics"
 status: this_week
 priority: P0
 owner: "Needs Confirmation"
 due: ""
-source_event: "PPJ-WEEKLY-20261023-20261030"
+source_event: "PPJ-WEEKLY-20261030-20261106"
 created: 2026-11-02
-updated: 2026-11-02
+updated: 2026-11-06
 blocked_by: []
 depends_on: []
-acceptance: "WS4 lineage and provisional mappings have a recorded decision, and remaining WS3 Accounting and Planning/Production inputs are captured or explicitly escalated."
+acceptance: "Approved evidence records the WS4 join keys, voucher-level accounting semantics, source extracts and acceptance method using the two selected Golden Transactions."
 ---
 
-# Close WS4 evidence review and WS3 input gates
+# Freeze WS4 lineage and accounting semantics
 
 ## Project
 
@@ -23,12 +23,12 @@ acceptance: "WS4 lineage and provisional mappings have a recorded decision, and 
 
 ## Acceptance
 
-WS4 lineage and provisional mappings have a recorded decision, and remaining WS3 Accounting and Planning/Production inputs are captured or explicitly escalated.
+Approved evidence records the WS4 join keys, voucher-level accounting semantics, source extracts and acceptance method using the two selected Golden Transactions.
 
 ## Source Event
 
-PPJ-WEEKLY-20261023-20261030
+PPJ-WEEKLY-20261030-20261106
 
 ## Notes
 
-TBD
+Updated from the 6 November 2026 executive weekly report. No delivery-stage change or completion is claimed.

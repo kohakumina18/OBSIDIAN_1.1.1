@@ -2,20 +2,20 @@
 type: project_task
 project: "MER_MarketIntelligence_v1.1.0"
 task_id: "MER_MarketIntelligence_v1.1.0-TASK-001"
-title: "Run Chino MVP demonstration readiness gate"
-status: this_week
+title: "Record Chino MVP outcome and rebaseline"
+status: blocked
 priority: P1
 owner: "Needs Confirmation"
 due: "2026-11-05"
-source_event: "PPJ-WEEKLY-20261023-20261030"
+source_event: "PPJ-WEEKLY-20261030-20261106"
 created: 2026-11-02
-updated: 2026-11-02
-blocked_by: []
+updated: 2026-11-06
+blocked_by: ["Missing documented outcome evidence for 5 November Chino target"]
 depends_on: []
-acceptance: "A documented go/no-go review covers Chino scope, data quality, demo script, acceptance evidence and fallback before delivery is claimed."
+acceptance: "A documented outcome records the 5 November evidence and an approved accept, rework or rebaseline decision with a revised gate."
 ---
 
-# Run Chino MVP demonstration readiness gate
+# Record Chino MVP outcome and rebaseline
 
 ## Project
 
@@ -23,12 +23,12 @@ acceptance: "A documented go/no-go review covers Chino scope, data quality, demo
 
 ## Acceptance
 
-A documented go/no-go review covers Chino scope, data quality, demo script, acceptance evidence and fallback before delivery is claimed.
+A documented outcome records the 5 November evidence and an approved accept, rework or rebaseline decision with a revised gate.
 
 ## Source Event
 
-PPJ-WEEKLY-20261023-20261030
+PPJ-WEEKLY-20261030-20261106
 
 ## Notes
 
-TBD
+Updated from the 6 November 2026 executive weekly report. No delivery-stage change or completion is claimed.

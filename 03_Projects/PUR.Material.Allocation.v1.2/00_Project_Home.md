@@ -2,13 +2,13 @@
 type: "project_home"
 project: "PUR_MaterialAllocation_v1.1.0"
 source_project: "PUR.Material.Allocation.v1.2.md"
-source_event: "PPJ-WEEKLY-20261023-20261030"
-last_verified: "2026-10-30"
+source_event: "PPJ-WEEKLY-20261030-20261106"
+last_verified: "2026-11-06"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
 lifecycle: "Development"
-current_gate: "Confirm API implementation and controlled GET/POST transaction UAT"
+current_gate: "Controlled WFX dry-run and Save testing"
 priority: "P7"
 delivery_stage: "DEVELOPMENT"
 status: "Active"
@@ -61,16 +61,17 @@ Validated for Sewing and Embroidery; broader material scope remains unconfirmed.
 
 ## Latest Update
 
-WFX documented GET/POST behaviour and issued the Style/Article API enhancement specification dated 26-28 October, including partial Style/Article search. This is API-definition progress only; deployment and transaction-control testing are not confirmed.
+The controlled-flow build is documented with preview, dry run, fingerprints, audit history, emergency stop and rerun controls. This is documentation and build-control progress, not evidence of successful real WFX transactions. Business rules and controlled Save testing remain open.
 
 ## Risks / Blockers
 
-- Deployment status, performance, concurrency and audit behaviour are unconfirmed.
-- Duplicate prevention, rollback, partial allocation and exception controls still require transaction UAT.
+- Real WFX transaction behaviour and Save safety are not confirmed.
+- Duplicate, concurrency, cross-division, partial-allocation and rerun rules remain open.
+- Emergency-stop, rollback, audit and recovery controls require controlled evidence.
 
 ## Decisions Needed
 
-- Confirm API deployment ownership and the transaction-control UAT gate.
+- Approve Material Allocation business rules and the transaction-control UAT gate.
 
 ## Dependencies
 
@@ -78,9 +79,9 @@ WFX documented GET/POST behaviour and issued the Style/Article API enhancement s
 
 ## Next Actions
 
-- Confirm the specified API is implemented in the controlled environment.
-- Execute controlled GET/POST tests for partial Style/Article search and allocation transactions.
-- Validate duplicate prevention, rollback, concurrency, audit and user confirmation.
+- Execute preview and dry-run tests against controlled WFX data.
+- Execute controlled Save tests covering duplicates, concurrency, cross-division cases, partial allocation and emergency stop.
+- Record fingerprints, audit history, rollback and rerun evidence.
 
 ## Do Not Drift Rules
 
@@ -97,9 +98,9 @@ WFX documented GET/POST behaviour and issued the Style/Article API enhancement s
 
 ## Evidence and Confidence
 
-- Date: 2026-10-30
-- Source Event: PPJ-WEEKLY-20261023-20261030
-- Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
+- Date: 2026-11-06
+- Source Event: PPJ-WEEKLY-20261030-20261106
+- Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261106]]
 - Confidence: Strong
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_END -->
@@ -293,3 +294,38 @@ Confirm API implementation and controlled GET/POST transaction UAT
 - Last verified: 2026-10-30
 - Confidence: Strong
 <!-- PPJ_WEEKLY_20261023_20261030_END -->
+
+<!-- PPJ_WEEKLY_20261030_20261106_START -->
+## Weekly Synchronization Event: PPJ-WEEKLY-20261030-20261106
+
+### Verified movement
+
+The controlled-flow build is documented with preview, dry run, fingerprints, audit history, emergency stop and rerun controls. This is documentation and build-control progress, not evidence of successful real WFX transactions. Business rules and controlled Save testing remain open.
+
+### Current gate
+
+Controlled WFX dry-run and Save testing
+
+### Risks / blockers
+
+- Real WFX transaction behaviour and Save safety are not confirmed.
+- Duplicate, concurrency, cross-division, partial-allocation and rerun rules remain open.
+- Emergency-stop, rollback, audit and recovery controls require controlled evidence.
+
+### Decisions required
+
+- Approve Material Allocation business rules and the transaction-control UAT gate.
+
+### Next actions
+
+- Execute preview and dry-run tests against controlled WFX data.
+- Execute controlled Save tests covering duplicates, concurrency, cross-division cases, partial allocation and emergency stop.
+- Record fingerprints, audit history, rollback and rerun evidence.
+
+### Traceability
+
+- Report: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261106]]
+- Decision gate: [[07_Decision_Log/DEC-WEEKLY-20261106-PORTFOLIO-GATES]]
+- Last verified: 2026-11-06
+- Confidence: Strong
+<!-- PPJ_WEEKLY_20261030_20261106_END -->

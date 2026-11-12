@@ -2,12 +2,12 @@
 type: "risks_issues"
 project: "FIN.AI.FINANCE.MANAGEMENT.v1.2"
 source_project: "FIN.AI.FINANCE.MANAGEMENT.v1.1.md"
-source_event: "PPJ-WEEKLY-20261023-20261030"
-last_verified: "2026-10-30"
+source_event: "PPJ-WEEKLY-20261030-20261106"
+last_verified: "2026-11-06"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
-current_gate: "WS4 v0.2 evidence review and WS3 input closure"
+current_gate: "Approve WS4 lineage and accounting semantics; scope-gate four FIN-AI enhancements"
 ---
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_START -->
@@ -80,3 +80,14 @@ No longer merely an AI chatbot. WS1 Finance Q&A (Balance Sheet, P&L, management 
 
 Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]] (PPJ-WEEKLY-20261023-20261030)
 <!-- PPJ_WEEKLY_20261023_20261030_RISKS_END -->
+
+<!-- PPJ_WEEKLY_20261030_20261106_RISKS_START -->
+## Weekly Risk Update - 2026-11-06
+
+- Daily NPL and Final Efficiency evidence remains blocked.
+- Lineage join keys, voucher-level accounting semantics, source extracts, historical cutoff and version control are not approved.
+- The four FIN-AI enhancement requests have no approved scope, stage or accountable owner.
+- WS3 closure and the WS3/WS5 boundary remain unresolved.
+
+Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261106]] (PPJ-WEEKLY-20261030-20261106)
+<!-- PPJ_WEEKLY_20261030_20261106_RISKS_END -->

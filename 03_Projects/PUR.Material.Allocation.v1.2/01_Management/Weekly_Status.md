@@ -2,8 +2,8 @@
 type: "weekly_status"
 project: "PUR.Material.Allocation.v1.1"
 source_project: "PUR.Material.Allocation.v1.2.md"
-source_event: "PPJ-WEEKLY-20261023-20261030"
-last_verified: "2026-10-30"
+source_event: "PPJ-WEEKLY-20261030-20261106"
+last_verified: "2026-11-06"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
@@ -12,7 +12,7 @@ delivery_stream: "INTERNAL DEVELOPMENT"
 delivery_stage: "DEVELOPMENT"
 lifecycle: "Development"
 status: "Active"
-current_gate: "Confirm API implementation and controlled GET/POST transaction UAT"
+current_gate: "Controlled WFX dry-run and Save testing"
 stage_entered_date: "2026-09-28"
 ---
 
@@ -143,3 +143,38 @@ WFX documented GET/POST behaviour and issued the Style/Article API enhancement s
 - Last verified: 2026-10-30
 - Confidence: Strong
 <!-- PPJ_WEEKLY_20261023_20261030_END -->
+
+<!-- PPJ_WEEKLY_20261030_20261106_START -->
+## Weekly Status - 2026-11-06
+
+- **Canonical project:** PUR_MaterialAllocation_v1.1.0
+- **Current gate:** Controlled WFX dry-run and Save testing
+- **Stage change:** None confirmed
+
+### Latest verified update
+
+The controlled-flow build is documented with preview, dry run, fingerprints, audit history, emergency stop and rerun controls. This is documentation and build-control progress, not evidence of successful real WFX transactions. Business rules and controlled Save testing remain open.
+
+### Current blockers and risks
+
+- Real WFX transaction behaviour and Save safety are not confirmed.
+- Duplicate, concurrency, cross-division, partial-allocation and rerun rules remain open.
+- Emergency-stop, rollback, audit and recovery controls require controlled evidence.
+
+### Decisions needed
+
+- Approve Material Allocation business rules and the transaction-control UAT gate.
+
+### Next actions
+
+- Execute preview and dry-run tests against controlled WFX data.
+- Execute controlled Save tests covering duplicates, concurrency, cross-division cases, partial allocation and emergency stop.
+- Record fingerprints, audit history, rollback and rerun evidence.
+
+### Evidence basis
+
+- [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261106]]
+- Source event: PPJ-WEEKLY-20261030-20261106
+- Last verified: 2026-11-06
+- Confidence: Strong
+<!-- PPJ_WEEKLY_20261030_20261106_END -->

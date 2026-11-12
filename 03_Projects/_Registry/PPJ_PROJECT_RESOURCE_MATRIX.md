@@ -8,14 +8,14 @@ Source event: `PPJ-PORTFOLIO-SNAPSHOT-20260918`. This overlay supersedes older c
 
 | Project | Domain | Owner | Delivery Stream | Delivery Stage | Lifecycle | Status | Priority | Gate | Open Action Count |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| FIN_FinanceManagement_v1.2.0 | Finance / Accounting | Accounting | INTERNAL DEVELOPMENT | DESIGN | Strategic Active | Active | P1 | WS4 v0.2 evidence review and WS3 input closure | 5 |
+| FIN_FinanceManagement_v1.2.0 | Finance / Accounting | Accounting | INTERNAL DEVELOPMENT | DESIGN | Strategic Active | Active | P1 | Approve WS4 lineage and accounting semantics; scope-gate four FIN-AI enhancements | 5 |
 | MER_CostingAgenticPlatform_v1.1.0 | Merchandising | Needs Confirmation | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development | Active | P2 | Wash/COMIT POC data-contract approval and expert-owned dataset | 5 |
 | PUR_GDIAutomation_v1.0.0 | Sourcing / Purchasing | Needs Confirmation | INTERNAL DEVELOPMENT | DEVELOPMENT | Active Development / WFX API Integration | Active | P3 | WFX GET/POST delivery and transaction-control UAT ownership | 4 |
 | TD_TechnicalKnowledgePlatform_v2.1.0 | Fabric / Textiles Technique | Needs Confirmation | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Sync Validation & Stabilization | Active | P5 | Sync validation and canonical technical model | 4 |
-| ADMIN_ExpenseManagement_v1.1.0 | Administration | Administration | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Active / Requirement Refinement / UAT Preparation | Active | P6 | Formal Business Travel release decision | 5 |
+| ADMIN_ExpenseManagement_v1.1.0 | Administration | Administration | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Active / Requirement Refinement / UAT Preparation | Active | P6 | Formal UAT and release decision | 5 |
 | LOG_ExpenseInvoiceProcessing_v1.2.2 | Logistics / EXIM | Logistics / EXIM | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Regional Rollout / UAT | Active | P4 | Defect ownership, regression and production exit criteria | 4 |
-| PUR_MaterialAllocation_v1.1.0 | Sourcing / Purchasing | Needs Confirmation | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Validation / Stabilization | Active | P7 | Confirm API implementation and controlled GET/POST transaction UAT | 3 |
-| MER_MarketIntelligence_v1.1.0 | Merchandising | Needs Confirmation | INTERNAL DEVELOPMENT | ANALYSIS | Active Intelligence | Active | Medium | 5 November Chino MVP demonstration readiness | 2 |
+| PUR_MaterialAllocation_v1.1.0 | Sourcing / Purchasing | Needs Confirmation | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Validation / Stabilization | Active | P7 | Controlled WFX dry-run and Save testing | 3 |
+| MER_MarketIntelligence_v1.1.0 | Merchandising | Needs Confirmation | INTERNAL DEVELOPMENT | ANALYSIS | Active Intelligence | Active | Medium | Record Chino demo outcome and rebaseline | 2 |
 | MER_InvoiceDataRecheck_v1.1.0 | Merchandising | Needs Confirmation | INTERNAL DEVELOPMENT | UAT / PRE-GO-LIVE | Active | Active | Medium | Multi-customer invoice, cost and data checking | 2 |
 | WASH_SamplingManagement_v1.1.0 | Production + Wash | Needs Confirmation | INTERNAL DEVELOPMENT | DESIGN | Analysis / Product Design | Active | Medium | Sampling workflow and product design | 2 |
 | PROD_HangingLineIoT_v1.0.0 | Production + Wash | Needs Confirmation | INTERNAL DEVELOPMENT | DEVELOPMENT | Development | Active | Medium | Source and KPI reconciliation | 3 |

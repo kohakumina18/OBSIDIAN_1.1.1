@@ -2,13 +2,13 @@
 type: "project_home"
 project: "MER_MarketIntelligence_v1.1.0"
 source_project: "E-commerce Market Intelligence v.2.3.md"
-source_event: "PPJ-WEEKLY-20261023-20261030"
-last_verified: "2026-10-30"
+source_event: "PPJ-WEEKLY-20261030-20261106"
+last_verified: "2026-11-06"
 confidence: "Strong"
 documentation_status: "Current Working Document"
 generated_by: "upgrade_ppj_project_workspaces.py"
 lifecycle: "Active Intelligence"
-current_gate: "5 November Chino MVP demonstration readiness"
+current_gate: "Record Chino demo outcome and rebaseline"
 priority: "Medium"
 delivery_stage: "ANALYSIS"
 status: "Active"
@@ -29,11 +29,11 @@ delivery_stream: "INTERNAL DEVELOPMENT"
 | Lifecycle | Active Intelligence |
 | Status | Active |
 | Progress | TBD |
-| Current Gate | 5 November Chino MVP demonstration readiness |
+| Current Gate | Record Chino demo outcome and rebaseline |
 | Priority | Medium |
 | Business Owner | Needs Confirmation |
 | Registration | Registered |
-| Last Verified | 2026-10-30 |
+| Last Verified | 2026-11-06 |
 | Confidence | Strong |
 
 ## Executive Summary
@@ -46,17 +46,17 @@ Turn market, customer, competitor, trend and demand signals into business intell
 
 ## Latest Update
 
-No new delivery result is confirmed as of 30 October. The Chino MVP demonstration remains planned for 5 November 2026 and is not confirmed delivered; fresh readiness evidence is missing.
+The 5 November Chino demonstration target passed without confirmed outcome evidence. No delivery result is claimed. The current requirement is to record the actual outcome and accept, rework or rebaseline the Chino MVP.
 
 ## Risks / Blockers
 
-- Demo readiness is not evidenced.
-- Scope expansion and inconsistent SKU/pricing data could weaken the Chino MVP.
+- The planned demonstration date passed without documented delivery evidence.
+- Chino MVP acceptance, data quality and follow-on scope remain unconfirmed.
 - Knit and Denim must remain staged follow-on scope unless separately approved.
 
 ## Decisions Needed
 
-- Confirm Chino demo readiness and retain Knit/Denim as staged follow-on scope.
+- Accept, rework or rebaseline the Market Intelligence Chino MVP.
 
 ## Dependencies
 
@@ -64,8 +64,8 @@ No new delivery result is confirmed as of 30 October. The Chino MVP demonstratio
 
 ## Next Actions
 
-- Run a readiness gate covering the Chino MVP scope, data quality, demo script and fallback.
-- Record a go/no-go result before treating the planned demo as deliverable evidence.
+- Record the 5 November demonstration outcome and available evidence.
+- Run an accept/rework/rebaseline decision and publish the revised gate.
 
 ## Do Not Drift Rules
 
@@ -82,9 +82,9 @@ No new delivery result is confirmed as of 30 October. The Chino MVP demonstratio
 
 ## Evidence and Confidence
 
-- Date: 2026-10-30
-- Source Event: PPJ-WEEKLY-20261023-20261030
-- Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261030]]
+- Date: 2026-11-06
+- Source Event: PPJ-WEEKLY-20261030-20261106
+- Source: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261106]]
 - Confidence: Strong
 
 <!-- PPJ_PORTFOLIO_SNAPSHOT_20260824_END -->
@@ -276,3 +276,37 @@ No new delivery result is confirmed as of 30 October. The Chino MVP demonstratio
 - Last verified: 2026-10-30
 - Confidence: Strong
 <!-- PPJ_WEEKLY_20261023_20261030_END -->
+
+<!-- PPJ_WEEKLY_20261030_20261106_START -->
+## Weekly Synchronization Event: PPJ-WEEKLY-20261030-20261106
+
+### Verified movement
+
+The 5 November Chino demonstration target passed without confirmed outcome evidence. No delivery result is claimed. The current requirement is to record the actual outcome and accept, rework or rebaseline the Chino MVP.
+
+### Current gate
+
+Record Chino demo outcome and rebaseline
+
+### Risks / blockers
+
+- The planned demonstration date passed without documented delivery evidence.
+- Chino MVP acceptance, data quality and follow-on scope remain unconfirmed.
+- Knit and Denim must remain staged follow-on scope unless separately approved.
+
+### Decisions required
+
+- Accept, rework or rebaseline the Market Intelligence Chino MVP.
+
+### Next actions
+
+- Record the 5 November demonstration outcome and available evidence.
+- Run an accept/rework/rebaseline decision and publish the revised gate.
+
+### Traceability
+
+- Report: [[10_Reports/PPJ_WEEKLY_PORTFOLIO_STATUS_20261106]]
+- Decision gate: [[07_Decision_Log/DEC-WEEKLY-20261106-PORTFOLIO-GATES]]
+- Last verified: 2026-11-06
+- Confidence: Strong
+<!-- PPJ_WEEKLY_20261030_20261106_END -->

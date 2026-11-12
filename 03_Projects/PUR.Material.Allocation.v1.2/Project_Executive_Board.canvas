@@ -13,7 +13,7 @@
     {
       "id": "ppj-exec-summary",
       "type": "text",
-      "text": "PUR_MaterialAllocation_v1.1.0\n\nDomain:\nSourcing / Purchasing\n\nLifecycle:\nValidation / Stabilization\n\nProgress:\nTBD\n\nGate:\nConfirm API implementation and controlled GET/POST transaction UAT\n\nOutcome:\nValidate controlled reallocation of surplus material across eligible OCs: Material Requirement -> Availability -> Allocation -> Validation -> WFX Transaction.\n\nTop Blocker:\nPartial-allocation correctness\n\nNext Milestone:\nTest multiple OCs and partial allocation\n\nLast Verified:\n2026-10-30",
+      "text": "PUR_MaterialAllocation_v1.1.0\n\nDomain:\nSourcing / Purchasing\n\nLifecycle:\nValidation / Stabilization\n\nProgress:\nTBD\n\nGate:\nControlled WFX dry-run and Save testing\n\nOutcome:\nValidate controlled reallocation of surplus material across eligible OCs: Material Requirement -> Availability -> Allocation -> Validation -> WFX Transaction.\n\nTop Blocker:\nPartial-allocation correctness\n\nNext Milestone:\nTest multiple OCs and partial allocation\n\nLast Verified:\n2026-11-06",
       "x": 0,
       "y": -90,
       "width": 760,
@@ -23,7 +23,7 @@
     {
       "id": "ppj-management-attention",
       "type": "text",
-      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Deployment status, performance, concurrency and audit behaviour are unconfirmed.\n- Duplicate prevention, rollback, partial allocation and exception controls still require transaction UAT.\n\nDecisions Needed\n- Confirm API deployment ownership and the transaction-control UAT gate.\n\nExternal Dependencies\n- None recorded",
+      "text": "KEY MANAGEMENT ATTENTION\n\nTop Risks\n- Real WFX transaction behaviour and Save safety are not confirmed.\n- Duplicate, concurrency, cross-division, partial-allocation and rerun rules remain open.\n- Emergency-stop, rollback, audit and recovery controls require controlled evidence.\n\nDecisions Needed\n- Approve Material Allocation business rules and the transaction-control UAT gate.\n\nExternal Dependencies\n- WFX controlled test environment and transaction authority.\n- Purchasing business-rule ownership.\n- QA evidence for audit and recovery.",
       "x": 810,
       "y": -90,
       "width": 500,
@@ -80,7 +80,7 @@
     {
       "id": "ppj-task-1da1f1e39100",
       "type": "text",
-      "text": "[[Tasks/PUR_MaterialAllocation_v1.1.0-TASK-001_Confirm-API-implementation-and-run-controlled-GET-POST-UAT]]\n\nConfirm API implementation and run controlled GET POST UAT\n\nPriority: P0\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Controlled evidence confirms API deployment and covers partial Style/Article search, transaction success, duplicate prevention, rollback, concurrency and audit.",
+      "text": "[[Tasks/PUR_MaterialAllocation_v1.1.0-TASK-001_Confirm-API-implementation-and-run-controlled-GET-POST-UAT]]\n\nExecute controlled WFX dry-run and Save testing\n\nPriority: P0\nOwner: Needs Confirmation\nDue: TBD\n\nAcceptance\n- Controlled evidence covers preview, dry run and Save across duplicate, concurrency, cross-division, partial-allocation, emergency-stop, audit, rollback and rerun cases.",
       "x": 370,
       "y": 630,
       "width": 260,
@@ -187,7 +187,7 @@
     "frontmatter": {
       "project": "PUR_MaterialAllocation_v1.1.0",
       "board_type": "project_executive_kanban",
-      "last_verified": "2026-10-30"
+      "last_verified": "2026-11-06"
     }
   }
 }
