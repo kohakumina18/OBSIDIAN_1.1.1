@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{
+			"id":"a9fecaab80e94907",
+			"type":"text",
+			"text":"kinh doanh 1 luong \nkho 1 luong \nmixbong 1 luong rieng\n\n--> minh can tao ra duoc su lien ket \nmo ta hien trang cua ho --- minh can mot chuoi lien ket --- \nsales: thu tien roi can phai bao cho ke toan the nao\nkho xuat roi lai dua phieu viet tay GDN - GRN cho ke toan voa cuoi thang: khong thay realtime \nroi sales dang thu tien - va ke toan dang cong no nhu the nao hien tai cung chua co -> can ho tro \ncong viec hoan toan dang don vao cuoi thang - theo cac cong no phai thu phai tra :: can phai theo doi it nhat real time - \n- xac dinh va kiem soat ton kho :: hien tai chua co dinh muc - va cung khong nen ap dung dinh muc - nen luu tru theo muc do xuat - va nhap kho \n\n---- mo ta ve quy trinh ppj su dung quy trinh cua minh, no hoan toan duoc lien ket ovi nhau - can chuyen hoa don gian. de hieu nhat co the \n\nkhi cac anh chi nhan don hang - di pUR mua  bong nhu the nao -> ke thua du lieu PUR nhap kho theo dung yeu cau, da duoc danh dau theo tieu chi tung loai bong theo may AHA - khi muon xuat kho thi se can chuong trinh mix bong:: can bao nhieu bong, dinh muc nhu the nao - san luong duoc lay tu may + nhap tay :: den cuoi ngay se tru lai **duoc planning** (LÀM KỸ PLANNING - CHO CHUẨN)  - them phan quan ly nhan su + TÍNH LƯƠNG + BHXH + THUẾ nữa - máy chấm công đưa lên thành lương: rút ra ngay ca kíp set up đó thì lương thưởng như thế nào - TÍNH GIÁ THÀNH SẢN PHẨM\nETA: 9 months - sẽ build lại các phần mềm theo nhu cầu thực của quý anh chị - \n\n\n-- phan tich theo lo trinh va cac bai toan -- dua ra thong tin ve cac \n\n",
+			"styleAttributes":{},
+			"x":-360,
+			"y":-200,
+			"width":880,
+			"height":920
+		}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
