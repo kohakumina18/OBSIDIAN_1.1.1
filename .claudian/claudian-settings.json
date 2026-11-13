@@ -208,14 +208,15 @@
   "settingsProvider": "claude",
   "lastSelectedChatModel": {
     "providerId": "codex",
-    "model": "openai-codex/gpt-5.6-sol"
+    "model": "openai-codex/gpt-5.6-luna"
   },
   "inlineEditModel": null,
   "savedProviderModel": {
     "claude": "haiku"
   },
   "savedProviderEffort": {
-    "claude": "medium"
+    "claude": "medium",
+    "codex": "high"
   },
   "savedProviderServiceTier": {},
   "savedProviderPermissionMode": {

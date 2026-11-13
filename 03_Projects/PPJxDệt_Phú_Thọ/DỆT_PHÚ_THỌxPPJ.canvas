@@ -134,16 +134,6 @@
 			"height":640
 		},
 		{
-			"id":"22c7b1edcdc75619",
-			"type":"text",
-			"text":"![[Pasted image 20261112221122.png]]",
-			"styleAttributes":{},
-			"x":2680,
-			"y":-15400,
-			"width":1140,
-			"height":660
-		},
-		{
 			"id":"1d1ea3fc78d636e5",
 			"type":"text",
 			"text":"![[Pasted image 20261112221150.png]]",
@@ -192,16 +182,6 @@
 			"y":-12395,
 			"width":800,
 			"height":470
-		},
-		{
-			"id":"1dadd0a596b8da68",
-			"type":"text",
-			"text":"![[Pasted image 20261112222753.png]]",
-			"styleAttributes":{},
-			"x":5425,
-			"y":-10960,
-			"width":1530,
-			"height":880
 		},
 		{
 			"id":"43ec822623d40af0",
@@ -253,18 +233,38 @@
 			"width":840,
 			"height":480
 		},
+		{"id":"d8d4c537c99cdf4d","type":"file","file":"Pasted image 20261112223014.png","x":5100,"y":-8440,"width":2180,"height":1219},
+		{
+			"id":"22c7b1edcdc75619",
+			"type":"text",
+			"text":"![[Pasted image 20261112221122.png]]",
+			"styleAttributes":{},
+			"x":2480,
+			"y":-15400,
+			"width":1140,
+			"height":660
+		},
+		{"id":"b9794746c5556dbe","type":"file","file":"Pasted image 20261112223108.png","x":2720,"y":-14520,"width":1080,"height":604},
 		{
 			"id":"3801a4c4110bab85",
 			"type":"text",
 			"text":"![[Pasted image 20261112222949.png]]",
 			"styleAttributes":{},
-			"x":5425,
-			"y":-9740,
+			"x":5415,
+			"y":-9760,
 			"width":1530,
 			"height":860
 		},
-		{"id":"d8d4c537c99cdf4d","type":"file","file":"Pasted image 20261112223014.png","x":5100,"y":-8440,"width":2180,"height":1219},
-		{"id":"b9794746c5556dbe","type":"file","file":"Pasted image 20261112223108.png","x":2710,"y":-14500,"width":1080,"height":604}
+		{
+			"id":"1dadd0a596b8da68",
+			"type":"text",
+			"text":"![[Pasted image 20261112222753.png]]",
+			"styleAttributes":{},
+			"x":5348,
+			"y":-10960,
+			"width":1665,
+			"height":960
+		}
 	],
 	"edges":[
 		{
@@ -471,6 +471,7 @@
 			"id":"17efb0f67853bd28",
 			"styleAttributes":{},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"fea32f73817a8ee9",
 			"fromSide":"bottom",
 			"toNode":"1dadd0a596b8da68",
