@@ -264,6 +264,17 @@
 			"y":-10960,
 			"width":1665,
 			"height":960
+		},
+		{
+			"id":"6c29e4fb21d7ee39",
+			"type":"text",
+			"text":"- GTAS IED \n- ROSY \n- MIXBALE\n- ",
+			"styleAttributes":{},
+			"x":11700,
+			"y":-12780,
+			"width":360,
+			"height":400,
+			"color":"4"
 		}
 	],
 	"edges":[
