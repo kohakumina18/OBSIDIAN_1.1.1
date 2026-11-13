@@ -233,7 +233,6 @@
 			"width":840,
 			"height":480
 		},
-		{"id":"d8d4c537c99cdf4d","type":"file","file":"Pasted image 20261112223014.png","x":5100,"y":-8440,"width":2180,"height":1219},
 		{
 			"id":"22c7b1edcdc75619",
 			"type":"text",
@@ -275,6 +274,58 @@
 			"width":360,
 			"height":400,
 			"color":"4"
+		},
+		{"id":"d8d4c537c99cdf4d","type":"file","file":"Pasted image 20261112223014.png","x":5090,"y":-8480,"width":2180,"height":1219},
+		{
+			"id":"69ade2c849400980",
+			"type":"text",
+			"text":"IMPORT TOOL (NEW VER)\n\t- TẠO CODE (STYLE)\n\t- SUPPLIER\n\t- BUYER ",
+			"styleAttributes":{},
+			"x":1440,
+			"y":-11800,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"1ced5527d85ab849",
+			"type":"text",
+			"text":"ROSY\n\t- TẠO OC\n\t- KHO - PUR\n\t- FINNANCE",
+			"styleAttributes":{},
+			"x":1900,
+			"y":-11780,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c6372062ba7ab242",
+			"type":"text",
+			"text":"IED\n\t- GHI NHẬN QUY TRÌNH - CHI PHÍ SX\n\t- (TỪ ROSY -> IED )",
+			"styleAttributes":{},
+			"x":2240,
+			"y":-11780,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"2c7a314351990ac6",
+			"type":"text",
+			"text":"FAST REACT\n\t- PLANNING \n\t- NHẬP OUTPUT (CÓ THỂ GHI NHẬN SẢN LƯỢNG - FIT VỚI DEMO)",
+			"styleAttributes":{},
+			"x":2560,
+			"y":-11800,
+			"width":260,
+			"height":120
+		},
+		{
+			"id":"7f335aab1cf9033b",
+			"type":"text",
+			"text":"\n\n\nPRODUCTION (NẾU KỊP) \n\t- ()\n\nMIXBALE\nCMS NHÂN SỰ-CHẤM CÔNG",
+			"styleAttributes":{},
+			"x":2630,
+			"y":-11540,
+			"width":380,
+			"height":520,
+			"color":"5"
 		}
 	],
 	"edges":[
@@ -550,6 +601,42 @@
 			"fromSide":"bottom",
 			"toNode":"b9794746c5556dbe",
 			"toSide":"top"
+		},
+		{
+			"id":"658a35f347e61962",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3801a4c4110bab85",
+			"fromSide":"bottom",
+			"toNode":"d8d4c537c99cdf4d",
+			"toSide":"top"
+		},
+		{
+			"id":"f322785b765dfed5",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"69ade2c849400980",
+			"fromSide":"right",
+			"toNode":"1ced5527d85ab849",
+			"toSide":"left"
+		},
+		{
+			"id":"c38ff86241103402",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"1ced5527d85ab849",
+			"fromSide":"right",
+			"toNode":"c6372062ba7ab242",
+			"toSide":"left"
+		},
+		{
+			"id":"9e7d5ea28cc63853",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c6372062ba7ab242",
+			"fromSide":"right",
+			"toNode":"2c7a314351990ac6",
+			"toSide":"left"
 		}
 	],
 	"metadata":{
