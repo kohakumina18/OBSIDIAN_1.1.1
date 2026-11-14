@@ -234,17 +234,6 @@
 			"height":480
 		},
 		{
-			"id":"22c7b1edcdc75619",
-			"type":"text",
-			"text":"![[Pasted image 20261112221122.png]]",
-			"styleAttributes":{},
-			"x":2480,
-			"y":-15400,
-			"width":1140,
-			"height":660
-		},
-		{"id":"b9794746c5556dbe","type":"file","file":"Pasted image 20261112223108.png","x":2720,"y":-14520,"width":1080,"height":604},
-		{
 			"id":"3801a4c4110bab85",
 			"type":"text",
 			"text":"![[Pasted image 20261112222949.png]]",
@@ -288,86 +277,97 @@
 			"color":"5"
 		},
 		{
-			"id":"1ced5527d85ab849",
+			"id":"0f81d322af5d940d",
 			"type":"text",
-			"text":"ROSY\n\t- TẠO OC\n\t- PUR - KHO \n\t- FINNANCE",
+			"text":"CODE",
 			"styleAttributes":{},
-			"x":1440,
-			"y":-11977,
-			"width":260,
-			"height":160,
-			"color":"4"
-		},
-		{
-			"id":"69ade2c849400980",
-			"type":"text",
-			"text":"IMPORT TOOL (NEW VER)\n\t- TẠO CODE (STYLE)\n\t- SUPPLIER\n\t- BUYER ",
-			"styleAttributes":{},
-			"x":1080,
-			"y":-11940,
-			"width":260,
-			"height":157,
-			"color":"5"
-		},
-		{
-			"id":"78308fb837caea3c",
-			"type":"text",
-			"text":"MIXBALE",
-			"styleAttributes":{},
-			"x":2200,
-			"y":-11540,
-			"width":150,
+			"x":2040,
+			"y":-8545,
+			"width":100,
 			"height":60
+		},
+		{"id":"a9c0af2595ea6ad9","type":"text","text":"OC","x":2220,"y":-8745,"width":80,"height":100},
+		{"id":"104d8adf6f6e6175","type":"text","text":"IED","x":2360,"y":-8745,"width":80,"height":100},
+		{"id":"893a3c3102cab9db","type":"text","text":"PUR","x":2520,"y":-8745,"width":80,"height":100},
+		{"id":"7c72cd48c84eea2a","type":"text","text":"INVENTORY (INBOUND)","x":2740,"y":-8745,"width":140,"height":100},
+		{"id":"0ba0de5ae2a5ff83","type":"text","text":"PLANNING ","x":2940,"y":-8745,"width":140,"height":100},
+		{"id":"62af16c858ee4a2a","type":"text","text":"PRODUCTION\n- MIXBALE \n- GHI NHẬN OUTPUT ","x":3220,"y":-8775,"width":200,"height":160},
+		{
+			"id":"23ea3f07f46728ac",
+			"type":"text",
+			"text":"CMS NHÂN SỰ\n-CHẤM CÔNG",
+			"styleAttributes":{},
+			"x":2710,
+			"y":-8061,
+			"width":260,
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"c6372062ba7ab242",
 			"type":"text",
 			"text":"IED\n\t- GHI NHẬN QUY TRÌNH - CHI PHÍ SX\n\t- (TỪ ROSY -> IED )",
 			"styleAttributes":{},
-			"x":1800,
-			"y":-12154,
+			"x":2710,
+			"y":-7880,
 			"width":260,
 			"height":140
 		},
 		{
-			"id":"23ea3f07f46728ac",
+			"id":"69ade2c849400980",
 			"type":"text",
-			"text":"CMS NHÂN SỰ\n-CHẤM CÔNG",
+			"text":"IMPORT TOOL (NEW VER)\n\t- TẠO CODE (STYLE)\n\t- SUPPLIER\n\t- BUYER ",
 			"styleAttributes":{},
-			"x":1800,
-			"y":-12340,
+			"x":1920,
+			"y":-7695,
 			"width":260,
-			"height":60,
-			"color":"1"
+			"height":157,
+			"color":"5"
+		},
+		{
+			"id":"1ced5527d85ab849",
+			"type":"text",
+			"text":"ROSY\n\t- TẠO OC\n\t- PUR - KHO \n\t- FINNANCE",
+			"styleAttributes":{},
+			"x":2300,
+			"y":-7698,
+			"width":260,
+			"height":160,
+			"color":"4"
 		},
 		{
 			"id":"2c7a314351990ac6",
 			"type":"text",
 			"text":"FAST REACT\n\t- PLANNING \n\t- NHẬP OUTPUT (CÓ THỂ GHI NHẬN SẢN LƯỢNG - FIT VỚI DEMO)",
 			"styleAttributes":{},
-			"x":2200,
-			"y":-11817,
+			"x":3130,
+			"y":-7538,
 			"width":260,
 			"height":187,
 			"color":"3"
 		},
-		{"id":"893a3c3102cab9db","type":"text","text":"PUR","x":2740,"y":-9840,"width":80,"height":100},
-		{"id":"104d8adf6f6e6175","type":"text","text":"IED","x":2580,"y":-9840,"width":80,"height":100},
-		{"id":"7c72cd48c84eea2a","type":"text","text":"INVENTORY (INBOUND)","x":2960,"y":-9840,"width":140,"height":100},
-		{"id":"0ba0de5ae2a5ff83","type":"text","text":"PLANNING ","x":3160,"y":-9840,"width":140,"height":100},
-		{"id":"62af16c858ee4a2a","type":"text","text":"PRODUCTION\n- MIXBALE \n- GHI NHẬN OUTPUT ","x":3440,"y":-9870,"width":200,"height":160},
-		{"id":"0728ff7ee35cd657","type":"text","text":"FINANCE \n GHI NHẬN INVENTORY (OUTBOUND)","x":3640,"y":-9580,"width":180,"height":220},
-		{"id":"a9c0af2595ea6ad9","type":"text","text":"OC","x":2440,"y":-9840,"width":80,"height":100},
 		{
-			"id":"0f81d322af5d940d",
+			"id":"78308fb837caea3c",
 			"type":"text",
-			"text":"CODE",
+			"text":"MIXBALE",
 			"styleAttributes":{},
-			"x":2260,
-			"y":-9640,
-			"width":100,
+			"x":3110,
+			"y":-7240,
+			"width":150,
 			"height":60
-		}
+		},
+		{"id":"0728ff7ee35cd657","type":"text","text":"FINANCE \n GHI NHẬN INVENTORY (OUTBOUND)","x":3440,"y":-8520,"width":180,"height":220},
+		{
+			"id":"22c7b1edcdc75619",
+			"type":"text",
+			"text":"![[Pasted image 20261112221122.png]]",
+			"styleAttributes":{},
+			"x":2520,
+			"y":-15540,
+			"width":1140,
+			"height":660
+		},
+		{"id":"b9794746c5556dbe","type":"file","file":"Pasted image 20261112223108.png","x":2280,"y":-14520,"width":1080,"height":604}
 	],
 	"edges":[
 		{
@@ -664,7 +664,10 @@
 		},
 		{
 			"id":"c38ff86241103402",
-			"styleAttributes":{},
+			"styleAttributes":{
+				"pathfindingMethod":null,
+				"path":null
+			},
 			"toFloating":false,
 			"fromNode":"1ced5527d85ab849",
 			"fromSide":"right",
@@ -674,8 +677,11 @@
 		},
 		{
 			"id":"9e7d5ea28cc63853",
-			"styleAttributes":{},
+			"styleAttributes":{
+				"pathfindingMethod":null
+			},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"c6372062ba7ab242",
 			"fromSide":"right",
 			"toNode":"2c7a314351990ac6",
@@ -702,8 +708,11 @@
 		},
 		{
 			"id":"44d00bd57aa38178",
-			"styleAttributes":{},
+			"styleAttributes":{
+				"pathfindingMethod":null
+			},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"2c7a314351990ac6",
 			"fromSide":"left",
 			"toNode":"1ced5527d85ab849",
@@ -712,8 +721,11 @@
 		},
 		{
 			"id":"3cbaa01d858f8844",
-			"styleAttributes":{},
+			"styleAttributes":{
+				"pathfindingMethod":null
+			},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"23ea3f07f46728ac",
 			"fromSide":"right",
 			"toNode":"2c7a314351990ac6",
@@ -722,8 +734,11 @@
 		},
 		{
 			"id":"293582b3607d5c3c",
-			"styleAttributes":{},
+			"styleAttributes":{
+				"pathfindingMethod":null
+			},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"23ea3f07f46728ac",
 			"fromSide":"left",
 			"toNode":"1ced5527d85ab849",
@@ -732,7 +747,9 @@
 		},
 		{
 			"id":"ffb0f5dd2a792797",
-			"styleAttributes":{},
+			"styleAttributes":{
+				"pathfindingMethod":null
+			},
 			"toFloating":false,
 			"fromNode":"1ced5527d85ab849",
 			"fromSide":"top",
@@ -741,7 +758,9 @@
 		},
 		{
 			"id":"c9ee77c86b68cd8e",
-			"styleAttributes":{},
+			"styleAttributes":{
+				"pathfindingMethod":null
+			},
 			"toFloating":false,
 			"fromFloating":false,
 			"fromNode":"69ade2c849400980",
