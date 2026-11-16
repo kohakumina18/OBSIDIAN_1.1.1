@@ -80,8 +80,6 @@
 			"height":60,
 			"color":"3"
 		},
-		{"id":"a0bf86ed809e5f47","type":"link","url":"https://mini-ielts.com/1507/listening/research-project","x":870,"y":1880,"width":700,"height":660},
-		{"id":"d440c9b631ba1848","type":"link","url":"https://mini-ielts.com/1503/listening/organic-farming","x":1570,"y":1880,"width":707,"height":660},
 		{
 			"id":"b99f42a417c922f2",
 			"type":"text",
@@ -92,7 +90,9 @@
 			"width":820,
 			"height":8144,
 			"color":"5"
-		}
+		},
+		{"id":"d440c9b631ba1848","type":"link","url":"https://mini-ielts.com/1503/listening/organic-farming","x":1720,"y":1880,"width":707,"height":660},
+		{"id":"a0bf86ed809e5f47","type":"link","url":"https://mini-ielts.com/1507/listening/research-project","x":720,"y":1880,"width":700,"height":660}
 	],
 	"edges":[
 		{
