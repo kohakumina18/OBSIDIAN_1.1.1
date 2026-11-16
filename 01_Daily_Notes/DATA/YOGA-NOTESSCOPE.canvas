@@ -557,6 +557,17 @@
 			"width":420,
 			"height":680,
 			"color":"5"
+		},
+		{
+			"id":"a6a227af2d9b6866",
+			"type":"text",
+			"text":"16.11.2026\n--VIDEO BRIEF\n- XNK: DSP \n- KHO: ESG FLEET\n- IT: GTAS GO - GTAS CARRY - GTAS TRAVEL\n- AI: AUTOMATION ",
+			"styleAttributes":{},
+			"x":2020,
+			"y":59660,
+			"width":400,
+			"height":220,
+			"color":"1"
 		}
 	],
 	"edges":[
@@ -1013,6 +1024,15 @@
 			"fromNode":"e2cb799e6df4c848",
 			"fromSide":"bottom",
 			"toNode":"52c5b5178f8d3e56",
+			"toSide":"top"
+		},
+		{
+			"id":"3e17332f06be5f85",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"52c5b5178f8d3e56",
+			"fromSide":"bottom",
+			"toNode":"a6a227af2d9b6866",
 			"toSide":"top"
 		}
 	],
