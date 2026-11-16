@@ -192,17 +192,7 @@
 			"x":6480,
 			"y":1240,
 			"width":1180,
-			"height":4000
-		},
-		{
-			"id":"ebccecdfb0d9ebae",
-			"type":"text",
-			"text":"OVER-HEAD",
-			"styleAttributes":{},
-			"x":6020,
-			"y":2440,
-			"width":260,
-			"height":60,
+			"height":4000,
 			"color":"4"
 		}
 	],
