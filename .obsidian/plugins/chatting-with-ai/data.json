@@ -12,8 +12,8 @@
   "modelCatalog": {
     "entries": [
       {
-        "provider": "chatgpt-oauth",
         "identity": "8576e0e549afb1a8ce756a7407cd58fa24931402dc46cfb1f408f10f8208e95b",
+        "provider": "chatgpt-oauth",
         "fetchedAt": 1792231328522,
         "models": [
           {
