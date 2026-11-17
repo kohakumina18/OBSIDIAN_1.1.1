@@ -568,6 +568,16 @@
 			"width":400,
 			"height":220,
 			"color":"1"
+		},
+		{
+			"id":"dbcbfe57bde77b3a",
+			"type":"text",
+			"text":"12.11.2026\n\n- ~~FOLLOW UP GDI~~\n- FOLLOW UP MATERIAL ALLOC\n- FOLLOW UP EXPENSE INVOICE\n- FOLLOW UP GRN-SI\n- FOLLOW UP WS2 FIN AI \n\t- WORK UP \n- FOLLOW UP ADMIN_TRAVEL_EXPENSE\n- FOLLOW UP WASH AGENT\n- FOLLOW UP ERP DET PHU THO\n- FOLLOW UP LABEL-MANU\n- FOLLOW UP AISC.UIT\n\t\n",
+			"styleAttributes":{},
+			"x":2100,
+			"y":60120,
+			"width":420,
+			"height":520
 		}
 	],
 	"edges":[
@@ -1033,6 +1043,15 @@
 			"fromNode":"52c5b5178f8d3e56",
 			"fromSide":"bottom",
 			"toNode":"a6a227af2d9b6866",
+			"toSide":"top"
+		},
+		{
+			"id":"15765defec4325ac",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"a6a227af2d9b6866",
+			"fromSide":"bottom",
+			"toNode":"dbcbfe57bde77b3a",
 			"toSide":"top"
 		}
 	],
