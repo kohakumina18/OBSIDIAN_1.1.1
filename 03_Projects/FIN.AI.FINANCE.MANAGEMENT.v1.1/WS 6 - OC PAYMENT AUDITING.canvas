@@ -107,12 +107,13 @@
 			"toNode":"7ad15be6acce2f17",
 			"toSide":"right"
 		},
-		{"id":"ac587082ee5d611a","fromNode":"d4e7a3e49a522787","fromSide":"right","toNode":"c8d12d2504857598","toSide":"left"},
+		{"id":"ac587082ee5d611a","toFloating":false,"fromNode":"d4e7a3e49a522787","fromSide":"right","toNode":"c8d12d2504857598","toSide":"left"},
 		{"id":"aff9d6b408d31fe5","toFloating":false,"fromNode":"c8d12d2504857598","fromSide":"right","toNode":"d805006543c4bd34","toSide":"left"},
 		{
 			"id":"4da8f7ceb023673c",
 			"styleAttributes":{},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"d805006543c4bd34",
 			"fromSide":"right",
 			"toNode":"97cf24c2022abda7",
@@ -122,6 +123,7 @@
 			"id":"6db9dbaee1bfc3d6",
 			"styleAttributes":{},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"97cf24c2022abda7",
 			"fromSide":"right",
 			"toNode":"c2214a33a2af718f",
