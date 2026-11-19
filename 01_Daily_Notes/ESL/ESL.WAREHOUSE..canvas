@@ -229,6 +229,17 @@
 			"width":640,
 			"height":180,
 			"color":"5"
+		},
+		{
+			"id":"651634e565fcdd9d",
+			"type":"text",
+			"text":"# **SPEAKING PRACTICE: LET'S TALK ABOUT THINGS**\n\nLevel A1–A2 | Topic: Objects & Personal Belongings | Conversation + Storytelling\n\n**Mục tiêu:** Giúp học viên mô tả đồ vật, đặt câu hỏi về đồ vật của người khác và kể một câu chuyện ngắn về một món đồ có ý nghĩa với mình.\n\n## **Part 1. Warm-up — Things Around You (A1)**\n\n*Work in pairs. Ask your partner these questions.*\n\n| Questions                               | Nghĩa tiếng Việt                |\n| --------------------------------------- | ------------------------------- |\n| 1. What things do you have in your bag? | Bạn có những gì trong túi?      |\n| 2. What do you always carry with you?   | Bạn luôn mang theo gì?          |\n| 3. What's your favorite thing?          | Món đồ yêu thích của bạn là gì? |\n| 4. What color is it?                    | Nó màu gì?                      |\n| 5. Is it big or small?                  | Nó to hay nhỏ?                  |\n| 6. Is it new or old?                    | Nó mới hay cũ?                  |\n| 7. Where did you buy it?                | Bạn mua nó ở đâu?               |\n| 8. Do you use it every day?             | Bạn có dùng nó hằng ngày không? |\n\n## **Part 2. Let's Talk About Your Favorite Thing (A1–A2)**\n\n*Choose one object you love. Answer the questions.*\n\n### **A. Describe it — Mô tả đồ vật**\n\n1. What is your favorite thing?\n2. What does it look like?\n3. What color is it?\n4. Is it expensive or cheap?\n5. How long have you had it? (A2)\n\n### **B. Tell me more — Nói thêm về món đồ**\n\n6. Where did you get it?\n7. Did you buy it, or was it a gift?\n8. Who gave it to you?\n9. When did you get it?\n10. Why did you choose it?\n\n### **C. How do you use it? — Cách sử dụng**\n\n11. What do you use it for?\n12. How often do you use it?\n13. Where do you usually keep it?\n14. Do you take it to work?\n15. Does it make your life easier? How?\n\n### **D. Why is it special? — Ý nghĩa của món đồ**\n\n16. Why do you like it so much?\n17. Does it remind you of someone?\n18. Does it have a special story?\n19. How would you feel if you lost it?\n20. Would you buy the same thing again? Why?\n\n## **Part 3. Storytelling — The Story Behind My Favorite Thing (A2)**\n\n*Kể về một món đồ gắn với một kỷ niệm.*\n\n1. What is something special that you own?\n2. When did you first get it?\n3. Who were you with at that time?\n4. Was it a gift or something you bought yourself?\n5. What happened on the day you got it?\n6. How did you feel when you received it?\n7. Have you ever lost or broken it?\n8. What happened next?\n9. Do you still use it today?\n10. Why will you always remember it?\n\n## **Part 4. Useful Sentence Frameworks**\n\n| Expression                         | Example                                                |\n| ---------------------------------- | ------------------------------------------------------ |\n| My favorite thing is...            | My favorite thing is my watch.                         |\n| It's ... and ...                   | It's small and black.                                  |\n| I got it from...                   | I got it from my husband.                              |\n| I've had it for... (A2)            | I've had it for three years.                           |\n| I use it to...                     | I use it to check the time.                            |\n| I usually use it when...           | I use it when I go to work.                            |\n| It reminds me of...                | It reminds me of my birthday.                          |\n| What makes it special is...        | What makes it special is the person who gave it to me. |\n| I can't live without it because... | I can't live without it because I use it every day.    |\n| If I lost it, I would... (A2)      | If I lost it, I would feel really sad.                 |\n\n## **Part 5. Model Speaking Answer**\n\n**My Favorite Thing — My Watch**\n\nA1–A2\n\nMy favorite thing is my watch. It's black and silver, and it looks very nice. My wife gave it to me on my birthday two years ago.\n\nI wear it almost every day, especially when I go to work. I use it to check the time. It's very useful, but that's not the main reason I love it.\n\nIt's special to me because it was a gift from my wife. Every time I look at it, I remember that birthday. Even though it's getting old, I still love it.\n\n## **Part 6. Final Speaking Challenge — 60 Seconds**\n\nTell us about a thing you would never want to lose.\n\nChọn một món đồ và cố gắng nói liên tục 45–60 giây, không đọc giấy.\n\nWhat is it?\n\nWhat does it look like?\n\nWhere did you get it?\n\nHow do you use it?\n\nWhy is it important to you?\n\nWhat is one special memory about it?\n\n\n**Teacher tip:** Khi học viên trả lời, yêu cầu bạn cùng cặp đặt thêm ít nhất 2 follow-up questions, chẳng hạn *“Really? Who gave it to you?”* hoặc *“That's nice! Why is it so special?”* Điều này giúp chuyển từ trả lời câu hỏi đơn lẻ sang hội thoại tự nhiên.\n",
+			"styleAttributes":{},
+			"x":6680,
+			"y":-1040,
+			"width":900,
+			"height":3460,
+			"color":"5"
 		}
 	],
 	"edges":[
@@ -249,6 +260,16 @@
 			"fromSide":"top",
 			"toNode":"b22219effeeffe3e",
 			"toSide":"bottom"
+		},
+		{
+			"id":"40a86e2aad44f63e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"651634e565fcdd9d",
+			"fromSide":"left",
+			"toNode":"a633b6c5353cf65e",
+			"toSide":"right",
+			"color":"5"
 		}
 	],
 	"metadata":{
