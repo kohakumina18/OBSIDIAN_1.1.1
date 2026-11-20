@@ -99,6 +99,60 @@
 			"y":-400,
 			"width":1120,
 			"height":9216
+		},
+		{
+			"id":"26fcb0ec74c8d689",
+			"type":"text",
+			"text":"theo bsc - ngay thanh toan phai thu: upto 70-80 ngay \n\n- hiện tại chỉ đang là plan \n\t- dang add up thêm receipt receivables\n\t- chỉ cần add thêm vào bên cạnh - plan vs actual\n\t- ngưỡng tolerance chậm trả: 2 tuần\n- AR: tren 1 tháng trên 3 tháng trên 9 tháng trên 1 năm \n\t- nên group lại theo từng 4.10 lên trên bên cạnh \n\t- chi tiết invoices để ở dưới \n\n",
+			"styleAttributes":{},
+			"x":13520,
+			"y":-400,
+			"width":520,
+			"height":340,
+			"color":"5"
+		},
+		{
+			"id":"3f84536aaf86ec16",
+			"type":"text",
+			"text":"tồn kho trên tổng số mua hàng\nkèm các KPIs tùy chọn ",
+			"styleAttributes":{},
+			"x":14160,
+			"y":-360,
+			"width":340,
+			"height":60,
+			"color":"5"
+		},
+		{
+			"id":"911e145a8ed6c699",
+			"type":"text",
+			"text":"connect với AD: ĐẶT 1 LẦN TỪ WFX <-> AD",
+			"styleAttributes":{},
+			"x":15040,
+			"y":-1000,
+			"width":380,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"35e1998e4304bcc3",
+			"type":"text",
+			"text":"SUPPLIER WEBSITE: WEBSITE TIẾP NHẬN ĐƠN HÀNG",
+			"styleAttributes":{},
+			"x":15060,
+			"y":-860,
+			"width":300,
+			"height":60,
+			"color":"5"
+		},
+		{
+			"id":"1a391d6b036b07d7",
+			"type":"text",
+			"text":"công ty nhãn",
+			"styleAttributes":{},
+			"x":14760,
+			"y":-920,
+			"width":160,
+			"height":60
 		}
 	],
 	"edges":[
@@ -166,6 +220,24 @@
 			"fromNode":"c2214a33a2af718f",
 			"fromSide":"right",
 			"toNode":"efcb5f75dbd7be60",
+			"toSide":"left"
+		},
+		{
+			"id":"79809fb01b2fceb4",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"1a391d6b036b07d7",
+			"fromSide":"right",
+			"toNode":"911e145a8ed6c699",
+			"toSide":"left"
+		},
+		{
+			"id":"7f7a9ceffef5f5a7",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"1a391d6b036b07d7",
+			"fromSide":"right",
+			"toNode":"35e1998e4304bcc3",
 			"toSide":"left"
 		}
 	],
