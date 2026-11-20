@@ -31,17 +31,7 @@
 		{"id":"6672583a1909d484","type":"file","file":"Pasted image 20261020181810.png","x":-2000,"y":1920,"width":2640,"height":1737},
 		{"id":"424aaa25ab5ac2a2","type":"file","file":"Pasted image 20261022194857.png","x":-2587,"y":3760,"width":1740,"height":1740},
 		{"id":"4b0611d77667e3ef","type":"file","file":"Pasted image 20261022195005.png","x":-850,"y":3760,"width":2827,"height":1590},
-		{"id":"f24a2f32be15eacc","type":"file","file":"Pasted image 20261030161556.png","x":706,"y":1909,"width":2354,"height":1760},
-		{
-			"id":"556d186ebc1e0f88",
-			"type":"text",
-			"text":"Dưới đây là toàn bộ danh sách, giữ nguyên thứ tự và các bài trùng lặp trong playlist.\n55 bài đang hiển thị\n[x] Ẩn bài trùng\n\n#\tTên bài hát\tNghệ sĩ\tThời lượng\n1\tFeel Alive\tN8SCHICHT\t04:39\n2\tJE NE COMPRENDS PAS - LESSSS EDIT\tLESSSS, Duno\t02:23\n3\tDas Ende Der Isolation\tKlangkuenstler\t06:31\n5\tBR3ATH3 - DARKENED MIX\tKOBOSIL\t04:48\n6\tEwigkeit\tIn Verruf\t03:55\n7\tAwake\tSONDERLING, Nachtigaller\t05:01\n8\tDu und Ich\tNoise Not War, Death of Mars, TURRO\t05:22\n9\tIn Meinem Kopf\tNZGÛL, KRACH\t03:23\n10\tKummer\tKUKO\t03:14\n11\tM.L.A.\tVendex\t04:10\n12\tReborn\tRYX\t05:09\n14\tNie Mehr Zurück\tNachtigaller, Njasti\t03:33\n15\tHard Truths\tLuciid\t04:24\n16\tSonnenfinsternis\tDa Fokin\t02:47\n17\tRise with the Stars\tE Varox\t03:37\n18\tFlesh, Bones and Disappointmets\tEpifanix\t03:36\n19\tMeine Kraft\tWhite Spirit\t02:34\n20\tIN THE SHADOWS\tNZGÛL\t03:42\n21\tOhne Dich\tKUKO\t04:51\n22\tIM NOT GOD - EXTENDED\tRAGETRAIN, GEWOONRAVES, Zentryc, AEXTRAX\t04:54\n23\tFeelings\tE RYX, Njasti\t04:16\n24\tFrisstxAuf\tN8SCHICHT, TRITØNUS\t04:10\n25\tNacht\tPOLTERGST\t03:04\n26\tUnter der Sonne\tVintash\t02:24\n27\tSTAY ALIVE\tWilliam Luck, NØNAME\t02:51\n28\tForever\tHARDSOK\t04:24\n29\tAsche\tNachtigaller\t03:22\n30\tThe Spirit (Vlace Schranz Rework)\tVlace\t04:48\n31\tGrau\tDa Fokin\t02:37\n32\tUnterwelt\tKUKO, Frauenarzt\t02:45\n33\twobistduhin?\tKalte Liebe\t03:12\n38\tSystem\tIn Furcht, 42Q\t04:13\n39\t300G\tKOBOSIL, Bekkaa\t02:58\n40\tFall Der Moral\tWhite Spirit, Timo Revna\t02:45\n41\tCARE FOR YOU\tHOEHENANGST\t02:46\n42\tSonne Geht Auf - Extended Mix\tKlangkuenstler, Ski Aggu\t03:38\n43\tCollapse\tRYX\t04:47\n44\tNachtsöhne\tFORCES, Siwotha You\t03:41\n45\tI Destroy\tKristian Llov\t03:14\n46\tKINSKI\tKUKO\t05:36\n47\tVielleicht Vielleicht - Holy Priest & elMefti Remix\tMilleniumKid, JBS, HOLY PRIEST, elMefti\t02:49\n48\tWithout Me (Nobody)\tPOLTERGST\t03:19\n49\tHTHK\tPRAKAS\t04:18\n50\tEUPHORIA\tWanton\t03:15\n51\tNever Could Let Go - Summit (DE) & RYX Remix\tLEVT, RYX, Summit (DE)\t03:27\n52\tThe Light\tNick Hakim\t04:27\n53\tDreamt of Tomorrow\tMarino Canal\t06:34\n57\tSchattenklinge\tBen Techy\t04:20\n58\tFrieden\tKlangkuenstler, LUVRE47\t04:04\n59\tNever Nice\tWhite Spirit\t02:44\n60\tKopf Aus\tKOLE, Yunz\t02:47\n61\tFrier mich ein\tDa Fokin\t02:56\n62\tNie Genug\tKUKO\t02:56\n63\tZeit\tRYX, Nachtigaller\t05:34\n64\tFühlst du den Schmerz\tKUKO\t04:56",
-			"styleAttributes":{},
-			"x":4000,
-			"y":2620,
-			"width":760,
-			"height":1768
-		}
+		{"id":"f24a2f32be15eacc","type":"file","file":"Pasted image 20261030161556.png","x":706,"y":1909,"width":2354,"height":1760}
 	],
 	"edges":[
 		{
