@@ -41,7 +41,17 @@
 			"width":1040,
 			"height":12398
 		},
-		{"id":"1fc3c6f7bb949194","type":"file","file":"Pasted image 20261112092830.png","x":2840,"y":580,"width":400,"height":305}
+		{"id":"1fc3c6f7bb949194","type":"file","file":"Pasted image 20261112092830.png","x":2840,"y":580,"width":400,"height":305},
+		{
+			"id":"84bb1f34b532146e",
+			"type":"text",
+			"text":"Nhan nguyen phu lie \nPocketing  ",
+			"styleAttributes":{},
+			"x":2900,
+			"y":2860,
+			"width":260,
+			"height":60
+		}
 	],
 	"edges":[],
 	"metadata":{
