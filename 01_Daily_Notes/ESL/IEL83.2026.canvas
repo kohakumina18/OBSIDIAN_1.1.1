@@ -105,7 +105,89 @@
 			"width":320,
 			"height":680
 		},
-		{"id":"719a9838c8940df2","type":"file","file":"IELTS_C08_S04_Reading_Health_Student_Worksheet.pdf","subpath":"#page=1","x":7380,"y":4140,"width":1020,"height":640}
+		{"id":"719a9838c8940df2","type":"file","file":"IELTS_C08_S04_Reading_Health_Student_Worksheet.pdf","subpath":"#page=1","x":7380,"y":4140,"width":1020,"height":640},
+		{"id":"92793e1f6534e5ad","type":"file","file":"Pasted image 20261123192839.png","x":8880,"y":3840,"width":1000,"height":750},
+		{
+			"id":"18911e5a1e5cf9e7",
+			"type":"text",
+			"text":"TONY:\n- I LOVE A BOOK CALLED \"NO FAMILY\" THAT I GOT A CHANCE TO STUDY ABOUT DURING MY SECONDARY SCHOOL, A MASTERPIECE - WRITTEN BY HECTOR MALOT. THIS DRIVE US THRU A JOURNEY OF A GUY IN SEARCH FOR HIS REAL FAMILY, YET IN THE END HE REALIZED THAT THE FAMILY HE'S BEEN SEARCHING FOR IS THE LOVES ONE SURROUNDING HIM EVER BEFORE. BEFORE READING THIS I WAS SO NAUGHTY, SHY AND DOESNT GIVE A SINGLE CARE ABT ANYTHING - EXCEPT MY OWN NEEDS - BUT AFTER THIS, I REALIZED THAT I COULD BE A BETTER VERSION THAT I WONT REGRET BECOMING ONCE I GROW OLD. \n- INITIALLY, I HAVE MADE A VIDEO ABT MY HIGHLIGHTS OF 2026. I KINDA PUT EXTRAS EFFORT INTO MAKING IT - SOMETIMES I GOT CRAZY IN THE MIDDLE OF EDITING IT, BUT ITS MY OWN PROJECT THAT RECAPS WHAT I LOVE THE MOST IN THE PAST YEAR - A YEAR THAT I WILL NEVER EVER GET A CHANCE TO BE THIS YOUNG, AMBITOUS, GEEKY AND FUNNY .",
+			"styleAttributes":{},
+			"x":8540,
+			"y":5700,
+			"width":260,
+			"height":1240
+		},
+		{
+			"id":"a1ede5a6aabd2404",
+			"type":"text",
+			"text":"NGHI:\n- I THINK THE THING THAT IM MOST PROUD OF DURING THE LAST 6 MONTHS, \n- I FORGOT IT NAMES, BUT I DO RECALL THIS ONE THAT DEPICT OF THE LOVE BETWEEN MOTHERS AND HER SONS,  THIS LEFT A DEEP IMPACT ON ME IN THE WAY THAT I LOOK UP AT MY MOTHER, HELPING ME APPRECIATE WHAT SHE DID FOR ME AND MY FAM, AND UNDERSTAND HOW MUCH SHE HAS SACRAFICED TO KEEP THE WARM INSIDE MY FAMILY.",
+			"styleAttributes":{},
+			"x":9100,
+			"y":6200,
+			"width":260,
+			"height":660
+		},
+		{
+			"id":"819b8918b1390c4a",
+			"type":"text",
+			"text":"HENRY\n- I THINK THE THING THAT IM MOST PROUD OF WAS BEING ABLE TO WAKE UP AT 4.AM EVERY MORNING TO HAVE QUALITY, FOCUS TIME FOR DOING HOMEWORK. THIS ALSO MAKE ME SLEEP AT 10.PM \n- ACTUALLY I DONT REALLY READING BOOKS THAT OFTEN, YET I STILL REMEMBER THIS ONE STORY FROM MY CHILDHOOD - ABOUT A RABIT AND A TURTL. I'VE FOUND THIS STORY PARTICULARLY INTERESTING - OF NOT BEING ARROGANT AND BE RESPECTFUL TO OTHERS, NOT TO BE TOO SUBJECTIVE EVEN WHEN WE ARE IN THE WIN.  ",
+			"styleAttributes":{},
+			"x":8820,
+			"y":6040,
+			"width":260,
+			"height":760
+		},
+		{
+			"id":"51ba1aff43c2da11",
+			"type":"text",
+			"text":"SUNNY:\n- SAME WITH LUNA, BUT I FIGURED OUT THAT NOT ALL CRIMINAL ARE EVIL, SOME ARENT BORN WITH IT BUT THEY WERE INFLUENCED BY THE ENVIRONMENT THAT THEY GREW UP WITH. \n- GETTING INTO TAMPHU HIGHSCHOOL REALLY BOOSTED MORALE, WHICH I HAVE PUT SO MUCH EFFORT IN. I FEEL VERY LUCKY AS WELL, THAT IN THE NEXT YEAR 9TH GRADER GONNA HAVE TO DO THE EXAM ON THE FORMAT OF THE DEPARTMENT OF EDU&TRAINING. ",
+			"styleAttributes":{},
+			"x":9440,
+			"y":6200,
+			"width":360,
+			"height":460
+		},
+		{
+			"id":"04a7084184252f22",
+			"type":"text",
+			"text":"LUNA:\n- I HAVNT GONE TO THE HOSPITAL DURING THE LAST 6 MONTHS, BECAUSE PAID A VISIT THERE AT LEAST 3  TIMES LAST YEAR FOR NUMEROUS REASONS.\n- THAT WOULD BE CRIMINAL PSYCHOLOGY, BY SOME DUDE THAT I ADMIRED. IT AFFECTED ME IN A WAY THAT IM NOT SURE IF ITS GOOD OR BAD, THAT TURN ME NONCHALANT UPON SEEING DEAD BODIES. BUT THE MOST IMPORTANT THING IS THAT THIS TAUGHT ME HOW A CRIMINAL USUALLY THINK WHEN THEY COMMIT A CRIME. ",
+			"styleAttributes":{},
+			"x":9880,
+			"y":6040,
+			"width":340,
+			"height":520
+		},
+		{
+			"id":"0dbb549caf6be8a7",
+			"type":"text",
+			"text":"HAKU:\n- I GOT A MIXTAPE THAT REACHED ~2K PLAYS, WHICH I SPENT A WHOLE MONTH TO PREPARE FOR THAT NIGHT. SUPER PLEASANT THAT I TOOK MY CHANCE AND STEP UP TO THE STAGE.\n- THAT WOULD BE CRIME AND PUNISHMENT - Dostoyevsky\n\n",
+			"styleAttributes":{},
+			"x":10290,
+			"y":5590,
+			"width":620,
+			"height":220,
+			"color":"5"
+		},
+		{
+			"id":"428ab3cdca88649d",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":7840,
+			"y":5320,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a5d3e45848a7b763",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":8200,
+			"y":5560,
+			"width":260,
+			"height":1040
+		}
 	],
 	"edges":[
 		{
@@ -199,6 +281,79 @@
 			"toNode":"d440c9b631ba1848",
 			"toSide":"top",
 			"color":"3"
+		},
+		{
+			"id":"0c731dace401dba0",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"92793e1f6534e5ad",
+			"fromSide":"bottom",
+			"toNode":"0dbb549caf6be8a7",
+			"toSide":"top"
+		},
+		{
+			"id":"c5985dfee90a61e4",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"92793e1f6534e5ad",
+			"fromSide":"bottom",
+			"toNode":"04a7084184252f22",
+			"toSide":"top"
+		},
+		{
+			"id":"d017baca4de31487",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"92793e1f6534e5ad",
+			"fromSide":"bottom",
+			"toNode":"51ba1aff43c2da11",
+			"toSide":"top"
+		},
+		{
+			"id":"9d59779651c19db9",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"92793e1f6534e5ad",
+			"fromSide":"bottom",
+			"toNode":"a1ede5a6aabd2404",
+			"toSide":"top"
+		},
+		{
+			"id":"46bacb9ea1a55ec7",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"92793e1f6534e5ad",
+			"fromSide":"bottom",
+			"toNode":"819b8918b1390c4a",
+			"toSide":"top"
+		},
+		{
+			"id":"83f5a7aed256d5c1",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"92793e1f6534e5ad",
+			"fromSide":"bottom",
+			"toNode":"18911e5a1e5cf9e7",
+			"toSide":"top"
+		},
+		{
+			"id":"7cb26047fc8122e6",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"92793e1f6534e5ad",
+			"fromSide":"bottom",
+			"toNode":"a5d3e45848a7b763",
+			"toSide":"top"
+		},
+		{
+			"id":"29caa1e1516d2d58",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"92793e1f6534e5ad",
+			"fromSide":"bottom",
+			"toNode":"428ab3cdca88649d",
+			"toSide":"top"
 		}
 	],
 	"metadata":{
