@@ -625,3 +625,112 @@ body {
     color: rgb(var(--callout-color));
   }
 }
+
+/* Markdown presentation blocks for reports and Canvas text cards. */
+body.theme-light {
+  --ppj-panel: #fbf9f4;
+  --ppj-inset: #eeebe4;
+  --ppj-discovery: #a56519;
+  --ppj-mapping: #377d70;
+  --ppj-validation: #416fa6;
+}
+body.theme-dark {
+  --ppj-panel: #191d20;
+  --ppj-inset: #24292d;
+  --ppj-discovery: #d6a166;
+  --ppj-mapping: #78b8a9;
+  --ppj-validation: #86a8d5;
+}
+.callout:is([data-callout="ppj-metrics"], [data-callout="ppj-columns"], [data-callout="ppj-roadmap"], [data-callout="ppj-priorities"]) {
+  --callout-color: var(--fragments-callout-note);
+  --callout-blend-mode: normal;
+  --callout-radius: 9px;
+  --callout-padding: .95em;
+  margin-block: 1em;
+  background: var(--ppj-panel);
+  border: 1px solid var(--fragments-border);
+  color: var(--fragments-text);
+}
+.callout:is([data-callout="ppj-metrics"], [data-callout="ppj-columns"], [data-callout="ppj-roadmap"], [data-callout="ppj-priorities"]) > .callout-title {
+  color: var(--fragments-heading-2);
+  margin-bottom: .55em;
+}
+.callout[data-callout="ppj-columns"] > .callout-content,
+.callout[data-callout="ppj-metrics"] > .callout-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12em), 1fr));
+  gap: .55em;
+}
+.callout[data-callout="ppj-metrics"] > .callout-content {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.callout:is([data-callout="ppj-stat"], [data-callout="ppj-flow"], [data-callout="ppj-meter"]) {
+  --callout-blend-mode: normal;
+  --callout-padding: .65em .75em;
+  margin: 0;
+  background: var(--ppj-inset);
+  border: 1px solid var(--fragments-border);
+  border-radius: 6px;
+}
+.callout:is([data-callout="ppj-stat"], [data-callout="ppj-flow"], [data-callout="ppj-meter"]) > .callout-title {
+  color: var(--fragments-text);
+  line-height: 1.35;
+}
+.callout[data-callout^="ppj-"] > .callout-title > .callout-icon { display: none; }
+.callout:is([data-callout="ppj-stat"], [data-callout="ppj-meter"]) > .callout-content > p { margin: .35em 0 0; }
+.callout[data-callout="ppj-stat"] > .callout-content strong {
+  color: var(--fragments-heading-1);
+  font-size: 1.55em;
+  font-variant-numeric: tabular-nums;
+}
+.callout[data-callout="ppj-meter"] {
+  grid-column: 1 / -1;
+  --ppj-completion: calc(clamp(0, attr(data-callout-metadata type(<number>), 0), 100) * 1%);
+}
+@supports (width: calc(attr(data-callout-metadata type(<number>), 0) * 1%)) {
+  .callout[data-callout="ppj-meter"] > .callout-content::after {
+    content: "";
+    display: block;
+    margin-top: .45em;
+    block-size: .4em;
+    border-radius: 999px;
+    background: linear-gradient(to right, var(--ppj-mapping) 0 var(--ppj-completion), var(--fragments-border) var(--ppj-completion) 100%);
+  }
+}
+.callout[data-callout="ppj-flow"] ol { list-style: none; padding: 0; margin: .55em 0; }
+.callout[data-callout="ppj-flow"] li {
+  position: relative;
+  padding: .45em .55em;
+  border: 1px solid var(--fragments-border);
+  border-radius: 5px;
+  text-align: center;
+  background: var(--ppj-panel);
+}
+.callout[data-callout="ppj-flow"] li + li { margin-top: 1.2em; }
+.callout[data-callout="ppj-flow"] li + li::before {
+  content: "↓";
+  position: absolute;
+  inset-block-start: -1.35em;
+  inset-inline: 0;
+  color: var(--fragments-muted);
+}
+.callout[data-callout="ppj-flow"] li:has(em) { border-color: var(--ppj-discovery); }
+.callout[data-callout="ppj-roadmap"] .table-wrapper { overflow-x: auto; }
+.callout[data-callout="ppj-roadmap"] table { width: 100%; min-width: 28em; }
+.callout[data-callout="ppj-roadmap"] :is(th, td):not(:first-child) { text-align: center; width: 8%; }
+.callout[data-callout="ppj-roadmap"] td:not(:first-child):has(strong) {
+  background: color-mix(in srgb, var(--ppj-mapping) 24%, var(--ppj-panel));
+  color: var(--ppj-mapping);
+}
+.callout[data-callout="ppj-roadmap"] td strong { color: inherit; }
+.callout[data-callout="ppj-roadmap"] tr:has(td:first-child em) td:not(:first-child):has(strong) {
+  background: color-mix(in srgb, var(--ppj-discovery) 24%, var(--ppj-panel));
+  color: var(--ppj-discovery);
+}
+.callout[data-callout="ppj-roadmap"] tr:has(td:first-child strong) td:not(:first-child):has(strong) {
+  background: color-mix(in srgb, var(--ppj-validation) 24%, var(--ppj-panel));
+  color: var(--ppj-validation);
+}
+.callout[data-callout="ppj-priorities"] ol { padding-inline-start: 2em; }
+.callout[data-callout="ppj-priorities"] li { display: list-item; list-style-type: decimal; padding: .45em .65em; margin: .35em 0; background: var(--ppj-inset); border-radius: 5px; }
+.callout[data-callout="ppj-priorities"] li::marker { color: var(--fragments-heading-2); font-weight: 700; }
