@@ -1,0 +1,387 @@
+/* FRAGMENTS Obsidian theme.
+   The diary rules below are bundled from fragments-studio.css so the theme
+   can render archive notes and film callouts on its own. */
+
+body {
+  --font-interface-theme: Inter, "Segoe UI", Arial, sans-serif;
+  --font-text-theme: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+  --font-monospace-theme: "JetBrains Mono", Consolas, monospace;
+  --radius-s: 3px;
+}
+
+body.theme-light {
+  --background-primary: var(--fragments-bg);
+  --background-primary-alt: var(--fragments-surface);
+  --background-secondary: var(--fragments-sidebar);
+  --background-secondary-alt: #e8e4da;
+  --background-modifier-border: var(--fragments-border);
+  --background-modifier-hover: #eae5dc;
+  --text-normal: var(--fragments-text);
+  --text-muted: var(--fragments-muted);
+  --text-faint: #75716a;
+  --link-color: var(--fragments-accent);
+  --link-color-hover: #604123;
+  --link-external-color: var(--fragments-accent);
+  --text-selection: #ded0b5;
+}
+
+body.theme-dark {
+  --background-primary: var(--fragments-bg);
+  --background-primary-alt: var(--fragments-surface);
+  --background-secondary: var(--fragments-sidebar);
+  --background-secondary-alt: #191b1e;
+  --background-modifier-border: var(--fragments-border);
+  --background-modifier-hover: #24272a;
+  --text-normal: var(--fragments-text);
+  --text-muted: var(--fragments-muted);
+  --text-faint: #8f8c83;
+  --link-color: var(--fragments-accent);
+  --link-color-hover: #e5c994;
+  --link-external-color: var(--fragments-accent);
+  --text-selection: #4d402a;
+}
+
+.workspace-tab-header.is-active {
+  box-shadow: inset 0 -2px var(--fragments-accent);
+}
+
+.workspace :is(button, a, input, select, textarea, [tabindex="0"]):focus-visible {
+  outline: 2px solid var(--fragments-accent);
+  outline-offset: 2px;
+}
+
+/* FRAGMENTS · diary typography, film frames and photo layouts.
+   All rendered rules opt in via a note class or a callout identifier. */
+body.theme-light,
+body.theme-dark {
+  --fragments-interface: Inter, "Segoe UI", Arial, sans-serif;
+  --fragments-prose: "Source Sans 3", Inter, "Segoe UI", Arial, sans-serif;
+  --fragments-literary: "EB Garamond", Georgia, "Times New Roman", serif;
+  --fragments-poetry: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+  --fragments-display: "Instrument Serif", "EB Garamond", Georgia, serif;
+  --fragments-subtitles: Arial, Helvetica, sans-serif;
+  --fragments-caption: "Courier Prime", "Courier New", monospace;
+  --fragments-hand: Caveat, "Segoe Print", var(--fragments-literary);
+  --fragments-code: "JetBrains Mono", Consolas, monospace;
+  --fragments-ivory: #f2e8d5;
+  --fragments-yellow: #e8d477;
+  --fragments-frame: #08090a;
+  --fragments-subtitle-size: clamp(.84rem, .78rem + .33vw, 1.05rem);
+  --fragments-overlay-offset: .65rem;
+  --fragments-gallery-gutter: .5rem;
+}
+body.theme-light {
+  --fragments-bg: #f8f6f1;
+  --fragments-surface: #fff;
+  --fragments-sidebar: #eeebe4;
+  --fragments-border: #d6d0c6;
+  --fragments-text: #292b2d;
+  --fragments-muted: #676863; /* Darkened for small text against paper. */
+  --fragments-accent: #86613b;
+}
+body.theme-dark {
+  --fragments-bg: #111315;
+  --fragments-surface: #191b1e;
+  --fragments-sidebar: #0e1012;
+  --fragments-border: #2b2e32;
+  --fragments-text: #e7e3dc;
+  --fragments-muted: #a8a6a0;
+  --fragments-accent: #d1b47b;
+}
+
+/* Reading View and rendered Live Preview. Source Mode keeps the user's editor. */
+:is(.markdown-preview-view, .markdown-source-view.is-live-preview):is(.film-diary, .poetic-film, .poetry-note, .photo-essay, .contact-sheet, .letter-note, .philosophy-note, .music-diary, .cinema-review, .minimal-journal, .archive-home, .fragments-gallery, .research-note) {
+  --file-line-width: var(--fragments-width, 46rem);
+  --font-text: var(--fragments-body, var(--fragments-prose));
+  --font-monospace: var(--fragments-code);
+  --background-primary: var(--fragments-bg);
+  --background-primary-alt: var(--fragments-surface);
+  --text-normal: var(--fragments-text);
+  --text-muted: var(--fragments-muted);
+  --text-accent: var(--fragments-accent);
+  --link-color: var(--fragments-accent);
+  --link-color-hover: var(--fragments-text);
+  --link-external-color: var(--fragments-accent);
+  --inline-title-color: var(--fragments-text);
+  --inline-title-font: var(--fragments-display);
+  --h1-font: var(--fragments-display);
+  --h1-color: var(--fragments-text);
+  --h1-weight: 400;
+  --h2-color: var(--fragments-text);
+  --h3-color: var(--fragments-text);
+  --metadata-label-text-color: var(--fragments-muted);
+  color: var(--fragments-text);
+  background: var(--fragments-bg);
+  font-family: var(--font-text);
+}
+:is(.markdown-preview-view, .markdown-source-view.is-live-preview):is(.film-diary, .poetic-film, .letter-note, .philosophy-note) {
+  --fragments-body: var(--fragments-literary);
+  --line-height-normal: 1.67;
+}
+:is(.markdown-preview-view, .markdown-source-view.is-live-preview).poetry-note {
+  --fragments-body: var(--fragments-poetry);
+  --fragments-width: 33rem;
+  --line-height-normal: 1.7;
+}
+.markdown-preview-view.poetry-note .el-p > p { font-size: 1.25em; }
+:is(.markdown-preview-view, .markdown-source-view.is-live-preview).letter-note { --fragments-width: 37rem; }
+:is(.markdown-preview-view, .markdown-source-view.is-live-preview).minimal-journal { --fragments-width: 41rem; }
+:is(.markdown-preview-view, .markdown-source-view.is-live-preview):is(.photo-essay, .contact-sheet, .music-diary, .fragments-gallery) { --fragments-width: 62rem; }
+:is(.markdown-preview-view, .markdown-source-view.is-live-preview).cinema-review { --fragments-width: 52rem; }
+:is(.markdown-preview-view, .markdown-source-view.is-live-preview).philosophy-note { --fragments-width: 42rem; }
+:is(.markdown-preview-view, .markdown-source-view.is-live-preview).research-note {
+  --fragments-width: 76rem;
+  --h1-font: var(--fragments-prose);
+  --inline-title-font: var(--fragments-prose);
+  --h1-weight: 650;
+}
+:is(.markdown-preview-view, .markdown-source-view.is-live-preview):is(.archive-home, .photo-essay, .film-diary, .poetry-note, .research-note, .fragments-gallery)
+  :is(a, button, [tabindex="0"]):focus-visible {
+  outline: 2px solid var(--fragments-accent);
+  outline-offset: 3px;
+}
+:is(.markdown-preview-view, .markdown-source-view.is-live-preview) :lang(vi) {
+  /* EB Garamond and system fonts handle stacked Vietnamese marks at body size. */
+  font-family: var(--fragments-vietnamese, "EB Garamond"), "Times New Roman", serif;
+  letter-spacing: normal;
+}
+
+/* Film frames. Use one image paragraph followed by a blank quote line and a caption. */
+.callout:is([data-callout="film"], [data-callout="film-yellow"], [data-callout="film-poetry"], [data-callout="film-overlay"], [data-callout="film-wide"], [data-callout="contact-sheet"], [data-callout="diptych"], [data-callout="triptych"]) {
+  --callout-blend-mode: normal;
+  --callout-padding: 0;
+  --callout-content-padding: 0;
+  --callout-border-width: 0px;
+  --callout-radius: 2px;
+  --callout-content-background: transparent;
+  --callout-color: 8, 9, 10;
+  --fragments-film-color: var(--fragments-ivory);
+  --fragments-film-font: var(--fragments-subtitles);
+  --fragments-film-style: normal;
+  --fragments-film-fit: contain;
+  --fragments-film-offset: var(--fragments-overlay-offset);
+  container: fragments-film / inline-size;
+  padding: 0;
+  margin-block: 1.4rem;
+  border: 0;
+  border-radius: 2px;
+  background: var(--fragments-frame);
+  color: var(--fragments-ivory);
+  box-shadow: none;
+}
+.callout:is([data-callout|="film"], [data-callout="contact-sheet"], [data-callout="diptych"], [data-callout="triptych"]) > .callout-title:not(:has(.callout-fold)) {
+  display: none;
+}
+.callout:is([data-callout|="film"], [data-callout="contact-sheet"], [data-callout="diptych"], [data-callout="triptych"]) > .callout-content {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+.callout:is([data-callout|="film"], [data-callout="contact-sheet"], [data-callout="diptych"], [data-callout="triptych"]) > .callout-content > p {
+  margin: 0;
+  padding: .7rem .8rem;
+  text-align: center;
+  overflow-wrap: anywhere;
+  color: var(--fragments-film-color, var(--fragments-ivory));
+  font: var(--fragments-film-style, normal) 400 var(--fragments-subtitle-size)/1.43 var(--fragments-film-font, var(--fragments-subtitles));
+}
+.callout:is([data-callout|="film"], [data-callout="contact-sheet"], [data-callout="diptych"], [data-callout="triptych"]) > .callout-content a {
+  color: var(--fragments-ivory);
+  text-decoration: underline;
+}
+.callout:is([data-callout="film"], [data-callout="film-yellow"], [data-callout="film-poetry"], [data-callout="film-overlay"], [data-callout="film-wide"]) > .callout-content > p:has(img) {
+  padding: 0;
+}
+.callout:is([data-callout="film"], [data-callout="film-yellow"], [data-callout="film-poetry"], [data-callout="film-overlay"], [data-callout="film-wide"]) > .callout-content > p:has(img) :is(.image-embed, .external-embed) {
+  display: block;
+  width: 100%;
+  max-width: none;
+  line-height: 0;
+}
+.callout:is([data-callout="film"], [data-callout="film-yellow"], [data-callout="film-poetry"], [data-callout="film-overlay"], [data-callout="film-wide"]) > .callout-content > p img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: none;
+  margin: 0;
+  border-radius: 0;
+}
+.callout[data-callout="film-yellow"] { --fragments-film-color: var(--fragments-yellow); }
+.callout[data-callout="film-poetry"],
+:is(.markdown-preview-view, .markdown-source-view.is-live-preview).poetic-film .callout[data-callout="film"] {
+  --fragments-film-font: var(--fragments-literary);
+  --fragments-film-style: italic;
+  --fragments-subtitle-size: clamp(1rem, .94rem + .4vw, 1.28rem);
+}
+.callout:is([data-callout="film-overlay"], [data-callout="film-yellow"])[data-callout-metadata~="high"] { --fragments-film-offset: 1.75rem; }
+.callout:is([data-callout="film-overlay"], [data-callout="film-yellow"])[data-callout-metadata~="flush"] { --fragments-film-offset: 0px; }
+@container fragments-film (min-width: 19rem) {
+  .callout:is([data-callout="film-overlay"], [data-callout="film-yellow"][data-callout-metadata~="overlay"]) > .callout-content:has(> p:first-child img) {
+    display: grid;
+  }
+  .callout:is([data-callout="film-overlay"], [data-callout="film-yellow"][data-callout-metadata~="overlay"]) > .callout-content:has(> p:first-child img) > p {
+    grid-area: 1 / 1;
+    min-width: 0;
+  }
+  .callout:is([data-callout="film-overlay"], [data-callout="film-yellow"][data-callout-metadata~="overlay"]) > .callout-content:has(> p:first-child img) > p:last-child {
+    z-index: 1;
+    align-self: end;
+    margin-block-end: var(--fragments-film-offset);
+    padding: .44rem .65rem;
+    background: rgb(8 9 10 / .84);
+    text-shadow: 0 1px 2px #000;
+  }
+}
+
+/* Letterbox. Omitting a ratio retains the original image shape. */
+.callout[data-callout="film-wide"][data-callout-metadata~="3-2"] { --fragments-ratio: 3 / 2; }
+.callout[data-callout="film-wide"][data-callout-metadata~="4-3"] { --fragments-ratio: 4 / 3; }
+.callout[data-callout="film-wide"][data-callout-metadata~="16-9"] { --fragments-ratio: 16 / 9; }
+.callout[data-callout="film-wide"][data-callout-metadata~="185-100"] { --fragments-ratio: 1.85; }
+.callout[data-callout="film-wide"][data-callout-metadata~="239-100"] { --fragments-ratio: 2.39; }
+.callout[data-callout="film-wide"][data-callout-metadata~="crop"] { --fragments-film-fit: cover; }
+.callout[data-callout="film-wide"] > .callout-content > p img {
+  aspect-ratio: var(--fragments-ratio, auto);
+  object-fit: var(--fragments-film-fit);
+}
+
+/* Contact sheets and sequences. Captions and date/place labels span the row. */
+.callout:is([data-callout="contact-sheet"], [data-callout="diptych"], [data-callout="triptych"]) {
+  --fragments-cols: 2;
+  --fragments-film-font: var(--fragments-caption);
+}
+.callout:is([data-callout="triptych"], [data-callout="contact-sheet"][data-callout-metadata~="three"]) { --fragments-cols: 3; }
+.callout:is([data-callout="contact-sheet"], [data-callout="diptych"], [data-callout="triptych"]) > .callout-content {
+  display: grid;
+  grid-template-columns: repeat(var(--fragments-cols), minmax(0, 1fr));
+  gap: var(--fragments-gallery-gutter);
+  padding: var(--fragments-gallery-gutter);
+  counter-reset: fragments-frame;
+}
+.callout:is([data-callout="contact-sheet"], [data-callout="diptych"], [data-callout="triptych"]) > .callout-content > p { grid-column: 1 / -1; }
+.callout:is([data-callout="contact-sheet"], [data-callout="diptych"], [data-callout="triptych"]) > .callout-content > p:has(> .internal-embed, > img) { display: contents; }
+.callout:is([data-callout="contact-sheet"], [data-callout="diptych"], [data-callout="triptych"]) > .callout-content > p:has(> .internal-embed, > img) > br { display: none; }
+.callout:is([data-callout="contact-sheet"], [data-callout="diptych"], [data-callout="triptych"]) > .callout-content > p > :is(.internal-embed, img) {
+  display: block;
+  position: relative;
+  min-width: 0;
+  width: 100%;
+  margin: 0;
+  align-self: start;
+}
+.callout:is([data-callout="contact-sheet"], [data-callout="diptych"], [data-callout="triptych"]) > .callout-content > p img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: none;
+  margin: 0;
+  border-radius: 0;
+}
+.callout[data-callout="contact-sheet"] > .callout-content > p img {
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: #111315;
+}
+.callout[data-callout="contact-sheet"][data-callout-metadata~="numbered"] > .callout-content > p > .image-embed { counter-increment: fragments-frame; }
+.callout[data-callout="contact-sheet"][data-callout-metadata~="numbered"] > .callout-content > p > .image-embed::after {
+  content: counter(fragments-frame, decimal-leading-zero);
+  position: absolute;
+  inset: .24rem auto auto .26rem;
+  background: var(--fragments-frame);
+  color: var(--fragments-ivory);
+  padding: .13rem .25rem;
+  font: .73rem/1 var(--fragments-caption);
+  pointer-events: none;
+}
+@container fragments-film (max-width: 26rem) {
+  .callout:is([data-callout="contact-sheet"], [data-callout="diptych"], [data-callout="triptych"]) > .callout-content { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .callout[data-callout="triptych"] > .callout-content > p > :nth-last-child(1 of :is(.internal-embed, img)):nth-child(odd of :is(.internal-embed, img)) { grid-column: 1 / -1; }
+}
+@container fragments-film (max-width: 17rem) {
+  .callout:is([data-callout="contact-sheet"], [data-callout="diptych"], [data-callout="triptych"]) > .callout-content { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* Editorial index. Native links and embedded Bases are interactive. */
+:is(.markdown-preview-view, .markdown-source-view.is-live-preview).archive-home {
+  --fragments-width: 66rem;
+  --h1-size: clamp(2.9rem, 2rem + 5vw, 6.4rem);
+  --h1-line-height: .93;
+  --h2-font: var(--fragments-display);
+  --h2-size: 1.85rem;
+  --h2-weight: 400;
+}
+.markdown-preview-view.archive-home .inline-title { display: none; }
+.markdown-preview-view.archive-home .el-h1 > h1 {
+  margin: .3em 0 .14em;
+  letter-spacing: .025em;
+  line-height: .95;
+}
+.markdown-preview-view.archive-home .el-h1 + .el-p > p {
+  margin: .4rem 0 1.35rem;
+  color: var(--fragments-muted);
+  font: italic 1.23rem/1.4 var(--fragments-literary);
+}
+.archive-home .callout[data-callout="archive-hero"] {
+  --callout-padding: 0;
+  --callout-content-padding: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 2px;
+  background: var(--fragments-frame);
+}
+.archive-home .callout:is([data-callout="archive-hero"], [data-callout="archive-index"]) > .callout-title { display: none; }
+.archive-home .callout[data-callout="archive-hero"] > .callout-content { padding: 0; }
+.archive-home .callout[data-callout="archive-hero"] .image-embed { display: block; line-height: 0; max-width: none; }
+.archive-home .callout[data-callout="archive-hero"] p { margin: 0; }
+.archive-home .callout[data-callout="archive-hero"] img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2.5;
+  object-fit: cover;
+  object-position: center 47%;
+  border-radius: 0;
+  margin: 0;
+}
+.archive-home .callout[data-callout="archive-index"] {
+  --callout-padding: 0;
+  --callout-content-padding: 0;
+  border: 0;
+  border-block: 1px solid var(--fragments-border);
+  border-radius: 0;
+  background: transparent;
+  padding: .65rem 0;
+}
+.archive-home .callout[data-callout="archive-index"] > .callout-content > p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem 1rem;
+  margin: 0;
+}
+.archive-home .callout[data-callout="archive-index"] > .callout-content > p > br { display: none; }
+.archive-home .callout[data-callout="archive-index"] a {
+  padding: .15rem 0;
+  color: var(--fragments-accent);
+  text-decoration: none;
+  font: 550 .88rem/1.4 var(--fragments-interface);
+}
+.archive-home .callout[data-callout="archive-index"] a:hover { text-decoration: underline; }
+:is(.archive-home, .fragments-gallery) .bases-embed {
+  --background-primary: var(--fragments-bg);
+  --background-secondary: var(--fragments-surface);
+  --bases-cards-background: var(--fragments-surface);
+  --bases-cards-label-color: var(--fragments-muted);
+  --bases-cards-border-color: var(--fragments-border);
+  --bases-cards-border-radius: 2px;
+}
+@media (forced-colors: active) {
+  .callout:is([data-callout|="film"], [data-callout="contact-sheet"], [data-callout="diptych"], [data-callout="triptych"]) {
+    border: 1px solid CanvasText;
+  }
+  .callout:is([data-callout="film-overlay"], [data-callout="film-yellow"]) > .callout-content > p:last-child {
+    color: CanvasText;
+    background: Canvas;
+  }
+}

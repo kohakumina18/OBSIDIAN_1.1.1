@@ -1,0 +1,130 @@
+/* Cinematic Studio — Obsidian CSS snippet
+   Recommended: Minimal theme. Appearance > CSS snippets > enable.
+   Disable this snippet to revert its changes. No network resources. */
+
+body {
+  --studio-serif: "EB Garamond", Georgia, serif;
+  --studio-sans: "Inter", "Segoe UI", Arial, sans-serif;
+  --studio-mono: "JetBrains Mono", Consolas, monospace;
+  --font-interface-theme: var(--studio-sans);
+  --font-text-theme: var(--studio-sans);
+  --font-monospace-theme: var(--studio-mono);
+  --file-line-width: 860px;
+  --line-height-normal: 1.65;
+  --h1-size: 1.85em;
+  --h2-size: 1.38em;
+  --h3-size: 1.15em;
+  --h1-weight: 600;
+  --h2-weight: 600;
+  --h3-weight: 600;
+}
+.theme-dark {
+  --background-primary: #191b1e;
+  --background-primary-alt: #202226;
+  --background-secondary: #141619;
+  --background-secondary-alt: #1e2024;
+  --background-modifier-border: #35383e;
+  --text-normal: #e7e3dc;
+  --text-muted: #b5b1a9;
+  --text-faint: #92969c;
+  --accent-h: 42;
+  --accent-s: 48%;
+  --accent-l: 66%;
+  --studio-caption: #f2e8d5;
+  --studio-film-yellow: #e8d477;
+}
+.theme-light {
+  --background-primary: #f8f6f1;
+  --background-primary-alt: #f0ede6;
+  --background-secondary: #eeebe4;
+  --background-secondary-alt: #e8e4dc;
+  --background-modifier-border: #d6d0c6;
+  --text-normal: #292b2d;
+  --text-muted: #5e605f;
+  --text-faint: #73736d;
+  --accent-h: 32;
+  --accent-s: 46%;
+  --accent-l: 36%;
+  --studio-caption: #f2e8d5;
+  --studio-film-yellow: #e8d477;
+}
+/* Note-level layouts, activated by cssclasses in note properties. */
+.poetry-note {
+  --font-text: var(--studio-serif);
+  --file-line-width: 660px;
+  --line-height-normal: 1.8;
+  --h1-font: var(--studio-serif);
+  --h2-font: var(--studio-serif);
+}
+.markdown-preview-view.poetry-note .markdown-preview-sizer,
+.markdown-source-view.poetry-note .cm-content {
+  font-family: var(--studio-serif);
+  font-size: 20px;
+}
+.markdown-preview-view.poetry-note blockquote {
+  font-family: var(--studio-serif);
+  font-style: italic;
+  font-size: 1.15em;
+  line-height: 1.65;
+  border-inline-start: 1px solid var(--background-modifier-border);
+  padding-inline-start: 1em;
+}
+.research-note {
+  --file-line-width: 1050px;
+}
+.markdown-preview-view.research-note table {
+  width: 100%;
+}
+.film-diary {
+  --file-line-width: 980px;
+}
+/* Film card: ![image embed] then quote in the same custom callout.
+   Reading view and rendered Live Preview callouts. No original image changes. */
+.film-diary .callout[data-callout="film"] {
+  background: #0b0c0e;
+  color: var(--studio-caption);
+  border: 0;
+  padding: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 6px 22px #0003;
+  margin-block: 1.4em;
+}
+.film-diary .callout[data-callout="film"] .callout-title {
+  display: none;
+}
+.film-diary .callout[data-callout="film"] .callout-content {
+  padding: 0;
+  color: var(--studio-caption);
+}
+.film-diary .callout[data-callout="film"] .callout-content p {
+  margin: 0;
+  text-align: center;
+}
+.film-diary .callout[data-callout="film"] .callout-content .image-embed {
+  display: block;
+}
+.film-diary .callout[data-callout="film"] .callout-content img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0;
+}
+.film-diary .callout[data-callout="film"] .callout-content p:last-child:not(:has(img)) {
+  padding: 15px 24px 19px;
+  color: var(--studio-film-yellow);
+  font-family: Arial, sans-serif;
+  font-size: clamp(14px, 1.7vw, 19px);
+  line-height: 1.4;
+}
+.film-diary.poetic-film .callout[data-callout="film"] .callout-content p:last-child:not(:has(img)) {
+  font-family: var(--studio-serif);
+  font-style: italic;
+  font-size: clamp(18px, 2.1vw, 25px);
+  color: var(--studio-caption);
+}
+/* Optional subtle UI polish. No layout controls or accessibility outlines hidden. */
+.workspace-tab-header.is-active { font-weight: 600; }
+.nav-file-title, .nav-folder-title { border-radius: 5px; }

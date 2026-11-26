@@ -1,11 +1,14 @@
 {
-  "theme": "moonstone",
-  "accentColor": "#c6b815",
-  "interfaceFontFamily": "Inter,Berlin Sans FB,.VnArabiaH",
+  "theme": "obsidian",
+  "accentColor": "#cec027",
+  "interfaceFontFamily": "Bernard MT,Inter,Berlin Sans FB,.VnArabiaH",
   "textFontFamily": "Bahnschrift,Comic Sans MS",
   "baseFontSizeAction": true,
   "nativeMenus": true,
-  "cssTheme": "Obsidian gruvbox",
+  "cssTheme": "PLN",
   "baseFontSize": 17,
-  "showRibbon": true
+  "showRibbon": true,
+  "enabledCssSnippets": [
+    "fragments-studio"
+  ]
 }
