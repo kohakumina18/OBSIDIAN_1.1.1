@@ -1,14 +1,9 @@
 {
   "theme": "obsidian",
-  "accentColor": "#cec027",
-  "interfaceFontFamily": "Bernard MT,Inter,Berlin Sans FB,.VnArabiaH",
-  "textFontFamily": "Bahnschrift,Comic Sans MS",
   "baseFontSizeAction": true,
   "nativeMenus": true,
   "cssTheme": "FRAGMENTS",
   "baseFontSize": 17,
   "showRibbon": true,
-  "enabledCssSnippets": [
-    "fragments-studio"
-  ]
+  "enabledCssSnippets": []
 }
