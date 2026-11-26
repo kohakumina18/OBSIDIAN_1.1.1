@@ -579,6 +579,27 @@
 			"width":420,
 			"height":520,
 			"color":"5"
+		},
+		{
+			"id":"da8acd8f4939b1d8",
+			"type":"text",
+			"text":"depart: văn phòng công ty\nfact: -\nanalysis: LVAYNH/CP lãi vay VLĐ ngắn hạn ",
+			"styleAttributes":{},
+			"x":4160,
+			"y":60600,
+			"width":480,
+			"height":120
+		},
+		{"id":"e7d1feb7c2040cba","type":"file","file":"Pasted image 20261126152102.png","x":4200,"y":60320,"width":400,"height":136},
+		{
+			"id":"f18942801ac80e66",
+			"type":"text",
+			"text":"user: dtvi\npass: Sunny2805@",
+			"styleAttributes":{},
+			"x":4270,
+			"y":60500,
+			"width":260,
+			"height":60
 		}
 	],
 	"edges":[
