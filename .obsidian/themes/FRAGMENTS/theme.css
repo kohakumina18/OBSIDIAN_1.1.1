@@ -385,3 +385,243 @@ body.theme-dark {
     background: Canvas;
   }
 }
+
+/* Colored folders. Branches inherit the color of their top-level folder. */
+.nav-files-container {
+  --fragments-folder-rose: #c97a86;
+  --fragments-folder-apricot: #d6977c;
+  --fragments-folder-gold: #e9c989;
+  --fragments-folder-moss: #a8bd95;
+  --fragments-folder-teal: #8cb9b3;
+  --fragments-folder-blue: #9ab1cb;
+  --fragments-folder-lilac: #b5a6cb;
+  --fragments-folder-tint: var(--fragments-folder-blue);
+  --nav-indentation-guide-width: 2px;
+  --fragments-folder-ink: #252127;
+  --fragments-guide-mix: #4f3928;
+}
+
+.theme-dark .nav-files-container {
+  --fragments-guide-mix: var(--fragments-sidebar);
+}
+
+.nav-files-container .nav-folder:has(> .nav-folder-title[data-path="%SystemDrive%"]),
+.nav-files-container .nav-folder:has(> .nav-folder-title[data-path="07_Decision_Log"]) {
+  --fragments-folder-tint: var(--fragments-folder-rose);
+}
+
+.nav-files-container .nav-folder:has(> .nav-folder-title[data-path="01_Daily_Notes"]),
+.nav-files-container .nav-folder:has(> .nav-folder-title[data-path="09_Stakeholders"]) {
+  --fragments-folder-tint: var(--fragments-folder-apricot);
+}
+
+.nav-files-container .nav-folder:has(> .nav-folder-title[data-path="02_BA_Knowledge"]),
+.nav-files-container .nav-folder:has(> .nav-folder-title[data-path="10_Reports"]) {
+  --fragments-folder-tint: var(--fragments-folder-gold);
+}
+
+.nav-files-container .nav-folder:has(> .nav-folder-title[data-path="03_Projects"]),
+.nav-files-container .nav-folder:has(> .nav-folder-title[data-path="11_PROJECT_MANAGEMENT"]) {
+  --fragments-folder-tint: var(--fragments-folder-moss);
+}
+
+.nav-files-container .nav-folder:has(> .nav-folder-title[data-path="08_Meeting_Notes"]),
+.nav-files-container .nav-folder:has(> .nav-folder-title[data-path="99_Attachments"]) {
+  --fragments-folder-tint: var(--fragments-folder-teal);
+}
+
+.nav-files-container .nav-folder:has(> .nav-folder-title[data-path="Fragments"]),
+.nav-files-container .nav-folder:has(> .nav-folder-title[data-path="Excalidraw"]) {
+  --fragments-folder-tint: var(--fragments-folder-lilac);
+}
+
+/* Obsidian gives each row a vault-relative data-path. Top-level paths have no slash. */
+.nav-files-container .nav-folder-title[data-path]:not([data-path=""]):not([data-path*="/"]) {
+  border-radius: 8px;
+  background-color: var(--fragments-folder-tint);
+  color: var(--fragments-folder-ink);
+  font-weight: 600;
+}
+
+.nav-files-container .nav-folder-title[data-path]:not([data-path=""]):not([data-path*="/"]) :is(.collapse-icon, .collapse-icon svg) {
+  color: inherit;
+}
+
+.nav-files-container .nav-folder-title[data-path]:not([data-path=""]):not([data-path*="/"]):hover {
+  background-color: color-mix(in srgb, var(--fragments-folder-tint), white 15%);
+  color: var(--fragments-folder-ink);
+}
+
+.nav-files-container .nav-folder-title[data-path]:not([data-path=""]):not([data-path*="/"]):focus-visible {
+  outline: 2px solid var(--fragments-folder-ink);
+  outline-offset: -3px;
+}
+
+.nav-files-container .nav-folder:not(.mod-root) > .nav-folder-children {
+  border-inline-start-color: color-mix(in srgb, var(--fragments-folder-tint) 72%, var(--fragments-guide-mix));
+}
+
+/* Text hierarchy for rendered notes, Canvas cards, and the editor. */
+body.theme-light {
+  --fragments-heading-1: #783f29;
+  --fragments-heading-2: #225f56;
+  --fragments-heading-3: #3e5785;
+  --fragments-heading-4: #754c78;
+  --fragments-heading-5: #58632c;
+  --fragments-heading-6: #515b65;
+  --fragments-callout-note: 60, 83, 125;
+  --fragments-callout-abstract: 99, 68, 132;
+  --fragments-callout-info: 23, 91, 115;
+  --fragments-callout-todo: 40, 95, 148;
+  --fragments-callout-tip: 26, 104, 83;
+  --fragments-callout-success: 54, 101, 51;
+  --fragments-callout-question: 118, 95, 30;
+  --fragments-callout-warning: 145, 83, 29;
+  --fragments-callout-failure: 146, 63, 59;
+  --fragments-callout-danger: 156, 43, 64;
+  --fragments-callout-bug: 126, 59, 105;
+  --fragments-callout-example: 95, 79, 145;
+  --fragments-callout-quote: 76, 86, 92;
+}
+
+body.theme-dark {
+  --fragments-heading-1: #efbe8b;
+  --fragments-heading-2: #8bd0ba;
+  --fragments-heading-3: #a6bfea;
+  --fragments-heading-4: #d8acd9;
+  --fragments-heading-5: #c6d08e;
+  --fragments-heading-6: #b9c2ca;
+  --fragments-callout-note: 158, 183, 224;
+  --fragments-callout-abstract: 202, 171, 233;
+  --fragments-callout-info: 130, 199, 218;
+  --fragments-callout-todo: 135, 187, 232;
+  --fragments-callout-tip: 113, 204, 176;
+  --fragments-callout-success: 155, 204, 145;
+  --fragments-callout-question: 229, 200, 126;
+  --fragments-callout-warning: 239, 175, 122;
+  --fragments-callout-failure: 235, 147, 138;
+  --fragments-callout-danger: 246, 143, 164;
+  --fragments-callout-bug: 230, 155, 211;
+  --fragments-callout-example: 191, 174, 235;
+  --fragments-callout-quote: 178, 192, 199;
+}
+
+body {
+  --h1-color: var(--fragments-heading-1);
+  --h2-color: var(--fragments-heading-2);
+  --h3-color: var(--fragments-heading-3);
+  --h4-color: var(--fragments-heading-4);
+  --h5-color: var(--fragments-heading-5);
+  --h6-color: var(--fragments-heading-6);
+  --inline-title-color: var(--fragments-heading-1);
+}
+
+.markdown-rendered h1,
+.markdown-source-view.mod-cm6 .cm-header-1,
+.inline-title {
+  color: var(--fragments-heading-1);
+}
+
+.markdown-rendered h2,
+.markdown-source-view.mod-cm6 .cm-header-2 {
+  color: var(--fragments-heading-2);
+}
+
+.markdown-rendered h3,
+.markdown-source-view.mod-cm6 .cm-header-3 {
+  color: var(--fragments-heading-3);
+}
+
+.markdown-rendered h4,
+.markdown-source-view.mod-cm6 .cm-header-4 {
+  color: var(--fragments-heading-4);
+}
+
+.markdown-rendered h5,
+.markdown-source-view.mod-cm6 .cm-header-5 {
+  color: var(--fragments-heading-5);
+}
+
+.markdown-rendered h6,
+.markdown-source-view.mod-cm6 .cm-header-6 {
+  color: var(--fragments-heading-6);
+}
+
+/* Native callout families keep their original icons, fold controls, and aliases. */
+.callout:is([data-callout="note"]) {
+  --callout-color: var(--fragments-callout-note);
+}
+
+.callout:is([data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"]) {
+  --callout-color: var(--fragments-callout-abstract);
+}
+
+.callout:is([data-callout="info"]) {
+  --callout-color: var(--fragments-callout-info);
+}
+
+.callout:is([data-callout="todo"]) {
+  --callout-color: var(--fragments-callout-todo);
+}
+
+.callout:is([data-callout="tip"], [data-callout="hint"], [data-callout="important"]) {
+  --callout-color: var(--fragments-callout-tip);
+}
+
+.callout:is([data-callout="success"], [data-callout="check"], [data-callout="done"]) {
+  --callout-color: var(--fragments-callout-success);
+}
+
+.callout:is([data-callout="question"], [data-callout="help"], [data-callout="faq"]) {
+  --callout-color: var(--fragments-callout-question);
+}
+
+.callout:is([data-callout="warning"], [data-callout="caution"], [data-callout="attention"]) {
+  --callout-color: var(--fragments-callout-warning);
+}
+
+.callout:is([data-callout="failure"], [data-callout="fail"], [data-callout="missing"]) {
+  --callout-color: var(--fragments-callout-failure);
+}
+
+.callout:is([data-callout="danger"], [data-callout="error"]) {
+  --callout-color: var(--fragments-callout-danger);
+}
+
+.callout:is([data-callout="bug"]) {
+  --callout-color: var(--fragments-callout-bug);
+}
+
+.callout:is([data-callout="example"]) {
+  --callout-color: var(--fragments-callout-example);
+}
+
+.callout:is([data-callout="quote"], [data-callout="cite"]) {
+  --callout-color: var(--fragments-callout-quote);
+}
+
+.callout:is(
+  [data-callout="note"],
+  [data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"],
+  [data-callout="info"],
+  [data-callout="todo"],
+  [data-callout="tip"], [data-callout="hint"], [data-callout="important"],
+  [data-callout="success"], [data-callout="check"], [data-callout="done"],
+  [data-callout="question"], [data-callout="help"], [data-callout="faq"],
+  [data-callout="warning"], [data-callout="caution"], [data-callout="attention"],
+  [data-callout="failure"], [data-callout="fail"], [data-callout="missing"],
+  [data-callout="danger"], [data-callout="error"],
+  [data-callout="bug"],
+  [data-callout="example"],
+  [data-callout="quote"], [data-callout="cite"]
+) {
+  --callout-blend-mode: normal;
+  --callout-radius: 6px;
+  border: 1px solid rgba(var(--callout-color), .24);
+  border-inline-start: 3px solid rgba(var(--callout-color), .75);
+  background-color: rgba(var(--callout-color), .09);
+
+  & > .callout-title {
+    color: rgb(var(--callout-color));
+  }
+}
