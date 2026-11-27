@@ -157,11 +157,11 @@ Rewrite: People drink a lot of sugary drinks. → Use “fewer” to make a reco
 
 # 05  LISTENING A – TABLE COMPLETION
 
-Part 2-style monologue  |  Healthy Habits Programme  |  Questions 1–10
+Part 2-style monologue  |  **Healthy Habits Programme**  |  Questions 1–10
 
 **Audio: C08_S06_Listening_A.mp3  |  Đọc câu hỏi 45 giây. Nghe một lần, không dừng. Kiểm tra 30 giây. Teacher đọc transcript nếu cần.**
 
-**Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.**
+Complete the table below. Write ***NO MORE THAN TWO WORDS AND/OR A NUMBER*** for each answer.
 
 |   |   |
 |---|---|
