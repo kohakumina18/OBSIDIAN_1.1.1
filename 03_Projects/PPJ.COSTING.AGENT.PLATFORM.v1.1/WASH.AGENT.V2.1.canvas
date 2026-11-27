@@ -31,6 +31,16 @@
 			"y":-6539,
 			"width":1200,
 			"height":819
+		},
+		{
+			"id":"4b71db74a1d57ff0",
+			"type":"text",
+			"text":"% Màu dye - tính tổng 3 màu lại\n0-2%: L \n2-5%: M \n5-8%: D \n8%: S",
+			"styleAttributes":{},
+			"x":3300,
+			"y":-1260,
+			"width":260,
+			"height":220
 		}
 	],
 	"edges":[],
